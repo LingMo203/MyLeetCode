@@ -1,16 +1,19 @@
 package src.leetcode.test;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={1,1,1};
-        int[] b={2,4,3};
+        int[] a={1,2,3};
+        int[] b={1,2,3};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
-//        ListNode listb=newList(b);
+        ListNode listb=newList(b);
 //        showList(a1.addTwoNumbers(lista,listb));
-        showList(a1.deleteDuplicates(lista));
+        //showList(a1.deleteDuplicates(lista));
+        //System.out.println(a1.listLength(lista));
+        System.out.println(Arrays.toString(a1.splitListToParts(lista, 5)));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -234,6 +237,45 @@ public class MyListNode {
         }
         curd.next=xhead.next;
         return dhead.next;
+    }
+
+
+    //725. 分隔链表
+    public ListNode[] splitListToParts(ListNode head, int k) {
+        int length=listLength(head);
+        int number=length/k!=0?length/k:length;
+        int remainder=length/k!=0?length%k:0;
+        int j=0;
+        ListNode[] result=new ListNode[k];
+        while (head!=null){
+            int n=length<k?1:number;
+            if (remainder>0){
+                n++;
+                remainder--;
+            }
+            ListNode temp=new ListNode(0,null);
+            ListNode curt=temp;
+            while (n>0){
+                curt.next=new ListNode(head.val,head.next);
+                curt=curt.next;
+                head=head.next;
+                n--;
+            }
+            curt.next=null;
+            result[j]=temp.next;
+            j++;
+
+        }
+        return result;
+    }
+    public int listLength(ListNode head){
+        int length=0;
+        ListNode cur=head;
+        while (cur!=null){
+            length++;
+            cur=cur.next;
+        }
+        return length;
     }
 
 
