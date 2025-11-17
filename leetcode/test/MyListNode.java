@@ -1,7 +1,9 @@
 package src.leetcode.test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 
 public class MyListNode {
     public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class MyListNode {
 //        showList(a1.addTwoNumbers(lista,listb));
         //showList(a1.deleteDuplicates(lista));
         //System.out.println(a1.listLength(lista));
-        System.out.println(Arrays.toString(a1.splitListToParts(lista, 5)));
+        //System.out.println(Arrays.toString(a1.splitListToParts(lista, 5)));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -278,6 +280,17 @@ public class MyListNode {
         return length;
     }
 
+    //876. 链表的中间结点
+    public ListNode middleNode(ListNode head) {
+        List<ListNode> list=new ArrayList<>();
+        int length=0;
+        while (head!=null){
+            length++;
+            list.add(head);
+            head=head.next;
+        }
+        return list.get(length/2);
+    }
 
 
     //-------------------------
