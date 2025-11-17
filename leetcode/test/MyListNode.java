@@ -1,7 +1,6 @@
 package src.leetcode.test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
@@ -290,6 +289,25 @@ public class MyListNode {
             head=head.next;
         }
         return list.get(length/2);
+    }
+
+
+    //141. 环形链表
+    public boolean hasCycle(ListNode head) {
+        ListNode fast=head;
+        HashSet<ListNode> slowSet=new HashSet<>();
+        HashSet<ListNode> fastSet=new HashSet<>();
+        while (head!=null&&fast!=null&&fast.next!=null){
+            if (fastSet.contains(head) || slowSet.contains(fast)){
+                return true;
+            }else {
+                fastSet.add(head);
+                slowSet.add(fast);
+            }
+            head=head.next;
+            fast=fast.next.next;
+        }
+        return false;
     }
 
 
