@@ -214,6 +214,29 @@ public class MyListNode {
     }
 
 
+    //86. 分隔链表
+    public ListNode partition(ListNode head, int x) {
+        //ListNode dummy=new ListNode(0,head);
+        ListNode dhead=new ListNode(0,null);
+        ListNode curd=dhead;
+        ListNode xhead=new ListNode(0,null);
+        ListNode curx=xhead;
+        ListNode cur=head;
+        while (cur!=null){
+            if (cur.val<x){
+                curd.next=new ListNode(cur.val,null);
+                curd=curd.next;
+            }else {
+                curx.next=new ListNode(cur.val,null);
+                curx=curx.next;
+            }
+            cur=cur.next;
+        }
+        curd.next=xhead.next;
+        return dhead.next;
+    }
+
+
 
     //-------------------------
 
