@@ -1,13 +1,16 @@
 package src.leetcode.test;
 
+import java.util.HashSet;
+
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={2,4,3};
+        int[] a={1,1,1};
         int[] b={2,4,3};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
-        ListNode listb=newList(b);
-        showList(a1.addTwoNumbers(lista,listb));
+//        ListNode listb=newList(b);
+//        showList(a1.addTwoNumbers(lista,listb));
+        showList(a1.deleteDuplicates(lista));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -194,6 +197,21 @@ public class MyListNode {
     }
 
 
+    //83. 删除排序链表中的重复元素
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode dummy=new ListNode(0,head);
+        ListNode cur=dummy;
+        int last=-9999;
+        while (cur!=null&&cur.next!=null){
+            if (cur.next.val!=last){
+                last=cur.next.val;
+                cur=cur.next;
+            }else {
+                cur.next=cur.next.next;
+            }
+        }
+        return dummy.next;
+    }
 
 
 
