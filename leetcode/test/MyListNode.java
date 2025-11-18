@@ -294,20 +294,30 @@ public class MyListNode {
 
     //141. 环形链表
     public boolean hasCycle(ListNode head) {
-        ListNode fast=head;
-        HashSet<ListNode> slowSet=new HashSet<>();
-        HashSet<ListNode> fastSet=new HashSet<>();
+        ListNode fast=head!=null&&head.next!=null ? head.next:null;
         while (head!=null&&fast!=null&&fast.next!=null){
-            if (fastSet.contains(head) || slowSet.contains(fast)){
+            if (head==fast){
                 return true;
-            }else {
-                fastSet.add(head);
-                slowSet.add(fast);
             }
             head=head.next;
             fast=fast.next.next;
         }
         return false;
+    }
+
+    //142. 环形链表II  存疑
+    public ListNode detectCycle(ListNode head) {
+        ListNode fast=head!=null&&head.next!=null ? head.next:null;
+        ListNode temp=head;
+        while (head!=null&&fast!=null&&fast.next!=null){
+            if (head==fast){
+                return temp;
+            }
+            temp=head;
+            head=head.next;
+            fast=fast.next.next;
+        }
+        return null;
     }
 
 
