@@ -6,8 +6,8 @@ public class Recursion {
         Recursion recursion=new Recursion();
         //System.out.println(recursion.fact(a));
         //System.out.println(recursion.myPow(2,1000000));
-        System.out.println(recursion.isPowerOfFour(4));
-        //System.out.println(2/3);
+        //System.out.println(recursion.isPowerOfFour(4));
+        System.out.println(recursion.gcd(12,32));
     }
 
     //阶乘
@@ -15,6 +15,12 @@ public class Recursion {
         if (a==1)
             return a;
         return a*fact(a-1);
+    }
+
+    //最大公约数
+    public int gcd(int a,int b){
+        if (b==0) return a;
+        return gcd(b,a%b);
     }
 
     //50.Pow(x,n) 看不明白答案 放弃
