@@ -276,24 +276,6 @@ class Solution {
         return left;
     }
 
-    //50.Pow(x,n) 看不明白答案 放弃
-    public double myPow(double x, int n) {
-        double result = 1;
-        boolean bn = false;
-        if (x == 1)
-            return 1;
-        if (n < 0) {
-            n = -n;
-            bn = true;
-        }
-        while (n > 0) {
-            result = result * x;
-            n--;
-        }
-        if (bn)
-            result = 1 / result;
-        return result;
-    }
 
     //34. 在排序数组中查找元素的第一个和最后一个位置 [2,2]2 放弃
     public int[] searchRange(int[] nums, int target) {
