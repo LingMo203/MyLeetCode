@@ -305,18 +305,24 @@ public class MyListNode {
         return false;
     }
 
-    //142. 环形链表II  存疑
+    //142. 环形链表II
     public ListNode detectCycle(ListNode head) {
-        ListNode fast=head!=null&&head.next!=null ? head.next:null;
-        ListNode temp=head;
-        while (head!=null&&fast!=null&&fast.next!=null){
-            if (head==fast){
-                return temp;
-            }
-            temp=head;
-            head=head.next;
+        if (head==null||head.next==null)
+            return null;
+        ListNode slow=head;
+        ListNode fast=head;
+        ListNode cur=head;
+        do {
+            slow=slow.next;
             fast=fast.next.next;
-        }
+            if (slow==fast){
+                while (cur!=slow) {
+                    cur = cur.next;
+                    slow = slow.next;
+                }
+                return cur;
+            }
+        }while (slow!=null&&fast!=null&&fast.next!=null);
         return null;
     }
 
