@@ -6,7 +6,7 @@ public class Recursion {
         Recursion recursion=new Recursion();
         //System.out.println(recursion.fact(a));
         //System.out.println(recursion.myPow(2,1000000));
-        System.out.println(recursion.isPowerOfThree(2147483647));
+        System.out.println(recursion.isPowerOfFour(4));
         //System.out.println(2/3);
     }
 
@@ -35,6 +35,20 @@ public class Recursion {
         else if (n>x) return 0;
         return pot(n*3,x);
     }
+
+    //342. 4 的幂
+    public boolean isPowerOfFour(int n) {
+        return n==1?true:pof(4,n)==1;
+    }
+    public int pof(long n,int x){
+        if (n==x) return 1;
+        else if (n>x) return 0;
+        return pof(n*4,x);
+    }
+
+    //
+
+
 
 
 }
