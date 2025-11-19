@@ -5,7 +5,9 @@ public class Recursion {
         int a=5;
         Recursion recursion=new Recursion();
         //System.out.println(recursion.fact(a));
-        System.out.println(recursion.myPow(2,1000000));
+        //System.out.println(recursion.myPow(2,1000000));
+        System.out.println(recursion.isPowerOfThree(2147483647));
+        //System.out.println(2/3);
     }
 
     //阶乘
@@ -26,6 +28,13 @@ public class Recursion {
 
     //326. 3 的幂
     public boolean isPowerOfThree(int n) {
-        return false;
+        return n==1?true:pot(3,n)==1;
     }
+    public int pot(long n,int x){
+        if (n==x) return 1;
+        else if (n>x) return 0;
+        return pot(n*3,x);
+    }
+
+
 }
