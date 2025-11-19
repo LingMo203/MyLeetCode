@@ -321,6 +321,17 @@ public class MyListNode {
     }
 
 
+    //2154. 将找到的值乘以 2
+    public int findFinalValue(int[] nums, int original) {
+        HashSet<Integer> hashSet=new HashSet<>();
+        for (int num:nums){
+            hashSet.add(num);
+        }
+        while (hashSet.contains(original)){
+            original*=2;
+        }
+        return original;
+    }
     //-------------------------
 
 
