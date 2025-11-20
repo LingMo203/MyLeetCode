@@ -176,6 +176,16 @@ class Solution {
         return same2(leftRoot.left,rightRoot.right)&&same2(leftRoot.right,rightRoot.left);
     }
 
+    //104. 二叉树的最大深度
+    public int maxDepth(TreeNode root) {
+        return deep(root,0);
+    }
+    public int deep(TreeNode root,int time){
+        if (root==null) return --time;
+        time++;
+        return Math.max(deep(root.left,time),deep(root.right,time));
+    }
+
 
 
 
