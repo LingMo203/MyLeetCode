@@ -109,6 +109,34 @@ class Solution {
 
 
 
+    //103. 二叉树的锯齿形层序遍历
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> result=new ArrayList<>();
+        Queue<TreeNode> queue=new LinkedList<>();
+        if (root!=null) queue.add(root);
+        boolean s=false;
+        while (!queue.isEmpty()){
+            int size=queue.size();
+            LinkedList<Integer> list=new LinkedList<>();
+            while (size-->0){
+                TreeNode temp=queue.remove();
+                if (s){
+                    list.addFirst(temp.val);
+                }else {
+                    list.addLast(temp.val);
+                }
+                if (temp.left!=null)
+                    queue.add(temp.left);
+                if (temp.right!=null)
+                    queue.add(temp.right);
+            }
+            result.add(list);
+            s=!s;
+        }
+        return result;
+    }
+
+
 
 
 
