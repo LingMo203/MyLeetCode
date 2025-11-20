@@ -1,9 +1,6 @@
 package src.leetcode.test.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class TreeNodeTest {
     public static void main(String[] args) {
@@ -145,6 +142,38 @@ class Solution {
         invertTree(root.left);
         invertTree(root.right);
         return root;
+    }
+
+    //101. 对称二叉树
+    public boolean isSymmetric(TreeNode root) {
+        TreeNode rightTree=root.right;
+        TreeNode leftTree=itree(root.left);
+        return same(leftTree,rightTree);
+    }
+    public TreeNode itree(TreeNode root){
+        if (root==null) return root;
+        TreeNode temp=root.left;
+        root.left=root.right;
+        root.right=temp;
+        itree(root.left);
+        itree(root.right);
+        return root;
+    }
+    public boolean same(TreeNode root1,TreeNode root2){
+        if (root1==null&&root2==null) return true;
+        else if (root1==null||root2==null) return false;
+        else if (root1.val!= root2.val) return false;
+        return same(root1.left,root2.left)&&same(root1.right,root2.right);
+    }
+    //省去翻转步骤
+    public boolean isSymmetric2(TreeNode root){
+        return same2(root.left,root.right);
+    }
+    public boolean same2(TreeNode leftRoot,TreeNode rightRoot){
+        if (leftRoot==null&&rightRoot==null) return true;
+        else if (leftRoot==null||rightRoot==null) return false;
+        else if (leftRoot.val!= rightRoot.val) return false;
+        return same2(leftRoot.left,rightRoot.right)&&same2(leftRoot.right,rightRoot.left);
     }
 
 
