@@ -177,13 +177,18 @@ class Solution {
     }
 
     //104. 二叉树的最大深度
-    public int maxDepth(TreeNode root) {
+    public int maxDepth2(TreeNode root) {
         return deep(root,0);
     }
     public int deep(TreeNode root,int time){
         if (root==null) return time;
         time++;
         return Math.max(deep(root.left,time),deep(root.right,time));
+    }
+    //后序遍历
+    public int maxDepth(TreeNode root) {
+        if (root==null) return 0;
+        return 1+Math.max(maxDepth(root.left),maxDepth(root.right));
     }
 
 
