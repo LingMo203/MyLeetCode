@@ -5,7 +5,6 @@ import java.util.*;
 public class TreeNodeTest {
     public static void main(String[] args) {
      TreeNodeTest test=new TreeNodeTest();
-
     }
 }
 
@@ -190,6 +189,16 @@ class Solution {
         if (root==null) return 0;
         return 1+Math.max(maxDepth(root.left),maxDepth(root.right));
     }
+
+    //111. 二叉树的最小深度
+    public int minDepth(TreeNode root){
+        if (root==null) return 0;
+        if (root.right==null) return minDepth(root.left)+1;
+        else if (root.left==null) return minDepth(root.right)+1;
+        return 1+Math.min(minDepth(root.left),minDepth(root.right));
+    }
+
+
 
 
 
