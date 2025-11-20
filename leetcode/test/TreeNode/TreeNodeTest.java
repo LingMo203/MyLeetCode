@@ -181,7 +181,7 @@ class Solution {
         return deep(root,0);
     }
     public int deep(TreeNode root,int time){
-        if (root==null) return --time;
+        if (root==null) return time;
         time++;
         return Math.max(deep(root.left,time),deep(root.right,time));
     }
