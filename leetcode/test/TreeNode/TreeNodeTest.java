@@ -257,6 +257,36 @@ class Solution {
         return result;
     }
 
+    //257. 二叉树的所有路径
+    public List<String> binaryTreePaths(TreeNode root) {
+        List<String> result=new ArrayList<>();
+        List<Integer> list=new ArrayList<>();
+        btp(root,result,list);
+        return result;
+    }
+    public void btp(TreeNode root,List<String> result,List<Integer> list){
+        if (root==null) {
+            return;
+        }
+        list.add(root.val);
+        if (root.left==null&&root.right==null){
+            String re = "";
+            for (int i=0;i<list.size();i++){
+                if (i==0){
+                    re = list.get(i) + "";
+                }else {
+                    re=re+"->"+list.get(i);
+                }
+            }
+            result.add(re);
+            list.remove(list.size()-1);
+            return;
+        }
+        btp(root.left,result,list);
+        btp(root.right,result,list);
+        list.remove(list.size()-1);
+    }
+
 
 
 
