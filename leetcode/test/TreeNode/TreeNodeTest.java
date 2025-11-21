@@ -198,6 +198,39 @@ class Solution {
         return 1+Math.min(minDepth(root.left),minDepth(root.right));
     }
 
+    //222. 完全二叉树的节点个数 层序遍历
+    public int countNodes(TreeNode root) {
+        if (root==null) return 0;
+        Queue<TreeNode> queue=new LinkedList<>();
+        queue.add(root);
+        int time=0;
+        boolean k=true;
+        while (!queue.isEmpty()&&k){
+            int size=queue.size();
+            while (size-->0){
+                TreeNode temp=queue.remove();
+                time++;
+                if (temp.left==null){
+                    k=false;
+                    break;
+                }else {
+                    queue.add(temp.left);
+                }
+                if (temp.right==null){
+                    k=false;
+                    break;
+                }else {
+                    queue.add(temp.right);
+                }
+            }
+        }
+        while (!queue.isEmpty()){
+            queue.remove();
+            time++;
+        }
+        return time;
+    }
+
 
 
 
