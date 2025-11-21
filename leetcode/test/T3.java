@@ -4,6 +4,16 @@ public class T3 {
     public static void main(String[] args) {
         Solution3 solution=new Solution3();
         int a=1534236469;
+        String s="-2147483648";
+        String h="-2147483647";
+        String b= String.valueOf(Integer.MAX_VALUE);
+        System.out.println(solution.myAtoi(h));
+        int n=(Integer.MAX_VALUE-6)/10;
+        //214748364
+        //System.out.println(n);
+        //-214748364<=
+        int m=((Integer.MIN_VALUE+7)/10);
+        System.out.println(m);
     }
 }
 class Solution3 {
@@ -24,5 +34,44 @@ class Solution3 {
             result=result*10+(num.charAt(i)-'0');
         }
         return !f ? result:result*-1;
+    }
+
+    //8. 字符串转换整数 (atoi)
+    public int myAtoi(String s) {
+        int result=0;
+        boolean fu=false,w=false,g=true,k=true;
+        for (int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if (c==' '&&k) continue;
+            else if(c==' ') break;
+            else if (c=='-'){
+                if (w) break;
+                fu=true;
+                w=true;
+                k=false;
+                continue;
+            }else if (c=='+'){
+                if (w) break;
+                k=false;
+                w=true;
+            } else if (c=='0'&&g) {
+                w=true;
+                k=false;
+                continue;
+            }
+            else if (!Character.isDigit(c)||(!Character.isDigit(c)&&w)) break;
+            else if (Character.isDigit(c)){
+                int a=c-'0';
+                if (result*-1<((Integer.MIN_VALUE+a)/10)&&fu)
+                    return Integer.MIN_VALUE;
+                else if (result>(Integer.MAX_VALUE-a)/10&&!fu)
+                    return Integer.MAX_VALUE;
+                result=result*10+a;
+                w=true;
+                g=false;
+                k=false;
+            }
+        }
+        return fu ? result*-1:result;
     }
 }
