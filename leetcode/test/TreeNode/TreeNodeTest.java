@@ -231,6 +231,33 @@ class Solution {
         return time;
     }
 
+    //112. 路径总和 放弃
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if (root==null)
+            return false;
+        if (targetSum==0)
+            return true;
+        targetSum-=root.val;
+        return hasPathSum(root.left,targetSum)||hasPathSum(root.right,targetSum);
+    }
+
+    //110.平衡二叉树
+    public boolean isBalanced(TreeNode root) {
+        return ib(root)!=-1;
+    }
+    public int ib(TreeNode root){
+        if (root==null) return 0;
+        int left=ib(root.left);
+        if (left==-1) return -1;
+        int right=ib(root.right);
+        if (right==-1) return -1;
+        int result;
+        if (Math.abs(left-right)>1) return -1;
+        else result=Math.max(left,right)+1;
+        return result;
+    }
+
+
 
 
 
