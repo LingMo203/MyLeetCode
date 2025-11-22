@@ -74,4 +74,14 @@ class Solution3 {
         }
         return fu ? result*-1:result;
     }
+
+    //3190. 使所有元素都可以被 3 整除的最少操作数
+    public int minimumOperations(int[] nums) {
+        int time=0;
+        for (int num:nums){
+            if (num%3==0) continue;
+            time++;
+        }
+        return time;
+    }
 }
