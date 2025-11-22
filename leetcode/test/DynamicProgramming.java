@@ -3,7 +3,9 @@ package src.leetcode.test;
 public class DynamicProgramming {
     public static void main(String[] args) {
         DynamicProgramming dp=new DynamicProgramming();
-        System.out.println(dp.fib(1));
+        int[] nums={0,2,2,1};
+        //System.out.println(dp.fib(1));
+        System.out.println(dp.minCostClimbingStairs(nums));
     }
 
 
@@ -33,6 +35,15 @@ public class DynamicProgramming {
             fb[1]=sum;
         }
         return fb[1];
+    }
+
+    //746. 使用最小花费爬楼梯
+    public int minCostClimbingStairs(int[] cost) {
+        int[] dp=new int[cost.length+1];
+        for (int i=2;i<dp.length;i++){
+            dp[i]=Math.min(dp[i-1]+cost[i-1],dp[i-2]+cost[i-2]);
+        }
+        return dp[cost.length];
     }
 
 
