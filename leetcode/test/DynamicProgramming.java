@@ -21,6 +21,20 @@ public class DynamicProgramming {
         return fb[1];
     }
 
+    //70. 爬楼梯
+    public int climbStairs(int n) {
+        if (n==1) return 1;
+        int[] fb=new int[2];
+        fb[0]=1;
+        fb[1]=2;
+        for (int i=3;i<=n;i++){
+            int sum=fb[0]+fb[1];
+            fb[0]=fb[1];
+            fb[1]=sum;
+        }
+        return fb[1];
+    }
+
 
 
 
