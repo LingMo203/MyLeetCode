@@ -277,39 +277,6 @@ class Solution {
     }
 
 
-    //34. 在排序数组中查找元素的第一个和最后一个位置 [2,2]2 放弃
-    public int[] searchRange(int[] nums, int target) {
-        int left = 0, right = nums.length - 1, middle = 0;
-        while (left <= right) {
-            middle = (right - left) / 2 + left;
-            if (target == nums[middle]) {
-                int n = 0;
-                if (right != middle) {
-                    while (nums[middle + n] == target && middle + n < nums.length - 1) {
-                        n++;
-                    }
-                    return new int[]{right, middle + n};
-                } else if (left != middle) {
-                    while (nums[middle - n] == target && middle - n > 0)
-                        n++;
-                    return new int[]{middle - n, middle};
-                } else {
-                    return new int[]{middle, middle};
-                }
-            } else if (target > nums[middle]) {
-                left = middle + 1;
-            } else {
-                right = right - 1;
-            }
-        }
-        return new int[]{-1, -1};
-//        if (middle!=nums.length-1 && nums[middle + 1] == target)
-//            return new int[]{middle, middle + 1};
-//        else if (middle!=0 && nums[middle - 1] == target)
-//            return new int[]{middle - 1, middle};
-//        else
-//            return new int[]{-1,-1};
-    }
 
     //242.有效的字母异位词
     public boolean isAnagram(String s, String t) {
