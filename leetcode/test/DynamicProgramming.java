@@ -5,7 +5,8 @@ public class DynamicProgramming {
         DynamicProgramming dp=new DynamicProgramming();
         int[] nums={0,2,2,1};
         //System.out.println(dp.fib(1));
-        System.out.println(dp.minCostClimbingStairs(nums));
+        //System.out.println(dp.minCostClimbingStairs(nums));
+        System.out.println(dp.uniquePaths(5,5));
     }
 
 
@@ -44,6 +45,21 @@ public class DynamicProgramming {
             dp[i]=Math.min(dp[i-1]+cost[i-1],dp[i-2]+cost[i-2]);
         }
         return dp[cost.length];
+    }
+
+    //62. 不同路径
+    public int uniquePaths(int m, int n) {
+        int[][] dp=new int[Math.max(m,n)+1][Math.max(m,n)+1];
+        for (int i=0;i<=Math.max(m,n);i++){
+            dp[1][i]=1;
+            dp[i][1]=1;
+        }
+        for (int i=2;i<=m;i++){
+            for (int j=2;j<=n;j++){
+                dp[i][j]=dp[i][j-1]+dp[i-1][j];
+            }
+        }
+        return dp[m][n];
     }
 
 
