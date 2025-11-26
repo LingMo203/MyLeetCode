@@ -1,7 +1,7 @@
 package src.leetcode.test;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.List;
 
 public class DynamicProgramming {
     public static void main(String[] args) {
@@ -12,7 +12,8 @@ public class DynamicProgramming {
         //System.out.println(dp.fib(1));
         //System.out.println(dp.minCostClimbingStairs(nums));
         //System.out.println(dp.uniquePaths(5,5));
-        System.out.println(dp.uniquePathsWithObstacles(dnums));
+        //System.out.println(dp.uniquePathsWithObstacles(dnums));
+        System.out.println(dp.generate(5));
 
     }
 
@@ -96,6 +97,27 @@ public class DynamicProgramming {
             }
         }
         return dp[m][n];
+    }
+
+
+    //118. 杨辉三角
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> result=new ArrayList<>();
+        if (numRows>=1)
+            result.add(new ArrayList<>(List.of(1)));
+        if (numRows>=2)
+            result.add(new ArrayList<>(List.of(1,1)));
+        for (int i=1;i<=numRows-2;i++){
+            List<Integer> list=new ArrayList<>();
+            list.add(1);
+            List<Integer> temp= result.get(i);
+            for (int j=1;j<=i;j++){
+                list.add(temp.get(j-1)+temp.get(j));
+            }
+            list.add(1);
+            result.add(list);
+        }
+        return result;
     }
 
 
