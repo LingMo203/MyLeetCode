@@ -1,12 +1,13 @@
 package src.leetcode.test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class DynamicProgramming {
     public static void main(String[] args) {
         DynamicProgramming dp=new DynamicProgramming();
-        int[] nums={0,2,2,1};
+        int[] nums={1,2,4};
         //int[][] dnums={{0,0,0,0},{0,1,0,0},{0,0,0,0},{0,0,1,0},{0,0,0,0}};
         int[][] dnums={{0,0},{1,1},{0,0}};
         //System.out.println(dp.fib(1));
@@ -14,8 +15,8 @@ public class DynamicProgramming {
         //System.out.println(dp.uniquePaths(5,5));
         //System.out.println(dp.uniquePathsWithObstacles(dnums));
         //System.out.println(dp.generate(5));
-        System.out.println(dp.getRow(5));
-
+        //System.out.println(dp.getRow(5));
+        System.out.println(dp.maxProfit(nums));
     }
 
 
@@ -137,6 +138,20 @@ public class DynamicProgramming {
             list=temp;
         }
         return list;
+    }
+
+    //121. 买卖股票的最佳时机
+    public int maxProfit(int[] prices) {
+        int[] dp=new int[prices.length];
+        dp[0]=prices[0];
+        int min=prices[0],max=0;
+        for (int i=1;i<prices.length;i++){
+            min=Math.min(min,prices[i]);
+            int x=prices[i] - min;
+            dp[i]= Math.max(x, prices[i] - prices[i-1]);
+            max=Math.max(dp[i],max);
+        }
+        return max;
     }
 
 
