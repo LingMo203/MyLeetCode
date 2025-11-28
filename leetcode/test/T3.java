@@ -126,4 +126,16 @@ class Solution3 {
         }
         return result;
     }
+
+    //11. 盛最多水的容器
+    public int maxArea(int[] height) {
+        int max=0,left=0,right=height.length-1;
+        while (left<=right){
+            int length=right-left,width=Math.min(height[left],height[right]);
+            max=Math.max(max,length*width);
+            if (height[left]<height[right]) left++;
+            else right--;
+        }
+        return max;
+    }
 }

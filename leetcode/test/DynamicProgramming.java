@@ -10,13 +10,16 @@ public class DynamicProgramming {
         int[] nums={1,2,4};
         //int[][] dnums={{0,0,0,0},{0,1,0,0},{0,0,0,0},{0,0,1,0},{0,0,0,0}};
         int[][] dnums={{0,0},{1,1},{0,0}};
+        String strs="aaabaaaabaaabaaaabaaaabaaaabaaaaba";
+        String strs2="aaaba";
         //System.out.println(dp.fib(1));
         //System.out.println(dp.minCostClimbingStairs(nums));
         //System.out.println(dp.uniquePaths(5,5));
         //System.out.println(dp.uniquePathsWithObstacles(dnums));
         //System.out.println(dp.generate(5));
         //System.out.println(dp.getRow(5));
-        System.out.println(dp.maxProfit(nums));
+        //System.out.println(dp.maxProfit(nums));
+        System.out.println(dp.maxRepeating(strs,strs2));
     }
 
 
@@ -167,6 +170,26 @@ public class DynamicProgramming {
             dp[i]=dp[i-3]+dp[i-2]+dp[i-1];
         }
         return dp[n];
+    }
+
+    //1668. 最大重复子字符串 放弃
+    public int maxRepeating(String sequence, String word) {
+        char[] csequence=sequence.toCharArray();
+        char[] cword=word.toCharArray();
+        int j=0,count=0;
+        for (char c : csequence) {
+            char t=cword[j];
+            if (c == cword[j]) {
+                j++;
+                if (j == cword.length) {
+                    count++;
+                    j = 0;
+                }
+            } else {
+                j = 0;
+            }
+        }
+        return count;
     }
 
 
