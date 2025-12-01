@@ -7,7 +7,7 @@ import java.util.List;
 public class DynamicProgramming {
     public static void main(String[] args) {
         DynamicProgramming dp=new DynamicProgramming();
-        int[] nums={1,2,4};
+        int[] nums={2,0,0};
         //int[][] dnums={{0,0,0,0},{0,1,0,0},{0,0,0,0},{0,0,1,0},{0,0,0,0}};
         int[][] dnums={{0,0},{1,1},{0,0}};
         String strs="aaabaaaabaaabaaaabaaaabaaaabaaaaba";
@@ -19,7 +19,8 @@ public class DynamicProgramming {
         //System.out.println(dp.generate(5));
         //System.out.println(dp.getRow(5));
         //System.out.println(dp.maxProfit(nums));
-        System.out.println(dp.maxRepeating(strs,strs2));
+        //System.out.println(dp.maxRepeating(strs,strs2));
+        System.out.println(dp.canJump(nums));
     }
 
 
@@ -190,6 +191,18 @@ public class DynamicProgramming {
             }
         }
         return count;
+    }
+
+    //55. 跳跃游戏
+    public boolean canJump(int[] nums) {
+        int[] dp=new int[nums.length];
+        dp[0]=nums[0];
+        for (int i=1;i<nums.length;i++){
+            if (dp[0]==0) return false;
+            dp[i]=Math.max(nums[i],dp[i-1]-1);
+            if (dp[i]==0&&i!=nums.length-1) return false;
+        }
+        return true;
     }
 
 
