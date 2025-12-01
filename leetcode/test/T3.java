@@ -1,13 +1,14 @@
 package src.leetcode.test;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class T3 {
     public static void main(String[] args) {
         Solution3 solution=new Solution3();
         int a=1534236469;
-        int[] nums={2,2};
-        String s="-2147483648";
+        int[] nums={2,2,3,1};
+        int[][] intervals={{2,3},{4,5},{6,7},{8,9},{1,10}};
+        String s="23";
         String h="-2147483647";
 //        String b= String.valueOf(Integer.MAX_VALUE);
 //        System.out.println(solution.myAtoi(h));
@@ -17,7 +18,12 @@ public class T3 {
         //-214748364<=
 //        int m=((Integer.MIN_VALUE+7)/10);
 //        System.out.println(m);
-        System.out.println(Arrays.toString(solution.searchRange(nums, 2)));
+        //System.out.println(Arrays.toString(solution.searchRange(nums, 2)));
+        //System.out.println(solution.letterCombinations(s));
+        //System.out.println(Arrays.deepToString(solution.merge(intervals)));
+        long fh=Integer.MAX_VALUE;
+        System.out.println(fh+1);
+        System.out.println(solution.thirdMax(nums));
     }
 }
 class Solution3 {
@@ -138,4 +144,101 @@ class Solution3 {
         }
         return max;
     }
+
+    //17. 电话号码的字母组合 放弃
+    public List<String> letterCombinations(String digits) {
+        List<String> result=new ArrayList<>();
+        String[] s=new String[10];
+        s[2]="abc";s[3]="def";s[4]="ghi";s[5]="jkl";
+        s[6]="mno";s[7]="pqrs";s[8]="tuv";s[9]="wxyz";
+        List<char[]> each=new ArrayList<>();
+        for (int i=0;i<digits.length();i++){
+            int d=digits.charAt(i)-'0';
+            each.add(s[d].toCharArray());
+        }
+        lc(result,each,0,"",0);
+        return result;
+    }
+    public void lc(List<String> result,List<char[]> each,int time,String temp,int ltime){
+        if (time==each.size()){
+            result.add(temp);
+            time--;
+            return;
+        }
+        temp=temp+each.get(time)[ltime];
+        time++;
+        ltime++;
+        lc(result,each,time,temp,ltime);
+    }
+
+    //56. 合并区间 放弃
+    public int[][] merge(int[][] intervals) {
+        ArrayList<int[]> list=new ArrayList<>();
+        list.add(intervals[0]);
+        for (int i=1;i<intervals.length;i++){
+            int left=intervals[i][0];
+            int right=intervals[i][1];
+            for (int[] ints : list) {
+                int kleft = ints[0];
+                int kright = ints[1];
+                if (left-1>kright||right+1<kleft){
+                    list.add(new int[]{left,right});
+                    break;
+                }else if (left>=kleft&&right<=kright){
+                    break;
+                }else {
+                    list.remove(ints);
+                    list.add(new int[]{Math.min(left,kleft),Math.max(right,kright)});
+                    break;
+                }
+            }
+        }
+        int[][] result=new int[list.size()][2];
+        for (int i=0;i<result.length;i++){
+            result[i]=list.get(i);
+        }
+        return result;
+    }
+
+    //414. 第三大的数
+    public int thirdMax(int[] nums) {
+        long first=Integer.MIN_VALUE,second=Integer.MIN_VALUE,third=Integer.MIN_VALUE;
+        first--;second--;third--;
+        for (long num:nums){
+            if (num>first){
+                third=second;
+                second=first;
+                first=num;
+            }else if (num>second&&num!=first){
+                third=second;
+                second=num;
+            }else if (num>third&&num!=first&&num!=second){
+                third=num;
+            }
+        }
+        return third<Integer.MIN_VALUE? (int) first :(int)third;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
