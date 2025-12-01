@@ -219,6 +219,37 @@ class Solution3 {
         return third<Integer.MIN_VALUE? (int) first :(int)third;
     }
 
+    //412. Fizz Buzz
+    public List<String> fizzBuzz(int n) {
+        List<String> result=new ArrayList<>();
+        for (int i=1;i<=n;i++){
+            if (i%3==0&&i%5==0){
+                result.add("FizzBuzz");
+            }else if (i%3==0){
+                result.add("Fizz");
+            }else if (i%5==0){
+                result.add("Buzz");
+            }else {
+                result.add(String.valueOf(i));
+            }
+        }
+        return result;
+    }
+
+    //485. 最大连续 1 的个数
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int result=0,count=0;
+        for (int num:nums){
+            if (num==1){
+                count++;
+            }else {
+                result=Math.max(count,result);
+                count=0;
+            }
+        }
+        return Math.max(count,result);
+    }
+
 
 
 
