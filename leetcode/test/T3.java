@@ -8,8 +8,8 @@ public class T3 {
         int a=1534236469;
         int[] nums={2,2,3,1};
         int[][] intervals={{2,3},{4,5},{6,7},{8,9},{1,10}};
-        String s="23";
-        String h="-2147483647";
+        String s="cbahbacl";
+        String h="abc";
         String[] strs={"eat","tea","tan","ate","nat","bat"};
 //        String b= String.valueOf(Integer.MAX_VALUE);
 //        System.out.println(solution.myAtoi(h));
@@ -25,7 +25,8 @@ public class T3 {
 //        long fh=Integer.MAX_VALUE;
 //        System.out.println(fh+1);
 //        System.out.println(solution.thirdMax(nums));
-        System.out.println(solution.groupAnagrams(strs));
+        //System.out.println(solution.groupAnagrams(strs));
+        System.out.println(solution.findAnagrams(s,h));
     }
 }
 class Solution3 {
@@ -270,6 +271,29 @@ class Solution3 {
                 result.add(list);
             } else {
                 result.get(hashMap.get(tostr)).add(str);
+            }
+        }
+        return result;
+    }
+
+    //438. 找到字符串中所有字母异位词
+    public List<Integer> findAnagrams(String s, String p) {
+        int[] sstrs=new int[26];
+        int[] pstrs=new int[26];
+        for (int i=0;i<p.length();i++){
+            pstrs[p.charAt(i)-'a']++;
+        }
+        List<Integer> result=new ArrayList<>();
+        int length=p.length(),j = 0;
+        for (int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if (i>=length){
+                sstrs[s.charAt(j)-'a']--;
+                j++;
+            }
+            sstrs[c-'a']++;
+            if (Arrays.equals(sstrs,pstrs)){
+                result.add(i-length+1);
             }
         }
         return result;
