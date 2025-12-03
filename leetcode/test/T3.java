@@ -10,6 +10,7 @@ public class T3 {
         int[][] intervals={{2,3},{4,5},{6,7},{8,9},{1,10}};
         String s="23";
         String h="-2147483647";
+        String[] strs={"eat","tea","tan","ate","nat","bat"};
 //        String b= String.valueOf(Integer.MAX_VALUE);
 //        System.out.println(solution.myAtoi(h));
 //        int n=(Integer.MAX_VALUE-6)/10;
@@ -21,9 +22,10 @@ public class T3 {
         //System.out.println(Arrays.toString(solution.searchRange(nums, 2)));
         //System.out.println(solution.letterCombinations(s));
         //System.out.println(Arrays.deepToString(solution.merge(intervals)));
-        long fh=Integer.MAX_VALUE;
-        System.out.println(fh+1);
-        System.out.println(solution.thirdMax(nums));
+//        long fh=Integer.MAX_VALUE;
+//        System.out.println(fh+1);
+//        System.out.println(solution.thirdMax(nums));
+        System.out.println(solution.groupAnagrams(strs));
     }
 }
 class Solution3 {
@@ -248,6 +250,29 @@ class Solution3 {
             }
         }
         return Math.max(count,result);
+    }
+
+    //49. 字母异位词分组
+    public List<List<String>> groupAnagrams(String[] strs) {
+        List<List<String>> result=new ArrayList<>();
+        HashMap<String,Integer> hashMap=new HashMap<>();
+        for (String str : strs) {
+            int[] temp = new int[26];
+            for (int i = 0; i < str.length(); i++) {
+                int b = str.charAt(i) - 'a';
+                temp[b]++;
+            }
+            String tostr = Arrays.toString(temp);
+            if (!hashMap.containsKey(tostr)) {
+                hashMap.put(tostr, hashMap.size());
+                List<String> list = new ArrayList<>();
+                list.add(str);
+                result.add(list);
+            } else {
+                result.get(hashMap.get(tostr)).add(str);
+            }
+        }
+        return result;
     }
 
 
