@@ -6,7 +6,7 @@ public class T3 {
     public static void main(String[] args) {
         Solution3 solution=new Solution3();
         int a=1534236469;
-        int[] nums={100,4,200,1,3,2};
+        int[] nums={0,7,1,4,6};
         int[][] intervals={{2,3},{4,5},{6,7},{8,9},{1,10}};
         String s="cbahbacl";
         String h="abc";
@@ -27,7 +27,8 @@ public class T3 {
 //        System.out.println(solution.thirdMax(nums));
         //System.out.println(solution.groupAnagrams(strs));
         //System.out.println(solution.findAnagrams(s,h));
-        System.out.println(solution.longestConsecutive(nums));
+        //System.out.println(solution.longestConsecutive(nums));
+        System.out.println(solution.trap(nums));
     }
 }
 class Solution3 {
@@ -323,6 +324,52 @@ class Solution3 {
         return maxCount;
     }
 
+    //42. 接雨水
+    public int trap(int[] height) {
+        int left=0,right = 0,sum=0,last=height.length-1;
+        for (int k=0;k<height.length;k++){
+            if (height[k]!=0){
+                left=right=k;
+                break;
+            }
+        }
+        for (int k=height.length-2;k>=0;k--){
+            if (height[k]<height[last]) break;
+            last--;
+        }
+        ArrayList<Integer> temp=new ArrayList<>();
+        for (right=right+1;right<=last;right++){
+            if (height[left]<=height[right]){
+                for (int t:temp){
+                    int h=height[left]-t;
+                    sum=sum+h;
+                }
+                left=right;
+                temp.clear();
+                continue;
+            }
+            temp.add(height[right]);
+        }
+        if (!temp.isEmpty()){
+            temp.add(0,height[left]);
+            int size=temp.size();
+            right=size-1;
+            ArrayList<Integer> tt=new ArrayList<>();
+            for (int sleft=right-1;sleft>=0;sleft--){
+                if (temp.get(right)<=temp.get(sleft)){
+                    for (int t:tt){
+                        int h=temp.get(right)-t;
+                        sum=sum+h;
+                    }
+                    right=sleft;
+                    tt.clear();
+                    continue;
+                }
+                tt.add(temp.get(sleft));
+            }
+        }
+        return sum;
+    }
 
 
 
