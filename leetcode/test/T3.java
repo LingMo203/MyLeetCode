@@ -6,7 +6,7 @@ public class T3 {
     public static void main(String[] args) {
         Solution3 solution=new Solution3();
         int a=1534236469;
-        int[] nums={2,2,3,1};
+        int[] nums={100,4,200,1,3,2};
         int[][] intervals={{2,3},{4,5},{6,7},{8,9},{1,10}};
         String s="cbahbacl";
         String h="abc";
@@ -26,7 +26,8 @@ public class T3 {
 //        System.out.println(fh+1);
 //        System.out.println(solution.thirdMax(nums));
         //System.out.println(solution.groupAnagrams(strs));
-        System.out.println(solution.findAnagrams(s,h));
+        //System.out.println(solution.findAnagrams(s,h));
+        System.out.println(solution.longestConsecutive(nums));
     }
 }
 class Solution3 {
@@ -297,6 +298,29 @@ class Solution3 {
             }
         }
         return result;
+    }
+
+    //128. 最长连续序列
+    public int longestConsecutive(int[] nums) {
+        HashSet<Integer> hashSet=new HashSet<>();
+        for (int num:nums) hashSet.add(num);
+        int maxCount=0;
+        for (int num:nums){
+            int temp=num-1,count=1;
+            while (hashSet.contains(temp)){
+                hashSet.remove(temp);
+                temp--;
+                count++;
+            }
+            temp=num+1;
+            while (hashSet.contains(temp)){
+                hashSet.remove(temp);
+                temp++;
+                count++;
+            }
+            maxCount=Math.max(maxCount,count);
+        }
+        return maxCount;
     }
 
 
