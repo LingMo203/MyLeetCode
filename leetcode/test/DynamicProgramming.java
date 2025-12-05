@@ -7,7 +7,7 @@ import java.util.List;
 public class DynamicProgramming {
     public static void main(String[] args) {
         DynamicProgramming dp=new DynamicProgramming();
-        int[] nums={2,0,0};
+        int[] nums={-2,1};
         //int[][] dnums={{0,0,0,0},{0,1,0,0},{0,0,0,0},{0,0,1,0},{0,0,0,0}};
         int[][] dnums={{0,0},{1,1},{0,0}};
         String strs="aaabaaaabaaabaaaabaaaabaaaabaaaaba";
@@ -20,7 +20,8 @@ public class DynamicProgramming {
         //System.out.println(dp.getRow(5));
         //System.out.println(dp.maxProfit(nums));
         //System.out.println(dp.maxRepeating(strs,strs2));
-        System.out.println(dp.canJump(nums));
+        //System.out.println(dp.canJump(nums));
+        System.out.println(dp.maxSubArray(nums));
     }
 
 
@@ -203,6 +204,19 @@ public class DynamicProgramming {
             if (dp[i]==0&&i!=nums.length-1) return false;
         }
         return true;
+    }
+
+
+    //53. 最大子数组和
+    public int maxSubArray(int[] nums) {
+        int[] dp=new int[nums.length];
+        int max=nums[0];
+        dp[0]=nums[0];
+        for (int i=1;i<nums.length;i++){
+            dp[i]=Math.max(dp[i-1]+nums[i],nums[i]);
+            max=Math.max(dp[i],max);
+        }
+        return max;
     }
 
 
