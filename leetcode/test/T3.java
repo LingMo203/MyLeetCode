@@ -6,7 +6,7 @@ public class T3 {
     public static void main(String[] args) {
         Solution3 solution = new Solution3();
         int a = 1534236469;
-        int[] nums = {1,2};
+        int[] nums = {2,0,2,1,1,0};
         int[][] intervals = {{2, 3}, {4, 5}, {6, 7}, {8, 9}, {1, 10}};
         String s = "cbahbacl";
         String h = "abc";
@@ -30,7 +30,8 @@ public class T3 {
         //System.out.println(solution.longestConsecutive(nums));
         //System.out.println(solution.trap(nums));
         //System.out.println(Arrays.toString(solution.maxSlidingWindow(nums, 5)));
-        solution.rotate(nums,7);
+        //solution.rotate(nums,7);
+        solution.sortColors(nums);
     }
 }
 class Solution3 {
@@ -470,6 +471,21 @@ class Solution3 {
             return num;
         }
         return -1;
+    }
+
+    //75. 颜色分类
+    public void sortColors(int[] nums) {
+        int a=0,b=0,c=0;
+        for (int num:nums){
+            switch (num) {
+                case 0 -> a++;
+                case 1 -> b++;
+                case 2 -> c++;
+            }
+        }
+        Arrays.fill(nums,0,a,0);
+        Arrays.fill(nums,a,a+b,1);
+        Arrays.fill(nums,nums.length-c,nums.length,2);
     }
 
 
