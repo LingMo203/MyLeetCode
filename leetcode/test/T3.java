@@ -4,13 +4,13 @@ import java.util.*;
 
 public class T3 {
     public static void main(String[] args) {
-        Solution3 solution=new Solution3();
-        int a=1534236469;
-        int[] nums={0,7,1,4,6};
-        int[][] intervals={{2,3},{4,5},{6,7},{8,9},{1,10}};
-        String s="cbahbacl";
-        String h="abc";
-        String[] strs={"eat","tea","tan","ate","nat","bat"};
+        Solution3 solution = new Solution3();
+        int a = 1534236469;
+        int[] nums = {1,2};
+        int[][] intervals = {{2, 3}, {4, 5}, {6, 7}, {8, 9}, {1, 10}};
+        String s = "cbahbacl";
+        String h = "abc";
+        String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
 //        String b= String.valueOf(Integer.MAX_VALUE);
 //        System.out.println(solution.myAtoi(h));
 //        int n=(Integer.MAX_VALUE-6)/10;
@@ -28,7 +28,9 @@ public class T3 {
         //System.out.println(solution.groupAnagrams(strs));
         //System.out.println(solution.findAnagrams(s,h));
         //System.out.println(solution.longestConsecutive(nums));
-        System.out.println(solution.trap(nums));
+        //System.out.println(solution.trap(nums));
+        //System.out.println(Arrays.toString(solution.maxSlidingWindow(nums, 5)));
+        solution.rotate(nums,7);
     }
 }
 class Solution3 {
@@ -370,6 +372,91 @@ class Solution3 {
         }
         return sum;
     }
+
+
+    //239. 滑动窗口最大值 超时 放弃
+    public int[] maxSlidingWindow2(int[] nums, int k) {
+        int[] result=new int[nums.length-k+1];
+        ArrayList<Integer> list=new ArrayList<>();
+        int max=0,i=0;
+        for (int j=0;j<nums.length;j++){
+            if (j<k){
+                list.add(nums[j]);
+                max=nums[max]>nums[j]?max:j;
+                if (j==k-1) result[i]=nums[max];
+            }else {
+                i++;
+                list.remove(0);
+                list.add(nums[j]);
+                max=nums[max]>nums[j]?max:j;
+                if (max<i){
+                    max++;
+                    for (int l=0;l<list.size();l++){
+                        max=nums[max]>list.get(l)?max:i+l;
+                    }
+                }
+                result[i]=nums[max];
+            }
+        }
+        return result;
+    }
+    public int[] maxSlidingWindow3(int[] nums, int k) {
+        int[] result=new int[nums.length-k+1];
+        int max=0,i=0,second=1;
+        for (int j=0;j<nums.length;j++){
+            if (j<k){
+                if (nums[j]>=nums[max]){
+                    max=j;
+                    second = max + 1;
+                }else {
+                    if (nums[j]>=nums[second]) second=j;
+                }
+                if (j==k-1) result[i]=nums[max];
+            }else {
+                i++;
+                if (max<i){
+                    if (nums[j] >= nums[second]) second = j;
+                    max = second;
+                    for (int t=max+1;t<=j;t++){
+                        if (nums[t] >= nums[second]) {
+                            second = t;
+                            break;
+                        }
+                    }
+                }else {
+                    if (nums[j] >= nums[max]) {
+                        max = j;
+                        second = max + 1;
+                    } else {
+                        if (nums[j] >= nums[second]) second = j;
+                    }
+                }
+                result[i]=nums[max];
+            }
+        }
+        return result;
+    }
+    public int[] maxSlidingWindow(int[] nums, int k){
+        Deque<Integer> deque=new ArrayDeque<>();
+        int[] result=new int[nums.length-k-1];
+        for (int num:nums){
+            if (!deque.isEmpty()&&num==deque.getFirst()){
+                deque.pollFirst();
+            }
+        }
+        return result;
+    }
+
+    //189. 轮转数组
+    public void rotate(int[] nums, int k) {
+        k=k%nums.length;
+        int[] be=Arrays.copyOf(nums,nums.length-k);
+        int[] end=Arrays.copyOfRange(nums,nums.length-k,nums.length);
+        System.arraycopy(end,0,nums,0,end.length);
+        System.arraycopy(be,0,nums,end.length,be.length);
+    }
+
+
 
 
 
