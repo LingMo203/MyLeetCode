@@ -5,7 +5,7 @@ import java.util.*;
 public class T3 {
     public static void main(String[] args) {
         Solution3 solution = new Solution3();
-        int a = 1534236469;
+        int a = 499979;
         int[] nums = {2,0,2,1,1,0};
         int[][] intervals = {{2, 3}, {4, 5}, {6, 7}, {8, 9}, {1, 10}};
         String s = "cbahbacl";
@@ -31,7 +31,9 @@ public class T3 {
         //System.out.println(solution.trap(nums));
         //System.out.println(Arrays.toString(solution.maxSlidingWindow(nums, 5)));
         //solution.rotate(nums,7);
-        solution.sortColors(nums);
+        //solution.sortColors(nums);
+        //System.out.println(solution.countPrimes(a));
+        System.out.println(solution.computeArea(-3,0,3,4,0,-1,9,2));
     }
 }
 class Solution3 {
@@ -486,6 +488,50 @@ class Solution3 {
         Arrays.fill(nums,0,a,0);
         Arrays.fill(nums,a,a+b,1);
         Arrays.fill(nums,nums.length-c,nums.length,2);
+    }
+
+    //204. 计数质数 当n = 499979超时
+    public int countPrimes(int n) {
+        ArrayList<Integer> list=new ArrayList<>();
+        if (n==0||n==1) return 0;
+        else if (n==2) return 0;
+        list.add(2);
+        for (int i=3;i<n;i+=2){
+            boolean is=true;
+            for (int num:list){
+                if (i%num==0){
+                    is=false;
+                    break;
+                }
+            }
+            if (is){
+                list.add(i);
+            }
+        }
+        return list.size();
+    }
+
+    //223. 矩形面积
+    public int computeArea(int ax1, int ay1, int ax2, int ay2, int bx1, int by1, int bx2, int by2) {
+        boolean is=false;
+        int left=0,right=0,length=0;
+        if (ax2<=bx1||bx2<=ax1) is=true;
+        else {
+            left = Math.max(bx1, ax1);
+            right = Math.min(ax2,bx2);
+        }
+        length=right-left;
+        int top=0,bottom=0,height=0;
+        if (by1>=ay2||by2<=ay1) is=true;
+        else {
+            top=Math.min(ay2,by2);
+            bottom=Math.max(ay1,by1);
+        }
+        height=top-bottom;
+        int s1=(ax2-ax1)*(ay2-ay1);
+        int s2=(bx2-bx1)*(by2-by1);
+        if (is) return s1+s2;
+        return s1+s2-length*height;
     }
 
 
