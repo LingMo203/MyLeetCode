@@ -287,6 +287,27 @@ class Solution {
         list.remove(list.size()-1);
     }
 
+    //199. 二叉树的右视图
+    public List<Integer> rightSideView(TreeNode root) {
+        ArrayList<ArrayList<Integer>> arrayList=new ArrayList<>();
+        ArrayList<Integer> result=new ArrayList<>();
+        Queue<TreeNode> queue=new LinkedList<>();
+        if (root!=null) queue.add(root);
+        int size=0;
+        while (!queue.isEmpty()){
+            size=queue.size();
+            ArrayList<Integer> list=new ArrayList<>();
+            TreeNode temp = null;
+            while (size-->0){
+                temp=queue.poll();
+                if (temp.left!=null) queue.add(temp.left);
+                if (temp.right!=null) queue.add(temp.right);
+            }
+            result.add(temp.val);
+        }
+        return result;
+    }
+
 
 
 
