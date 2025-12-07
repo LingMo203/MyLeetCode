@@ -38,22 +38,6 @@ public class T2 {
 }
 class Solution2 {
 
-    //1002.查找共用字符 放弃
-    public List<String> commonChars(String[] words) {
-        List<int[]> list=new ArrayList<>();
-        for (String letter:words){
-            int[] le=new int[26];
-            for (int i=0;i<letter.length();i++){
-                char l=letter.charAt(i);
-                le[l-'a']++;
-            }
-            list.add(le);
-        }
-
-
-
-        return null;
-    }
 
     //961. 在长度 2N 的数组中找出重复 N 次的元素
     public int repeatedNTimes(int[] nums) {
@@ -120,19 +104,6 @@ class Solution2 {
         return Math.max(count, result);
     }
 
-    //49. 字母异位词分组 放弃
-    public List<List<String>> groupAnagrams(String[] strs) {
-        ArrayList<HashSet<Character>> temp=new ArrayList<>();
-        List<List<String>> result=new ArrayList<>();
-        for (String str:strs){
-            ArrayList<Character> arrayList=new ArrayList<>();
-            for (int i=0;i<str.length();i++){
-                char a=str.charAt(i);
-                arrayList.add(a);
-            }
-        }
-        return null;
-    }
 
     //26. 删除有序数组中的重复项
     public int removeDuplicates(int[] nums) {
@@ -161,28 +132,7 @@ class Solution2 {
     }
 
 
-    //997. 找到小镇的法官 放弃
-    public int findJudge(int n, int[][] trust) {
-        HashSet<Integer> hashSet=new HashSet<>();
-        HashSet<Integer> reSet=new HashSet<>();
-        for (int i=0 ;i<trust.length; i++) {
-            int[] a=trust[i];
-            for (int betrust:a){
-                if (i==0){
-                    hashSet.add(betrust);
-                }else {
-                    if (hashSet.contains(betrust)){
-                        reSet.add(betrust);
-                    }
-                }
-            }
-            reSet.remove(trust[i][0]);
-        }
-        for (int f:reSet){
-            return f;
-        }
-        return -1;
-    }
+
 
     //977. 有序数组的平方
     public int[] sortedSquares(int[] nums) {

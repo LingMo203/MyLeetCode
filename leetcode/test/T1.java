@@ -74,18 +74,6 @@ class Solution {
         return new int[]{0, 0};
     }
 
-    //2.两数相加 放弃
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode result = null;
-        while (l1.next == null) {
-            if (result == null) {
-                result.val = l1.val + l2.val;
-                result.next = result;
-            }
-        }
-        System.out.println();
-        return result;
-    }
 
     //9.回文数
     public boolean isPalindrome(int x) {
@@ -436,22 +424,7 @@ class Solution {
         return Objects.equals(result, re2);
     }
 
-    //17.电话号码的字母组合 放弃
-    public List<String> letterCombinations(String digits) {
-        String[] numbers={"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
-        List<String> temp=new ArrayList<>();
-        for (int i=0;i<digits.length();i++){
-            int num=digits.charAt(i)-'0';
-            String numS=numbers[num];
-            temp.add(numS);
-        }
-        for (int i=0;i<temp.size();i++){
-            String tepS=temp.get(i);
-            System.out.println(tepS);
-        }
-        System.out.println(temp);
-        return null;
-    }
+
 
     //350.两个数组交集II
     public int[] intersect(int[] nums1, int[] nums2) {

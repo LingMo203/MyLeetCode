@@ -174,25 +174,6 @@ public class DynamicProgramming {
         return dp[n];
     }
 
-    //1668. 最大重复子字符串 放弃
-    public int maxRepeating(String sequence, String word) {
-        char[] csequence=sequence.toCharArray();
-        char[] cword=word.toCharArray();
-        int j=0,count=0;
-        for (char c : csequence) {
-            char t=cword[j];
-            if (c == cword[j]) {
-                j++;
-                if (j == cword.length) {
-                    count++;
-                    j = 0;
-                }
-            } else {
-                j = 0;
-            }
-        }
-        return count;
-    }
 
     //55. 跳跃游戏
     public boolean canJump(int[] nums) {
