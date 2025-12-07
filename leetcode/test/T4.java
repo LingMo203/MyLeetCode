@@ -7,7 +7,8 @@ public class T4 {
         T4 t4=new T4();
         int num=123;
         String str="3+ 2 *2";
-        System.out.println(t4.calculate(str));
+        //System.out.println(t4.calculate(str));
+        System.out.println(t4.countOdds(3,7));
     }
 
 
@@ -90,4 +91,43 @@ public class T4 {
         }
         return (int) temp2;
     }
+
+
+    //1523. 在区间范围内统计奇数数目
+    // 3 4 5 6 7
+    // 8 9 10
+    // 15 16 17 18 19
+    public int countOdds(int low, int high) {
+        if (low==high){
+            if (low%2==0) return 0;
+            else return 1;
+        }
+        int result=0;
+        if (high%2==1) result++;
+        int count=high-low-1;
+        if (low%2==0){
+            if (count%2==0){
+                result+=count/2;
+            }else {
+                result+=count/2+1;
+            }
+        }else {
+            result+=count/2+1;
+        }
+        return result;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
