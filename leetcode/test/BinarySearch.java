@@ -42,4 +42,19 @@ public class BinarySearch {
         }
         return -1;
     }
+
+    //153. 寻找旋转排序数组中的最小值
+    public int findMin(int[] nums) {
+        int left=0,right=nums.length-1,mid;
+        if (nums[left]<nums[right]) return nums[0];
+        while (left<=right){
+            mid=(right-left)/2+left;
+            if (nums[mid]>nums[nums.length-1]){
+                left=mid+1;
+            }else {
+                right=mid-1;
+            }
+        }
+        return nums[right+1];
+    }
 }
