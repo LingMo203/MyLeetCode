@@ -3,8 +3,9 @@ package src.leetcode.test;
 public class BinarySearch {
     public static void main(String[] args) {
         BinarySearch bs=new BinarySearch();
-        int[] nums={1,3};
-        System.out.println(bs.search(nums,2));
+        int[] nums={1,1};
+        //System.out.println(bs.search(nums,2));
+        System.out.println(bs.findMin2(nums));
     }
 
     //33. 搜索旋转排序数组
@@ -56,5 +57,32 @@ public class BinarySearch {
             }
         }
         return nums[right+1];
+    }
+
+
+    ///154. 寻找旋转排序数组中的最小值 II
+    //{3,4,1,3};
+    public int findMin2(int[] nums) {
+        int left=0,right=nums.length-1,mid;
+        if (right+1==1) return nums[0];
+        if (nums[left]<nums[right]) return nums[0];
+        else if (nums[left]==nums[right]){
+            right--;
+            while (nums[left]==nums[right]){
+                right--;
+                if (right<=0) return nums[0];
+            }
+        }
+        int q=right;
+        while (left<=right){
+            mid=(right-left)/2+left;
+            if (nums[mid]>nums[q]){
+                left=mid+1;
+            }else {
+                right=mid-1;
+            }
+        }
+        right++;
+        return Math.min(nums[right],nums[q-1]);
     }
 }
