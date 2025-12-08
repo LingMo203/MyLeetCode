@@ -1,11 +1,14 @@
 package src.leetcode.test;
 
+import java.util.Arrays;
+
 public class BinarySearch {
     public static void main(String[] args) {
         BinarySearch bs=new BinarySearch();
-        int[] nums={1,1};
+        int[] nums={0,0};
         //System.out.println(bs.search(nums,2));
-        System.out.println(bs.findMin2(nums));
+        //System.out.println(bs.findMin2(nums));
+        System.out.println(Arrays.toString(bs.twoSum(nums, 0)));
     }
 
     //33. 搜索旋转排序数组
@@ -84,5 +87,34 @@ public class BinarySearch {
         }
         right++;
         return Math.min(nums[right],nums[q-1]);
+    }
+
+    //167. 两数之和 II - 输入有序数组
+    public int[] twoSum(int[] numbers, int target) {
+        for (int i=0;i<numbers.length;i++){
+            int tar=target-numbers[i],left=i+1,right=numbers.length-1,mid;
+            while (left<=right){
+                mid=(right-left)/2+left;
+                if (numbers[mid]<tar){
+                    left=mid+1;
+                }else if (numbers[mid]>tar){
+                    right=mid-1;
+                }else if (numbers[mid]==tar){
+                    if (i==mid){
+                        boolean t=false;
+                        if (mid!=0&&numbers[mid-1]==tar){
+                            mid--;
+                            t=true;
+                        }
+                        if (t) mid=i;
+                        if (mid!=numbers.length-1&&numbers[mid+1]==tar){
+                            mid++;
+                        }
+                    }
+                    return new int[]{i+1,mid+1};
+                }
+            }
+        }
+        return new int[]{-1, -1};
     }
 }
