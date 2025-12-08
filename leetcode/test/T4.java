@@ -6,10 +6,13 @@ public class T4 {
     public static void main(String[] args) {
         T4 t4=new T4();
         int num=123;
-        String str="3+ 2 *2";
+        String str="0";
+        String str2="0";
         //System.out.println(t4.calculate(str));
         //System.out.println(t4.countOdds(3,7));
-        System.out.println(t4.countTriples(5));
+        //System.out.println(t4.countTriples(5));
+        //System.out.println(t4.maximumSwap(9973));
+        System.out.println(t4.compareVersion(str,str2));
     }
 
 
@@ -118,11 +121,18 @@ public class T4 {
         return result;
     }
 
-    //670. 最大交换
+    //670. 最大交换 9243 暂时遗弃
     public int maximumSwap(int num) {
         String str=String.valueOf(num);
         char[] chars=str.toCharArray();
-        Arrays.sort(chars);
+        HashSet<Character> hashSet=new HashSet<>();
+        char[] cs=Arrays.copyOf(chars,chars.length);
+        Arrays.sort(cs);
+        //int charsMax=chars.length-1,charsMin=0,min=0,max=0,p;
+        int j=chars.length-1;
+        while (j>0){
+
+        }
         return 0;
     }
 
@@ -143,6 +153,43 @@ public class T4 {
             }
         }
         return hashSet.size();
+    }
+
+    //165. 比较版本号
+    public int compareVersion(String version1, String version2) {
+        int[] v1=change(version1.split("\\."));
+        int[] v2=change(version2.split("\\."));
+        int i=0,j=0;
+        while (i<v1.length&&j<v2.length){
+            if (v1[i]>v2[j]) return 1;
+            else if (v1[i]<v2[j]) return -1;
+            i++;j++;
+        }
+        if (i>=v1.length){
+            while (j<v2.length){
+                if (v2[j]!=0) return -1;
+                j++;
+            }
+        } else if (j>=v2.length) {
+            while (i<v1.length){
+                if (v1[i]!=0) return 1;
+                i++;
+            }
+        }
+        return 0;
+    }
+    public int[] change(String[] strs){
+        int[] result=new int[strs.length];
+        for (int i=0;i<strs.length;i++){
+            String str=strs[i];
+            int num=0;
+            for (int j=0;j<str.length();j++){
+                int n=str.charAt(j)-'0';
+                num=num*10+n;
+            }
+            result[i]=num;
+        }
+        return result;
     }
 
 
