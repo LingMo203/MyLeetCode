@@ -8,7 +8,8 @@ public class T4 {
         int num=123;
         String str="3+ 2 *2";
         //System.out.println(t4.calculate(str));
-        System.out.println(t4.countOdds(3,7));
+        //System.out.println(t4.countOdds(3,7));
+        System.out.println(t4.countTriples(5));
     }
 
 
@@ -117,6 +118,32 @@ public class T4 {
         return result;
     }
 
+    //670. 最大交换
+    public int maximumSwap(int num) {
+        String str=String.valueOf(num);
+        char[] chars=str.toCharArray();
+        Arrays.sort(chars);
+        return 0;
+    }
+
+    //1925. 统计平方和三元组的数目
+    public int countTriples(int n) {
+        HashSet<String> hashSet=new HashSet<>();
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n;j++){
+                for (int k=1;k<=n;k++){
+                    int max=Math.max(i,Math.max(j,k));
+                    int a=i*i,b=j*j,c=k*k;
+                    if (a+b==c||a+c==b||b+c==a){
+                        if (i!=max&&j!=max){
+                            hashSet.add(String.valueOf(i)+String.valueOf(j)+String.valueOf(max));
+                        }
+                    }
+                }
+            }
+        }
+        return hashSet.size();
+    }
 
 
 
