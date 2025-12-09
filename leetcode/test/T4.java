@@ -6,13 +6,16 @@ public class T4 {
     public static void main(String[] args) {
         T4 t4=new T4();
         int num=123;
+        int[] nums={73,74,75,71,69,72,76,73};
         String str="0";
         String str2="0";
         //System.out.println(t4.calculate(str));
         //System.out.println(t4.countOdds(3,7));
         //System.out.println(t4.countTriples(5));
         //System.out.println(t4.maximumSwap(9973));
-        System.out.println(t4.compareVersion(str,str2));
+        //System.out.println(t4.compareVersion(str,str2));
+        //System.out.println(t4.trailingZeroes(30));
+        System.out.println(Arrays.toString(t4.dailyTemperatures(nums)));
     }
 
 
@@ -192,7 +195,47 @@ public class T4 {
         return result;
     }
 
+    //172. 阶乘后的零 爆long上限了 题解妙啊
+    public int trailingZeroes2(int n) {
+        if (n==0) return 0;
+        long num=1;
+        for (int i=1;i<=n;i++){
+            num*=i;
+        }
+        String str=String.valueOf(num);
+        int count=0;
+        for (int i=str.length()-1;i>=0;i--){
+            if ((str.charAt(i)-'0')==0) count++;
+            else break;
+        }
+        return count;
+    }
+    public int trailingZeroes(int n){
+        int count=0;
+        while (n!=0){
+            n=n/5;
+            count+=n;
+        }
+        return count;
+    }
 
+    //739. 每日温度
+    public int[] dailyTemperatures(int[] temperatures) {
+        int length=temperatures.length;
+        if (length==1) return new int[]{0};
+        Deque<Integer> deque=new LinkedList<>();
+        int[] result=new int[length];
+        deque.add(0);
+        for (int i=1;i<temperatures.length;i++){
+            int num=temperatures[i];
+            while (!deque.isEmpty()&&num>temperatures[deque.getLast()]){
+                int j=deque.removeLast();
+                result[j]=i-j;
+            }
+            deque.addLast(i);
+        }
+        return result;
+    }
 
 
 
