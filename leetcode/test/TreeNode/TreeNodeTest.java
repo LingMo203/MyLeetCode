@@ -311,6 +311,19 @@ class Solution {
         fl(root.right,list);
     }
 
+    //230. 二叉搜索树中第 K 小的元素
+    public int kthSmallest(TreeNode root, int k) {
+        ArrayList<Integer> list=new ArrayList<>();
+        abc(root,list);
+        return list.get(k-1);
+    }
+    public void abc(TreeNode root,ArrayList<Integer> list){
+        if (root==null) return;
+        abc(root.left,list);
+        list.add(root.val);
+        abc(root.right,list);
+    }
+
 
 
 
