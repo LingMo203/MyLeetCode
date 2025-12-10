@@ -6,8 +6,8 @@ public class T4 {
     public static void main(String[] args) {
         T4 t4=new T4();
         int num=123;
-        int[] nums={73,74,75,71,69,72,76,73};
-        String str="0";
+        int[] nums={1,2,3,4,5};
+        String str="(()))())(";
         String str2="0";
         //System.out.println(t4.calculate(str));
         //System.out.println(t4.countOdds(3,7));
@@ -15,7 +15,9 @@ public class T4 {
         //System.out.println(t4.maximumSwap(9973));
         //System.out.println(t4.compareVersion(str,str2));
         //System.out.println(t4.trailingZeroes(30));
-        System.out.println(Arrays.toString(t4.dailyTemperatures(nums)));
+        //System.out.println(Arrays.toString(t4.dailyTemperatures(nums)));
+        //System.out.println(t4.largestRectangleArea(nums));
+        System.out.println(t4.longestValidParentheses(str));
     }
 
 
@@ -235,6 +237,73 @@ public class T4 {
             deque.addLast(i);
         }
         return result;
+    }
+
+    //84. 柱状图中最大的矩形 放弃
+    public int largestRectangleArea(int[] heights) {
+        Deque<Integer> deque=new ArrayDeque<>();
+        int max=0;
+        for (int num:heights){
+            if (deque.isEmpty()){
+                deque.add(num);
+                max=Math.max(max,num);
+            }else {
+                if (num<deque.getLast()){
+                    int newS=(num*(deque.size()+1));
+                    int oldS=deque.getLast()*(deque.size());
+                    if (oldS>newS){
+                        deque.clear();
+                    }else {
+                        max=Math.max(max,newS);
+                    }
+                    deque.addLast(num);
+                }else {
+                    int min=deque.getLast();
+                    int s=min*(deque.size()+1);
+                    if (num>=s){
+                        deque.clear();
+                        max=Math.max(max,num);
+                    }else {
+                        max=Math.max(max,s);
+                    }
+                    deque.addFirst(num);
+                }
+            }
+        }
+        return max;
+    }
+
+    //32. 最长有效括号
+    public int longestValidParentheses(String s) {
+        Deque<Integer> deque=new LinkedList<>();
+        int max=0,length=s.length();
+        for (int i=0;i<length;i++){
+            char c=s.charAt(i);
+            if (deque.isEmpty()){
+                deque.addLast(i);
+                continue;
+            }
+            if (c=='('){
+                deque.addLast(i);
+            }else {
+                char top=s.charAt(deque.getLast());
+                if (top=='('){
+                    deque.removeLast();
+                }else {
+                    deque.addLast(i);
+                }
+            }
+        }
+        int temp=-1,i=0;
+        if (deque.isEmpty()) return length;
+        while (!deque.isEmpty()){
+            int j=deque.removeFirst();
+            max=Math.max(max,j-temp-1);
+            temp=j;
+            i++;
+        }
+        if (i==1) return Math.max(temp,length-temp-1);
+        return Math.max(max,length-temp-1);
     }
 
 
