@@ -370,6 +370,25 @@ public class T4 {
     }
 
 
+    //229. 多数元素 II
+    public List<Integer> majorityElement(int[] nums) {
+        List<Integer> result=new ArrayList<>();
+        HashMap<Integer,Integer> hashMap=new HashMap<>();
+        for (int num:nums){
+            if (!hashMap.containsKey(num)){
+                hashMap.put(num,1);
+            }else {
+                hashMap.put(num,hashMap.get(num)+1);
+            }
+        }
+        int time=nums.length/3;
+        for (Map.Entry<Integer,Integer> map: hashMap.entrySet()){
+            int key=map.getKey();
+            int val=map.getValue();
+            if (val>time) result.add(key);
+        }
+        return result;
+    }
 
 
 
