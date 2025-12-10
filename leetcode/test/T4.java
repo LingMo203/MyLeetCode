@@ -7,7 +7,7 @@ public class T4 {
         T4 t4=new T4();
         int num=123;
         int[] nums={1,2,3,4,5};
-        String str="(()))())(";
+        String str="(1+(4+5+2)-3)+(6+8)";
         String str2="0";
         //System.out.println(t4.calculate(str));
         //System.out.println(t4.countOdds(3,7));
@@ -17,12 +17,13 @@ public class T4 {
         //System.out.println(t4.trailingZeroes(30));
         //System.out.println(Arrays.toString(t4.dailyTemperatures(nums)));
         //System.out.println(t4.largestRectangleArea(nums));
-        System.out.println(t4.longestValidParentheses(str));
+        ///System.out.println(t4.longestValidParentheses(str));
+        System.out.println(t4.calculate(str));
     }
 
 
     //227. 基本计算器 II
-    public int calculate(String s) {
+    public int calculate2(String s) {
         Deque<Object> deque=new LinkedList<>();
         List<Object> list=new ArrayList<>();
         long num=0;
@@ -99,6 +100,68 @@ public class T4 {
             }
         }
         return (int) temp2;
+    }
+
+    //224. 基本计算器
+    public int calculate(String s) {
+        Deque<Object> deque=new LinkedList<>();
+        int length=s.length(),num=0;
+        boolean isNum=false;
+        for (int i=0;i<length;i++){
+            char c=s.charAt(i);
+            if (Character.isDigit(c)){
+                num=num*10+(c-'0');
+                isNum=true;
+            }else {
+                if (isNum){
+                    deque.add(num);
+                    num=0;
+                }
+                isNum=false;
+                if (c==' ') continue;
+                else if (c==')'){
+                    Object obj=deque.removeLast();
+                    if (obj.equals('(')) continue;
+                    Deque<Object> temp=new LinkedList<>();
+                    while (!obj.equals('(')){
+                        temp.addFirst(obj);
+                        obj=deque.removeLast();
+                    }
+                    int temnum=0;
+                    while (temp.size()>1){
+                        Object ob=temp.removeFirst();
+                        if (ob instanceof Integer){
+                            temnum=(int)ob;
+                        }else {
+                            int nex=(int)temp.removeFirst();
+                            if (ob.equals('+')){
+                                temp.addFirst(temnum+nex);
+                            }else if (ob.equals('-')){
+                                temp.addFirst(temnum-nex);
+                            }
+                        }
+                    }
+                    deque.addLast(temp.remove());
+                    continue;
+                }
+                deque.add(c);
+            }
+        }
+        if (isNum){
+            deque.add(num);
+        }
+        int temp=0;
+        while (deque.size()>1){
+            Object obj=deque.removeFirst();
+            if (obj instanceof Integer){
+                temp=(int) obj;
+            }else {
+                int next=(int)deque.removeFirst();
+                if (obj.equals('+')) deque.addFirst(temp+next);
+                else if (obj.equals('-')) deque.addFirst(temp-next);
+            }
+        }
+        return (int)deque.removeFirst();
     }
 
 
