@@ -1,4 +1,4 @@
-package src.leetcode.test;
+package src.leetcode.test.MyLinkedList;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={1,2,3};
+        int[] a={0,1,2};
         int[] b={1,2,3};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
@@ -15,6 +15,7 @@ public class MyListNode {
         //showList(a1.deleteDuplicates(lista));
         //System.out.println(a1.listLength(lista));
         //System.out.println(Arrays.toString(a1.splitListToParts(lista, 5)));
+        System.out.println(a1.rotateRight(lista,4).val);
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -339,6 +340,35 @@ public class MyListNode {
         return original;
     }
     //-------------------------
+
+    //61. 旋转链表
+    public ListNode rotateRight(ListNode head, int k) {
+        if (head==null) return head;
+        int i=0,length=length(head);
+        k=k>=length?k%length:k;
+        if (k==0) return head;
+        ListNode temp=null,cur=head,newHead=null;
+        int h=length-k-1;
+        while (cur.next!=null){
+            if (i==h){
+                temp=cur;
+            }
+            i++;
+            cur=cur.next;
+        }
+        cur.next=head;
+        newHead=temp.next;
+        temp.next=null;
+        return newHead;
+    }
+    public int length(ListNode head){
+        int i=0;
+        while (head!=null){
+            i++;
+            head=head.next;
+        }
+        return i;
+    }
 
 
 

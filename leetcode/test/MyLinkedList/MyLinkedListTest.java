@@ -1,4 +1,4 @@
-package src.leetcode.test;
+package src.leetcode.test.MyLinkedList;
 
 public class MyLinkedListTest {
     public static void main(String[] args) {
