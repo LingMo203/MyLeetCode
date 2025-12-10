@@ -65,26 +65,6 @@ class Solution {
     }
 
     //102. 二叉树的层序遍历
-//    public List<List<Integer>> levelOrder(TreeNode root) {
-//        Queue<TreeNode> queue=new LinkedList<>();
-//        List<List<Integer>> result=new ArrayList<>();
-//        if (root!=null)
-//            queue.add(root);
-//        while (!queue.isEmpty()){
-//            int size=queue.size();
-//            List<Integer> temp=new ArrayList<>();
-//            while (size-->0){
-//                TreeNode a=queue.remove();
-//                temp.add(a.val);
-//                if (a.left!=null)
-//                    queue.add(a.left);
-//                if (a.right!=null)
-//                    queue.add(a.right);
-//            }
-//            result.add(temp);
-//        }
-//        return result;
-//    }
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result=new ArrayList<>();
         Queue<TreeNode> queue=new LinkedList<>();
@@ -309,7 +289,27 @@ class Solution {
     }
 
 
-
+    //114. 二叉树展开为链表
+    public void flatten(TreeNode root) {
+        ArrayList<Integer> list=new ArrayList<>();
+        fl(root,list);
+        int length=list.size();
+        for (int i=0;i<length;i++){
+            root.val=list.get(i);
+            root.left=null;
+            if (root.right==null){
+                if (i==length-1) break;
+                root.right=new TreeNode();
+            }
+            root=root.right;
+        }
+    }
+    public void fl(TreeNode root,ArrayList<Integer> list){
+        if (root==null) return;
+        list.add(root.val);
+        fl(root.left,list);
+        fl(root.right,list);
+    }
 
 
 
