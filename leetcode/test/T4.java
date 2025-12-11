@@ -416,7 +416,7 @@ public class T4 {
     }
 
     //137. 只出现一次的数字 II
-    public int singleNumber(int[] nums) {
+    public int singleNumber2(int[] nums) {
         HashMap<Integer,Integer> hashMap=new HashMap<>();
         for (int num:nums){
             if (!hashMap.containsKey(num)){
@@ -432,7 +432,27 @@ public class T4 {
         return 0;
     }
 
-
+    //260. 只出现一次的数字 III
+    public int[] singleNumber3(int[] nums) {
+        int[] result=new int[2];
+        HashMap<Integer,Integer> hashMap=new HashMap<>();
+        for (int num:nums){
+            if (!hashMap.containsKey(num)){
+                hashMap.put(num,1);
+            }else {
+                hashMap.put(num,3);
+            }
+        }
+        int i=0;
+        for (Map.Entry<Integer,Integer> map:hashMap.entrySet()){
+            int val=map.getValue();
+            if (val==1) {
+                result[i]=map.getKey();
+                i++;
+            }
+        }
+        return result;
+    }
 
 
 
