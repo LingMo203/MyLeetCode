@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={0,1,2};
+        int[] a={1,2,3,4,5};
         int[] b={1,2,3};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
@@ -15,7 +15,8 @@ public class MyListNode {
         //showList(a1.deleteDuplicates(lista));
         //System.out.println(a1.listLength(lista));
         //System.out.println(Arrays.toString(a1.splitListToParts(lista, 5)));
-        System.out.println(a1.rotateRight(lista,4).val);
+        //System.out.println(a1.rotateRight(lista,4).val);
+        showList(a1.oddEvenList(lista));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -28,6 +29,7 @@ public class MyListNode {
     }
 
     public static void  showList(ListNode listNode){
+        System.out.print("[");
         while (listNode!=null){
             if (listNode.next==null)
                 System.out.print(listNode.val);
@@ -35,6 +37,7 @@ public class MyListNode {
                 System.out.print(listNode.val+",");
             listNode=listNode.next;
         }
+        System.out.println("]");
     }
 
 
@@ -374,6 +377,27 @@ public class MyListNode {
     public void deleteNode(ListNode node) {
         node.val=node.next.val;
         node.next=node.next.next;
+    }
+
+    //328. 奇偶链表
+    public ListNode oddEvenList(ListNode head) {
+        if (head==null) return null;
+        ListNode doubleHead=new ListNode(0,null);
+        ListNode curDouble=doubleHead;
+        ListNode cur=head;
+        while (cur.next!=null&&cur.next.next!=null){
+            curDouble.next=cur.next;
+            curDouble=curDouble.next;
+            cur.next=cur.next.next;
+            cur=cur.next;
+        }
+        if (cur.next!=null){
+            curDouble.next=cur.next;
+            curDouble=curDouble.next;
+        }
+        curDouble.next=null;
+        cur.next=doubleHead.next;
+        return head;
     }
 
 
