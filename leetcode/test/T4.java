@@ -6,7 +6,7 @@ public class T4 {
     public static void main(String[] args) {
         T4 t4=new T4();
         int num=123;
-        int[] nums={1,2,3,4,5};
+        int[] nums={1,2};
         String str="(1+(4+5+2)-3)+(6+8)";
         String str2="0";
         //System.out.println(t4.calculate(str));
@@ -18,7 +18,8 @@ public class T4 {
         //System.out.println(Arrays.toString(t4.dailyTemperatures(nums)));
         //System.out.println(t4.largestRectangleArea(nums));
         ///System.out.println(t4.longestValidParentheses(str));
-        System.out.println(t4.calculate(str));
+        //System.out.println(t4.calculate(str));
+        System.out.println(Arrays.toString(t4.productExceptSelf(nums)));
     }
 
 
@@ -391,6 +392,28 @@ public class T4 {
     }
 
 
+    //238. 除自身以外数组的乘积
+    public int[] productExceptSelf(int[] nums) {
+        int[] left=new int[nums.length];
+        int[] right=new int[nums.length];
+        int[] result=new int[nums.length];
+        int last=1,pro=1;
+        for (int i=0;i<nums.length;i++){
+            pro=pro*last;
+            left[i]=pro;
+            last=nums[i];
+        }
+        last=1;pro=1;
+        for (int i=nums.length-1;i>=0;i--){
+            pro=pro*last;
+            right[i]=pro;
+            last=nums[i];
+        }
+        for (int i=0;i<nums.length;i++){
+            result[i]=left[i]*right[i];
+        }
+        return result;
+    }
 
 
 
