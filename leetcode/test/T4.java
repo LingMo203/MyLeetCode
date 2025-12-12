@@ -6,7 +6,7 @@ public class T4 {
     public static void main(String[] args) {
         T4 t4=new T4();
         int num=123;
-        int[] nums={1,2};
+        int[] nums={186,419,83,408};
         String str="(1+(4+5+2)-3)+(6+8)";
         String str2="0";
         //System.out.println(t4.calculate(str));
@@ -19,7 +19,8 @@ public class T4 {
         //System.out.println(t4.largestRectangleArea(nums));
         ///System.out.println(t4.longestValidParentheses(str));
         //System.out.println(t4.calculate(str));
-        System.out.println(Arrays.toString(t4.productExceptSelf(nums)));
+        //System.out.println(Arrays.toString(t4.productExceptSelf(nums)));
+        //System.out.println(t4.coinChange(nums,6249));
     }
 
 
@@ -454,6 +455,16 @@ public class T4 {
         return result;
     }
 
+    //462. 最小操作次数使数组元素相等 II
+    public int minMoves2(int[] nums) {
+        int count=0;
+        Arrays.sort(nums);
+        int mid=nums.length/2-1;
+        for (int num:nums){
+            count+=Math.abs(num-nums[mid]);
+        }
+        return count;
+    }
 
 
 
