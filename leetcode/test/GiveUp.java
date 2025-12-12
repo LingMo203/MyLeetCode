@@ -204,4 +204,31 @@ public class GiveUp {
         return count;
     }
 
+    //322. 零钱兑换 放弃
+    public int coinChange(int[] coins, int amount) {
+        Arrays.sort(coins);
+        int count=0;
+        for (int i=coins.length-1;i>=0;i--){
+            int num=coins[i];
+            if (num<=amount){
+                count+=amount/num;
+                amount=amount%num;
+            }
+        }
+        return amount==0?count:-1;
+    }
+
+    //287. 寻找重复数 放弃
+    public int findDuplicate(int[] nums) {
+        int slow=0,fast=1,length=nums.length;
+        while (nums[slow]!=nums[fast]){
+            slow++;
+            fast+=2;
+            if (slow==fast) fast++;
+            if (slow==length-1) slow-=length-1;
+            if (fast>length-1) fast-=length-1;
+        }
+        return nums[slow];
+    }
+
 }

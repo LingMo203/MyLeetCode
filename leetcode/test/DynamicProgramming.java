@@ -200,7 +200,24 @@ public class DynamicProgramming {
         return max;
     }
 
-
+    //233. 数字 1 的个数 超时
+    public int countDigitOne(int n) {
+        if (n==0) return 0;
+        int[] dp=new int[2];
+        dp[0]=1;
+        for (int i=2;i<=n;i++){
+            String str=String.valueOf(i);
+            int count=0;
+            for (int j=0;j<str.length();j++){
+                if (str.charAt(j)=='1'){
+                    count++;
+                }
+            }
+            dp[0]=dp[1];
+            dp[1]=dp[0]+count;
+        }
+        return dp[1];
+    }
 
 
 
