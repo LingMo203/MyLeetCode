@@ -6,7 +6,7 @@ public class T4 {
     public static void main(String[] args) {
         T4 t4=new T4();
         int num=123;
-        int[] nums={186,419,83,408};
+        int[] nums={0};
         String str="(1+(4+5+2)-3)+(6+8)";
         String str2="0";
         //System.out.println(t4.calculate(str));
@@ -17,10 +17,11 @@ public class T4 {
         //System.out.println(t4.trailingZeroes(30));
         //System.out.println(Arrays.toString(t4.dailyTemperatures(nums)));
         //System.out.println(t4.largestRectangleArea(nums));
-        ///System.out.println(t4.longestValidParentheses(str));
+        //System.out.println(t4.longestValidParentheses(str));
         //System.out.println(t4.calculate(str));
         //System.out.println(Arrays.toString(t4.productExceptSelf(nums)));
         //System.out.println(t4.coinChange(nums,6249));
+        System.out.println(t4.removeDuplicates(nums));
     }
 
 
@@ -465,6 +466,38 @@ public class T4 {
         }
         return count;
     }
+
+
+    //80. 删除有序数组中的重复项 II
+    public int removeDuplicates(int[] nums) {
+        int length=nums.length;
+        for (int i=0;i<length;i++){
+            int num=nums[i],j=i+1;
+            while (j<length&&num==nums[j]){
+                j++;
+            }
+            if (j-i>2){
+                int h=i+2;
+                for (int k=j;k<length;k++){
+                    nums[h]=nums[k];
+                    h++;
+                }
+                length-=j-i-2;
+            }
+        }
+        return length;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
