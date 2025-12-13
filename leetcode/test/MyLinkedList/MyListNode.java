@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={1,2,3,4,5};
+        int[] a={1,1,2,2,3,3};
         int[] b={1,2,3};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
@@ -16,7 +16,8 @@ public class MyListNode {
         //System.out.println(a1.listLength(lista));
         //System.out.println(Arrays.toString(a1.splitListToParts(lista, 5)));
         //System.out.println(a1.rotateRight(lista,4).val);
-        showList(a1.oddEvenList(lista));
+        //showList(a1.oddEvenList(lista));
+        showList(a1.deleteDuplicates2(lista));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -402,6 +403,22 @@ public class MyListNode {
 
 
 
+    //82. 删除排序链表中的重复元素 II
+    public ListNode deleteDuplicates2(ListNode head) {
+        if (head==null) return null;
+        ListNode dummy=new ListNode(0,head);
+        ListNode cur=dummy;
+        while (cur.next!=null&&cur.next.next!=null){
+            boolean f=false;
+            while (cur.next.next!=null&&(cur.next.val==cur.next.next.val)){
+                cur.next=cur.next.next;
+                f=true;
+            }
+            if (f) cur.next=cur.next.next;
+            else cur=cur.next;
+        }
+        return dummy.next;
+    }
 
 
 
