@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={1,1,2,2,3,3};
+        int[] a={1,2,3,4,5};
         int[] b={1,2,3};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
@@ -17,7 +17,8 @@ public class MyListNode {
         //System.out.println(Arrays.toString(a1.splitListToParts(lista, 5)));
         //System.out.println(a1.rotateRight(lista,4).val);
         //showList(a1.oddEvenList(lista));
-        showList(a1.deleteDuplicates2(lista));
+        //showList(a1.deleteDuplicates2(lista));
+        showList(a1.swapNodes(lista,1));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -419,6 +420,31 @@ public class MyListNode {
         }
         return dummy.next;
     }
+
+
+    //1721. 交换链表中的节点
+    public ListNode swapNodes(ListNode head, int k) {
+        if (head==null) return null;
+        ListNode cur=head,be = head,end=cur;
+        int i=1,j=-(k);
+        while (cur!=null){
+            if (i==k) be=cur;
+            if (j>=0) end=end.next;
+            cur=cur.next;
+            i++;j++;
+        }
+        int temp=be.val;
+        be.val=end.val;
+        end.val=temp;
+        return head;
+    }
+
+
+
+
+
+
+
 
 
 
