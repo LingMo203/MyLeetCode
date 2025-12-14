@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={1,2,3,4,5};
+        int[] a={1,2,3,4};
         int[] b={1,2,3};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
@@ -18,7 +18,8 @@ public class MyListNode {
         //System.out.println(a1.rotateRight(lista,4).val);
         //showList(a1.oddEvenList(lista));
         //showList(a1.deleteDuplicates2(lista));
-        showList(a1.swapNodes(lista,1));
+        //showList(a1.swapNodes(lista,1));
+        showList(a1.deleteMiddle(lista));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -437,6 +438,20 @@ public class MyListNode {
         be.val=end.val;
         end.val=temp;
         return head;
+    }
+
+
+    //2095. 删除链表的中间节点
+    public ListNode deleteMiddle(ListNode head) {
+        if (head==null) return null;
+        ListNode dummy=new ListNode(0,head);
+        ListNode low=dummy,fast=dummy.next;
+        while (fast!=null&&fast.next!=null){
+            low=low.next;
+            fast=fast.next.next;
+        }
+        low.next=low.next.next;
+        return dummy.next;
     }
 
 
