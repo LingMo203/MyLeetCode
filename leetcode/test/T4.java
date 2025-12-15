@@ -7,7 +7,7 @@ public class T4 {
         T4 t4=new T4();
         int num=123;
         int[] nums={0};
-        String str="(1+(4+5+2)-3)+(6+8)";
+        String str=" ";
         String str2="0";
         //System.out.println(t4.calculate(str));
         //System.out.println(t4.countOdds(3,7));
@@ -21,7 +21,8 @@ public class T4 {
         //System.out.println(t4.calculate(str));
         //System.out.println(Arrays.toString(t4.productExceptSelf(nums)));
         //System.out.println(t4.coinChange(nums,6249));
-        System.out.println(t4.removeDuplicates(nums));
+        //System.out.println(t4.removeDuplicates(nums));
+        System.out.println(t4.reverseWords(str));
     }
 
 
@@ -490,6 +491,19 @@ public class T4 {
 
 
 
+    //151. 反转字符串中的单词
+    public String reverseWords(String s) {
+        String[] strs=s.trim().split("\s+");
+        String result = "";
+        for (int i=strs.length-1;i>=0;i--){
+            if (i==0) {
+                result = result + strs[i];
+                break;
+            }
+            result=result+strs[i]+" ";
+        }
+        return result;
+    }
 
 
 
