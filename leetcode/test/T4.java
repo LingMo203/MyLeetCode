@@ -6,6 +6,7 @@ public class T4 {
     public static void main(String[] args) {
         T4 t4=new T4();
         int num=123;
+        double dnum=2.0;
         int[] nums={0};
         String str=" ";
         String str2="0";
@@ -22,7 +23,8 @@ public class T4 {
         //System.out.println(Arrays.toString(t4.productExceptSelf(nums)));
         //System.out.println(t4.coinChange(nums,6249));
         //System.out.println(t4.removeDuplicates(nums));
-        System.out.println(t4.reverseWords(str));
+        //System.out.println(t4.reverseWords(str));
+        System.out.println(t4.myPow(dnum,10));
     }
 
 
@@ -503,6 +505,40 @@ public class T4 {
             result=result+strs[i]+" ";
         }
         return result;
+    }
+
+    //50. Pow(x, n)
+    public double myPow(double x, int n) {
+        boolean f=false;
+        long m=n;
+        if (m==0) return 1;
+        else if (m<0) {
+            m*=-1;
+            f = true;
+        }
+        if (x==1) return 1;
+        boolean o=false;
+        if (m!=1&&m%2==1){
+            m--;
+            o=true;
+        }
+        if (x==-1){
+            return o?-1:1;
+        }
+        int time=0;
+        while (m%2!=1){
+            m=m/2;
+            time++;
+        }
+        double result=x;
+        for (int i=1;i<m;i++){
+            result*=x;
+        }
+        while (time-->0){
+            result*=result;
+        }
+        if (o) result*=x;
+        return f?1/result:result;
     }
 
 
