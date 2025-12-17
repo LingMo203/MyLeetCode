@@ -7,7 +7,7 @@ public class T4 {
         T4 t4=new T4();
         int num=123;
         double dnum=2.0;
-        int[] nums={0};
+        int[] nums={1,1,1,2,2,2,3,3,3};
         String str=" ";
         String str2="0";
         //System.out.println(t4.calculate(str));
@@ -24,7 +24,8 @@ public class T4 {
         //System.out.println(t4.coinChange(nums,6249));
         //System.out.println(t4.removeDuplicates(nums));
         //System.out.println(t4.reverseWords(str));
-        System.out.println(t4.myPow(dnum,10));
+        //System.out.println(t4.myPow(dnum,10));
+        System.out.println(Arrays.toString(t4.topKFrequent(nums, 3)));
     }
 
 
@@ -542,6 +543,37 @@ public class T4 {
     }
 
 
+    //58. 最后一个单词的长度
+    public int lengthOfLastWord(String s) {
+        String[] strs=s.trim().split("\s+");
+        return strs[strs.length-1].length();
+    }
+
+    //347. 前 K 个高频元素
+    public int[] topKFrequent(int[] nums, int k) {
+        int[] result = new int[k];
+        HashMap<Integer,Integer> hashMap=new HashMap<>();
+        for (int num:nums){
+            if (!hashMap.containsKey(num)) hashMap.put(num,1);
+            else hashMap.put(num,hashMap.get(num)+1);
+        }
+        ArrayList<Integer> list = new ArrayList<>(hashMap.values());
+        list.sort(Collections.reverseOrder());
+        int j=0;
+        for (Map.Entry<Integer,Integer> map: hashMap.entrySet()){
+            int val=map.getValue();
+            for (int i=0;i<k;i++){
+                if (val==list.get(i)){
+                    k--;
+                    list.remove(i);
+                    result[j++]=map.getKey();
+                    break;
+                }
+            }
+            if (k<=0) break;
+        }
+        return result;
+    }
 
 
 
