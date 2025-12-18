@@ -1,8 +1,6 @@
 package src.leetcode.test.MyLinkedList;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class MyListNode {
     public static void main(String[] args) {
@@ -451,6 +449,30 @@ public class MyListNode {
             fast=fast.next.next;
         }
         low.next=low.next.next;
+        return dummy.next;
+    }
+
+    //92. 反转链表 II
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        Deque<ListNode> deque=new ArrayDeque<>();
+        ListNode dummy=new ListNode(0,head);
+        ListNode cur=dummy,l=dummy,r;
+        int i=1;
+        while (i<=right){
+            if (i>=left){
+                deque.addLast(cur.next);
+            }else {
+                l=l.next;
+            }
+            cur=cur.next;
+            i++;
+        }
+        r=cur.next;
+        while (!deque.isEmpty()){
+            l.next=deque.removeLast();
+            l=l.next;
+        }
+        l.next=r;
         return dummy.next;
     }
 
