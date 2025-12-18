@@ -324,6 +324,29 @@ class Solution {
         abc(root.right,list);
     }
 
+    //107. 二叉树的层序遍历 II
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+        List<List<Integer>> result=new ArrayList<>();
+        if (root==null) return result;
+        Deque<List<Integer>> listDeque=new ArrayDeque<>();
+        Deque<TreeNode> deque=new ArrayDeque<>();
+        deque.addLast(root);
+        while (!deque.isEmpty()){
+            int size=deque.size();
+            List<Integer> list=new ArrayList<>();
+            while (size-->0){
+                TreeNode temp=deque.removeFirst();
+                list.add(temp.val);
+                if (temp.left!=null) deque.addLast(temp.left);
+                if (temp.right!=null) deque.addLast(temp.right);
+            }
+            listDeque.addLast(list);
+        }
+        while (!listDeque.isEmpty()){
+            result.add(listDeque.removeLast());
+        }
+        return result;
+    }
 
 
 
