@@ -211,15 +211,6 @@ class Solution {
         return time;
     }
 
-    //112. 路径总和 放弃
-    public boolean hasPathSum(TreeNode root, int targetSum) {
-        if (root==null)
-            return false;
-        if (targetSum==0)
-            return true;
-        targetSum-=root.val;
-        return hasPathSum(root.left,targetSum)||hasPathSum(root.right,targetSum);
-    }
 
     //110.平衡二叉树
     public boolean isBalanced(TreeNode root) {
@@ -349,7 +340,46 @@ class Solution {
     }
 
 
+    //112. 路径总和 放弃
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if (root==null) return false;
+        hps(root,targetSum,0);
+        return hps(root,targetSum,0)==0;
+    }
+    public int hps(TreeNode root, int targetSum,int last){
+        if (targetSum==0) return 0;
+        else if (root==null||targetSum<0) {
+            targetSum+=last;
+            return targetSum;
+        }
+        targetSum-=root.val;
+        last=root.val;
+        hps(root.left,targetSum,last);
+        hps(root.right,targetSum,last);
+        return targetSum;
+    }
 
+    //429. N 叉树的层序遍历
+    public List<List<Integer>> levelOrder(Node root) {
+        List<List<Integer>> result =new ArrayList<>();
+        if (root==null) return result;
+        Deque<Node> deque=new ArrayDeque<>();
+        deque.addLast(root);
+        while (!deque.isEmpty()){
+            int size=deque.size();
+            List<Integer> list=new ArrayList<>();
+            while (size-->0){
+                Node temp=deque.removeFirst();
+                list.add(temp.val);
+                List<Node> nodeList = temp.children;
+                for (Node node : nodeList) {
+                    deque.addLast(node);
+                }
+            }
+            result.add(list);
+        }
+        return result;
+    }
 
 
 
