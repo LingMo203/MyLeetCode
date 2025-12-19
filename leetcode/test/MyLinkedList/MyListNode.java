@@ -4,8 +4,8 @@ import java.util.*;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={1,2,3,4};
-        int[] b={1,2,3};
+        int[] a={7,3};
+        int[] b={5,6,4};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
         ListNode listb=newList(b);
@@ -17,7 +17,8 @@ public class MyListNode {
         //showList(a1.oddEvenList(lista));
         //showList(a1.deleteDuplicates2(lista));
         //showList(a1.swapNodes(lista,1));
-        showList(a1.deleteMiddle(lista));
+        //showList(a1.deleteMiddle(lista));
+        showList(a1.addTwoNumbers2(lista,listb));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -476,6 +477,42 @@ public class MyListNode {
         return dummy.next;
     }
 
+    //445. 两数相加 II
+    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+        int l1length=length(l1),l2length=length(l2);
+        Deque<Integer> deque=new ArrayDeque<>();
+        while (l1length>l2length){
+            deque.addLast(l1.val);
+            l1=l1.next;
+            l1length--;
+        }
+        while (l1length<l2length){
+            deque.addLast(l2.val);
+            l2=l2.next;
+            l2length--;
+        }
+        while (l1!=null&&l2!=null){
+            deque.addLast(l1.val+l2.val);
+            l1=l1.next;
+            l2=l2.next;
+        }
+        int size=deque.size()-1;
+        int[] nums=new int[size+1];
+        boolean isAddOne=false;
+        while (!deque.isEmpty()){
+            int num=deque.removeLast();
+            if (isAddOne){
+                num++;
+                isAddOne=false;
+            }
+            if (num>9){
+                num-=10;
+                isAddOne=true;
+            }
+            nums[size--]=num;
+        }
+        return isAddOne ? new ListNode(1,newList(nums)) : newList(nums);
+    }
 
 
 
