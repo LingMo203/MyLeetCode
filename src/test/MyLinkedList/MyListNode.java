@@ -1,4 +1,4 @@
-package src.leetcode.test.MyLinkedList;
+package test.MyLinkedList;
 
 import java.util.*;
 

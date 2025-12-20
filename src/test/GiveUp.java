@@ -1,4 +1,4 @@
-package src.leetcode.test;
+package test;
 
 import java.util.*;
 
@@ -175,14 +175,7 @@ public class GiveUp {
         return result;
     }
 
-    //50.Pow(x,n) 看不明白答案 放弃
-    public double myPow(double x, int n) {
-        if (n==1)
-            return x;
-        else if (n==0)
-            return 1;
-        return x*myPow(x,(Math.abs(n)-1)*(Math.abs(n)/n));
-    }
+
 
     //1668. 最大重复子字符串 放弃
     public int maxRepeating(String sequence, String word) {

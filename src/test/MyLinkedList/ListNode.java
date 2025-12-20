@@ -1,4 +1,4 @@
-package src.leetcode.test.MyLinkedList;
+package test.MyLinkedList;
 
 //Definition for singly-linked list.
 public class ListNode {

@@ -1,4 +1,4 @@
-package src.leetcode.test.MyLinkedList;
+package test.MyLinkedList;
 
 //707. 设计链表
 public class MyLinkedList {

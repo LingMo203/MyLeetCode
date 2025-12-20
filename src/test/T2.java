@@ -1,6 +1,9 @@
-package src.leetcode.test;
+package test;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public class T2 {
     public static void main(String[] args) {

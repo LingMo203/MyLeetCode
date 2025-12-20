@@ -1,4 +1,4 @@
-package src.leetcode.test.TreeNode;
+package test.TreeNode;
 
 
 import java.util.List;

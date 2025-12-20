@@ -1,4 +1,4 @@
-package src.leetcode.test;
+package test;
 
 public class Recursion {
     public static void main(String[] args) {

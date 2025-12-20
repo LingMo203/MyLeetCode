@@ -1,4 +1,4 @@
-package src.leetcode.test;
+package test;
 
 import java.util.Arrays;
 
@@ -63,7 +63,7 @@ public class BinarySearch {
     }
 
 
-    ///154. 寻找旋转排序数组中的最小值 II
+    //154. 寻找旋转排序数组中的最小值 II
     //{3,4,1,3};
     public int findMin2(int[] nums) {
         int left=0,right=nums.length-1,mid;

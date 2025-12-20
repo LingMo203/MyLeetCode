@@ -1,7 +1,6 @@
-package src.leetcode.test.MyQue;
+package test.MyQue;
 
 import java.util.ArrayDeque;
-import java.util.Arrays;
 import java.util.Deque;
 
 //232. 用栈实现队列

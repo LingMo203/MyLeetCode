@@ -1,4 +1,4 @@
-package src.leetcode.test.MyQue;
+package test.MyQue;
 
 import java.util.Deque;
 

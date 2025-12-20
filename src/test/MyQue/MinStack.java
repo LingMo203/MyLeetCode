@@ -1,6 +1,8 @@
-package src.leetcode.test.MyQue;
+package test.MyQue;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.LinkedList;
 //155. 最小栈 题解妙
 class MinStack {
     Deque<Integer> deque;
