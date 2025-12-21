@@ -93,7 +93,7 @@
 | 70 | [爬楼梯](https://leetcode.cn/problems/climbing-stairs/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025-11-22 |
 | 75 | [颜色分类](https://leetcode.cn/problems/sort-colors/) | 🟡 中等 | 数组、双指针、排序 | 2025-12-05 |
 | 80 | [删除有序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) | 🟡 中等 | 数组、双指针 | 2025-12-13 |
-| 82 | [删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | 🟡 中等 | 链表、双指针 | 2025-12-13 |
+| 82 | [删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | 🟡 中等 | 链表、双指针 | 2025.12.13 |
 | 83 | [删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) | 🟢 简单 | 链表 | 2025-11-17 |
 | 86 | [分隔链表](https://leetcode.cn/problems/partition-list/) | 🟡 中等 | 链表、双指针 | 2025-11-17 |
 | 88 | [合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) | 🟢 简单 | 数组、双指针、排序 | 2025-11-04 |
