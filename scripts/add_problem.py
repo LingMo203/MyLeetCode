@@ -47,9 +47,17 @@ def add_problem():
         tags_input = input("标签: ").strip()
         tags = [tag.strip() for tag in tags_input.split(',') if tag.strip()]
 
-        print("\n解决日期（留空则使用今天）:")
-        date_input = input("日期 (YYYY-MM-DD): ").strip()
-        solved_dates = [date_input] if date_input else [datetime.now().strftime('%Y-%m-%d')]
+        print("\n解决日期（留空则使用今天，格式：YYYY.MM.DD）:")
+        date_input = input("日期 (YYYY.MM.DD): ").strip()
+
+        if date_input:
+            # 确保日期格式正确（将用户可能输入的 - 替换为 .）
+            date_input = date_input.replace('-', '.')
+            solved_dates = [date_input]
+        else:
+            # 使用今天日期，格式为 YYYY.MM.DD
+            today = datetime.now()
+            solved_dates = [today.strftime('%Y.%m.%d')]
 
         # 创建新题目对象
         new_problem = {
@@ -65,7 +73,7 @@ def add_problem():
         # 添加到数据
         data['problems'].append(new_problem)
         data['total_solved'] = len(data['problems'])
-        data['updated_at'] = datetime.now().strftime('%Y-%m-%d')
+        data['updated_at'] = datetime.now().strftime('%Y.%m.%d')  # 更新为点号格式
 
         # 保存数据
         with open(data_file, 'w', encoding='utf-8') as f:
@@ -79,12 +87,16 @@ def add_problem():
         # 询问是否更新README
         update = input("\n是否立即更新README？ (y/n): ").strip().lower()
         if update == 'y':
+            # 动态导入，避免循环依赖
+            sys.path.insert(0, str(Path(__file__).parent.parent))
             from update_readme import LeetCodeREADME
             generator = LeetCodeREADME(str(data_file))
             generator.update_readme()
 
     except KeyboardInterrupt:
         print("\n❌ 已取消")
+    except ValueError as e:
+        print(f"❌ 输入错误：请确保题号是数字")
     except Exception as e:
         print(f"❌ 发生错误：{e}")
 
