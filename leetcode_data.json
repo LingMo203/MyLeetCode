@@ -2166,6 +2166,20 @@
         "2025.11.22"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/"
+    },
+    {
+      "id": 206,
+      "title": "反转链表",
+      "title_slug": "reverse-linked-list",
+      "difficulty": "简单",
+      "tags": [
+        "递归",
+        "链表"
+      ],
+      "solved_dates": [
+        "2025.12.21"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/reverse-linked-list/"
     }
   ]
 }

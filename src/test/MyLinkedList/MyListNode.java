@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={7,3};
+        int[] a={1,2,3,4,5};
         int[] b={5,6,4};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
@@ -18,7 +18,8 @@ public class MyListNode {
         //showList(a1.deleteDuplicates2(lista));
         //showList(a1.swapNodes(lista,1));
         //showList(a1.deleteMiddle(lista));
-        showList(a1.addTwoNumbers2(lista,listb));
+        //showList(a1.addTwoNumbers2(lista,listb));
+        showList(a1.reverseList2(lista));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -515,6 +516,20 @@ public class MyListNode {
     }
 
 
+    //206. 反转链表
+    public ListNode reverseList2(ListNode head) {
+        ListNode cur=head,last=null;
+        while (cur!=null&&cur.next!=null){
+            ListNode next=cur.next;
+            cur.next=last;
+            last=cur;
+            cur=next;
+        }
+        if (cur != null) {
+            cur.next=last;
+        }
+        return cur;
+    }
 
 
 
