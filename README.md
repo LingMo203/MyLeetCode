@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：148**  
+**总题数：149**  
 🟢 简单：86  
-🟡 中等：58  
+🟡 中等：59  
 🔴 困难：4
 
 
@@ -21,8 +21,8 @@
 - **哈希表** x28
 - **字符串** x26
 - **链表** x23
-- **树** x18
-- **二叉树** x17
+- **树** x19
+- **二叉树** x18
 - **栈** x14
 
 ### ⚡ 核心算法
@@ -31,10 +31,10 @@
 - **排序** x22
 - **动态规划** x15
 - **二分查找** x15
-- **深度优先搜索** x13
+- **深度优先搜索** x14
 - **贪心** x11
+- **广度优先搜索** x11
 - **递归** x11
-- **广度优先搜索** x10
 - **位运算** x9
 
 ### 🛠️ 其他技能
@@ -177,6 +177,7 @@
 | 462 | [最小操作次数使数组元素相等 II](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/) | 🟡 中等 | 数组、数学、排序 | 2025.12.12 |
 | 485 | [最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/) | 🟢 简单 | 数组 | 2025.12.01 |
 | 509 | [斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | 🟢 简单 | 递归、记忆化搜索、数学、动态规划 | 2025.11.22 |
+| 515 | [在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.22 |
 | 541 | [反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
 | 557 | [反转字符串中的单词 III](https://leetcode.cn/problems/reverse-words-in-a-string-iii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
 | 561 | [数组拆分](https://leetcode.cn/problems/array-partition/) | 🟢 简单 | 贪心、数组、计数排序、排序 | 2025.11.07 |
@@ -213,8 +214,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-21 21:37:15
-- **总题目数**：148
+- **最后更新**：2025-12-22 11:18:42
+- **总题目数**：149
 - **技能标签数**：40
 
 > 🤖 本页面由自动化脚本生成

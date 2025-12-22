@@ -381,6 +381,24 @@ class Solution {
         return result;
     }
 
+    //515. 在每个树行中找最大值
+    public List<Integer> largestValues(TreeNode root) {
+        List<Integer> result=new ArrayList<>();
+        if (root==null) return result;
+        Deque<TreeNode> deque=new ArrayDeque<>();
+        deque.addLast(root);
+        while (!deque.isEmpty()){
+            int size=deque.size(),max=Integer.MIN_VALUE;
+            while (size-->0){
+                TreeNode temp=deque.removeFirst();
+                max=Math.max(max,temp.val);
+                if (temp.left!=null) deque.addLast(temp.left);
+                if (temp.right!=null) deque.addLast(temp.right);
+            }
+            result.add(max);
+        }
+        return result;
+    }
 
 
 

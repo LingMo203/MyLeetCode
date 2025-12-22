@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 148,
-  "updated_at": "2025.12.21",
+  "total_solved": 149,
+  "updated_at": "2025.12.22",
   "problems": [
     {
       "id": 1,
@@ -2180,6 +2180,22 @@
         "2025.12.21"
       ],
       "leetcode_url": "https://leetcode.cn/problems/reverse-linked-list/"
+    },
+    {
+      "id": 515,
+      "title": "在每个树行中找最大值",
+      "title_slug": "find-largest-value-in-each-tree-row",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "广度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2025.12.22"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-largest-value-in-each-tree-row/"
     }
   ]
 }
