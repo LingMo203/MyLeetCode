@@ -8,7 +8,7 @@ public class T4 {
         int num=123;
         double dnum=2.0;
         int[] nums={1,1,1,2,2,2,3,3,3};
-        String str=" ";
+        String str="ccc";
         String str2="0";
         //System.out.println(t4.calculate(str));
         //System.out.println(t4.countOdds(3,7));
@@ -25,7 +25,8 @@ public class T4 {
         //System.out.println(t4.removeDuplicates(nums));
         //System.out.println(t4.reverseWords(str));
         //System.out.println(t4.myPow(dnum,10));
-        System.out.println(Arrays.toString(t4.topKFrequent(nums, 3)));
+        //System.out.println(Arrays.toString(t4.topKFrequent(nums, 3)));
+        System.out.println(t4.longestPalindrome(str));
     }
 
 
@@ -576,6 +577,34 @@ public class T4 {
     }
 
 
+    //5. 最长回文子串
+    public String longestPalindrome(String s) {
+        String result="";
+        int length=s.length();
+        if (length==1) return s;
+        StringBuilder temp=new StringBuilder();
+        for (int i=0;i<length-1;i++){
+            int left=i-1,right=i+1;
+            if (right>=length) break;
+            temp= new StringBuilder();
+            char c=s.charAt(i);
+            temp.append(c);
+            while (c==s.charAt(right)){
+                temp.append(s.charAt(right));
+                right++;
+                if (right>=length) break;
+            }
+            while ((left>=0&&right<length)&&s.charAt(left)==s.charAt(right)){
+                temp.insert(0,s.charAt(left));
+                temp.append(s.charAt(right));
+                left--;right++;
+            }
+            if (temp.length()>result.length()){
+                result=temp.toString();
+            }
+        }
+        return result.isEmpty() ?temp.toString():result;
+    }
 
 
 

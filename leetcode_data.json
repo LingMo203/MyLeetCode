@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 150,
+  "total_solved": 151,
   "updated_at": "2025.12.23",
   "problems": [
     {
@@ -2212,6 +2212,21 @@
         "2025.12.23"
       ],
       "leetcode_url": "https://leetcode.cn/problems/average-of-levels-in-binary-tree/"
+    },
+    {
+      "id": 5,
+      "title": "最长回文子串",
+      "title_slug": "longest-palindromic-substring",
+      "difficulty": "中等",
+      "tags": [
+        "双指针",
+        "字符串",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2025.12.23"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/longest-palindromic-substring/"
     }
   ]
 }

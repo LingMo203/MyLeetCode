@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：150**  
+**总题数：151**  
 🟢 简单：87  
-🟡 中等：59  
+🟡 中等：60  
 🔴 困难：4
 
 
@@ -19,17 +19,17 @@
 ### 🔥 核心数据结构
 - **数组** x61
 - **哈希表** x28
-- **字符串** x26
+- **字符串** x27
 - **链表** x23
 - **树** x20
 - **二叉树** x19
 - **栈** x14
 
 ### ⚡ 核心算法
-- **双指针** x35
+- **双指针** x36
 - **数学** x35
 - **排序** x22
-- **动态规划** x15
+- **动态规划** x16
 - **二分查找** x15
 - **深度优先搜索** x15
 - **广度优先搜索** x12
@@ -62,6 +62,7 @@
 | 1 | [两数之和](https://leetcode.cn/problems/two-sum/) | 🟢 简单 | 数组、哈希表 | **2次**<br>2025.10.16<br>2025.10.27 |
 | 2 | [两数相加](https://leetcode.cn/problems/add-two-numbers/) | 🟡 中等 | 递归、链表、数学 | 2025.11.14 |
 | 3 | [无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) | 🟡 中等 | 哈希表、字符串、滑动窗口 | 2025.10.31 |
+| 5 | [最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/) | 🟡 中等 | 双指针、字符串、动态规划 | 2025.12.23 |
 | 7 | [整数反转](https://leetcode.cn/problems/reverse-integer/) | 🟡 中等 | 数学 | 2025.11.21 |
 | 8 | [字符串转换整数 (atoi)](https://leetcode.cn/problems/string-to-integer-atoi/) | 🟡 中等 | 字符串 | 2025.11.21 |
 | 9 | [回文数](https://leetcode.cn/problems/palindrome-number/) | 🟢 简单 | 数学 | 2025.10.16 |
@@ -215,8 +216,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-23 23:10:04
-- **总题目数**：150
+- **最后更新**：2025-12-23 23:28:18
+- **总题目数**：151
 - **技能标签数**：40
 
 > 🤖 本页面由自动化脚本生成
