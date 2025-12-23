@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：149**  
-🟢 简单：86  
+**总题数：150**  
+🟢 简单：87  
 🟡 中等：59  
 🔴 困难：4
 
@@ -21,8 +21,8 @@
 - **哈希表** x28
 - **字符串** x26
 - **链表** x23
-- **树** x19
-- **二叉树** x18
+- **树** x20
+- **二叉树** x19
 - **栈** x14
 
 ### ⚡ 核心算法
@@ -31,9 +31,9 @@
 - **排序** x22
 - **动态规划** x15
 - **二分查找** x15
-- **深度优先搜索** x14
+- **深度优先搜索** x15
+- **广度优先搜索** x12
 - **贪心** x11
-- **广度优先搜索** x11
 - **递归** x11
 - **位运算** x9
 
@@ -183,6 +183,7 @@
 | 561 | [数组拆分](https://leetcode.cn/problems/array-partition/) | 🟢 简单 | 贪心、数组、计数排序、排序 | 2025.11.07 |
 | 575 | [分糖果](https://leetcode.cn/problems/distribute-candies/) | 🟢 简单 | 数组、哈希表 | 2025.10.29 |
 | 605 | [种花问题](https://leetcode.cn/problems/can-place-flowers/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
+| 637 | [二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.23 |
 | 645 | [错误的集合](https://leetcode.cn/problems/set-mismatch/) | 🟢 简单 | 位运算、数组、哈希表、排序 | 2025.10.29 |
 | 704 | [二分查找](https://leetcode.cn/problems/binary-search/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
 | 707 | [设计链表](https://leetcode.cn/problems/design-linked-list/) | 🟡 中等 | 设计、链表 | 2025.11.17 |
@@ -214,8 +215,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-22 11:18:42
-- **总题目数**：149
+- **最后更新**：2025-12-23 23:10:04
+- **总题目数**：150
 - **技能标签数**：40
 
 > 🤖 本页面由自动化脚本生成

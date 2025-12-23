@@ -401,6 +401,24 @@ class Solution {
     }
 
 
-
+    //637. 二叉树的层平均值
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> result=new ArrayList<>();
+        if (root==null) return result;
+        Deque<TreeNode> deque=new ArrayDeque<>();
+        deque.addLast(root);
+        while (!deque.isEmpty()){
+            int size=deque.size(),count=0;
+            double sum=0;
+            while (size-->0){
+                TreeNode temp=deque.removeFirst();
+                sum+=temp.val;count++;
+                if (temp.left!=null) deque.addLast(temp.left);
+                if (temp.right!=null) deque.addLast(temp.right);
+            }
+            result.add(sum/count);
+        }
+        return result;
+    }
 
 }

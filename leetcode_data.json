@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 149,
-  "updated_at": "2025.12.22",
+  "total_solved": 150,
+  "updated_at": "2025.12.23",
   "problems": [
     {
       "id": 1,
@@ -2196,6 +2196,22 @@
         "2025.12.22"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-largest-value-in-each-tree-row/"
+    },
+    {
+      "id": 637,
+      "title": "二叉树的层平均值",
+      "title_slug": "average-of-levels-in-binary-tree",
+      "difficulty": "简单",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "广度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2025.12.23"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/average-of-levels-in-binary-tree/"
     }
   ]
 }
