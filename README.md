@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：152**  
-🟢 简单：87  
+**总题数：153**  
+🟢 简单：88  
 🟡 中等：60  
 🔴 困难：5
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x62
+- **数组** x63
 - **哈希表** x28
 - **字符串** x27
 - **链表** x23
@@ -29,12 +29,12 @@
 ### ⚡ 核心算法
 - **双指针** x36
 - **数学** x35
-- **排序** x22
+- **排序** x23
 - **动态规划** x16
 - **二分查找** x15
 - **深度优先搜索** x15
+- **贪心** x12
 - **广度优先搜索** x12
-- **贪心** x11
 - **递归** x11
 - **位运算** x9
 - **单调栈** x2
@@ -211,6 +211,7 @@
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
 | 2578 | [最小和分割](https://leetcode.cn/problems/split-with-minimum-sum/) | 🟢 简单 | 贪心、数学、排序 | 2025.11.10 |
+| 3074 | [重新分装苹果](https://leetcode.cn/problems/apple-redistribution-into-boxes/) | 🟢 简单 | 贪心、数组、排序 | 2025.12.24 |
 | 3190 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
 
 
@@ -218,8 +219,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-24 14:08:56
-- **总题目数**：152
+- **最后更新**：2025-12-24 14:33:19
+- **总题目数**：153
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

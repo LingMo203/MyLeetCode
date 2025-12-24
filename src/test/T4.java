@@ -607,6 +607,23 @@ public class T4 {
     }
 
 
+    //3074. 重新分装苹果
+    public int minimumBoxes(int[] apple, int[] capacity) {
+        Arrays.sort(capacity);
+        int count=0,sum=0;
+        for (int num : apple){
+            sum+=num;
+        }
+        for (int i=capacity.length-1;i>=0;i--){
+            int num=capacity[i];
+            sum-=num;
+            count++;
+            if (sum<=0){
+                break;
+            }
+        }
+        return count;
+    }
 
 
 

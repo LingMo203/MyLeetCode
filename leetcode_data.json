@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 152,
+  "total_solved": 153,
   "updated_at": "2025.12.24",
   "problems": [
     {
@@ -2244,6 +2244,21 @@
         "2025.12.24"
       ],
       "leetcode_url": "https://leetcode.cn/problems/sliding-window-maximum/"
+    },
+    {
+      "id": 3074,
+      "title": "重新分装苹果",
+      "title_slug": "apple-redistribution-into-boxes",
+      "difficulty": "简单",
+      "tags": [
+        "贪心",
+        "数组",
+        "排序"
+      ],
+      "solved_dates": [
+        "2025.12.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/apple-redistribution-into-boxes/"
     }
   ]
 }
