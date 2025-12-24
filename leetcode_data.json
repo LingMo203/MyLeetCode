@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 151,
-  "updated_at": "2025.12.23",
+  "total_solved": 152,
+  "updated_at": "2025.12.24",
   "problems": [
     {
       "id": 1,
@@ -2227,6 +2227,23 @@
         "2025.12.23"
       ],
       "leetcode_url": "https://leetcode.cn/problems/longest-palindromic-substring/"
+    },
+    {
+      "id": 239,
+      "title": "滑动窗口最大值",
+      "title_slug": "sliding-window-maximum",
+      "difficulty": "困难",
+      "tags": [
+        "队列",
+        "数组",
+        "滑动窗口",
+        "单调队列",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2025.12.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/sliding-window-maximum/"
     }
   ]
 }
