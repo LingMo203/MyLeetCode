@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：153**  
+**总题数：154**  
 🟢 简单：88  
-🟡 中等：60  
+🟡 中等：61  
 🔴 困难：5
 
 
@@ -17,20 +17,20 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x63
+- **数组** x64
 - **哈希表** x28
 - **字符串** x27
 - **链表** x23
 - **树** x20
 - **二叉树** x19
 - **栈** x14
-- **队列** x2
+- **队列** x3
 
 ### ⚡ 核心算法
 - **双指针** x36
 - **数学** x35
 - **排序** x23
-- **动态规划** x16
+- **动态规划** x17
 - **二分查找** x15
 - **深度优先搜索** x15
 - **贪心** x12
@@ -38,7 +38,7 @@
 - **递归** x11
 - **位运算** x9
 - **单调栈** x2
-- **单调队列** x1
+- **单调队列** x2
 
 ### 🛠️ 其他技能
 - **滑动窗口** x5
@@ -203,6 +203,7 @@
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
 | 1523 | [在区间范围内统计奇数数目](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) | 🟢 简单 | 数学 | 2025.12.07 |
+| 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
 | 1925 | [统计平方和三元组的数目](https://leetcode.cn/problems/count-square-sum-triples/) | 🟢 简单 | 数学、枚举 | 2025.12.08 |
@@ -219,8 +220,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-24 14:33:19
-- **总题目数**：153
+- **最后更新**：2025-12-24 23:14:17
+- **总题目数**：154
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

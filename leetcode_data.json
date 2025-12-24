@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 153,
+  "total_solved": 154,
   "updated_at": "2025.12.24",
   "problems": [
     {
@@ -2259,6 +2259,23 @@
         "2025.12.24"
       ],
       "leetcode_url": "https://leetcode.cn/problems/apple-redistribution-into-boxes/"
+    },
+    {
+      "id": 1696,
+      "title": "跳跃游戏 VI",
+      "title_slug": "jump-game-vi",
+      "difficulty": "中等",
+      "tags": [
+        "队列",
+        "数组",
+        "动态规划",
+        "单调队列",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2025.12.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/jump-game-vi/"
     }
   ]
 }

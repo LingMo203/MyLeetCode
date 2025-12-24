@@ -9,10 +9,11 @@ public class StackTest {
     public static void main(String[] args) {
         StackTest st=new StackTest();
         int num=123;
-        int[] nums={1,3,-1,-3,5,3,6,7};
+        int[] nums={0,-1,-2,-3,1};
         String str="(1+(4+5+2)-3)+(6+8)";
         String str2="0";
-        System.out.println(Arrays.toString(st.maxSlidingWindow(nums, 3)));
+        //System.out.println(Arrays.toString(st.maxSlidingWindow(nums, 3)));
+        System.out.println(st.maxResult(nums,2));
     }
 
 
@@ -76,6 +77,47 @@ public class StackTest {
     }
 
 
+    //1696. 跳跃游戏 VI 看了题解
+    public int maxResult2(int[] nums, int k) {
+        int position=0,i=0,point=0;
+        while (position<nums.length-1){
+            point+=nums[position];
+            Deque<Integer> deque=new ArrayDeque<>();
+            boolean f=false;
+            for (i=position+1;i<=k+position;i++){
+                if (i>nums.length-1) break;
+                if (nums[i]>=0) {
+                    f=true;
+                    break;
+                }
+                while (!deque.isEmpty()&&nums[deque.getLast()]<=nums[i]){
+                    deque.removeLast();
+                }
+                deque.addLast(i);
+            }
+            position=f?i:deque.removeFirst();
+        }
+        point+=nums[nums.length-1];
+        return point;
+    }
+    public int maxResult(int[] nums, int k){
+        int length=nums.length;
+        int[] dp=new int[length];
+        Deque<Integer> deque=new ArrayDeque<>();
+        dp[0]=nums[0];
+        deque.addLast(0);
+        for (int i=1;i<length;i++){
+            while (deque.getFirst()<i-k){
+                deque.removeFirst();
+            }
+            dp[i]=nums[i]+dp[deque.getFirst()];
+            while (!deque.isEmpty()&&dp[i]>=dp[deque.getLast()]){
+                deque.removeLast();
+            }
+            deque.addLast(i);
+        }
+        return dp[length-1];
+    }
 
 
 
