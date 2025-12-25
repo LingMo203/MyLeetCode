@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 157,
+  "total_solved": 158,
   "updated_at": "2025.12.25",
   "problems": [
     {
@@ -2321,6 +2321,21 @@
         "2025.12.25"
       ],
       "leetcode_url": "https://leetcode.cn/problems/3sum-closest/"
+    },
+    {
+      "id": 18,
+      "title": "四数之和",
+      "title_slug": "4sum",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "双指针",
+        "排序"
+      ],
+      "solved_dates": [
+        "2025.12.25"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/4sum/"
     }
   ]
 }

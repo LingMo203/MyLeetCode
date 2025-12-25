@@ -7,7 +7,7 @@ public class T4 {
         T4 t4=new T4();
         int num=123;
         double dnum=2.0;
-        int[] nums={1,1,1,2,2,2,3,3,3};
+        int[] nums={1000000000,1000000000,1000000000,1000000000};
         String str="ccc";
         String str2="0";
         //System.out.println(t4.calculate(str));
@@ -26,7 +26,8 @@ public class T4 {
         //System.out.println(t4.reverseWords(str));
         //System.out.println(t4.myPow(dnum,10));
         //System.out.println(Arrays.toString(t4.topKFrequent(nums, 3)));
-        System.out.println(t4.longestPalindrome(str));
+        //System.out.println(t4.longestPalindrome(str));
+        System.out.println(t4.fourSum(nums,-294967296));
     }
 
 
@@ -685,6 +686,35 @@ public class T4 {
                 if (n==target) return target;
                 else if (n<target) left++;
                 else right--;
+            }
+        }
+        return result;
+    }
+
+    //18. 四数之和
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> result=new ArrayList<>();
+        HashSet<List<Integer>> hashSet=new HashSet<>();
+        Arrays.sort(nums);
+        for (int i=0;i<nums.length;i++){
+            for (int j=i+1;j<nums.length;j++){
+                int left=j+1,right=nums.length-1;
+                while (left<right){
+                    long sum=(long)nums[i]+nums[j]+nums[left]+nums[right];
+                    if (sum==target){
+                        List<Integer> list=new ArrayList<>();
+                        list.add(nums[i]);
+                        list.add(nums[j]);
+                        list.add(nums[left]);
+                        list.add(nums[right]);
+                        if (!hashSet.contains(list)){
+                            result.add(list);
+                            hashSet.add(list);
+                        }
+                        left++;right--;
+                    }else if (sum<target) left++;
+                    else right--;
+                }
             }
         }
         return result;
