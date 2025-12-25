@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 154,
-  "updated_at": "2025.12.24",
+  "total_solved": 155,
+  "updated_at": "2025.12.25",
   "problems": [
     {
       "id": 1,
@@ -2276,6 +2276,21 @@
         "2025.12.24"
       ],
       "leetcode_url": "https://leetcode.cn/problems/jump-game-vi/"
+    },
+    {
+      "id": 3075,
+      "title": "幸福值最大化的选择方案",
+      "title_slug": "maximize-happiness-of-selected-children",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组",
+        "排序"
+      ],
+      "solved_dates": [
+        "2025.12.25"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximize-happiness-of-selected-children/"
     }
   ]
 }

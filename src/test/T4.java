@@ -625,6 +625,19 @@ public class T4 {
         return count;
     }
 
+    //3075. 幸福值最大化的选择方案
+    public long maximumHappinessSum(int[] happiness, int k) {
+        Arrays.sort(happiness);
+        long result=0;
+        int count=0,i=happiness.length-1;
+        while (k-->0){
+            int num=happiness[i];
+            result+=(Math.max(num - count, 0));
+            count++;i--;
+        }
+        return result;
+    }
+
 
 
 
