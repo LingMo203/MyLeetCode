@@ -639,6 +639,34 @@ public class T4 {
     }
 
 
+    //15. 三数之和
+    public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+        List<List<Integer>> result=new ArrayList<>();
+        HashSet<List<Integer>> hashSet=new HashSet<>();
+        for (int i=0;i<nums.length;i++){
+            int target=-nums[i],left=i+1,right=nums.length-1;
+            while (left<right){
+                List<Integer> list=new ArrayList<>();
+                int sum=nums[left]+nums[right];
+                if (target==sum){
+                    list.add(-target);
+                    list.add(nums[left]);
+                    list.add(nums[right]);
+                    left++;right--;
+                    if (!hashSet.contains(list)) {
+                        result.add(list);
+                        hashSet.add(list);
+                    }
+                }else if (sum<target){
+                    left++;
+                }else if (sum>target){
+                    right--;
+                }
+            }
+        }
+        return result;
+    }
 
 
 
