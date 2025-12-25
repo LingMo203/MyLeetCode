@@ -669,6 +669,26 @@ public class T4 {
     }
 
 
+    //16. 最接近的三数之和
+    public int threeSumClosest(int[] nums, int target) {
+        int result=Integer.MAX_VALUE,distance=Integer.MAX_VALUE;
+        Arrays.sort(nums);
+        for (int i=0;i<nums.length;i++){
+            int left=i+1,right=nums.length-1;
+            while (left<right){
+                int n=nums[i]+nums[left]+nums[right];
+                int newDis=Math.max(target,n)-Math.min(target,n);
+                if (newDis<distance){
+                    result=n;
+                    distance=newDis;
+                }
+                if (n==target) return target;
+                else if (n<target) left++;
+                else right--;
+            }
+        }
+        return result;
+    }
 
 
 }

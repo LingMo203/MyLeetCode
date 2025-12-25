@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：156**  
+**总题数：157**  
 🟢 简单：88  
-🟡 中等：63  
+🟡 中等：64  
 🔴 困难：5
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x66
+- **数组** x67
 - **哈希表** x28
 - **字符串** x27
 - **链表** x23
@@ -27,9 +27,9 @@
 - **队列** x3
 
 ### ⚡ 核心算法
-- **双指针** x37
+- **双指针** x38
 - **数学** x35
-- **排序** x25
+- **排序** x26
 - **动态规划** x17
 - **二分查找** x15
 - **深度优先搜索** x15
@@ -70,6 +70,7 @@
 | 11 | [盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | 🟡 中等 | 贪心、数组、双指针 | 2025.11.28 |
 | 13 | [罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | 🟢 简单 | 哈希表、数学、字符串 | 2025.10.27 |
 | 15 | [三数之和](https://leetcode.cn/problems/3sum/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
+| 16 | [最接近的三数之和](https://leetcode.cn/problems/3sum-closest/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
 | 19 | [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | 🟡 中等 | 链表、双指针 | 2025.11.12 |
 | 20 | [有效的括号](https://leetcode.cn/problems/valid-parentheses/) | 🟢 简单 | 栈、字符串 | 2025.10.20 |
 | 21 | [合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) | 🟢 简单 | 递归、链表 | 2025.11.12 |
@@ -222,8 +223,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-25 21:59:24
-- **总题目数**：156
+- **最后更新**：2025-12-25 22:17:41
+- **总题目数**：157
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成
