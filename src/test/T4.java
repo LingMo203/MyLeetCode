@@ -720,5 +720,49 @@ public class T4 {
         return result;
     }
 
+    //2483. 商店的最少代价
+    public int bestClosingTime(String customers) {
+        int y=0,n=0;
+        for (int i=0;i<customers.length();i++){
+            char c=customers.charAt(i);
+            switch (c){
+                case 'Y': y++;break;
+                case 'N': n++;break;
+            }
+        }
+        int[] dp=new int[customers.length()+1];
+        int sy=0,sn=0,index=0,min=Integer.MAX_VALUE;
+        for (int i=0;i<dp.length-1;i++){
+            char c=customers.charAt(i);
+            dp[i]=y-sy+sn;
+            if (dp[i]<min){
+                min=dp[i];
+                index=i;
+            }
+            switch (c){
+                case 'Y': sy++;break;
+                case 'N': sn++;break;
+            }
+        }
+        dp[dp.length-1]=n;
+        return dp[dp.length-1]<min ? dp.length-1 :index;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

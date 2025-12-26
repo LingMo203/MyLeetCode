@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：158**  
+**总题数：159**  
 🟢 简单：88  
-🟡 中等：65  
+🟡 中等：66  
 🔴 困难：5
 
 
@@ -19,7 +19,7 @@
 ### 🔥 核心数据结构
 - **数组** x68
 - **哈希表** x28
-- **字符串** x27
+- **字符串** x28
 - **链表** x23
 - **树** x20
 - **二叉树** x19
@@ -214,6 +214,7 @@
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
+| 2483 | [商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) | 🟡 中等 | 字符串、前缀和 | 2025.12.26 |
 | 2578 | [最小和分割](https://leetcode.cn/problems/split-with-minimum-sum/) | 🟢 简单 | 贪心、数学、排序 | 2025.11.10 |
 | 3074 | [重新分装苹果](https://leetcode.cn/problems/apple-redistribution-into-boxes/) | 🟢 简单 | 贪心、数组、排序 | 2025.12.24 |
 | 3075 | [幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) | 🟡 中等 | 贪心、数组、排序 | 2025.12.25 |
@@ -224,8 +225,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-25 22:59:12
-- **总题目数**：158
+- **最后更新**：2025-12-26 22:00:19
+- **总题目数**：159
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

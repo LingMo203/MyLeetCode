@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 158,
-  "updated_at": "2025.12.25",
+  "total_solved": 159,
+  "updated_at": "2025.12.26",
   "problems": [
     {
       "id": 1,
@@ -2336,6 +2336,20 @@
         "2025.12.25"
       ],
       "leetcode_url": "https://leetcode.cn/problems/4sum/"
+    },
+    {
+      "id": 2483,
+      "title": "商店的最少代价",
+      "title_slug": "minimum-penalty-for-a-shop",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2025.12.26"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-penalty-for-a-shop/"
     }
   ]
 }
