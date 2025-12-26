@@ -7,7 +7,7 @@ public class T4 {
         T4 t4=new T4();
         int num=123;
         double dnum=2.0;
-        int[] nums={1000000000,1000000000,1000000000,1000000000};
+        int[] nums={1,-1,0};
         char[][] chars={{'5','3','.','.','7','.','.','.','.'},{'6','.','.','1','9','5','.','.','.'},{'.','9','8','.','.','.','.','6','.'},{'8','.','.','.','6','.','.','.','3'},{'4','.','.','8','.','3','.','.','1'},{'7','.','.','.','2','.','.','.','6'},{'.','6','.','.','.','.','2','8','.'},{'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
         String str="ccc";
         String str2="0";
@@ -29,7 +29,8 @@ public class T4 {
         //System.out.println(Arrays.toString(t4.topKFrequent(nums, 3)));
         //System.out.println(t4.longestPalindrome(str));
         //System.out.println(t4.fourSum(nums,-294967296));
-        System.out.println(t4.isValidSudoku(chars));
+        //System.out.println(t4.isValidSudoku(chars));
+        System.out.println(t4.subarraySum(nums,0));
     }
 
 
@@ -789,6 +790,19 @@ public class T4 {
     }
 
 
+    //560. 和为 K 的子数组
+    public int subarraySum(int[] nums, int k) {
+        int count=0;
+        for (int i=0;i<nums.length;i++){
+            int sum=nums[i];
+            if (sum==k) count++;
+            for (int j=i+1;j<nums.length;j++){
+                sum+=nums[j];
+                if (sum==k) count++;
+            }
+        }
+        return count;
+    }
 
 
 

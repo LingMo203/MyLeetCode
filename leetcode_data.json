@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 160,
+  "total_solved": 161,
   "updated_at": "2025.12.26",
   "problems": [
     {
@@ -2365,6 +2365,21 @@
         "2025.12.26"
       ],
       "leetcode_url": "https://leetcode.cn/problems/valid-sudoku/"
+    },
+    {
+      "id": 560,
+      "title": "和为 K 的子数组",
+      "title_slug": "subarray-sum-equals-k",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "哈希表",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2025.12.26"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/subarray-sum-equals-k/"
     }
   ]
 }

@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：160**  
+**总题数：161**  
 🟢 简单：88  
-🟡 中等：67  
+🟡 中等：68  
 🔴 困难：5
 
 
@@ -17,8 +17,8 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x69
-- **哈希表** x29
+- **数组** x70
+- **哈希表** x30
 - **字符串** x28
 - **链表** x23
 - **树** x20
@@ -187,6 +187,7 @@
 | 515 | [在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.22 |
 | 541 | [反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
 | 557 | [反转字符串中的单词 III](https://leetcode.cn/problems/reverse-words-in-a-string-iii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
+| 560 | [和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/) | 🟡 中等 | 数组、哈希表、前缀和 | 2025.12.26 |
 | 561 | [数组拆分](https://leetcode.cn/problems/array-partition/) | 🟢 简单 | 贪心、数组、计数排序、排序 | 2025.11.07 |
 | 575 | [分糖果](https://leetcode.cn/problems/distribute-candies/) | 🟢 简单 | 数组、哈希表 | 2025.10.29 |
 | 605 | [种花问题](https://leetcode.cn/problems/can-place-flowers/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
@@ -226,8 +227,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-26 22:40:45
-- **总题目数**：160
+- **最后更新**：2025-12-26 23:04:42
+- **总题目数**：161
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成
