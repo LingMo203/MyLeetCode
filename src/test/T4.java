@@ -8,6 +8,7 @@ public class T4 {
         int num=123;
         double dnum=2.0;
         int[] nums={1000000000,1000000000,1000000000,1000000000};
+        char[][] chars={{'5','3','.','.','7','.','.','.','.'},{'6','.','.','1','9','5','.','.','.'},{'.','9','8','.','.','.','.','6','.'},{'8','.','.','.','6','.','.','.','3'},{'4','.','.','8','.','3','.','.','1'},{'7','.','.','.','2','.','.','.','6'},{'.','6','.','.','.','.','2','8','.'},{'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
         String str="ccc";
         String str2="0";
         //System.out.println(t4.calculate(str));
@@ -27,7 +28,8 @@ public class T4 {
         //System.out.println(t4.myPow(dnum,10));
         //System.out.println(Arrays.toString(t4.topKFrequent(nums, 3)));
         //System.out.println(t4.longestPalindrome(str));
-        System.out.println(t4.fourSum(nums,-294967296));
+        //System.out.println(t4.fourSum(nums,-294967296));
+        System.out.println(t4.isValidSudoku(chars));
     }
 
 
@@ -746,6 +748,44 @@ public class T4 {
         }
         dp[dp.length-1]=n;
         return dp[dp.length-1]<min ? dp.length-1 :index;
+    }
+
+    //36. 有效的数独
+    public boolean isValidSudoku(char[][] board) {
+        HashSet<Integer>[] row=new HashSet[9];
+        HashSet<Integer>[] column=new HashSet[9];
+        HashSet<Integer>[] div=new HashSet[9];
+        for (int i=0;i<9;i++){
+            row[i]=new HashSet();
+            column[i]=new HashSet();
+            div[i]=new HashSet();
+        }
+        for (int i=0;i<9;i++){
+            for (int j=0;j<9;j++){
+                char c=board[i][j];
+                if (c=='.') continue;
+                else {
+                    int num=c-'0',x=0;
+                    if (row[i].contains(num)) return false;
+                    if (column[j].contains(num)) return false;
+                    x = switch (i) {
+                        case 3, 4, 5 -> 3;
+                        case 6, 7, 8 -> 6;
+                        default -> x;
+                    };
+                    x += switch (j) {
+                        case 3, 4, 5 -> 1;
+                        case 6, 7, 8 -> 2;
+                        default -> 0;
+                    };
+                    if (div[x].contains(num)) return false;
+                    row[i].add(num);
+                    column[j].add(num);
+                    div[x].add(num);
+                }
+            }
+        }
+        return true;
     }
 
 

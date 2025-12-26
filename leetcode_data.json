@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 159,
+  "total_solved": 160,
   "updated_at": "2025.12.26",
   "problems": [
     {
@@ -2350,6 +2350,21 @@
         "2025.12.26"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-penalty-for-a-shop/"
+    },
+    {
+      "id": 36,
+      "title": "有效的数独",
+      "title_slug": "valid-sudoku",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "哈希表",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2025.12.26"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/valid-sudoku/"
     }
   ]
 }
