@@ -10,10 +10,11 @@ public class StackTest {
         StackTest st=new StackTest();
         int num=123;
         int[] nums={0,-1,-2,-3,1};
-        String str="(1+(4+5+2)-3)+(6+8)";
+        String str="3[a]2[bc]";
         String str2="0";
         //System.out.println(Arrays.toString(st.maxSlidingWindow(nums, 3)));
-        System.out.println(st.maxResult(nums,2));
+        //System.out.println(st.maxResult(nums,2));
+        System.out.println(st.decodeString(str));
     }
 
 
@@ -119,6 +120,40 @@ public class StackTest {
         return dp[length-1];
     }
 
+    //394. 字符串解码
+    public String decodeString(String s) {
+        Deque<String> deque=new ArrayDeque<>();
+        int num=0;
+        for (int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if (c==']'){
+                StringBuilder str=new StringBuilder();
+                while (!deque.getFirst().equals("[")){
+                    String temp = deque.removeFirst();
+                    str.insert(0,temp);
+                }
+                deque.removeFirst();
+                String st=str.toString();
+                int n = Integer.parseInt(deque.removeFirst());
+                str.append(st.repeat(Math.max(0, n-1)));
+                deque.addFirst(str.toString());
+            }else {
+                if (c=='[') {
+                    deque.addFirst(String.valueOf(num));
+                    deque.addFirst(c+"");
+                    num=0;
+                }
+                else if (Character.isDigit(c)) num=num*10+(c-'0');
+                else deque.addFirst(c+"");
+            }
+        }
+        StringBuilder result=new StringBuilder();
+        while (!deque.isEmpty()){
+            String str=deque.removeFirst();
+            result.insert(0,str);
+        }
+        return result.toString();
+    }
 
 
 

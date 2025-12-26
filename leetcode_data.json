@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 161,
+  "total_solved": 162,
   "updated_at": "2025.12.26",
   "problems": [
     {
@@ -2380,6 +2380,21 @@
         "2025.12.26"
       ],
       "leetcode_url": "https://leetcode.cn/problems/subarray-sum-equals-k/"
+    },
+    {
+      "id": 394,
+      "title": "字符串解码",
+      "title_slug": "decode-string",
+      "difficulty": "中等",
+      "tags": [
+        "栈",
+        "递归",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2025.12.26"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/decode-string/"
     }
   ]
 }
