@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：162**  
+**总题数：163**  
 🟢 简单：88  
-🟡 中等：69  
+🟡 中等：70  
 🔴 困难：5
 
 
@@ -19,7 +19,7 @@
 ### 🔥 核心数据结构
 - **数组** x70
 - **哈希表** x30
-- **字符串** x29
+- **字符串** x30
 - **链表** x23
 - **树** x20
 - **二叉树** x19
@@ -28,7 +28,7 @@
 
 ### ⚡ 核心算法
 - **双指针** x39
-- **数学** x35
+- **数学** x36
 - **排序** x27
 - **动态规划** x17
 - **二分查找** x15
@@ -44,7 +44,7 @@
 - **滑动窗口** x5
 - **设计** x4
 - **分治** x3
-- **模拟** x2
+- **模拟** x3
 - **矩阵** x2
 - **并查集** x1
 - **回溯** x1
@@ -85,6 +85,7 @@
 | 35 | [搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
 | 36 | [有效的数独](https://leetcode.cn/problems/valid-sudoku/) | 🟡 中等 | 数组、哈希表、矩阵 | 2025.12.26 |
 | 42 | [接雨水](https://leetcode.cn/problems/trapping-rain-water/) | 🔴 困难 | 栈、数组、双指针、动态规划、单调栈 | 2025.12.03 |
+| 43 | [字符串相乘](https://leetcode.cn/problems/multiply-strings/) | 🟡 中等 | 数学、字符串、模拟 | 2025.12.27 |
 | 45 | [跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) | 🟡 中等 | 贪心、数组、动态规划 | 2025.12.17 |
 | 49 | [字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | 🟡 中等 | 数组、哈希表、字符串、排序 | 2025.12.03 |
 | 50 | [Pow(x, n)](https://leetcode.cn/problems/powx-n/) | 🟡 中等 | 递归、数学 | 2025.12.15 |
@@ -228,8 +229,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-26 23:42:17
-- **总题目数**：162
+- **最后更新**：2025-12-27 22:45:51
+- **总题目数**：163
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

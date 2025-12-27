@@ -9,8 +9,8 @@ public class T4 {
         double dnum=2.0;
         int[] nums={1,-1,0};
         char[][] chars={{'5','3','.','.','7','.','.','.','.'},{'6','.','.','1','9','5','.','.','.'},{'.','9','8','.','.','.','.','6','.'},{'8','.','.','.','6','.','.','.','3'},{'4','.','.','8','.','3','.','.','1'},{'7','.','.','.','2','.','.','.','6'},{'.','6','.','.','.','.','2','8','.'},{'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
-        String str="ccc";
-        String str2="0";
+        String str="79362";
+        String str2="217";
         //System.out.println(t4.calculate(str));
         //System.out.println(t4.countOdds(3,7));
         //System.out.println(t4.countTriples(5));
@@ -30,7 +30,9 @@ public class T4 {
         //System.out.println(t4.longestPalindrome(str));
         //System.out.println(t4.fourSum(nums,-294967296));
         //System.out.println(t4.isValidSudoku(chars));
-        System.out.println(t4.subarraySum(nums,0));
+        //System.out.println(t4.subarraySum(nums,0));
+        System.out.println(t4.multiply(str,str2));
+        //System.out.println(t4.addTwoNum("78554","1953000"));
     }
 
 
@@ -805,7 +807,81 @@ public class T4 {
     }
 
 
+    //43. 字符串相乘
+    public String multiply(String num1, String num2) {
+        if (num1.equals("0")||num2.equals("0")) return "0";
+        int zero=0,indexNum1=num1.length()-1,indexNum2=num2.length()-1;
+        while (num1.charAt(indexNum1)=='0'){
+            zero++;
+            indexNum1--;
+        }
+        while (num2.charAt(indexNum2)=='0'){
+            zero++;
+            indexNum2--;
+        }
+        int t=0;
+        Deque<String> deque=new ArrayDeque<>();
+        for (int i=indexNum1;i>=0;i--){
+            int n1=num1.charAt(i)-'0',lastAdd=0;
+            StringBuilder temp=new StringBuilder();
+            for (int j=indexNum2;j>=0;j--){
+                int num=n1*(num2.charAt(j)-'0')+lastAdd;
+                if (num>9) lastAdd=num/10;
+                else lastAdd=0;
+                temp.insert(0,String.valueOf(num%10));
+            }
+            if (lastAdd>0) temp.insert(0,lastAdd);
+            temp.append("0".repeat(Math.max(0, t)));
+            t++;
+            deque.addLast(temp.toString());
+        }
 
+        while (deque.size()>1){
+            String str1 = deque.removeFirst();
+            String str2 = deque.removeFirst();
+            String re=addTwoNum(str1,str2);
+            deque.addFirst(re);
+        }
+        String s=deque.removeFirst();
+        StringBuilder result=new StringBuilder(s);
+        for (;zero>0;zero--){
+            result.append(0);
+        }
+        return result.toString();
+    }
+    public String addTwoNum(String str1,String str2){
+        int i=str1.length()-1,j=str2.length()-1,addOne=0;
+        StringBuilder sb=new StringBuilder();
+        while (i>=0&&j>=0){
+            int num=(str1.charAt(i)-'0')+(str2.charAt(j)-'0')+addOne;
+            if (num>9) {
+                num%=10;
+                addOne = 1;
+            }else addOne=0;
+            sb.insert(0,num);
+            i--;j--;
+        }
+        while (i>=0){
+            int num=(str1.charAt(i)-'0')+addOne;
+            if (num>9) {
+                num%=10;
+                addOne = 1;
+            }else addOne=0;
+            sb.insert(0,num);
+            i--;
+        }
+        while (j>=0){
+            int num=(str2.charAt(j)-'0')+addOne;
+            if (num>9) {
+                num%=10;
+                addOne = 1;
+            }else addOne=0;
+            sb.insert(0,num);
+            j--;
+        }
+        if (addOne==1) sb.insert(0,1);
+        return sb.toString();
+    }
 
 
 
