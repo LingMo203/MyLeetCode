@@ -849,6 +849,7 @@ public class T4 {
         }
         return result.toString();
     }
+    //415. 字符串相加
     public String addTwoNum(String str1,String str2){
         int i=str1.length()-1,j=str2.length()-1,addOne=0;
         StringBuilder sb=new StringBuilder();
