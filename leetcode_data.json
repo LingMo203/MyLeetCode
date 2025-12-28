@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 167,
+  "total_solved": 168,
   "updated_at": "2025.12.28",
   "problems": [
     {
@@ -2472,6 +2472,23 @@
         "2025.12.28"
       ],
       "leetcode_url": "https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/"
+    },
+    {
+      "id": 117,
+      "title": "填充每个节点的下一个右侧节点指针 II",
+      "title_slug": "populating-next-right-pointers-in-each-node-ii",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "广度优先搜索",
+        "链表",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2025.12.28"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/"
     }
   ]
 }

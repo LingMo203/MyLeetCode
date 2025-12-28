@@ -421,7 +421,7 @@ class Solution {
         return result;
     }
 
-    //116. 填充每个节点的下一个右侧节点指针
+    //116. 填充每个节点的下一个右侧节点指针 和 117. 填充每个节点的下一个右侧节点指针 II
     public Node connect(Node root) {
         if (root==null) return null;
         Deque<Node> deque=new ArrayDeque<>();
