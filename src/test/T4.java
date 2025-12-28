@@ -885,6 +885,17 @@ public class T4 {
     }
 
 
+    //1351. 统计有序矩阵中的负数
+    public int countNegatives(int[][] grid) {
+        int count=0;
+        for (int[] nums:grid){
+            int i=nums.length-1;
+            while (i>=0&&nums[i--]<0){
+                count++;
+            }
+        }
+        return count;
+    }
 
 
 

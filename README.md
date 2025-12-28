@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：164**  
-🟢 简单：89  
+**总题数：165**  
+🟢 简单：90  
 🟡 中等：70  
 🔴 困难：5
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x70
+- **数组** x71
 - **字符串** x31
 - **哈希表** x30
 - **链表** x23
@@ -31,7 +31,7 @@
 - **数学** x37
 - **排序** x27
 - **动态规划** x17
-- **二分查找** x15
+- **二分查找** x16
 - **深度优先搜索** x15
 - **贪心** x13
 - **广度优先搜索** x12
@@ -45,7 +45,7 @@
 - **设计** x4
 - **模拟** x4
 - **分治** x3
-- **矩阵** x2
+- **矩阵** x3
 - **并查集** x1
 - **回溯** x1
 - **快速选择** x1
@@ -210,6 +210,7 @@
 | 1005 | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | 🟢 简单 | 贪心、数组、排序 | 2025.11.10 |
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
+| 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
 | 1523 | [在区间范围内统计奇数数目](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) | 🟢 简单 | 数学 | 2025.12.07 |
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
@@ -230,8 +231,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-27 22:49:49
-- **总题目数**：164
+- **最后更新**：2025-12-28 13:23:00
+- **总题目数**：165
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

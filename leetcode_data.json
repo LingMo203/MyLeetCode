@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 164,
-  "updated_at": "2025.12.27",
+  "total_solved": 165,
+  "updated_at": "2025.12.28",
   "problems": [
     {
       "id": 1,
@@ -2425,6 +2425,21 @@
         "2025.12.27"
       ],
       "leetcode_url": "https://leetcode.cn/problems/add-strings/"
+    },
+    {
+      "id": 1351,
+      "title": "统计有序矩阵中的负数",
+      "title_slug": "count-negative-numbers-in-a-sorted-matrix",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "二分查找",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2025.12.28"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/"
     }
   ]
 }
