@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 166,
+  "total_solved": 167,
   "updated_at": "2025.12.28",
   "problems": [
     {
@@ -2455,6 +2455,23 @@
         "2025.12.28"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-path-sum/"
+    },
+    {
+      "id": 116,
+      "title": "填充每个节点的下一个右侧节点指针",
+      "title_slug": "populating-next-right-pointers-in-each-node",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "广度优先搜索",
+        "链表",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2025.12.28"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/"
     }
   ]
 }

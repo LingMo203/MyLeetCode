@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：166**  
+**总题数：167**  
 🟢 简单：90  
-🟡 中等：71  
+🟡 中等：72  
 🔴 困难：5
 
 
@@ -20,9 +20,9 @@
 - **数组** x72
 - **字符串** x31
 - **哈希表** x30
-- **链表** x23
-- **树** x20
-- **二叉树** x19
+- **链表** x24
+- **树** x21
+- **二叉树** x20
 - **栈** x15
 - **队列** x3
 
@@ -32,9 +32,9 @@
 - **排序** x27
 - **动态规划** x18
 - **二分查找** x16
-- **深度优先搜索** x15
+- **深度优先搜索** x16
 - **贪心** x13
-- **广度优先搜索** x12
+- **广度优先搜索** x13
 - **递归** x12
 - **位运算** x9
 - **单调栈** x2
@@ -116,6 +116,7 @@
 | 110 | [平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/) | 🟢 简单 | 树、深度优先搜索、二叉树 | 2025.11.21 |
 | 111 | [二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.11.20 |
 | 114 | [二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | 🟡 中等 | 栈、树、深度优先搜索、链表、二叉树 | 2025.12.10 |
+| 116 | [填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、链表、二叉树 | 2025.12.28 |
 | 118 | [杨辉三角](https://leetcode.cn/problems/pascals-triangle/) | 🟢 简单 | 数组、动态规划 | 2025.11.26 |
 | 119 | [杨辉三角 II](https://leetcode.cn/problems/pascals-triangle-ii/) | 🟢 简单 | 数组、动态规划 | 2025.11.26 |
 | 121 | [买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | 🟢 简单 | 数组、动态规划 | 2025.11.26 |
@@ -232,8 +233,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-28 22:12:31
-- **总题目数**：166
+- **最后更新**：2025-12-28 22:53:48
+- **总题目数**：167
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

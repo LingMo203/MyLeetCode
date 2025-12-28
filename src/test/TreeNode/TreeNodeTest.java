@@ -421,4 +421,25 @@ class Solution {
         return result;
     }
 
+    //116. 填充每个节点的下一个右侧节点指针
+    public Node connect(Node root) {
+        if (root==null) return null;
+        Deque<Node> deque=new ArrayDeque<>();
+        deque.addLast(root);
+        while (!deque.isEmpty()){
+            int size=deque.size();
+            while (size-->1){
+                Node node=deque.removeFirst();
+                node.next=deque.getFirst();
+                if (node.left!=null) deque.addLast(node.left);
+                if (node.right!=null) deque.addLast(node.right);
+            }
+            Node node=deque.removeFirst();
+            node.next=null;
+            if (node.left!=null) deque.addLast(node.left);
+            if (node.right!=null) deque.addLast(node.right);
+        }
+        return root;
+    }
+
 }
