@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 165,
+  "total_solved": 166,
   "updated_at": "2025.12.28",
   "problems": [
     {
@@ -2440,6 +2440,21 @@
         "2025.12.28"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/"
+    },
+    {
+      "id": 64,
+      "title": "最小路径和",
+      "title_slug": "minimum-path-sum",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2025.12.28"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-path-sum/"
     }
   ]
 }
