@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：169**  
+**总题数：170**  
 🟢 简单：90  
-🟡 中等：74  
+🟡 中等：75  
 🔴 困难：5
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x73
+- **数组** x74
 - **字符串** x31
 - **哈希表** x30
 - **链表** x25
@@ -30,7 +30,7 @@
 - **双指针** x40
 - **数学** x37
 - **排序** x27
-- **动态规划** x18
+- **动态规划** x19
 - **二分查找** x17
 - **深度优先搜索** x17
 - **广度优先搜索** x14
@@ -120,6 +120,7 @@
 | 117 | [填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、链表、二叉树 | 2025.12.28 |
 | 118 | [杨辉三角](https://leetcode.cn/problems/pascals-triangle/) | 🟢 简单 | 数组、动态规划 | 2025.11.26 |
 | 119 | [杨辉三角 II](https://leetcode.cn/problems/pascals-triangle-ii/) | 🟢 简单 | 数组、动态规划 | 2025.11.26 |
+| 120 | [三角形最小路径和](https://leetcode.cn/problems/triangle/) | 🟡 中等 | 数组、动态规划 | 2025.12.29 |
 | 121 | [买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | 🟢 简单 | 数组、动态规划 | 2025.11.26 |
 | 125 | [验证回文串](https://leetcode.cn/problems/valid-palindrome/) | 🟢 简单 | 双指针、字符串 | 2025.11.04 |
 | 128 | [最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | 🟡 中等 | 并查集、数组、哈希表 | 2025.12.03 |
@@ -235,8 +236,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-29 21:53:13
-- **总题目数**：169
+- **最后更新**：2025-12-29 22:28:29
+- **总题目数**：170
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

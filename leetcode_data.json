@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 169,
+  "total_solved": 170,
   "updated_at": "2025.12.29",
   "problems": [
     {
@@ -2505,6 +2505,20 @@
         "2025.12.29"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-the-duplicate-number/"
+    },
+    {
+      "id": 120,
+      "title": "三角形最小路径和",
+      "title_slug": "triangle",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2025.12.29"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/triangle/"
     }
   ]
 }

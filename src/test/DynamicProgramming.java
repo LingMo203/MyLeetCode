@@ -1,6 +1,7 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class DynamicProgramming {
@@ -8,7 +9,11 @@ public class DynamicProgramming {
         DynamicProgramming dp=new DynamicProgramming();
         int[] nums={2,3,1,1,4};
         //int[][] dnums={{0,0,0,0},{0,1,0,0},{0,0,0,0},{0,0,1,0},{0,0,0,0}};
-        int[][] dnums={{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
+        Integer[][] dnums = {{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}};
+        List<List<Integer>> list = new ArrayList<>();
+        for (Integer[] row : dnums) {
+            list.add(Arrays.asList(row));
+        }
         String strs="aaabaaaabaaabaaaabaaaabaaaabaaaaba";
         String strs2="aaaba";
         //System.out.println(dp.fib(1));
@@ -22,7 +27,8 @@ public class DynamicProgramming {
         //System.out.println(dp.canJump(nums));
         //System.out.println(dp.maxSubArray(nums));
         //System.out.println(dp.jump(nums));
-        System.out.println(dp.minPathSum(dnums));
+        //System.out.println(dp.minPathSum(dnums));
+        System.out.println(dp.minimumTotal(list));
     }
 
 
@@ -257,6 +263,35 @@ public class DynamicProgramming {
         }
         return dp[n-1][m-1];
     }
+
+    //120. 三角形最小路径和
+    public int minimumTotal(List<List<Integer>> triangle) {
+        List<List<Integer>> dp=new ArrayList<>();
+        dp.add(triangle.get(0));
+        int size=triangle.size();
+        for (int i=1;i<size;i++){
+            List<Integer> temp=new ArrayList<>();
+            List<Integer> lastDp=dp.get(i-1);
+            List<Integer> lastTr=triangle.get(i);
+            temp.add(lastDp.get(0)+lastTr.get(0));
+            for (int j=1;j<i;j++){
+                int min=Math.min(lastDp.get(j-1),lastDp.get(j));
+                temp.add(min+lastTr.get(j));
+            }
+            temp.add(lastDp.get(i-1)+lastTr.get(i));
+            dp.add(temp);
+        }
+        int min=Integer.MAX_VALUE;
+        for (int num:dp.get(size-1)){
+            min=Math.min(min,num);
+        }
+        return min;
+    }
+
+
+
+
+
 
 
 
