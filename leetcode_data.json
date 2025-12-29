@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 170,
+  "total_solved": 171,
   "updated_at": "2025.12.29",
   "problems": [
     {
@@ -2519,6 +2519,21 @@
         "2025.12.29"
       ],
       "leetcode_url": "https://leetcode.cn/problems/triangle/"
+    },
+    {
+      "id": 122,
+      "title": "买卖股票的最佳时机 II",
+      "title_slug": "best-time-to-buy-and-sell-stock-ii",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2025.12.29"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/"
     }
   ]
 }

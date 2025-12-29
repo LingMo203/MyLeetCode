@@ -166,6 +166,18 @@ public class DynamicProgramming {
         return max;
     }
 
+    //122. 买卖股票的最佳时机 II  贪心
+    public int maxProfitII(int[] prices) {
+        int result=0;
+        for (int i=1;i<prices.length;i++){
+            int t=-prices[i-1]+prices[i];
+            if (t>0){
+                result+=t;
+            }
+        }
+        return result;
+    }
+
 
     //1137. 第 N 个泰波那契数
     public int tribonacci(int n) {
