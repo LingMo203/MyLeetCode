@@ -137,17 +137,65 @@ public class GiveUp {
         return amount==0?count:-1;
     }
 
-    //287. 寻找重复数 放弃
-    public int findDuplicate(int[] nums) {
-        int slow=0,fast=1,length=nums.length;
-        while (nums[slow]!=nums[fast]){
-            slow++;
-            fast+=2;
-            if (slow==fast) fast++;
-            if (slow==length-1) slow-=length-1;
-            if (fast>length-1) fast-=length-1;
+
+    //862. 和至少为 K 的最短子数组 放弃
+    public int shortestSubarray(int[] nums, int k) {
+        Deque<Integer> deque=new ArrayDeque<>();
+        int[] dp=new int[nums.length];
+        int sum=0,size=Integer.MAX_VALUE;
+        for (int i=0;i<nums.length;i++){
+            int num=nums[i];
+            deque.addLast(num);
+            sum+=num;
+            while (!deque.isEmpty()&&deque.getFirst()<=0){
+                int m=deque.removeFirst();
+                sum-=m;
+            }
+            while (!deque.isEmpty()&&sum>=k){
+                size = Math.min(size, deque.size());
+                int m=deque.removeFirst();
+                sum-=m;
+            }
         }
-        return nums[slow];
+        return size==Integer.MAX_VALUE?-1:size;
     }
 
+    //2402. 会议室 III 放弃
+    public int mostBooked(int n, int[][] meetings) {
+        int[] counts=new int[n];
+        int[] using=new int[n];
+        Arrays.sort(meetings, (a, b) -> a[0] - b[0]);
+        int i=0,time=0,k = 0;
+        while (i<meetings.length){
+            if (time>=meetings[i][0]) {
+                while (i<meetings.length&&time >= using[k]&&time>=meetings[i][0]) {
+                    int[] nums = meetings[i];
+                    using[k] = Math.max(time, nums[0]) + (nums[1] - nums[0]);
+                    counts[k]++;
+                    i++;
+                    int min = Integer.MAX_VALUE ;
+                    k=0;
+                    for (int j = 0; j < using.length; j++) {
+                        if (using[j] == 0) {
+                            k = j;
+                            break;
+                        }
+                        if (using[j] < min) {
+                            min = using[j];
+                            k = j;
+                        }
+                    }
+                }
+            }
+            time++;
+        }
+        int max=Integer.MIN_VALUE,index=0;
+        for (int j=0;j<counts.length;j++){
+            if (counts[j]>max){
+                max=counts[j];
+                index=j;
+            }
+        }
+        return index;
+    }
 }

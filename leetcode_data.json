@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 168,
-  "updated_at": "2025.12.28",
+  "total_solved": 169,
+  "updated_at": "2025.12.29",
   "problems": [
     {
       "id": 1,
@@ -2489,6 +2489,22 @@
         "2025.12.28"
       ],
       "leetcode_url": "https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/"
+    },
+    {
+      "id": 287,
+      "title": "寻找重复数",
+      "title_slug": "find-the-duplicate-number",
+      "difficulty": "中等",
+      "tags": [
+        "位运算",
+        "数组",
+        "双指针",
+        "二分查找"
+      ],
+      "solved_dates": [
+        "2025.12.29"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-duplicate-number/"
     }
   ]
 }

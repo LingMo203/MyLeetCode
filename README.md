@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：168**  
+**总题数：169**  
 🟢 简单：90  
-🟡 中等：73  
+🟡 中等：74  
 🔴 困难：5
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x72
+- **数组** x73
 - **字符串** x31
 - **哈希表** x30
 - **链表** x25
@@ -27,16 +27,16 @@
 - **队列** x3
 
 ### ⚡ 核心算法
-- **双指针** x39
+- **双指针** x40
 - **数学** x37
 - **排序** x27
 - **动态规划** x18
+- **二分查找** x17
 - **深度优先搜索** x17
-- **二分查找** x16
 - **广度优先搜索** x14
 - **贪心** x13
 - **递归** x12
-- **位运算** x9
+- **位运算** x10
 - **单调栈** x2
 - **单调队列** x2
 
@@ -164,6 +164,7 @@
 | 260 | [只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii/) | 🟡 中等 | 位运算、数组 | 2025.12.11 |
 | 268 | [丢失的数字](https://leetcode.cn/problems/missing-number/) | 🟢 简单 | 位运算、数组、哈希表、数学、二分查找、排序 | 2025.10.28 |
 | 283 | [移动零](https://leetcode.cn/problems/move-zeroes/) | 🟢 简单 | 数组、双指针 | 2025.11.05 |
+| 287 | [寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/) | 🟡 中等 | 位运算、数组、双指针、二分查找 | 2025.12.29 |
 | 290 | [单词规律](https://leetcode.cn/problems/word-pattern/) | 🟢 简单 | 哈希表、字符串 | 2025.10.29 |
 | 326 | [3 的幂](https://leetcode.cn/problems/power-of-three/) | 🟢 简单 | 递归、数学 | 2025.11.19 |
 | 328 | [奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | 🟡 中等 | 链表 | 2025.12.11 |
@@ -234,8 +235,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-28 22:59:14
-- **总题目数**：168
+- **最后更新**：2025-12-29 21:53:13
+- **总题目数**：169
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成
