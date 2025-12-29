@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 171,
+  "total_solved": 172,
   "updated_at": "2025.12.29",
   "problems": [
     {
@@ -2534,6 +2534,21 @@
         "2025.12.29"
       ],
       "leetcode_url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/"
+    },
+    {
+      "id": 129,
+      "title": "求根节点到叶节点数字之和",
+      "title_slug": "sum-root-to-leaf-numbers",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2025.12.29"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/sum-root-to-leaf-numbers/"
     }
   ]
 }

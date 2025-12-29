@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：171**  
+**总题数：172**  
 🟢 简单：90  
-🟡 中等：76  
+🟡 中等：77  
 🔴 困难：5
 
 
@@ -21,8 +21,8 @@
 - **字符串** x31
 - **哈希表** x30
 - **链表** x25
-- **树** x22
-- **二叉树** x21
+- **树** x23
+- **二叉树** x22
 - **栈** x15
 - **队列** x3
 
@@ -31,8 +31,8 @@
 - **数学** x37
 - **排序** x27
 - **动态规划** x20
+- **深度优先搜索** x18
 - **二分查找** x17
-- **深度优先搜索** x17
 - **贪心** x14
 - **广度优先搜索** x14
 - **递归** x12
@@ -125,6 +125,7 @@
 | 122 | [买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) | 🟡 中等 | 贪心、数组、动态规划 | 2025.12.29 |
 | 125 | [验证回文串](https://leetcode.cn/problems/valid-palindrome/) | 🟢 简单 | 双指针、字符串 | 2025.11.04 |
 | 128 | [最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | 🟡 中等 | 并查集、数组、哈希表 | 2025.12.03 |
+| 129 | [求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2025.12.29 |
 | 136 | [只出现一次的数字](https://leetcode.cn/problems/single-number/) | 🟢 简单 | 位运算、数组 | 2025.12.05 |
 | 137 | [只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) | 🟡 中等 | 位运算、数组 | 2025.12.11 |
 | 141 | [环形链表](https://leetcode.cn/problems/linked-list-cycle/) | 🟢 简单 | 哈希表、链表、双指针 | 2025.11.18 |
@@ -237,8 +238,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-29 22:44:38
-- **总题目数**：171
+- **最后更新**：2025-12-29 23:19:59
+- **总题目数**：172
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

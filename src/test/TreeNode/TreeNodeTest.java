@@ -442,4 +442,40 @@ class Solution {
         return root;
     }
 
+    //129. 求根节点到叶节点数字之和
+    public int sumNumbers(TreeNode root) {
+        if (root==null) return 0;
+        List<Integer> list=new ArrayList<>();
+        dfsSumNumbers(root,0,list);
+        int sum=0;
+        for (int num:list){
+            sum+=num;
+        }
+        return sum;
+    }
+    public void dfsSumNumbers(TreeNode root,int sum,List<Integer> list){
+        int num = sum*10 + root.val;
+        if (root.left==null&&root.right==null){
+            list.add(num);
+            return;
+        }
+        if (root.left != null) {
+            dfsSumNumbers(root.left,num,list);
+        }
+        if (root.right != null) {
+            dfsSumNumbers(root.right, num, list);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
