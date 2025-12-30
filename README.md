@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：173**  
+**总题数：174**  
 🟢 简单：90  
-🟡 中等：78  
+🟡 中等：79  
 🔴 困难：5
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x76
+- **数组** x77
 - **哈希表** x31
 - **字符串** x31
 - **链表** x25
@@ -33,7 +33,7 @@
 - **动态规划** x20
 - **深度优先搜索** x18
 - **二分查找** x17
-- **贪心** x14
+- **贪心** x15
 - **广度优先搜索** x14
 - **递归** x12
 - **位运算** x10
@@ -126,6 +126,7 @@
 | 125 | [验证回文串](https://leetcode.cn/problems/valid-palindrome/) | 🟢 简单 | 双指针、字符串 | 2025.11.04 |
 | 128 | [最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | 🟡 中等 | 并查集、数组、哈希表 | 2025.12.03 |
 | 129 | [求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2025.12.29 |
+| 134 | [加油站](https://leetcode.cn/problems/gas-station/) | 🟡 中等 | 贪心、数组 | 2025.12.30 |
 | 136 | [只出现一次的数字](https://leetcode.cn/problems/single-number/) | 🟢 简单 | 位运算、数组 | 2025.12.05 |
 | 137 | [只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) | 🟡 中等 | 位运算、数组 | 2025.12.11 |
 | 141 | [环形链表](https://leetcode.cn/problems/linked-list-cycle/) | 🟢 简单 | 哈希表、链表、双指针 | 2025.11.18 |
@@ -239,8 +240,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-30 22:15:16
-- **总题目数**：173
+- **最后更新**：2025-12-30 23:54:12
+- **总题目数**：174
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

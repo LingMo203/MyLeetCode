@@ -1,16 +1,18 @@
 package test;
 
-import java.util.HashSet;
+import java.util.*;
 
 public class T5 {
     public static void main(String[] args) {
         T5 t5=new T5();
         int num=123;
-        int[] nums={1,3,4,2,2};
+        int[] nums={4,5,3,1,4};
+        int[] nums2={5,4,3,4,2};
         int[][] numsD={{10, 3, 5}, {1, 6, 11}, {7, 9, 2}};
         String str="79362";
         //System.out.println(t5.findDuplicate(nums));
-        System.out.println(t5.numMagicSquaresInside(numsD));
+        //System.out.println(t5.numMagicSquaresInside(numsD));
+        System.out.println(t5.canCompleteCircuit(nums,nums2));
     }
 
     //287. 寻找重复数
@@ -67,6 +69,29 @@ public class T5 {
             }
         }
         return count;
+    }
+
+    //134. 加油站
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        int n=gas.length;
+        if (n==1) return gas[0]>=cost[0]?0:-1;
+        int i=0;
+        while (i<n){
+            int nowGas=0,j=0;
+            boolean f=true;
+            for (j=0;j<n;j++){
+                int index=(j+i)%n;
+                nowGas+=gas[index];
+                nowGas-=cost[index];
+                if (nowGas<0){
+                    f=false;
+                    break;
+                }
+            }
+            if (f) return i;
+            i=i+j+1;
+        }
+        return -1;
     }
 
 

@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 173,
+  "total_solved": 174,
   "updated_at": "2025.12.30",
   "problems": [
     {
@@ -2565,6 +2565,20 @@
         "2025.12.30"
       ],
       "leetcode_url": "https://leetcode.cn/problems/magic-squares-in-grid/"
+    },
+    {
+      "id": 134,
+      "title": "加油站",
+      "title_slug": "gas-station",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组"
+      ],
+      "solved_dates": [
+        "2025.12.30"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/gas-station/"
     }
   ]
 }
