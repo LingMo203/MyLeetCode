@@ -8,11 +8,12 @@ public class T5 {
         int num=123;
         int[] nums={4,5,3,1,4};
         int[] nums2={5,4,3,4,2};
-        int[][] numsD={{10, 3, 5}, {1, 6, 11}, {7, 9, 2}};
+        int[][] numsD={{-5}};
         String str="79362";
         //System.out.println(t5.findDuplicate(nums));
         //System.out.println(t5.numMagicSquaresInside(numsD));
-        System.out.println(t5.canCompleteCircuit(nums,nums2));
+        //System.out.println(t5.canCompleteCircuit(nums,nums2));
+        System.out.println(t5.searchMatrixII(numsD,-5));
     }
 
     //287. 寻找重复数
@@ -92,6 +93,39 @@ public class T5 {
             i=i+j+1;
         }
         return -1;
+    }
+
+
+    //74. 搜索二维矩阵
+    public boolean searchMatrix(int[][] matrix, int target) {
+        for (int[] nums:matrix){
+            if (nums[0]<=target&&target<=nums[nums.length-1]){
+                int left=0,right=nums.length-1,mid;
+                while (left<=right){
+                    mid=(right-left)/2+left;
+                    if (nums[mid]==target){
+                        return true;
+                    }else if (target<nums[mid]){
+                        right=mid-1;
+                    }else {
+                        left=mid+1;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    //240. 搜索二维矩阵 II
+    public boolean searchMatrixII(int[][] matrix, int target) {
+        int  left=0,right=matrix[0].length-1, search=matrix[0][right];
+        while (left<matrix.length&&right>=0){
+            int num=matrix[left][right];
+            if (num==target) return true;
+            else if (target<num) right--;
+            else left++;
+        }
+        return false;
     }
 
 

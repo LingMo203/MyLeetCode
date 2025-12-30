@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：177**  
+**总题数：179**  
 🟢 简单：90  
-🟡 中等：82  
+🟡 中等：84  
 🔴 困难：5
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x77
+- **数组** x79
 - **哈希表** x31
 - **字符串** x31
 - **链表** x26
@@ -32,7 +32,7 @@
 - **排序** x27
 - **动态规划** x20
 - **深度优先搜索** x20
-- **二分查找** x17
+- **二分查找** x19
 - **贪心** x15
 - **广度优先搜索** x14
 - **递归** x13
@@ -41,11 +41,11 @@
 - **单调队列** x2
 
 ### 🛠️ 其他技能
+- **矩阵** x7
 - **滑动窗口** x5
-- **矩阵** x5
 - **设计** x4
+- **分治** x4
 - **模拟** x4
-- **分治** x3
 - **并查集** x1
 - **回溯** x1
 - **快速选择** x1
@@ -99,6 +99,7 @@
 | 66 | [加一](https://leetcode.cn/problems/plus-one/) | 🟢 简单 | 数组、数学 | 2025.10.28 |
 | 69 | [x 的平方根](https://leetcode.cn/problems/sqrtx/) | 🟢 简单 | 数学、二分查找 | 2025.10.22 |
 | 70 | [爬楼梯](https://leetcode.cn/problems/climbing-stairs/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.22 |
+| 74 | [搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) | 🟡 中等 | 数组、二分查找、矩阵 | 2025.12.31 |
 | 75 | [颜色分类](https://leetcode.cn/problems/sort-colors/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.05 |
 | 80 | [删除有序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) | 🟡 中等 | 数组、双指针 | 2025.12.13 |
 | 82 | [删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | 🟡 中等 | 链表、双指针 | 2025.12.13 |
@@ -166,6 +167,7 @@
 | 237 | [删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list/) | 🟡 中等 | 链表 | 2025.12.11 |
 | 238 | [除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) | 🟡 中等 | 数组、前缀和 | 2025.12.11 |
 | 239 | [滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) | 🔴 困难 | 队列、数组、滑动窗口、单调队列、堆（优先队列） | 2025.12.24 |
+| 240 | [搜索二维矩阵 II](https://leetcode.cn/problems/search-a-2d-matrix-ii/) | 🟡 中等 | 数组、二分查找、分治、矩阵 | 2025.12.31 |
 | 242 | [有效的字母异位词](https://leetcode.cn/problems/valid-anagram/) | 🟢 简单 | 哈希表、字符串、排序 | 2025.10.24 |
 | 257 | [二叉树的所有路径](https://leetcode.cn/problems/binary-tree-paths/) | 🟢 简单 | 树、深度优先搜索、字符串、回溯、二叉树 | 2025.11.21 |
 | 260 | [只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii/) | 🟡 中等 | 位运算、数组 | 2025.12.11 |
@@ -243,8 +245,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-31 01:37:45
-- **总题目数**：177
+- **最后更新**：2025-12-31 02:14:36
+- **总题目数**：179
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成
