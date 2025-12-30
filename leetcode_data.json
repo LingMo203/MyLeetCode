@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 172,
-  "updated_at": "2025.12.29",
+  "total_solved": 173,
+  "updated_at": "2025.12.30",
   "problems": [
     {
       "id": 1,
@@ -2549,6 +2549,22 @@
         "2025.12.29"
       ],
       "leetcode_url": "https://leetcode.cn/problems/sum-root-to-leaf-numbers/"
+    },
+    {
+      "id": 840,
+      "title": "矩阵中的幻方",
+      "title_slug": "magic-squares-in-grid",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "哈希表",
+        "数学",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2025.12.30"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/magic-squares-in-grid/"
     }
   ]
 }

@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：172**  
+**总题数：173**  
 🟢 简单：90  
-🟡 中等：77  
+🟡 中等：78  
 🔴 困难：5
 
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x75
+- **数组** x76
+- **哈希表** x31
 - **字符串** x31
-- **哈希表** x30
 - **链表** x25
 - **树** x23
 - **二叉树** x22
@@ -28,7 +28,7 @@
 
 ### ⚡ 核心算法
 - **双指针** x40
-- **数学** x37
+- **数学** x38
 - **排序** x27
 - **动态规划** x20
 - **深度优先搜索** x18
@@ -42,9 +42,9 @@
 
 ### 🛠️ 其他技能
 - **滑动窗口** x5
+- **矩阵** x5
 - **设计** x4
 - **模拟** x4
-- **矩阵** x4
 - **分治** x3
 - **并查集** x1
 - **回溯** x1
@@ -209,6 +209,7 @@
 | 739 | [每日温度](https://leetcode.cn/problems/daily-temperatures/) | 🟡 中等 | 栈、数组、单调栈 | 2025.12.09 |
 | 746 | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | 🟢 简单 | 数组、动态规划 | 2025.11.22 |
 | 821 | [字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character/) | 🟢 简单 | 数组、双指针、字符串 | 2025.11.05 |
+| 840 | [矩阵中的幻方](https://leetcode.cn/problems/magic-squares-in-grid/) | 🟡 中等 | 数组、哈希表、数学、矩阵 | 2025.12.30 |
 | 860 | [柠檬水找零](https://leetcode.cn/problems/lemonade-change/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
 | 876 | [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | 🟢 简单 | 链表、双指针 | 2025.11.17 |
 | 961 | [在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.31 |
@@ -238,8 +239,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-29 23:19:59
-- **总题目数**：172
+- **最后更新**：2025-12-30 22:15:16
+- **总题目数**：173
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成
