@@ -468,6 +468,31 @@ class Solution {
     }
 
 
+    //235. 二叉搜索树的最近公共祖先
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        ArrayList<TreeNode> listp=new ArrayList<>();
+        ArrayList<TreeNode> listq=new ArrayList<>();
+        dfsLowestCommonAncestor(root,listp,p);
+        dfsLowestCommonAncestor(root,listq,q);
+        int i=0;
+        while (i < listp.size() && i < listq.size() &&listp.get(i).val==listq.get(i).val){
+            i++;
+        }
+        return listp.get(i-1);
+    }
+    public boolean dfsLowestCommonAncestor(TreeNode root,ArrayList<TreeNode> list,TreeNode p){
+        if (root==null){
+            return false;
+        }
+        list.add(root);
+        if (root.val==p.val){
+            return true;
+        }
+        if (dfsLowestCommonAncestor(root.left,list,p)) return true;
+        if (dfsLowestCommonAncestor(root.right,list,p)) return true;
+        list.remove(list.size()-1);
+        return false;
+    }
 
 
 
