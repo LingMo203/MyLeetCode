@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：174**  
+**总题数：175**  
 🟢 简单：90  
-🟡 中等：79  
+🟡 中等：80  
 🔴 困难：5
 
 
@@ -20,14 +20,14 @@
 - **数组** x77
 - **哈希表** x31
 - **字符串** x31
-- **链表** x25
+- **链表** x26
 - **树** x23
 - **二叉树** x22
-- **栈** x15
+- **栈** x16
 - **队列** x3
 
 ### ⚡ 核心算法
-- **双指针** x40
+- **双指针** x41
 - **数学** x38
 - **排序** x27
 - **动态规划** x20
@@ -35,7 +35,7 @@
 - **二分查找** x17
 - **贪心** x15
 - **广度优先搜索** x14
-- **递归** x12
+- **递归** x13
 - **位运算** x10
 - **单调栈** x2
 - **单调队列** x2
@@ -131,6 +131,7 @@
 | 137 | [只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) | 🟡 中等 | 位运算、数组 | 2025.12.11 |
 | 141 | [环形链表](https://leetcode.cn/problems/linked-list-cycle/) | 🟢 简单 | 哈希表、链表、双指针 | 2025.11.18 |
 | 142 | [环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) | 🟡 中等 | 哈希表、链表、双指针 | 2025.11.19 |
+| 143 | [重排链表](https://leetcode.cn/problems/reorder-list/) | 🟡 中等 | 栈、递归、链表、双指针 | 2025.12.31 |
 | 144 | [二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | 🟢 简单 | 栈、树、深度优先搜索、二叉树 | 2025.11.19 |
 | 145 | [二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | 🟢 简单 | 栈、树、深度优先搜索、二叉树 | 2025.11.19 |
 | 150 | [逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | 🟡 中等 | 栈、数组、数学 | 2025.12.11 |
@@ -240,8 +241,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-30 23:54:12
-- **总题目数**：174
+- **最后更新**：2025-12-31 00:29:06
+- **总题目数**：175
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

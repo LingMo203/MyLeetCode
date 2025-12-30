@@ -531,6 +531,39 @@ public class MyListNode {
         return cur;
     }
 
+    //143. 重排链表
+    public void reorderList(ListNode head) {
+        Deque<ListNode> deque=new ArrayDeque<>();
+        ListNode cur=head;
+        int size=0;
+        while (cur!=null){
+            size++;
+            deque.addLast(cur);
+            cur=cur.next;
+        }
+        cur=new ListNode();
+        if (size%2==0){
+            while (!deque.isEmpty()){
+                ListNode start=deque.removeFirst();
+                ListNode end=deque.removeLast();
+                cur.next=start;
+                start.next=end;
+                end.next=null;
+                cur=end;
+            }
+        }else {
+            while (deque.size()>1){
+                ListNode start=deque.removeFirst();
+                ListNode end=deque.removeLast();
+                cur.next=start;
+                start.next=end;
+                end.next=null;
+                cur=end;
+            }
+            cur.next=deque.removeLast();
+            cur.next.next=null;
+        }
+    }
 
 
 
