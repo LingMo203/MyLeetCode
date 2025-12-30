@@ -468,7 +468,7 @@ class Solution {
     }
 
 
-    //235. 二叉搜索树的最近公共祖先
+    //235. 二叉搜索树的最近公共祖先 和 236. 二叉树的最近公共祖先
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         ArrayList<TreeNode> listp=new ArrayList<>();
         ArrayList<TreeNode> listq=new ArrayList<>();

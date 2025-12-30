@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 176,
+  "total_solved": 177,
   "updated_at": "2025.12.31",
   "problems": [
     {
@@ -2611,6 +2611,21 @@
         "2025.12.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+    },
+    {
+      "id": 236,
+      "title": "二叉树的最近公共祖先",
+      "title_slug": "lowest-common-ancestor-of-a-binary-tree",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2025.12.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/"
     }
   ]
 }

@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：176**  
+**总题数：177**  
 🟢 简单：90  
-🟡 中等：81  
+🟡 中等：82  
 🔴 困难：5
 
 
@@ -21,8 +21,8 @@
 - **哈希表** x31
 - **字符串** x31
 - **链表** x26
-- **树** x24
-- **二叉树** x23
+- **树** x25
+- **二叉树** x24
 - **栈** x16
 - **队列** x3
 
@@ -31,7 +31,7 @@
 - **数学** x38
 - **排序** x27
 - **动态规划** x20
-- **深度优先搜索** x19
+- **深度优先搜索** x20
 - **二分查找** x17
 - **贪心** x15
 - **广度优先搜索** x14
@@ -162,6 +162,7 @@
 | 231 | [2 的幂](https://leetcode.cn/problems/power-of-two/) | 🟢 简单 | 位运算、递归、数学 | 2025.10.17 |
 | 232 | [用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/) | 🟢 简单 | 栈、设计、队列 | 2025.12.09 |
 | 235 | [二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 🟡 中等 | 树、深度优先搜索、二叉搜索树、二叉树 | 2025.12.31 |
+| 236 | [二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2025.12.31 |
 | 237 | [删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list/) | 🟡 中等 | 链表 | 2025.12.11 |
 | 238 | [除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) | 🟡 中等 | 数组、前缀和 | 2025.12.11 |
 | 239 | [滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) | 🔴 困难 | 队列、数组、滑动窗口、单调队列、堆（优先队列） | 2025.12.24 |
@@ -242,8 +243,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-31 01:33:42
-- **总题目数**：176
+- **最后更新**：2025-12-31 01:37:45
+- **总题目数**：177
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成
