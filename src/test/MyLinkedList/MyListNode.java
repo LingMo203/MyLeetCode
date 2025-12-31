@@ -5,7 +5,7 @@ import java.util.*;
 public class MyListNode {
     public static void main(String[] args) {
         int[] a={1,2,3,4,5};
-        int[] b={5,6,4};
+        int[] b={4,6,8};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
         ListNode listb=newList(b);
@@ -19,7 +19,8 @@ public class MyListNode {
         //showList(a1.swapNodes(lista,1));
         //showList(a1.deleteMiddle(lista));
         //showList(a1.addTwoNumbers2(lista,listb));
-        showList(a1.reverseList2(lista));
+        //showList(a1.reverseList2(lista));
+        showList(a1.addTwoList(lista,listb));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -563,6 +564,37 @@ public class MyListNode {
             cur.next=deque.removeLast();
             cur.next.next=null;
         }
+    }
+
+    //23. 合并 K 个升序链表
+    public ListNode mergeKLists(ListNode[] lists) {
+        if (lists.length==0) return null;
+        else if (lists.length==1) return lists[0];
+        ListNode addList=addTwoList(lists[0],lists[1]);
+        for (int i=2;i<lists.length;i++){
+            addList=addTwoList(addList,lists[i]);
+        }
+        return addList;
+    }
+    public ListNode addTwoList(ListNode l1,ListNode l2){
+        ListNode newDummyHead=new ListNode();
+        ListNode cur=newDummyHead;
+        while (l1!=null&&l2!=null){
+            if (l1.val<l2.val){
+                cur.next=l1;
+                l1=l1.next;
+            }else {
+                cur.next=l2;
+                l2=l2.next;
+            }
+            cur=cur.next;
+        }
+        if (l1!=null){
+            cur.next=l1;
+        }else if (l2!=null){
+            cur.next=l2;
+        }
+        return newDummyHead.next;
     }
 
 

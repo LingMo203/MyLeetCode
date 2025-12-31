@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 180,
+  "total_solved": 181,
   "updated_at": "2025.12.31",
   "problems": [
     {
@@ -2672,6 +2672,22 @@
         "2025.12.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/set-matrix-zeroes/"
+    },
+    {
+      "id": 23,
+      "title": "合并 K 个升序链表",
+      "title_slug": "merge-k-sorted-lists",
+      "difficulty": "困难",
+      "tags": [
+        "链表",
+        "分治",
+        "堆（优先队列）",
+        "归并排序"
+      ],
+      "solved_dates": [
+        "2025.12.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/merge-k-sorted-lists/"
     }
   ]
 }
