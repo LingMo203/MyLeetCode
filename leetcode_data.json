@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 181,
+  "total_solved": 182,
   "updated_at": "2025.12.31",
   "problems": [
     {
@@ -2688,6 +2688,20 @@
         "2025.12.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/merge-k-sorted-lists/"
+    },
+    {
+      "id": 25,
+      "title": "K 个一组翻转链表",
+      "title_slug": "reverse-nodes-in-k-group",
+      "difficulty": "困难",
+      "tags": [
+        "递归",
+        "链表"
+      ],
+      "solved_dates": [
+        "2025.12.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/reverse-nodes-in-k-group/"
     }
   ]
 }

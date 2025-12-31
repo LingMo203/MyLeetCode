@@ -20,7 +20,9 @@ public class MyListNode {
         //showList(a1.deleteMiddle(lista));
         //showList(a1.addTwoNumbers2(lista,listb));
         //showList(a1.reverseList2(lista));
-        showList(a1.addTwoList(lista,listb));
+        //showList(a1.addTwoList(lista,listb));
+        //showList(a1.reverseByK(lista,2,4));
+        showList(a1.reverseKGroup(lista,3));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -595,6 +597,38 @@ public class MyListNode {
             cur.next=l2;
         }
         return newDummyHead.next;
+    }
+
+    //25. K 个一组翻转链表
+    public ListNode reverseKGroup(ListNode head, int k) {
+        int length=length(head);
+        for (int i=0;i+k<=length;i+=k){
+            head=reverseByK(head,i,k);
+        }
+        return head;
+    }
+    public ListNode reverseByK(ListNode head,int start,int k){
+        ListNode cur=head,curNewHead=new ListNode(0,head);
+        for (int i=0;i<start;i++){
+            cur=cur.next;
+            curNewHead=curNewHead.next;
+        }
+        ListNode last=null;
+        for (int i=0;i<k;i++){
+            if (cur!=null) {
+                ListNode next = cur.next;
+                cur.next = last;
+                last = cur;
+                cur = next;
+            }
+        }
+        ListNode reend=last;
+        while (reend!=null&&reend.next!=null){
+            reend=reend.next;
+        }
+        reend.next=cur;
+        if (start>0) curNewHead.next=last;
+        return start>0?head:last;
     }
 
 

@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：181**  
+**总题数：182**  
 🟢 简单：90  
 🟡 中等：85  
-🔴 困难：6
+🔴 困难：7
 
 
 ---
@@ -20,7 +20,7 @@
 - **数组** x80
 - **哈希表** x32
 - **字符串** x31
-- **链表** x27
+- **链表** x28
 - **树** x25
 - **二叉树** x24
 - **栈** x16
@@ -35,7 +35,7 @@
 - **二分查找** x19
 - **贪心** x15
 - **广度优先搜索** x14
-- **递归** x13
+- **递归** x14
 - **位运算** x10
 - **单调栈** x2
 - **单调队列** x2
@@ -77,6 +77,7 @@
 | 21 | [合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) | 🟢 简单 | 递归、链表 | 2025.11.12 |
 | 23 | [合并 K 个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/) | 🔴 困难 | 链表、分治、堆（优先队列）、归并排序 | 2025.12.31 |
 | 24 | [两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/) | 🟡 中等 | 递归、链表 | 2025.11.14 |
+| 25 | [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | 🔴 困难 | 递归、链表 | 2025.12.31 |
 | 26 | [删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) | 🟢 简单 | 数组、双指针 | 2025.11.03 |
 | 27 | [移除元素](https://leetcode.cn/problems/remove-element/) | 🟢 简单 | 数组、双指针 | 2025.11.04 |
 | 28 | [找出字符串中第一个匹配项的下标](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) | 🟢 简单 | 双指针、字符串、字符串匹配 | 2025.11.04 |
@@ -247,8 +248,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-31 22:01:49
-- **总题目数**：181
+- **最后更新**：2025-12-31 23:25:48
+- **总题目数**：182
 - **技能标签数**：42
 
 > 🤖 本页面由自动化脚本生成
