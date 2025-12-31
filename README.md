@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：179**  
+**总题数：180**  
 🟢 简单：90  
-🟡 中等：84  
+🟡 中等：85  
 🔴 困难：5
 
 
@@ -17,8 +17,8 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x79
-- **哈希表** x31
+- **数组** x80
+- **哈希表** x32
 - **字符串** x31
 - **链表** x26
 - **树** x25
@@ -41,7 +41,7 @@
 - **单调队列** x2
 
 ### 🛠️ 其他技能
-- **矩阵** x7
+- **矩阵** x8
 - **滑动窗口** x5
 - **设计** x4
 - **分治** x4
@@ -99,6 +99,7 @@
 | 66 | [加一](https://leetcode.cn/problems/plus-one/) | 🟢 简单 | 数组、数学 | 2025.10.28 |
 | 69 | [x 的平方根](https://leetcode.cn/problems/sqrtx/) | 🟢 简单 | 数学、二分查找 | 2025.10.22 |
 | 70 | [爬楼梯](https://leetcode.cn/problems/climbing-stairs/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.22 |
+| 73 | [矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/) | 🟡 中等 | 数组、哈希表、矩阵 | 2025.12.31 |
 | 74 | [搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) | 🟡 中等 | 数组、二分查找、矩阵 | 2025.12.31 |
 | 75 | [颜色分类](https://leetcode.cn/problems/sort-colors/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.05 |
 | 80 | [删除有序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) | 🟡 中等 | 数组、双指针 | 2025.12.13 |
@@ -245,8 +246,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-31 02:14:36
-- **总题目数**：179
+- **最后更新**：2025-12-31 21:45:39
+- **总题目数**：180
 - **技能标签数**：41
 
 > 🤖 本页面由自动化脚本生成

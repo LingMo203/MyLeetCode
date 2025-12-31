@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 179,
+  "total_solved": 180,
   "updated_at": "2025.12.31",
   "problems": [
     {
@@ -2657,6 +2657,21 @@
         "2025.12.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/search-a-2d-matrix-ii/"
+    },
+    {
+      "id": 73,
+      "title": "矩阵置零",
+      "title_slug": "set-matrix-zeroes",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "哈希表",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2025.12.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/set-matrix-zeroes/"
     }
   ]
 }
