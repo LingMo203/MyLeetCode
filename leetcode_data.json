@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 182,
+  "total_solved": 183,
   "updated_at": "2025.12.31",
   "problems": [
     {
@@ -2702,6 +2702,22 @@
         "2025.12.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/reverse-nodes-in-k-group/"
+    },
+    {
+      "id": 98,
+      "title": "验证二叉搜索树",
+      "title_slug": "validate-binary-search-tree",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "二叉搜索树",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2025.12.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/validate-binary-search-tree/"
     }
   ]
 }

@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：182**  
+**总题数：183**  
 🟢 简单：90  
-🟡 中等：85  
+🟡 中等：86  
 🔴 困难：7
 
 
@@ -21,8 +21,8 @@
 - **哈希表** x32
 - **字符串** x31
 - **链表** x28
-- **树** x25
-- **二叉树** x24
+- **树** x26
+- **二叉树** x25
 - **栈** x16
 - **队列** x3
 
@@ -30,8 +30,8 @@
 - **双指针** x41
 - **数学** x38
 - **排序** x27
+- **深度优先搜索** x21
 - **动态规划** x20
-- **深度优先搜索** x20
 - **二分查找** x19
 - **贪心** x15
 - **广度优先搜索** x14
@@ -111,6 +111,7 @@
 | 88 | [合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) | 🟢 简单 | 数组、双指针、排序 | 2025.11.04 |
 | 92 | [反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/) | 🟡 中等 | 链表 | 2025.12.18 |
 | 94 | [二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | 🟢 简单 | 栈、树、深度优先搜索、二叉树 | 2025.11.19 |
+| 98 | [验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/) | 🟡 中等 | 树、深度优先搜索、二叉搜索树、二叉树 | 2025.12.31 |
 | 100 | [相同的树](https://leetcode.cn/problems/same-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.11.19 |
 | 101 | [对称二叉树](https://leetcode.cn/problems/symmetric-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.11.20 |
 | 102 | [二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 🟡 中等 | 树、广度优先搜索、二叉树 | 2025.11.19 |
@@ -248,8 +249,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-31 23:25:48
-- **总题目数**：182
+- **最后更新**：2025-12-31 23:51:45
+- **总题目数**：183
 - **技能标签数**：42
 
 > 🤖 本页面由自动化脚本生成

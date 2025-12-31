@@ -494,6 +494,16 @@ class Solution {
         return false;
     }
 
+    //98. 验证二叉搜索树
+    public boolean isValidBST(TreeNode root) {
+        return dfsIsValidBST(root,Long.MIN_VALUE,Long.MAX_VALUE);
+    }
+    public boolean dfsIsValidBST(TreeNode root,long min,long max){
+        if (root==null) return true;
+        if (root.val<=min||root.val>=max) return false;
+        return dfsIsValidBST(root.left,min,root.val)&&dfsIsValidBST(root.right,root.val,max);
+    }
+
 
 
 
