@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：183**  
+**总题数：184**  
 🟢 简单：90  
-🟡 中等：86  
+🟡 中等：87  
 🔴 困难：7
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x80
+- **数组** x81
 - **哈希表** x32
 - **字符串** x31
 - **链表** x28
@@ -41,10 +41,10 @@
 - **单调队列** x2
 
 ### 🛠️ 其他技能
-- **矩阵** x8
+- **矩阵** x9
+- **设计** x5
 - **滑动窗口** x5
 - **分治** x5
-- **设计** x4
 - **模拟** x4
 - **并查集** x1
 - **回溯** x1
@@ -179,6 +179,7 @@
 | 283 | [移动零](https://leetcode.cn/problems/move-zeroes/) | 🟢 简单 | 数组、双指针 | 2025.11.05 |
 | 287 | [寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/) | 🟡 中等 | 位运算、数组、双指针、二分查找 | 2025.12.29 |
 | 290 | [单词规律](https://leetcode.cn/problems/word-pattern/) | 🟢 简单 | 哈希表、字符串 | 2025.10.29 |
+| 304 | [二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/) | 🟡 中等 | 设计、数组、矩阵、前缀和 | 2026.01.01 |
 | 326 | [3 的幂](https://leetcode.cn/problems/power-of-three/) | 🟢 简单 | 递归、数学 | 2025.11.19 |
 | 328 | [奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | 🟡 中等 | 链表 | 2025.12.11 |
 | 342 | [4 的幂](https://leetcode.cn/problems/power-of-four/) | 🟢 简单 | 位运算、递归、数学 | 2025.11.19 |
@@ -249,8 +250,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2025-12-31 23:51:45
-- **总题目数**：183
+- **最后更新**：2026-01-01 00:37:37
+- **总题目数**：184
 - **技能标签数**：42
 
 > 🤖 本页面由自动化脚本生成
