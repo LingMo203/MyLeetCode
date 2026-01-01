@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 184,
+  "total_solved": 185,
   "updated_at": "2026.01.01",
   "problems": [
     {
@@ -2734,6 +2734,21 @@
         "2026.01.01"
       ],
       "leetcode_url": "https://leetcode.cn/problems/range-sum-query-2d-immutable/"
+    },
+    {
+      "id": 54,
+      "title": "螺旋矩阵",
+      "title_slug": "spiral-matrix",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "矩阵",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.01.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/spiral-matrix/"
     }
   ]
 }

@@ -8,12 +8,16 @@ public class T5 {
         int num=123;
         int[] nums={4,5,3,1,4};
         int[] nums2={5,4,3,4,2};
-        int[][] numsD={{-5}};
+        int[][] numsD={{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+        int[][] numsD3={{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12},{13,14,15,16}};
+        int[][] numsD2={{1,2,3}};
         String str="79362";
         //System.out.println(t5.findDuplicate(nums));
         //System.out.println(t5.numMagicSquaresInside(numsD));
         //System.out.println(t5.canCompleteCircuit(nums,nums2));
-        System.out.println(t5.searchMatrixII(numsD,-5));
+        //System.out.println(t5.searchMatrixII(numsD,-5));
+        System.out.println(t5.spiralOrder(numsD2));
+        //System.out.println(1/2);
     }
 
     //287. 寻找重复数
@@ -147,6 +151,44 @@ public class T5 {
         }
     }
 
+    //54. 螺旋矩阵
+    public List<Integer> spiralOrder(int[][] matrix) {
+        int m = matrix.length,n = matrix[0].length;
+        List<Integer> result=new ArrayList<>();
+        int left=0,right=n-1,top=0,botton=m-1;
+        while (top <= botton && left <= right){
+            boolean a=true;
+            for (int i=left;i<=right;i++){
+                result.add(matrix[top][i]);
+                a=false;
+            }
+            if (a) break;
+            a=true;
+            top++;
+            for (int i=top;i<=botton;i++){
+                result.add(matrix[i][right]);
+                a=false;
+            }
+            if (a) break;
+            a=true;
+            right--;
+            for (int i=right;i>=left;i--){
+                result.add(matrix[botton][i]);
+                a=false;
+            }
+            if (a) break;
+            a=true;
+            botton--;
+            for (int i=botton;i>=top;i--){
+                result.add(matrix[i][left]);
+                a=false;
+            }
+            if (a) break;
+            a=true;
+            left++;
+        }
+        return result;
+    }
 
 
 
