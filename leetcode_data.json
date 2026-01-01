@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 185,
-  "updated_at": "2026.01.01",
+  "total_solved": 186,
+  "updated_at": "2026.01.02",
   "problems": [
     {
       "id": 1,
@@ -2749,6 +2749,21 @@
         "2026.01.01"
       ],
       "leetcode_url": "https://leetcode.cn/problems/spiral-matrix/"
+    },
+    {
+      "id": 48,
+      "title": "旋转图像",
+      "title_slug": "rotate-image",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "数学",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/rotate-image/"
     }
   ]
 }

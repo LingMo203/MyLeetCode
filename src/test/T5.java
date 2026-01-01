@@ -9,15 +9,16 @@ public class T5 {
         int[] nums={4,5,3,1,4};
         int[] nums2={5,4,3,4,2};
         int[][] numsD={{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-        int[][] numsD3={{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12},{13,14,15,16}};
-        int[][] numsD2={{1,2,3}};
+        int[][] numsD3={{5, 1, 9, 11}, {2, 4, 8, 10}, {13, 3, 6, 7}, {15, 14, 12, 16}};
+        int[][] numsD2={{1,2,3},{4,5,6},{7,8,9}};
         String str="79362";
         //System.out.println(t5.findDuplicate(nums));
         //System.out.println(t5.numMagicSquaresInside(numsD));
         //System.out.println(t5.canCompleteCircuit(nums,nums2));
         //System.out.println(t5.searchMatrixII(numsD,-5));
-        System.out.println(t5.spiralOrder(numsD2));
+        //System.out.println(t5.spiralOrder(numsD2));
         //System.out.println(1/2);
+        t5.rotate(numsD3);
     }
 
     //287. 寻找重复数
@@ -191,6 +192,39 @@ public class T5 {
     }
 
 
+    //48. 旋转图像
+    public void rotate(int[][] matrix) {
+        int n = matrix.length,top=0,end=n-1;
+        while (top<end){
+            for (int i=0;i<n;i++){
+                int temp=matrix[top][i];
+                matrix[top][i]=matrix[end][i];
+                matrix[end][i]=temp;
+            }
+            top++;end--;
+        }
+        Deque<int[]> right=new ArrayDeque<>();
+        Deque<int[]> left=new ArrayDeque<>();
+        right.addLast(new int[]{0,n-1});
+        left.addLast(new int[]{n-1,0});
+        for (int i=0;i<n;i++){
+            int size=right.size();
+            while (size-->0){
+                int[] a1=right.removeFirst();
+                int[] a2=left.removeFirst();
+                int i1=a1[0],j1=a1[1],i2=a2[0],j2=a2[1];
+                if (right.isEmpty()) right.addLast(new int[]{i1,j1-1});
+                else if (!Arrays.equals(new int[]{i1,j1-1},right.getLast())) right.addLast(new int[]{i1,j1-1});
+                right.addLast(new int[]{i1+1,j1});
+                if (left.isEmpty()) left.addLast(new int[]{i2-1,j2});
+                else if (!Arrays.equals(new int[]{i2-1,j2},left.getLast())) left.addLast(new int[]{i2-1,j2});
+                left.addLast(new int[]{i2,j2+1});
+                int temp=matrix[i1][j1];
+                matrix[i1][j1]=matrix[i2][j2];
+                matrix[i2][j2]=temp;
+            }
+        }
+    }
 
 
 
