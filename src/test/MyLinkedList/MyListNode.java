@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={1,2,3,4,5};
+        int[] a={1,2,2,1};
         int[] b={4,6,8};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
@@ -22,7 +22,8 @@ public class MyListNode {
         //showList(a1.reverseList2(lista));
         //showList(a1.addTwoList(lista,listb));
         //showList(a1.reverseByK(lista,2,4));
-        showList(a1.reverseKGroup(lista,3));
+        //showList(a1.reverseKGroup(lista,3));
+        System.out.println(a1.isPalindrome(lista));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -632,6 +633,25 @@ public class MyListNode {
     }
 
 
+    //234. 回文链表
+    public boolean isPalindrome(ListNode head) {
+        ListNode slow=head,fast=head,last=null;
+        int length=listLength(head);
+        while (fast!=null&&fast.next!=null){
+            fast=fast.next.next;
+            ListNode temp=slow.next;
+            slow.next=last;
+            last=slow;
+            slow=temp;
+        }
+        if (length%2==1&&slow != null) slow=slow.next;
+        while (last!=null&&slow!=null){
+            if (last.val!=slow.val) return false;
+            last=last.next;
+            slow=slow.next;
+        }
+        return true;
+    }
 
 
 

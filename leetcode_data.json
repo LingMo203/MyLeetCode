@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 186,
+  "total_solved": 187,
   "updated_at": "2026.01.02",
   "problems": [
     {
@@ -2764,6 +2764,22 @@
         "2026.01.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/rotate-image/"
+    },
+    {
+      "id": 234,
+      "title": "回文链表",
+      "title_slug": "palindrome-linked-list",
+      "difficulty": "简单",
+      "tags": [
+        "栈",
+        "递归",
+        "链表",
+        "双指针"
+      ],
+      "solved_dates": [
+        "2026.01.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/palindrome-linked-list/"
     }
   ]
 }

@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：186**  
-🟢 简单：90  
+**总题数：187**  
+🟢 简单：91  
 🟡 中等：89  
 🔴 困难：7
 
@@ -20,22 +20,22 @@
 - **数组** x83
 - **哈希表** x32
 - **字符串** x31
-- **链表** x28
+- **链表** x29
 - **树** x26
 - **二叉树** x25
-- **栈** x16
+- **栈** x17
 - **队列** x3
 
 ### ⚡ 核心算法
-- **双指针** x41
+- **双指针** x42
 - **数学** x39
 - **排序** x27
 - **深度优先搜索** x21
 - **动态规划** x20
 - **二分查找** x19
 - **贪心** x15
+- **递归** x15
 - **广度优先搜索** x14
-- **递归** x14
 - **位运算** x10
 - **单调栈** x2
 - **单调队列** x2
@@ -168,6 +168,7 @@
 | 230 | [二叉搜索树中第K小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) | 🟡 中等 | 树、深度优先搜索、二叉搜索树、二叉树 | 2025.12.10 |
 | 231 | [2 的幂](https://leetcode.cn/problems/power-of-two/) | 🟢 简单 | 位运算、递归、数学 | 2025.10.17 |
 | 232 | [用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/) | 🟢 简单 | 栈、设计、队列 | 2025.12.09 |
+| 234 | [回文链表](https://leetcode.cn/problems/palindrome-linked-list/) | 🟢 简单 | 栈、递归、链表、双指针 | 2026.01.02 |
 | 235 | [二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 🟡 中等 | 树、深度优先搜索、二叉搜索树、二叉树 | 2025.12.31 |
 | 236 | [二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2025.12.31 |
 | 237 | [删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list/) | 🟡 中等 | 链表 | 2025.12.11 |
@@ -252,8 +253,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-02 00:30:48
-- **总题目数**：186
+- **最后更新**：2026-01-02 00:55:25
+- **总题目数**：187
 - **技能标签数**：42
 
 > 🤖 本页面由自动化脚本生成
