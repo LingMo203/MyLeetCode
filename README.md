@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：187**  
+**总题数：188**  
 🟢 简单：91  
-🟡 中等：89  
+🟡 中等：90  
 🔴 困难：7
 
 
@@ -18,9 +18,9 @@
 
 ### 🔥 核心数据结构
 - **数组** x83
-- **哈希表** x32
+- **哈希表** x33
 - **字符串** x31
-- **链表** x29
+- **链表** x30
 - **树** x26
 - **二叉树** x25
 - **栈** x17
@@ -136,6 +136,7 @@
 | 134 | [加油站](https://leetcode.cn/problems/gas-station/) | 🟡 中等 | 贪心、数组 | 2025.12.30 |
 | 136 | [只出现一次的数字](https://leetcode.cn/problems/single-number/) | 🟢 简单 | 位运算、数组 | 2025.12.05 |
 | 137 | [只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) | 🟡 中等 | 位运算、数组 | 2025.12.11 |
+| 138 | [随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer/) | 🟡 中等 | 哈希表、链表 | 2026.01.02 |
 | 141 | [环形链表](https://leetcode.cn/problems/linked-list-cycle/) | 🟢 简单 | 哈希表、链表、双指针 | 2025.11.18 |
 | 142 | [环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) | 🟡 中等 | 哈希表、链表、双指针 | 2025.11.19 |
 | 143 | [重排链表](https://leetcode.cn/problems/reorder-list/) | 🟡 中等 | 栈、递归、链表、双指针 | 2025.12.31 |
@@ -253,8 +254,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-02 00:55:25
-- **总题目数**：187
+- **最后更新**：2026-01-02 01:25:27
+- **总题目数**：188
 - **技能标签数**：42
 
 > 🤖 本页面由自动化脚本生成

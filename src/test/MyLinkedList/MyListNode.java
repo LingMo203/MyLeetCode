@@ -653,6 +653,30 @@ public class MyListNode {
         return true;
     }
 
+    //138. 随机链表的复制
+    public Node copyRandomList(Node head) {
+        if (head==null) return null;
+        Node dummyHead=new Node(0);
+        Node cur=head,curNew=dummyHead;
+        HashMap<Node,Node> hashMap=new HashMap<>();
+        while (cur!=null){
+            Node temp=new Node(cur.val);
+            curNew.next=temp;
+            hashMap.put(cur,temp);
+            cur=cur.next;
+            curNew=curNew.next;
+        }
+        cur=head;curNew=dummyHead.next;
+        while (cur!=null){
+            if (cur.random!=null) {
+                curNew.random=hashMap.get(cur.random);
+            }
+            cur=cur.next;
+            curNew=curNew.next;
+        }
+        return dummyHead.next;
+    }
+
 
 
 

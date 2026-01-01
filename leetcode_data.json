@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 187,
+  "total_solved": 188,
   "updated_at": "2026.01.02",
   "problems": [
     {
@@ -2780,6 +2780,20 @@
         "2026.01.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/palindrome-linked-list/"
+    },
+    {
+      "id": 138,
+      "title": "随机链表的复制",
+      "title_slug": "copy-list-with-random-pointer",
+      "difficulty": "中等",
+      "tags": [
+        "哈希表",
+        "链表"
+      ],
+      "solved_dates": [
+        "2026.01.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/copy-list-with-random-pointer/"
     }
   ]
 }
