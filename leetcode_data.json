@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 191,
+  "total_solved": 192,
   "updated_at": "2026.01.02",
   "problems": [
     {
@@ -2842,6 +2842,22 @@
         "2026.01.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/path-sum-ii/"
+    },
+    {
+      "id": 208,
+      "title": "实现 Trie (前缀树)",
+      "title_slug": "implement-trie-prefix-tree",
+      "difficulty": "中等",
+      "tags": [
+        "设计",
+        "字典树",
+        "哈希表",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.01.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/implement-trie-prefix-tree/"
     }
   ]
 }
