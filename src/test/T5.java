@@ -6,7 +6,7 @@ public class T5 {
     public static void main(String[] args) {
         T5 t5=new T5();
         int num=123;
-        int[] nums={4,5,3,1,4};
+        int[] nums={10,5,2,6};
         int[] nums2={5,4,3,4,2};
         int[][] numsD={{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
         int[][] numsD3={{5, 1, 9, 11}, {2, 4, 8, 10}, {13, 3, 6, 7}, {15, 14, 12, 16}};
@@ -18,7 +18,8 @@ public class T5 {
         //System.out.println(t5.searchMatrixII(numsD,-5));
         //System.out.println(t5.spiralOrder(numsD2));
         //System.out.println(1/2);
-        t5.rotate(numsD3);
+        //t5.rotate(numsD3);
+        System.out.println(t5.numSubarrayProductLessThanK(nums,100));
     }
 
     //287. 寻找重复数
@@ -224,6 +225,22 @@ public class T5 {
                 matrix[i2][j2]=temp;
             }
         }
+    }
+
+    //713. 乘积小于 K 的子数组
+    public int numSubarrayProductLessThanK(int[] nums, int k) {
+        if (k<=1) return 0;
+        int j=0,res=0;
+        long pro=1;
+        for (int i=0;i<nums.length;i++){
+            pro*=nums[i];
+            while (pro>=k) {
+                pro/=nums[j];
+                j++;
+            }
+            res+=(i-j)+1;
+        }
+        return res;
     }
 
 

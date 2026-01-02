@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：188**  
+**总题数：189**  
 🟢 简单：91  
-🟡 中等：90  
+🟡 中等：91  
 🔴 困难：7
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x83
+- **数组** x84
 - **哈希表** x33
 - **字符串** x31
 - **链表** x30
@@ -32,7 +32,7 @@
 - **排序** x27
 - **深度优先搜索** x21
 - **动态规划** x20
-- **二分查找** x19
+- **二分查找** x20
 - **贪心** x15
 - **递归** x15
 - **广度优先搜索** x14
@@ -42,8 +42,8 @@
 
 ### 🛠️ 其他技能
 - **矩阵** x11
+- **滑动窗口** x6
 - **设计** x5
-- **滑动窗口** x5
 - **分治** x5
 - **模拟** x5
 - **并查集** x1
@@ -220,6 +220,7 @@
 | 645 | [错误的集合](https://leetcode.cn/problems/set-mismatch/) | 🟢 简单 | 位运算、数组、哈希表、排序 | 2025.10.29 |
 | 704 | [二分查找](https://leetcode.cn/problems/binary-search/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
 | 707 | [设计链表](https://leetcode.cn/problems/design-linked-list/) | 🟡 中等 | 设计、链表 | 2025.11.17 |
+| 713 | [乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/) | 🟡 中等 | 数组、二分查找、前缀和、滑动窗口 | 2026.01.02 |
 | 725 | [分隔链表](https://leetcode.cn/problems/split-linked-list-in-parts/) | 🟡 中等 | 链表 | 2025.11.17 |
 | 739 | [每日温度](https://leetcode.cn/problems/daily-temperatures/) | 🟡 中等 | 栈、数组、单调栈 | 2025.12.09 |
 | 746 | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | 🟢 简单 | 数组、动态规划 | 2025.11.22 |
@@ -254,8 +255,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-02 01:25:27
-- **总题目数**：188
+- **最后更新**：2026-01-02 21:57:43
+- **总题目数**：189
 - **技能标签数**：42
 
 > 🤖 本页面由自动化脚本生成

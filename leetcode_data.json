@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 188,
+  "total_solved": 189,
   "updated_at": "2026.01.02",
   "problems": [
     {
@@ -2794,6 +2794,22 @@
         "2026.01.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/copy-list-with-random-pointer/"
+    },
+    {
+      "id": 713,
+      "title": "乘积小于 K 的子数组",
+      "title_slug": "subarray-product-less-than-k",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "二分查找",
+        "前缀和",
+        "滑动窗口"
+      ],
+      "solved_dates": [
+        "2026.01.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/subarray-product-less-than-k/"
     }
   ]
 }
