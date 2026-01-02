@@ -354,6 +354,32 @@ class Solution {
         return dfsHasPathSum(root.left,targetSum,sum)||dfsHasPathSum(root.right,targetSum,sum);
     }
 
+    //113. 路径总和 II
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        dfsPathSum(root,targetSum,0,res,path);
+        return res;
+    }
+    public void dfsPathSum(TreeNode root,int targetSum,int sum,List<List<Integer>> res,List<Integer> path){
+        if (root==null) {
+            return;
+        }
+        sum+=root.val;
+        path.add(root.val);
+        if (root.left==null&&root.right==null){
+            if (sum==targetSum){
+                List<Integer> temp=List.copyOf(path);
+                res.add(temp);
+            }
+            path.remove(path.size()-1);
+            return;
+        }
+        dfsPathSum(root.left,targetSum,sum,res,path);
+        dfsPathSum(root.right,targetSum,sum,res,path);
+        path.remove(path.size()-1);
+    }
+
     //429. N 叉树的层序遍历
     public List<List<Integer>> levelOrder(Node root) {
         List<List<Integer>> result =new ArrayList<>();

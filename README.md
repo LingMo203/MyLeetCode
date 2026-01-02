@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：190**  
+**总题数：191**  
 🟢 简单：92  
-🟡 中等：91  
+🟡 中等：92  
 🔴 困难：7
 
 
@@ -21,8 +21,8 @@
 - **哈希表** x33
 - **字符串** x31
 - **链表** x30
-- **树** x27
-- **二叉树** x26
+- **树** x28
+- **二叉树** x27
 - **栈** x17
 - **队列** x3
 
@@ -30,7 +30,7 @@
 - **双指针** x42
 - **数学** x39
 - **排序** x27
-- **深度优先搜索** x22
+- **深度优先搜索** x23
 - **动态规划** x20
 - **二分查找** x20
 - **贪心** x15
@@ -46,8 +46,8 @@
 - **设计** x5
 - **分治** x5
 - **模拟** x5
+- **回溯** x2
 - **并查集** x1
-- **回溯** x1
 - **快速选择** x1
 - **随机化** x1
 - **枚举** x1
@@ -123,6 +123,7 @@
 | 110 | [平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/) | 🟢 简单 | 树、深度优先搜索、二叉树 | 2025.11.21 |
 | 111 | [二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.11.20 |
 | 112 | [路径总和](https://leetcode.cn/problems/path-sum/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.02 |
+| 113 | [路径总和 II](https://leetcode.cn/problems/path-sum-ii/) | 🟡 中等 | 树、深度优先搜索、回溯、二叉树 | 2026.01.02 |
 | 114 | [二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | 🟡 中等 | 栈、树、深度优先搜索、链表、二叉树 | 2025.12.10 |
 | 116 | [填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、链表、二叉树 | 2025.12.28 |
 | 117 | [填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、链表、二叉树 | 2025.12.28 |
@@ -256,8 +257,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-02 22:38:34
-- **总题目数**：190
+- **最后更新**：2026-01-02 22:55:53
+- **总题目数**：191
 - **技能标签数**：42
 
 > 🤖 本页面由自动化脚本生成
