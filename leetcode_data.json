@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 189,
+  "total_solved": 190,
   "updated_at": "2026.01.02",
   "problems": [
     {
@@ -2810,6 +2810,22 @@
         "2026.01.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/subarray-product-less-than-k/"
+    },
+    {
+      "id": 112,
+      "title": "路径总和",
+      "title_slug": "path-sum",
+      "difficulty": "简单",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "广度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.01.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/path-sum/"
     }
   ]
 }

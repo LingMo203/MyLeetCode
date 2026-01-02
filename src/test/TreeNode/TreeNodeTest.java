@@ -340,23 +340,18 @@ class Solution {
     }
 
 
-    //112. 路径总和 放弃
-    public boolean hasPathSum(TreeNode root, int targetSum) {
+    //112. 路径总和
+    public boolean hasPathSum(TreeNode root, int targetSum){
         if (root==null) return false;
-        hps(root,targetSum,0);
-        return hps(root,targetSum,0)==0;
+        return dfsHasPathSum(root,targetSum,0);
     }
-    public int hps(TreeNode root, int targetSum,int last){
-        if (targetSum==0) return 0;
-        else if (root==null||targetSum<0) {
-            targetSum+=last;
-            return targetSum;
+    public boolean dfsHasPathSum(TreeNode root, int targetSum,int sum){
+        if (root==null) return false;
+        sum+=root.val;
+        if (root.left==null&&root.right==null){
+            return sum == targetSum;
         }
-        targetSum-=root.val;
-        last=root.val;
-        hps(root.left,targetSum,last);
-        hps(root.right,targetSum,last);
-        return targetSum;
+        return dfsHasPathSum(root.left,targetSum,sum)||dfsHasPathSum(root.right,targetSum,sum);
     }
 
     //429. N 叉树的层序遍历
