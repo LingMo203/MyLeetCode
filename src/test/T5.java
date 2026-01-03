@@ -263,6 +263,24 @@ public class T5 {
     }
 
 
+    //1390. 四因数
+    public int sumFourDivisors(int[] nums) {
+        int res=0;
+        for (int num : nums){
+            int count=0,a1=0,a2=0;
+            for (int i=1;i*i<=num;i++){
+                if (num%i==0){
+                    count++;
+                    if (count>=3) break;
+                    a1=i;a2=num/i;
+                }
+            }
+            if (count==2){
+                if (a1!=a2)  res+=1+num+a1+a2;
+            }
+        }
+        return res;
+    }
 
 
 

@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 195,
+  "total_solved": 196,
   "updated_at": "2026.01.04",
   "problems": [
     {
@@ -2895,6 +2895,20 @@
         "2026.01.03"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/"
+    },
+    {
+      "id": 1390,
+      "title": "四因数",
+      "title_slug": "four-divisors",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.01.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/four-divisors/"
     }
   ]
 }
