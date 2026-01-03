@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 192,
-  "updated_at": "2026.01.02",
+  "total_solved": 193,
+  "updated_at": "2026.01.03",
   "problems": [
     {
       "id": 1,
@@ -2858,6 +2858,21 @@
         "2026.01.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/implement-trie-prefix-tree/"
+    },
+    {
+      "id": 14,
+      "title": "最长公共前缀",
+      "title_slug": "longest-common-prefix",
+      "difficulty": "简单",
+      "tags": [
+        "字典树",
+        "数组",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.01.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/longest-common-prefix/"
     }
   ]
 }

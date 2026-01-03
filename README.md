@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：192**  
-🟢 简单：92  
+**总题数：193**  
+🟢 简单：93  
 🟡 中等：93  
 🔴 困难：7
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x84
+- **数组** x85
 - **哈希表** x34
-- **字符串** x32
+- **字符串** x33
 - **链表** x30
 - **树** x28
 - **二叉树** x27
@@ -69,6 +69,7 @@
 | 9 | [回文数](https://leetcode.cn/problems/palindrome-number/) | 🟢 简单 | 数学 | 2025.10.16 |
 | 11 | [盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | 🟡 中等 | 贪心、数组、双指针 | 2025.11.28 |
 | 13 | [罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | 🟢 简单 | 哈希表、数学、字符串 | 2025.10.27 |
+| 14 | [最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | 🟢 简单 | 字典树、数组、字符串 | 2026.01.03 |
 | 15 | [三数之和](https://leetcode.cn/problems/3sum/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
 | 16 | [最接近的三数之和](https://leetcode.cn/problems/3sum-closest/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
 | 18 | [四数之和](https://leetcode.cn/problems/4sum/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
@@ -258,8 +259,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-02 23:19:15
-- **总题目数**：192
+- **最后更新**：2026-01-03 18:53:34
+- **总题目数**：193
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

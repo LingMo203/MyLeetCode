@@ -12,6 +12,7 @@ public class T5 {
         int[][] numsD3={{5, 1, 9, 11}, {2, 4, 8, 10}, {13, 3, 6, 7}, {15, 14, 12, 16}};
         int[][] numsD2={{1,2,3},{4,5,6},{7,8,9}};
         String str="79362";
+        String[] strs={"flower","flow","flight"};
         //System.out.println(t5.findDuplicate(nums));
         //System.out.println(t5.numMagicSquaresInside(numsD));
         //System.out.println(t5.canCompleteCircuit(nums,nums2));
@@ -19,7 +20,8 @@ public class T5 {
         //System.out.println(t5.spiralOrder(numsD2));
         //System.out.println(1/2);
         //t5.rotate(numsD3);
-        System.out.println(t5.numSubarrayProductLessThanK(nums,100));
+        //System.out.println(t5.numSubarrayProductLessThanK(nums,100));
+        System.out.println(t5.longestCommonPrefix(strs));
     }
 
     //287. 寻找重复数
@@ -243,6 +245,22 @@ public class T5 {
         return res;
     }
 
+    //14. 最长公共前缀
+    public String longestCommonPrefix(String[] strs) {
+        if (strs[0].isEmpty()) return "";
+        StringBuilder sb=new StringBuilder(strs[0]);
+        for (int i=1;i<strs.length;i++){
+            String str=strs[i];
+            int sbIndex=0,strIndex=0;
+            while (sbIndex<sb.length()&&strIndex<str.length()){
+                if (sb.charAt(sbIndex)!=str.charAt(strIndex)) break;
+                sbIndex++;strIndex++;
+            }
+            if (sbIndex>=sb.length()) continue;
+            sb.delete(sbIndex,sb.length());
+        }
+        return sb.toString();
+    }
 
 
 
