@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 193,
-  "updated_at": "2026.01.03",
+  "total_solved": 195,
+  "updated_at": "2026.01.04",
   "problems": [
     {
       "id": 1,
@@ -2873,6 +2873,28 @@
         "2026.01.03"
       ],
       "leetcode_url": "https://leetcode.cn/problems/longest-common-prefix/"
+    },
+    {
+      "id": 100950,
+      "title": "反转字符串前缀",
+      "title_slug": "reverse-string-prefix",
+      "difficulty": "简单",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/reverse-string-prefix/"
+    },
+    {
+      "id": 100927,
+      "title": "不同元素和至少为 K 的最短子数组长度",
+      "title_slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/"
     }
   ]
 }
