@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 198,
+  "total_solved": 199,
   "updated_at": "2026.01.04",
   "problems": [
     {
@@ -2933,6 +2933,20 @@
         "2026.01.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/combinations/"
+    },
+    {
+      "id": 39,
+      "title": "组合总和",
+      "title_slug": "combination-sum",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/combination-sum/"
     }
   ]
 }
