@@ -126,6 +126,26 @@ public class BackTrack {
         }
     }
 
+    //90. 子集 II
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        res.add(new ArrayList<>(path));
+        Arrays.sort(nums);
+        backSubsetsWithDup(res,path,0,nums);
+        return res;
+    }
+    public void backSubsetsWithDup(List<List<Integer>> res,List<Integer> path,int start,int[] nums){
+        for (int i=start;i<nums.length;i++){
+            int num=nums[i];
+            if (i>start&&num==nums[i-1]) continue;
+            path.add(num);
+            backSubsetsWithDup(res, path, i+1, nums);
+            res.add(new ArrayList<>(path));
+            path.remove(path.size()-1);
+        }
+    }
+
 
 
 

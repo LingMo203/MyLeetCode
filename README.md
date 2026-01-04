@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：202**  
+**总题数：203**  
 🟢 简单：95  
-🟡 中等：100  
+🟡 中等：101  
 🔴 困难：7
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x90
+- **数组** x91
 - **哈希表** x34
 - **字符串** x33
 - **链表** x30
@@ -36,13 +36,13 @@
 - **贪心** x15
 - **广度优先搜索** x15
 - **递归** x15
-- **位运算** x11
+- **位运算** x12
 - **单调栈** x2
 - **单调队列** x2
 
 ### 🛠️ 其他技能
 - **矩阵** x11
-- **回溯** x7
+- **回溯** x8
 - **设计** x6
 - **滑动窗口** x6
 - **分治** x5
@@ -116,6 +116,7 @@
 | 83 | [删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) | 🟢 简单 | 链表 | 2025.11.17 |
 | 86 | [分隔链表](https://leetcode.cn/problems/partition-list/) | 🟡 中等 | 链表、双指针 | 2025.11.17 |
 | 88 | [合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) | 🟢 简单 | 数组、双指针、排序 | 2025.11.04 |
+| 90 | [子集 II](https://leetcode.cn/problems/subsets-ii/) | 🟡 中等 | 位运算、数组、回溯 | 2026.01.05 |
 | 92 | [反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/) | 🟡 中等 | 链表 | 2025.12.18 |
 | 94 | [二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | 🟢 简单 | 栈、树、深度优先搜索、二叉树 | 2025.11.19 |
 | 98 | [验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/) | 🟡 中等 | 树、深度优先搜索、二叉搜索树、二叉树 | 2025.12.31 |
@@ -268,8 +269,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-05 00:38:09
-- **总题目数**：202
+- **最后更新**：2026-01-05 00:49:31
+- **总题目数**：203
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

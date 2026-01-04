@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 202,
+  "total_solved": 203,
   "updated_at": "2026.01.05",
   "problems": [
     {
@@ -2990,6 +2990,21 @@
         "2026.01.05"
       ],
       "leetcode_url": "https://leetcode.cn/problems/subsets/"
+    },
+    {
+      "id": 90,
+      "title": "子集 II",
+      "title_slug": "subsets-ii",
+      "difficulty": "中等",
+      "tags": [
+        "位运算",
+        "数组",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/subsets-ii/"
     }
   ]
 }
