@@ -108,6 +108,25 @@ public class BackTrack {
     }
 
 
+    //78. 子集
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        res.add(new ArrayList<>(path));
+        backSubsets(res,path,0,nums);
+        return res;
+    }
+    public void backSubsets(List<List<Integer>> res,List<Integer> path,int start,int[] nums){
+        for (int i=start;i<nums.length;i++){
+            int num=nums[i];
+            path.add(num);
+            backSubsets(res, path, i+1, nums);
+            res.add(new ArrayList<>(path));
+            path.remove(path.size()-1);
+        }
+    }
+
+
 
 
 

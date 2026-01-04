@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 201,
-  "updated_at": "2026.01.04",
+  "total_solved": 202,
+  "updated_at": "2026.01.05",
   "problems": [
     {
       "id": 1,
@@ -2975,6 +2975,21 @@
         "2026.01.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/combination-sum-iii/"
+    },
+    {
+      "id": 78,
+      "title": "子集",
+      "title_slug": "subsets",
+      "difficulty": "中等",
+      "tags": [
+        "位运算",
+        "数组",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/subsets/"
     }
   ]
 }
