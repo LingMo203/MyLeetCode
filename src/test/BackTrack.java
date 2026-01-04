@@ -85,6 +85,27 @@ public class BackTrack {
     }
 
 
+    //216. 组合总和 III
+    public List<List<Integer>> combinationSum3(int k, int n) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        backTrackingCombinationSum3(res,path,1,k,n,0);
+        return res;
+    }
+    public void backTrackingCombinationSum3(List<List<Integer>> res,List<Integer> path,int index,int k, int n,int sum){
+        if (sum>n||path.size()>k) return;
+        if (sum==n){
+            if (path.size()==k) res.add(new ArrayList<>(path));
+            return;
+        }
+        for (int i=index;i<=9;i++){
+            sum+=i;
+            path.add(i);
+            backTrackingCombinationSum3(res, path, i+1, k, n, sum);
+            int temp=path.remove(path.size()-1);
+            sum-=temp;
+        }
+    }
 
 
 

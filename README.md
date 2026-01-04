@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：200**  
+**总题数：201**  
 🟢 简单：95  
-🟡 中等：98  
+🟡 中等：99  
 🔴 困难：7
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x88
+- **数组** x89
 - **哈希表** x34
 - **字符串** x33
 - **链表** x30
@@ -44,9 +44,9 @@
 - **矩阵** x11
 - **设计** x6
 - **滑动窗口** x6
+- **回溯** x6
 - **分治** x5
 - **模拟** x5
-- **回溯** x5
 - **并查集** x1
 - **快速选择** x1
 - **随机化** x1
@@ -165,6 +165,7 @@
 | 206 | [反转链表](https://leetcode.cn/problems/reverse-linked-list/) | 🟢 简单 | 递归、链表 | 2025.12.21 |
 | 208 | [实现 Trie (前缀树)](https://leetcode.cn/problems/implement-trie-prefix-tree/) | 🟡 中等 | 设计、字典树、哈希表、字符串 | 2026.01.02 |
 | 209 | [长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/) | 🟡 中等 | 数组、二分查找、前缀和、滑动窗口 | 2025.11.04 |
+| 216 | [组合总和 III](https://leetcode.cn/problems/combination-sum-iii/) | 🟡 中等 | 数组、回溯 | 2026.01.04 |
 | 217 | [存在重复元素](https://leetcode.cn/problems/contains-duplicate/) | 🟢 简单 | 数组、哈希表、排序 | 2025.10.28 |
 | 219 | [存在重复元素 II](https://leetcode.cn/problems/contains-duplicate-ii/) | 🟢 简单 | 数组、哈希表、滑动窗口 | 2025.10.28 |
 | 222 | [完全二叉树的节点个数](https://leetcode.cn/problems/count-complete-tree-nodes/) | 🟢 简单 | 位运算、树、二分查找、二叉树 | 2025.11.21 |
@@ -266,8 +267,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-04 23:48:59
-- **总题目数**：200
+- **最后更新**：2026-01-04 23:58:55
+- **总题目数**：201
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成
