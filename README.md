@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：197**  
+**总题数：198**  
 🟢 简单：95  
-🟡 中等：95  
+🟡 中等：96  
 🔴 困难：7
 
 
@@ -46,7 +46,7 @@
 - **滑动窗口** x6
 - **分治** x5
 - **模拟** x5
-- **回溯** x2
+- **回溯** x3
 - **并查集** x1
 - **快速选择** x1
 - **随机化** x1
@@ -107,6 +107,7 @@
 | 73 | [矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/) | 🟡 中等 | 数组、哈希表、矩阵 | 2025.12.31 |
 | 74 | [搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) | 🟡 中等 | 数组、二分查找、矩阵 | 2025.12.31 |
 | 75 | [颜色分类](https://leetcode.cn/problems/sort-colors/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.05 |
+| 77 | [组合](https://leetcode.cn/problems/combinations/) | 🟡 中等 | 回溯 | 2026.01.04 |
 | 80 | [删除有序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) | 🟡 中等 | 数组、双指针 | 2025.12.13 |
 | 82 | [删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | 🟡 中等 | 链表、双指针 | 2025.12.13 |
 | 83 | [删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) | 🟢 简单 | 链表 | 2025.11.17 |
@@ -263,8 +264,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-04 12:15:33
-- **总题目数**：197
+- **最后更新**：2026-01-04 23:08:05
+- **总题目数**：198
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

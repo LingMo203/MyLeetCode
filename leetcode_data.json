@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 197,
+  "total_solved": 198,
   "updated_at": "2026.01.04",
   "problems": [
     {
@@ -2920,6 +2920,19 @@
         "2026.01.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/largest-even-number/"
+    },
+    {
+      "id": 77,
+      "title": "组合",
+      "title_slug": "combinations",
+      "difficulty": "中等",
+      "tags": [
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/combinations/"
     }
   ]
 }
