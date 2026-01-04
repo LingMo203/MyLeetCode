@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：196**  
-🟢 简单：94  
+**总题数：197**  
+🟢 简单：95  
 🟡 中等：95  
 🔴 困难：7
 
@@ -256,14 +256,15 @@
 | 3190 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
 | 100927 | [不同元素和至少为 K 的最短子数组长度](https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | 🟡 中等 |  | 2026.01.03 |
 | 100950 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 |  | 2026.01.03 |
+| 100952 | [最大的偶数](https://leetcode.cn/problems/largest-even-number/) | 🟢 简单 |  | 2026.01.04 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-04 01:11:14
-- **总题目数**：196
+- **最后更新**：2026-01-04 12:15:33
+- **总题目数**：197
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成
