@@ -28,7 +28,7 @@ public class ContestBiweekly173 {
         return sb.toString();
     }
 
-    //100927. 不同元素和至少为 K 的最短子数组长度
+    //3795. 不同元素和至少为 K 的最短子数组长度
     public int minLength(int[] nums, int k) {
         int res=Integer.MAX_VALUE;
         int left=0,right=0,sum=0;

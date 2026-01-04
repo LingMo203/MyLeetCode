@@ -10,15 +10,15 @@ public class ContestWeekly483 {
         String str="2211112112";
         int n=10;
         int[] diff = {2,2,3,1,4,5,1,1,2};
-        String[] strs={"aaay","dgzy","rrrh","aiir","yiih"};
+        String[] strs={"able","area","echo","also"};
         int[][] restrictions = {{6}, {1, 6}, {2, 3}};
         //System.out.println(t.largestEven(str));
         //System.out.println(4/2);
-        //System.out.println(t.wordSquares(strs));
-        System.out.println(t.minMergeCost(restrictions));
+        System.out.println(t.wordSquares(strs));
+        //System.out.println(t.minMergeCost(restrictions));
     }
 
-    //100952. 最大的偶数
+    //3798. 最大的偶数
     public String largestEven(String s) {
         StringBuilder sb=new StringBuilder(s);
         while (!sb.isEmpty()&&sb.charAt(sb.length()-1)!='2'){
@@ -27,8 +27,8 @@ public class ContestWeekly483 {
         return sb.toString();
     }
 
-    //100848. 单词方块 II (没做出)
-    public List<List<String>> wordSquares(String[] words) {
+    //3799. 单词方块 II (没做出)
+    public List<List<String>> wordSquares2(String[] words) {
         List<List<String>> res=new ArrayList<>();
         String[] strs=new String[4];
         int j=0,leftI=0,rightI=0;
@@ -106,7 +106,7 @@ public class ContestWeekly483 {
         }
     }
 
-    //100919. 合并有序列表的最小成本 (没做出)
+    //. 合并有序列表的最小成本 (没做出)
     public long minMergeCost(int[][] lists) {
         ArrayList<ArrayList<Integer>> lAL=new ArrayList<>();
         for (int[] ints : lists) {
@@ -143,6 +143,29 @@ public class ContestWeekly483 {
     }
 
 
+    public List<List<String>> wordSquares(String[] words) {
+        List<List<String>> res=new ArrayList<>();
+        List<String> path=new ArrayList<>();
+        backWordSquares(res,path,0,words);
+        res.sort(Comparator.comparing(list -> String.join("", list)));
+        return res;
+    }
+    public void backWordSquares(List<List<String>> res,List<String> path,int index,String[] words){
+        if (path.size()==4){
+            char[] top= path.get(0).toCharArray(), left= path.get(1).toCharArray(), right= path.get(2).toCharArray(), bottom= path.get(3).toCharArray();
+            if (top[0] == left[0]&& top[3] == right[0] &&
+            bottom[0] == left[3]&& bottom[3] == right[3]){
+                res.add(new ArrayList<>(path));
+            }
+            return;
+        }
+        for (int i=index;i<words.length;i++){
+            if (!path.isEmpty()&& Objects.equals(path.get(path.size()-1), words[i])) continue;
+            path.add(words[i]);
+            backWordSquares(res, path, i+1, words);
+            path.remove(path.size()-1);
+        }
+    }
 
 
 
