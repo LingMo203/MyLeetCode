@@ -1,15 +1,14 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class BackTrack {
     public static void main(String[] args) {
         BackTrack bt=new BackTrack();
-        int[] nums={2,3,6,7};
+        int[] nums={10,1,2,7,6,1,5};
         //System.out.println(bt.combine(4,2));
-        System.out.println(bt.combinationSum(nums,7));
+        //System.out.println(bt.combinationSum(nums,7));
+        System.out.println(bt.combinationSum2(nums,8));
     }
 
 
@@ -59,6 +58,31 @@ public class BackTrack {
     }
 
 
+    //40. 组合总和 II
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        Arrays.sort(candidates);
+        backTrackingCombinationSum2(res,path,0,candidates,target,0);
+        return res;
+    }
+    public void backTrackingCombinationSum2(List<List<Integer>> res,List<Integer> path,int index,int[] candidates, int target,int sum){
+        if (sum>=target){
+            if (sum==target){
+                res.add(new ArrayList<>(path));
+            }
+            return;
+        }
+        for (int i=index;i<candidates.length;i++){
+            int num=candidates[i];
+            if (i>index && num==candidates[i-1]) continue;
+            sum+=num;
+            path.add(num);
+            backTrackingCombinationSum2(res, path, i+1, candidates, target, sum);
+            int temp=path.remove(path.size()-1);
+            sum-=temp;
+        }
+    }
 
 
 

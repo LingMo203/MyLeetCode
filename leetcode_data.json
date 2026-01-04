@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 199,
+  "total_solved": 200,
   "updated_at": "2026.01.04",
   "problems": [
     {
@@ -2947,6 +2947,20 @@
         "2026.01.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/combination-sum/"
+    },
+    {
+      "id": 40,
+      "title": "组合总和 II",
+      "title_slug": "combination-sum-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/combination-sum-ii/"
     }
   ]
 }
