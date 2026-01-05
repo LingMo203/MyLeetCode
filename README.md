@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：204**  
+**总题数：206**  
 🟢 简单：95  
-🟡 中等：102  
+🟡 中等：104  
 🔴 困难：7
 
 
@@ -17,24 +17,24 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x92
+- **数组** x93
 - **哈希表** x34
 - **字符串** x33
 - **链表** x30
-- **树** x28
-- **二叉树** x27
+- **树** x29
+- **二叉树** x28
 - **栈** x17
 - **队列** x3
 
 ### ⚡ 核心算法
 - **双指针** x42
 - **数学** x40
-- **排序** x27
-- **深度优先搜索** x23
+- **排序** x28
+- **深度优先搜索** x24
 - **动态规划** x20
 - **二分查找** x20
+- **广度优先搜索** x16
 - **贪心** x15
-- **广度优先搜索** x15
 - **递归** x15
 - **位运算** x12
 - **单调栈** x2
@@ -42,7 +42,7 @@
 
 ### 🛠️ 其他技能
 - **矩阵** x11
-- **回溯** x9
+- **回溯** x10
 - **设计** x6
 - **滑动窗口** x6
 - **分治** x5
@@ -93,6 +93,7 @@
 | 43 | [字符串相乘](https://leetcode.cn/problems/multiply-strings/) | 🟡 中等 | 数学、字符串、模拟 | 2025.12.27 |
 | 45 | [跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) | 🟡 中等 | 贪心、数组、动态规划 | 2025.12.17 |
 | 46 | [全排列](https://leetcode.cn/problems/permutations/) | 🟡 中等 | 数组、回溯 | 2026.01.05 |
+| 47 | [全排列 II](https://leetcode.cn/problems/permutations-ii/) | 🟡 中等 | 数组、回溯、排序 | 2026.01.05 |
 | 48 | [旋转图像](https://leetcode.cn/problems/rotate-image/) | 🟡 中等 | 数组、数学、矩阵 | 2026.01.02 |
 | 49 | [字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | 🟡 中等 | 数组、哈希表、字符串、排序 | 2025.12.03 |
 | 50 | [Pow(x, n)](https://leetcode.cn/problems/powx-n/) | 🟡 中等 | 递归、数学 | 2025.12.15 |
@@ -244,6 +245,7 @@
 | 977 | [有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/) | 🟢 简单 | 数组、双指针、排序 | 2025.11.04 |
 | 1005 | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | 🟢 简单 | 贪心、数组、排序 | 2025.11.10 |
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
+| 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
 | 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
 | 1390 | [四因数](https://leetcode.cn/problems/four-divisors/) | 🟡 中等 | 数组、数学 | 2026.01.04 |
@@ -270,8 +272,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-05 23:00:44
-- **总题目数**：204
+- **最后更新**：2026-01-06 00:25:48
+- **总题目数**：206
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 204,
-  "updated_at": "2026.01.05",
+  "total_solved": 206,
+  "updated_at": "2026.01.06",
   "problems": [
     {
       "id": 1,
@@ -3019,6 +3019,37 @@
         "2026.01.05"
       ],
       "leetcode_url": "https://leetcode.cn/problems/permutations/"
+    },
+    {
+      "id": 47,
+      "title": "全排列 II",
+      "title_slug": "permutations-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "回溯",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.01.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/permutations-ii/"
+    },
+    {
+      "id": 1161,
+      "title": "最大层内元素和",
+      "title_slug": "maximum-level-sum-of-a-binary-tree",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "广度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.01.06"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/"
     }
   ]
 }

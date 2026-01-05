@@ -526,6 +526,27 @@ class Solution {
     }
 
 
+    //1161. 最大层内元素和
+    public int maxLevelSum(TreeNode root) {
+        Deque<TreeNode> deque=new ArrayDeque<>();
+        deque.addLast(root);
+        int res=1,max=Integer.MIN_VALUE,i=1;
+        while (!deque.isEmpty()){
+            int size=deque.size(),sum=0;
+            while (size-->0){
+                TreeNode node=deque.removeFirst();
+                sum+=node.val;
+                if (node.left!=null) deque.addLast(node.left);
+                if (node.right!=null) deque.addLast(node.right);
+            }
+            if (sum>max){
+                max=sum;
+                res=i;
+            }
+            i++;
+        }
+        return res;
+    }
 
 
 

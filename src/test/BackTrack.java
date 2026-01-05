@@ -9,7 +9,8 @@ public class BackTrack {
         //System.out.println(bt.combine(4,2));
         //System.out.println(bt.combinationSum(nums,7));
         //System.out.println(bt.combinationSum2(nums,8));
-        System.out.println(bt.permute(nums));
+        //System.out.println(bt.permute(nums));
+        System.out.println(bt.permuteUnique(nums));
     }
 
 
@@ -171,6 +172,32 @@ public class BackTrack {
     }
 
 
+    //47. 全排列 II
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        HashMap<Integer,Integer> hashMap=new HashMap<>();
+        for (int num:nums){
+            hashMap.put(num,hashMap.getOrDefault(num,0)+1);
+        }
+        backPermuteUnique(res,path,hashMap,nums.length);
+        return res;
+    }
+    public void backPermuteUnique(List<List<Integer>> res,List<Integer> path,HashMap<Integer,Integer> hashMap,int n){
+        if (path.size()==n){
+            res.add(new ArrayList<>(path));
+            return;
+        }
+        for (int num:hashMap.keySet()){
+            int time = hashMap.get(num);
+            if (time<=0) continue;
+            hashMap.put(num,time-1);
+            path.add(num);
+            backPermuteUnique(res, path, hashMap , n);
+            int temp=path.remove(path.size()-1);
+            hashMap.put(temp,hashMap.get(temp)+1);
+        }
+    }
 
 
 
