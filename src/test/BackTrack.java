@@ -5,10 +5,11 @@ import java.util.*;
 public class BackTrack {
     public static void main(String[] args) {
         BackTrack bt=new BackTrack();
-        int[] nums={10,1,2,7,6,1,5};
+        int[] nums={1,2,3};
         //System.out.println(bt.combine(4,2));
         //System.out.println(bt.combinationSum(nums,7));
-        System.out.println(bt.combinationSum2(nums,8));
+        //System.out.println(bt.combinationSum2(nums,8));
+        System.out.println(bt.permute(nums));
     }
 
 
@@ -147,7 +148,27 @@ public class BackTrack {
     }
 
 
-
+    //46. 全排列
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        HashSet<Integer> hashSet=new HashSet<>();
+        backPermute(res,path,hashSet,nums);
+        return res;
+    }
+    public void backPermute(List<List<Integer>> res,List<Integer> path,HashSet<Integer> hashSet,int[] nums){
+        if (path.size()==nums.length){
+            res.add(new ArrayList<>(path));
+        }
+        for (int num : nums) {
+            if (path.contains(num)) continue;
+            path.add(num);
+            hashSet.add(num);
+            backPermute(res, path, hashSet, nums);
+            int n=path.remove(path.size() - 1);
+            hashSet.remove(n);
+        }
+    }
 
 
 
