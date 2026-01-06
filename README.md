@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：207**  
+**总题数：208**  
 🟢 简单：95  
 🟡 中等：104  
-🔴 困难：8
+🔴 困难：9
 
 
 ---
@@ -18,8 +18,8 @@
 
 ### 🔥 核心数据结构
 - **数组** x93
+- **字符串** x36
 - **哈希表** x35
-- **字符串** x34
 - **链表** x30
 - **树** x29
 - **二叉树** x28
@@ -27,15 +27,15 @@
 - **队列** x3
 
 ### ⚡ 核心算法
-- **双指针** x42
-- **数学** x40
+- **双指针** x43
+- **数学** x41
 - **排序** x28
 - **深度优先搜索** x24
 - **动态规划** x20
 - **二分查找** x20
 - **广度优先搜索** x16
+- **递归** x16
 - **贪心** x15
-- **递归** x15
 - **位运算** x12
 - **单调栈** x2
 - **单调队列** x2
@@ -101,6 +101,7 @@
 | 54 | [螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) | 🟡 中等 | 数组、矩阵、模拟 | 2026.01.01 |
 | 55 | [跳跃游戏](https://leetcode.cn/problems/jump-game/) | 🟡 中等 | 贪心、数组、动态规划 | 2025.12.01 |
 | 58 | [最后一个单词的长度](https://leetcode.cn/problems/length-of-last-word/) | 🟢 简单 | 字符串 | 2025.12.16 |
+| 60 | [排列序列](https://leetcode.cn/problems/permutation-sequence/) | 🔴 困难 | 递归、数学 | 2026.01.06 |
 | 61 | [旋转链表](https://leetcode.cn/problems/rotate-list/) | 🟡 中等 | 链表、双指针 | 2025.12.10 |
 | 62 | [不同路径](https://leetcode.cn/problems/unique-paths/) | 🟡 中等 | 数学、动态规划、组合数学 | 2025.11.23 |
 | 63 | [不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) | 🟡 中等 | 数组、动态规划、矩阵 | 2025.11.26 |
@@ -264,17 +265,17 @@
 | 3074 | [重新分装苹果](https://leetcode.cn/problems/apple-redistribution-into-boxes/) | 🟢 简单 | 贪心、数组、排序 | 2025.12.24 |
 | 3075 | [幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) | 🟡 中等 | 贪心、数组、排序 | 2025.12.25 |
 | 3191 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
-| 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 |  | 2026.01.03 |
+| 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
 | 3795 | [不同元素和至少为 K 的最短子数组长度](https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | 🟡 中等 |  | 2026.01.03 |
-| 3798 | [最大的偶数](https://leetcode.cn/problems/largest-even-number/) | 🟢 简单 |  | 2026.01.04 |
+| 3798 | [最大的偶数](https://leetcode.cn/problems/largest-even-number/) | 🟢 简单 | 字符串 | 2026.01.04 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-06 15:52:31
-- **总题目数**：207
+- **最后更新**：2026-01-06 22:52:21
+- **总题目数**：208
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

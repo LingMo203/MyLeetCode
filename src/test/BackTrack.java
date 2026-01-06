@@ -10,7 +10,8 @@ public class BackTrack {
         //System.out.println(bt.combinationSum(nums,7));
         //System.out.println(bt.combinationSum2(nums,8));
         //System.out.println(bt.permute(nums));
-        System.out.println(bt.permuteUnique(nums));
+        //System.out.println(bt.permuteUnique(nums));
+        System.out.println(bt.getPermutation(3,3));
     }
 
 
@@ -196,6 +197,36 @@ public class BackTrack {
             backPermuteUnique(res, path, hashMap , n);
             int temp=path.remove(path.size()-1);
             hashMap.put(temp,hashMap.get(temp)+1);
+        }
+    }
+
+
+    //60. 排列序列 (回溯不是最优解)
+    public String getPermutation(int n, int k) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        HashSet<Integer> hashSet=new HashSet<>();
+        backGetPermutation(res,path,hashSet,n,k);
+        List<Integer> list=res.get(res.size()-1);
+        StringBuilder sb=new StringBuilder();
+        for (int num:list){
+            sb.append(num);
+        }
+        return sb.toString();
+    }
+    public void backGetPermutation(List<List<Integer>> res,List<Integer> path,HashSet<Integer> hashSet,int n, int k){
+        if (res.size()==k) return;
+        if (path.size()==n){
+            res.add(new ArrayList<>(path));
+            return;
+        }
+        for (int i=1;i<=n;i++){
+            if (hashSet.contains(i)) continue;
+            path.add(i);
+            hashSet.add(i);
+            backGetPermutation(res, path, hashSet, n, k);
+            int num=path.remove(path.size()-1);
+            hashSet.remove(num);
         }
     }
 
