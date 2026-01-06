@@ -11,7 +11,8 @@ public class T5 {
         int[][] numsD={{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
         int[][] numsD3={{5, 1, 9, 11}, {2, 4, 8, 10}, {13, 3, 6, 7}, {15, 14, 12, 16}};
         int[][] numsD2={{1,2,3},{4,5,6},{7,8,9}};
-        String str="79362";
+        String str="cabwefgewcwaefgcf";
+        String str2="cae";
         String[] strs={"flower","flow","flight"};
         //System.out.println(t5.findDuplicate(nums));
         //System.out.println(t5.numMagicSquaresInside(numsD));
@@ -21,7 +22,8 @@ public class T5 {
         //System.out.println(1/2);
         //t5.rotate(numsD3);
         //System.out.println(t5.numSubarrayProductLessThanK(nums,100));
-        System.out.println(t5.longestCommonPrefix(strs));
+        //System.out.println(t5.longestCommonPrefix(strs));
+        System.out.println(t5.minWindow(str,str2));
     }
 
     //287. 寻找重复数
@@ -277,6 +279,41 @@ public class T5 {
             }
             if (count==2){
                 if (a1!=a2)  res+=1+num+a1+a2;
+            }
+        }
+        return res;
+    }
+
+    //76. 最小覆盖子串
+    public String minWindow(String s, String t) {
+        HashSet<Character> hashSet=new HashSet<>();
+        HashSet<Character> timeSet=new HashSet<>();
+        HashMap<Character,Integer> hashMap=new HashMap<>();
+        String res = "";
+        for (int i=0;i<t.length();i++){
+            char c=t.charAt(i);
+            hashSet.add(c);
+            timeSet.add(c);
+            hashMap.put(c,hashMap.getOrDefault(c,0)+1);
+        }
+        StringBuilder sb=new StringBuilder();
+        for (int right=0;right<s.length();right++){
+            char c=s.charAt(right);
+            sb.append(c);
+            if (!hashSet.contains(c)) continue;
+            int time=hashMap.get(c);
+            hashMap.put(c,time-1);
+            if (time<=1) timeSet.remove(c);
+            while (!sb.isEmpty()&&(timeSet.isEmpty()||!hashSet.contains(sb.charAt(0)))){
+                if (timeSet.isEmpty()) {
+                    if (res.isEmpty()||res.length()>sb.length()) res = new String(sb);
+                }
+                char remove=sb.charAt(0);
+                sb.deleteCharAt(0);
+                if (!hashSet.contains(remove)) continue;
+                int timeRe=hashMap.get(remove);
+                hashMap.put(remove,timeRe+1);
+                if (timeRe>=0) timeSet.add(remove);
             }
         }
         return res;

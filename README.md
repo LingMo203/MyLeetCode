@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：206**  
+**总题数：207**  
 🟢 简单：95  
 🟡 中等：104  
-🔴 困难：7
+🔴 困难：8
 
 
 ---
@@ -18,8 +18,8 @@
 
 ### 🔥 核心数据结构
 - **数组** x93
-- **哈希表** x34
-- **字符串** x33
+- **哈希表** x35
+- **字符串** x34
 - **链表** x30
 - **树** x29
 - **二叉树** x28
@@ -43,8 +43,8 @@
 ### 🛠️ 其他技能
 - **矩阵** x11
 - **回溯** x10
+- **滑动窗口** x7
 - **设计** x6
-- **滑动窗口** x6
 - **分治** x5
 - **模拟** x5
 - **并查集** x1
@@ -111,6 +111,7 @@
 | 73 | [矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/) | 🟡 中等 | 数组、哈希表、矩阵 | 2025.12.31 |
 | 74 | [搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) | 🟡 中等 | 数组、二分查找、矩阵 | 2025.12.31 |
 | 75 | [颜色分类](https://leetcode.cn/problems/sort-colors/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.05 |
+| 76 | [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) | 🔴 困难 | 哈希表、字符串、滑动窗口 | 2026.01.06 |
 | 77 | [组合](https://leetcode.cn/problems/combinations/) | 🟡 中等 | 回溯 | 2026.01.04 |
 | 78 | [子集](https://leetcode.cn/problems/subsets/) | 🟡 中等 | 位运算、数组、回溯 | 2026.01.05 |
 | 80 | [删除有序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) | 🟡 中等 | 数组、双指针 | 2025.12.13 |
@@ -272,8 +273,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-06 00:25:48
-- **总题目数**：206
+- **最后更新**：2026-01-06 15:52:31
+- **总题目数**：207
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成
