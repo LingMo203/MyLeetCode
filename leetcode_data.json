@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 208,
-  "updated_at": "2026.01.06",
+  "total_solved": 209,
+  "updated_at": "2026.01.07",
   "problems": [
     {
       "id": 1,
@@ -3084,6 +3084,21 @@
         "2026.01.06"
       ],
       "leetcode_url": "https://leetcode.cn/problems/permutation-sequence/"
+    },
+    {
+      "id": 17,
+      "title": "电话号码的字母组合",
+      "title_slug": "letter-combinations-of-a-phone-number",
+      "difficulty": "中等",
+      "tags": [
+        "哈希表",
+        "字符串",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/letter-combinations-of-a-phone-number/"
     }
   ]
 }

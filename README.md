@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：208**  
+**总题数：209**  
 🟢 简单：95  
-🟡 中等：104  
+🟡 中等：105  
 🔴 困难：9
 
 
@@ -18,8 +18,8 @@
 
 ### 🔥 核心数据结构
 - **数组** x93
-- **字符串** x36
-- **哈希表** x35
+- **字符串** x37
+- **哈希表** x36
 - **链表** x30
 - **树** x29
 - **二叉树** x28
@@ -40,8 +40,8 @@
 - **递归** x16
 - **贪心** x15
 - **位运算** x12
+- **回溯** x11
 - **矩阵** x11
-- **回溯** x10
 - **滑动窗口** x7
 - **设计** x6
 - **分治** x5
@@ -70,6 +70,7 @@
 | 14 | [最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | 🟢 简单 | 字典树、数组、字符串 | 2026.01.03 |
 | 15 | [三数之和](https://leetcode.cn/problems/3sum/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
 | 16 | [最接近的三数之和](https://leetcode.cn/problems/3sum-closest/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
+| 17 | [电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | 🟡 中等 | 哈希表、字符串、回溯 | 2026.01.07 |
 | 18 | [四数之和](https://leetcode.cn/problems/4sum/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
 | 19 | [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | 🟡 中等 | 链表、双指针 | 2025.11.12 |
 | 20 | [有效的括号](https://leetcode.cn/problems/valid-parentheses/) | 🟢 简单 | 栈、字符串 | 2025.10.20 |
@@ -272,8 +273,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-06 23:26:22
-- **总题目数**：208
+- **最后更新**：2026-01-07 00:58:25
+- **总题目数**：209
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

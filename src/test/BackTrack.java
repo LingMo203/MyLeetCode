@@ -6,12 +6,14 @@ public class BackTrack {
     public static void main(String[] args) {
         BackTrack bt=new BackTrack();
         int[] nums={1,2,3};
+        String str="23";
         //System.out.println(bt.combine(4,2));
         //System.out.println(bt.combinationSum(nums,7));
         //System.out.println(bt.combinationSum2(nums,8));
         //System.out.println(bt.permute(nums));
         //System.out.println(bt.permuteUnique(nums));
-        System.out.println(bt.getPermutation(3,3));
+        //System.out.println(bt.getPermutation(3,3));
+        System.out.println(bt.letterCombinations(str));
     }
 
 
@@ -231,7 +233,57 @@ public class BackTrack {
     }
 
 
+    //17. 电话号码的字母组合  没看题解，独立完成 磨了好几个点 太牛逼了
+    public List<String> letterCombinations(String digits) {
+        char[][] letters={
+                {},
+                {},
+                {'a','b','c'},
+                {'d','e','f'},
+                {'g','h','i'},
+                {'j','k','l'},
+                {'m','n','o'},
+                {'p','q','r','s'},
+                {'t','u','v'},
+                {'w','x','y','z'}
+        };
+        char[][] numbers=new char[digits.length()][];
+        for (int i=0;i<digits.length();i++){
+            int n=digits.charAt(i)-'0';
+                numbers[i]=letters[n];
+        }
+        List<String> res=new ArrayList<>();
+        StringBuilder path=new StringBuilder();
+        backLetterCombinations(res,path,numbers,0,0);
+        return res;
+    }
+    public void backLetterCombinations(List<String> res,StringBuilder path,char[][] numbers,int startI,int startJ){
+        if (path.length()==numbers.length){
+            res.add(path.toString());
+            return;
+        }
+        for (int i=startI;i<numbers.length;i++){
+            for (int j=0;j<numbers[i].length;j++){
+                char c=numbers[i][j];
+                path.append(c);
+                backLetterCombinations(res, path, numbers, i+1, j+1);
+                path.deleteCharAt(path.length()-1);
+            }
+        }
+    }
 
+
+
+
+    public void backLetterCombinationsD(List<String> res,StringBuilder path,char[][] letters,int index,char[] numbers,int start){
+        if (path.length()==numbers.length){
+            res.add(path.toString());
+            return;
+        }
+        for (int i=start;i<numbers.length;i++){
+            char c=numbers[i];
+        }
+    }
 
 
 

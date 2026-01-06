@@ -8,47 +8,6 @@ public class GiveUp {
     }
 
 
-    //17.电话号码的字母组合 放弃
-    public List<String> letterCombinations(String digits) {
-        String[] numbers={"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
-        List<String> temp=new ArrayList<>();
-        for (int i=0;i<digits.length();i++){
-            int num=digits.charAt(i)-'0';
-            String numS=numbers[num];
-            temp.add(numS);
-        }
-        for (int i=0;i<temp.size();i++){
-            String tepS=temp.get(i);
-            System.out.println(tepS);
-        }
-        System.out.println(temp);
-        return null;
-    }
-    //17. 电话号码的字母组合 放弃
-    public List<String> letterCombinations2(String digits) {
-        List<String> result=new ArrayList<>();
-        String[] s=new String[10];
-        s[2]="abc";s[3]="def";s[4]="ghi";s[5]="jkl";
-        s[6]="mno";s[7]="pqrs";s[8]="tuv";s[9]="wxyz";
-        List<char[]> each=new ArrayList<>();
-        for (int i=0;i<digits.length();i++){
-            int d=digits.charAt(i)-'0';
-            each.add(s[d].toCharArray());
-        }
-        lc(result,each,0,"",0);
-        return result;
-    }
-    public void lc(List<String> result,List<char[]> each,int time,String temp,int ltime){
-        if (time==each.size()){
-            result.add(temp);
-            time--;
-            return;
-        }
-        temp=temp+each.get(time)[ltime];
-        time++;
-        ltime++;
-        lc(result,each,time,temp,ltime);
-    }
 
     //997. 找到小镇的法官 放弃
     public int findJudge(int n, int[][] trust) {
@@ -197,5 +156,33 @@ public class GiveUp {
             }
         }
         return index;
+    }
+
+
+    //22. 括号生成(放弃)
+    public List<String> generateParenthesis(int n) {
+        List<String> res=new ArrayList<>();
+        StringBuilder path=new StringBuilder();
+        int[] time={n*2,n*2};
+        backGenerateParenthesis(res,path,time,n*2);
+        return res;
+    }
+    public void backGenerateParenthesis(List<String> res,StringBuilder path,int[] time,int n){
+        if (path.length()==n){
+            res.add(path.toString());
+            return;
+        }
+        for (int i=0;i<=n;i++){
+            char c=i%2==1?'(':')';
+            int index=c=='('?0:1;
+            int count=time[index];
+            if (count<=1) continue;
+            path.append(c);
+            time[index]--;
+            backGenerateParenthesis(res, path, time, n);
+            int delI=path.charAt(path.length()-1)=='('?0:1;
+            path.deleteCharAt(path.length()-1);
+            time[delI]++;
+        }
     }
 }
