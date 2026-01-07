@@ -548,7 +548,25 @@ class Solution {
         return res;
     }
 
-
+    //1339. 分裂二叉树的最大乘积 懵了
+    public int maxProduct(TreeNode root) {
+        int sum = dfsSumProduct(root);
+        long[] max={Long.MIN_VALUE};
+        dfsMaxProduct(root,sum,max);
+        return Math.toIntExact(max[0] % ((int) Math.pow(10, 9) + 7));
+    }
+    public int dfsSumProduct(TreeNode root){
+        if (root==null) return 0;
+        return dfsSumProduct(root.left)+dfsSumProduct(root.right)+root.val;
+    }
+    public int dfsMaxProduct(TreeNode root,int sum,long[] max){
+        if (root==null) return 0;
+        int leftSum=dfsMaxProduct(root.left,sum,max);
+        int rightSum=dfsMaxProduct(root.right,sum,max);
+        int subSum=leftSum+rightSum+root.val;
+        max[0]=Math.max(max[0], (long) (sum - subSum) *subSum);
+        return subSum;
+    }
 
 
 

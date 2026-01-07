@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：210**  
+**总题数：211**  
 🟢 简单：95  
-🟡 中等：106  
+🟡 中等：107  
 🔴 困难：9
 
 
@@ -21,8 +21,8 @@
 - **字符串** x38
 - **哈希表** x36
 - **链表** x30
-- **树** x29
-- **二叉树** x28
+- **树** x30
+- **二叉树** x29
 - **栈** x17
 - **队列** x3
 - **单调栈** x2
@@ -33,7 +33,7 @@
 - **双指针** x43
 - **数学** x41
 - **排序** x28
-- **深度优先搜索** x24
+- **深度优先搜索** x25
 - **动态规划** x21
 - **二分查找** x20
 - **广度优先搜索** x16
@@ -249,6 +249,7 @@
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
+| 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
 | 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
 | 1390 | [四因数](https://leetcode.cn/problems/four-divisors/) | 🟡 中等 | 数组、数学 | 2026.01.04 |
 | 1523 | [在区间范围内统计奇数数目](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) | 🟢 简单 | 数学 | 2025.12.07 |
@@ -274,8 +275,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-07 23:04:01
-- **总题目数**：210
+- **最后更新**：2026-01-07 23:44:38
+- **总题目数**：211
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成
