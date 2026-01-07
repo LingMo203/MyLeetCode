@@ -4,11 +4,11 @@ import java.util.*;
 
 public class TreeNodeTest {
     public static void main(String[] args) {
-     TreeNodeTest test=new TreeNodeTest();
+        TreeNodeTest tt=new TreeNodeTest();
+        int[] inorder = {9, 3, 15, 20, 7};
+        int[] postorder = {9, 15, 7, 20, 3};
+        System.out.println(tt.inorderTraversal(tt.buildTree(inorder,postorder)));
     }
-}
-
-class Solution {
 
     //144. 二叉树的前序遍历
     public List<Integer> preorderTraversal(TreeNode root) {
@@ -569,7 +569,28 @@ class Solution {
     }
 
 
-
+    //106. 从中序与后序遍历序列构造二叉树
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        if (postorder.length==0) return null;
+        int rootVal=postorder[postorder.length-1];
+        TreeNode root=new TreeNode(rootVal);
+        if (postorder.length==1) return root;
+        int i=0;
+        while (inorder[i]!=rootVal){
+            i++;
+        }
+        //左中序数组
+        int[] inorderLeft=Arrays.copyOfRange(inorder,0,i);
+        //右中序数组
+        int[] inorderRight=Arrays.copyOfRange(inorder,i+1,inorder.length);
+        //右中序数组
+        int[] PostorderRight=Arrays.copyOfRange(postorder,inorderLeft.length,postorder.length-1);
+        //左中序数组
+        int[] PostorderLeft=Arrays.copyOfRange(postorder,0,inorderLeft.length);
+        root.right=buildTree(inorderRight,PostorderRight);
+        root.left=buildTree(inorderLeft,PostorderLeft);
+        return root;
+    }
 
 
 

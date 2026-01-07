@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：211**  
+**总题数：212**  
 🟢 简单：95  
-🟡 中等：107  
+🟡 中等：108  
 🔴 困难：9
 
 
@@ -17,12 +17,12 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x93
+- **数组** x94
 - **字符串** x38
-- **哈希表** x36
+- **哈希表** x37
+- **树** x31
 - **链表** x30
-- **树** x30
-- **二叉树** x29
+- **二叉树** x30
 - **栈** x17
 - **队列** x3
 - **单调栈** x2
@@ -44,7 +44,7 @@
 - **矩阵** x11
 - **滑动窗口** x7
 - **设计** x6
-- **分治** x5
+- **分治** x6
 - **模拟** x5
 - **快速选择** x1
 - **随机化** x1
@@ -128,6 +128,7 @@
 | 102 | [二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 🟡 中等 | 树、广度优先搜索、二叉树 | 2025.11.19 |
 | 103 | [二叉树的锯齿形层序遍历](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) | 🟡 中等 | 树、广度优先搜索、二叉树 | 2025.11.20 |
 | 104 | [二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.11.20 |
+| 106 | [从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | 🟡 中等 | 树、数组、哈希表、分治、二叉树 | 2026.01.08 |
 | 107 | [二叉树的层序遍历 II](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) | 🟡 中等 | 树、广度优先搜索、二叉树 | 2025.12.18 |
 | 110 | [平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/) | 🟢 简单 | 树、深度优先搜索、二叉树 | 2025.11.21 |
 | 111 | [二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.11.20 |
@@ -275,8 +276,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-07 23:44:38
-- **总题目数**：211
+- **最后更新**：2026-01-08 01:20:02
+- **总题目数**：212
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

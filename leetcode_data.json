@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 211,
-  "updated_at": "2026.01.07",
+  "total_solved": 212,
+  "updated_at": "2026.01.08",
   "problems": [
     {
       "id": 1,
@@ -3129,6 +3129,23 @@
         "2026.01.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/"
+    },
+    {
+      "id": 106,
+      "title": "从中序与后序遍历序列构造二叉树",
+      "title_slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "数组",
+        "哈希表",
+        "分治",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.01.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
     }
   ]
 }
