@@ -7,7 +7,8 @@ public class TreeNodeTest {
         TreeNodeTest tt=new TreeNodeTest();
         int[] inorder = {9, 3, 15, 20, 7};
         int[] postorder = {9, 15, 7, 20, 3};
-        System.out.println(tt.inorderTraversal(tt.buildTree(inorder,postorder)));
+        int[] preorder = {3, 9, 20, 15, 7};
+        System.out.println(tt.inorderTraversal(tt.buildTree2(preorder,inorder)));
     }
 
     //144. 二叉树的前序遍历
@@ -589,6 +590,33 @@ public class TreeNodeTest {
         int[] PostorderLeft=Arrays.copyOfRange(postorder,0,inorderLeft.length);
         root.right=buildTree(inorderRight,PostorderRight);
         root.left=buildTree(inorderLeft,PostorderLeft);
+        return root;
+    }
+
+    //105. 从前序与中序遍历序列构造二叉树
+    public TreeNode buildTree2(int[] preorder, int[] inorder) {
+        return buildTree2(preorder,inorder,0,preorder.length-1,0,inorder.length-1);
+    }
+    public TreeNode buildTree2(int[] preorder, int[] inorder,int pLeft,int pRight,int iLeft,int iRight){
+        int preorderLength=pRight-pLeft+1;
+        if (preorderLength==0) return null;
+        int rootVal=preorder[pLeft];
+        TreeNode root=new TreeNode(rootVal);
+        if (preorderLength==1) return root;
+        int i=iLeft;
+        while (inorder[i]!=rootVal){
+            i++;
+        }
+        //左中序索引
+        int iLeftNewLeft=iLeft ,iLeftNewRight=i-1,length=iLeftNewRight-iLeftNewLeft;
+        //右中序索引
+        int iRightNewLeft=i+1 ,iRightNewRight=iRight;
+        //左前序索引
+        int pLeftNewLeft=pLeft+1 ,pLeftNewRight=pLeftNewLeft+length;
+        //右前序索引
+        int pRightNewLeft=pLeftNewRight+1 ,pRightNewRight=pRight;
+        root.left=buildTree2(preorder,inorder,pLeftNewLeft,pLeftNewRight,iLeftNewLeft,iLeftNewRight);
+        root.right=buildTree2(preorder,inorder,pRightNewLeft,pRightNewRight,iRightNewLeft,iRightNewRight);
         return root;
     }
 
