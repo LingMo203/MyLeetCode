@@ -6,14 +6,15 @@ public class BackTrack {
     public static void main(String[] args) {
         BackTrack bt=new BackTrack();
         int[] nums={1,2,3};
-        String str="23";
+        String str="aab";
         //System.out.println(bt.combine(4,2));
         //System.out.println(bt.combinationSum(nums,7));
         //System.out.println(bt.combinationSum2(nums,8));
         //System.out.println(bt.permute(nums));
         //System.out.println(bt.permuteUnique(nums));
         //System.out.println(bt.getPermutation(3,3));
-        System.out.println(bt.letterCombinations(str));
+        //System.out.println(bt.letterCombinations(str));
+        System.out.println(bt.partition(str));
     }
 
 
@@ -273,15 +274,31 @@ public class BackTrack {
     }
 
 
-
-
-    public void backLetterCombinationsD(List<String> res,StringBuilder path,char[][] letters,int index,char[] numbers,int start){
-        if (path.length()==numbers.length){
-            res.add(path.toString());
+    //131. 分割回文串
+    public List<List<String>> partition(String s) {
+        List<List<String>> res=new ArrayList<>();
+        List<String> path=new ArrayList<>();
+        backPartition(res,path,0,s);
+        return res;
+    }
+    public void backPartition(List<List<String>> res,List<String> path,int start,String s){
+        if (start==s.length()){
+            res.add(new ArrayList<>(path));
             return;
         }
-        for (int i=start;i<numbers.length;i++){
-            char c=numbers[i];
+        for (int i=start;i<s.length();i++){
+            String str=s.substring(start,i+1);
+            boolean f=false;
+            for (int left=0,right=str.length()-1;left<right;left++,right--){
+                if (str.charAt(left)!=str.charAt(right)) {
+                    f=true;
+                    break;
+                }
+            }
+            if (f) continue;
+            path.add(str);
+            backPartition(res, path, i+1, s);
+            path.remove(path.size()-1);
         }
     }
 

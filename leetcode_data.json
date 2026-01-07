@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 209,
+  "total_solved": 210,
   "updated_at": "2026.01.07",
   "problems": [
     {
@@ -3099,6 +3099,21 @@
         "2026.01.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/letter-combinations-of-a-phone-number/"
+    },
+    {
+      "id": 131,
+      "title": "分割回文串",
+      "title_slug": "palindrome-partitioning",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "动态规划",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/palindrome-partitioning/"
     }
   ]
 }
