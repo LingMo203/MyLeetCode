@@ -595,18 +595,19 @@ public class TreeNodeTest {
 
     //105. 从前序与中序遍历序列构造二叉树
     public TreeNode buildTree2(int[] preorder, int[] inorder) {
-        return buildTree2(preorder,inorder,0,preorder.length-1,0,inorder.length-1);
+        HashMap<Integer,Integer> hashMap=new HashMap<>();
+        for (int i=0;i<inorder.length;i++){
+            hashMap.put(inorder[i],i);
+        }
+        return buildTree2(preorder,inorder,0,preorder.length-1,0,inorder.length-1,hashMap);
     }
-    public TreeNode buildTree2(int[] preorder, int[] inorder,int pLeft,int pRight,int iLeft,int iRight){
+    public TreeNode buildTree2(int[] preorder, int[] inorder,int pLeft,int pRight,int iLeft,int iRight,HashMap<Integer,Integer> hashMap){
         int preorderLength=pRight-pLeft+1;
         if (preorderLength==0) return null;
         int rootVal=preorder[pLeft];
         TreeNode root=new TreeNode(rootVal);
         if (preorderLength==1) return root;
-        int i=iLeft;
-        while (inorder[i]!=rootVal){
-            i++;
-        }
+        int i=hashMap.get(rootVal);
         //左中序索引
         int iLeftNewLeft=iLeft ,iLeftNewRight=i-1,length=iLeftNewRight-iLeftNewLeft;
         //右中序索引
@@ -615,8 +616,8 @@ public class TreeNodeTest {
         int pLeftNewLeft=pLeft+1 ,pLeftNewRight=pLeftNewLeft+length;
         //右前序索引
         int pRightNewLeft=pLeftNewRight+1 ,pRightNewRight=pRight;
-        root.left=buildTree2(preorder,inorder,pLeftNewLeft,pLeftNewRight,iLeftNewLeft,iLeftNewRight);
-        root.right=buildTree2(preorder,inorder,pRightNewLeft,pRightNewRight,iRightNewLeft,iRightNewRight);
+        root.left=buildTree2(preorder,inorder,pLeftNewLeft,pLeftNewRight,iLeftNewLeft,iLeftNewRight,hashMap);
+        root.right=buildTree2(preorder,inorder,pRightNewLeft,pRightNewRight,iRightNewLeft,iRightNewRight,hashMap);
         return root;
     }
 
