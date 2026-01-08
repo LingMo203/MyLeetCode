@@ -329,7 +329,7 @@ public class BackTrack {
         }
         for (int i=start;i<s.length();i++){
             String str=s.substring(start,i+1);
-            if (Integer.parseInt(str)>255|| str.matches("0\\d+")) continue;
+            if (Integer.parseInt(str)>255|| str.matches("0\\d+")) return;
             path.add(str);
             backRestoreIpAddresses(res, path , s, i+1);
             path.remove(path.size()-1);
