@@ -6,7 +6,9 @@ public class BackTrack {
     public static void main(String[] args) {
         BackTrack bt=new BackTrack();
         int[] nums={1,2,3};
-        String str="aab";
+        String str="25525511135";
+        String str2="0";
+        System.out.println(str2.matches("0\\d+"));
         //System.out.println(bt.combine(4,2));
         //System.out.println(bt.combinationSum(nums,7));
         //System.out.println(bt.combinationSum2(nums,8));
@@ -14,7 +16,9 @@ public class BackTrack {
         //System.out.println(bt.permuteUnique(nums));
         //System.out.println(bt.getPermutation(3,3));
         //System.out.println(bt.letterCombinations(str));
-        System.out.println(bt.partition(str));
+        //System.out.println(bt.partition(str));
+        System.out.println(bt.restoreIpAddresses(str));
+
     }
 
 
@@ -302,6 +306,35 @@ public class BackTrack {
         }
     }
 
+
+    //93. 复原 IP 地址
+    public List<String> restoreIpAddresses(String s) {
+        List<String> res=new ArrayList<>();
+        List<String> path=new ArrayList<>();
+        backRestoreIpAddresses(res,path,s,0);
+        return res;
+    }
+    public void backRestoreIpAddresses(List<String> res,List<String> path,String s,int start){
+        if (path.size()>4){
+            return;
+        }
+        if (path.size()==4&&start>=s.length()){
+            StringBuilder sb=new StringBuilder();
+            for (int i=0;i<path.size();i++){
+                sb.append(path.get(i));
+                if (i<path.size()-1) sb.append(".");
+            }
+            res.add(sb.toString());
+            return;
+        }
+        for (int i=start;i<s.length();i++){
+            String str=s.substring(start,i+1);
+            if (Integer.parseInt(str)>255|| str.matches("0\\d+")) continue;
+            path.add(str);
+            backRestoreIpAddresses(res, path , s, i+1);
+            path.remove(path.size()-1);
+        }
+    }
 
 
 

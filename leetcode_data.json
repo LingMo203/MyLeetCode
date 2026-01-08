@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 214,
+  "total_solved": 215,
   "updated_at": "2026.01.08",
   "problems": [
     {
@@ -3180,6 +3180,20 @@
         "2026.01.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/"
+    },
+    {
+      "id": 93,
+      "title": "复原 IP 地址",
+      "title_slug": "restore-ip-addresses",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/restore-ip-addresses/"
     }
   ]
 }
