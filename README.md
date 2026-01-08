@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：217**  
+**总题数：218**  
 🟢 简单：96  
-🟡 中等：111  
+🟡 中等：112  
 🔴 困难：10
 
 
@@ -17,11 +17,11 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x98
-- **哈希表** x39
+- **数组** x99
+- **哈希表** x41
 - **字符串** x39
-- **树** x33
-- **二叉树** x32
+- **树** x34
+- **二叉树** x33
 - **链表** x30
 - **栈** x17
 - **队列** x3
@@ -33,17 +33,17 @@
 - **双指针** x43
 - **数学** x41
 - **排序** x28
-- **深度优先搜索** x25
+- **深度优先搜索** x26
 - **动态规划** x21
 - **二分查找** x20
-- **广度优先搜索** x16
+- **广度优先搜索** x17
 - **递归** x16
 - **贪心** x15
 - **回溯** x15
 - **位运算** x13
 - **矩阵** x11
+- **滑动窗口** x8
 - **分治** x8
-- **滑动窗口** x7
 - **设计** x6
 - **模拟** x5
 - **快速选择** x1
@@ -247,6 +247,7 @@
 | 821 | [字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character/) | 🟢 简单 | 数组、双指针、字符串 | 2025.11.05 |
 | 840 | [矩阵中的幻方](https://leetcode.cn/problems/magic-squares-in-grid/) | 🟡 中等 | 数组、哈希表、数学、矩阵 | 2025.12.30 |
 | 860 | [柠檬水找零](https://leetcode.cn/problems/lemonade-change/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
+| 865 | [具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、哈希表、二叉树 | 2026.01.09 |
 | 876 | [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | 🟢 简单 | 链表、双指针 | 2025.11.17 |
 | 961 | [在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.31 |
 | 976 | [三角形的最大周长](https://leetcode.cn/problems/largest-perimeter-triangle/) | 🟢 简单 | 贪心、数组、数学、排序 | 2025.11.10 |
@@ -273,7 +274,7 @@
 | 3075 | [幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) | 🟡 中等 | 贪心、数组、排序 | 2025.12.25 |
 | 3191 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
-| 3795 | [不同元素和至少为 K 的最短子数组长度](https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | 🟡 中等 |  | 2026.01.03 |
+| 3795 | [不同元素和至少为 K 的最短子数组长度](https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | 🟡 中等 | 数组、哈希表、滑动窗口 | 2026.01.03 |
 | 3798 | [最大的偶数](https://leetcode.cn/problems/largest-even-number/) | 🟢 简单 | 字符串 | 2026.01.04 |
 
 
@@ -281,8 +282,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-09 00:55:21
-- **总题目数**：217
+- **最后更新**：2026-01-09 02:09:36
+- **总题目数**：218
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

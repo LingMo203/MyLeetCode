@@ -9,9 +9,44 @@ public class TreeNodeTest {
         int[] postorder = {9, 15, 7, 20, 3};
         int[] preorder = {3, 9, 20, 15, 7};
         int[] nums={-10,-3,0,5,9};
+        List<Integer> treeData = new ArrayList<>(Arrays.asList(0,3,1,4,null,2,null,null,6,null,5));
+        TreeNode root=buildTree(treeData);
         //System.out.println(tt.inorderTraversal(tt.buildTree(inorder,preorder)));
         //System.out.println(tt.buildTree2(preorder,inorder)));
-        System.out.println(tt.inorderTraversal(tt.sortedArrayToBST(nums)));
+        //System.out.println(tt.inorderTraversal(tt.sortedArrayToBST(nums)));
+        System.out.println(tt.preorderTraversal(tt.subtreeWithAllDeepest(root)));
+    }
+
+    public static TreeNode buildTree(List<Integer> list) {
+        if (list == null || list.isEmpty() || list.get(0) == null) {
+            return null;
+        }
+        TreeNode root = new TreeNode(list.get(0));
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        int i = 1;
+        while (!queue.isEmpty() && i < list.size()) {
+            TreeNode node = queue.poll();
+            // 左子节点
+            if (i < list.size()) {
+                Integer leftVal = list.get(i);
+                if (leftVal != null) {
+                    node.left = new TreeNode(leftVal);
+                    queue.offer(node.left);
+                }
+                i++;
+            }
+            // 右子节点
+            if (i < list.size()) {
+                Integer rightVal = list.get(i);
+                if (rightVal != null) {
+                    node.right = new TreeNode(rightVal);
+                    queue.offer(node.right);
+                }
+                i++;
+            }
+        }
+        return root;
     }
 
     //144. 二叉树的前序遍历
@@ -646,6 +681,52 @@ public class TreeNodeTest {
     }
 
 
+    //865. 具有所有最深节点的最小子树 受不了了用ai了
+    public TreeNode subtreeWithAllDeepest(TreeNode root) {
+        List<List<TreeNode>> maxPath=new ArrayList<>();
+        List<TreeNode> path=new ArrayList<>();
+        backDFSSubtreeWithAllDeepest(root,maxPath,path);
+        TreeNode res=root;
+        if (maxPath.size()==1) return maxPath.get(0).get(maxPath.get(0).size()-1);
+        for (int i=1;i<maxPath.get(0).size();i++){
+            TreeNode candidate = maxPath.get(0).get(i);
+            boolean allSame = true;
+            for (int j = 1; j < maxPath.size(); j++) {
+                if (i >= maxPath.get(j).size() || maxPath.get(j).get(i) != candidate) {
+                    allSame = false;
+                    break;
+                }
+            }
+            if (allSame) {
+                res = candidate;
+            } else {
+                break;
+            }
+        }
+        return res;
+    }
+    public void backDFSSubtreeWithAllDeepest(TreeNode root,List<List<TreeNode>> maxPath,List<TreeNode> path){
+        if (root==null) return;
+        path.add(root);
+        if (root.left==null&&root.right==null){
+            if (maxPath.isEmpty()) {
+                maxPath.add(new ArrayList<>(path));
+                path.remove(path.size()-1);
+                return;
+            }
+            if (maxPath.get(0).size()<path.size()){
+                maxPath.clear();
+                maxPath.add(new ArrayList<>(path));
+            }else if (maxPath.get(0).size()==path.size()){
+                maxPath.add(new ArrayList<>(path));
+            }
+            path.remove(path.size()-1);
+            return;
+        }
+        backDFSSubtreeWithAllDeepest(root.left, maxPath, path);
+        backDFSSubtreeWithAllDeepest(root.right, maxPath, path);
+        path.remove(path.size()-1);
+    }
 
 
 

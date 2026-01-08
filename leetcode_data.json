@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 217,
+  "total_solved": 218,
   "updated_at": "2026.01.09",
   "problems": [
     {
@@ -2893,7 +2893,11 @@
       "title": "不同元素和至少为 K 的最短子数组长度",
       "title_slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "数组",
+        "哈希表",
+        "滑动窗口"
+      ],
       "solved_dates": [
         "2026.01.03"
       ],
@@ -3224,6 +3228,23 @@
         "2026.01.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/n-queens/"
+    },
+    {
+      "id": 865,
+      "title": "具有所有最深节点的最小子树",
+      "title_slug": "smallest-subtree-with-all-the-deepest-nodes",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "广度优先搜索",
+        "哈希表",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.01.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/"
     }
   ]
 }
