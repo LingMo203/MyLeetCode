@@ -5,10 +5,10 @@ import java.util.*;
 public class BackTrack {
     public static void main(String[] args) {
         BackTrack bt=new BackTrack();
-        int[] nums={1,2,3};
+        int[] nums={4,6,7,7};
         String str="25525511135";
         String str2="0";
-        System.out.println(str2.matches("0\\d+"));
+//        System.out.println(str2.matches("0\\d+"));
         //System.out.println(bt.combine(4,2));
         //System.out.println(bt.combinationSum(nums,7));
         //System.out.println(bt.combinationSum2(nums,8));
@@ -17,8 +17,8 @@ public class BackTrack {
         //System.out.println(bt.getPermutation(3,3));
         //System.out.println(bt.letterCombinations(str));
         //System.out.println(bt.partition(str));
-        System.out.println(bt.restoreIpAddresses(str));
-
+        //System.out.println(bt.restoreIpAddresses(str));
+        System.out.println(bt.findSubsequences(nums));
     }
 
 
@@ -332,6 +332,30 @@ public class BackTrack {
             if (Integer.parseInt(str)>255|| str.matches("0\\d+")) return;
             path.add(str);
             backRestoreIpAddresses(res, path , s, i+1);
+            path.remove(path.size()-1);
+        }
+    }
+
+
+    //491. 非递减子序列 hashSet在同一层建立 层级去重 太妙了
+    public List<List<Integer>> findSubsequences(int[] nums) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        backFindSubsequences(res,path,nums,0);
+        return res;
+    }
+    public void backFindSubsequences(List<List<Integer>> res,List<Integer> path,int[] nums,int start){
+        if (path.size()>1){
+            res.add(new ArrayList<>(path));
+        }
+        HashSet<Integer> hashSet=new HashSet<>();
+        for (int i=start;i<nums.length;i++){
+            int num=nums[i];
+            if (hashSet.contains(num)) continue;
+            if (!path.isEmpty()&&path.get(path.size()-1)>num) continue;
+            path.add(num);
+            hashSet.add(num);
+            backFindSubsequences(res, path, nums, i+1);
             path.remove(path.size()-1);
         }
     }

@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 215,
+  "total_solved": 216,
   "updated_at": "2026.01.08",
   "problems": [
     {
@@ -3194,6 +3194,22 @@
         "2026.01.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/restore-ip-addresses/"
+    },
+    {
+      "id": 491,
+      "title": "非递减子序列",
+      "title_slug": "non-decreasing-subsequences",
+      "difficulty": "中等",
+      "tags": [
+        "位运算",
+        "数组",
+        "哈希表",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/non-decreasing-subsequences/"
     }
   ]
 }
