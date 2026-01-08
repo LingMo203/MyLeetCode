@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 216,
-  "updated_at": "2026.01.08",
+  "total_solved": 217,
+  "updated_at": "2026.01.09",
   "problems": [
     {
       "id": 1,
@@ -3210,6 +3210,20 @@
         "2026.01.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/non-decreasing-subsequences/"
+    },
+    {
+      "id": 51,
+      "title": "N 皇后",
+      "title_slug": "n-queens",
+      "difficulty": "困难",
+      "tags": [
+        "数组",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/n-queens/"
     }
   ]
 }

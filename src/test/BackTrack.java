@@ -18,7 +18,8 @@ public class BackTrack {
         //System.out.println(bt.letterCombinations(str));
         //System.out.println(bt.partition(str));
         //System.out.println(bt.restoreIpAddresses(str));
-        System.out.println(bt.findSubsequences(nums));
+        //System.out.println(bt.findSubsequences(nums));
+        System.out.println(bt.solveNQueens(8));
     }
 
 
@@ -357,6 +358,80 @@ public class BackTrack {
             hashSet.add(num);
             backFindSubsequences(res, path, nums, i+1);
             path.remove(path.size()-1);
+        }
+    }
+
+
+    //51. N 皇后
+    public List<List<String>> solveNQueens(int n) {
+        List<List<String>> res=new ArrayList<>();
+        List<int[]> path=new ArrayList<>();
+        int[][] isTrue=new int[n][n];
+        HashSet<Integer> rowAppend=new HashSet<>();
+        HashSet<Integer> colAppend=new HashSet<>();
+        backSolveNQueens(res,path,rowAppend,colAppend,isTrue,n,0);
+        return res;
+    }
+    public void backSolveNQueens(List<List<String>> res,List<int[]> path,HashSet<Integer> rowAppend,HashSet<Integer> colAppend,int[][] isTrue,int n,int start){
+        if (path.size()==n){
+            List<String> list=new ArrayList<>();
+            int index=0;
+            int[] t=path.get(index);
+            for (int i=0;i<n;i++){
+                StringBuilder sb=new StringBuilder();
+                for (int j=0;j<n;j++){
+                    if (t[0]==i&&t[1]==j){
+                        sb.append("Q");
+                        index++;
+                        if (index<path.size()) t=path.get(index);
+                        continue;
+                    }
+                    sb.append(".");
+                }
+                list.add(sb.toString());
+            }
+            res.add(list);
+            return;
+        }
+        for (int i=start;i<n;i++){
+            if (rowAppend.contains(i)) continue;
+            for (int j=0;j<n;j++){
+                if (rowAppend.contains(i)) continue;
+                if (colAppend.contains(j)) continue;
+                if (isTrue[i][j]>0) continue;
+                path.add(new int[]{i,j});
+                for (int ii=i,jj=j;ii<n&&jj<n;ii++,jj++){
+                    isTrue[ii][jj]++;
+                }
+                for (int ii=i+1,jj=j-1;ii<n&&jj>=0;ii++,jj--){
+                    isTrue[ii][jj]++;
+                }
+                for (int ii=i-1,jj=j-1;ii>=0&&jj>=0;ii--,jj--){
+                    isTrue[ii][jj]++;
+                }
+                for (int ii=i-2,jj=j;ii>=0&&jj<n;ii--,jj++){
+                    isTrue[ii][jj]++;
+                }
+                rowAppend.add(i);
+                colAppend.add(j);
+                backSolveNQueens(res, path, rowAppend, colAppend, isTrue, n, i+1);
+                int[] remove=path.remove(path.size()-1);
+                int i1=remove[0],j1=remove[1];
+                rowAppend.remove(i1);
+                colAppend.remove(j1);
+                for (int ii=i1,jj=j1;ii<n&&jj<n;ii++,jj++){
+                    isTrue[ii][jj]--;
+                }
+                for (int ii=i1+1,jj=j1-1;ii<n&&jj>=0;ii++,jj--){
+                    isTrue[ii][jj]--;
+                }
+                for (int ii=i1-1,jj=j1-1;ii>=0&&jj>=0;ii--,jj--){
+                    isTrue[ii][jj]--;
+                }
+                for (int ii=i1-2,jj=j1;ii>=0&&jj<n;ii--,jj++){
+                    isTrue[ii][jj]--;
+                }
+            }
         }
     }
 
