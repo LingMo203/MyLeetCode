@@ -8,7 +8,10 @@ public class TreeNodeTest {
         int[] inorder = {9, 3, 15, 20, 7};
         int[] postorder = {9, 15, 7, 20, 3};
         int[] preorder = {3, 9, 20, 15, 7};
-        System.out.println(tt.inorderTraversal(tt.buildTree2(preorder,inorder)));
+        int[] nums={-10,-3,0,5,9};
+        //System.out.println(tt.inorderTraversal(tt.buildTree(inorder,preorder)));
+        //System.out.println(tt.buildTree2(preorder,inorder)));
+        System.out.println(tt.inorderTraversal(tt.sortedArrayToBST(nums)));
     }
 
     //144. 二叉树的前序遍历
@@ -620,6 +623,37 @@ public class TreeNodeTest {
         root.right=buildTree2(preorder,inorder,pRightNewLeft,pRightNewRight,iRightNewLeft,iRightNewRight,hashMap);
         return root;
     }
+
+
+    //108. 将有序数组转换为二叉搜索树
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return buildSortedArrayToBST(nums,0,nums.length-1);
+    }
+    public TreeNode buildSortedArrayToBST(int[] nums,int start,int end){
+        int length=end-start+1;
+        if (length<0) return null;
+        int mid=start+length/2;
+        TreeNode root=new TreeNode(nums[mid]);
+        //左子树索引
+        int leftStart=start , leftEnd=mid-1;
+        //右子树索引
+        int rightStart=mid+1 , rightEnd=end;
+        if (leftStart<=leftEnd)
+            root.left=buildSortedArrayToBST(nums,leftStart,leftEnd);
+        if (rightStart<=rightEnd)
+            root.right=buildSortedArrayToBST(nums,rightStart,rightEnd);
+        return root;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 

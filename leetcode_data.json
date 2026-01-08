@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 213,
+  "total_solved": 214,
   "updated_at": "2026.01.08",
   "problems": [
     {
@@ -3163,6 +3163,23 @@
         "2026.01.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+    },
+    {
+      "id": 108,
+      "title": "将有序数组转换为二叉搜索树",
+      "title_slug": "convert-sorted-array-to-binary-search-tree",
+      "difficulty": "简单",
+      "tags": [
+        "树",
+        "二叉搜索树",
+        "数组",
+        "分治",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.01.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/"
     }
   ]
 }
