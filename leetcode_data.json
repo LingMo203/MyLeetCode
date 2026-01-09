@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 221,
+  "total_solved": 222,
   "updated_at": "2026.01.09",
   "problems": [
     {
@@ -3289,6 +3289,22 @@
         "2026.01.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/sudoku-solver/"
+    },
+    {
+      "id": 623,
+      "title": "在二叉树中增加一行",
+      "title_slug": "add-one-row-to-tree",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "广度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.01.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/add-one-row-to-tree/"
     }
   ]
 }

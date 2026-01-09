@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：221**  
+**总题数：222**  
 🟢 简单：96  
-🟡 中等：113  
+🟡 中等：114  
 🔴 困难：12
 
 
@@ -20,8 +20,8 @@
 - **数组** x100
 - **哈希表** x42
 - **字符串** x39
-- **树** x34
-- **二叉树** x33
+- **树** x35
+- **二叉树** x34
 - **链表** x30
 - **栈** x17
 - **队列** x3
@@ -33,11 +33,11 @@
 - **双指针** x43
 - **数学** x42
 - **排序** x28
-- **深度优先搜索** x26
+- **深度优先搜索** x27
 - **动态规划** x22
 - **二分查找** x20
+- **广度优先搜索** x18
 - **回溯** x18
-- **广度优先搜索** x17
 - **递归** x16
 - **贪心** x15
 - **位运算** x13
@@ -239,6 +239,7 @@
 | 561 | [数组拆分](https://leetcode.cn/problems/array-partition/) | 🟢 简单 | 贪心、数组、计数排序、排序 | 2025.11.07 |
 | 575 | [分糖果](https://leetcode.cn/problems/distribute-candies/) | 🟢 简单 | 数组、哈希表 | 2025.10.29 |
 | 605 | [种花问题](https://leetcode.cn/problems/can-place-flowers/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
+| 623 | [在二叉树中增加一行](https://leetcode.cn/problems/add-one-row-to-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.09 |
 | 637 | [二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.23 |
 | 645 | [错误的集合](https://leetcode.cn/problems/set-mismatch/) | 🟢 简单 | 位运算、数组、哈希表、排序 | 2025.10.29 |
 | 704 | [二分查找](https://leetcode.cn/problems/binary-search/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
@@ -285,8 +286,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-09 23:27:49
-- **总题目数**：221
+- **最后更新**：2026-01-09 23:53:24
+- **总题目数**：222
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

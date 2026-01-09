@@ -729,7 +729,37 @@ public class TreeNodeTest {
     }
 
 
-
+    //623. 在二叉树中增加一行
+    public TreeNode addOneRow(TreeNode root, int val, int depth) {
+        if (depth==1){
+            TreeNode newroot=new TreeNode(val);
+            newroot.left=root;
+            return newroot;
+        }
+        int depthNow=2;
+        Deque<TreeNode> deque=new ArrayDeque<>();
+        deque.addLast(root);
+        while (!deque.isEmpty()&&depthNow++<depth){
+            int size=deque.size();
+            while (size-->0){
+                TreeNode temp=deque.removeFirst();
+                if (temp.left!=null) deque.addLast(temp.left);
+                if (temp.right!=null) deque.addLast(temp.right);
+            }
+        }
+        while (!deque.isEmpty()){
+            TreeNode temp=deque.removeFirst();
+            TreeNode left=temp.left;
+            TreeNode right=temp.right;
+            TreeNode newLeft=new TreeNode(val);
+            newLeft.left=left;
+            TreeNode newRight=new TreeNode(val);
+            newRight.right=right;
+            temp.left=newLeft;
+            temp.right=newRight;
+        }
+        return root;
+    }
 
 
 
