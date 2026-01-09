@@ -19,7 +19,8 @@ public class BackTrack {
         //System.out.println(bt.partition(str));
         //System.out.println(bt.restoreIpAddresses(str));
         //System.out.println(bt.findSubsequences(nums));
-        System.out.println(bt.solveNQueens(4));
+        //System.out.println(bt.solveNQueens(4));
+        System.out.println(bt.countNumbersWithUniqueDigits(2));
     }
 
 
@@ -420,6 +421,30 @@ public class BackTrack {
     public int totalNQueens(int n) {
         int[] res ={0,1,0,0,2,10,4,40,92,352};
         return res[n];
+    }
+
+
+    //357. 统计各位数字都不同的数字个数
+    public int countNumbersWithUniqueDigits(int n) {
+        int[] res={0};
+        HashSet<Integer> hashSet=new HashSet<>();
+        ArrayList<Integer> path=new ArrayList<>();
+        backCountNumbersWithUniqueDigits(res,path,hashSet,n,1);
+        return res[0];
+    }
+    public void backCountNumbersWithUniqueDigits(int[] res,ArrayList<Integer> path,HashSet<Integer> hashSet,int n,int first){
+        res[0]++;
+        if (path.size()==n){
+            return;
+        }
+        for (int i=first;i<=9;i++){
+            if (hashSet.contains(i)) continue;
+            path.add(i);
+            hashSet.add(i);
+            backCountNumbersWithUniqueDigits(res, path, hashSet, n,0);
+            int num = path.remove(path.size()-1);
+            hashSet.remove(num);
+        }
     }
 
 

@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 219,
+  "total_solved": 220,
   "updated_at": "2026.01.09",
   "problems": [
     {
@@ -3258,6 +3258,21 @@
         "2026.01.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/n-queens-ii/"
+    },
+    {
+      "id": 357,
+      "title": "统计各位数字都不同的数字个数",
+      "title_slug": "count-numbers-with-unique-digits",
+      "difficulty": "中等",
+      "tags": [
+        "数学",
+        "动态规划",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-numbers-with-unique-digits/"
     }
   ]
 }
