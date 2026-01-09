@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：218**  
+**总题数：219**  
 🟢 简单：96  
 🟡 中等：112  
-🔴 困难：10
+🔴 困难：11
 
 
 ---
@@ -38,8 +38,8 @@
 - **二分查找** x20
 - **广度优先搜索** x17
 - **递归** x16
+- **回溯** x16
 - **贪心** x15
-- **回溯** x15
 - **位运算** x13
 - **矩阵** x11
 - **滑动窗口** x8
@@ -97,6 +97,7 @@
 | 49 | [字母异位词分组](https://leetcode.cn/problems/group-anagrams/) | 🟡 中等 | 数组、哈希表、字符串、排序 | 2025.12.03 |
 | 50 | [Pow(x, n)](https://leetcode.cn/problems/powx-n/) | 🟡 中等 | 递归、数学 | 2025.12.15 |
 | 51 | [N 皇后](https://leetcode.cn/problems/n-queens/) | 🔴 困难 | 数组、回溯 | 2026.01.09 |
+| 52 | [N 皇后 II](https://leetcode.cn/problems/n-queens-ii/) | 🔴 困难 | 回溯 | 2026.01.09 |
 | 53 | [最大子数组和](https://leetcode.cn/problems/maximum-subarray/) | 🟡 中等 | 数组、分治、动态规划 | 2025.12.05 |
 | 54 | [螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) | 🟡 中等 | 数组、矩阵、模拟 | 2026.01.01 |
 | 55 | [跳跃游戏](https://leetcode.cn/problems/jump-game/) | 🟡 中等 | 贪心、数组、动态规划 | 2025.12.01 |
@@ -282,8 +283,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-09 02:09:36
-- **总题目数**：218
+- **最后更新**：2026-01-09 21:11:55
+- **总题目数**：219
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

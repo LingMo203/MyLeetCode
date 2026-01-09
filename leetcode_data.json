@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 218,
+  "total_solved": 219,
   "updated_at": "2026.01.09",
   "problems": [
     {
@@ -3245,6 +3245,19 @@
         "2026.01.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/"
+    },
+    {
+      "id": 52,
+      "title": "N 皇后 II",
+      "title_slug": "n-queens-ii",
+      "difficulty": "困难",
+      "tags": [
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/n-queens-ii/"
     }
   ]
 }
