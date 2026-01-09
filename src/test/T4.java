@@ -754,7 +754,7 @@ public class T4 {
     }
 
     //36. 有效的数独
-    public boolean isValidSudoku(char[][] board) {
+    public static boolean isValidSudoku(char[][] board) {
         HashSet<Integer>[] row=new HashSet[9];
         HashSet<Integer>[] column=new HashSet[9];
         HashSet<Integer>[] div=new HashSet[9];
@@ -768,19 +768,9 @@ public class T4 {
                 char c=board[i][j];
                 if (c=='.') continue;
                 else {
-                    int num=c-'0',x=0;
+                    int num=c-'0',x=(i / 3) * 3 + (j / 3);
                     if (row[i].contains(num)) return false;
                     if (column[j].contains(num)) return false;
-                    x = switch (i) {
-                        case 3, 4, 5 -> 3;
-                        case 6, 7, 8 -> 6;
-                        default -> x;
-                    };
-                    x += switch (j) {
-                        case 3, 4, 5 -> 1;
-                        case 6, 7, 8 -> 2;
-                        default -> 0;
-                    };
                     if (div[x].contains(num)) return false;
                     row[i].add(num);
                     column[j].add(num);

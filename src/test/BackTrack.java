@@ -8,6 +8,17 @@ public class BackTrack {
         int[] nums={4,6,7,7};
         String str="25525511135";
         String str2="0";
+        char[][] board = {
+                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+        };
 //        System.out.println(str2.matches("0\\d+"));
         //System.out.println(bt.combine(4,2));
         //System.out.println(bt.combinationSum(nums,7));
@@ -20,7 +31,9 @@ public class BackTrack {
         //System.out.println(bt.restoreIpAddresses(str));
         //System.out.println(bt.findSubsequences(nums));
         //System.out.println(bt.solveNQueens(4));
-        System.out.println(bt.countNumbersWithUniqueDigits(2));
+        //System.out.println(bt.countNumbersWithUniqueDigits(2));
+        bt.solveSudoku(board);
+        System.out.println(T4.isValidSudoku(board));
     }
 
 
@@ -448,7 +461,63 @@ public class BackTrack {
     }
 
 
-
+    //37. 解数独
+    public void solveSudoku(char[][] board) {
+        HashSet<Integer>[] row=new HashSet[9];
+        HashSet<Integer>[] column=new HashSet[9];
+        HashSet<Integer>[] div=new HashSet[9];
+        for (int i=0;i<9;i++){
+            row[i]=new HashSet();
+            column[i]=new HashSet();
+            div[i]=new HashSet();
+        }
+        int empty=0;
+        ArrayList<int[]> emptyIndex=new ArrayList<>();
+        for (int i=0;i<9;i++){
+            for (int j=0;j<9;j++){
+                char c=board[i][j];
+                if (c=='.') {
+                    empty++;
+                    emptyIndex.add(new int[]{i,j});
+                    continue;
+                }
+                int num=c-'0',x=(i / 3) * 3 + (j / 3);
+                row[i].add(num);
+                column[j].add(num);
+                div[x].add(num);
+            }
+        }
+        ArrayList<int[]> path=new ArrayList<>();
+        backsolveSudoku(emptyIndex,path,row,column,div,empty,0);
+        for (int[] nums:path){
+            board[nums[1]][nums[2]]=(char) (nums[0]+'0');
+        }
+    }
+    public boolean backsolveSudoku(ArrayList<int[]> emptyIndexs,ArrayList<int[]> path,HashSet<Integer>[] row,HashSet<Integer>[] col,HashSet<Integer>[] div,int empty,int start){
+        if (path.size()==empty) return true;
+        for (int p=start;p<emptyIndexs.size();p++){
+            int[] emptyIndex= emptyIndexs.get(p);
+            int i=emptyIndex[0],j=emptyIndex[1];
+            int x=(i / 3) * 3 + (j / 3);
+            int k=1;
+            for (;k<=9;k++){
+                if (row[i].contains(k)||col[j].contains(k)||div[x].contains(k)) continue;
+                int[] pathNums=new int[]{k,i,j,x};// k=填入的数字 i=行 j=列 x=3*3块
+                row[i].add(k);
+                col[j].add(k);
+                div[x].add(k);
+                path.add(pathNums);
+                if (backsolveSudoku(emptyIndexs, path, row, col, div, empty, p+1)) return true;
+                int[] remove=path.remove(path.size()-1);
+                int num=remove[0];
+                row[remove[1]].remove(num);
+                col[remove[2]].remove(num);
+                div[remove[3]].remove(num);
+            }
+            return false;
+        }
+        return false;
+    }
 
 
 

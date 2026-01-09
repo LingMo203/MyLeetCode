@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：220**  
+**总题数：221**  
 🟢 简单：96  
 🟡 中等：113  
-🔴 困难：11
+🔴 困难：12
 
 
 ---
@@ -17,8 +17,8 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 核心数据结构
-- **数组** x99
-- **哈希表** x41
+- **数组** x100
+- **哈希表** x42
 - **字符串** x39
 - **树** x34
 - **二叉树** x33
@@ -36,12 +36,12 @@
 - **深度优先搜索** x26
 - **动态规划** x22
 - **二分查找** x20
+- **回溯** x18
 - **广度优先搜索** x17
-- **回溯** x17
 - **递归** x16
 - **贪心** x15
 - **位运算** x13
-- **矩阵** x11
+- **矩阵** x12
 - **滑动窗口** x8
 - **分治** x8
 - **设计** x6
@@ -86,6 +86,7 @@
 | 34 | [在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | 🟡 中等 | 数组、二分查找 | 2025.11.22 |
 | 35 | [搜索插入位置](https://leetcode.cn/problems/search-insert-position/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
 | 36 | [有效的数独](https://leetcode.cn/problems/valid-sudoku/) | 🟡 中等 | 数组、哈希表、矩阵 | 2025.12.26 |
+| 37 | [解数独](https://leetcode.cn/problems/sudoku-solver/) | 🔴 困难 | 数组、哈希表、回溯、矩阵 | 2026.01.09 |
 | 39 | [组合总和](https://leetcode.cn/problems/combination-sum/) | 🟡 中等 | 数组、回溯 | 2026.01.04 |
 | 40 | [组合总和 II](https://leetcode.cn/problems/combination-sum-ii/) | 🟡 中等 | 数组、回溯 | 2026.01.04 |
 | 42 | [接雨水](https://leetcode.cn/problems/trapping-rain-water/) | 🔴 困难 | 栈、数组、双指针、动态规划、单调栈 | 2025.12.03 |
@@ -284,8 +285,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-09 21:59:32
-- **总题目数**：220
+- **最后更新**：2026-01-09 23:27:49
+- **总题目数**：221
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 220,
+  "total_solved": 221,
   "updated_at": "2026.01.09",
   "problems": [
     {
@@ -3273,6 +3273,22 @@
         "2026.01.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-numbers-with-unique-digits/"
+    },
+    {
+      "id": 37,
+      "title": "解数独",
+      "title_slug": "sudoku-solver",
+      "difficulty": "困难",
+      "tags": [
+        "数组",
+        "哈希表",
+        "回溯",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/sudoku-solver/"
     }
   ]
 }
