@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 222,
-  "updated_at": "2026.01.09",
+  "total_solved": 223,
+  "updated_at": "2026.01.10",
   "problems": [
     {
       "id": 1,
@@ -3305,6 +3305,21 @@
         "2026.01.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/add-one-row-to-tree/"
+    },
+    {
+      "id": 12,
+      "title": "整数转罗马数字",
+      "title_slug": "integer-to-roman",
+      "difficulty": "中等",
+      "tags": [
+        "哈希表",
+        "数学",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.01.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/integer-to-roman/"
     }
   ]
 }

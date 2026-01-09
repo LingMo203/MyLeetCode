@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：222**  
+**总题数：223**  
 🟢 简单：96  
-🟡 中等：114  
+🟡 中等：115  
 🔴 困难：12
 
 
@@ -18,8 +18,8 @@
 
 ### 🔥 核心数据结构
 - **数组** x100
-- **哈希表** x42
-- **字符串** x39
+- **哈希表** x43
+- **字符串** x40
 - **树** x35
 - **二叉树** x34
 - **链表** x30
@@ -31,7 +31,7 @@
 
 ### ⚡ 核心算法
 - **双指针** x43
-- **数学** x42
+- **数学** x43
 - **排序** x28
 - **深度优先搜索** x27
 - **动态规划** x22
@@ -66,6 +66,7 @@
 | 8 | [字符串转换整数 (atoi)](https://leetcode.cn/problems/string-to-integer-atoi/) | 🟡 中等 | 字符串 | 2025.11.21 |
 | 9 | [回文数](https://leetcode.cn/problems/palindrome-number/) | 🟢 简单 | 数学 | 2025.10.16 |
 | 11 | [盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | 🟡 中等 | 贪心、数组、双指针 | 2025.11.28 |
+| 12 | [整数转罗马数字](https://leetcode.cn/problems/integer-to-roman/) | 🟡 中等 | 哈希表、数学、字符串 | 2026.01.10 |
 | 13 | [罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | 🟢 简单 | 哈希表、数学、字符串 | 2025.10.27 |
 | 14 | [最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | 🟢 简单 | 字典树、数组、字符串 | 2026.01.03 |
 | 15 | [三数之和](https://leetcode.cn/problems/3sum/) | 🟡 中等 | 数组、双指针、排序 | 2025.12.25 |
@@ -286,8 +287,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-09 23:53:24
-- **总题目数**：222
+- **最后更新**：2026-01-10 01:07:08
+- **总题目数**：223
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成

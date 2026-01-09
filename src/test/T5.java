@@ -23,7 +23,8 @@ public class T5 {
         //t5.rotate(numsD3);
         //System.out.println(t5.numSubarrayProductLessThanK(nums,100));
         //System.out.println(t5.longestCommonPrefix(strs));
-        System.out.println(t5.minWindow(str,str2));
+        //System.out.println(t5.minWindow(str,str2));
+        System.out.println(t5.intToRoman(60));
     }
 
     //287. 寻找重复数
@@ -319,6 +320,62 @@ public class T5 {
         return res;
     }
 
+    //12. 整数转罗马数字
+    public String intToRoman(int num) {
+        char[] chars=String.valueOf(num).toCharArray();
+        int p=1;
+        StringBuilder sb=new StringBuilder();
+        for (int i=chars.length-1;i>=0;i--) {
+            int n=(chars[i]-'0')*p;
+            if (n<10){
+                if (n<4){
+                    sb.append("I".repeat(n));
+                }else if (n==4){
+                    sb.insert(0,"IV");
+                }else if (n<9){
+                    sb.insert(0,"V");
+                    sb.append("I".repeat(n - 5));
+                }else {
+                    sb.append("IX");
+                }
+            }else if (n<100){
+                StringBuilder b=new StringBuilder();
+                int m=n/10;
+                if (m<4){
+                    b.append("X".repeat(m));
+                }else if (m==4){
+                    b.insert(0,"XL");
+                }else if (m<9){
+                    b.insert(0,"L");
+                    b.append("X".repeat(m - 5));
+                }else {
+                    b.append("XC");
+                }
+                sb.insert(0,b);
+            }else if (n<1000){
+                StringBuilder b=new StringBuilder();
+                int m=n/100;
+                if (m<4){
+                    b.append("C".repeat(m));
+                }else if (m==4){
+                    b.insert(0,"CD");
+                }else if (m<9){
+                    b.insert(0,"D");
+                    b.append("C".repeat(m - 5));
+                }else {
+                    b.append("CM");
+                }
+                sb.insert(0,b);
+            }else {
+                int m=n/1000;
+                for (int j=0;j<m;j++){
+                    sb.insert(0,'M');
+                }
+            }
+            p*=10;
+        }
+        return sb.toString();
+    }
 
 
 
