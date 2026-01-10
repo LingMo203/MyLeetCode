@@ -9,28 +9,6 @@ public class GiveUp {
 
 
 
-    //997. 找到小镇的法官 放弃
-    public int findJudge(int n, int[][] trust) {
-        HashSet<Integer> hashSet=new HashSet<>();
-        HashSet<Integer> reSet=new HashSet<>();
-        for (int i=0 ;i<trust.length; i++) {
-            int[] a=trust[i];
-            for (int betrust:a){
-                if (i==0){
-                    hashSet.add(betrust);
-                }else {
-                    if (hashSet.contains(betrust)){
-                        reSet.add(betrust);
-                    }
-                }
-            }
-            reSet.remove(trust[i][0]);
-        }
-        for (int f:reSet){
-            return f;
-        }
-        return -1;
-    }
 
     //56. 合并区间 放弃
     public int[][] merge(int[][] intervals) {
