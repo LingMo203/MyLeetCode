@@ -1,14 +1,13 @@
 package test.Graph;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 
 public class GraphTest {
     public static void main(String[] args) {
         GraphTest gt=new GraphTest();
-        int[][] numss={{1, 2}};
-        System.out.println(gt.findJudge(2,numss));
+        int[][] numss={{1, 2}, {3}, {3}, {}};
+        //System.out.println(gt.findJudge(2,numss));
+        System.out.println(gt.allPathsSourceTarget(numss));
     }
 
 
@@ -38,6 +37,25 @@ public class GraphTest {
     }
 
 
+    //797. 所有可能的路径
+    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+        List<List<Integer>> res=new ArrayList<>();
+        List<Integer> path=new ArrayList<>();
+        path.add(0);
+        dfsAllPathsSourceTarget(res,path,graph,0);
+        return res;
+    }
+    public void dfsAllPathsSourceTarget(List<List<Integer>> res,List<Integer> path,int[][] graph,int now){
+        if (now==graph.length-1){
+            res.add(new ArrayList<>(path));
+            return;
+        }
+        for (int num:graph[now]){
+            path.add(num);
+            dfsAllPathsSourceTarget(res, path, graph, num);
+            path.remove(path.size()-1);
+        }
+    }
 
 
 

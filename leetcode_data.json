@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 226,
+  "total_solved": 227,
   "updated_at": "2026.01.10",
   "problems": [
     {
@@ -3363,6 +3363,22 @@
         "2026.01.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-the-town-judge/"
+    },
+    {
+      "id": 797,
+      "title": "所有可能的路径",
+      "title_slug": "all-paths-from-source-to-target",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "图",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.01.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/all-paths-from-source-to-target/"
     }
   ]
 }

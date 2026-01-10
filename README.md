@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：226**  
+**总题数：227**  
 🟢 简单：97  
-🟡 中等：117  
+🟡 中等：118  
 🔴 困难：12
 
 
@@ -29,18 +29,18 @@
 - **单调栈** x2
 - **单调队列** x2
 - **字典树** x2
+- **图** x2
 - **并查集** x1
-- **图** x1
 
 ### ⚡ 算法
 - **双指针** x43
 - **数学** x43
 - **排序** x28
-- **深度优先搜索** x27
+- **深度优先搜索** x28
 - **动态规划** x22
 - **二分查找** x20
-- **广度优先搜索** x18
-- **回溯** x18
+- **广度优先搜索** x19
+- **回溯** x19
 - **递归** x16
 - **贪心** x15
 - **位运算** x13
@@ -253,6 +253,7 @@
 | 725 | [分隔链表](https://leetcode.cn/problems/split-linked-list-in-parts/) | 🟡 中等 | 链表 | 2025.11.17 |
 | 739 | [每日温度](https://leetcode.cn/problems/daily-temperatures/) | 🟡 中等 | 栈、数组、单调栈 | 2025.12.09 |
 | 746 | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | 🟢 简单 | 数组、动态规划 | 2025.11.22 |
+| 797 | [所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) | 🟡 中等 | 深度优先搜索、广度优先搜索、图、回溯 | 2026.01.10 |
 | 821 | [字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character/) | 🟢 简单 | 数组、双指针、字符串 | 2025.11.05 |
 | 840 | [矩阵中的幻方](https://leetcode.cn/problems/magic-squares-in-grid/) | 🟡 中等 | 数组、哈希表、数学、矩阵 | 2025.12.30 |
 | 860 | [柠檬水找零](https://leetcode.cn/problems/lemonade-change/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
@@ -292,8 +293,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-10 23:00:31
-- **总题目数**：226
+- **最后更新**：2026-01-10 23:21:51
+- **总题目数**：227
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成
