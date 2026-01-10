@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 224,
+  "total_solved": 225,
   "updated_at": "2026.01.10",
   "problems": [
     {
@@ -3333,6 +3333,21 @@
         "2026.01.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/zigzag-conversion/"
+    },
+    {
+      "id": 59,
+      "title": "螺旋矩阵 II",
+      "title_slug": "spiral-matrix-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "矩阵",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.01.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/spiral-matrix-ii/"
     }
   ]
 }

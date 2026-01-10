@@ -25,7 +25,8 @@ public class T5 {
         //System.out.println(t5.longestCommonPrefix(strs));
         //System.out.println(t5.minWindow(str,str2));
         //System.out.println(t5.intToRoman(60));
-        System.out.println(t5.convert(str,1));
+        //System.out.println(t5.convert(str,1));
+        System.out.println(Arrays.deepToString(t5.generateMatrix(3)));
     }
 
     //287. 寻找重复数
@@ -411,6 +412,30 @@ public class T5 {
             res.append(sb);
         }
         return res.toString();
+    }
+
+
+    //59. 螺旋矩阵 II
+    public int[][] generateMatrix(int n) {
+        int[][] res=new int[n][n];
+        int top=0,bot=n-1,left=0,right=n-1,num=1;
+        while (left<=right&&top<=bot){
+            int i=top,j=left;
+            for (;j<=right;j++,num++){
+                res[i][j]=num;
+            }
+            for (i++,j--;i<=bot;i++,num++){
+                res[i][j]=num;
+            }
+            for (j--,i--;j>=left;j--,num++){
+                res[i][j]=num;
+            }
+            for (i--,j++;i>top;i--,num++){
+                res[i][j]=num;
+            }
+            top++;bot--;left++;right--;
+        }
+        return res;
     }
 
 
