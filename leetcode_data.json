@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 225,
+  "total_solved": 226,
   "updated_at": "2026.01.10",
   "problems": [
     {
@@ -3348,6 +3348,21 @@
         "2026.01.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/spiral-matrix-ii/"
+    },
+    {
+      "id": 997,
+      "title": "找到小镇的法官",
+      "title_slug": "find-the-town-judge",
+      "difficulty": "简单",
+      "tags": [
+        "图",
+        "数组",
+        "哈希表"
+      ],
+      "solved_dates": [
+        "2026.01.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-town-judge/"
     }
   ]
 }
