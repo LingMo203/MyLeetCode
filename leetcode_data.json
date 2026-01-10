@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 223,
+  "total_solved": 224,
   "updated_at": "2026.01.10",
   "problems": [
     {
@@ -3320,6 +3320,19 @@
         "2026.01.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/integer-to-roman/"
+    },
+    {
+      "id": 6,
+      "title": "Z 字形变换",
+      "title_slug": "zigzag-conversion",
+      "difficulty": "中等",
+      "tags": [
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.01.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/zigzag-conversion/"
     }
   ]
 }

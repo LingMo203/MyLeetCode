@@ -11,7 +11,7 @@ public class T5 {
         int[][] numsD={{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
         int[][] numsD3={{5, 1, 9, 11}, {2, 4, 8, 10}, {13, 3, 6, 7}, {15, 14, 12, 16}};
         int[][] numsD2={{1,2,3},{4,5,6},{7,8,9}};
-        String str="cabwefgewcwaefgcf";
+        String str="AB";
         String str2="cae";
         String[] strs={"flower","flow","flight"};
         //System.out.println(t5.findDuplicate(nums));
@@ -24,7 +24,8 @@ public class T5 {
         //System.out.println(t5.numSubarrayProductLessThanK(nums,100));
         //System.out.println(t5.longestCommonPrefix(strs));
         //System.out.println(t5.minWindow(str,str2));
-        System.out.println(t5.intToRoman(60));
+        //System.out.println(t5.intToRoman(60));
+        System.out.println(t5.convert(str,1));
     }
 
     //287. 寻找重复数
@@ -376,6 +377,59 @@ public class T5 {
         }
         return sb.toString();
     }
+
+
+    //6. Z 字形变换
+    public String convert(String s, int numRows) {
+        if (numRows==1) return s;
+        StringBuilder[] sbs=new StringBuilder[numRows];
+        StringBuilder res=new StringBuilder();
+        for (int i=0;i<numRows;i++){
+            sbs[i]=new StringBuilder();
+        }
+        int j=0;
+        boolean f=true;
+        for (int i=0;i<s.length();i++){
+            sbs[j].append(s.charAt(i));
+            if (f){
+                if (j==numRows-1) {
+                    j--;
+                    f=false;
+                    continue;
+                }
+                j++;
+            }else {
+                if (j==0) {
+                    j++;
+                    f=true;
+                    continue;
+                }
+                j--;
+            }
+        }
+        for (StringBuilder sb:sbs){
+            res.append(sb);
+        }
+        return res.toString();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

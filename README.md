@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：223**  
+**总题数：224**  
 🟢 简单：96  
-🟡 中等：115  
+🟡 中等：116  
 🔴 困难：12
 
 
@@ -19,7 +19,7 @@
 ### 🔥 核心数据结构
 - **数组** x100
 - **哈希表** x43
-- **字符串** x40
+- **字符串** x41
 - **树** x35
 - **二叉树** x34
 - **链表** x30
@@ -62,6 +62,7 @@
 | 2 | [两数相加](https://leetcode.cn/problems/add-two-numbers/) | 🟡 中等 | 递归、链表、数学 | 2025.11.14 |
 | 3 | [无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) | 🟡 中等 | 哈希表、字符串、滑动窗口 | 2025.10.31 |
 | 5 | [最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/) | 🟡 中等 | 双指针、字符串、动态规划 | 2025.12.23 |
+| 6 | [Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/) | 🟡 中等 | 字符串 | 2026.01.10 |
 | 7 | [整数反转](https://leetcode.cn/problems/reverse-integer/) | 🟡 中等 | 数学 | 2025.11.21 |
 | 8 | [字符串转换整数 (atoi)](https://leetcode.cn/problems/string-to-integer-atoi/) | 🟡 中等 | 字符串 | 2025.11.21 |
 | 9 | [回文数](https://leetcode.cn/problems/palindrome-number/) | 🟢 简单 | 数学 | 2025.10.16 |
@@ -287,8 +288,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-10 01:07:08
-- **总题目数**：223
+- **最后更新**：2026-01-10 21:42:22
+- **总题目数**：224
 - **技能标签数**：43
 
 > 🤖 本页面由自动化脚本生成
