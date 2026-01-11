@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：231**  
+**总题数：232**  
 🟢 简单：98  
 🟡 中等：120  
-🔴 困难：13
+🔴 困难：14
 
 
 ---
@@ -17,16 +17,16 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x103
+- **数组** x104
 - **哈希表** x44
 - **字符串** x41
 - **树** x35
 - **二叉树** x34
 - **链表** x30
-- **栈** x18
-- **矩阵** x13
+- **栈** x19
+- **矩阵** x14
+- **单调栈** x4
 - **队列** x3
-- **单调栈** x3
 - **单调队列** x2
 - **字典树** x2
 - **图** x2
@@ -37,7 +37,7 @@
 - **数学** x43
 - **排序** x28
 - **深度优先搜索** x28
-- **动态规划** x22
+- **动态规划** x23
 - **二分查找** x20
 - **广度优先搜索** x19
 - **回溯** x19
@@ -126,6 +126,7 @@
 | 82 | [删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) | 🟡 中等 | 链表、双指针 | 2025.12.13 |
 | 83 | [删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) | 🟢 简单 | 链表 | 2025.11.17 |
 | 84 | [柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/) | 🔴 困难 | 栈、数组、单调栈 | 2026.01.11 |
+| 85 | [最大矩形](https://leetcode.cn/problems/maximal-rectangle/) | 🔴 困难 | 栈、数组、动态规划、矩阵、单调栈 | 2026.01.11 |
 | 86 | [分隔链表](https://leetcode.cn/problems/partition-list/) | 🟡 中等 | 链表、双指针 | 2025.11.17 |
 | 88 | [合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) | 🟢 简单 | 数组、双指针、排序 | 2025.11.04 |
 | 90 | [子集 II](https://leetcode.cn/problems/subsets-ii/) | 🟡 中等 | 位运算、数组、回溯 | 2026.01.05 |
@@ -297,8 +298,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-11 21:28:05
-- **总题目数**：231
+- **最后更新**：2026-01-11 21:51:38
+- **总题目数**：232
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成

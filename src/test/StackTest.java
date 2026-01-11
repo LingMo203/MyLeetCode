@@ -183,6 +183,33 @@ public class StackTest {
         }
         return res;
     }
+    //85. 最大矩形 感谢灵神的思路
+    public int maximalRectangle(char[][] matrix) {
+        int rows=matrix.length,cols=matrix[0].length,res = 0;
+        int[][] matrixNums=new int[rows][cols];
+        for (int i=0;i<cols;i++){
+            matrixNums[0][i]=matrix[0][i]-'0';
+        }
+        res=largestRectangleArea(matrixNums[0]);
+        for (int i=1;i<rows;i++){
+            for (int j=0;j<cols;j++){
+                int num=matrix[i][j]=='0'?0:(matrix[i][j]-'0')+matrixNums[i-1][j];
+                matrixNums[i][j]=num;
+            }
+            res=Math.max(res,largestRectangleArea(matrixNums[i]));
+        }
+        return res;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 231,
+  "total_solved": 232,
   "updated_at": "2026.01.11",
   "problems": [
     {
@@ -3427,6 +3427,23 @@
         "2026.01.11"
       ],
       "leetcode_url": "https://leetcode.cn/problems/largest-rectangle-in-histogram/"
+    },
+    {
+      "id": 85,
+      "title": "最大矩形",
+      "title_slug": "maximal-rectangle",
+      "difficulty": "困难",
+      "tags": [
+        "栈",
+        "数组",
+        "动态规划",
+        "矩阵",
+        "单调栈"
+      ],
+      "solved_dates": [
+        "2026.01.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximal-rectangle/"
     }
   ]
 }
