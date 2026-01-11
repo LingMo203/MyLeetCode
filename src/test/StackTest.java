@@ -9,12 +9,14 @@ public class StackTest {
     public static void main(String[] args) {
         StackTest st=new StackTest();
         int num=123;
-        int[] nums={0,-1,-2,-3,1};
+        int[] nums={2,1,5,6,2,3};
+        int[] nums2={2,1,2};
         String str="3[a]2[bc]";
         String str2="0";
         //System.out.println(Arrays.toString(st.maxSlidingWindow(nums, 3)));
         //System.out.println(st.maxResult(nums,2));
-        System.out.println(st.decodeString(str));
+        //System.out.println(st.decodeString(str));
+        System.out.println(st.largestRectangleArea(nums));
     }
 
 
@@ -155,6 +157,32 @@ public class StackTest {
         return result.toString();
     }
 
+    //84. 柱状图中最大的矩形 太艰难了!!!!!!!!!!!!!!!!!
+    public int largestRectangleArea(int[] heights) {
+        int res=0;
+        Deque<Integer> deque=new ArrayDeque<>();
+        for (int i=0;i<heights.length;i++){
+            int num=heights[i];
+            while (!deque.isEmpty()&&heights[deque.getFirst()]>num){
+                int j=deque.removeFirst(),s,left=0;
+                if (!deque.isEmpty()) {
+                    left = deque.getFirst()+1;
+                }
+                s=(i-left)*heights[j];
+                res=Math.max(res,s);
+            }
+            deque.addFirst(i);
+        }
+        while (!deque.isEmpty()){
+            int j=deque.removeFirst(),s,left=0,right=heights.length-1;
+            if (!deque.isEmpty()) {
+                left = deque.getFirst()+1;
+            }
+            s=(right-left+1)*heights[j];
+            res=Math.max(res,s);
+        }
+        return res;
+    }
 
 
 

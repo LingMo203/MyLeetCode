@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 230,
+  "total_solved": 231,
   "updated_at": "2026.01.11",
   "problems": [
     {
@@ -3403,7 +3403,7 @@
       "leetcode_url": "https://leetcode.cn/problems/number-of-centered-subarrays/"
     },
     {
-      "id": 100956,
+      "id": 3805,
       "title": "统计凯撒加密对数目",
       "title_slug": "count-caesar-cipher-pairs",
       "difficulty": "中等",
@@ -3412,6 +3412,21 @@
         "2026.01.11"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-caesar-cipher-pairs/"
+    },
+    {
+      "id": 84,
+      "title": "柱状图中最大的矩形",
+      "title_slug": "largest-rectangle-in-histogram",
+      "difficulty": "困难",
+      "tags": [
+        "栈",
+        "数组",
+        "单调栈"
+      ],
+      "solved_dates": [
+        "2026.01.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/largest-rectangle-in-histogram/"
     }
   ]
 }

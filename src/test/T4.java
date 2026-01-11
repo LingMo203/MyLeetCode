@@ -316,39 +316,6 @@ public class T4 {
         return result;
     }
 
-    //84. 柱状图中最大的矩形 放弃
-    public int largestRectangleArea(int[] heights) {
-        Deque<Integer> deque=new ArrayDeque<>();
-        int max=0;
-        for (int num:heights){
-            if (deque.isEmpty()){
-                deque.add(num);
-                max=Math.max(max,num);
-            }else {
-                if (num<deque.getLast()){
-                    int newS=(num*(deque.size()+1));
-                    int oldS=deque.getLast()*(deque.size());
-                    if (oldS>newS){
-                        deque.clear();
-                    }else {
-                        max=Math.max(max,newS);
-                    }
-                    deque.addLast(num);
-                }else {
-                    int min=deque.getLast();
-                    int s=min*(deque.size()+1);
-                    if (num>=s){
-                        deque.clear();
-                        max=Math.max(max,num);
-                    }else {
-                        max=Math.max(max,s);
-                    }
-                    deque.addFirst(num);
-                }
-            }
-        }
-        return max;
-    }
 
     //32. 最长有效括号
     public int longestValidParentheses(String s) {
