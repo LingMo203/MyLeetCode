@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 227,
-  "updated_at": "2026.01.10",
+  "total_solved": 230,
+  "updated_at": "2026.01.11",
   "problems": [
     {
       "id": 1,
@@ -3379,6 +3379,39 @@
         "2026.01.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/all-paths-from-source-to-target/"
+    },
+    {
+      "id": 100959,
+      "title": "统计残差前缀",
+      "title_slug": "count-residue-prefixes",
+      "difficulty": "简单",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-residue-prefixes/"
+    },
+    {
+      "id": 3804,
+      "title": "中心子数组的数量",
+      "title_slug": "number-of-centered-subarrays",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/number-of-centered-subarrays/"
+    },
+    {
+      "id": 100956,
+      "title": "统计凯撒加密对数目",
+      "title_slug": "count-caesar-cipher-pairs",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-caesar-cipher-pairs/"
     }
   ]
 }
