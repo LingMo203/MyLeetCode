@@ -439,6 +439,19 @@ public class T5 {
     }
 
 
+    //1266. 访问所有点的最小时间
+    public int minTimeToVisitAllPoints(int[][] points) {
+        int res=0,x0=points[0][0],y0=points[0][1];
+        for (int i=1;i<points.length;i++){
+            int x1=points[i][0],y1=points[i][1];
+            res+=Math.max(Math.abs(x1-x0),Math.abs(y1-y0));
+            x0=x1;
+            y0=y1;
+        }
+        return res;
+    }
+
+
 
 
 

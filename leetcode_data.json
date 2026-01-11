@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 234,
-  "updated_at": "2026.01.11",
+  "total_solved": 235,
+  "updated_at": "2026.01.12",
   "problems": [
     {
       "id": 1,
@@ -3478,6 +3478,21 @@
         "2026.01.11"
       ],
       "leetcode_url": "https://leetcode.cn/problems/max-area-of-island/"
+    },
+    {
+      "id": 1266,
+      "title": "访问所有点的最小时间",
+      "title_slug": "minimum-time-visiting-all-points",
+      "difficulty": "简单",
+      "tags": [
+        "几何",
+        "数组",
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.01.12"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-time-visiting-all-points/"
     }
   ]
 }
