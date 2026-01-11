@@ -67,12 +67,14 @@ public class GraphTest {
 
     //200. 岛屿数量
     public int numIslands(char[][] grid) {
-        int res=bfsNumIslands(grid);
+        //int res=bfsNumIslands(grid);
+        int res=numIslands2(grid);
         return res;
     }
+    //BFS搜索
     public int bfsNumIslands(char[][] grid){
         int res=0,m=grid.length,n=grid[0].length;
-        int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
         boolean[][] already =new boolean[m][n];
         for (int i=0;i<m;i++){
             for (int j=0;j<n;j++){
@@ -103,6 +105,33 @@ public class GraphTest {
             }
         }
         return res;
+    }
+    //DFS搜索
+    public int numIslands2(char[][] grid){
+        int res=0,m=grid.length,n=grid[0].length;
+        boolean[][] already =new boolean[m][n];
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        for (int i=0;i<m;i++) {
+            for (int j = 0; j < n; j++) {
+                if (already[i][j]) continue;
+                already[i][j]=true;
+                if (grid[i][j]=='0') continue;
+                dfsNumIslands(grid,already,i,j,direction);
+                res++;
+            }
+        }
+        return res;
+    }
+    public void dfsNumIslands(char[][] grid,boolean[][] already,int x,int y,final int[][] direction){
+        int m=grid.length,n=grid[0].length;
+        for (int[] dir:direction){
+            int nextX=x+dir[0];
+            int nextY=y+dir[1];
+            if ((nextX<0||nextX>=m) || (nextY<0||nextY>=n) || already[nextX][nextY]) continue;
+            already[nextX][nextY]=true;
+            if (grid[nextX][nextY]=='0') continue;
+            dfsNumIslands(grid, already, nextX, nextY, direction);
+        }
     }
 
 
