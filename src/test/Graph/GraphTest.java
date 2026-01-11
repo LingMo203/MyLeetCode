@@ -71,7 +71,7 @@ public class GraphTest {
         int res=numIslands2(grid);
         return res;
     }
-    //BFS搜索
+    //BFS
     public int bfsNumIslands(char[][] grid){
         int res=0,m=grid.length,n=grid[0].length;
         final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
@@ -106,7 +106,7 @@ public class GraphTest {
         }
         return res;
     }
-    //DFS搜索
+    //DFS
     public int numIslands2(char[][] grid){
         int res=0,m=grid.length,n=grid[0].length;
         boolean[][] already =new boolean[m][n];
@@ -135,6 +135,77 @@ public class GraphTest {
     }
 
 
+    //695. 岛屿的最大面积
+    public int maxAreaOfIsland(int[][] grid) {
+        //return bfsMaxAreaOfIsland(grid);
+        return maxAreaOfIsland2(grid);
+    }
+    //BFS
+    public int bfsMaxAreaOfIsland(int[][] grid){
+        int res=0,m=grid.length,n=grid[0].length;
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        boolean[][] already =new boolean[m][n];
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                if (already[i][j]) continue;
+                if (grid[i][j]==0){
+                    already[i][j]=true;
+                    continue;
+                }
+                Deque<int[]> deque=new ArrayDeque<>();
+                deque.addLast(new int[]{i,j});
+                already[i][j]=true;
+                int s=0;
+                while (!deque.isEmpty()){
+                    int[] remove=deque.removeFirst();
+                    int x=remove[0],y=remove[1];
+                    s++;
+                    for (int[] add:direction){
+                        int nextX=x+add[0];
+                        int nextY=y+add[1];
+                        if ((nextX<0||nextX>=m) || (nextY<0||nextY>=n) || already[nextX][nextY]) continue;
+                        if (grid[nextX][nextY]==0){
+                            already[nextX][nextY]=true;
+                            continue;
+                        }
+                        deque.addLast(new int[]{nextX,nextY});
+                        already[nextX][nextY]=true;
+                    }
+                }
+                res=Math.max(res,s);
+            }
+        }
+        return res;
+    }
+    //DFS
+    public int maxAreaOfIsland2(int[][] grid){
+        int res=0,m=grid.length,n=grid[0].length;
+        boolean[][] already =new boolean[m][n];
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        for (int i=0;i<m;i++) {
+            for (int j = 0; j < n; j++) {
+                if (already[i][j]) continue;
+                already[i][j]=true;
+                if (grid[i][j]==0) continue;
+                int[] s={0};
+                dfsMaxAreaOfIsland(grid,already,i,j,direction,s);
+                res=Math.max(res,s[0]);
+            }
+        }
+        return res;
+    }
+    public void dfsMaxAreaOfIsland(int[][] grid,boolean[][] already,int x,int y,final int[][] direction,int[] s){
+        int m=grid.length,n=grid[0].length;
+        s[0]++;
+        for (int[] dir:direction){
+            int nextX=x+dir[0];
+            int nextY=y+dir[1];
+            if ((nextX<0||nextX>=m) || (nextY<0||nextY>=n) || already[nextX][nextY]) continue;
+            already[nextX][nextY]=true;
+            if (grid[nextX][nextY]==0) continue;
+            dfsMaxAreaOfIsland(grid, already, nextX, nextY, direction,s);
+        }
+    }
 
 
 

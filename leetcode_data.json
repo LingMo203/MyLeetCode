@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 233,
+  "total_solved": 234,
   "updated_at": "2026.01.11",
   "problems": [
     {
@@ -3461,6 +3461,23 @@
         "2026.01.11"
       ],
       "leetcode_url": "https://leetcode.cn/problems/number-of-islands/"
+    },
+    {
+      "id": 695,
+      "title": "岛屿的最大面积",
+      "title_slug": "max-area-of-island",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "并查集",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/max-area-of-island/"
     }
   ]
 }
