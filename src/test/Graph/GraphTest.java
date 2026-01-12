@@ -5,16 +5,12 @@ import java.util.*;
 public class GraphTest {
     public static void main(String[] args) {
         GraphTest gt=new GraphTest();
-        int[][] numss={{1, 2}, {3}, {3}, {}};
-        char[][] chars = {
-                {'1', '1', '1', '1', '0'},
-                {'1', '1', '0', '1', '0'},
-                {'1', '1', '0', '0', '0'},
-                {'0', '0', '0', '0', '0'}
-        };
+        int[][] grid={{1, 1, 0, 0, 0, 1}, {1, 1, 0, 0, 0, 0}};
+        char[][] chars = {{'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}};
         //System.out.println(gt.findJudge(2,numss));
         //System.out.println(gt.allPathsSourceTarget(numss));
-        System.out.println(gt.numIslands(chars));
+        //System.out.println(gt.numIslands(chars));
+        System.out.println(Arrays.deepToString(gt.findFarmland(grid)));
     }
 
 
@@ -264,6 +260,40 @@ public class GraphTest {
             }
         }
         return res;
+    }
+
+
+    //1992. 找到所有的农场组
+    public int[][] findFarmland(int[][] land) {
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        ArrayList<int[]> res=new ArrayList<>();
+        int m=land.length,n=land[0].length;
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                if (land[i][j]==0) continue;
+                Deque<int[]> deque=new ArrayDeque<>();
+                deque.addLast(new int[]{i,j});
+                land[i][j]=0;
+                int[] re=new int[4];
+                re[0]=i;re[1]=j;
+                re[2]=i;re[3]=j;
+                while (!deque.isEmpty()){
+                    int[] remove=deque.removeFirst();
+                    int x=remove[0],y=remove[1];
+                    if (x>re[2]||y>re[3]){
+                        re[2]=x;re[3]=y;
+                    }
+                    for (int[] dir:direction){
+                        int nextX=x+dir[0],nextY=y+dir[1];
+                        if (nextX<0||nextX>=m||nextY<0||nextY>=n||land[nextX][nextY]==0) continue;
+                        deque.addLast(new int[]{nextX,nextY});
+                        land[nextX][nextY]=0;
+                    }
+                }
+                res.add(re);
+            }
+        }
+        return res.toArray(new int[0][]);
     }
 
 

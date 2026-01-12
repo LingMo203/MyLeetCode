@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 237,
+  "total_solved": 238,
   "updated_at": "2026.01.12",
   "problems": [
     {
@@ -3527,6 +3527,22 @@
         "2026.01.12"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-sub-islands/"
+    },
+    {
+      "id": 1992,
+      "title": "找到所有的农场组",
+      "title_slug": "find-all-groups-of-farmland",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.12"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-all-groups-of-farmland/"
     }
   ]
 }
