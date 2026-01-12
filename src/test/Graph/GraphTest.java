@@ -333,6 +333,38 @@ public class GraphTest {
     }
 
 
+    //133. 克隆图
+    public Node cloneGraph(Node node) {
+        if (node==null) return null;
+        HashMap<Node,Node> hashMap=new HashMap<>();
+        Node newNode=new Node(node.val);
+        hashMap.put(node,newNode);
+        Deque<Node> deque=new ArrayDeque<>();
+        deque.addLast(node);
+        while (!deque.isEmpty()){
+            Node remove=deque.removeFirst();
+            for (Node temp: remove.neighbors){
+                if (hashMap.containsKey(temp)) continue;
+                Node temp2 =new Node(temp.val);
+                hashMap.put(temp, temp2);
+                deque.addLast(temp);
+            }
+        }
+        deque.addLast(node);
+        HashSet<Node> hashSet=new HashSet<>();
+        hashSet.add(node);
+        while (!deque.isEmpty()){
+            Node removeOld=deque.removeFirst();
+            Node removeNew=hashMap.get(removeOld);
+            for (Node temp: removeOld.neighbors){
+                removeNew.neighbors.add(hashMap.get(temp));
+                if (hashSet.contains(temp)) continue;
+                deque.addLast(temp);
+                hashSet.add(temp);
+            }
+        }
+        return newNode;
+    }
 
 
 

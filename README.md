@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：239**  
+**总题数：240**  
 🟢 简单：99  
-🟡 中等：126  
+🟡 中等：127  
 🔴 困难：14
 
 
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x111
-- **哈希表** x44
+- **哈希表** x45
 - **字符串** x41
 - **树** x35
 - **二叉树** x34
@@ -28,16 +28,16 @@
 - **并查集** x5
 - **单调栈** x4
 - **队列** x3
+- **图** x3
 - **单调队列** x2
 - **字典树** x2
-- **图** x2
 
 ### ⚡ 算法
 - **数学** x44
 - **双指针** x43
-- **深度优先搜索** x33
+- **深度优先搜索** x34
 - **排序** x28
-- **广度优先搜索** x25
+- **广度优先搜索** x26
 - **动态规划** x23
 - **二分查找** x20
 - **回溯** x19
@@ -159,6 +159,7 @@
 | 128 | [最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | 🟡 中等 | 并查集、数组、哈希表 | 2025.12.03 |
 | 129 | [求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2025.12.29 |
 | 131 | [分割回文串](https://leetcode.cn/problems/palindrome-partitioning/) | 🟡 中等 | 字符串、动态规划、回溯 | 2026.01.07 |
+| 133 | [克隆图](https://leetcode.cn/problems/clone-graph/) | 🟡 中等 | 深度优先搜索、广度优先搜索、图、哈希表 | 2026.01.13 |
 | 134 | [加油站](https://leetcode.cn/problems/gas-station/) | 🟡 中等 | 贪心、数组 | 2025.12.30 |
 | 136 | [只出现一次的数字](https://leetcode.cn/problems/single-number/) | 🟢 简单 | 位运算、数组 | 2025.12.05 |
 | 137 | [只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) | 🟡 中等 | 位运算、数组 | 2025.12.11 |
@@ -305,8 +306,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-12 22:24:41
-- **总题目数**：239
+- **最后更新**：2026-01-13 00:43:48
+- **总题目数**：240
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成
