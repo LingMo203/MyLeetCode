@@ -299,37 +299,37 @@ public class GraphTest {
 
     //994. 腐烂的橘子
     public int orangesRotting(int[][] grid) {
-        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//四个方向 左 上 右 下
+        //res=-1 所有初始腐烂橘子已经在队列中 第一次循环处理的是第0分钟的腐烂橘子
         int res=-1,m=grid.length,n=grid[0].length;
-        Deque<int[]> deque=new ArrayDeque<>();
+        Deque<int[]> deque=new ArrayDeque<>(); //队列内数组长度为2 记录i坐标 j坐标
+        int fresh=0;//新鲜橘子的个数
         for (int i=0;i<m;i++){
             for (int j=0;j<n;j++){
                 if (grid[i][j]==2) {
-                    deque.addLast(new int[]{i, j});
-                    grid[i][j]=0;
-                }
+                    deque.addLast(new int[]{i, j});//遇到腐烂的橘子添加至队列
+                    grid[i][j]=0;    //标记为已访问
+                }else if (grid[i][j]==1) fresh++; //统计新鲜橘子
             }
         }
-        while (!deque.isEmpty()){
-            int size=deque.size();
-            while (size-->0){
+        while (!deque.isEmpty()){   //当队列为空时代表感染结束
+            int size=deque.size();  //记录当前层腐烂的橘子的个数
+            while (size-->0){   //处理当前层腐烂的橘子
                 int[] remove=deque.removeFirst();
-                int x=remove[0],y=remove[1];
-                for (int[] dir:direction){
-                    int nextX=x+dir[0],nextY=y+dir[1];
+                int x=remove[0],y=remove[1];    //获得当前腐烂的橘子的坐标
+                for (int[] dir:direction){  //向四个方向 左 上 右 下 感染新鲜橘子
+                    int nextX=x+dir[0],nextY=y+dir[1];  //获得下一个方向坐标
+                    //当坐标出界 或者 已经遍历过或者空位置 跳过
                     if (nextX<0||nextX>=m||nextY<0||nextY>=n||grid[nextX][nextY]==0) continue;
-                    deque.addLast(new int[]{nextX,nextY});
-                    grid[nextX][nextY]=0;
+                    deque.addLast(new int[]{nextX,nextY});  //将感染的橘子添加至队列
+                    grid[nextX][nextY]=0;   //标记为已访问
+                    fresh--;    //感染时减少
                 }
             }
-            res++;
+            res++;  //当前层向外扩展了一层  第一次循环处理的是第0分钟的腐烂橘子
         }
-        for (int[] ints : grid) {
-            for (int j = 0; j < n; j++) {
-                if (ints[j] == 1) return -1;
-            }
-        }
-        return Math.max(0,res);
+        if (fresh>0) return -1; //如果还有腐烂的橘子返回-1
+        return Math.max(0,res); //如果初始就没有腐烂橘子返回0
     }
 
 
