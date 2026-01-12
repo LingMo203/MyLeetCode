@@ -297,7 +297,40 @@ public class GraphTest {
     }
 
 
-
+    //994. 腐烂的橘子
+    public int orangesRotting(int[][] grid) {
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        int res=-1,m=grid.length,n=grid[0].length;
+        Deque<int[]> deque=new ArrayDeque<>();
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                if (grid[i][j]==2) {
+                    deque.addLast(new int[]{i, j});
+                    grid[i][j]=0;
+                }
+            }
+        }
+        while (!deque.isEmpty()){
+            int size=deque.size();
+            while (size-->0){
+                int[] remove=deque.removeFirst();
+                int x=remove[0],y=remove[1];
+                for (int[] dir:direction){
+                    int nextX=x+dir[0],nextY=y+dir[1];
+                    if (nextX<0||nextX>=m||nextY<0||nextY>=n||grid[nextX][nextY]==0) continue;
+                    deque.addLast(new int[]{nextX,nextY});
+                    grid[nextX][nextY]=0;
+                }
+            }
+            res++;
+        }
+        for (int[] ints : grid) {
+            for (int j = 0; j < n; j++) {
+                if (ints[j] == 1) return -1;
+            }
+        }
+        return Math.max(0,res);
+    }
 
 
 

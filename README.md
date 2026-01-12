@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：238**  
+**总题数：239**  
 🟢 简单：99  
-🟡 中等：125  
+🟡 中等：126  
 🔴 困难：14
 
 
@@ -17,14 +17,14 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x110
+- **数组** x111
 - **哈希表** x44
 - **字符串** x41
 - **树** x35
 - **二叉树** x34
 - **链表** x30
+- **矩阵** x20
 - **栈** x19
-- **矩阵** x19
 - **并查集** x5
 - **单调栈** x4
 - **队列** x3
@@ -37,7 +37,7 @@
 - **双指针** x43
 - **深度优先搜索** x33
 - **排序** x28
-- **广度优先搜索** x24
+- **广度优先搜索** x25
 - **动态规划** x23
 - **二分查找** x20
 - **回溯** x19
@@ -266,6 +266,7 @@
 | 961 | [在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.31 |
 | 976 | [三角形的最大周长](https://leetcode.cn/problems/largest-perimeter-triangle/) | 🟢 简单 | 贪心、数组、数学、排序 | 2025.11.10 |
 | 977 | [有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/) | 🟢 简单 | 数组、双指针、排序 | 2025.11.04 |
+| 994 | [腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/) | 🟡 中等 | 广度优先搜索、数组、矩阵 | 2026.01.12 |
 | 997 | [找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/) | 🟢 简单 | 图、数组、哈希表 | 2026.01.10 |
 | 1005 | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | 🟢 简单 | 贪心、数组、排序 | 2025.11.10 |
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
@@ -304,8 +305,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-12 21:57:33
-- **总题目数**：238
+- **最后更新**：2026-01-12 22:24:41
+- **总题目数**：239
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成

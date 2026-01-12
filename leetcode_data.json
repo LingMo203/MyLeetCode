@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 238,
+  "total_solved": 239,
   "updated_at": "2026.01.12",
   "problems": [
     {
@@ -3543,6 +3543,21 @@
         "2026.01.12"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-all-groups-of-farmland/"
+    },
+    {
+      "id": 994,
+      "title": "腐烂的橘子",
+      "title_slug": "rotting-oranges",
+      "difficulty": "中等",
+      "tags": [
+        "广度优先搜索",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.12"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/rotting-oranges/"
     }
   ]
 }
