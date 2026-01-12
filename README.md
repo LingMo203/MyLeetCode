@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：236**  
+**总题数：237**  
 🟢 简单：99  
-🟡 中等：123  
+🟡 中等：124  
 🔴 困难：14
 
 
@@ -17,16 +17,16 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x108
+- **数组** x109
 - **哈希表** x44
 - **字符串** x41
 - **树** x35
 - **二叉树** x34
 - **链表** x30
 - **栈** x19
-- **矩阵** x17
+- **矩阵** x18
+- **并查集** x5
 - **单调栈** x4
-- **并查集** x4
 - **队列** x3
 - **单调队列** x2
 - **字典树** x2
@@ -35,10 +35,10 @@
 ### ⚡ 算法
 - **数学** x44
 - **双指针** x43
-- **深度优先搜索** x31
+- **深度优先搜索** x32
 - **排序** x28
 - **动态规划** x23
-- **广度优先搜索** x22
+- **广度优先搜索** x23
 - **二分查找** x20
 - **回溯** x19
 - **递归** x16
@@ -279,6 +279,7 @@
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
+| 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 1925 | [统计平方和三元组的数目](https://leetcode.cn/problems/count-square-sum-triples/) | 🟢 简单 | 数学、枚举 | 2025.12.08 |
 | 2095 | [删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
@@ -302,8 +303,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-12 21:00:50
-- **总题目数**：236
+- **最后更新**：2026-01-12 21:19:52
+- **总题目数**：237
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成

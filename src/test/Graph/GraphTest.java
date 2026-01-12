@@ -238,6 +238,33 @@ public class GraphTest {
     }
 
 
+    //1905. 统计子岛屿
+    public int countSubIslands(int[][] grid1, int[][] grid2) {
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        int res=0,m=grid2.length,n=grid2[0].length;
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                if (grid2[i][j]==0) continue;
+                Deque<int[]> deque=new ArrayDeque<>();
+                deque.addLast(new int[]{i,j});
+                grid2[i][j]=0;
+                boolean f= grid1[i][j] != 0;
+                while (!deque.isEmpty()){
+                    int[] remove=deque.removeFirst();
+                    int x=remove[0],y=remove[1];
+                    if (grid1[x][y]==0) f=false;
+                    for (int[] dir : direction){
+                        int nextX=x+dir[0],nextY=y+dir[1];
+                        if ((nextX<0 || nextX>=m) || (nextY<0 || nextY>=n) || grid2[nextX][nextY]==0) continue;
+                        deque.addLast(new int[]{nextX,nextY});
+                        grid2[nextX][nextY]=0;
+                    }
+                }
+                if (f) res++;
+            }
+        }
+        return res;
+    }
 
 
 

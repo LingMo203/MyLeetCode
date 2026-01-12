@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 236,
+  "total_solved": 237,
   "updated_at": "2026.01.12",
   "problems": [
     {
@@ -3510,6 +3510,23 @@
         "2026.01.12"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/"
+    },
+    {
+      "id": 1905,
+      "title": "统计子岛屿",
+      "title_slug": "count-sub-islands",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "并查集",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.12"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-sub-islands/"
     }
   ]
 }
