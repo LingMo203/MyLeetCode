@@ -208,6 +208,34 @@ public class GraphTest {
     }
 
 
+    //3619. 总价值可以被 K 整除的岛屿数目
+    public int countIslands(int[][] grid, int k) {
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//左 上 右 下
+        int res=0,m=grid.length,n=grid[0].length;
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                if (grid[i][j]==0) continue;
+                Deque<int[]> deque=new ArrayDeque<>();
+                long cost=0;
+                deque.addLast(new int[]{i,j});
+                while (!deque.isEmpty()){
+                    int[] remove = deque.removeFirst();
+                    int x=remove[0],y=remove[1];
+                    if (grid[x][y]==0) continue;
+                    cost+=grid[x][y];
+                    grid[x][y]=0;
+                    for (int[] dir:direction){
+                        int nextX=x+dir[0];
+                        int nextY=y+dir[1];
+                        if ((nextX<0 || nextX>=m) || (nextY<0 || nextY>=n) || grid[nextX][nextY]==0) continue;
+                        deque.addLast(new int[]{nextX,nextY});
+                    }
+                }
+                if (cost%k==0) res++;
+            }
+        }
+        return res;
+    }
 
 
 

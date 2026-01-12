@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 235,
+  "total_solved": 236,
   "updated_at": "2026.01.12",
   "problems": [
     {
@@ -3381,7 +3381,7 @@
       "leetcode_url": "https://leetcode.cn/problems/all-paths-from-source-to-target/"
     },
     {
-      "id": 100959,
+      "id": 3803,
       "title": "统计残差前缀",
       "title_slug": "count-residue-prefixes",
       "difficulty": "简单",
@@ -3493,6 +3493,23 @@
         "2026.01.12"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-time-visiting-all-points/"
+    },
+    {
+      "id": 3619,
+      "title": "总价值可以被 K 整除的岛屿数目",
+      "title_slug": "count-islands-with-total-value-divisible-by-k",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "并查集",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.12"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/"
     }
   ]
 }
