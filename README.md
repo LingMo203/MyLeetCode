@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：240**  
+**总题数：241**  
 🟢 简单：99  
-🟡 中等：127  
+🟡 中等：128  
 🔴 困难：14
 
 
@@ -17,15 +17,15 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x111
+- **数组** x112
 - **哈希表** x45
 - **字符串** x41
 - **树** x35
 - **二叉树** x34
 - **链表** x30
-- **矩阵** x20
+- **矩阵** x21
 - **栈** x19
-- **并查集** x5
+- **并查集** x6
 - **单调栈** x4
 - **队列** x3
 - **图** x3
@@ -35,9 +35,9 @@
 ### ⚡ 算法
 - **数学** x44
 - **双指针** x43
-- **深度优先搜索** x34
+- **深度优先搜索** x35
 - **排序** x28
-- **广度优先搜索** x26
+- **广度优先搜索** x27
 - **动态规划** x23
 - **二分查找** x20
 - **回溯** x19
@@ -272,6 +272,7 @@
 | 1005 | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | 🟢 简单 | 贪心、数组、排序 | 2025.11.10 |
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
+| 1254 | [统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.13 |
 | 1266 | [访问所有点的最小时间](https://leetcode.cn/problems/minimum-time-visiting-all-points/) | 🟢 简单 | 几何、数组、数学 | 2026.01.12 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
 | 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
@@ -306,8 +307,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-13 00:43:48
-- **总题目数**：240
+- **最后更新**：2026-01-13 22:11:26
+- **总题目数**：241
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成

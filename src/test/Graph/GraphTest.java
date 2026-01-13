@@ -367,6 +367,38 @@ public class GraphTest {
     }
 
 
+    //1254. 统计封闭岛屿的数目
+    public int closedIsland(int[][] grid) {
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//四个方向 左 上 右 下
+        int res=0,m=grid.length,n=grid[0].length;
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                if (grid[i][j]==1) continue;
+                Deque<int[]> deque=new ArrayDeque<>();
+                deque.addLast(new int[]{i,j});
+                grid[i][j]=1;
+                boolean f=true;
+                while (!deque.isEmpty()){
+                    int[] remove=deque.removeFirst();
+                    int x=remove[0],y=remove[1];
+                    for (int[] dir:direction){
+                        int nextX=x+dir[0],nextY=y+dir[1];
+                        if (nextX<0 || nextX>=m || nextY<0 || nextY>=n){
+                            f=false;
+                            continue;
+                        }
+                        if (grid[nextX][nextY]==1) continue;
+                        deque.addLast(new int[]{nextX,nextY});
+                        grid[nextX][nextY]=1;
+                    }
+                }
+                if (f) res++;
+            }
+        }
+        return res;
+    }
+
+
 
 
 
