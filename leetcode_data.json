@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 241,
-  "updated_at": "2026.01.13",
+  "total_solved": 242,
+  "updated_at": "2026.01.14",
   "problems": [
     {
       "id": 1,
@@ -3591,6 +3591,22 @@
         "2026.01.13"
       ],
       "leetcode_url": "https://leetcode.cn/problems/number-of-closed-islands/"
+    },
+    {
+      "id": 547,
+      "title": "省份数量",
+      "title_slug": "number-of-provinces",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "并查集",
+        "图"
+      ],
+      "solved_dates": [
+        "2026.01.14"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/number-of-provinces/"
     }
   ]
 }

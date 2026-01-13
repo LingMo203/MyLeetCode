@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：241**  
+**总题数：242**  
 🟢 简单：99  
-🟡 中等：128  
+🟡 中等：129  
 🔴 困难：14
 
 
@@ -25,19 +25,19 @@
 - **链表** x30
 - **矩阵** x21
 - **栈** x19
-- **并查集** x6
+- **并查集** x7
 - **单调栈** x4
+- **图** x4
 - **队列** x3
-- **图** x3
 - **单调队列** x2
 - **字典树** x2
 
 ### ⚡ 算法
 - **数学** x44
 - **双指针** x43
-- **深度优先搜索** x35
+- **深度优先搜索** x36
 - **排序** x28
-- **广度优先搜索** x27
+- **广度优先搜索** x28
 - **动态规划** x23
 - **二分查找** x20
 - **回溯** x19
@@ -243,6 +243,7 @@
 | 509 | [斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | 🟢 简单 | 递归、记忆化搜索、数学、动态规划 | 2025.11.22 |
 | 515 | [在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.22 |
 | 541 | [反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
+| 547 | [省份数量](https://leetcode.cn/problems/number-of-provinces/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.14 |
 | 557 | [反转字符串中的单词 III](https://leetcode.cn/problems/reverse-words-in-a-string-iii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
 | 560 | [和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/) | 🟡 中等 | 数组、哈希表、前缀和 | 2025.12.26 |
 | 561 | [数组拆分](https://leetcode.cn/problems/array-partition/) | 🟢 简单 | 贪心、数组、计数排序、排序 | 2025.11.07 |
@@ -307,8 +308,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-13 22:11:26
-- **总题目数**：241
+- **最后更新**：2026-01-14 01:11:02
+- **总题目数**：242
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成

@@ -1,16 +1,21 @@
 package test.Graph;
 
+import util.ArrayStringUtils;
+
 import java.util.*;
 
 public class GraphTest {
     public static void main(String[] args) {
         GraphTest gt=new GraphTest();
-        int[][] grid={{1, 1, 0, 0, 0, 1}, {1, 1, 0, 0, 0, 0}};
+        String strGrid="[[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]";
+        int[][] grid= ArrayStringUtils.parse2DIntArray(strGrid);
         char[][] chars = {{'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}};
         //System.out.println(gt.findJudge(2,numss));
         //System.out.println(gt.allPathsSourceTarget(numss));
         //System.out.println(gt.numIslands(chars));
-        System.out.println(Arrays.deepToString(gt.findFarmland(grid)));
+        //System.out.println(Arrays.deepToString(gt.findFarmland(grid)));
+        //System.out.println(gt.minimumEffortPath(grid));
+        System.out.println(gt.findCircleNum(grid));
     }
 
 
@@ -399,6 +404,18 @@ public class GraphTest {
     }
 
 
+    //547. 省份数量
+    public int findCircleNum(int[][] isConnected) {
+        int n=isConnected.length;
+        UnionFind uf=new UnionFind(n);
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (isConnected[i][j]==0) continue;
+                uf.union(i,j);
+            }
+        }
+        return uf.getCount();
+    }
 
 
 
@@ -412,3 +429,72 @@ public class GraphTest {
 
 
 }
+
+
+
+
+
+
+//每次练习时覆写
+class UnionFind{
+    int[] parent;
+    int[] rank;
+    int count;
+    public UnionFind(int n){
+        parent=new int[n];
+        rank=new int[n];
+        count=n;
+        for (int i = 0; i < n; i++) {
+            parent[i]=i;
+            rank[i]=1;
+        }
+    }
+    public int find(int n){
+        if (parent[n]==n) return n;
+        parent[n]=find(parent[n]);
+        return parent[n];
+    }
+    public boolean union(int a,int b){
+        a=find(a);
+        b=find(b);
+        if (a==b) return false;
+        if (rank[a]<rank[b]) parent[a]=b;
+        else if (rank[a]>rank[b]) parent[b]=a;
+        else {
+            parent[a]=b;
+            rank[b]++;
+        }
+        count--;
+        return true;
+    }
+    public boolean connect(int a,int b){
+        return find(a)==find(b);
+    }
+
+    public int getCount() {
+        return count;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
