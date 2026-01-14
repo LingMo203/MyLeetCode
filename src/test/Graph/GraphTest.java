@@ -12,14 +12,16 @@ public class GraphTest {
         GraphTest gt=new GraphTest();
         String strGrid="[[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]";
         int[][] grid= ArrayStringUtils.parse2DIntArray(strGrid);
-        String charInput2 = "[[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]";
+        String charInput2 = "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]";
         char[][] charArray2 = parse2DCharArraySmart(charInput2);
         //System.out.println(gt.findJudge(2,numss));
         //System.out.println(gt.allPathsSourceTarget(numss));
-        System.out.println(gt.numIslands(charArray2));
+        //System.out.println(gt.numIslands(charArray2));
         //System.out.println(Arrays.deepToString(gt.findFarmland(grid)));
         //System.out.println(gt.minimumEffortPath(grid));
         //System.out.println(gt.findCircleNum(grid));
+        gt.solve2(charArray2);
+        System.out.println(Arrays.deepToString(charArray2));
     }
 
 
@@ -444,6 +446,66 @@ public class GraphTest {
     }
 
 
+    //130. 被围绕的区域
+    public void solve(char[][] board){
+        int m=board.length,n=board[0].length;
+        boolean[][] visited=new boolean[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j]=='X'||visited[i][j]) continue;
+                boolean[] f={true};
+                ArrayList<int[]> path=new ArrayList<>();
+                visited[i][j]=true;
+                path.add(new int[]{i,j});
+                dfsSolve(board,path,visited,f,i,j);
+                if (f[0]){
+                    for (int[] pa:path){
+                        board[pa[0]][pa[1]]='X';
+                    }
+                }
+            }
+        }
+    }
+    //DFS
+    public void dfsSolve(char[][] board,ArrayList<int[]> path,boolean[][] visited,boolean[] f,int x,int y){
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//四个方向 左 上 右 下
+        for (int[] dir:direction){
+            int nextX=x+dir[0],nextY=y+dir[1];
+            if (nextX<0||nextX>=board.length||nextY<0||nextY>=board[0].length){
+                f[0]=false;
+                continue;
+            }
+            if (board[nextX][nextY]=='X'||visited[nextX][nextY]) continue;
+            path.add(new int[]{nextX,nextY});
+            visited[nextX][nextY]=true;
+            dfsSolve(board, path, visited, f, nextX, nextY);
+        }
+    }
+    //并查集
+    public void solve2(char[][] board) {
+        int m=board.length,n=board[0].length;
+        UnionFindSolve uf=new UnionFindSolve(board);
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j]=='X') continue;
+                int num=i*n+j;
+                if (i>0&&board[i-1][j]=='O'){
+                    uf.union(num-n,num);
+                }
+                if (j>0&&board[i][j-1]=='O'){
+                    uf.union(num-1,num);
+                }
+            }
+        }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j]=='X') continue;
+                if (!uf.connect(0,i*n+j)){
+                    board[i][j]='X';
+                }
+            }
+        }
+    }
 
 
 

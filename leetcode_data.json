@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 242,
+  "total_solved": 243,
   "updated_at": "2026.01.14",
   "problems": [
     {
@@ -3607,6 +3607,23 @@
         "2026.01.14"
       ],
       "leetcode_url": "https://leetcode.cn/problems/number-of-provinces/"
+    },
+    {
+      "id": 130,
+      "title": "被围绕的区域",
+      "title_slug": "surrounded-regions",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "并查集",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.14"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/surrounded-regions/"
     }
   ]
 }
