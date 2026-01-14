@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：243**  
+**总题数：244**  
 🟢 简单：99  
-🟡 中等：130  
+🟡 中等：131  
 🔴 困难：14
 
 
@@ -25,9 +25,9 @@
 - **链表** x30
 - **矩阵** x22
 - **栈** x19
-- **并查集** x8
+- **并查集** x9
+- **图** x5
 - **单调栈** x4
-- **图** x4
 - **队列** x3
 - **单调队列** x2
 - **字典树** x2
@@ -35,8 +35,8 @@
 ### ⚡ 算法
 - **数学** x44
 - **双指针** x43
-- **深度优先搜索** x37
-- **广度优先搜索** x29
+- **深度优先搜索** x38
+- **广度优先搜索** x30
 - **排序** x28
 - **动态规划** x23
 - **二分查找** x20
@@ -253,6 +253,7 @@
 | 623 | [在二叉树中增加一行](https://leetcode.cn/problems/add-one-row-to-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.09 |
 | 637 | [二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.23 |
 | 645 | [错误的集合](https://leetcode.cn/problems/set-mismatch/) | 🟢 简单 | 位运算、数组、哈希表、排序 | 2025.10.29 |
+| 684 | [冗余连接](https://leetcode.cn/problems/redundant-connection/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.15 |
 | 695 | [岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.11 |
 | 704 | [二分查找](https://leetcode.cn/problems/binary-search/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
 | 707 | [设计链表](https://leetcode.cn/problems/design-linked-list/) | 🟡 中等 | 设计、链表 | 2025.11.17 |
@@ -309,8 +310,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-14 23:29:08
-- **总题目数**：243
+- **最后更新**：2026-01-15 00:23:10
+- **总题目数**：244
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成

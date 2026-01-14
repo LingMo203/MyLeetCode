@@ -508,6 +508,20 @@ public class GraphTest {
     }
 
 
+    //684. 冗余连接
+    public int[] findRedundantConnection(int[][] edges) {
+        int n=edges.length;
+        UnionFindFindRedundantConnection uf=new UnionFindFindRedundantConnection(n);
+        int[] res=new int[2];
+        for (int[] edge:edges){
+            int a=edge[0]-1,b=edge[1]-1;
+            if (!uf.union(a,b)){
+                res[0]=a+1;res[1]=b+1;
+            }
+        }
+        return res;
+    }
+
 
 
 

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 243,
-  "updated_at": "2026.01.14",
+  "total_solved": 244,
+  "updated_at": "2026.01.15",
   "problems": [
     {
       "id": 1,
@@ -3624,6 +3624,22 @@
         "2026.01.14"
       ],
       "leetcode_url": "https://leetcode.cn/problems/surrounded-regions/"
+    },
+    {
+      "id": 684,
+      "title": "冗余连接",
+      "title_slug": "redundant-connection",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "并查集",
+        "图"
+      ],
+      "solved_dates": [
+        "2026.01.15"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/redundant-connection/"
     }
   ]
 }
