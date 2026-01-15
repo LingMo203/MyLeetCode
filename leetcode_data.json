@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 244,
-  "updated_at": "2026.01.15",
+  "total_solved": 245,
+  "updated_at": "2026.01.16",
   "problems": [
     {
       "id": 1,
@@ -3640,6 +3640,23 @@
         "2026.01.15"
       ],
       "leetcode_url": "https://leetcode.cn/problems/redundant-connection/"
+    },
+    {
+      "id": 79,
+      "title": "单词搜索",
+      "title_slug": "word-search",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "数组",
+        "字符串",
+        "回溯",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.01.16"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/word-search/"
     }
   ]
 }

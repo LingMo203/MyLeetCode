@@ -1,24 +1,19 @@
 package test;
 
+import util.*;
+
 import java.util.*;
 
 public class BackTrack {
     public static void main(String[] args) {
         BackTrack bt=new BackTrack();
         int[] nums={4,6,7,7};
-        String str="25525511135";
-        String str2="0";
-        char[][] board = {
-                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
-        };
+        String str="ABCESEEEFS";
+        String strGrid="[[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]";
+        int[][] grid= ArrayStringUtils.parse2DIntArray(strGrid);
+
+        String charInput2 = "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"E\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]";
+        char[][] charArray2 = ArrayStringUtils.parse2DCharArraySmart(charInput2);
 //        System.out.println(str2.matches("0\\d+"));
         //System.out.println(bt.combine(4,2));
         //System.out.println(bt.combinationSum(nums,7));
@@ -32,8 +27,9 @@ public class BackTrack {
         //System.out.println(bt.findSubsequences(nums));
         //System.out.println(bt.solveNQueens(4));
         //System.out.println(bt.countNumbersWithUniqueDigits(2));
-        bt.solveSudoku(board);
-        System.out.println(T4.isValidSudoku(board));
+//        bt.solveSudoku(board);
+//        System.out.println(T4.isValidSudoku(board));
+        System.out.println(bt.exist(charArray2,str));
     }
 
 
@@ -519,6 +515,46 @@ public class BackTrack {
         return false;
     }
 
+
+    //79. 单词搜索
+    public boolean exist(char[][] board, String word) {
+        int m=board.length,n=board[0].length;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j]!=word.charAt(0)) continue;
+                boolean[][] visit=new boolean[m][n];
+                StringBuilder sb=new StringBuilder();
+                sb.append(word.charAt(0));
+                ArrayList<int[]> path=new ArrayList<>();
+                visit[i][j]=true;
+                path.add(new int[]{i,j});
+                int[] k={1};
+                if (backExist(board,path,word,sb,i,j,visit,k)) return true;
+            }
+        }
+        return false;
+    }
+    public boolean backExist(char[][] board, ArrayList<int[]> path, String word,StringBuilder sb,int x,int y,boolean[][] visit,int[] j){
+        if (sb.toString().equals(word)) {
+            return true;
+        }
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//四个方向 左 上 右 下
+        for (int[] dir:direction){
+            int nextX=x+dir[0],nextY=y+dir[1];
+            if (nextX<0||nextX>=board.length||nextY<0||nextY>=board[0].length||visit[nextX][nextY]) continue;
+            if (board[nextX][nextY]!=word.charAt(j[0])) continue;
+            sb.append(board[nextX][nextY]);
+            visit[nextX][nextY]=true;
+            j[0]++;
+            path.add(new int[]{nextX,nextY});
+            if (backExist(board, path, word, sb, nextX, nextY, visit, j)) return true;
+            sb.deleteCharAt(sb.length()-1);
+            int[] remove=path.remove(path.size()-1);
+            visit[remove[0]][remove[1]]=false;
+            j[0]--;
+        }
+        return false;
+    }
 
 
 
