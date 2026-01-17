@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 245,
-  "updated_at": "2026.01.16",
+  "total_solved": 247,
+  "updated_at": "2026.01.18",
   "problems": [
     {
       "id": 1,
@@ -3385,7 +3385,10 @@
       "title": "统计残差前缀",
       "title_slug": "count-residue-prefixes",
       "difficulty": "简单",
-      "tags": [],
+      "tags": [
+        "哈希表",
+        "字符串"
+      ],
       "solved_dates": [
         "2026.01.11"
       ],
@@ -3396,7 +3399,11 @@
       "title": "中心子数组的数量",
       "title_slug": "number-of-centered-subarrays",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "数组",
+        "哈希表",
+        "枚举"
+      ],
       "solved_dates": [
         "2026.01.11"
       ],
@@ -3407,7 +3414,13 @@
       "title": "统计凯撒加密对数目",
       "title_slug": "count-caesar-cipher-pairs",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "数组",
+        "哈希表",
+        "数学",
+        "字符串",
+        "计数"
+      ],
       "solved_dates": [
         "2026.01.11"
       ],
@@ -3657,6 +3670,28 @@
         "2026.01.16"
       ],
       "leetcode_url": "https://leetcode.cn/problems/word-search/"
+    },
+    {
+      "id": 100960,
+      "title": "最好可到达的塔",
+      "title_slug": "best-reachable-tower",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.17"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/best-reachable-tower/"
+    },
+    {
+      "id": 100963,
+      "title": "变成目标数组的最少操作次数",
+      "title_slug": "minimum-operations-to-reach-target-array",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.17"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-operations-to-reach-target-array/"
     }
   ]
 }

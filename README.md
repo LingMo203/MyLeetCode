@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：245**  
+**总题数：247**  
 🟢 简单：99  
-🟡 中等：132  
+🟡 中等：134  
 🔴 困难：14
 
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x114
-- **哈希表** x45
-- **字符串** x42
+- **数组** x116
+- **哈希表** x48
+- **字符串** x44
 - **树** x35
 - **二叉树** x34
 - **链表** x30
@@ -33,7 +33,7 @@
 - **字典树** x2
 
 ### ⚡ 算法
-- **数学** x44
+- **数学** x45
 - **双指针** x43
 - **深度优先搜索** x39
 - **广度优先搜索** x30
@@ -48,9 +48,9 @@
 - **分治** x8
 - **设计** x6
 - **模拟** x6
+- **枚举** x2
 - **快速选择** x1
 - **随机化** x1
-- **枚举** x1
 
 
 
@@ -302,17 +302,19 @@
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
 | 3795 | [不同元素和至少为 K 的最短子数组长度](https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | 🟡 中等 | 数组、哈希表、滑动窗口 | 2026.01.03 |
 | 3798 | [最大的偶数](https://leetcode.cn/problems/largest-even-number/) | 🟢 简单 | 字符串 | 2026.01.04 |
-| 3803 | [统计残差前缀](https://leetcode.cn/problems/count-residue-prefixes/) | 🟢 简单 |  | 2026.01.11 |
-| 3804 | [中心子数组的数量](https://leetcode.cn/problems/number-of-centered-subarrays/) | 🟡 中等 |  | 2026.01.11 |
-| 3805 | [统计凯撒加密对数目](https://leetcode.cn/problems/count-caesar-cipher-pairs/) | 🟡 中等 |  | 2026.01.11 |
+| 3803 | [统计残差前缀](https://leetcode.cn/problems/count-residue-prefixes/) | 🟢 简单 | 哈希表、字符串 | 2026.01.11 |
+| 3804 | [中心子数组的数量](https://leetcode.cn/problems/number-of-centered-subarrays/) | 🟡 中等 | 数组、哈希表、枚举 | 2026.01.11 |
+| 3805 | [统计凯撒加密对数目](https://leetcode.cn/problems/count-caesar-cipher-pairs/) | 🟡 中等 | 数组、哈希表、数学、字符串、计数 | 2026.01.11 |
+| 100960 | [最好可到达的塔](https://leetcode.cn/problems/best-reachable-tower/) | 🟡 中等 |  | 2026.01.17 |
+| 100963 | [变成目标数组的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-reach-target-array/) | 🟡 中等 |  | 2026.01.17 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-16 00:47:25
-- **总题目数**：245
+- **最后更新**：2026-01-18 00:15:27
+- **总题目数**：247
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成
