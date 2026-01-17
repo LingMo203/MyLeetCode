@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：247**  
+**总题数：248**  
 🟢 简单：99  
-🟡 中等：134  
+🟡 中等：135  
 🔴 困难：14
 
 
@@ -25,8 +25,8 @@
 - **链表** x30
 - **矩阵** x23
 - **栈** x19
-- **并查集** x9
-- **图** x5
+- **并查集** x10
+- **图** x6
 - **单调栈** x4
 - **队列** x3
 - **单调队列** x2
@@ -35,8 +35,8 @@
 ### ⚡ 算法
 - **数学** x45
 - **双指针** x43
-- **深度优先搜索** x39
-- **广度优先搜索** x30
+- **深度优先搜索** x40
+- **广度优先搜索** x31
 - **排序** x28
 - **动态规划** x23
 - **二分查找** x20
@@ -278,6 +278,7 @@
 | 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
 | 1254 | [统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.13 |
 | 1266 | [访问所有点的最小时间](https://leetcode.cn/problems/minimum-time-visiting-all-points/) | 🟢 简单 | 几何、数组、数学 | 2026.01.12 |
+| 1319 | [连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.18 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
 | 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
 | 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
@@ -313,8 +314,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-18 00:15:27
-- **总题目数**：247
+- **最后更新**：2026-01-18 00:39:37
+- **总题目数**：248
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成

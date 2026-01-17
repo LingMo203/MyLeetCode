@@ -523,6 +523,15 @@ public class GraphTest {
     }
 
 
+    //1319. 连通网络的操作次数
+    public int makeConnected(int n, int[][] connections) {
+        UnionFindMakeConnected uf=new UnionFindMakeConnected(n);
+        int c=0;
+        for (int[] nums:connections){
+            if (!uf.union(nums[0],nums[1])) c++;
+        }
+        return (uf.getCount()-1)>c?-1: uf.getCount()-1;
+    }
 
 
 
