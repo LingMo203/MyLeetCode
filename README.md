@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：248**  
-🟢 简单：99  
+**总题数：249**  
+🟢 简单：100  
 🟡 中等：135  
 🔴 困难：14
 
@@ -306,6 +306,7 @@
 | 3803 | [统计残差前缀](https://leetcode.cn/problems/count-residue-prefixes/) | 🟢 简单 | 哈希表、字符串 | 2026.01.11 |
 | 3804 | [中心子数组的数量](https://leetcode.cn/problems/number-of-centered-subarrays/) | 🟡 中等 | 数组、哈希表、枚举 | 2026.01.11 |
 | 3805 | [统计凯撒加密对数目](https://leetcode.cn/problems/count-caesar-cipher-pairs/) | 🟡 中等 | 数组、哈希表、数学、字符串、计数 | 2026.01.11 |
+| 3813 | [元音辅音得分](https://leetcode.cn/problems/vowel-consonant-score/) | 🟢 简单 |  | 2026.01.18 |
 | 100960 | [最好可到达的塔](https://leetcode.cn/problems/best-reachable-tower/) | 🟡 中等 |  | 2026.01.17 |
 | 100963 | [变成目标数组的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-reach-target-array/) | 🟡 中等 |  | 2026.01.17 |
 
@@ -314,8 +315,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-18 00:39:37
-- **总题目数**：248
+- **最后更新**：2026-01-18 12:32:51
+- **总题目数**：249
 - **技能标签数**：44
 
 > 🤖 本页面由自动化脚本生成

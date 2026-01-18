@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 248,
+  "total_solved": 249,
   "updated_at": "2026.01.18",
   "problems": [
     {
@@ -3708,6 +3708,17 @@
         "2026.01.18"
       ],
       "leetcode_url": "https://leetcode.cn/problems/number-of-operations-to-make-network-connected/"
+    },
+    {
+      "id": 3813,
+      "title": "元音辅音得分",
+      "title_slug": "vowel-consonant-score",
+      "difficulty": "简单",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.18"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/vowel-consonant-score/"
     }
   ]
 }
