@@ -453,6 +453,33 @@ public class T5 {
 
 
 
+    //3507. 移除最小数对使数组有序 I
+    public int minimumPairRemoval(int[] nums) {
+        ArrayList<Integer> list=new ArrayList<>();
+        for (int num:nums){
+            list.add(num);
+        }
+        int res=0;
+        while (list.size()>1){
+            int n=list.size(),index = 0,last=list.get(0),minAdd=Integer.MAX_VALUE;
+            boolean f=true;
+            for (int i = 1; i <n; i++) {
+                int num=list.get(i);
+                if (last>num) f=false;
+                int add=num+last;
+                if (add<minAdd){
+                    index=i-1;
+                    minAdd=add;
+                }
+                last=num;
+            }
+            if (f) break;
+            list.set(index,minAdd);
+            list.remove(index+1);
+            res++;
+        }
+        return res;
+    }
 
 
 

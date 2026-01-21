@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 249,
-  "updated_at": "2026.01.18",
+  "total_solved": 250,
+  "updated_at": "2026.01.22",
   "problems": [
     {
       "id": 1,
@@ -3672,7 +3672,7 @@
       "leetcode_url": "https://leetcode.cn/problems/word-search/"
     },
     {
-      "id": 100960,
+      "id": 3809,
       "title": "最好可到达的塔",
       "title_slug": "best-reachable-tower",
       "difficulty": "中等",
@@ -3683,7 +3683,7 @@
       "leetcode_url": "https://leetcode.cn/problems/best-reachable-tower/"
     },
     {
-      "id": 100963,
+      "id": 3810,
       "title": "变成目标数组的最少操作次数",
       "title_slug": "minimum-operations-to-reach-target-array",
       "difficulty": "中等",
@@ -3719,6 +3719,25 @@
         "2026.01.18"
       ],
       "leetcode_url": "https://leetcode.cn/problems/vowel-consonant-score/"
+    },
+    {
+      "id": 3507,
+      "title": "移除最小数对使数组有序 I",
+      "title_slug": "minimum-pair-removal-to-sort-array-i",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "哈希表",
+        "链表",
+        "双向链表",
+        "有序集合",
+        "模拟",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2026.01.22"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/"
     }
   ]
 }
