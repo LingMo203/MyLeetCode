@@ -482,9 +482,15 @@ public class T5 {
     }
 
 
-
-
-
+    //1877. 数组中最大数对和的最小值
+    public int minPairSum(int[] nums) {
+        Arrays.sort(nums);
+        int res=Integer.MIN_VALUE;
+        for (int i = 0 , j = nums.length-1; i < nums.length && j>=0 ; i++ , j--) {
+            res=Math.max(res,nums[i]+nums[j]);
+        }
+        return res;
+    }
 
 
 

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 250,
-  "updated_at": "2026.01.22",
+  "total_solved": 251,
+  "updated_at": "2026.01.24",
   "problems": [
     {
       "id": 1,
@@ -3738,6 +3738,22 @@
         "2026.01.22"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/"
+    },
+    {
+      "id": 1877,
+      "title": "数组中最大数对和的最小值",
+      "title_slug": "minimize-maximum-pair-sum-in-array",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组",
+        "双指针",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.01.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/"
     }
   ]
 }
