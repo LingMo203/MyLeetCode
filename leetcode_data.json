@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 251,
-  "updated_at": "2026.01.24",
+  "total_solved": 252,
+  "updated_at": "2026.01.25",
   "problems": [
     {
       "id": 1,
@@ -3754,6 +3754,21 @@
         "2026.01.24"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/"
+    },
+    {
+      "id": 1984,
+      "title": "学生分数的最小差值",
+      "title_slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "排序",
+        "滑动窗口"
+      ],
+      "solved_dates": [
+        "2026.01.25"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/"
     }
   ]
 }

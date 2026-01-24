@@ -492,6 +492,18 @@ public class T5 {
         return res;
     }
 
+    
+    //1984. 学生分数的最小差值
+    public int minimumDifference(int[] nums, int k) {
+        if (k == 1) return 0;
+        Arrays.sort(nums);
+        int res = Integer.MAX_VALUE;
+        for (int i = k - 1, j = 0; i < nums.length; i++, j++) {
+            res = Math.min(res, nums[i] - nums[j]);
+        }
+        return res;
+    }
+
 
 
 

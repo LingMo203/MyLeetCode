@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：251**  
-🟢 简单：101  
+**总题数：252**  
+🟢 简单：102  
 🟡 中等：136  
 🔴 困难：14
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x118
+- **数组** x119
 - **哈希表** x49
 - **字符串** x44
 - **树** x35
@@ -37,14 +37,14 @@
 - **双指针** x44
 - **深度优先搜索** x40
 - **广度优先搜索** x31
-- **排序** x29
+- **排序** x30
 - **动态规划** x23
 - **二分查找** x20
 - **回溯** x20
 - **贪心** x16
 - **递归** x16
 - **位运算** x13
-- **滑动窗口** x8
+- **滑动窗口** x9
 - **分治** x8
 - **模拟** x7
 - **设计** x6
@@ -290,6 +290,7 @@
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 1925 | [统计平方和三元组的数目](https://leetcode.cn/problems/count-square-sum-triples/) | 🟢 简单 | 数学、枚举 | 2025.12.08 |
+| 1984 | [学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | 🟢 简单 | 数组、排序、滑动窗口 | 2026.01.25 |
 | 1992 | [找到所有的农场组](https://leetcode.cn/problems/find-all-groups-of-farmland/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.01.12 |
 | 2095 | [删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
@@ -317,8 +318,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-24 00:32:45
-- **总题目数**：251
+- **最后更新**：2026-01-25 00:13:31
+- **总题目数**：252
 - **技能标签数**：46
 
 > 🤖 本页面由自动化脚本生成
