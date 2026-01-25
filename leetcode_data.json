@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 255,
-  "updated_at": "2026.01.25",
+  "total_solved": 256,
+  "updated_at": "2026.01.26",
   "problems": [
     {
       "id": 1,
@@ -3771,7 +3771,7 @@
       "leetcode_url": "https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/"
     },
     {
-      "id": 100971,
+      "id": 3818,
       "title": "移除前缀使数组严格递增",
       "title_slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
       "difficulty": "中等",
@@ -3782,7 +3782,7 @@
       "leetcode_url": "https://leetcode.cn/problems/minimum-prefix-removal-to-make-array-strictly-increasing/"
     },
     {
-      "id": 100944,
+      "id": 3819,
       "title": "非负元素轮替",
       "title_slug": "rotate-non-negative-elements",
       "difficulty": "中等",
@@ -3793,7 +3793,7 @@
       "leetcode_url": "https://leetcode.cn/problems/rotate-non-negative-elements/"
     },
     {
-      "id": 100953,
+      "id": 3820,
       "title": "树上的勾股距离节点",
       "title_slug": "pythagorean-distance-nodes-in-a-tree",
       "difficulty": "中等",
@@ -3802,6 +3802,20 @@
         "2026.01.25"
       ],
       "leetcode_url": "https://leetcode.cn/problems/pythagorean-distance-nodes-in-a-tree/"
+    },
+    {
+      "id": 1200,
+      "title": "最小绝对差",
+      "title_slug": "minimum-absolute-difference",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.01.26"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-absolute-difference/"
     }
   ]
 }

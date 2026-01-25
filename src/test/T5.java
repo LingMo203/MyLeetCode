@@ -6,7 +6,7 @@ public class T5 {
     public static void main(String[] args) {
         T5 t5=new T5();
         int num=123;
-        int[] nums={10,5,2,6};
+        int[] nums={4,2,1,3};
         int[] nums2={5,4,3,4,2};
         int[][] numsD={{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
         int[][] numsD3={{5, 1, 9, 11}, {2, 4, 8, 10}, {13, 3, 6, 7}, {15, 14, 12, 16}};
@@ -26,7 +26,8 @@ public class T5 {
         //System.out.println(t5.minWindow(str,str2));
         //System.out.println(t5.intToRoman(60));
         //System.out.println(t5.convert(str,1));
-        System.out.println(Arrays.deepToString(t5.generateMatrix(3)));
+        //System.out.println(Arrays.deepToString(t5.generateMatrix(3)));
+        System.out.println(t5.minimumAbsDifference(nums));
     }
 
     //287. 寻找重复数
@@ -505,6 +506,24 @@ public class T5 {
     }
 
 
+    //1200. 最小绝对差
+    public List<List<Integer>> minimumAbsDifference(int[] arr) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(arr);
+        int last = arr[0], min = Integer.MAX_VALUE;
+        for (int i = 1; i < arr.length; i++) {
+            int num = arr[i], sub = num - last;
+            if (sub < min) {
+                res.clear();
+                res.add(new ArrayList<>(Arrays.asList(last, num)));
+                min = sub;
+            } else if (sub == min) {
+                res.add(new ArrayList<>(Arrays.asList(last, num)));
+            }
+            last = num;
+        }
+        return res;
+    }
 
 
 

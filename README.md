@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：255**  
-🟢 简单：102  
+**总题数：256**  
+🟢 简单：103  
 🟡 中等：139  
 🔴 困难：14
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x119
+- **数组** x120
 - **哈希表** x49
 - **字符串** x44
 - **树** x35
@@ -36,8 +36,8 @@
 - **数学** x45
 - **双指针** x44
 - **深度优先搜索** x40
+- **排序** x31
 - **广度优先搜索** x31
-- **排序** x30
 - **动态规划** x23
 - **二分查找** x20
 - **回溯** x20
@@ -276,6 +276,7 @@
 | 1005 | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | 🟢 简单 | 贪心、数组、排序 | 2025.11.10 |
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
+| 1200 | [最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference/) | 🟢 简单 | 数组、排序 | 2026.01.26 |
 | 1254 | [统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.13 |
 | 1266 | [访问所有点的最小时间](https://leetcode.cn/problems/minimum-time-visiting-all-points/) | 🟢 简单 | 几何、数组、数学 | 2026.01.12 |
 | 1319 | [连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.18 |
@@ -312,17 +313,17 @@
 | 3809 | [最好可到达的塔](https://leetcode.cn/problems/best-reachable-tower/) | 🟡 中等 |  | 2026.01.17 |
 | 3810 | [变成目标数组的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-reach-target-array/) | 🟡 中等 |  | 2026.01.17 |
 | 3813 | [元音辅音得分](https://leetcode.cn/problems/vowel-consonant-score/) | 🟢 简单 |  | 2026.01.18 |
-| 100944 | [非负元素轮替](https://leetcode.cn/problems/rotate-non-negative-elements/) | 🟡 中等 |  | 2026.01.25 |
-| 100953 | [树上的勾股距离节点](https://leetcode.cn/problems/pythagorean-distance-nodes-in-a-tree/) | 🟡 中等 |  | 2026.01.25 |
-| 100971 | [移除前缀使数组严格递增](https://leetcode.cn/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | 🟡 中等 |  | 2026.01.25 |
+| 3818 | [移除前缀使数组严格递增](https://leetcode.cn/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | 🟡 中等 |  | 2026.01.25 |
+| 3819 | [非负元素轮替](https://leetcode.cn/problems/rotate-non-negative-elements/) | 🟡 中等 |  | 2026.01.25 |
+| 3820 | [树上的勾股距离节点](https://leetcode.cn/problems/pythagorean-distance-nodes-in-a-tree/) | 🟡 中等 |  | 2026.01.25 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-25 12:16:28
-- **总题目数**：255
+- **最后更新**：2026-01-26 00:52:33
+- **总题目数**：256
 - **技能标签数**：46
 
 > 🤖 本页面由自动化脚本生成
