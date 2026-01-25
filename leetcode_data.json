@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 252,
+  "total_solved": 255,
   "updated_at": "2026.01.25",
   "problems": [
     {
@@ -3769,6 +3769,39 @@
         "2026.01.25"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/"
+    },
+    {
+      "id": 100971,
+      "title": "移除前缀使数组严格递增",
+      "title_slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.25"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-prefix-removal-to-make-array-strictly-increasing/"
+    },
+    {
+      "id": 100944,
+      "title": "非负元素轮替",
+      "title_slug": "rotate-non-negative-elements",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.25"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/rotate-non-negative-elements/"
+    },
+    {
+      "id": 100953,
+      "title": "树上的勾股距离节点",
+      "title_slug": "pythagorean-distance-nodes-in-a-tree",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.25"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/pythagorean-distance-nodes-in-a-tree/"
     }
   ]
 }
