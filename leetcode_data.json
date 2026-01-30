@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 256,
-  "updated_at": "2026.01.26",
+  "total_solved": 257,
+  "updated_at": "2026.01.31",
   "problems": [
     {
       "id": 1,
@@ -3816,6 +3816,20 @@
         "2026.01.26"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-absolute-difference/"
+    },
+    {
+      "id": 744,
+      "title": "寻找比目标字母大的最小字母",
+      "title_slug": "find-smallest-letter-greater-than-target",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "二分查找"
+      ],
+      "solved_dates": [
+        "2026.01.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-smallest-letter-greater-than-target/"
     }
   ]
 }

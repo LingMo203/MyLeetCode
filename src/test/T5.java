@@ -14,6 +14,7 @@ public class T5 {
         String str="AB";
         String str2="cae";
         String[] strs={"flower","flow","flight"};
+        char[] chars = {'c','f','j'};
         //System.out.println(t5.findDuplicate(nums));
         //System.out.println(t5.numMagicSquaresInside(numsD));
         //System.out.println(t5.canCompleteCircuit(nums,nums2));
@@ -27,7 +28,8 @@ public class T5 {
         //System.out.println(t5.intToRoman(60));
         //System.out.println(t5.convert(str,1));
         //System.out.println(Arrays.deepToString(t5.generateMatrix(3)));
-        System.out.println(t5.minimumAbsDifference(nums));
+        //System.out.println(t5.minimumAbsDifference(nums));
+        System.out.println(t5.nextGreatestLetter(chars,'j'));
     }
 
     //287. 寻找重复数
@@ -526,8 +528,25 @@ public class T5 {
     }
 
 
-
-
+    //744. 寻找比目标字母大的最小字母
+    public char nextGreatestLetter(char[] letters, char target) {
+        for (int left = 0, right = letters.length - 1; left <= right; ) {
+            int mid = (right - left) / 2 + left;
+            char c = letters[mid];
+            if (c > target) {
+                if (mid > 0 && letters[mid - 1] < target) return letters[mid];
+                right = mid - 1;
+            } else if (c < target) {
+                if (mid + 1 < letters.length && letters[mid + 1] > target)
+                    return mid + 1 < letters.length ? letters[mid + 1] : letters[0];
+                left = mid + 1;
+            } else {
+                while (mid < letters.length && letters[mid] == target) mid++;
+                return mid < letters.length ? letters[mid] : letters[0];
+            }
+        }
+        return letters[0];
+    }
 
 
 
