@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：259**  
-🟢 简单：105  
+**总题数：260**  
+🟢 简单：106  
 🟡 中等：140  
 🔴 困难：14
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x121
+- **数组** x122
 - **哈希表** x49
 - **字符串** x44
 - **树** x35
@@ -36,7 +36,7 @@
 - **数学** x45
 - **双指针** x44
 - **深度优先搜索** x40
-- **排序** x31
+- **排序** x32
 - **广度优先搜索** x31
 - **动态规划** x23
 - **二分查找** x21
@@ -48,7 +48,7 @@
 - **分治** x8
 - **模拟** x7
 - **设计** x6
-- **枚举** x2
+- **枚举** x3
 - **快速选择** x1
 - **随机化** x1
 
@@ -300,6 +300,7 @@
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
 | 2483 | [商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) | 🟡 中等 | 字符串、前缀和 | 2025.12.26 |
 | 2578 | [最小和分割](https://leetcode.cn/problems/split-with-minimum-sum/) | 🟢 简单 | 贪心、数学、排序 | 2025.11.10 |
+| 3010 | [将数组分成最小总代价的子数组 I](https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/) | 🟢 简单 | 数组、枚举、排序 | 2026.02.01 |
 | 3074 | [重新分装苹果](https://leetcode.cn/problems/apple-redistribution-into-boxes/) | 🟢 简单 | 贪心、数组、排序 | 2025.12.24 |
 | 3075 | [幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) | 🟡 中等 | 贪心、数组、排序 | 2025.12.25 |
 | 3191 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
@@ -325,8 +326,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-01 00:18:40
-- **总题目数**：259
+- **最后更新**：2026-02-01 00:42:50
+- **总题目数**：260
 - **技能标签数**：46
 
 > 🤖 本页面由自动化脚本生成

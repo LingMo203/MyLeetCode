@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 259,
+  "total_solved": 260,
   "updated_at": "2026.02.01",
   "problems": [
     {
@@ -3852,6 +3852,21 @@
         "2026.01.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-k-to-reduce-array-within-limit/"
+    },
+    {
+      "id": 3010,
+      "title": "将数组分成最小总代价的子数组 I",
+      "title_slug": "divide-an-array-into-subarrays-with-minimum-cost-i",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "枚举",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.02.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/"
     }
   ]
 }

@@ -549,6 +549,18 @@ public class T5 {
     }
 
 
+    //3010. 将数组分成最小总代价的子数组 I
+    public int minimumCost(int[] nums) {
+        int res = nums[0];
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
+        for (int i = 1; i < nums.length; i++) {
+            priorityQueue.add(nums[i]);
+            if (priorityQueue.size() > 2) priorityQueue.remove();
+        }
+        res += priorityQueue.remove();
+        res += priorityQueue.remove();
+        return res;
+    }
 
 
 
