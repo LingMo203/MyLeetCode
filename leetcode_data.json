@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 257,
-  "updated_at": "2026.01.31",
+  "total_solved": 259,
+  "updated_at": "2026.02.01",
   "problems": [
     {
       "id": 1,
@@ -3830,6 +3830,28 @@
         "2026.01.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-smallest-letter-greater-than-target/"
+    },
+    {
+      "id": 3823,
+      "title": "反转一个字符串里的字母后反转特殊字符",
+      "title_slug": "reverse-letters-then-special-characters-in-a-string",
+      "difficulty": "简单",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/reverse-letters-then-special-characters-in-a-string/"
+    },
+    {
+      "id": 3824,
+      "title": "减小数组使其满足条件的最小 K 值",
+      "title_slug": "minimum-k-to-reduce-array-within-limit",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.01.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-k-to-reduce-array-within-limit/"
     }
   ]
 }

@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：257**  
-🟢 简单：104  
-🟡 中等：139  
+**总题数：259**  
+🟢 简单：105  
+🟡 中等：140  
 🔴 困难：14
 
 
@@ -317,14 +317,16 @@
 | 3818 | [移除前缀使数组严格递增](https://leetcode.cn/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | 🟡 中等 |  | 2026.01.25 |
 | 3819 | [非负元素轮替](https://leetcode.cn/problems/rotate-non-negative-elements/) | 🟡 中等 |  | 2026.01.25 |
 | 3820 | [树上的勾股距离节点](https://leetcode.cn/problems/pythagorean-distance-nodes-in-a-tree/) | 🟡 中等 |  | 2026.01.25 |
+| 3823 | [反转一个字符串里的字母后反转特殊字符](https://leetcode.cn/problems/reverse-letters-then-special-characters-in-a-string/) | 🟢 简单 |  | 2026.01.31 |
+| 3824 | [减小数组使其满足条件的最小 K 值](https://leetcode.cn/problems/minimum-k-to-reduce-array-within-limit/) | 🟡 中等 |  | 2026.01.31 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-01-31 00:59:12
-- **总题目数**：257
+- **最后更新**：2026-02-01 00:18:40
+- **总题目数**：259
 - **技能标签数**：46
 
 > 🤖 本页面由自动化脚本生成
