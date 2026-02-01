@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：260**  
-🟢 简单：106  
-🟡 中等：140  
+**总题数：263**  
+🟢 简单：107  
+🟡 中等：142  
 🔴 困难：14
 
 
@@ -320,14 +320,17 @@
 | 3820 | [树上的勾股距离节点](https://leetcode.cn/problems/pythagorean-distance-nodes-in-a-tree/) | 🟡 中等 |  | 2026.01.25 |
 | 3823 | [反转一个字符串里的字母后反转特殊字符](https://leetcode.cn/problems/reverse-letters-then-special-characters-in-a-string/) | 🟢 简单 |  | 2026.01.31 |
 | 3824 | [减小数组使其满足条件的最小 K 值](https://leetcode.cn/problems/minimum-k-to-reduce-array-within-limit/) | 🟡 中等 |  | 2026.01.31 |
+| 3827 | [统计单比特整数](https://leetcode.cn/problems/count-monobit-integers/) | 🟢 简单 |  | 2026.02.01 |
+| 3828 | [删除子数组后的最终元素](https://leetcode.cn/problems/final-element-after-subarray-deletions/) | 🟡 中等 |  | 2026.02.01 |
+| 3829 | [设计共享出行系统](https://leetcode.cn/problems/design-ride-sharing-system/) | 🟡 中等 |  | 2026.02.01 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-01 00:42:50
-- **总题目数**：260
+- **最后更新**：2026-02-01 12:10:07
+- **总题目数**：263
 - **技能标签数**：46
 
 > 🤖 本页面由自动化脚本生成

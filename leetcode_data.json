@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 260,
+  "total_solved": 263,
   "updated_at": "2026.02.01",
   "problems": [
     {
@@ -3867,6 +3867,39 @@
         "2026.02.01"
       ],
       "leetcode_url": "https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/"
+    },
+    {
+      "id": 3827,
+      "title": "统计单比特整数",
+      "title_slug": "count-monobit-integers",
+      "difficulty": "简单",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-monobit-integers/"
+    },
+    {
+      "id": 3828,
+      "title": "删除子数组后的最终元素",
+      "title_slug": "final-element-after-subarray-deletions",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/final-element-after-subarray-deletions/"
+    },
+    {
+      "id": 3829,
+      "title": "设计共享出行系统",
+      "title_slug": "design-ride-sharing-system",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/design-ride-sharing-system/"
     }
   ]
 }
