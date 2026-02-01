@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 264,
+  "total_solved": 265,
   "updated_at": "2026.02.01",
   "problems": [
     {
@@ -3917,6 +3917,23 @@
         "2026.02.01"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-median-from-data-stream/"
+    },
+    {
+      "id": 215,
+      "title": "数组中的第K个最大元素",
+      "title_slug": "kth-largest-element-in-an-array",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "分治",
+        "快速选择",
+        "排序",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2026.02.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/kth-largest-element-in-an-array/"
     }
   ]
 }
