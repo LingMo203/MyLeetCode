@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 268,
+  "total_solved": 269,
   "updated_at": "2026.02.02",
   "problems": [
     {
@@ -3984,6 +3984,24 @@
         "2026.02.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/top-k-frequent-words/"
+    },
+    {
+      "id": 1985,
+      "title": "找出数组中的第 K 大整数",
+      "title_slug": "find-the-kth-largest-integer-in-the-array",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "字符串",
+        "分治",
+        "快速选择",
+        "排序",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2026.02.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/"
     }
   ]
 }

@@ -631,6 +631,15 @@ public class T5 {
         return res;
     }
 
+    //1985. 找出数组中的第 K 大整数
+    public String kthLargestNumber(String[] nums, int k) {
+        Arrays.sort(nums, (a, b) -> {
+            int diff = a.length() - b.length();
+            if (diff != 0) return diff;
+            return a.compareTo(b);
+        });
+        return nums[nums.length - k];
+    }
 
 
 
