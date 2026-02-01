@@ -573,6 +573,23 @@ public class T5 {
         return minHeap.peek();
     }
 
+    //763. 划分字母区间
+    public List<Integer> partitionLabels(String s) {
+        List<Integer> res = new ArrayList<>();
+        int[] letters = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            letters[s.charAt(i) - 'a'] = i;
+        }
+        for (int i = 0, end = letters[s.charAt(0) - 'a'], last = 0; i < s.length(); i++) {
+            end = Math.max(end, letters[s.charAt(i) - 'a']);
+            if (i == end) {
+                res.add(end + 1 - last);
+                last = end + 1;
+            }
+        }
+        return res;
+    }
+
 
 
 

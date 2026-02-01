@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：265**  
+**总题数：266**  
 🟢 简单：107  
-🟡 中等：143  
+🟡 中等：144  
 🔴 困难：15
 
 
@@ -18,8 +18,8 @@
 
 ### 🔥 数据结构
 - **数组** x123
-- **哈希表** x49
-- **字符串** x44
+- **哈希表** x50
+- **字符串** x45
 - **树** x35
 - **二叉树** x34
 - **链表** x31
@@ -33,7 +33,7 @@
 - **字典树** x2
 
 ### ⚡ 算法
-- **双指针** x45
+- **双指针** x46
 - **数学** x45
 - **深度优先搜索** x40
 - **排序** x34
@@ -41,7 +41,7 @@
 - **动态规划** x23
 - **二分查找** x21
 - **回溯** x20
-- **贪心** x16
+- **贪心** x17
 - **递归** x16
 - **位运算** x13
 - **滑动窗口** x9
@@ -265,6 +265,7 @@
 | 739 | [每日温度](https://leetcode.cn/problems/daily-temperatures/) | 🟡 中等 | 栈、数组、单调栈 | 2025.12.09 |
 | 744 | [寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | 🟢 简单 | 数组、二分查找 | 2026.01.31 |
 | 746 | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | 🟢 简单 | 数组、动态规划 | 2025.11.22 |
+| 763 | [划分字母区间](https://leetcode.cn/problems/partition-labels/) | 🟡 中等 | 贪心、哈希表、双指针、字符串 | 2026.02.01 |
 | 797 | [所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) | 🟡 中等 | 深度优先搜索、广度优先搜索、图、回溯 | 2026.01.10 |
 | 821 | [字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character/) | 🟢 简单 | 数组、双指针、字符串 | 2025.11.05 |
 | 840 | [矩阵中的幻方](https://leetcode.cn/problems/magic-squares-in-grid/) | 🟡 中等 | 数组、哈希表、数学、矩阵 | 2025.12.30 |
@@ -331,8 +332,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-01 23:10:39
-- **总题目数**：265
+- **最后更新**：2026-02-01 23:30:10
+- **总题目数**：266
 - **技能标签数**：47
 
 > 🤖 本页面由自动化脚本生成
