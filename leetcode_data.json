@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 263,
+  "total_solved": 264,
   "updated_at": "2026.02.01",
   "problems": [
     {
@@ -3900,6 +3900,23 @@
         "2026.02.01"
       ],
       "leetcode_url": "https://leetcode.cn/problems/design-ride-sharing-system/"
+    },
+    {
+      "id": 295,
+      "title": "数据流的中位数",
+      "title_slug": "find-median-from-data-stream",
+      "difficulty": "困难",
+      "tags": [
+        "设计",
+        "双指针",
+        "数据流",
+        "排序",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2026.02.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-median-from-data-stream/"
     }
   ]
 }
