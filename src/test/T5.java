@@ -608,6 +608,29 @@ public class T5 {
         return nums.length + 1;
     }
 
+    //692. 前K个高频单词
+    public List<String> topKFrequent(String[] words, int k) {
+        List<String> res = new ArrayList<>();
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        for (String str : words) {
+            hashMap.put(str, hashMap.getOrDefault(str, 0) + 1);
+        }
+        //借鉴答案的最小堆
+        PriorityQueue<Map.Entry<String, Integer>> pq = new PriorityQueue<Map.Entry<String, Integer>>(new Comparator<Map.Entry<String, Integer>>() {
+            public int compare(Map.Entry<String, Integer> entry1, Map.Entry<String, Integer> entry2) {
+                return Objects.equals(entry1.getValue(), entry2.getValue()) ? entry2.getKey().compareTo(entry1.getKey()) : entry1.getValue() - entry2.getValue();
+            }
+        });
+        for (Map.Entry<String, Integer> e : hashMap.entrySet()) {
+            pq.add(e);
+            if (pq.size() > k) pq.remove();
+        }
+        while (!pq.isEmpty()) {
+            res.add(0, pq.remove().getKey());
+        }
+        return res;
+    }
+
 
 
 
