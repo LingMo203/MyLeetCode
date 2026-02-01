@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 266,
-  "updated_at": "2026.02.01",
+  "total_solved": 267,
+  "updated_at": "2026.02.02",
   "problems": [
     {
       "id": 1,
@@ -3950,6 +3950,20 @@
         "2026.02.01"
       ],
       "leetcode_url": "https://leetcode.cn/problems/partition-labels/"
+    },
+    {
+      "id": 41,
+      "title": "缺失的第一个正数",
+      "title_slug": "first-missing-positive",
+      "difficulty": "困难",
+      "tags": [
+        "数组",
+        "哈希表"
+      ],
+      "solved_dates": [
+        "2026.02.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/first-missing-positive/"
     }
   ]
 }

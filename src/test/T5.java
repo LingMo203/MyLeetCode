@@ -29,7 +29,8 @@ public class T5 {
         //System.out.println(t5.convert(str,1));
         //System.out.println(Arrays.deepToString(t5.generateMatrix(3)));
         //System.out.println(t5.minimumAbsDifference(nums));
-        System.out.println(t5.nextGreatestLetter(chars,'j'));
+        //System.out.println(t5.nextGreatestLetter(chars,'j'));
+        System.out.println(t5.firstMissingPositive(new int[]{1,1,1,1,1,1,1,1,1}));
     }
 
     //287. 寻找重复数
@@ -591,6 +592,21 @@ public class T5 {
     }
 
 
+    //41. 缺失的第一个正数
+    public int firstMissingPositive(int[] nums) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            int num = nums[i];
+            if (num <= 0 || num >= n || num == i + 1 || nums[i] == nums[num - 1]) continue;
+            nums[i] = nums[num - 1];
+            nums[num - 1] = num;
+            i--;
+        }
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != i + 1) return i + 1;
+        }
+        return nums.length + 1;
+    }
 
 
 
