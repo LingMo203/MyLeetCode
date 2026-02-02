@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 269,
-  "updated_at": "2026.02.02",
+  "total_solved": 270,
+  "updated_at": "2026.02.03",
   "problems": [
     {
       "id": 1,
@@ -4002,6 +4002,19 @@
         "2026.02.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/"
+    },
+    {
+      "id": 3637,
+      "title": "三段式数组 I",
+      "title_slug": "trionic-array-i",
+      "difficulty": "简单",
+      "tags": [
+        "数组"
+      ],
+      "solved_dates": [
+        "2026.02.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/trionic-array-i/"
     }
   ]
 }

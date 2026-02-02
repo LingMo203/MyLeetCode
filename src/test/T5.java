@@ -30,7 +30,8 @@ public class T5 {
         //System.out.println(Arrays.deepToString(t5.generateMatrix(3)));
         //System.out.println(t5.minimumAbsDifference(nums));
         //System.out.println(t5.nextGreatestLetter(chars,'j'));
-        System.out.println(t5.firstMissingPositive(new int[]{1,1,1,1,1,1,1,1,1}));
+        //System.out.println(t5.firstMissingPositive(new int[]{1,1,1,1,1,1,1,1,1}));
+        System.out.println(t5.isTrionic(new int[]{1,3,5,4,2,6}));
     }
 
     //287. 寻找重复数
@@ -639,6 +640,25 @@ public class T5 {
             return a.compareTo(b);
         });
         return nums[nums.length - k];
+    }
+
+    //3637. 三段式数组 I
+    public boolean isTrionic(int[] nums) {
+        int i = 1, start = 0, n = nums.length;
+        for (; i < n; i++) {
+            if (nums[i - 1] >= nums[i]) break;
+        }
+        if (i >= n || i - 1 == 0) return false;
+        start = i - 1;
+        for (; i < n; i++) {
+            if (nums[i - 1] <= nums[i]) break;
+        }
+        if (i >= n || i - 1 - start == 0) return false;
+        start = i - 1;
+        for (; i < n; i++) {
+            if (nums[i - 1] >= nums[i]) break;
+        }
+        return i >= n && i - 1 - start > 0;
     }
 
 
