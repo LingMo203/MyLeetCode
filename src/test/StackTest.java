@@ -16,7 +16,8 @@ public class StackTest {
         //System.out.println(Arrays.toString(st.maxSlidingWindow(nums, 3)));
         //System.out.println(st.maxResult(nums,2));
         //System.out.println(st.decodeString(str));
-        System.out.println(st.largestRectangleArea(nums));
+        //System.out.println(st.largestRectangleArea(nums));
+        System.out.println(Arrays.toString(st.nextGreaterElements(new int[]{1,2,3,4,3})));
     }
 
 
@@ -197,6 +198,36 @@ public class StackTest {
                 matrixNums[i][j]=num;
             }
             res=Math.max(res,largestRectangleArea(matrixNums[i]));
+        }
+        return res;
+    }
+
+
+    //503. 下一个更大元素 II
+    public int[] nextGreaterElements(int[] nums) {
+        int n = nums.length, count = 0, max = Integer.MIN_VALUE;
+        int[] res = new int[n];
+        for (int num : nums) max = Math.max(max, num);
+        boolean[] vis = new boolean[n];
+        Deque<Integer> deque = new ArrayDeque<>();
+        for (int i = 0; count < n; i++) {
+            if (i >= n) i = 0;
+            int num = nums[i];
+            while (!deque.isEmpty() && nums[deque.getLast()] < num) {
+                int remove = deque.removeLast();
+                if (vis[remove]) continue;
+                res[remove] = num;
+                vis[remove] = true;
+                count++;
+            }
+            if (num == max) {
+                if (vis[i]) continue;
+                res[i] = -1;
+                count++;
+                vis[i] = true;
+                continue;
+            }
+            deque.addLast(i);
         }
         return res;
     }

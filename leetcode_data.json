@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 270,
+  "total_solved": 271,
   "updated_at": "2026.02.03",
   "problems": [
     {
@@ -3775,7 +3775,7 @@
       "title": "移除前缀使数组严格递增",
       "title_slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
       "difficulty": "中等",
-      "tags": [],
+      "tags": ["数组"],
       "solved_dates": [
         "2026.01.25"
       ],
@@ -4015,6 +4015,21 @@
         "2026.02.03"
       ],
       "leetcode_url": "https://leetcode.cn/problems/trionic-array-i/"
+    },
+    {
+      "id": 503,
+      "title": "下一个更大元素 II",
+      "title_slug": "next-greater-element-ii",
+      "difficulty": "中等",
+      "tags": [
+        "栈",
+        "数组",
+        "单调栈"
+      ],
+      "solved_dates": [
+        "2026.02.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/next-greater-element-ii/"
     }
   ]
 }

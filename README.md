@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：270**  
+**总题数：271**  
 🟢 简单：108  
-🟡 中等：146  
+🟡 中等：147  
 🔴 困难：16
 
 
@@ -17,18 +17,18 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x127
+- **数组** x129
 - **哈希表** x52
 - **字符串** x47
 - **树** x35
 - **二叉树** x34
 - **链表** x31
 - **矩阵** x23
-- **栈** x19
+- **栈** x20
 - **并查集** x10
 - **堆（优先队列）** x9
 - **图** x6
-- **单调栈** x4
+- **单调栈** x5
 - **队列** x3
 - **字典树** x3
 - **单调队列** x2
@@ -246,6 +246,7 @@
 | 462 | [最小操作次数使数组元素相等 II](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/) | 🟡 中等 | 数组、数学、排序 | 2025.12.12 |
 | 485 | [最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/) | 🟢 简单 | 数组 | 2025.12.01 |
 | 491 | [非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/) | 🟡 中等 | 位运算、数组、哈希表、回溯 | 2026.01.08 |
+| 503 | [下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) | 🟡 中等 | 栈、数组、单调栈 | 2026.02.03 |
 | 509 | [斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | 🟢 简单 | 递归、记忆化搜索、数学、动态规划 | 2025.11.22 |
 | 515 | [在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.22 |
 | 541 | [反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
@@ -323,7 +324,7 @@
 | 3809 | [最好可到达的塔](https://leetcode.cn/problems/best-reachable-tower/) | 🟡 中等 |  | 2026.01.17 |
 | 3810 | [变成目标数组的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-reach-target-array/) | 🟡 中等 |  | 2026.01.17 |
 | 3813 | [元音辅音得分](https://leetcode.cn/problems/vowel-consonant-score/) | 🟢 简单 |  | 2026.01.18 |
-| 3818 | [移除前缀使数组严格递增](https://leetcode.cn/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | 🟡 中等 |  | 2026.01.25 |
+| 3818 | [移除前缀使数组严格递增](https://leetcode.cn/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | 🟡 中等 | 数组 | 2026.01.25 |
 | 3819 | [非负元素轮替](https://leetcode.cn/problems/rotate-non-negative-elements/) | 🟡 中等 |  | 2026.01.25 |
 | 3820 | [树上的勾股距离节点](https://leetcode.cn/problems/pythagorean-distance-nodes-in-a-tree/) | 🟡 中等 |  | 2026.01.25 |
 | 3823 | [反转一个字符串里的字母后反转特殊字符](https://leetcode.cn/problems/reverse-letters-then-special-characters-in-a-string/) | 🟢 简单 |  | 2026.01.31 |
@@ -337,8 +338,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-03 01:01:15
-- **总题目数**：270
+- **最后更新**：2026-02-03 02:04:54
+- **总题目数**：271
 - **技能标签数**：47
 
 > 🤖 本页面由自动化脚本生成
