@@ -29,7 +29,8 @@ public class BackTrack {
         //System.out.println(bt.countNumbersWithUniqueDigits(2));
 //        bt.solveSudoku(board);
 //        System.out.println(T4.isValidSudoku(board));
-        System.out.println(bt.exist(charArray2,str));
+        //System.out.println(bt.exist(charArray2,str));
+        System.out.println(bt.rotatedDigits(10));
     }
 
 
@@ -556,6 +557,27 @@ public class BackTrack {
         return false;
     }
 
+    //788. 旋转数字
+    public int rotatedDigits(int n) {
+        int[] path = {0, 0};
+        int[] res = {0};
+        int[] vis = {2, 5, 6, 9, 1, 8, 0};
+        backRotatedDigits(res, path, n, vis);
+        return res[0];
+    }
+    public void backRotatedDigits(int[] res, int[] path, int n, int[] vis) {
+        for (int num : vis) {
+            if (path[0] * 10 + num > n) continue;
+            if (num == 2 || num == 5 || num == 6 || num == 9) path[1]++;
+            path[0] = path[0] * 10 + num;
+            if (path[0] == 0) return;
+            if (path[1] > 0) res[0]++;
+            backRotatedDigits(res, path, n, vis);
+            int a = path[0] % 10;
+            if (a == 2 || a == 5 || a == 6 || a == 9) path[1]--;
+            path[0] /= 10;
+        }
+    }
 
 
 }

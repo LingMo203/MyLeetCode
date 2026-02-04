@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 273,
+  "total_solved": 274,
   "updated_at": "2026.02.05",
   "problems": [
     {
@@ -4088,6 +4088,21 @@
         "2026.02.05"
       ],
       "leetcode_url": "https://leetcode.cn/problems/rotate-function/"
+    },
+    {
+      "id": 788,
+      "title": "旋转数字",
+      "title_slug": "rotated-digits",
+      "difficulty": "中等",
+      "tags": [
+        "数学",
+        "动态规划",
+        "回溯（自添加标签）"
+      ],
+      "solved_dates": [
+        "2026.02.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/rotated-digits/"
     }
   ]
 }
