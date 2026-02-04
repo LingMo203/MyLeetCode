@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：272**  
+**总题数：273**  
 🟢 简单：109  
-🟡 中等：147  
+🟡 中等：148  
 🔴 困难：16
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x133
+- **数组** x134
 - **哈希表** x54
 - **字符串** x48
 - **树** x36
@@ -35,11 +35,11 @@
 
 ### ⚡ 算法
 - **双指针** x47
-- **数学** x46
+- **数学** x47
 - **深度优先搜索** x40
 - **排序** x36
 - **广度优先搜索** x32
-- **动态规划** x23
+- **动态规划** x24
 - **二分查找** x22
 - **回溯** x20
 - **贪心** x18
@@ -234,6 +234,7 @@
 | 389 | [找不同](https://leetcode.cn/problems/find-the-difference/) | 🟢 简单 | 位运算、哈希表、字符串、排序 | 2025.10.29 |
 | 392 | [判断子序列](https://leetcode.cn/problems/is-subsequence/) | 🟢 简单 | 双指针、字符串、动态规划 | 2025.11.05 |
 | 394 | [字符串解码](https://leetcode.cn/problems/decode-string/) | 🟡 中等 | 栈、递归、字符串 | 2025.12.26 |
+| 396 | [旋转函数](https://leetcode.cn/problems/rotate-function/) | 🟡 中等 | 数组、数学、动态规划 | 2026.02.05 |
 | 412 | [Fizz Buzz](https://leetcode.cn/problems/fizz-buzz/) | 🟢 简单 | 数学、字符串、模拟 | 2025.12.01 |
 | 414 | [第三大的数](https://leetcode.cn/problems/third-maximum-number/) | 🟢 简单 | 数组、排序 | 2025.12.01 |
 | 415 | [字符串相加](https://leetcode.cn/problems/add-strings/) | 🟢 简单 | 数学、字符串、模拟 | 2025.12.27 |
@@ -339,8 +340,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-05 00:37:33
-- **总题目数**：272
+- **最后更新**：2026-02-05 01:25:35
+- **总题目数**：273
 - **技能标签数**：49
 
 > 🤖 本页面由自动化脚本生成

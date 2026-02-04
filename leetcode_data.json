@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 272,
+  "total_solved": 273,
   "updated_at": "2026.02.05",
   "problems": [
     {
@@ -4073,6 +4073,21 @@
         "2026.02.05"
       ],
       "leetcode_url": "https://leetcode.cn/problems/transformed-array/"
+    },
+    {
+      "id": 396,
+      "title": "旋转函数",
+      "title_slug": "rotate-function",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "数学",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.02.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/rotate-function/"
     }
   ]
 }

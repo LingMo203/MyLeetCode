@@ -28,7 +28,8 @@ public class DynamicProgramming {
         //System.out.println(dp.maxSubArray(nums));
         //System.out.println(dp.jump(nums));
         //System.out.println(dp.minPathSum(dnums));
-        System.out.println(dp.minimumTotal(list));
+        //System.out.println(dp.minimumTotal(list));
+        System.out.println(dp.maxRotateFunction(new int[]{4,3,2,6}));
     }
 
 
@@ -300,7 +301,20 @@ public class DynamicProgramming {
         return min;
     }
 
-
+    //396. 旋转函数
+    public int maxRotateFunction(int[] nums) {
+        int n = nums.length, sum = 0, fn = 0, res;
+        for (int i = 0; i < n; i++) {
+            sum += nums[i];
+            fn += nums[i] * i;
+        }
+        res = fn;
+        for (int i = n - 1; i > 0; i--) {
+            fn += sum - nums[i] * n;
+            res = Math.max(res, fn);
+        }
+        return res;
+    }
 
 
 
