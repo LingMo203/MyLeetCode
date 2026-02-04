@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 271,
-  "updated_at": "2026.02.03",
+  "total_solved": 272,
+  "updated_at": "2026.02.05",
   "problems": [
     {
       "id": 1,
@@ -3687,7 +3687,11 @@
       "title": "变成目标数组的最少操作次数",
       "title_slug": "minimum-operations-to-reach-target-array",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "贪心",
+        "数组",
+        "哈希表"
+      ],
       "solved_dates": [
         "2026.01.17"
       ],
@@ -3775,7 +3779,9 @@
       "title": "移除前缀使数组严格递增",
       "title_slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
       "difficulty": "中等",
-      "tags": ["数组"],
+      "tags": [
+        "数组"
+      ],
       "solved_dates": [
         "2026.01.25"
       ],
@@ -3797,7 +3803,10 @@
       "title": "树上的勾股距离节点",
       "title_slug": "pythagorean-distance-nodes-in-a-tree",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "树",
+        "广度优先搜索"
+      ],
       "solved_dates": [
         "2026.01.25"
       ],
@@ -3836,7 +3845,11 @@
       "title": "反转一个字符串里的字母后反转特殊字符",
       "title_slug": "reverse-letters-then-special-characters-in-a-string",
       "difficulty": "简单",
-      "tags": [],
+      "tags": [
+        "双指针",
+        "字符串",
+        "模拟"
+      ],
       "solved_dates": [
         "2026.01.31"
       ],
@@ -3847,7 +3860,10 @@
       "title": "减小数组使其满足条件的最小 K 值",
       "title_slug": "minimum-k-to-reduce-array-within-limit",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "数组",
+        "二分查找"
+      ],
       "solved_dates": [
         "2026.01.31"
       ],
@@ -3873,7 +3889,10 @@
       "title": "统计单比特整数",
       "title_slug": "count-monobit-integers",
       "difficulty": "简单",
-      "tags": [],
+      "tags": [
+        "位运算",
+        "枚举"
+      ],
       "solved_dates": [
         "2026.02.01"
       ],
@@ -3884,7 +3903,12 @@
       "title": "删除子数组后的最终元素",
       "title_slug": "final-element-after-subarray-deletions",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "脑筋急转弯",
+        "数组",
+        "数学",
+        "博弈"
+      ],
       "solved_dates": [
         "2026.02.01"
       ],
@@ -3895,7 +3919,12 @@
       "title": "设计共享出行系统",
       "title_slug": "design-ride-sharing-system",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "设计",
+        "队列",
+        "哈希表",
+        "数据流"
+      ],
       "solved_dates": [
         "2026.02.01"
       ],
@@ -4030,6 +4059,20 @@
         "2026.02.03"
       ],
       "leetcode_url": "https://leetcode.cn/problems/next-greater-element-ii/"
+    },
+    {
+      "id": 3379,
+      "title": "转换数组",
+      "title_slug": "transformed-array",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.02.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/transformed-array/"
     }
   ]
 }

@@ -31,7 +31,8 @@ public class T5 {
         //System.out.println(t5.minimumAbsDifference(nums));
         //System.out.println(t5.nextGreatestLetter(chars,'j'));
         //System.out.println(t5.firstMissingPositive(new int[]{1,1,1,1,1,1,1,1,1}));
-        System.out.println(t5.isTrionic(new int[]{1,3,5,4,2,6}));
+        //System.out.println(t5.isTrionic(new int[]{1,3,5,4,2,6}));
+        System.out.println(Arrays.toString(t5.constructTransformedArray(new int[]{-8})));
     }
 
     //287. 寻找重复数
@@ -659,6 +660,22 @@ public class T5 {
             if (nums[i - 1] >= nums[i]) break;
         }
         return i >= n && i - 1 - start > 0;
+    }
+
+    //3379. 转换数组
+    public int[] constructTransformedArray(int[] nums) {
+        int n = nums.length;
+        int[] res = new int[n];
+        for (int i = 0; i < n; i++) {
+            int num = nums[i], j = i;
+            if (num > 0) j = (i + num) % n;
+            else if (num < 0) {
+                j = (i + num);
+                while (j < 0) j += n;
+            }
+            res[i] = nums[j];
+        }
+        return res;
     }
 
 
