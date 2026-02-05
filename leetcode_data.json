@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 276,
+  "total_solved": 277,
   "updated_at": "2026.02.06",
   "problems": [
     {
@@ -3676,7 +3676,7 @@
       "title": "最好可到达的塔",
       "title_slug": "best-reachable-tower",
       "difficulty": "中等",
-      "tags": [],
+      "tags": ["数组"],
       "solved_dates": [
         "2026.01.17"
       ],
@@ -3718,7 +3718,10 @@
       "title": "元音辅音得分",
       "title_slug": "vowel-consonant-score",
       "difficulty": "简单",
-      "tags": [],
+      "tags": [
+        "字符串",
+        "模拟"
+      ],
       "solved_dates": [
         "2026.01.18"
       ],
@@ -4132,6 +4135,21 @@
         "2026.02.06"
       ],
       "leetcode_url": "https://leetcode.cn/problems/merge-intervals/"
+    },
+    {
+      "id": 22,
+      "title": "括号生成",
+      "title_slug": "generate-parentheses",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "动态规划",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.02.06"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/generate-parentheses/"
     }
   ]
 }

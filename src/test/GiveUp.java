@@ -138,33 +138,6 @@ public class GiveUp {
     }
 
 
-    //22. 括号生成(放弃)
-    public List<String> generateParenthesis(int n) {
-        List<String> res=new ArrayList<>();
-        StringBuilder path=new StringBuilder();
-        int[] time={n*2,n*2};
-        backGenerateParenthesis(res,path,time,n*2);
-        return res;
-    }
-    public void backGenerateParenthesis(List<String> res,StringBuilder path,int[] time,int n){
-        if (path.length()==n){
-            res.add(path.toString());
-            return;
-        }
-        for (int i=0;i<=n;i++){
-            char c=i%2==1?'(':')';
-            int index=c=='('?0:1;
-            int count=time[index];
-            if (count<=1) continue;
-            path.append(c);
-            time[index]--;
-            backGenerateParenthesis(res, path, time, n);
-            int delI=path.charAt(path.length()-1)=='('?0:1;
-            path.deleteCharAt(path.length()-1);
-            time[delI]++;
-        }
-    }
-
     //480. 滑动窗口中位数 (超时放弃)
     public double[] medianSlidingWindow(int[] nums, int k) {
         MedianFinder medianFinder=new MedianFinder();

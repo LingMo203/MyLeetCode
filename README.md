@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：276**  
+**总题数：277**  
 🟢 简单：109  
-🟡 中等：151  
+🟡 中等：152  
 🔴 困难：16
 
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x136
+- **数组** x137
 - **哈希表** x54
-- **字符串** x48
+- **字符串** x50
 - **树** x36
 - **二叉树** x34
 - **链表** x31
@@ -39,15 +39,15 @@
 - **深度优先搜索** x40
 - **排序** x38
 - **广度优先搜索** x32
-- **动态规划** x25
+- **动态规划** x26
 - **二分查找** x22
-- **回溯** x20
+- **回溯** x21
 - **贪心** x18
 - **递归** x16
 - **位运算** x14
 - **滑动窗口** x10
 - **分治** x10
-- **模拟** x9
+- **模拟** x10
 - **设计** x8
 - **枚举** x4
 - **快速选择** x3
@@ -80,6 +80,7 @@
 | 19 | [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | 🟡 中等 | 链表、双指针 | 2025.11.12 |
 | 20 | [有效的括号](https://leetcode.cn/problems/valid-parentheses/) | 🟢 简单 | 栈、字符串 | 2025.10.20 |
 | 21 | [合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) | 🟢 简单 | 递归、链表 | 2025.11.12 |
+| 22 | [括号生成](https://leetcode.cn/problems/generate-parentheses/) | 🟡 中等 | 字符串、动态规划、回溯 | 2026.02.06 |
 | 23 | [合并 K 个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/) | 🔴 困难 | 链表、分治、堆（优先队列）、归并排序 | 2025.12.31 |
 | 24 | [两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/) | 🟡 中等 | 递归、链表 | 2025.11.14 |
 | 25 | [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | 🔴 困难 | 递归、链表 | 2025.12.31 |
@@ -326,9 +327,9 @@
 | 3803 | [统计残差前缀](https://leetcode.cn/problems/count-residue-prefixes/) | 🟢 简单 | 哈希表、字符串 | 2026.01.11 |
 | 3804 | [中心子数组的数量](https://leetcode.cn/problems/number-of-centered-subarrays/) | 🟡 中等 | 数组、哈希表、枚举 | 2026.01.11 |
 | 3805 | [统计凯撒加密对数目](https://leetcode.cn/problems/count-caesar-cipher-pairs/) | 🟡 中等 | 数组、哈希表、数学、字符串、计数 | 2026.01.11 |
-| 3809 | [最好可到达的塔](https://leetcode.cn/problems/best-reachable-tower/) | 🟡 中等 |  | 2026.01.17 |
+| 3809 | [最好可到达的塔](https://leetcode.cn/problems/best-reachable-tower/) | 🟡 中等 | 数组 | 2026.01.17 |
 | 3810 | [变成目标数组的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-reach-target-array/) | 🟡 中等 | 贪心、数组、哈希表 | 2026.01.17 |
-| 3813 | [元音辅音得分](https://leetcode.cn/problems/vowel-consonant-score/) | 🟢 简单 |  | 2026.01.18 |
+| 3813 | [元音辅音得分](https://leetcode.cn/problems/vowel-consonant-score/) | 🟢 简单 | 字符串、模拟 | 2026.01.18 |
 | 3818 | [移除前缀使数组严格递增](https://leetcode.cn/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | 🟡 中等 | 数组 | 2026.01.25 |
 | 3819 | [非负元素轮替](https://leetcode.cn/problems/rotate-non-negative-elements/) | 🟡 中等 |  | 2026.01.25 |
 | 3820 | [树上的勾股距离节点](https://leetcode.cn/problems/pythagorean-distance-nodes-in-a-tree/) | 🟡 中等 | 树、广度优先搜索 | 2026.01.25 |
@@ -343,8 +344,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-06 02:05:15
-- **总题目数**：276
+- **最后更新**：2026-02-06 02:45:21
+- **总题目数**：277
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成

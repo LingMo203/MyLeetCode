@@ -30,7 +30,8 @@ public class BackTrack {
 //        bt.solveSudoku(board);
 //        System.out.println(T4.isValidSudoku(board));
         //System.out.println(bt.exist(charArray2,str));
-        System.out.println(bt.rotatedDigits(10));
+        //System.out.println(bt.rotatedDigits(10));
+        System.out.println(bt.generateParenthesis(8));
     }
 
 
@@ -575,6 +576,41 @@ public class BackTrack {
             backRotatedDigits(res, path, n, vis);
             int a = path[0] % 10;
             if (a == 2 || a == 5 || a == 6 || a == 9) path[1]--;
+            path[0] /= 10;
+        }
+    }
+
+
+    //22. 括号生成
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
+        int[] vis = {n, n - 1};
+        HashSet<Long> hashSet = new HashSet<>();
+        long[] path = {1, 1};
+        backGenerateParenthesis(res, path, vis, n * 2, hashSet);
+        return res;
+    }
+    public void backGenerateParenthesis(List<String> res, long[] path, int[] vis, int n, HashSet<Long> hashSet) {
+        if (path[1] == n) {
+            if (hashSet.contains(path[0])) return;
+            hashSet.add(path[0]);
+            StringBuilder sb = new StringBuilder();
+            long num = path[0];
+            while (num > 0) {
+                sb.append(num % 10 == 1 ? '(' : ')');
+                num /= 10;
+            }
+            res.add(sb.reverse().toString());
+            return;
+        }
+        for (int i = 0; i < 2; i++) {
+            if (vis[i] <= 0 || (vis[1] >= vis[0] && i == 0)) continue;
+            path[0] = path[0] * 10 + i;
+            path[1]++;
+            vis[i]--;
+            backGenerateParenthesis(res, path, vis, n, hashSet);
+            path[1]--;
+            vis[Math.toIntExact(path[0] % 10)]++;
             path[0] /= 10;
         }
     }
