@@ -1,0 +1,67 @@
+package test;
+
+import util.ArrayStringUtils;
+
+import java.util.*;
+
+public class T6 {
+    public static void main(String[] args) {
+        T6 t6 = new T6();
+        int[] nums1 = {4, 2, 1, 3};
+        int[] nums2 = {1, -2, 3, -4};
+        int[] nums3 = {5, 4, 3, 4, 2};
+        String strGrid = "[[0,1],[0,2],[0,3]]";
+        int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
+        String str = "AB";
+        String str2 = "cae";
+        String[] strs = {"flower", "flow", "flight"};
+        char[] chars = {'c', 'f', 'j'};
+
+    }
+
+    //56. 合并区间
+    public int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        ArrayList<int[]> list = new ArrayList<>();
+        list.add(new int[]{intervals[0][0], intervals[0][1]});
+        for (int i = 1; i < intervals.length; i++) {
+            int left = intervals[i][0], right = intervals[i][1];
+            int max = list.get(list.size() - 1)[1];
+            if (left <= max) {
+                if (right > max) list.get(list.size() - 1)[1] = right;
+            } else list.add(new int[]{left, right});
+        }
+        int[][] res = new int[list.size()][2];
+        for (int i = 0; i < res.length; i++) {
+            res[i] = list.get(i);
+        }
+        return res;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：275**  
+**总题数：276**  
 🟢 简单：109  
-🟡 中等：150  
+🟡 中等：151  
 🔴 困难：16
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x135
+- **数组** x136
 - **哈希表** x54
 - **字符串** x48
 - **树** x36
@@ -37,7 +37,7 @@
 - **数学** x48
 - **双指针** x47
 - **深度优先搜索** x40
-- **排序** x37
+- **排序** x38
 - **广度优先搜索** x32
 - **动态规划** x25
 - **二分查找** x22
@@ -108,6 +108,7 @@
 | 53 | [最大子数组和](https://leetcode.cn/problems/maximum-subarray/) | 🟡 中等 | 数组、分治、动态规划 | 2025.12.05 |
 | 54 | [螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) | 🟡 中等 | 数组、矩阵、模拟 | 2026.01.01 |
 | 55 | [跳跃游戏](https://leetcode.cn/problems/jump-game/) | 🟡 中等 | 贪心、数组、动态规划 | 2025.12.01 |
+| 56 | [合并区间](https://leetcode.cn/problems/merge-intervals/) | 🟡 中等 | 数组、排序 | 2026.02.06 |
 | 58 | [最后一个单词的长度](https://leetcode.cn/problems/length-of-last-word/) | 🟢 简单 | 字符串 | 2025.12.16 |
 | 59 | [螺旋矩阵 II](https://leetcode.cn/problems/spiral-matrix-ii/) | 🟡 中等 | 数组、矩阵、模拟 | 2026.01.10 |
 | 60 | [排列序列](https://leetcode.cn/problems/permutation-sequence/) | 🔴 困难 | 递归、数学 | 2026.01.06 |
@@ -342,8 +343,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-06 01:38:05
-- **总题目数**：275
+- **最后更新**：2026-02-06 02:05:15
+- **总题目数**：276
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成

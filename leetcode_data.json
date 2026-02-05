@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 275,
+  "total_solved": 276,
   "updated_at": "2026.02.06",
   "problems": [
     {
@@ -4118,6 +4118,20 @@
         "2026.02.06"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-removals-to-balance-array/"
+    },
+    {
+      "id": 56,
+      "title": "合并区间",
+      "title_slug": "merge-intervals",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.02.06"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/merge-intervals/"
     }
   ]
 }

@@ -7,36 +7,37 @@ public class GiveUp {
 
     }
 
-
-
-
-    //56. 合并区间 放弃
-    public int[][] merge(int[][] intervals) {
-        ArrayList<int[]> list=new ArrayList<>();
-        list.add(intervals[0]);
-        for (int i=1;i<intervals.length;i++){
-            int left=intervals[i][0];
-            int right=intervals[i][1];
-            for (int[] ints : list) {
-                int kleft = ints[0];
-                int kright = ints[1];
-                if (left-1>kright||right+1<kleft){
-                    list.add(new int[]{left,right});
-                    break;
-                }else if (left>=kleft&&right<=kright){
-                    break;
-                }else {
-                    list.remove(ints);
-                    list.add(new int[]{Math.min(left,kleft),Math.max(right,kright)});
-                    break;
-                }
+    //1631. 最小体力消耗路径 超时放弃
+    public int minimumEffortPath(int[][] heights) {
+        if (heights.length==1&&heights[0].length==1) return 0;
+        int[] res={Integer.MAX_VALUE};
+        ArrayList<int[]> path=new ArrayList<>();
+        boolean[][] visit=new boolean[heights.length][heights[0].length];
+        visit[0][0]=true;
+        dfsMinimumEffortPath(res,path,heights,0,0,visit);
+        return res[0];
+    }
+    public void dfsMinimumEffortPath(int[] res,ArrayList<int[]> path,int[][] heights,int x,int y,boolean[][] visit){
+        if (x==heights.length-1&&y==heights[0].length-1){
+            int max=-1,last=heights[0][0];
+            for (int[] dir:path){
+                int num=heights[dir[0]][dir[1]];
+                max=Math.max(max,Math.abs(last-num));
+                last=num;
             }
+            res[0]=Math.min(res[0],max);
+            return;
         }
-        int[][] result=new int[list.size()][2];
-        for (int i=0;i<result.length;i++){
-            result[i]=list.get(i);
+        final int[][] direction={{0,-1},{-1,0},{0,1},{1,0}};//四个方向 左 上 右 下
+        for (int[] dir:direction){
+            int nextX=x+dir[0],nextY=y+dir[1];
+            if (nextX<0||nextX>=heights.length||nextY<0||nextY>=heights[0].length||visit[nextX][nextY]) continue;
+            visit[nextX][nextY]=true;
+            path.add(new int[]{nextX,nextY});
+            dfsMinimumEffortPath(res, path, heights, nextX, nextY, visit);
+            int[] remove=path.remove(path.size()-1);
+            visit[remove[0]][remove[1]]=false;
         }
-        return result;
     }
 
 
@@ -161,6 +162,66 @@ public class GiveUp {
             int delI=path.charAt(path.length()-1)=='('?0:1;
             path.deleteCharAt(path.length()-1);
             time[delI]++;
+        }
+    }
+
+    //480. 滑动窗口中位数 (超时放弃)
+    public double[] medianSlidingWindow(int[] nums, int k) {
+        MedianFinder medianFinder=new MedianFinder();
+        double[] res=new double[nums.length-k+1];
+        for (int i = 0; i < k; i++) {
+            medianFinder.addNum(nums[i]);
+        }
+        res[0] = medianFinder.findMedian();
+        for (int i = k, j = 0; i <nums.length; i++, j++) {
+            medianFinder.remove(nums[j]);
+            medianFinder.addNum(nums[i]);
+            res[j+1]=medianFinder.findMedian();
+        }
+        return res;
+    }
+    class MedianFinder {
+
+        PriorityQueue<Integer> maxNum;
+        PriorityQueue<Integer> minNum;
+
+        public MedianFinder() {
+            maxNum = new PriorityQueue<>();
+            minNum = new PriorityQueue<>(Collections.reverseOrder());
+        }
+
+        public void addNum(int num) {
+            if (minNum.isEmpty() || num <= minNum.peek()) {
+                minNum.offer(num);
+                if (minNum.size() == maxNum.size() + 2) {
+                    maxNum.offer(minNum.poll());
+                }
+            } else {
+                maxNum.offer(num);
+                if (maxNum.size() == minNum.size() + 2) {
+                    minNum.offer(maxNum.poll());
+                }
+            }
+        }
+
+        public double findMedian() {
+            if (minNum.size() > maxNum.size()) return minNum.peek();
+            long a = (long) maxNum.peek() + (long) minNum.peek();
+            return (double) a / 2;
+        }
+
+        public void remove(int num) {
+            if (num <= minNum.peek()) {
+                minNum.remove(num);
+                if (minNum.size() < maxNum.size()) {
+                    minNum.add(maxNum.remove());
+                }
+            } else {
+                maxNum.remove(num);
+                if (minNum.size() - 1 > maxNum.size()) {
+                    maxNum.add(minNum.remove());
+                }
+            }
         }
     }
 }
