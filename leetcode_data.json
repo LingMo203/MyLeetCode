@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 274,
-  "updated_at": "2026.02.05",
+  "total_solved": 275,
+  "updated_at": "2026.02.06",
   "problems": [
     {
       "id": 1,
@@ -4103,6 +4103,21 @@
         "2026.02.05"
       ],
       "leetcode_url": "https://leetcode.cn/problems/rotated-digits/"
+    },
+    {
+      "id": 3634,
+      "title": "使数组平衡的最少移除数目",
+      "title_slug": "minimum-removals-to-balance-array",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "排序",
+        "滑动窗口"
+      ],
+      "solved_dates": [
+        "2026.02.06"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-removals-to-balance-array/"
     }
   ]
 }

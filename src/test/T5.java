@@ -32,7 +32,8 @@ public class T5 {
         //System.out.println(t5.nextGreatestLetter(chars,'j'));
         //System.out.println(t5.firstMissingPositive(new int[]{1,1,1,1,1,1,1,1,1}));
         //System.out.println(t5.isTrionic(new int[]{1,3,5,4,2,6}));
-        System.out.println(Arrays.toString(t5.constructTransformedArray(new int[]{-8})));
+        //System.out.println(Arrays.toString(t5.constructTransformedArray(new int[]{-8})));
+        System.out.println(t5.minRemoval(new int[]{410,410}, 1));
     }
 
     //287. 寻找重复数
@@ -678,6 +679,57 @@ public class T5 {
         return res;
     }
 
+    //3634. 使数组平衡的最少移除数目
+    //优质
+    public int minRemoval(int[] nums, int k) {
+        int n = nums.length, res = Integer.MAX_VALUE;
+        if (n == 1) return 0;
+        Arrays.sort(nums);
+        for (int left = 0, right = 0; left < n; left++) {
+            long target = (long) nums[left] * k;
+            for (; right < n && nums[right] <= target; right++) {
+            }
+            res = Math.min(res, n - (right - left));
+        }
+        return res == Integer.MAX_VALUE ? n - 1 : res;
+    }
+    //劣质
+    public int minRemoval2(int[] nums, int k) {
+        int res = Integer.MAX_VALUE, n = nums.length;
+        if (n == 1) return 0;
+        Arrays.sort(nums);
+        for (int i = 0; i < n; i++) {
+            long target = (long) nums[i] * k;
+            int left = i, right = n - 1, mid = (right - left) / 2 + left;
+            boolean f = false;
+            while (left<=right){
+                mid = (right - left) / 2 + left;
+                if (nums[mid] < target){
+                    left = mid + 1;
+                }else if (nums[mid] > target){
+                    right = mid - 1;
+                }else {
+                    f = true;
+                    while (mid < n && nums[mid] == target){
+                        mid++;
+                    }
+                    mid--;
+                    break;
+                }
+            }
+            if (f) {
+                res = Math.min(res, i + n - mid - 1);
+                continue;
+            }
+            if (left > 0 && left < n){
+                if (nums[left] < target) res = Math.min(res, i + n - left - 1);
+            }
+            if (right > 0 && right < n){
+                if (nums[right] < target) res = Math.min(res, i + n - right - 1);
+            }
+        }
+        return res == Integer.MAX_VALUE ? n - 1 : res;
+    }
 
 
 }

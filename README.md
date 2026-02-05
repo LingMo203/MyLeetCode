@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：274**  
+**总题数：275**  
 🟢 简单：109  
-🟡 中等：149  
+🟡 中等：150  
 🔴 困难：16
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x134
+- **数组** x135
 - **哈希表** x54
 - **字符串** x48
 - **树** x36
@@ -37,7 +37,7 @@
 - **数学** x48
 - **双指针** x47
 - **深度优先搜索** x40
-- **排序** x36
+- **排序** x37
 - **广度优先搜索** x32
 - **动态规划** x25
 - **二分查找** x22
@@ -45,8 +45,8 @@
 - **贪心** x18
 - **递归** x16
 - **位运算** x14
+- **滑动窗口** x10
 - **分治** x10
-- **滑动窗口** x9
 - **模拟** x9
 - **设计** x8
 - **枚举** x4
@@ -317,6 +317,7 @@
 | 3379 | [转换数组](https://leetcode.cn/problems/transformed-array/) | 🟢 简单 | 数组、模拟 | 2026.02.05 |
 | 3507 | [移除最小数对使数组有序 I](https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/) | 🟢 简单 | 数组、哈希表、链表、双向链表、有序集合、模拟、堆（优先队列） | 2026.01.22 |
 | 3619 | [总价值可以被 K 整除的岛屿数目](https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
+| 3634 | [使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) | 🟡 中等 | 数组、排序、滑动窗口 | 2026.02.06 |
 | 3637 | [三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) | 🟢 简单 | 数组 | 2026.02.03 |
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
 | 3795 | [不同元素和至少为 K 的最短子数组长度](https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | 🟡 中等 | 数组、哈希表、滑动窗口 | 2026.01.03 |
@@ -341,8 +342,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-05 02:26:35
-- **总题目数**：274
+- **最后更新**：2026-02-06 01:38:05
+- **总题目数**：275
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成
