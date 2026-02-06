@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 278,
+  "total_solved": 281,
   "updated_at": "2026.02.07",
   "problems": [
     {
@@ -4167,6 +4167,49 @@
         "2026.02.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/"
+    },
+    {
+      "id": 1929,
+      "title": "数组串联",
+      "title_slug": "concatenation-of-array",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/concatenation-of-array/"
+    },
+    {
+      "id": 1470,
+      "title": "重新排列数组",
+      "title_slug": "shuffle-the-array",
+      "difficulty": "简单",
+      "tags": [
+        "数组"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/shuffle-the-array/"
+    },
+    {
+      "id": 1365,
+      "title": "有多少小于当前数字的数字",
+      "title_slug": "how-many-numbers-are-smaller-than-the-current-number",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "哈希表",
+        "计数排序",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/"
     }
   ]
 }

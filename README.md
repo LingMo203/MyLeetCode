@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：278**  
-🟢 简单：109  
+**总题数：281**  
+🟢 简单：112  
 🟡 中等：153  
 🔴 困难：16
 
@@ -17,8 +17,8 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x137
-- **哈希表** x54
+- **数组** x140
+- **哈希表** x55
 - **字符串** x51
 - **树** x36
 - **二叉树** x34
@@ -37,7 +37,7 @@
 - **数学** x48
 - **双指针** x47
 - **深度优先搜索** x40
-- **排序** x38
+- **排序** x39
 - **广度优先搜索** x32
 - **动态规划** x27
 - **二分查找** x22
@@ -45,9 +45,9 @@
 - **贪心** x18
 - **递归** x16
 - **位运算** x14
+- **模拟** x11
 - **滑动窗口** x10
 - **分治** x10
-- **模拟** x10
 - **设计** x8
 - **枚举** x4
 - **快速选择** x3
@@ -295,7 +295,9 @@
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
 | 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
 | 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
+| 1365 | [有多少小于当前数字的数字](https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/) | 🟢 简单 | 数组、哈希表、计数排序、排序 | 2026.02.07 |
 | 1390 | [四因数](https://leetcode.cn/problems/four-divisors/) | 🟡 中等 | 数组、数学 | 2026.01.04 |
+| 1470 | [重新排列数组](https://leetcode.cn/problems/shuffle-the-array/) | 🟢 简单 | 数组 | 2026.02.07 |
 | 1523 | [在区间范围内统计奇数数目](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) | 🟢 简单 | 数学 | 2025.12.07 |
 | 1653 | [使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) | 🟡 中等 | 栈、字符串、动态规划 | 2026.02.07 |
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
@@ -304,6 +306,7 @@
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 1925 | [统计平方和三元组的数目](https://leetcode.cn/problems/count-square-sum-triples/) | 🟢 简单 | 数学、枚举 | 2025.12.08 |
+| 1929 | [数组串联](https://leetcode.cn/problems/concatenation-of-array/) | 🟢 简单 | 数组、模拟 | 2026.02.07 |
 | 1984 | [学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | 🟢 简单 | 数组、排序、滑动窗口 | 2026.01.25 |
 | 1985 | [找出数组中的第 K 大整数](https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/) | 🟡 中等 | 数组、字符串、分治、快速选择、排序、堆（优先队列） | 2026.02.02 |
 | 1992 | [找到所有的农场组](https://leetcode.cn/problems/find-all-groups-of-farmland/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.01.12 |
@@ -345,8 +348,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-07 00:35:55
-- **总题目数**：278
+- **最后更新**：2026-02-07 01:08:08
+- **总题目数**：281
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成
