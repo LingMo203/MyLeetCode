@@ -9,7 +9,7 @@ public class StackTest {
     public static void main(String[] args) {
         StackTest st=new StackTest();
         int num=123;
-        int[] nums={2,1,5,6,2,3};
+        int[] nums={8,4,6,2,3};
         int[] nums2={2,1,2};
         String str="3[a]2[bc]";
         String str2="0";
@@ -17,7 +17,8 @@ public class StackTest {
         //System.out.println(st.maxResult(nums,2));
         //System.out.println(st.decodeString(str));
         //System.out.println(st.largestRectangleArea(nums));
-        System.out.println(Arrays.toString(st.nextGreaterElements(new int[]{1,2,3,4,3})));
+        //System.out.println(Arrays.toString(st.nextGreaterElements(new int[]{1,2,3,4,3})));
+        System.out.println(Arrays.toString(st.finalPrices(nums)));
     }
 
 
@@ -233,7 +234,25 @@ public class StackTest {
     }
 
 
-
+    //1475. 商品折扣后的最终价格
+    public int[] finalPrices(int[] prices) {
+        int n = prices.length;
+        int[] res = new int[n];
+        Deque<Integer> deque = new ArrayDeque<>();
+        for (int i = 0; i < n; i++) {
+            int num = prices[i];
+            while (!deque.isEmpty() && prices[deque.getFirst()] >= num) {
+                int remove = deque.removeFirst();
+                res[remove] = prices[remove] - num;
+            }
+            deque.addFirst(i);
+        }
+        while (!deque.isEmpty()) {
+            int remove = deque.removeFirst();
+            res[remove] = prices[remove];
+        }
+        return res;
+    }
 
 
 

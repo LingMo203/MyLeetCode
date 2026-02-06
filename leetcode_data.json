@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 283,
+  "total_solved": 284,
   "updated_at": "2026.02.07",
   "problems": [
     {
@@ -4239,6 +4239,21 @@
         "2026.02.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/exclusive-time-of-functions/"
+    },
+    {
+      "id": 1475,
+      "title": "商品折扣后的最终价格",
+      "title_slug": "final-prices-with-a-special-discount-in-a-shop",
+      "difficulty": "简单",
+      "tags": [
+        "栈",
+        "数组",
+        "单调栈"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/"
     }
   ]
 }
