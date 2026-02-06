@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：277**  
+**总题数：278**  
 🟢 简单：109  
-🟡 中等：152  
+🟡 中等：153  
 🔴 困难：16
 
 
@@ -19,12 +19,12 @@
 ### 🔥 数据结构
 - **数组** x137
 - **哈希表** x54
-- **字符串** x50
+- **字符串** x51
 - **树** x36
 - **二叉树** x34
 - **链表** x31
 - **矩阵** x23
-- **栈** x20
+- **栈** x21
 - **并查集** x10
 - **堆（优先队列）** x9
 - **图** x6
@@ -39,7 +39,7 @@
 - **深度优先搜索** x40
 - **排序** x38
 - **广度优先搜索** x32
-- **动态规划** x26
+- **动态规划** x27
 - **二分查找** x22
 - **回溯** x21
 - **贪心** x18
@@ -297,6 +297,7 @@
 | 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
 | 1390 | [四因数](https://leetcode.cn/problems/four-divisors/) | 🟡 中等 | 数组、数学 | 2026.01.04 |
 | 1523 | [在区间范围内统计奇数数目](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) | 🟢 简单 | 数学 | 2025.12.07 |
+| 1653 | [使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) | 🟡 中等 | 栈、字符串、动态规划 | 2026.02.07 |
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
@@ -344,8 +345,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-06 02:45:21
-- **总题目数**：277
+- **最后更新**：2026-02-07 00:35:55
+- **总题目数**：278
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成

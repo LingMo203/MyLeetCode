@@ -38,6 +38,25 @@ public class T6 {
         return res;
     }
 
+    //1653. 使字符串平衡的最少删除次数
+    public int minimumDeletions(String s) {
+        int n = s.length(), res = Integer.MAX_VALUE, aCount = 0, bCount = 0;
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == 'a') aCount++;
+        }
+        for (int i = 0; i < n; i++) {
+            int del = 0;
+            if (s.charAt(i) == 'a') {
+                aCount--;
+                del += aCount + bCount;
+            } else {
+                del += aCount + bCount;
+                bCount++;
+            }
+            res = Math.min(res, del);
+        }
+        return res == Integer.MAX_VALUE ? 0 : res;
+    }
 
 }
 
