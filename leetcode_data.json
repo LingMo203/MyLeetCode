@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 281,
+  "total_solved": 283,
   "updated_at": "2026.02.07",
   "problems": [
     {
@@ -4210,6 +4210,35 @@
         "2026.02.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/"
+    },
+    {
+      "id": 1441,
+      "title": "用栈操作构建数组",
+      "title_slug": "build-an-array-with-stack-operations",
+      "difficulty": "中等",
+      "tags": [
+        "栈",
+        "数组",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/build-an-array-with-stack-operations/"
+    },
+    {
+      "id": 636,
+      "title": "函数的独占时间",
+      "title_slug": "exclusive-time-of-functions",
+      "difficulty": "中等",
+      "tags": [
+        "栈",
+        "数组"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/exclusive-time-of-functions/"
     }
   ]
 }

@@ -16,9 +16,11 @@ public class T6 {
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String str = "AB";
         String str2 = "cae";
-        String[] strs = {"flower", "flow", "flight"};
+        String[] strs = {"0:start:0","0:start:2","0:end:5","1:start:6","1:end:6","0:end:7"};
+        String[] strs2 = {"0:start:0","1:start:2","1:end:5","0:end:6"};
         char[] chars = {'c', 'f', 'j'};
-        System.out.println(Arrays.toString(t6.smallerNumbersThanCurrent(new int[]{8, 1, 2, 2, 3})));
+        //System.out.println(Arrays.toString(t6.smallerNumbersThanCurrent(new int[]{8, 1, 2, 2, 3})));
+        System.out.println(Arrays.toString(t6.exclusiveTime(2, List.of(strs2))));
     }
 
     //56. 合并区间
@@ -103,7 +105,45 @@ public class T6 {
         return res;
     }
 
+    //1441. 用栈操作构建数组
+    public List<String> buildArray(int[] target, int n) {
+        List<String> res = new ArrayList<>();
+        Deque<Integer> deque = new ArrayDeque<>();
+        for (int i = 1, j = 0; i <= n && j < target.length; i++) {
+            deque.addLast(i);
+            res.add("Push");
+            if (deque.getLast() != target[j]) {
+                deque.removeLast();
+                res.add("Pop");
+            } else {
+                j++;
+            }
+        }
+        return res;
+    }
+
+    //636. 函数的独占时间
+    public int[] exclusiveTime(int n, List<String> logs) {
+        int[] res = new int[n];
+        Deque<Integer> deque = new ArrayDeque<>();
+        for (int i = 0, lastTime = 0; i < logs.size(); i++) {
+            String[] strs = logs.get(i).split(":");
+            int id = Integer.parseInt(strs[0]);
+            int time = Integer.parseInt(strs[2]);
+            if (Objects.equals(strs[1], "start")) {
+                if (!deque.isEmpty()) res[deque.getFirst()] += time - lastTime;
+                deque.addFirst(id);
+                lastTime = time;
+            } else {
+                res[deque.removeFirst()] += time - lastTime + 1;
+                lastTime = time + 1;
+            }
+        }
+        return res;
+    }
+
 }
+
 
 
 
