@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：287**  
-🟢 简单：116  
+**总题数：288**  
+🟢 简单：117  
 🟡 中等：155  
 🔴 困难：16
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x146
+- **数组** x147
 - **哈希表** x55
 - **字符串** x51
 - **树** x36
@@ -26,7 +26,7 @@
 - **栈** x25
 - **矩阵** x23
 - **并查集** x10
-- **堆（优先队列）** x9
+- **堆（优先队列）** x10
 - **队列** x6
 - **单调栈** x6
 - **图** x6
@@ -288,6 +288,7 @@
 | 994 | [腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/) | 🟡 中等 | 广度优先搜索、数组、矩阵 | 2026.01.12 |
 | 997 | [找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/) | 🟢 简单 | 图、数组、哈希表 | 2026.01.10 |
 | 1005 | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | 🟢 简单 | 贪心、数组、排序 | 2025.11.10 |
+| 1046 | [最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/) | 🟢 简单 | 数组、堆（优先队列） | 2026.02.07 |
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
 | 1200 | [最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference/) | 🟢 简单 | 数组、排序 | 2026.01.26 |
@@ -354,8 +355,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-07 22:42:24
-- **总题目数**：287
+- **最后更新**：2026-02-07 23:11:29
+- **总题目数**：288
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成

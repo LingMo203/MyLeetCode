@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 287,
+  "total_solved": 288,
   "updated_at": "2026.02.07",
   "problems": [
     {
@@ -4298,6 +4298,20 @@
         "2026.02.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/time-needed-to-buy-tickets/"
+    },
+    {
+      "id": 1046,
+      "title": "最后一块石头的重量",
+      "title_slug": "last-stone-weight",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/last-stone-weight/"
     }
   ]
 }
