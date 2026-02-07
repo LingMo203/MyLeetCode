@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：284**  
-🟢 简单：113  
+**总题数：287**  
+🟢 简单：116  
 🟡 中等：155  
 🔴 困难：16
 
@@ -17,19 +17,19 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x143
+- **数组** x146
 - **哈希表** x55
 - **字符串** x51
 - **树** x36
 - **二叉树** x34
 - **链表** x31
-- **栈** x24
+- **栈** x25
 - **矩阵** x23
 - **并查集** x10
 - **堆（优先队列）** x9
+- **队列** x6
 - **单调栈** x6
 - **图** x6
-- **队列** x4
 - **字典树** x3
 - **单调队列** x2
 
@@ -45,7 +45,7 @@
 - **贪心** x18
 - **递归** x16
 - **位运算** x14
-- **模拟** x12
+- **模拟** x14
 - **滑动窗口** x10
 - **分治** x10
 - **设计** x8
@@ -281,6 +281,7 @@
 | 860 | [柠檬水找零](https://leetcode.cn/problems/lemonade-change/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
 | 865 | [具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、哈希表、二叉树 | 2026.01.09 |
 | 876 | [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | 🟢 简单 | 链表、双指针 | 2025.11.17 |
+| 941 | [有效的山脉数组](https://leetcode.cn/problems/valid-mountain-array/) | 🟢 简单 | 数组 | 2026.02.07 |
 | 961 | [在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.31 |
 | 976 | [三角形的最大周长](https://leetcode.cn/problems/largest-perimeter-triangle/) | 🟢 简单 | 贪心、数组、数学、排序 | 2025.11.10 |
 | 977 | [有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/) | 🟢 简单 | 数组、双指针、排序 | 2025.11.04 |
@@ -304,6 +305,7 @@
 | 1523 | [在区间范围内统计奇数数目](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) | 🟢 简单 | 数学 | 2025.12.07 |
 | 1653 | [使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) | 🟡 中等 | 栈、字符串、动态规划 | 2026.02.07 |
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
+| 1700 | [无法吃午餐的学生数量](https://leetcode.cn/problems/number-of-students-unable-to-eat-lunch/) | 🟢 简单 | 栈、队列、数组、模拟 | 2026.02.07 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
@@ -313,6 +315,7 @@
 | 1984 | [学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | 🟢 简单 | 数组、排序、滑动窗口 | 2026.01.25 |
 | 1985 | [找出数组中的第 K 大整数](https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/) | 🟡 中等 | 数组、字符串、分治、快速选择、排序、堆（优先队列） | 2026.02.02 |
 | 1992 | [找到所有的农场组](https://leetcode.cn/problems/find-all-groups-of-farmland/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.01.12 |
+| 2073 | [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets/) | 🟢 简单 | 队列、数组、模拟 | 2026.02.07 |
 | 2095 | [删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
@@ -351,8 +354,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-07 02:42:42
-- **总题目数**：284
+- **最后更新**：2026-02-07 22:42:24
+- **总题目数**：287
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成

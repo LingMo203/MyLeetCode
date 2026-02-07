@@ -20,7 +20,8 @@ public class T6 {
         String[] strs2 = {"0:start:0","1:start:2","1:end:5","0:end:6"};
         char[] chars = {'c', 'f', 'j'};
         //System.out.println(Arrays.toString(t6.smallerNumbersThanCurrent(new int[]{8, 1, 2, 2, 3})));
-        System.out.println(Arrays.toString(t6.exclusiveTime(2, List.of(strs2))));
+        //System.out.println(Arrays.toString(t6.exclusiveTime(2, List.of(strs2))));
+        System.out.println(t6.validMountainArray(new int[]{9,8,7,6,5,4,3,2,1,0}));
     }
 
     //56. 合并区间
@@ -140,6 +141,57 @@ public class T6 {
             }
         }
         return res;
+    }
+
+    //941. 有效的山脉数组
+    public boolean validMountainArray(int[] arr) {
+        int n = arr.length;
+        if (n < 3) return false;
+        int i = 1, last = arr[0];
+        for (; i < n; i++) {
+            if (last >= arr[i]) break;
+            last = arr[i];
+        }
+        if (i >= n || i == 1) return false;
+        for (; i < n; i++) {
+            if (last <= arr[i]) break;
+            last = arr[i];
+        }
+        return i >= n;
+    }
+
+    //1700. 无法吃午餐的学生数量
+    public int countStudents(int[] students, int[] sandwiches) {
+        Deque<Integer> deque = new ArrayDeque<>();
+        for (int num : students) {
+            deque.addLast(num);
+        }
+        for (int sandwich : sandwiches) {
+            int size = deque.size(), time = 0;
+            while (!deque.isEmpty() && deque.getFirst() != sandwich && time < size) {
+                deque.addLast(deque.removeFirst());
+                time++;
+            }
+            if (time >= size) return deque.size();
+            deque.removeFirst();
+        }
+        return deque.size();
+    }
+
+    //2073. 买票需要的时间
+    public int timeRequiredToBuy(int[] tickets, int k) {
+        Deque<int[]> deque = new ArrayDeque<>();
+        for (int i = 0; i < tickets.length; i++) {
+            deque.addLast(new int[]{i, tickets[i]});
+        }
+        for (int i = 0; !deque.isEmpty(); i++) {
+            int[] remove = deque.removeFirst();
+            int id = remove[0], ticket = remove[1];
+            if (id == k && ticket == 1) return i + 1;
+            if (ticket == 1) continue;
+            deque.addLast(new int[]{id, ticket - 1});
+        }
+        return -1;
     }
 
 }

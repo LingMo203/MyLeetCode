@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 284,
+  "total_solved": 287,
   "updated_at": "2026.02.07",
   "problems": [
     {
@@ -4254,6 +4254,50 @@
         "2026.02.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/"
+    },
+    {
+      "id": 941,
+      "title": "有效的山脉数组",
+      "title_slug": "valid-mountain-array",
+      "difficulty": "简单",
+      "tags": [
+        "数组"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/valid-mountain-array/"
+    },
+    {
+      "id": 1700,
+      "title": "无法吃午餐的学生数量",
+      "title_slug": "number-of-students-unable-to-eat-lunch",
+      "difficulty": "简单",
+      "tags": [
+        "栈",
+        "队列",
+        "数组",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/number-of-students-unable-to-eat-lunch/"
+    },
+    {
+      "id": 2073,
+      "title": "买票需要的时间",
+      "title_slug": "time-needed-to-buy-tickets",
+      "difficulty": "简单",
+      "tags": [
+        "队列",
+        "数组",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.02.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/time-needed-to-buy-tickets/"
     }
   ]
 }
