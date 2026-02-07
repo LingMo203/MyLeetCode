@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 288,
-  "updated_at": "2026.02.07",
+  "total_solved": 289,
+  "updated_at": "2026.02.08",
   "problems": [
     {
       "id": 1,
@@ -4312,6 +4312,20 @@
         "2026.02.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/last-stone-weight/"
+    },
+    {
+      "id": 373,
+      "title": "查找和最小的 K 对数字",
+      "title_slug": "find-k-pairs-with-smallest-sums",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2026.02.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/"
     }
   ]
 }

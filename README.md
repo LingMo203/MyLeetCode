@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：288**  
+**总题数：289**  
 🟢 简单：117  
-🟡 中等：155  
+🟡 中等：156  
 🔴 困难：16
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x147
+- **数组** x148
 - **哈希表** x55
 - **字符串** x51
 - **树** x36
@@ -25,8 +25,8 @@
 - **链表** x31
 - **栈** x25
 - **矩阵** x23
+- **堆（优先队列）** x11
 - **并查集** x10
-- **堆（优先队列）** x10
 - **队列** x6
 - **单调栈** x6
 - **图** x6
@@ -231,6 +231,7 @@
 | 349 | [两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/) | 🟢 简单 | 数组、哈希表、双指针、二分查找、排序 | 2025.10.27 |
 | 350 | [两个数组的交集 II](https://leetcode.cn/problems/intersection-of-two-arrays-ii/) | 🟢 简单 | 数组、哈希表、双指针、二分查找、排序 | 2025.10.29 |
 | 357 | [统计各位数字都不同的数字个数](https://leetcode.cn/problems/count-numbers-with-unique-digits/) | 🟡 中等 | 数学、动态规划、回溯 | 2026.01.09 |
+| 373 | [查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) | 🟡 中等 | 数组、堆（优先队列） | 2026.02.08 |
 | 374 | [猜数字大小](https://leetcode.cn/problems/guess-number-higher-or-lower/) | 🟢 简单 | 二分查找、交互 | 2025.11.10 |
 | 380 | [O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/) | 🟡 中等 | 设计、数组、哈希表、数学、随机化 | 2025.12.17 |
 | 389 | [找不同](https://leetcode.cn/problems/find-the-difference/) | 🟢 简单 | 位运算、哈希表、字符串、排序 | 2025.10.29 |
@@ -355,8 +356,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-07 23:11:29
-- **总题目数**：288
+- **最后更新**：2026-02-08 00:11:07
+- **总题目数**：289
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成

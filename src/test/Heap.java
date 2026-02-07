@@ -2,8 +2,7 @@ package test;
 
 import util.ArrayStringUtils;
 
-import java.util.Collections;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Heap {
     public static void main(String[] args) {
@@ -33,6 +32,32 @@ public class Heap {
             if (max != min) pq.add(max - min);
         }
         return pq.size() == 1 ? pq.peek() : 0;
+    }
+
+    //373. 查找和最小的 K 对数字
+    public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+        List<List<Integer>> res = new ArrayList<>(k);
+        PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Math.toIntExact(b[2] - a[2]));
+        for (int i = 0; i <= k && i < nums1.length; i++) {
+            int num1 = nums1[i];
+            if (pq.peek() != null && pq.size() >= k && pq.peek()[2] < num1 + nums2[0]) break;
+            for (int j = 0; j <= k && j < nums2.length; j++) {
+                int num2 = nums2[j];
+                int size = pq.size();
+                if (pq.peek() != null && size >= k && pq.peek()[2] < num1 + num2) break;
+                pq.add(new long[]{num1, num2, (long) num1 + num2});
+                if (size + 1 > k) pq.remove();
+            }
+        }
+        while (!pq.isEmpty()) {
+            long[] remove = pq.remove();
+            List<Integer> list = new ArrayList<>();
+            list.add((int) remove[0]);
+            list.add((int) remove[1]);
+            res.add(list);
+        }
+        Collections.reverse(res);
+        return res;
     }
 
 
