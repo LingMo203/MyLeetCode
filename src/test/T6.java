@@ -16,12 +16,14 @@ public class T6 {
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String str = "AB";
         String str2 = "cae";
-        String[] strs = {"0:start:0","0:start:2","0:end:5","1:start:6","1:end:6","0:end:7"};
-        String[] strs2 = {"0:start:0","1:start:2","1:end:5","0:end:6"};
+        String[] strs = {"0:start:0", "0:start:2", "0:end:5", "1:start:6", "1:end:6", "0:end:7"};
+        String[] strs2 = {"0:start:0", "1:start:2", "1:end:5", "0:end:6"};
         char[] chars = {'c', 'f', 'j'};
         //System.out.println(Arrays.toString(t6.smallerNumbersThanCurrent(new int[]{8, 1, 2, 2, 3})));
         //System.out.println(Arrays.toString(t6.exclusiveTime(2, List.of(strs2))));
-        System.out.println(t6.validMountainArray(new int[]{9,8,7,6,5,4,3,2,1,0}));
+        //System.out.println(t6.validMountainArray(new int[]{9,8,7,6,5,4,3,2,1,0}));
+        //System.out.println(t6.detectCapitalUse("FlaG"));
+        System.out.println(t6.licenseKeyFormatting("5F3Z-2e-9-w",4));
     }
 
     //56. 合并区间
@@ -192,6 +194,92 @@ public class T6 {
             deque.addLast(new int[]{id, ticket - 1});
         }
         return -1;
+    }
+
+    //520. 检测大写字母
+    public boolean detectCapitalUse(String word) {
+        if (word.length() == 1) return true;
+        boolean f = Character.isUpperCase(word.charAt(0));
+        boolean second = Character.isUpperCase(word.charAt(1));
+        for (int i = 1; i < word.length(); i++) {
+            char c = word.charAt(i);
+            if (!f) {
+                if (Character.isUpperCase(c)) return false;
+            } else {
+                if (second) {
+                    if (Character.isLowerCase(c)) return false;
+                } else {
+                    if (i == 1) continue;
+                    if (Character.isUpperCase(c)) return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    //482. 密钥格式化
+    public String licenseKeyFormatting(String s, int k) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = s.length() - 1; i >= 0; i--) {
+            char c = s.charAt(i);
+            if (c == '-') continue;
+            else {
+                c = Character.toUpperCase(c);
+                sb.append(c);
+            }
+        }
+        if (sb.isEmpty()) return "";
+        StringBuilder res = new StringBuilder();
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < sb.length(); i++) {
+            char c = sb.charAt(i);
+            temp.append(c);
+            if (temp.length() == k) {
+                res.append(temp);
+                res.append("-");
+                temp = new StringBuilder();
+            }
+        }
+        if (temp.isEmpty()) res.deleteCharAt(res.length() - 1);
+        else res.append(temp);
+        return res.reverse().toString();
+    }
+
+    //831. 隐藏个人信息
+    public String maskPII(String s) {
+        StringBuilder res = new StringBuilder();
+        if (s.contains("@")) {
+            res.append(Character.toLowerCase(s.charAt(0)));
+            res.append("*****");
+            int i = 1;
+            for (; i < s.length(); i++) {
+                if (s.charAt(i) == '@') break;
+            }
+            res.append(s.substring(i - 1).toLowerCase());
+        } else {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < s.length(); i++) {
+                char c = s.charAt(i);
+                if (Character.isDigit(c)) sb.append(c);
+            }
+            int length = sb.length();
+            switch (length) {
+                case 10:
+                    res.append("***-***-");
+                    break;
+                case 11:
+                    res.append("+*-***-***-");
+                    break;
+                case 12:
+                    res.append("+**-***-***-");
+                    break;
+                case 13:
+                    res.append("+***-***-***-");
+                    break;
+            }
+            res.append(sb.substring(length - 4));
+        }
+        return res.toString();
     }
 
 }

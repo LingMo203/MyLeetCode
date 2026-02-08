@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 294,
+  "total_solved": 297,
   "updated_at": "2026.02.09",
   "problems": [
     {
@@ -4391,6 +4391,45 @@
         "2026.02.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/construct-target-array-with-multiple-sums/"
+    },
+    {
+      "id": 520,
+      "title": "检测大写字母",
+      "title_slug": "detect-capital",
+      "difficulty": "简单",
+      "tags": [
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.02.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/detect-capital/"
+    },
+    {
+      "id": 482,
+      "title": "密钥格式化",
+      "title_slug": "license-key-formatting",
+      "difficulty": "简单",
+      "tags": [
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.02.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/license-key-formatting/"
+    },
+    {
+      "id": 831,
+      "title": "隐藏个人信息",
+      "title_slug": "masking-personal-information",
+      "difficulty": "中等",
+      "tags": [
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.02.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/masking-personal-information/"
     }
   ]
 }

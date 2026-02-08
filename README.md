@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：294**  
-🟢 简单：118  
-🟡 中等：159  
+**总题数：297**  
+🟢 简单：120  
+🟡 中等：160  
 🔴 困难：17
 
 
@@ -19,7 +19,7 @@
 ### 🔥 数据结构
 - **数组** x149
 - **哈希表** x55
-- **字符串** x51
+- **字符串** x54
 - **树** x37
 - **二叉树** x35
 - **链表** x31
@@ -248,11 +248,13 @@
 | 448 | [找到所有数组中消失的数字](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.29 |
 | 455 | [分发饼干](https://leetcode.cn/problems/assign-cookies/) | 🟢 简单 | 贪心、数组、双指针、排序 | 2025.11.07 |
 | 462 | [最小操作次数使数组元素相等 II](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/) | 🟡 中等 | 数组、数学、排序 | 2025.12.12 |
+| 482 | [密钥格式化](https://leetcode.cn/problems/license-key-formatting/) | 🟢 简单 | 字符串 | 2026.02.09 |
 | 485 | [最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/) | 🟢 简单 | 数组 | 2025.12.01 |
 | 491 | [非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/) | 🟡 中等 | 位运算、数组、哈希表、回溯 | 2026.01.08 |
 | 503 | [下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) | 🟡 中等 | 栈、数组、单调栈 | 2026.02.03 |
 | 509 | [斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | 🟢 简单 | 递归、记忆化搜索、数学、动态规划 | 2025.11.22 |
 | 515 | [在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.22 |
+| 520 | [检测大写字母](https://leetcode.cn/problems/detect-capital/) | 🟢 简单 | 字符串 | 2026.02.09 |
 | 541 | [反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
 | 547 | [省份数量](https://leetcode.cn/problems/number-of-provinces/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.14 |
 | 557 | [反转字符串中的单词 III](https://leetcode.cn/problems/reverse-words-in-a-string-iii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
@@ -278,6 +280,7 @@
 | 788 | [旋转数字](https://leetcode.cn/problems/rotated-digits/) | 🟡 中等 | 数学、动态规划、回溯（自添加标签） | 2026.02.05 |
 | 797 | [所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) | 🟡 中等 | 深度优先搜索、广度优先搜索、图、回溯 | 2026.01.10 |
 | 821 | [字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character/) | 🟢 简单 | 数组、双指针、字符串 | 2025.11.05 |
+| 831 | [隐藏个人信息](https://leetcode.cn/problems/masking-personal-information/) | 🟡 中等 | 字符串 | 2026.02.09 |
 | 840 | [矩阵中的幻方](https://leetcode.cn/problems/magic-squares-in-grid/) | 🟡 中等 | 数组、哈希表、数学、矩阵 | 2025.12.30 |
 | 860 | [柠檬水找零](https://leetcode.cn/problems/lemonade-change/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
 | 865 | [具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、哈希表、二叉树 | 2026.01.09 |
@@ -361,8 +364,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-09 01:19:20
-- **总题目数**：294
+- **最后更新**：2026-02-09 02:22:52
+- **总题目数**：297
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成
