@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：289**  
-🟢 简单：117  
-🟡 中等：156  
+**总题数：292**  
+🟢 简单：118  
+🟡 中等：158  
 🔴 困难：16
 
 
@@ -350,14 +350,17 @@
 | 3827 | [统计单比特整数](https://leetcode.cn/problems/count-monobit-integers/) | 🟢 简单 | 位运算、枚举 | 2026.02.01 |
 | 3828 | [删除子数组后的最终元素](https://leetcode.cn/problems/final-element-after-subarray-deletions/) | 🟡 中等 | 脑筋急转弯、数组、数学、博弈 | 2026.02.01 |
 | 3829 | [设计共享出行系统](https://leetcode.cn/problems/design-ride-sharing-system/) | 🟡 中等 | 设计、队列、哈希表、数据流 | 2026.02.01 |
+| 100982 | [开销小于等于 K 的子数组数目](https://leetcode.cn/problems/count-subarrays-with-cost-less-than-or-equal-to-k/) | 🟡 中等 |  | 2026.02.08 |
+| 100984 | [合并相邻且相等的元素](https://leetcode.cn/problems/merge-adjacent-equal-elements/) | 🟡 中等 |  | 2026.02.08 |
+| 100985 | [统计主导元素下标数](https://leetcode.cn/problems/count-dominant-indices/) | 🟢 简单 |  | 2026.02.08 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-08 00:11:07
-- **总题目数**：289
+- **最后更新**：2026-02-08 12:16:55
+- **总题目数**：292
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成

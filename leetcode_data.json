@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 289,
+  "total_solved": 292,
   "updated_at": "2026.02.08",
   "problems": [
     {
@@ -4326,6 +4326,39 @@
         "2026.02.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/"
+    },
+    {
+      "id": 100985,
+      "title": "统计主导元素下标数",
+      "title_slug": "count-dominant-indices",
+      "difficulty": "简单",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-dominant-indices/"
+    },
+    {
+      "id": 100984,
+      "title": "合并相邻且相等的元素",
+      "title_slug": "merge-adjacent-equal-elements",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/merge-adjacent-equal-elements/"
+    },
+    {
+      "id": 100982,
+      "title": "开销小于等于 K 的子数组数目",
+      "title_slug": "count-subarrays-with-cost-less-than-or-equal-to-k",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-subarrays-with-cost-less-than-or-equal-to-k/"
     }
   ]
 }
