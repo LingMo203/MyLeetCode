@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 293,
+  "total_solved": 294,
   "updated_at": "2026.02.09",
   "problems": [
     {
@@ -4377,6 +4377,20 @@
         "2026.02.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/balance-a-binary-search-tree/"
+    },
+    {
+      "id": 1354,
+      "title": "多次求和构造目标数组",
+      "title_slug": "construct-target-array-with-multiple-sums",
+      "difficulty": "困难",
+      "tags": [
+        "数组",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2026.02.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/construct-target-array-with-multiple-sums/"
     }
   ]
 }

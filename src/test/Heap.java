@@ -17,6 +17,7 @@ public class Heap {
         String[] strs = {"0:start:0", "0:start:2", "0:end:5", "1:start:6", "1:end:6", "0:end:7"};
         String[] strs2 = {"0:start:0", "1:start:2", "1:end:5", "0:end:6"};
         char[] chars = {'c', 'f', 'j'};
+        System.out.println(hp.isPossible(new int[]{1, 1, 2}));
     }
 
 
@@ -60,6 +61,24 @@ public class Heap {
         return res;
     }
 
+    //1354. 多次求和构造目标数组 (灵神作法,还是很懵)
+    public boolean isPossible(int[] target) {
+        PriorityQueue<Long> pq = new PriorityQueue<>((a, b) -> Math.toIntExact(b - a));
+        long sum = 0;
+        for (int num : target) {
+            sum += num;
+            pq.add((long) num);
+        }
+        while (pq.peek() > 1) {
+            long x = pq.remove();
+            sum -= x;
+            if (sum == 0 || x <= sum) return false;
+            x = (x - 1) % sum + 1;
+            sum += x;
+            pq.add(x);
+        }
+        return true;
+    }
 
 }
 
