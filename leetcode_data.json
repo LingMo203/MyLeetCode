@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 292,
-  "updated_at": "2026.02.08",
+  "total_solved": 293,
+  "updated_at": "2026.02.09",
   "problems": [
     {
       "id": 1,
@@ -4339,7 +4339,7 @@
       "leetcode_url": "https://leetcode.cn/problems/count-dominant-indices/"
     },
     {
-      "id": 100984,
+      "id": 3834,
       "title": "合并相邻且相等的元素",
       "title_slug": "merge-adjacent-equal-elements",
       "difficulty": "中等",
@@ -4350,7 +4350,7 @@
       "leetcode_url": "https://leetcode.cn/problems/merge-adjacent-equal-elements/"
     },
     {
-      "id": 100982,
+      "id": 3835,
       "title": "开销小于等于 K 的子数组数目",
       "title_slug": "count-subarrays-with-cost-less-than-or-equal-to-k",
       "difficulty": "中等",
@@ -4359,6 +4359,24 @@
         "2026.02.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-subarrays-with-cost-less-than-or-equal-to-k/"
+    },
+    {
+      "id": 1382,
+      "title": "将二叉搜索树变平衡",
+      "title_slug": "balance-a-binary-search-tree",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "树",
+        "深度优先搜索",
+        "二叉搜索树",
+        "分治",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.02.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/balance-a-binary-search-tree/"
     }
   ]
 }

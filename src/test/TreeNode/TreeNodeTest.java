@@ -762,6 +762,29 @@ public class TreeNodeTest {
     }
 
 
+    //1382. 将二叉搜索树变平衡
+    public TreeNode balanceBST(TreeNode root) {
+        ArrayList<Integer> list = new ArrayList<>();
+        dfsBalanceBST(list, root);
+        return buildBalanceBST(list, 0, list.size() - 1);
+    }
+    public void dfsBalanceBST(ArrayList<Integer> list, TreeNode root){
+        if (root == null) return;
+        dfsBalanceBST(list, root.left);
+        list.add(root.val);
+        dfsBalanceBST(list, root.right);
+    }
+    public TreeNode buildBalanceBST(ArrayList<Integer> list, int start, int end){
+        if (start > end) return null;
+        int mid = (end - start) / 2 + start;
+        TreeNode root = new TreeNode(list.get(mid));
+        int leftStart = start, leftEnd = mid - 1;
+        int rightStart = mid + 1, rightEnd = end;
+        root.left = buildBalanceBST(list, leftStart, leftEnd);
+        root.right = buildBalanceBST(list, rightStart, rightEnd);
+        return root;
+    }
+
 
 
 

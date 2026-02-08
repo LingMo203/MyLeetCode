@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：292**  
+**总题数：293**  
 🟢 简单：118  
-🟡 中等：158  
+🟡 中等：159  
 🔴 困难：16
 
 
@@ -20,8 +20,8 @@
 - **数组** x148
 - **哈希表** x55
 - **字符串** x51
-- **树** x36
-- **二叉树** x34
+- **树** x37
+- **二叉树** x35
 - **链表** x31
 - **栈** x25
 - **矩阵** x23
@@ -36,18 +36,18 @@
 ### ⚡ 算法
 - **数学** x48
 - **双指针** x47
-- **深度优先搜索** x40
+- **深度优先搜索** x41
 - **排序** x39
 - **广度优先搜索** x32
 - **动态规划** x27
 - **二分查找** x22
 - **回溯** x21
-- **贪心** x18
+- **贪心** x19
 - **递归** x16
 - **位运算** x14
 - **模拟** x14
+- **分治** x11
 - **滑动窗口** x10
-- **分治** x10
 - **设计** x8
 - **枚举** x4
 - **快速选择** x3
@@ -300,6 +300,7 @@
 | 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
 | 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
 | 1365 | [有多少小于当前数字的数字](https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/) | 🟢 简单 | 数组、哈希表、计数排序、排序 | 2026.02.07 |
+| 1382 | [将二叉搜索树变平衡](https://leetcode.cn/problems/balance-a-binary-search-tree/) | 🟡 中等 | 贪心、树、深度优先搜索、二叉搜索树、分治、二叉树 | 2026.02.09 |
 | 1390 | [四因数](https://leetcode.cn/problems/four-divisors/) | 🟡 中等 | 数组、数学 | 2026.01.04 |
 | 1441 | [用栈操作构建数组](https://leetcode.cn/problems/build-an-array-with-stack-operations/) | 🟡 中等 | 栈、数组、模拟 | 2026.02.07 |
 | 1470 | [重新排列数组](https://leetcode.cn/problems/shuffle-the-array/) | 🟢 简单 | 数组 | 2026.02.07 |
@@ -350,8 +351,8 @@
 | 3827 | [统计单比特整数](https://leetcode.cn/problems/count-monobit-integers/) | 🟢 简单 | 位运算、枚举 | 2026.02.01 |
 | 3828 | [删除子数组后的最终元素](https://leetcode.cn/problems/final-element-after-subarray-deletions/) | 🟡 中等 | 脑筋急转弯、数组、数学、博弈 | 2026.02.01 |
 | 3829 | [设计共享出行系统](https://leetcode.cn/problems/design-ride-sharing-system/) | 🟡 中等 | 设计、队列、哈希表、数据流 | 2026.02.01 |
-| 100982 | [开销小于等于 K 的子数组数目](https://leetcode.cn/problems/count-subarrays-with-cost-less-than-or-equal-to-k/) | 🟡 中等 |  | 2026.02.08 |
-| 100984 | [合并相邻且相等的元素](https://leetcode.cn/problems/merge-adjacent-equal-elements/) | 🟡 中等 |  | 2026.02.08 |
+| 3834 | [合并相邻且相等的元素](https://leetcode.cn/problems/merge-adjacent-equal-elements/) | 🟡 中等 |  | 2026.02.08 |
+| 3835 | [开销小于等于 K 的子数组数目](https://leetcode.cn/problems/count-subarrays-with-cost-less-than-or-equal-to-k/) | 🟡 中等 |  | 2026.02.08 |
 | 100985 | [统计主导元素下标数](https://leetcode.cn/problems/count-dominant-indices/) | 🟢 简单 |  | 2026.02.08 |
 
 
@@ -359,8 +360,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-08 12:16:55
-- **总题目数**：292
+- **最后更新**：2026-02-09 00:36:21
+- **总题目数**：293
 - **技能标签数**：50
 
 > 🤖 本页面由自动化脚本生成
