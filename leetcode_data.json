@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 298,
+  "total_solved": 301,
   "updated_at": "2026.02.10",
   "problems": [
     {
@@ -4447,6 +4447,48 @@
         "2026.02.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/longest-balanced-subarray-i/"
+    },
+    {
+      "id": 459,
+      "title": "重复的子字符串",
+      "title_slug": "repeated-substring-pattern",
+      "difficulty": "简单",
+      "tags": [
+        "字符串",
+        "字符串匹配"
+      ],
+      "solved_dates": [
+        "2026.02.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/repeated-substring-pattern/"
+    },
+    {
+      "id": 796,
+      "title": "旋转字符串",
+      "title_slug": "rotate-string",
+      "difficulty": "简单",
+      "tags": [
+        "字符串",
+        "字符串匹配"
+      ],
+      "solved_dates": [
+        "2026.02.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/rotate-string/"
+    },
+    {
+      "id": 686,
+      "title": "重复叠加字符串匹配",
+      "title_slug": "repeated-string-match",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "字符串匹配"
+      ],
+      "solved_dates": [
+        "2026.02.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/repeated-string-match/"
     }
   ]
 }

@@ -23,7 +23,8 @@ public class T6 {
         //System.out.println(Arrays.toString(t6.exclusiveTime(2, List.of(strs2))));
         //System.out.println(t6.validMountainArray(new int[]{9,8,7,6,5,4,3,2,1,0}));
         //System.out.println(t6.detectCapitalUse("FlaG"));
-        System.out.println(t6.licenseKeyFormatting("5F3Z-2e-9-w",4));
+        //System.out.println(t6.licenseKeyFormatting("5F3Z-2e-9-w",4));
+        System.out.println(t6.repeatedSubstringPattern("aba"));
     }
 
     //56. 合并区间
@@ -296,6 +297,56 @@ public class T6 {
             }
         }
         return res;
+    }
+
+    //459. 重复的子字符串
+    public boolean repeatedSubstringPattern(String s) {
+        int n = s.length();
+        for (int i = 1; i < n; i++) {
+            String minStr = s.substring(0, i);
+            int j = i, min = minStr.length();
+            boolean f = true;
+            for (; j + min <= n; j += min) {
+                String str = s.substring(j, j + min);
+                if (!minStr.equals(str)) {
+                    f = false;
+                    break;
+                }
+            }
+            if (f && j == n) return true;
+        }
+        return false;
+    }
+
+    //796. 旋转字符串
+    public boolean rotateString(String s, String goal) {
+        if (s.equals(goal)) return true;
+        int n = s.length();
+        if (n != goal.length()) return false;
+        for (int i = 1; i < n; i++) {
+            String turn = s.substring(i, n) + s.substring(0, i);
+            if (turn.equals(goal)) return true;
+        }
+        return false;
+    }
+    //这思路太牛逼了
+    public boolean rotateString2(String s, String goal) {
+        return s.length() == goal.length() && (goal + goal).contains(s);
+    }
+
+    //686. 重复叠加字符串匹配
+    public int repeatedStringMatch(String a, String b) {
+        StringBuilder sb = new StringBuilder();
+        int res = 0;
+        while (sb.length() < b.length()) {
+            sb.append(a);
+            res++;
+        }
+        if (sb.indexOf(b) != -1) return res;
+        sb.append(a);
+        res++;
+        if (sb.indexOf(b) != -1) return res;
+        return -1;
     }
 
 }

@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：298**  
-🟢 简单：120  
-🟡 中等：161  
+**总题数：301**  
+🟢 简单：122  
+🟡 中等：162  
 🔴 困难：17
 
 
@@ -18,8 +18,8 @@
 
 ### 🔥 数据结构
 - **数组** x150
+- **字符串** x57
 - **哈希表** x56
-- **字符串** x54
 - **树** x37
 - **二叉树** x35
 - **链表** x31
@@ -247,6 +247,7 @@
 | 445 | [两数相加 II](https://leetcode.cn/problems/add-two-numbers-ii/) | 🟡 中等 | 栈、链表、数学 | 2025.12.19 |
 | 448 | [找到所有数组中消失的数字](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.29 |
 | 455 | [分发饼干](https://leetcode.cn/problems/assign-cookies/) | 🟢 简单 | 贪心、数组、双指针、排序 | 2025.11.07 |
+| 459 | [重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/) | 🟢 简单 | 字符串、字符串匹配 | 2026.02.10 |
 | 462 | [最小操作次数使数组元素相等 II](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/) | 🟡 中等 | 数组、数学、排序 | 2025.12.12 |
 | 482 | [密钥格式化](https://leetcode.cn/problems/license-key-formatting/) | 🟢 简单 | 字符串 | 2026.02.09 |
 | 485 | [最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/) | 🟢 简单 | 数组 | 2025.12.01 |
@@ -267,6 +268,7 @@
 | 637 | [二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.23 |
 | 645 | [错误的集合](https://leetcode.cn/problems/set-mismatch/) | 🟢 简单 | 位运算、数组、哈希表、排序 | 2025.10.29 |
 | 684 | [冗余连接](https://leetcode.cn/problems/redundant-connection/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.15 |
+| 686 | [重复叠加字符串匹配](https://leetcode.cn/problems/repeated-string-match/) | 🟡 中等 | 字符串、字符串匹配 | 2026.02.10 |
 | 692 | [前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/) | 🟡 中等 | 字典树、数组、哈希表、字符串、桶排序、计数、排序、堆（优先队列） | 2026.02.02 |
 | 695 | [岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.11 |
 | 704 | [二分查找](https://leetcode.cn/problems/binary-search/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
@@ -278,6 +280,7 @@
 | 746 | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | 🟢 简单 | 数组、动态规划 | 2025.11.22 |
 | 763 | [划分字母区间](https://leetcode.cn/problems/partition-labels/) | 🟡 中等 | 贪心、哈希表、双指针、字符串 | 2026.02.01 |
 | 788 | [旋转数字](https://leetcode.cn/problems/rotated-digits/) | 🟡 中等 | 数学、动态规划、回溯（自添加标签） | 2026.02.05 |
+| 796 | [旋转字符串](https://leetcode.cn/problems/rotate-string/) | 🟢 简单 | 字符串、字符串匹配 | 2026.02.10 |
 | 797 | [所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) | 🟡 中等 | 深度优先搜索、广度优先搜索、图、回溯 | 2026.01.10 |
 | 821 | [字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character/) | 🟢 简单 | 数组、双指针、字符串 | 2025.11.05 |
 | 831 | [隐藏个人信息](https://leetcode.cn/problems/masking-personal-information/) | 🟡 中等 | 字符串 | 2026.02.09 |
@@ -365,8 +368,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-10 00:31:27
-- **总题目数**：298
+- **最后更新**：2026-02-10 01:13:45
+- **总题目数**：301
 - **技能标签数**：51
 
 > 🤖 本页面由自动化脚本生成
