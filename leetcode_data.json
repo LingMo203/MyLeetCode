@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 297,
-  "updated_at": "2026.02.09",
+  "total_solved": 298,
+  "updated_at": "2026.02.10",
   "problems": [
     {
       "id": 1,
@@ -4328,7 +4328,7 @@
       "leetcode_url": "https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/"
     },
     {
-      "id": 100985,
+      "id": 3833,
       "title": "统计主导元素下标数",
       "title_slug": "count-dominant-indices",
       "difficulty": "简单",
@@ -4430,6 +4430,23 @@
         "2026.02.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/masking-personal-information/"
+    },
+    {
+      "id": 3719,
+      "title": "最长平衡子数组 I",
+      "title_slug": "longest-balanced-subarray-i",
+      "difficulty": "中等",
+      "tags": [
+        "线段树",
+        "数组",
+        "哈希表",
+        "分治",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2026.02.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/longest-balanced-subarray-i/"
     }
   ]
 }

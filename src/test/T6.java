@@ -282,6 +282,22 @@ public class T6 {
         return res.toString();
     }
 
+    //3719. 最长平衡子数组 I
+    public int longestBalanced(int[] nums) {
+        int n = nums.length, res = 0;
+        for (int i = 0; i < n; i++) {
+            HashSet<Integer> one = new HashSet<>();
+            HashSet<Integer> two = new HashSet<>();
+            for (int j = i; j < n; j++) {
+                int num = nums[j];
+                if (num % 2 == 0) two.add(num);
+                else one.add(num);
+                if (one.size() == two.size()) res = Math.max(res, (j - i + 1));
+            }
+        }
+        return res;
+    }
+
 }
 
 
