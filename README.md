@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：301**  
-🟢 简单：122  
+**总题数：302**  
+🟢 简单：123  
 🟡 中等：162  
 🔴 困难：17
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x150
+- **数组** x151
 - **字符串** x57
 - **哈希表** x56
 - **树** x37
@@ -317,6 +317,7 @@
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
 | 1700 | [无法吃午餐的学生数量](https://leetcode.cn/problems/number-of-students-unable-to-eat-lunch/) | 🟢 简单 | 栈、队列、数组、模拟 | 2026.02.07 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
+| 1732 | [找到最高海拔](https://leetcode.cn/problems/find-the-highest-altitude/) | 🟢 简单 | 数组、前缀和 | 2026.02.10 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
@@ -368,8 +369,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-10 01:13:45
-- **总题目数**：301
+- **最后更新**：2026-02-10 01:21:06
+- **总题目数**：302
 - **技能标签数**：51
 
 > 🤖 本页面由自动化脚本生成

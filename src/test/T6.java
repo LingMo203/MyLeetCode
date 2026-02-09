@@ -349,6 +349,16 @@ public class T6 {
         return -1;
     }
 
+    //1732. 找到最高海拔
+    public int largestAltitude(int[] gain) {
+        int sum = 0, res = 0;
+        for (int num : gain) {
+            sum += num;
+            res = Math.max(res, sum);
+        }
+        return res;
+    }
+
 }
 
 

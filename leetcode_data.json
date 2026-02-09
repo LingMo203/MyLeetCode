@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 301,
+  "total_solved": 302,
   "updated_at": "2026.02.10",
   "problems": [
     {
@@ -4489,6 +4489,20 @@
         "2026.02.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/repeated-string-match/"
+    },
+    {
+      "id": 1732,
+      "title": "找到最高海拔",
+      "title_slug": "find-the-highest-altitude",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2026.02.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-highest-altitude/"
     }
   ]
 }
