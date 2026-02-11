@@ -24,7 +24,8 @@ public class T6 {
         //System.out.println(t6.validMountainArray(new int[]{9,8,7,6,5,4,3,2,1,0}));
         //System.out.println(t6.detectCapitalUse("FlaG"));
         //System.out.println(t6.licenseKeyFormatting("5F3Z-2e-9-w",4));
-        System.out.println(t6.repeatedSubstringPattern("aba"));
+        //System.out.println(t6.repeatedSubstringPattern("aba"));
+        System.out.println(t6.longestBalanced("zzabccy"));
     }
 
     //56. 合并区间
@@ -355,6 +356,20 @@ public class T6 {
         for (int num : gain) {
             sum += num;
             res = Math.max(res, sum);
+        }
+        return res;
+    }
+
+    //3713. 最长的平衡子串 I
+    public int longestBalanced(String s) {
+        int res = 0, n = s.length();
+        for (int i = 0; i < n; i++) {
+            HashMap<Character, Integer> hashMap = new HashMap<>();
+            for (int j = i; j < n; j++) {
+                char c = s.charAt(j);
+                hashMap.put(c, hashMap.getOrDefault(c, 0) + 1);
+                if (new HashSet<Integer>(hashMap.values()).size() == 1) res = Math.max(res, j - i + 1);
+            }
         }
         return res;
     }

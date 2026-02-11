@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 302,
-  "updated_at": "2026.02.10",
+  "total_solved": 303,
+  "updated_at": "2026.02.12",
   "problems": [
     {
       "id": 1,
@@ -4504,6 +4504,22 @@
         "2026.02.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-the-highest-altitude/"
+    },
+    {
+      "id": 3713,
+      "title": "最长的平衡子串 I",
+      "title_slug": "longest-balanced-substring-i",
+      "difficulty": "中等",
+      "tags": [
+        "哈希表",
+        "字符串",
+        "计数",
+        "枚举"
+      ],
+      "solved_dates": [
+        "2026.02.12"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/longest-balanced-substring-i/"
     }
   ]
 }

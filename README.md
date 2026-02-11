@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：302**  
+**总题数：303**  
 🟢 简单：123  
-🟡 中等：162  
+🟡 中等：163  
 🔴 困难：17
 
 
@@ -18,8 +18,8 @@
 
 ### 🔥 数据结构
 - **数组** x151
-- **字符串** x57
-- **哈希表** x56
+- **字符串** x58
+- **哈希表** x57
 - **树** x37
 - **二叉树** x35
 - **链表** x31
@@ -49,7 +49,7 @@
 - **分治** x12
 - **滑动窗口** x10
 - **设计** x8
-- **枚举** x4
+- **枚举** x5
 - **快速选择** x3
 - **随机化** x1
 
@@ -342,6 +342,7 @@
 | 3619 | [总价值可以被 K 整除的岛屿数目](https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 3634 | [使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) | 🟡 中等 | 数组、排序、滑动窗口 | 2026.02.06 |
 | 3637 | [三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) | 🟢 简单 | 数组 | 2026.02.03 |
+| 3713 | [最长的平衡子串 I](https://leetcode.cn/problems/longest-balanced-substring-i/) | 🟡 中等 | 哈希表、字符串、计数、枚举 | 2026.02.12 |
 | 3719 | [最长平衡子数组 I](https://leetcode.cn/problems/longest-balanced-subarray-i/) | 🟡 中等 | 线段树、数组、哈希表、分治、前缀和 | 2026.02.10 |
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
 | 3795 | [不同元素和至少为 K 的最短子数组长度](https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | 🟡 中等 | 数组、哈希表、滑动窗口 | 2026.01.03 |
@@ -369,8 +370,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-10 02:07:39
-- **总题目数**：302
+- **最后更新**：2026-02-12 00:35:42
+- **总题目数**：303
 - **技能标签数**：51
 
 > 🤖 本页面由自动化脚本生成
