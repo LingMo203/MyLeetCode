@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：303**  
+**总题数：304**  
 🟢 简单：123  
 🟡 中等：163  
-🔴 困难：17
+🔴 困难：18
 
 
 ---
@@ -17,18 +17,18 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x151
+- **数组** x152
 - **字符串** x58
 - **哈希表** x57
 - **树** x37
 - **二叉树** x35
 - **链表** x31
-- **栈** x25
+- **栈** x26
 - **矩阵** x23
 - **堆（优先队列）** x12
 - **并查集** x10
+- **单调栈** x7
 - **队列** x6
-- **单调栈** x6
 - **图** x6
 - **字典树** x3
 - **单调队列** x2
@@ -323,6 +323,7 @@
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 1925 | [统计平方和三元组的数目](https://leetcode.cn/problems/count-square-sum-triples/) | 🟢 简单 | 数学、枚举 | 2025.12.08 |
 | 1929 | [数组串联](https://leetcode.cn/problems/concatenation-of-array/) | 🟢 简单 | 数组、模拟 | 2026.02.07 |
+| 1944 | [队列中可以看到的人数](https://leetcode.cn/problems/number-of-visible-people-in-a-queue/) | 🔴 困难 | 栈、数组、单调栈 | 2026.02.13 |
 | 1984 | [学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | 🟢 简单 | 数组、排序、滑动窗口 | 2026.01.25 |
 | 1985 | [找出数组中的第 K 大整数](https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/) | 🟡 中等 | 数组、字符串、分治、快速选择、排序、堆（优先队列） | 2026.02.02 |
 | 1992 | [找到所有的农场组](https://leetcode.cn/problems/find-all-groups-of-farmland/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.01.12 |
@@ -370,8 +371,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-12 00:35:42
-- **总题目数**：303
+- **最后更新**：2026-02-13 00:31:56
+- **总题目数**：304
 - **技能标签数**：51
 
 > 🤖 本页面由自动化脚本生成

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 303,
-  "updated_at": "2026.02.12",
+  "total_solved": 304,
+  "updated_at": "2026.02.13",
   "problems": [
     {
       "id": 1,
@@ -4520,6 +4520,21 @@
         "2026.02.12"
       ],
       "leetcode_url": "https://leetcode.cn/problems/longest-balanced-substring-i/"
+    },
+    {
+      "id": 1944,
+      "title": "队列中可以看到的人数",
+      "title_slug": "number-of-visible-people-in-a-queue",
+      "difficulty": "困难",
+      "tags": [
+        "栈",
+        "数组",
+        "单调栈"
+      ],
+      "solved_dates": [
+        "2026.02.13"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/number-of-visible-people-in-a-queue/"
     }
   ]
 }

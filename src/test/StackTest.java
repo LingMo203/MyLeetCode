@@ -255,6 +255,23 @@ public class StackTest {
     }
 
 
+    //1944. 队列中可以看到的人数
+    public int[] canSeePersonsCount(int[] heights) {
+        int n = heights.length;
+        int[] res = new int[n];
+        Deque<Integer> deque = new ArrayDeque<>();
+        for (int i = n - 1; i >= 0; i--) {
+            int num = heights[i];
+            while (!deque.isEmpty() && num >= deque.getFirst()) {
+                deque.removeFirst();
+                res[i]++;
+            }
+            if (!deque.isEmpty()) res[i]++;
+            deque.addFirst(num);
+        }
+        return res;
+    }
+
 
 
 
