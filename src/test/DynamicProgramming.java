@@ -29,7 +29,8 @@ public class DynamicProgramming {
         //System.out.println(dp.jump(nums));
         //System.out.println(dp.minPathSum(dnums));
         //System.out.println(dp.minimumTotal(list));
-        System.out.println(dp.maxRotateFunction(new int[]{4,3,2,6}));
+        //System.out.println(dp.maxRotateFunction(new int[]{4,3,2,6}));
+        System.out.println(dp.champagneTower(100000009,33,17));
     }
 
 
@@ -316,7 +317,22 @@ public class DynamicProgramming {
         return res;
     }
 
-
+    //799. 香槟塔
+    public double champagneTower(int poured, int query_row, int query_glass) {
+        double[][] dp = new double[102][102];
+        dp[0][0] = poured;
+        for (int i = 0; i <= query_row; i++) {
+            for (int j = 0; j <= i + 1; j++) {
+                if (dp[i][j] > 1) {
+                    double rest = dp[i][j] - 1;
+                    dp[i][j] = 1;
+                    dp[i + 1][j] += rest / 2;
+                    dp[i + 1][j + 1] += rest / 2;
+                }
+            }
+        }
+        return dp[query_row][query_glass];
+    }
 
 
 

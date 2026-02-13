@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：304**  
+**总题数：305**  
 🟢 简单：123  
-🟡 中等：163  
+🟡 中等：164  
 🔴 困难：18
 
 
@@ -39,7 +39,7 @@
 - **深度优先搜索** x41
 - **排序** x39
 - **广度优先搜索** x32
-- **动态规划** x27
+- **动态规划** x28
 - **二分查找** x22
 - **回溯** x21
 - **贪心** x19
@@ -282,6 +282,7 @@
 | 788 | [旋转数字](https://leetcode.cn/problems/rotated-digits/) | 🟡 中等 | 数学、动态规划、回溯（自添加标签） | 2026.02.05 |
 | 796 | [旋转字符串](https://leetcode.cn/problems/rotate-string/) | 🟢 简单 | 字符串、字符串匹配 | 2026.02.10 |
 | 797 | [所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) | 🟡 中等 | 深度优先搜索、广度优先搜索、图、回溯 | 2026.01.10 |
+| 799 | [香槟塔](https://leetcode.cn/problems/champagne-tower/) | 🟡 中等 | 动态规划 | 2026.02.14 |
 | 821 | [字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character/) | 🟢 简单 | 数组、双指针、字符串 | 2025.11.05 |
 | 831 | [隐藏个人信息](https://leetcode.cn/problems/masking-personal-information/) | 🟡 中等 | 字符串 | 2026.02.09 |
 | 840 | [矩阵中的幻方](https://leetcode.cn/problems/magic-squares-in-grid/) | 🟡 中等 | 数组、哈希表、数学、矩阵 | 2025.12.30 |
@@ -371,8 +372,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-13 00:31:56
-- **总题目数**：304
+- **最后更新**：2026-02-14 00:37:13
+- **总题目数**：305
 - **技能标签数**：51
 
 > 🤖 本页面由自动化脚本生成

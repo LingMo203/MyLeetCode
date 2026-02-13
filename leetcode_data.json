@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 304,
-  "updated_at": "2026.02.13",
+  "total_solved": 305,
+  "updated_at": "2026.02.14",
   "problems": [
     {
       "id": 1,
@@ -4535,6 +4535,19 @@
         "2026.02.13"
       ],
       "leetcode_url": "https://leetcode.cn/problems/number-of-visible-people-in-a-queue/"
+    },
+    {
+      "id": 799,
+      "title": "香槟塔",
+      "title_slug": "champagne-tower",
+      "difficulty": "中等",
+      "tags": [
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.02.14"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/champagne-tower/"
     }
   ]
 }
