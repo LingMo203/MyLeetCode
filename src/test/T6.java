@@ -25,7 +25,8 @@ public class T6 {
         //System.out.println(t6.detectCapitalUse("FlaG"));
         //System.out.println(t6.licenseKeyFormatting("5F3Z-2e-9-w",4));
         //System.out.println(t6.repeatedSubstringPattern("aba"));
-        System.out.println(t6.longestBalanced("zzabccy"));
+        //System.out.println(t6.longestBalanced("zzabccy"));
+        System.out.println(t6.addBinary("101111", "10"));
     }
 
     //56. 合并区间
@@ -372,6 +373,43 @@ public class T6 {
             }
         }
         return res;
+    }
+
+    //67. 二进制求和
+    public String addBinary(String a, String b) {
+        StringBuilder res = new StringBuilder();
+        boolean add = false;
+        int i = a.length() - 1, j = b.length() - 1;
+        for (; i >= 0 && j >= 0; i--, j--) {
+            int aa = a.charAt(i) - '0', bb = b.charAt(j) - '0', c = aa + bb;
+            if (add) c++;
+            if (c >= 2) {
+                add = true;
+                c -= 2;
+            } else add = false;
+            res.append(c);
+        }
+        boolean t;
+        if (i < 0) {
+            t = lastAddBinary(b, res, add, j);
+        } else {
+            t = lastAddBinary(a, res, add, i);
+        }
+        if (t) res.append(1);
+        res.reverse();
+        return res.toString();
+    }
+    public boolean lastAddBinary(String b, StringBuilder res, boolean add, int j) {
+        for (; j >= 0; j--) {
+            int c = b.charAt(j) - '0';
+            if (add) c++;
+            if (c >= 2) {
+                add = true;
+                c -= 2;
+            } else add = false;
+            res.append(c);
+        }
+        return add;
     }
 
 }

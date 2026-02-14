@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 307,
+  "total_solved": 308,
   "updated_at": "2026.02.15",
   "problems": [
     {
@@ -4570,6 +4570,22 @@
         "2026.02.14"
       ],
       "leetcode_url": "https://leetcode.cn/problems/number-of-prefix-connected-groups/"
+    },
+    {
+      "id": 67,
+      "title": "二进制求和",
+      "title_slug": "add-binary",
+      "difficulty": "简单",
+      "tags": [
+        "位运算",
+        "数学",
+        "字符串",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.02.15"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/add-binary/"
     }
   ]
 }
