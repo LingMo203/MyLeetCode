@@ -534,6 +534,37 @@ public class GraphTest {
     }
 
 
+    //1926. 迷宫中离入口最近的出口
+    public int nearestExit(char[][] maze, int[] entrance) {
+        int m = maze.length, n = maze[0].length, step = 0;
+        final int[][] direction = {{0, -1}, {-1, 0}, {0, 1}, {1, 0}};//左 上 右 下
+        Deque<int[]> deque = new ArrayDeque<>();
+        deque.addLast(entrance);
+        maze[entrance[0]][entrance[1]] = '+';
+        while (!deque.isEmpty()) {
+            int size = deque.size();
+            while (size-- > 0) {
+                int[] remove = deque.removeFirst();
+                int x = remove[0], y = remove[1];
+                for (int[] dir : direction) {
+                    int nextX = x + dir[0], nextY = y + dir[1];
+                    if (nextX < 0 || nextX >= m || nextY < 0 || nextY >= n) {
+                        if (x != entrance[0] || y != entrance[1]) return step;
+                        continue;
+                    }
+                    if (maze[nextX][nextY] == '+') continue;
+                    deque.addLast(new int[]{nextX, nextY});
+                    maze[nextX][nextY] = '+';
+                }
+            }
+            step++;
+        }
+        return -1;
+    }
+
+
+
+
 
 
 

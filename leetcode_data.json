@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 308,
+  "total_solved": 309,
   "updated_at": "2026.02.15",
   "problems": [
     {
@@ -4586,6 +4586,21 @@
         "2026.02.15"
       ],
       "leetcode_url": "https://leetcode.cn/problems/add-binary/"
+    },
+    {
+      "id": 1926,
+      "title": "迷宫中离入口最近的出口",
+      "title_slug": "nearest-exit-from-entrance-in-maze",
+      "difficulty": "中等",
+      "tags": [
+        "广度优先搜索",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.02.15"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/"
     }
   ]
 }

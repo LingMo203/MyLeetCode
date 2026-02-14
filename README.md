@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：308**  
+**总题数：309**  
 🟢 简单：125  
-🟡 中等：165  
+🟡 中等：166  
 🔴 困难：18
 
 
@@ -17,14 +17,14 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x152
+- **数组** x153
 - **字符串** x59
 - **哈希表** x57
 - **树** x37
 - **二叉树** x35
 - **链表** x31
 - **栈** x26
-- **矩阵** x23
+- **矩阵** x24
 - **堆（优先队列）** x12
 - **并查集** x10
 - **单调栈** x7
@@ -38,7 +38,7 @@
 - **双指针** x47
 - **深度优先搜索** x41
 - **排序** x39
-- **广度优先搜索** x32
+- **广度优先搜索** x33
 - **动态规划** x28
 - **二分查找** x22
 - **回溯** x21
@@ -324,6 +324,7 @@
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 1925 | [统计平方和三元组的数目](https://leetcode.cn/problems/count-square-sum-triples/) | 🟢 简单 | 数学、枚举 | 2025.12.08 |
+| 1926 | [迷宫中离入口最近的出口](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) | 🟡 中等 | 广度优先搜索、数组、矩阵 | 2026.02.15 |
 | 1929 | [数组串联](https://leetcode.cn/problems/concatenation-of-array/) | 🟢 简单 | 数组、模拟 | 2026.02.07 |
 | 1944 | [队列中可以看到的人数](https://leetcode.cn/problems/number-of-visible-people-in-a-queue/) | 🔴 困难 | 栈、数组、单调栈 | 2026.02.13 |
 | 1984 | [学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | 🟢 简单 | 数组、排序、滑动窗口 | 2026.01.25 |
@@ -375,8 +376,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-15 00:38:07
-- **总题目数**：308
+- **最后更新**：2026-02-15 01:16:51
+- **总题目数**：309
 - **技能标签数**：51
 
 > 🤖 本页面由自动化脚本生成
