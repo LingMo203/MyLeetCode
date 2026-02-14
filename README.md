@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：305**  
-🟢 简单：123  
-🟡 中等：164  
+**总题数：307**  
+🟢 简单：124  
+🟡 中等：165  
 🔴 困难：18
 
 
@@ -366,14 +366,16 @@
 | 3833 | [统计主导元素下标数](https://leetcode.cn/problems/count-dominant-indices/) | 🟢 简单 |  | 2026.02.08 |
 | 3834 | [合并相邻且相等的元素](https://leetcode.cn/problems/merge-adjacent-equal-elements/) | 🟡 中等 |  | 2026.02.08 |
 | 3835 | [开销小于等于 K 的子数组数目](https://leetcode.cn/problems/count-subarrays-with-cost-less-than-or-equal-to-k/) | 🟡 中等 |  | 2026.02.08 |
+| 100912 | [前缀连接组的数目](https://leetcode.cn/problems/number-of-prefix-connected-groups/) | 🟡 中等 |  | 2026.02.14 |
+| 100987 | [带权单词映射](https://leetcode.cn/problems/weighted-word-mapping/) | 🟢 简单 |  | 2026.02.14 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-14 00:37:13
-- **总题目数**：305
+- **最后更新**：2026-02-15 00:14:30
+- **总题目数**：307
 - **技能标签数**：51
 
 > 🤖 本页面由自动化脚本生成

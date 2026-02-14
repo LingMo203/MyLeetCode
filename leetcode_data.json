@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 305,
-  "updated_at": "2026.02.14",
+  "total_solved": 307,
+  "updated_at": "2026.02.15",
   "problems": [
     {
       "id": 1,
@@ -4548,6 +4548,28 @@
         "2026.02.14"
       ],
       "leetcode_url": "https://leetcode.cn/problems/champagne-tower/"
+    },
+    {
+      "id": 100987,
+      "title": "带权单词映射",
+      "title_slug": "weighted-word-mapping",
+      "difficulty": "简单",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.14"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/weighted-word-mapping/"
+    },
+    {
+      "id": 100912,
+      "title": "前缀连接组的数目",
+      "title_slug": "number-of-prefix-connected-groups",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.14"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/number-of-prefix-connected-groups/"
     }
   ]
 }
