@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 311,
+  "total_solved": 312,
   "updated_at": "2026.02.15",
   "problems": [
     {
@@ -4623,6 +4623,21 @@
         "2026.02.15"
       ],
       "leetcode_url": "https://leetcode.cn/problems/first-element-with-unique-frequency/"
+    },
+    {
+      "id": 1091,
+      "title": "二进制矩阵中的最短路径",
+      "title_slug": "shortest-path-in-binary-matrix",
+      "difficulty": "中等",
+      "tags": [
+        "广度优先搜索",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.02.15"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/shortest-path-in-binary-matrix/"
     }
   ]
 }

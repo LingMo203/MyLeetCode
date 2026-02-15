@@ -563,6 +563,34 @@ public class GraphTest {
     }
 
 
+    //1091. 二进制矩阵中的最短路径
+    public int shortestPathBinaryMatrix(int[][] grid) {
+        if (grid[0][0] == 1) return -1;
+        int n = grid.length, res = 0;
+        final int[][] direction = {{0, -1}, {-1, 0}, {0, 1}, {1, 0}, {-1, -1}, {-1, 1}, {1, -1}, {1, 1}};//左 上 右 下 左上 右上 左下 右下
+        Deque<int[]> deque = new ArrayDeque<>();
+        deque.addLast(new int[]{0, 0});
+        grid[0][0] = 1;
+        while (!deque.isEmpty()) {
+            int size = deque.size();
+            while (size-- > 0) {
+                int[] remove = deque.removeFirst();
+                int x = remove[0], y = remove[1];
+                if (x == n - 1 && y == n - 1) return res + 1;
+                for (int[] dir : direction) {
+                    int nextX = x + dir[0], nextY = y + dir[1];
+                    if (nextX < 0 || nextX >= n || nextY < 0 || nextY >= n || grid[nextX][nextY] == 1) continue;
+                    deque.addLast(new int[]{nextX, nextY});
+                    grid[nextX][nextY] = 1;
+                }
+            }
+            res++;
+        }
+        return -1;
+    }
+
+
+
 
 
 
