@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：312**  
-🟢 简单：126  
+**总题数：313**  
+🟢 简单：127  
 🟡 中等：168  
 🔴 困难：18
 
@@ -44,9 +44,9 @@
 - **回溯** x21
 - **贪心** x19
 - **递归** x16
-- **位运算** x15
+- **位运算** x16
 - **模拟** x15
-- **分治** x12
+- **分治** x13
 - **滑动窗口** x10
 - **设计** x8
 - **枚举** x5
@@ -187,6 +187,7 @@
 | 169 | [多数元素](https://leetcode.cn/problems/majority-element/) | 🟢 简单 | 数组、哈希表、分治、计数、排序 | 2025.10.27 |
 | 172 | [阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) | 🟡 中等 | 数学 | 2025.12.08 |
 | 189 | [轮转数组](https://leetcode.cn/problems/rotate-array/) | 🟡 中等 | 数组、数学、双指针 | 2025.12.05 |
+| 190 | [颠倒二进制位](https://leetcode.cn/problems/reverse-bits/) | 🟢 简单 | 位运算、分治 | 2026.02.16 |
 | 199 | [二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.06 |
 | 200 | [岛屿数量](https://leetcode.cn/problems/number-of-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.11 |
 | 202 | [快乐数](https://leetcode.cn/problems/happy-number/) | 🟢 简单 | 哈希表、数学、双指针 | 2025.11.04 |
@@ -379,8 +380,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-15 12:40:39
-- **总题目数**：312
+- **最后更新**：2026-02-16 00:17:25
+- **总题目数**：313
 - **技能标签数**：51
 
 > 🤖 本页面由自动化脚本生成

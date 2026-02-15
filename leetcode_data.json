@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 312,
-  "updated_at": "2026.02.15",
+  "total_solved": 313,
+  "updated_at": "2026.02.16",
   "problems": [
     {
       "id": 1,
@@ -4638,6 +4638,20 @@
         "2026.02.15"
       ],
       "leetcode_url": "https://leetcode.cn/problems/shortest-path-in-binary-matrix/"
+    },
+    {
+      "id": 190,
+      "title": "颠倒二进制位",
+      "title_slug": "reverse-bits",
+      "difficulty": "简单",
+      "tags": [
+        "位运算",
+        "分治"
+      ],
+      "solved_dates": [
+        "2026.02.16"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/reverse-bits/"
     }
   ]
 }

@@ -26,7 +26,8 @@ public class T6 {
         //System.out.println(t6.licenseKeyFormatting("5F3Z-2e-9-w",4));
         //System.out.println(t6.repeatedSubstringPattern("aba"));
         //System.out.println(t6.longestBalanced("zzabccy"));
-        System.out.println(t6.addBinary("101111", "10"));
+        //System.out.println(t6.addBinary("101111", "10"));
+        System.out.println(t6.reverseBits(43261596));
     }
 
     //56. 合并区间
@@ -410,6 +411,11 @@ public class T6 {
             res.append(c);
         }
         return add;
+    }
+
+    //190. 颠倒二进制位 (惭愧调库)
+    public int reverseBits(int n) {
+        return Integer.reverse(n);
     }
 
 }
