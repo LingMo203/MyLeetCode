@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 309,
+  "total_solved": 311,
   "updated_at": "2026.02.15",
   "problems": [
     {
@@ -4601,6 +4601,28 @@
         "2026.02.15"
       ],
       "leetcode_url": "https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/"
+    },
+    {
+      "id": 3842,
+      "title": "灯泡开关",
+      "title_slug": "toggle-light-bulbs",
+      "difficulty": "简单",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.15"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/toggle-light-bulbs/"
+    },
+    {
+      "id": 3843,
+      "title": "频率不同的第一个元素",
+      "title_slug": "first-element-with-unique-frequency",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.15"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/first-element-with-unique-frequency/"
     }
   ]
 }
