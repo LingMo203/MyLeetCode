@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 313,
-  "updated_at": "2026.02.16",
+  "total_solved": 314,
+  "updated_at": "2026.02.17",
   "problems": [
     {
       "id": 1,
@@ -4652,6 +4652,20 @@
         "2026.02.16"
       ],
       "leetcode_url": "https://leetcode.cn/problems/reverse-bits/"
+    },
+    {
+      "id": 401,
+      "title": "二进制手表",
+      "title_slug": "binary-watch",
+      "difficulty": "简单",
+      "tags": [
+        "位运算",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.02.17"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/binary-watch/"
     }
   ]
 }
