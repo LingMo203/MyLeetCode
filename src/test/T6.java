@@ -431,6 +431,17 @@ public class T6 {
         return res;
     }
 
+    //693. 交替位二进制数
+    public boolean hasAlternatingBits(int n) {
+        String str = Integer.toBinaryString(n);
+        char last = str.charAt(0);
+        for (int i = 1; i < str.length(); i++) {
+            if (last == str.charAt(i)) return false;
+            last = str.charAt(i);
+        }
+        return true;
+    }
+
 }
 
 

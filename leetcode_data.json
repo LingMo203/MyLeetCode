@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 314,
-  "updated_at": "2026.02.17",
+  "total_solved": 315,
+  "updated_at": "2026.02.18",
   "problems": [
     {
       "id": 1,
@@ -4666,6 +4666,19 @@
         "2026.02.17"
       ],
       "leetcode_url": "https://leetcode.cn/problems/binary-watch/"
+    },
+    {
+      "id": 693,
+      "title": "交替位二进制数",
+      "title_slug": "binary-number-with-alternating-bits",
+      "difficulty": "简单",
+      "tags": [
+        "位运算"
+      ],
+      "solved_dates": [
+        "2026.02.18"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/binary-number-with-alternating-bits/"
     }
   ]
 }
