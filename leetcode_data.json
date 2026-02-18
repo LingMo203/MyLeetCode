@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 315,
+  "total_solved": 316,
   "updated_at": "2026.02.18",
   "problems": [
     {
@@ -4550,7 +4550,7 @@
       "leetcode_url": "https://leetcode.cn/problems/champagne-tower/"
     },
     {
-      "id": 100987,
+      "id": 3838,
       "title": "带权单词映射",
       "title_slug": "weighted-word-mapping",
       "difficulty": "简单",
@@ -4561,7 +4561,7 @@
       "leetcode_url": "https://leetcode.cn/problems/weighted-word-mapping/"
     },
     {
-      "id": 100912,
+      "id": 3839,
       "title": "前缀连接组的数目",
       "title_slug": "number-of-prefix-connected-groups",
       "difficulty": "中等",
@@ -4679,6 +4679,22 @@
         "2026.02.18"
       ],
       "leetcode_url": "https://leetcode.cn/problems/binary-number-with-alternating-bits/"
+    },
+    {
+      "id": 204,
+      "title": "计数质数",
+      "title_slug": "count-primes",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "数学",
+        "枚举",
+        "数论"
+      ],
+      "solved_dates": [
+        "2026.02.18"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-primes/"
     }
   ]
 }

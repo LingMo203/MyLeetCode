@@ -27,7 +27,8 @@ public class T6 {
         //System.out.println(t6.repeatedSubstringPattern("aba"));
         //System.out.println(t6.longestBalanced("zzabccy"));
         //System.out.println(t6.addBinary("101111", "10"));
-        System.out.println(t6.reverseBits(43261596));
+        //System.out.println(t6.reverseBits(43261596));
+        System.out.println(t6.countPrimes(1000000));
     }
 
     //56. 合并区间
@@ -440,6 +441,23 @@ public class T6 {
             last = str.charAt(i);
         }
         return true;
+    }
+
+    //204. 计数质数 (埃氏筛)
+    public int countPrimes(int n) {
+        if (n <= 2) return 0;
+        else if (n == 3) return 1;
+        int count = 1;
+        boolean[] is = new boolean[n];
+        for (int i = 3; i < n; i += 2) {
+            if (!is[i]) {
+                count++;
+                for (int j = i; j < n; j += i) {
+                    is[j] = true;
+                }
+            }
+        }
+        return count;
     }
 
 }
