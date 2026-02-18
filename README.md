@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：316**  
-🟢 简单：129  
+**总题数：317**  
+🟢 简单：130  
 🟡 中等：169  
 🔴 困难：18
 
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x155
-- **字符串** x59
+- **字符串** x60
 - **哈希表** x57
 - **树** x37
 - **二叉树** x35
@@ -35,7 +35,7 @@
 
 ### ⚡ 算法
 - **数学** x50
-- **双指针** x47
+- **双指针** x48
 - **深度优先搜索** x41
 - **排序** x39
 - **广度优先搜索** x34
@@ -276,6 +276,7 @@
 | 692 | [前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/) | 🟡 中等 | 字典树、数组、哈希表、字符串、桶排序、计数、排序、堆（优先队列） | 2026.02.02 |
 | 693 | [交替位二进制数](https://leetcode.cn/problems/binary-number-with-alternating-bits/) | 🟢 简单 | 位运算 | 2026.02.18 |
 | 695 | [岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.11 |
+| 696 | [计数二进制子串](https://leetcode.cn/problems/count-binary-substrings/) | 🟢 简单 | 双指针、字符串 | 2026.02.19 |
 | 704 | [二分查找](https://leetcode.cn/problems/binary-search/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
 | 707 | [设计链表](https://leetcode.cn/problems/design-linked-list/) | 🟡 中等 | 设计、链表 | 2025.11.17 |
 | 713 | [乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/) | 🟡 中等 | 数组、二分查找、前缀和、滑动窗口 | 2026.01.02 |
@@ -383,8 +384,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-18 20:48:11
-- **总题目数**：316
+- **最后更新**：2026-02-19 00:33:22
+- **总题目数**：317
 - **技能标签数**：52
 
 > 🤖 本页面由自动化脚本生成

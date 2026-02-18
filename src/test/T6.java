@@ -471,6 +471,26 @@ public class T6 {
         return n % 2 == 0 ? num * num : num * num * x;
     }
 
+    //696. 计数二进制子串
+    public int countBinarySubstrings(String s) {
+        int res = 0, n = s.length();
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0, count = 0; i < n; i++) {
+            char c = s.charAt(i);
+            for (; i < n && s.charAt(i) == c; i++, count++) {
+            }
+            i--;
+            list.add(count);
+            count = 0;
+        }
+        int last = 0;
+        for (int num : list) {
+            res += Math.min(last, num);
+            last = num;
+        }
+        return res;
+    }
+
 }
 
 

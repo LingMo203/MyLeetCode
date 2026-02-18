@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 316,
-  "updated_at": "2026.02.18",
+  "total_solved": 317,
+  "updated_at": "2026.02.19",
   "problems": [
     {
       "id": 1,
@@ -4696,6 +4696,20 @@
         "2026.02.18"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-primes/"
+    },
+    {
+      "id": 696,
+      "title": "计数二进制子串",
+      "title_slug": "count-binary-substrings",
+      "difficulty": "简单",
+      "tags": [
+        "双指针",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.02.19"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-binary-substrings/"
     }
   ]
 }
