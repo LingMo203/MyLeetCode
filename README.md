@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：317**  
-🟢 简单：130  
+**总题数：318**  
+🟢 简单：131  
 🟡 中等：169  
 🔴 困难：18
 
@@ -34,7 +34,7 @@
 - **单调队列** x2
 
 ### ⚡ 算法
-- **数学** x50
+- **数学** x51
 - **双指针** x48
 - **深度优先搜索** x41
 - **排序** x39
@@ -43,7 +43,7 @@
 - **二分查找** x22
 - **回溯** x22
 - **贪心** x19
-- **位运算** x18
+- **位运算** x19
 - **递归** x16
 - **模拟** x15
 - **分治** x13
@@ -284,6 +284,7 @@
 | 739 | [每日温度](https://leetcode.cn/problems/daily-temperatures/) | 🟡 中等 | 栈、数组、单调栈 | 2025.12.09 |
 | 744 | [寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | 🟢 简单 | 数组、二分查找 | 2026.01.31 |
 | 746 | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | 🟢 简单 | 数组、动态规划 | 2025.11.22 |
+| 762 | [二进制表示中质数个计算置位](https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/) | 🟢 简单 | 位运算、数学 | 2026.02.21 |
 | 763 | [划分字母区间](https://leetcode.cn/problems/partition-labels/) | 🟡 中等 | 贪心、哈希表、双指针、字符串 | 2026.02.01 |
 | 788 | [旋转数字](https://leetcode.cn/problems/rotated-digits/) | 🟡 中等 | 数学、动态规划、回溯（自添加标签） | 2026.02.05 |
 | 796 | [旋转字符串](https://leetcode.cn/problems/rotate-string/) | 🟢 简单 | 字符串、字符串匹配 | 2026.02.10 |
@@ -384,8 +385,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-19 00:33:22
-- **总题目数**：317
+- **最后更新**：2026-02-21 00:47:53
+- **总题目数**：318
 - **技能标签数**：52
 
 > 🤖 本页面由自动化脚本生成

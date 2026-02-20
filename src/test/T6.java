@@ -28,7 +28,8 @@ public class T6 {
         //System.out.println(t6.longestBalanced("zzabccy"));
         //System.out.println(t6.addBinary("101111", "10"));
         //System.out.println(t6.reverseBits(43261596));
-        System.out.println(t6.countPrimes(1000000));
+        //System.out.println(t6.countPrimes(1000000));
+        System.out.println(t6.countPrimeSetBits(10, 15));
     }
 
     //56. 合并区间
@@ -487,6 +488,16 @@ public class T6 {
         for (int num : list) {
             res += Math.min(last, num);
             last = num;
+        }
+        return res;
+    }
+
+    //762. 二进制表示中质数个计算置位
+    public int countPrimeSetBits(int left, int right) {
+        int[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31};
+        int res = 0;
+        for (; left <= right; left++) {
+            if (Arrays.binarySearch(primes, Integer.bitCount(left)) > -1) res++;
         }
         return res;
     }

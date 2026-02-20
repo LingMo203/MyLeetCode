@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 317,
-  "updated_at": "2026.02.19",
+  "total_solved": 318,
+  "updated_at": "2026.02.21",
   "problems": [
     {
       "id": 1,
@@ -4710,6 +4710,20 @@
         "2026.02.19"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-binary-substrings/"
+    },
+    {
+      "id": 762,
+      "title": "二进制表示中质数个计算置位",
+      "title_slug": "prime-number-of-set-bits-in-binary-representation",
+      "difficulty": "简单",
+      "tags": [
+        "位运算",
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.02.21"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/"
     }
   ]
 }
