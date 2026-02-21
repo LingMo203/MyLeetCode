@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：318**  
-🟢 简单：131  
+**总题数：319**  
+🟢 简单：132  
 🟡 中等：169  
 🔴 困难：18
 
@@ -42,8 +42,8 @@
 - **动态规划** x28
 - **二分查找** x22
 - **回溯** x22
+- **位运算** x20
 - **贪心** x19
-- **位运算** x19
 - **递归** x16
 - **模拟** x15
 - **分治** x13
@@ -295,6 +295,7 @@
 | 840 | [矩阵中的幻方](https://leetcode.cn/problems/magic-squares-in-grid/) | 🟡 中等 | 数组、哈希表、数学、矩阵 | 2025.12.30 |
 | 860 | [柠檬水找零](https://leetcode.cn/problems/lemonade-change/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
 | 865 | [具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、哈希表、二叉树 | 2026.01.09 |
+| 868 | [二进制间距](https://leetcode.cn/problems/binary-gap/) | 🟢 简单 | 位运算 | 2026.02.22 |
 | 876 | [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | 🟢 简单 | 链表、双指针 | 2025.11.17 |
 | 941 | [有效的山脉数组](https://leetcode.cn/problems/valid-mountain-array/) | 🟢 简单 | 数组 | 2026.02.07 |
 | 961 | [在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.31 |
@@ -385,8 +386,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-21 00:47:53
-- **总题目数**：318
+- **最后更新**：2026-02-22 00:32:03
+- **总题目数**：319
 - **技能标签数**：52
 
 > 🤖 本页面由自动化脚本生成

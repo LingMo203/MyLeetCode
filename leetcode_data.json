@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 318,
-  "updated_at": "2026.02.21",
+  "total_solved": 319,
+  "updated_at": "2026.02.22",
   "problems": [
     {
       "id": 1,
@@ -4724,6 +4724,19 @@
         "2026.02.21"
       ],
       "leetcode_url": "https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/"
+    },
+    {
+      "id": 868,
+      "title": "二进制间距",
+      "title_slug": "binary-gap",
+      "difficulty": "简单",
+      "tags": [
+        "位运算"
+      ],
+      "solved_dates": [
+        "2026.02.22"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/binary-gap/"
     }
   ]
 }

@@ -502,6 +502,26 @@ public class T6 {
         return res;
     }
 
+    //868. 二进制间距
+    public int binaryGap(int n) {
+        int res = 0, last = 0;
+        String str = Integer.toBinaryString(n);
+        int m = str.length(), i = 0;
+        for (; i < m; i++) {
+            if (str.charAt(i) == '1') {
+                last = i;
+                break;
+            }
+        }
+        for (; i < m; i++) {
+            if (str.charAt(i) == '1') {
+                res = Math.max(res, i - last);
+                last = i;
+            }
+        }
+        return res;
+    }
+
 }
 
 
