@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：319**  
+**总题数：322**  
 🟢 简单：132  
-🟡 中等：169  
+🟡 中等：172  
 🔴 困难：18
 
 
@@ -380,14 +380,17 @@
 | 3839 | [前缀连接组的数目](https://leetcode.cn/problems/number-of-prefix-connected-groups/) | 🟡 中等 |  | 2026.02.14 |
 | 3842 | [灯泡开关](https://leetcode.cn/problems/toggle-light-bulbs/) | 🟢 简单 |  | 2026.02.15 |
 | 3843 | [频率不同的第一个元素](https://leetcode.cn/problems/first-element-with-unique-frequency/) | 🟡 中等 |  | 2026.02.15 |
+| 3847 | [计算比赛分数差](https://leetcode.cn/problems/find-the-score-difference-in-a-game/) | 🟡 中等 |  | 2026.02.22 |
+| 3848 | [阶数数字排列](https://leetcode.cn/problems/check-digitorial-permutation/) | 🟡 中等 |  | 2026.02.22 |
+| 3849 | [重新排列后的最大按位异或值](https://leetcode.cn/problems/maximum-bitwise-xor-after-rearrangement/) | 🟡 中等 |  | 2026.02.22 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-22 00:32:03
-- **总题目数**：319
+- **最后更新**：2026-02-22 12:07:17
+- **总题目数**：322
 - **技能标签数**：52
 
 > 🤖 本页面由自动化脚本生成

@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 319,
+  "total_solved": 322,
   "updated_at": "2026.02.22",
   "problems": [
     {
@@ -4737,6 +4737,39 @@
         "2026.02.22"
       ],
       "leetcode_url": "https://leetcode.cn/problems/binary-gap/"
+    },
+    {
+      "id": 3847,
+      "title": "计算比赛分数差",
+      "title_slug": "find-the-score-difference-in-a-game",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.22"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-score-difference-in-a-game/"
+    },
+    {
+      "id": 3848,
+      "title": "阶数数字排列",
+      "title_slug": "check-digitorial-permutation",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.22"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/check-digitorial-permutation/"
+    },
+    {
+      "id": 3849,
+      "title": "重新排列后的最大按位异或值",
+      "title_slug": "maximum-bitwise-xor-after-rearrangement",
+      "difficulty": "中等",
+      "tags": [],
+      "solved_dates": [
+        "2026.02.22"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximum-bitwise-xor-after-rearrangement/"
     }
   ]
 }
