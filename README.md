@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：323**  
-🟢 简单：132  
+**总题数：324**  
+🟢 简单：133  
 🟡 中等：173  
 🔴 困难：18
 
@@ -20,8 +20,8 @@
 - **数组** x155
 - **字符串** x61
 - **哈希表** x58
-- **树** x37
-- **二叉树** x35
+- **树** x38
+- **二叉树** x36
 - **链表** x31
 - **栈** x26
 - **矩阵** x25
@@ -36,7 +36,7 @@
 ### ⚡ 算法
 - **数学** x51
 - **双指针** x48
-- **深度优先搜索** x41
+- **深度优先搜索** x42
 - **排序** x39
 - **广度优先搜索** x34
 - **动态规划** x28
@@ -304,6 +304,7 @@
 | 994 | [腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/) | 🟡 中等 | 广度优先搜索、数组、矩阵 | 2026.01.12 |
 | 997 | [找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/) | 🟢 简单 | 图、数组、哈希表 | 2026.01.10 |
 | 1005 | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | 🟢 简单 | 贪心、数组、排序 | 2025.11.10 |
+| 1022 | [从根到叶的二进制数之和](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/) | 🟢 简单 | 树、深度优先搜索、二叉树 | 2026.02.24 |
 | 1046 | [最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/) | 🟢 简单 | 数组、堆（优先队列） | 2026.02.07 |
 | 1091 | [二进制矩阵中的最短路径](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) | 🟡 中等 | 广度优先搜索、数组、矩阵 | 2026.02.15 |
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
@@ -390,8 +391,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-23 14:18:15
-- **总题目数**：323
+- **最后更新**：2026-02-24 00:36:56
+- **总题目数**：324
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

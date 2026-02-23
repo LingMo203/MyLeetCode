@@ -9,12 +9,13 @@ public class TreeNodeTest {
         int[] postorder = {9, 15, 7, 20, 3};
         int[] preorder = {3, 9, 20, 15, 7};
         int[] nums={-10,-3,0,5,9};
-        List<Integer> treeData = new ArrayList<>(Arrays.asList(0,3,1,4,null,2,null,null,6,null,5));
+        List<Integer> treeData = new ArrayList<>(Arrays.asList(1,null,0));
         TreeNode root=buildTree(treeData);
         //System.out.println(tt.inorderTraversal(tt.buildTree(inorder,preorder)));
         //System.out.println(tt.buildTree2(preorder,inorder)));
         //System.out.println(tt.inorderTraversal(tt.sortedArrayToBST(nums)));
-        System.out.println(tt.preorderTraversal(tt.subtreeWithAllDeepest(root)));
+        //System.out.println(tt.preorderTraversal(tt.subtreeWithAllDeepest(root)));
+        System.out.println(tt.sumRootToLeaf(root));
     }
 
     public static TreeNode buildTree(List<Integer> list) {
@@ -784,6 +785,30 @@ public class TreeNodeTest {
         root.right = buildBalanceBST(list, rightStart, rightEnd);
         return root;
     }
+
+    //1022. 从根到叶的二进制数之和
+    public int sumRootToLeaf(TreeNode root) {
+        StringBuilder path = new StringBuilder();
+        int[] res = new int[1];
+        dfsSumRootToLeaf(res, path, root);
+        return res[0];
+    }
+    private void dfsSumRootToLeaf(int[] res, StringBuilder path, TreeNode root) {
+        path.append(root.val);
+        if (root.left == null && root.right == null) {
+            res[0] += Integer.parseInt(path.toString(), 2);
+            return;
+        }
+        if (root.left != null) {
+            dfsSumRootToLeaf(res, path, root.left);
+            path.deleteCharAt(path.length() - 1);
+        }
+        if (root.right != null) {
+            dfsSumRootToLeaf(res, path, root.right);
+            path.deleteCharAt(path.length() - 1);
+        }
+    }
+
 
 
 

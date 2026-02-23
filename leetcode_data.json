@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 323,
-  "updated_at": "2026.02.23",
+  "total_solved": 324,
+  "updated_at": "2026.02.24",
   "problems": [
     {
       "id": 1,
@@ -4787,6 +4787,21 @@
         "2026.02.23"
       ],
       "leetcode_url": "https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/"
+    },
+    {
+      "id": 1022,
+      "title": "从根到叶的二进制数之和",
+      "title_slug": "sum-of-root-to-leaf-binary-numbers",
+      "difficulty": "简单",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.02.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/"
     }
   ]
 }
