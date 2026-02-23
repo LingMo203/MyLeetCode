@@ -29,7 +29,8 @@ public class T6 {
         //System.out.println(t6.addBinary("101111", "10"));
         //System.out.println(t6.reverseBits(43261596));
         //System.out.println(t6.countPrimes(1000000));
-        System.out.println(t6.countPrimeSetBits(10, 15));
+        //System.out.println(t6.countPrimeSetBits(10, 15));
+        System.out.println(t6.hasAllCodes("00110",2));
     }
 
     //56. 合并区间
@@ -520,6 +521,28 @@ public class T6 {
             }
         }
         return res;
+    }
+
+    //1461. 检查一个字符串是否包含所有长度为 K 的二进制子串
+    public boolean hasAllCodes(String s, int k) {
+        HashSet<String> hashSet = new HashSet<>();
+        for (int left = 0, right = k; right <= s.length(); right++, left++) {
+            hashSet.add(s.substring(left, right));
+        }
+        StringBuilder path = new StringBuilder();
+        return backHasAllCodes(path, hashSet, k);
+    }
+    public boolean backHasAllCodes(StringBuilder path, HashSet<String> hashSet, int k) {
+        if (path.length() == k) {
+            return hashSet.contains(path.toString());
+        }
+        for (int i = 0; i < 2; i++) {
+            char c = i == 0 ? '0' : '1';
+            path.append(c);
+            if (!backHasAllCodes(path, hashSet, k)) return false;
+            path.deleteCharAt(path.length() - 1);
+        }
+        return true;
     }
 
 }

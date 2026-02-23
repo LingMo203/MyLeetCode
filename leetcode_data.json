@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 322,
-  "updated_at": "2026.02.22",
+  "total_solved": 323,
+  "updated_at": "2026.02.23",
   "problems": [
     {
       "id": 1,
@@ -4770,6 +4770,23 @@
         "2026.02.22"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-bitwise-xor-after-rearrangement/"
+    },
+    {
+      "id": 1461,
+      "title": "检查一个字符串是否包含所有长度为 K 的二进制子串",
+      "title_slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
+      "difficulty": "中等",
+      "tags": [
+        "位运算",
+        "哈希表",
+        "字符串",
+        "哈希函数",
+        "滚动哈希"
+      ],
+      "solved_dates": [
+        "2026.02.23"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/"
     }
   ]
 }
