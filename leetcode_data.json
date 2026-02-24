@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 324,
+  "total_solved": 325,
   "updated_at": "2026.02.24",
   "problems": [
     {
@@ -4802,6 +4802,22 @@
         "2026.02.24"
       ],
       "leetcode_url": "https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/"
+    },
+    {
+      "id": 1036,
+      "title": "逃离大迷宫",
+      "title_slug": "escape-a-large-maze",
+      "difficulty": "困难",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "数组",
+        "哈希表"
+      ],
+      "solved_dates": [
+        "2026.02.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/escape-a-large-maze/"
     }
   ]
 }

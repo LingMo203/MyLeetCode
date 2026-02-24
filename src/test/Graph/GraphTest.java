@@ -10,8 +10,10 @@ import static util.ArrayStringUtils.parse2DCharArraySmart;
 public class GraphTest {
     public static void main(String[] args) {
         GraphTest gt=new GraphTest();
-        String strGrid="[[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]";
+        String strGrid="[[0,1],[1,0]]";
+        String strGrid2="[[0,3],[1,0],[1,1],[1,2],[1,3]]";
         int[][] grid= ArrayStringUtils.parse2DIntArray(strGrid);
+        int[][] grid2= ArrayStringUtils.parse2DIntArray(strGrid2);
         String charInput2 = "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]";
         char[][] charArray2 = parse2DCharArraySmart(charInput2);
         //System.out.println(gt.findJudge(2,numss));
@@ -21,7 +23,9 @@ public class GraphTest {
         //System.out.println(gt.minimumEffortPath(grid));
         //System.out.println(gt.findCircleNum(grid));
         gt.solve2(charArray2);
-        System.out.println(Arrays.deepToString(charArray2));
+        //System.out.println(Arrays.deepToString(charArray2));
+        //System.out.println(gt.isEscapePossible(grid,new int[]{0,0},new int[]{0,2}));
+        System.out.println(gt.isEscapePossible(grid2,new int[]{0,0},new int[]{0,2}));
     }
 
 
@@ -590,6 +594,38 @@ public class GraphTest {
     }
 
 
+    //1036. 逃离大迷宫
+    record Pair(int x, int y) {}
+    public boolean isEscapePossible(int[][] blocked, int[] source, int[] target) {
+        HashSet<Pair> lock = new HashSet<>();
+        for (int[] nums : blocked) {
+            lock.add(new Pair(nums[0], nums[1]));
+        }
+        Pair begin = new Pair(source[0], source[1]);
+        Pair end = new Pair(target[0], target[1]);
+        return pollIsEscapePossible(begin, end, lock) && pollIsEscapePossible(end, begin, lock);
+    }
+    private boolean pollIsEscapePossible(Pair begin, Pair end, HashSet<Pair> lock) {
+        final int[][] direction = {{0, -1}, {-1, 0}, {0, 1}, {1, 0}};//左 上 右 下
+        Deque<Pair> deque = new ArrayDeque<>();
+        HashSet<Pair> vis = new HashSet<>();
+        deque.addLast(begin);
+        vis.add(begin);
+        while (!deque.isEmpty()) {
+            Pair remove = deque.removeFirst();
+            if (vis.size() > 20000) return true;
+            for (int[] dir : direction) {
+                int nextX = remove.x + dir[0], nextY = remove.y + dir[1];
+                Pair pair = new Pair(nextX, nextY);
+                if (pair.equals(end)) return true;
+                if (nextX < 0 || nextX >= 1000000 || nextY < 0 || nextY >= 1000000 || lock.contains(pair) || vis.contains(pair))
+                    continue;
+                deque.addLast(pair);
+                vis.add(pair);
+            }
+        }
+        return false;
+    }
 
 
 
