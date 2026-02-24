@@ -545,6 +545,21 @@ public class T6 {
         return true;
     }
 
+    //1356. 根据数字二进制下 1 的数目排序
+    public int[] sortByBits(int[] arr) {
+        int n = arr.length;
+        ArrayList<int[]> list = new ArrayList<>();
+        for (int num : arr) {
+            list.add(new int[]{num, Integer.bitCount(num)});
+        }
+        list.sort((a, b) -> a[1] == b[1] ? a[0] - b[0] : a[1] - b[1]);
+        int[] ans = new int[n];
+        for (int i = 0; i < n; i++) {
+            ans[i] = list.get(i)[0];
+        }
+        return ans;
+    }
+
 }
 
 

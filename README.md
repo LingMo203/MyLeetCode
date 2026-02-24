@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：325**  
-🟢 简单：133  
+**总题数：326**  
+🟢 简单：134  
 🟡 中等：173  
 🔴 困难：19
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x156
+- **数组** x157
 - **字符串** x61
 - **哈希表** x59
 - **树** x38
@@ -37,12 +37,12 @@
 - **数学** x51
 - **双指针** x48
 - **深度优先搜索** x43
-- **排序** x39
+- **排序** x40
 - **广度优先搜索** x35
 - **动态规划** x28
 - **二分查找** x22
+- **位运算** x22
 - **回溯** x22
-- **位运算** x21
 - **贪心** x19
 - **递归** x16
 - **模拟** x15
@@ -318,6 +318,7 @@
 | 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
 | 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
 | 1354 | [多次求和构造目标数组](https://leetcode.cn/problems/construct-target-array-with-multiple-sums/) | 🔴 困难 | 数组、堆（优先队列） | 2026.02.09 |
+| 1356 | [根据数字二进制下 1 的数目排序](https://leetcode.cn/problems/sort-integers-by-the-number-of-1-bits/) | 🟢 简单 | 位运算、数组、计数、排序 | 2026.02.25 |
 | 1365 | [有多少小于当前数字的数字](https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/) | 🟢 简单 | 数组、哈希表、计数排序、排序 | 2026.02.07 |
 | 1382 | [将二叉搜索树变平衡](https://leetcode.cn/problems/balance-a-binary-search-tree/) | 🟡 中等 | 贪心、树、深度优先搜索、二叉搜索树、分治、二叉树 | 2026.02.09 |
 | 1390 | [四因数](https://leetcode.cn/problems/four-divisors/) | 🟡 中等 | 数组、数学 | 2026.01.04 |
@@ -392,8 +393,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-24 08:40:06
-- **总题目数**：325
+- **最后更新**：2026-02-25 00:23:15
+- **总题目数**：326
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
