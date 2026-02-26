@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：326**  
+**总题数：327**  
 🟢 简单：134  
-🟡 中等：173  
+🟡 中等：174  
 🔴 困难：19
 
 
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x157
-- **字符串** x61
+- **字符串** x62
 - **哈希表** x59
 - **树** x38
 - **二叉树** x36
@@ -40,12 +40,12 @@
 - **排序** x40
 - **广度优先搜索** x35
 - **动态规划** x28
+- **位运算** x23
 - **二分查找** x22
-- **位运算** x22
 - **回溯** x22
 - **贪心** x19
 - **递归** x16
-- **模拟** x15
+- **模拟** x16
 - **分治** x13
 - **滑动窗口** x10
 - **设计** x8
@@ -322,6 +322,7 @@
 | 1365 | [有多少小于当前数字的数字](https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/) | 🟢 简单 | 数组、哈希表、计数排序、排序 | 2026.02.07 |
 | 1382 | [将二叉搜索树变平衡](https://leetcode.cn/problems/balance-a-binary-search-tree/) | 🟡 中等 | 贪心、树、深度优先搜索、二叉搜索树、分治、二叉树 | 2026.02.09 |
 | 1390 | [四因数](https://leetcode.cn/problems/four-divisors/) | 🟡 中等 | 数组、数学 | 2026.01.04 |
+| 1404 | [将二进制表示减到 1 的步骤数](https://leetcode.cn/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | 🟡 中等 | 位运算、字符串、模拟 | 2026.02.26 |
 | 1441 | [用栈操作构建数组](https://leetcode.cn/problems/build-an-array-with-stack-operations/) | 🟡 中等 | 栈、数组、模拟 | 2026.02.07 |
 | 1461 | [检查一个字符串是否包含所有长度为 K 的二进制子串](https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | 🟡 中等 | 位运算、哈希表、字符串、哈希函数、滚动哈希 | 2026.02.23 |
 | 1470 | [重新排列数组](https://leetcode.cn/problems/shuffle-the-array/) | 🟢 简单 | 数组 | 2026.02.07 |
@@ -393,8 +394,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-25 00:23:15
-- **总题目数**：326
+- **最后更新**：2026-02-26 11:00:27
+- **总题目数**：327
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

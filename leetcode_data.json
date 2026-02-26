@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 326,
-  "updated_at": "2026.02.25",
+  "total_solved": 327,
+  "updated_at": "2026.02.26",
   "problems": [
     {
       "id": 1,
@@ -4834,6 +4834,21 @@
         "2026.02.25"
       ],
       "leetcode_url": "https://leetcode.cn/problems/sort-integers-by-the-number-of-1-bits/"
+    },
+    {
+      "id": 1404,
+      "title": "将二进制表示减到 1 的步骤数",
+      "title_slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "difficulty": "中等",
+      "tags": [
+        "位运算",
+        "字符串",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.02.26"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/"
     }
   ]
 }

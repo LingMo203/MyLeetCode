@@ -30,7 +30,8 @@ public class T6 {
         //System.out.println(t6.reverseBits(43261596));
         //System.out.println(t6.countPrimes(1000000));
         //System.out.println(t6.countPrimeSetBits(10, 15));
-        System.out.println(t6.hasAllCodes("00110",2));
+        //System.out.println(t6.hasAllCodes("00110",2));
+        System.out.println(t6.numSteps("1101"));
     }
 
     //56. 合并区间
@@ -558,6 +559,29 @@ public class T6 {
             ans[i] = list.get(i)[0];
         }
         return ans;
+    }
+
+    //1404. 将二进制表示减到 1 的步骤数
+    public int numSteps(String s) {
+        int res = 0;
+        StringBuilder sb = new StringBuilder(s);
+        while (sb.length() > 1) {
+            int n = sb.length() - 1;
+            if (sb.charAt(n) == '0') {
+                sb.deleteCharAt(n);
+            } else {
+                int i = n;
+                for (; i > 0 && sb.charAt(i) == '1'; i--) {
+                }
+                sb.delete(i, n + 1);
+                sb.append('1');
+                if (i == 0) n++;
+                sb.append("0".repeat(Math.max(0, n - i)));
+            }
+            res++;
+        }
+        if (sb.charAt(0) == '0') res++;
+        return res;
     }
 
 }
