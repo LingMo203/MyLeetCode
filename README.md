@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：327**  
+**总题数：328**  
 🟢 简单：134  
-🟡 中等：174  
+🟡 中等：175  
 🔴 困难：19
 
 
@@ -17,39 +17,39 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x157
-- **字符串** x62
-- **哈希表** x59
+- **数组** x165
+- **字符串** x66
+- **哈希表** x62
 - **树** x38
 - **二叉树** x36
 - **链表** x31
-- **栈** x26
+- **栈** x27
 - **矩阵** x25
 - **堆（优先队列）** x12
 - **并查集** x10
+- **队列** x7
 - **单调栈** x7
-- **队列** x6
 - **图** x6
+- **单调队列** x3
 - **字典树** x3
-- **单调队列** x2
 
 ### ⚡ 算法
-- **数学** x51
+- **数学** x52
 - **双指针** x48
 - **深度优先搜索** x43
-- **排序** x40
+- **排序** x41
 - **广度优先搜索** x35
 - **动态规划** x28
-- **位运算** x23
+- **位运算** x24
 - **二分查找** x22
 - **回溯** x22
-- **贪心** x19
+- **贪心** x21
+- **模拟** x20
 - **递归** x16
-- **模拟** x16
 - **分治** x13
 - **滑动窗口** x10
 - **设计** x8
-- **枚举** x6
+- **枚举** x7
 - **快速选择** x3
 - **随机化** x1
 
@@ -329,6 +329,7 @@
 | 1475 | [商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) | 🟢 简单 | 栈、数组、单调栈 | 2026.02.07 |
 | 1523 | [在区间范围内统计奇数数目](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) | 🟢 简单 | 数学 | 2025.12.07 |
 | 1653 | [使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) | 🟡 中等 | 栈、字符串、动态规划 | 2026.02.07 |
+| 1689 | [十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | 🟡 中等 | 贪心、字符串 | 2026.03.01 |
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
 | 1700 | [无法吃午餐的学生数量](https://leetcode.cn/problems/number-of-students-unable-to-eat-lunch/) | 🟢 简单 | 栈、队列、数组、模拟 | 2026.02.07 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
@@ -378,24 +379,24 @@
 | 3827 | [统计单比特整数](https://leetcode.cn/problems/count-monobit-integers/) | 🟢 简单 | 位运算、枚举 | 2026.02.01 |
 | 3828 | [删除子数组后的最终元素](https://leetcode.cn/problems/final-element-after-subarray-deletions/) | 🟡 中等 | 脑筋急转弯、数组、数学、博弈 | 2026.02.01 |
 | 3829 | [设计共享出行系统](https://leetcode.cn/problems/design-ride-sharing-system/) | 🟡 中等 | 设计、队列、哈希表、数据流 | 2026.02.01 |
-| 3833 | [统计主导元素下标数](https://leetcode.cn/problems/count-dominant-indices/) | 🟢 简单 |  | 2026.02.08 |
-| 3834 | [合并相邻且相等的元素](https://leetcode.cn/problems/merge-adjacent-equal-elements/) | 🟡 中等 |  | 2026.02.08 |
-| 3835 | [开销小于等于 K 的子数组数目](https://leetcode.cn/problems/count-subarrays-with-cost-less-than-or-equal-to-k/) | 🟡 中等 |  | 2026.02.08 |
-| 3838 | [带权单词映射](https://leetcode.cn/problems/weighted-word-mapping/) | 🟢 简单 |  | 2026.02.14 |
-| 3839 | [前缀连接组的数目](https://leetcode.cn/problems/number-of-prefix-connected-groups/) | 🟡 中等 |  | 2026.02.14 |
-| 3842 | [灯泡开关](https://leetcode.cn/problems/toggle-light-bulbs/) | 🟢 简单 |  | 2026.02.15 |
-| 3843 | [频率不同的第一个元素](https://leetcode.cn/problems/first-element-with-unique-frequency/) | 🟡 中等 |  | 2026.02.15 |
-| 3847 | [计算比赛分数差](https://leetcode.cn/problems/find-the-score-difference-in-a-game/) | 🟡 中等 |  | 2026.02.22 |
-| 3848 | [阶数数字排列](https://leetcode.cn/problems/check-digitorial-permutation/) | 🟡 中等 |  | 2026.02.22 |
-| 3849 | [重新排列后的最大按位异或值](https://leetcode.cn/problems/maximum-bitwise-xor-after-rearrangement/) | 🟡 中等 |  | 2026.02.22 |
+| 3833 | [统计主导元素下标数](https://leetcode.cn/problems/count-dominant-indices/) | 🟢 简单 | 数组、枚举 | 2026.02.08 |
+| 3834 | [合并相邻且相等的元素](https://leetcode.cn/problems/merge-adjacent-equal-elements/) | 🟡 中等 | 栈、数组、模拟 | 2026.02.08 |
+| 3835 | [开销小于等于 K 的子数组数目](https://leetcode.cn/problems/count-subarrays-with-cost-less-than-or-equal-to-k/) | 🟡 中等 | 队列、数组、单调队列 | 2026.02.08 |
+| 3838 | [带权单词映射](https://leetcode.cn/problems/weighted-word-mapping/) | 🟢 简单 | 数组、字符串、模拟 | 2026.02.14 |
+| 3839 | [前缀连接组的数目](https://leetcode.cn/problems/number-of-prefix-connected-groups/) | 🟡 中等 | 数组、哈希表、字符串、计数 | 2026.02.14 |
+| 3842 | [灯泡开关](https://leetcode.cn/problems/toggle-light-bulbs/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2026.02.15 |
+| 3843 | [频率不同的第一个元素](https://leetcode.cn/problems/first-element-with-unique-frequency/) | 🟡 中等 | 数组、哈希表、计数 | 2026.02.15 |
+| 3847 | [计算比赛分数差](https://leetcode.cn/problems/find-the-score-difference-in-a-game/) | 🟡 中等 | 数组、模拟 | 2026.02.22 |
+| 3848 | [阶数数字排列](https://leetcode.cn/problems/check-digitorial-permutation/) | 🟡 中等 | 数学、计数 | 2026.02.22 |
+| 3849 | [重新排列后的最大按位异或值](https://leetcode.cn/problems/maximum-bitwise-xor-after-rearrangement/) | 🟡 中等 | 贪心、位运算、字符串 | 2026.02.22 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-02-26 11:00:27
-- **总题目数**：327
+- **最后更新**：2026-03-01 00:46:40
+- **总题目数**：328
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

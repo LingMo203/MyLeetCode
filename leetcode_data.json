@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 327,
-  "updated_at": "2026.02.26",
+  "total_solved": 328,
+  "updated_at": "2026.03.01",
   "problems": [
     {
       "id": 1,
@@ -4334,7 +4334,10 @@
       "title": "统计主导元素下标数",
       "title_slug": "count-dominant-indices",
       "difficulty": "简单",
-      "tags": [],
+      "tags": [
+        "数组",
+        "枚举"
+      ],
       "solved_dates": [
         "2026.02.08"
       ],
@@ -4345,7 +4348,11 @@
       "title": "合并相邻且相等的元素",
       "title_slug": "merge-adjacent-equal-elements",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "栈",
+        "数组",
+        "模拟"
+      ],
       "solved_dates": [
         "2026.02.08"
       ],
@@ -4356,7 +4363,11 @@
       "title": "开销小于等于 K 的子数组数目",
       "title_slug": "count-subarrays-with-cost-less-than-or-equal-to-k",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "队列",
+        "数组",
+        "单调队列"
+      ],
       "solved_dates": [
         "2026.02.08"
       ],
@@ -4555,7 +4566,11 @@
       "title": "带权单词映射",
       "title_slug": "weighted-word-mapping",
       "difficulty": "简单",
-      "tags": [],
+      "tags": [
+        "数组",
+        "字符串",
+        "模拟"
+      ],
       "solved_dates": [
         "2026.02.14"
       ],
@@ -4566,7 +4581,12 @@
       "title": "前缀连接组的数目",
       "title_slug": "number-of-prefix-connected-groups",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "数组",
+        "哈希表",
+        "字符串",
+        "计数"
+      ],
       "solved_dates": [
         "2026.02.14"
       ],
@@ -4608,7 +4628,12 @@
       "title": "灯泡开关",
       "title_slug": "toggle-light-bulbs",
       "difficulty": "简单",
-      "tags": [],
+      "tags": [
+        "数组",
+        "哈希表",
+        "排序",
+        "模拟"
+      ],
       "solved_dates": [
         "2026.02.15"
       ],
@@ -4619,7 +4644,11 @@
       "title": "频率不同的第一个元素",
       "title_slug": "first-element-with-unique-frequency",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "数组",
+        "哈希表",
+        "计数"
+      ],
       "solved_dates": [
         "2026.02.15"
       ],
@@ -4743,7 +4772,10 @@
       "title": "计算比赛分数差",
       "title_slug": "find-the-score-difference-in-a-game",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "数组",
+        "模拟"
+      ],
       "solved_dates": [
         "2026.02.22"
       ],
@@ -4754,7 +4786,10 @@
       "title": "阶数数字排列",
       "title_slug": "check-digitorial-permutation",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "数学",
+        "计数"
+      ],
       "solved_dates": [
         "2026.02.22"
       ],
@@ -4765,7 +4800,11 @@
       "title": "重新排列后的最大按位异或值",
       "title_slug": "maximum-bitwise-xor-after-rearrangement",
       "difficulty": "中等",
-      "tags": [],
+      "tags": [
+        "贪心",
+        "位运算",
+        "字符串"
+      ],
       "solved_dates": [
         "2026.02.22"
       ],
@@ -4849,6 +4888,20 @@
         "2026.02.26"
       ],
       "leetcode_url": "https://leetcode.cn/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/"
+    },
+    {
+      "id": 1689,
+      "title": "十-二进制数的最少数目",
+      "title_slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.03.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/"
     }
   ]
 }
