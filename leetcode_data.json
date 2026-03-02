@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 328,
-  "updated_at": "2026.03.01",
+  "total_solved": 329,
+  "updated_at": "2026.03.02",
   "problems": [
     {
       "id": 1,
@@ -4902,6 +4902,21 @@
         "2026.03.01"
       ],
       "leetcode_url": "https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/"
+    },
+    {
+      "id": 1536,
+      "title": "排布二进制网格的最少交换次数",
+      "title_slug": "minimum-swaps-to-arrange-a-binary-grid",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.03.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-swaps-to-arrange-a-binary-grid/"
     }
   ]
 }

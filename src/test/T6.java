@@ -12,7 +12,7 @@ public class T6 {
         int[] nums1 = {4, 2, 1, 3};
         int[] nums2 = {1, -2, 3, -4};
         int[] nums3 = {5, 4, 3, 4, 2};
-        String strGrid = "[[0,1],[0,2],[0,3]]";
+        String strGrid = "[[0,0,1],[1,1,0],[1,0,0]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String str = "AB";
         String str2 = "cae";
@@ -31,7 +31,8 @@ public class T6 {
         //System.out.println(t6.countPrimes(1000000));
         //System.out.println(t6.countPrimeSetBits(10, 15));
         //System.out.println(t6.hasAllCodes("00110",2));
-        System.out.println(t6.numSteps("1101"));
+        //System.out.println(t6.numSteps("1101"));
+        System.out.println(t6.minSwaps(grid));
     }
 
     //56. 合并区间
@@ -589,6 +590,36 @@ public class T6 {
         int res = 0;
         for (int i = 0; i < n.length(); i++) {
             res = Math.max(res, n.charAt(i) - '0');
+        }
+        return res;
+    }
+
+    //1536. 排布二进制网格的最少交换次数
+    public int minSwaps(int[][] grid) {
+        int n = grid.length, res = 0;
+        int[] nums = new int[n];
+        for (int i = 0; i < n; i++) {
+            int count = 0;
+            for (int j = n - 1; j >= 0; j--) {
+                if (grid[i][j] == 1) break;
+                count++;
+            }
+            nums[i] = count;
+        }
+        for (int i = 0; i < n; i++) {
+            int j = i;
+            for (; j < n; j++) {
+                if (nums[j] >= n - i - 1) {
+                    break;
+                }
+            }
+            if (j >= n) return -1;
+            for (; j - 1 >= i; j--) {
+                int temp = nums[j - 1];
+                nums[j - 1] = nums[j];
+                nums[j] = temp;
+                res++;
+            }
         }
         return res;
     }
