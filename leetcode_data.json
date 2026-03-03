@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 329,
-  "updated_at": "2026.03.02",
+  "total_solved": 330,
+  "updated_at": "2026.03.03",
   "problems": [
     {
       "id": 1,
@@ -4917,6 +4917,21 @@
         "2026.03.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-swaps-to-arrange-a-binary-grid/"
+    },
+    {
+      "id": 1545,
+      "title": "找出第 N 个二进制字符串中的第 K 位",
+      "title_slug": "find-kth-bit-in-nth-binary-string",
+      "difficulty": "中等",
+      "tags": [
+        "递归",
+        "字符串",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.03.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-kth-bit-in-nth-binary-string/"
     }
   ]
 }

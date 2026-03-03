@@ -32,7 +32,8 @@ public class T6 {
         //System.out.println(t6.countPrimeSetBits(10, 15));
         //System.out.println(t6.hasAllCodes("00110",2));
         //System.out.println(t6.numSteps("1101"));
-        System.out.println(t6.minSwaps(grid));
+        //System.out.println(t6.minSwaps(grid));
+        System.out.println(t6.findKthBit(4,11));
     }
 
     //56. 合并区间
@@ -622,6 +623,26 @@ public class T6 {
             }
         }
         return res;
+    }
+
+    //1545. 找出第 N 个二进制字符串中的第 K 位
+    public char findKthBit(int n, int k) {
+        String last = "0";
+        for (int i = 2; i <= n; i++) {
+            last = last + "1" + reverseInvert(last);
+        }
+        return last.charAt(k - 1);
+    }
+    private String reverseInvert(String str) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = str.length() - 1; i >= 0; i--) {
+            if (str.charAt(i) == '1') {
+                sb.append('0');
+            } else {
+                sb.append('1');
+            }
+        }
+        return sb.toString();
     }
 
 }
