@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：330**  
-🟢 简单：134  
+**总题数：331**  
+🟢 简单：135  
 🟡 中等：177  
 🔴 困难：19
 
@@ -17,14 +17,14 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x166
+- **数组** x167
 - **字符串** x67
 - **哈希表** x62
 - **树** x38
 - **二叉树** x36
 - **链表** x31
 - **栈** x27
-- **矩阵** x26
+- **矩阵** x27
 - **堆（优先队列）** x12
 - **并查集** x10
 - **队列** x7
@@ -330,6 +330,7 @@
 | 1523 | [在区间范围内统计奇数数目](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) | 🟢 简单 | 数学 | 2025.12.07 |
 | 1536 | [排布二进制网格的最少交换次数](https://leetcode.cn/problems/minimum-swaps-to-arrange-a-binary-grid/) | 🟡 中等 | 贪心、数组、矩阵 | 2026.03.02 |
 | 1545 | [找出第 N 个二进制字符串中的第 K 位](https://leetcode.cn/problems/find-kth-bit-in-nth-binary-string/) | 🟡 中等 | 递归、字符串、模拟 | 2026.03.03 |
+| 1582 | [二进制矩阵中的特殊位置](https://leetcode.cn/problems/special-positions-in-a-binary-matrix/) | 🟢 简单 | 数组、矩阵 | 2026.03.04 |
 | 1653 | [使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) | 🟡 中等 | 栈、字符串、动态规划 | 2026.02.07 |
 | 1689 | [十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | 🟡 中等 | 贪心、字符串 | 2026.03.01 |
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
@@ -397,8 +398,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-03 20:46:37
-- **总题目数**：330
+- **最后更新**：2026-03-04 10:53:49
+- **总题目数**：331
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

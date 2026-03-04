@@ -645,6 +645,30 @@ public class T6 {
         return sb.toString();
     }
 
+    //1582. 二进制矩阵中的特殊位置
+    public int numSpecial(int[][] mat) {
+        int m = mat.length, n = mat[0].length, res = 0;
+        int[] row = new int[m], col = new int[n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (mat[i][j] == 1) {
+                    row[i]++;
+                    col[j]++;
+                }
+            }
+        }
+        for (int i = 0; i < m; i++) {
+            if (row[i] != 1) continue;
+            for (int j = 0; j < n; j++) {
+                if (mat[i][j] == 1) {
+                    if (col[j] != 1) continue;
+                    res++;
+                }
+            }
+        }
+        return res;
+    }
+
 }
 
 
