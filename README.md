@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：331**  
-🟢 简单：135  
+**总题数：332**  
+🟢 简单：136  
 🟡 中等：177  
 🔴 困难：19
 
@@ -40,7 +40,7 @@
 - **排序** x41
 - **广度优先搜索** x35
 - **动态规划** x28
-- **位运算** x24
+- **位运算** x25
 - **二分查找** x22
 - **贪心** x22
 - **回溯** x22
@@ -252,6 +252,7 @@
 | 448 | [找到所有数组中消失的数字](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.29 |
 | 455 | [分发饼干](https://leetcode.cn/problems/assign-cookies/) | 🟢 简单 | 贪心、数组、双指针、排序 | 2025.11.07 |
 | 459 | [重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/) | 🟢 简单 | 字符串、字符串匹配 | 2026.02.10 |
+| 461 | [汉明距离](https://leetcode.cn/problems/hamming-distance/) | 🟢 简单 | 位运算 | 2026.03.04 |
 | 462 | [最小操作次数使数组元素相等 II](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/) | 🟡 中等 | 数组、数学、排序 | 2025.12.12 |
 | 482 | [密钥格式化](https://leetcode.cn/problems/license-key-formatting/) | 🟢 简单 | 字符串 | 2026.02.09 |
 | 485 | [最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/) | 🟢 简单 | 数组 | 2025.12.01 |
@@ -398,8 +399,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-04 10:53:49
-- **总题目数**：331
+- **最后更新**：2026-03-04 11:31:23
+- **总题目数**：332
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

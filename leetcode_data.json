@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 331,
+  "total_solved": 332,
   "updated_at": "2026.03.04",
   "problems": [
     {
@@ -4946,6 +4946,19 @@
         "2026.03.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/special-positions-in-a-binary-matrix/"
+    },
+    {
+      "id": 461,
+      "title": "汉明距离",
+      "title_slug": "hamming-distance",
+      "difficulty": "简单",
+      "tags": [
+        "位运算"
+      ],
+      "solved_dates": [
+        "2026.03.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/hamming-distance/"
     }
   ]
 }
