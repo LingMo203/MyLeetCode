@@ -33,7 +33,8 @@ public class T6 {
         //System.out.println(t6.hasAllCodes("00110",2));
         //System.out.println(t6.numSteps("1101"));
         //System.out.println(t6.minSwaps(grid));
-        System.out.println(t6.findKthBit(4,11));
+        //System.out.println(t6.findKthBit(4,11));
+        System.out.println(t6.minOperations("01010"));
     }
 
     //56. 合并区间
@@ -672,6 +673,41 @@ public class T6 {
     //461. 汉明距离
     public int hammingDistance(int x, int y) {
         return Integer.bitCount(x ^ y);
+    }
+
+    //1758. 生成交替二进制字符串的最少操作数
+    public int minOperations(String s) {
+        int res = 0;
+        boolean f = true;
+        for (char c : s.toCharArray()) {
+            if (f) {
+                if (c == '0') {
+                    res++;
+                }
+                f = false;
+            } else {
+                if (c == '1') {
+                    res++;
+                }
+                f = true;
+            }
+        }
+        int count = 0;
+        f = true;
+        for (char c : s.toCharArray()) {
+            if (f) {
+                if (c == '1') {
+                    count++;
+                }
+                f = false;
+            } else {
+                if (c == '0') {
+                    count++;
+                }
+                f = true;
+            }
+        }
+        return Math.min(res, count);
     }
 
 }

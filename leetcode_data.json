@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 332,
-  "updated_at": "2026.03.04",
+  "total_solved": 333,
+  "updated_at": "2026.03.05",
   "problems": [
     {
       "id": 1,
@@ -4959,6 +4959,19 @@
         "2026.03.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/hamming-distance/"
+    },
+    {
+      "id": 1758,
+      "title": "生成交替二进制字符串的最少操作数",
+      "title_slug": "minimum-changes-to-make-alternating-binary-string",
+      "difficulty": "简单",
+      "tags": [
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.03.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/"
     }
   ]
 }
