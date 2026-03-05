@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 333,
+  "total_solved": 334,
   "updated_at": "2026.03.05",
   "problems": [
     {
@@ -4972,6 +4972,22 @@
         "2026.03.05"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/"
+    },
+    {
+      "id": 934,
+      "title": "最短的桥",
+      "title_slug": "shortest-bridge",
+      "difficulty": "中等",
+      "tags": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.03.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/shortest-bridge/"
     }
   ]
 }

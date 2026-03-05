@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：333**  
+**总题数：334**  
 🟢 简单：137  
-🟡 中等：177  
+🟡 中等：178  
 🔴 困难：19
 
 
@@ -17,14 +17,14 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x167
+- **数组** x168
 - **字符串** x68
 - **哈希表** x62
 - **树** x38
 - **二叉树** x36
 - **链表** x31
+- **矩阵** x28
 - **栈** x27
-- **矩阵** x27
 - **堆（优先队列）** x12
 - **并查集** x10
 - **队列** x7
@@ -36,9 +36,9 @@
 ### ⚡ 算法
 - **数学** x52
 - **双指针** x48
-- **深度优先搜索** x43
+- **深度优先搜索** x44
 - **排序** x41
-- **广度优先搜索** x35
+- **广度优先搜索** x36
 - **动态规划** x28
 - **位运算** x25
 - **二分查找** x22
@@ -298,6 +298,7 @@
 | 865 | [具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、哈希表、二叉树 | 2026.01.09 |
 | 868 | [二进制间距](https://leetcode.cn/problems/binary-gap/) | 🟢 简单 | 位运算 | 2026.02.22 |
 | 876 | [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | 🟢 简单 | 链表、双指针 | 2025.11.17 |
+| 934 | [最短的桥](https://leetcode.cn/problems/shortest-bridge/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.03.05 |
 | 941 | [有效的山脉数组](https://leetcode.cn/problems/valid-mountain-array/) | 🟢 简单 | 数组 | 2026.02.07 |
 | 961 | [在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/) | 🟢 简单 | 数组、哈希表 | 2025.10.31 |
 | 976 | [三角形的最大周长](https://leetcode.cn/problems/largest-perimeter-triangle/) | 🟢 简单 | 贪心、数组、数学、排序 | 2025.11.10 |
@@ -400,8 +401,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-05 21:19:56
-- **总题目数**：333
+- **最后更新**：2026-03-05 21:54:48
+- **总题目数**：334
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

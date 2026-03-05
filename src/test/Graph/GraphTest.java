@@ -627,6 +627,59 @@ public class GraphTest {
         return false;
     }
 
+    //934. 最短的桥
+    public int shortestBridge(int[][] grid) {
+        int res = 0, n = grid.length;
+        final int[][] direction = {{0, -1}, {-1, 0}, {0, 1}, {1, 0}};//左 上 右 下
+        Deque<int[]> deque = new ArrayDeque<>();
+        Deque<int[]> edge = new ArrayDeque<>();
+        for (int i = 0; i < n; i++) {
+            boolean f = false;
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1) {
+                    deque.addLast(new int[]{i, j});
+                    grid[i][j] = -1;
+                    f = true;
+                    break;
+                }
+            }
+            if (f) break;
+        }
+        while (!deque.isEmpty()) {
+            int[] remove = deque.removeFirst();
+            boolean f = false;
+            for (int[] dir : direction) {
+                int nextX = remove[0] + dir[0], nextY = remove[1] + dir[1];
+                if (nextX < 0 || nextX >= n || nextY < 0 || nextY >= n) continue;
+                if (grid[nextX][nextY] == 0) {
+                    f = true;
+                    continue;
+                }
+                if (grid[nextX][nextY] == -1) continue;
+                deque.addLast(new int[]{nextX, nextY});
+                grid[nextX][nextY] = -1;
+            }
+            if (f) edge.addLast(new int[]{remove[0], remove[1]});
+        }
+        while (!edge.isEmpty()) {
+            int size = edge.size();
+            while (size -- > 0) {
+                int[] remove = edge.removeFirst();
+                for (int[] dir : direction) {
+                    int nextX = remove[0] + dir[0], nextY = remove[1] + dir[1];
+                    if (nextX < 0 || nextX >= n || nextY < 0 || nextY >= n) continue;
+                    if (grid[nextX][nextY] == 1) {
+                        return res;
+                    }
+                    if (grid[nextX][nextY] == -1) continue;
+                    edge.addLast(new int[]{nextX, nextY});
+                    grid[nextX][nextY] = -1;
+                }
+            }
+            res++;
+        }
+        return -1;
+    }
 
 
 
