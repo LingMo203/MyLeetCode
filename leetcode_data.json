@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 334,
-  "updated_at": "2026.03.05",
+  "total_solved": 335,
+  "updated_at": "2026.03.06",
   "problems": [
     {
       "id": 1,
@@ -4988,6 +4988,19 @@
         "2026.03.05"
       ],
       "leetcode_url": "https://leetcode.cn/problems/shortest-bridge/"
+    },
+    {
+      "id": 1784,
+      "title": "检查二进制字符串字段",
+      "title_slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+      "difficulty": "简单",
+      "tags": [
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.03.06"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/check-if-binary-string-has-at-most-one-segment-of-ones/"
     }
   ]
 }

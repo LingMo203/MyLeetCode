@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：334**  
-🟢 简单：137  
+**总题数：335**  
+🟢 简单：138  
 🟡 中等：178  
 🔴 困难：19
 
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x168
-- **字符串** x68
+- **字符串** x69
 - **哈希表** x62
 - **树** x38
 - **二叉树** x36
@@ -340,6 +340,7 @@
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 1732 | [找到最高海拔](https://leetcode.cn/problems/find-the-highest-altitude/) | 🟢 简单 | 数组、前缀和 | 2026.02.10 |
 | 1758 | [生成交替二进制字符串的最少操作数](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/) | 🟢 简单 | 字符串 | 2026.03.05 |
+| 1784 | [检查二进制字符串字段](https://leetcode.cn/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | 🟢 简单 | 字符串 | 2026.03.06 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
@@ -401,8 +402,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-05 21:54:48
-- **总题目数**：334
+- **最后更新**：2026-03-06 21:10:06
+- **总题目数**：335
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

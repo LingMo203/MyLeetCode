@@ -34,7 +34,8 @@ public class T6 {
         //System.out.println(t6.numSteps("1101"));
         //System.out.println(t6.minSwaps(grid));
         //System.out.println(t6.findKthBit(4,11));
-        System.out.println(t6.minOperations("01010"));
+        //System.out.println(t6.minOperations("01010"));
+        System.out.println(t6.checkOnesSegment("1001"));
     }
 
     //56. 合并区间
@@ -708,6 +709,24 @@ public class T6 {
             }
         }
         return Math.min(res, count);
+    }
+
+    //1784. 检查二进制字符串字段
+    public boolean checkOnesSegment(String s) {
+        boolean f = false;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '1') {
+                if (f) return false;
+                for (; i < s.length(); i++) {
+                    c = s.charAt(i);
+                    if (c == '0') break;
+                }
+                i--;
+                f = true;
+            }
+        }
+        return true;
     }
 
 }
