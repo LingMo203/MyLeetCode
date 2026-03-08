@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 335,
-  "updated_at": "2026.03.06",
+  "total_solved": 336,
+  "updated_at": "2026.03.08",
   "problems": [
     {
       "id": 1,
@@ -5001,6 +5001,22 @@
         "2026.03.06"
       ],
       "leetcode_url": "https://leetcode.cn/problems/check-if-binary-string-has-at-most-one-segment-of-ones/"
+    },
+    {
+      "id": 1980,
+      "title": "找出不同的二进制字符串",
+      "title_slug": "find-unique-binary-string",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "哈希表",
+        "字符串",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.03.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-unique-binary-string/"
     }
   ]
 }

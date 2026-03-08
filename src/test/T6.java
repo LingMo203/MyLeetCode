@@ -729,6 +729,31 @@ public class T6 {
         return true;
     }
 
+    //1980. 找出不同的二进制字符串
+    public String findDifferentBinaryString(String[] nums) {
+        int n = nums[0].length();
+        HashSet<String> hashSet = new HashSet<>(Arrays.asList(nums));
+        StringBuilder path = new StringBuilder();
+        String[] res = new String[1];
+        backFindDifferentBinaryString(res, path, n, hashSet);
+        return res[0];
+    }
+    public boolean backFindDifferentBinaryString(String[] res, StringBuilder path, int n, HashSet<String> hashSet) {
+        if (path.length() == n) {
+            if (!hashSet.contains(path.toString())) {
+                res[0] = path.toString();
+                return true;
+            }
+            return false;
+        }
+        for (int i = 0; i < 2; i++) {
+            path.append(i);
+            if (backFindDifferentBinaryString(res, path, n, hashSet)) return true;
+            path.deleteCharAt(path.length() - 1);
+        }
+        return false;
+    }
+
 }
 
 
