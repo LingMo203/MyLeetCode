@@ -754,6 +754,15 @@ public class T6 {
         return false;
     }
 
+    //1009. 十进制整数的反码 476. 数字的补数
+    public int bitwiseComplement(int n) {
+        String str = Integer.toBinaryString(n);
+        StringBuilder sb = new StringBuilder();
+        for (char c : str.toCharArray()) {
+            sb.append(c == '1' ? '0' : '1');
+        }
+        return Integer.parseInt(sb.toString(), 2);
+    }
 }
 
 

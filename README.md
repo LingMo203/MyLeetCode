@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：336**  
-🟢 简单：138  
+**总题数：338**  
+🟢 简单：140  
 🟡 中等：179  
 🔴 困难：19
 
@@ -40,7 +40,7 @@
 - **排序** x41
 - **广度优先搜索** x36
 - **动态规划** x28
-- **位运算** x25
+- **位运算** x27
 - **回溯** x23
 - **二分查找** x22
 - **贪心** x22
@@ -254,6 +254,7 @@
 | 459 | [重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/) | 🟢 简单 | 字符串、字符串匹配 | 2026.02.10 |
 | 461 | [汉明距离](https://leetcode.cn/problems/hamming-distance/) | 🟢 简单 | 位运算 | 2026.03.04 |
 | 462 | [最小操作次数使数组元素相等 II](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/) | 🟡 中等 | 数组、数学、排序 | 2025.12.12 |
+| 476 | [数字的补数](https://leetcode.cn/problems/number-complement/) | 🟢 简单 | 位运算 | 2026.03.11 |
 | 482 | [密钥格式化](https://leetcode.cn/problems/license-key-formatting/) | 🟢 简单 | 字符串 | 2026.02.09 |
 | 485 | [最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/) | 🟢 简单 | 数组 | 2025.12.01 |
 | 491 | [非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/) | 🟡 中等 | 位运算、数组、哈希表、回溯 | 2026.01.08 |
@@ -306,6 +307,7 @@
 | 994 | [腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/) | 🟡 中等 | 广度优先搜索、数组、矩阵 | 2026.01.12 |
 | 997 | [找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/) | 🟢 简单 | 图、数组、哈希表 | 2026.01.10 |
 | 1005 | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | 🟢 简单 | 贪心、数组、排序 | 2025.11.10 |
+| 1009 | [十进制整数的反码](https://leetcode.cn/problems/complement-of-base-10-integer/) | 🟢 简单 | 位运算 | 2026.03.11 |
 | 1022 | [从根到叶的二进制数之和](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/) | 🟢 简单 | 树、深度优先搜索、二叉树 | 2026.02.24 |
 | 1036 | [逃离大迷宫](https://leetcode.cn/problems/escape-a-large-maze/) | 🔴 困难 | 深度优先搜索、广度优先搜索、数组、哈希表 | 2026.02.24 |
 | 1046 | [最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/) | 🟢 简单 | 数组、堆（优先队列） | 2026.02.07 |
@@ -403,8 +405,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-08 19:47:05
-- **总题目数**：336
+- **最后更新**：2026-03-11 21:06:39
+- **总题目数**：338
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

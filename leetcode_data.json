@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 336,
-  "updated_at": "2026.03.08",
+  "total_solved": 338,
+  "updated_at": "2026.03.11",
   "problems": [
     {
       "id": 1,
@@ -5017,6 +5017,32 @@
         "2026.03.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-unique-binary-string/"
+    },
+    {
+      "id": 1009,
+      "title": "十进制整数的反码",
+      "title_slug": "complement-of-base-10-integer",
+      "difficulty": "简单",
+      "tags": [
+        "位运算"
+      ],
+      "solved_dates": [
+        "2026.03.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/complement-of-base-10-integer/"
+    },
+    {
+      "id": 476,
+      "title": "数字的补数",
+      "title_slug": "number-complement",
+      "difficulty": "简单",
+      "tags": [
+        "位运算"
+      ],
+      "solved_dates": [
+        "2026.03.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/number-complement/"
     }
   ]
 }
