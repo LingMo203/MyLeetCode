@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：338**  
+**总题数：339**  
 🟢 简单：140  
-🟡 中等：179  
+🟡 中等：180  
 🔴 困难：19
 
 
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x169
-- **字符串** x70
+- **字符串** x71
 - **哈希表** x63
 - **树** x38
 - **二叉树** x36
@@ -41,7 +41,7 @@
 - **广度优先搜索** x36
 - **动态规划** x28
 - **位运算** x27
-- **回溯** x23
+- **回溯** x24
 - **二分查找** x22
 - **贪心** x22
 - **模拟** x21
@@ -327,6 +327,7 @@
 | 1382 | [将二叉搜索树变平衡](https://leetcode.cn/problems/balance-a-binary-search-tree/) | 🟡 中等 | 贪心、树、深度优先搜索、二叉搜索树、分治、二叉树 | 2026.02.09 |
 | 1390 | [四因数](https://leetcode.cn/problems/four-divisors/) | 🟡 中等 | 数组、数学 | 2026.01.04 |
 | 1404 | [将二进制表示减到 1 的步骤数](https://leetcode.cn/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | 🟡 中等 | 位运算、字符串、模拟 | 2026.02.26 |
+| 1415 | [长度为 n 的开心字符串中字典序第 k 小的字符串](https://leetcode.cn/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | 🟡 中等 | 字符串、回溯 | 2026.03.14 |
 | 1441 | [用栈操作构建数组](https://leetcode.cn/problems/build-an-array-with-stack-operations/) | 🟡 中等 | 栈、数组、模拟 | 2026.02.07 |
 | 1461 | [检查一个字符串是否包含所有长度为 K 的二进制子串](https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | 🟡 中等 | 位运算、哈希表、字符串、哈希函数、滚动哈希 | 2026.02.23 |
 | 1470 | [重新排列数组](https://leetcode.cn/problems/shuffle-the-array/) | 🟢 简单 | 数组 | 2026.02.07 |
@@ -405,8 +406,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-11 21:06:39
-- **总题目数**：338
+- **最后更新**：2026-03-14 20:34:33
+- **总题目数**：339
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

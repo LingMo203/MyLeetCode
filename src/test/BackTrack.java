@@ -615,5 +615,29 @@ public class BackTrack {
         }
     }
 
+    //1415. 长度为 n 的开心字符串中字典序第 k 小的字符串
+    public String getHappyString(int n, int k) {
+        ArrayList<String> res = new ArrayList<>();
+        final char[] chars = {'a', 'b', 'c'};
+        for (char c : chars) {
+            StringBuilder path = new StringBuilder().append(c);
+            backGetHappyString(res, path, chars, n);
+        }
+        if (res.size() < k) return "";
+        res.sort(null);
+        return res.get(k - 1);
+    }
+    private void backGetHappyString(ArrayList<String> res, StringBuilder path, final char[] chars, int n) {
+        if (path.length() == n) {
+            res.add(path.toString());
+            return;
+        }
+        for (char c : chars) {
+            if (c == path.charAt(path.length() - 1)) continue;
+            path.append(c);
+            backGetHappyString(res, path, chars, n);
+            path.deleteCharAt(path.length() - 1);
+        }
+    }
 
 }

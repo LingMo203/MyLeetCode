@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 338,
-  "updated_at": "2026.03.11",
+  "total_solved": 339,
+  "updated_at": "2026.03.14",
   "problems": [
     {
       "id": 1,
@@ -5043,6 +5043,20 @@
         "2026.03.11"
       ],
       "leetcode_url": "https://leetcode.cn/problems/number-complement/"
+    },
+    {
+      "id": 1415,
+      "title": "长度为 n 的开心字符串中字典序第 k 小的字符串",
+      "title_slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.03.14"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/"
     }
   ]
 }
