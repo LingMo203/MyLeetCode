@@ -621,23 +621,23 @@ public class BackTrack {
         final char[] chars = {'a', 'b', 'c'};
         for (char c : chars) {
             StringBuilder path = new StringBuilder().append(c);
-            backGetHappyString(res, path, chars, n);
+            if (backGetHappyString(res, path, chars, n, k)) break;
         }
         if (res.size() < k) return "";
-        res.sort(null);
         return res.get(k - 1);
     }
-    private void backGetHappyString(ArrayList<String> res, StringBuilder path, final char[] chars, int n) {
+    private boolean backGetHappyString(ArrayList<String> res, StringBuilder path, final char[] chars, int n, int k) {
         if (path.length() == n) {
             res.add(path.toString());
-            return;
+            return res.size() == k;
         }
         for (char c : chars) {
             if (c == path.charAt(path.length() - 1)) continue;
             path.append(c);
-            backGetHappyString(res, path, chars, n);
+            if (backGetHappyString(res, path, chars, n, k)) return true;
             path.deleteCharAt(path.length() - 1);
         }
+        return false;
     }
 
 }
