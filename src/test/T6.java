@@ -12,7 +12,7 @@ public class T6 {
         int[] nums1 = {4, 2, 1, 3};
         int[] nums2 = {1, -2, 3, -4};
         int[] nums3 = {5, 4, 3, 4, 2};
-        String strGrid = "[[0,0,1],[1,1,0],[1,0,0]]";
+        String strGrid = "[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String str = "AB";
         String str2 = "cae";
@@ -35,7 +35,8 @@ public class T6 {
         //System.out.println(t6.minSwaps(grid));
         //System.out.println(t6.findKthBit(4,11));
         //System.out.println(t6.minOperations("01010"));
-        System.out.println(t6.checkOnesSegment("1001"));
+        //System.out.println(t6.checkOnesSegment("1001"));
+        System.out.println(Arrays.deepToString(t6.reverseSubmatrix(grid, 1, 0, 3)));
     }
 
     //56. 合并区间
@@ -763,6 +764,21 @@ public class T6 {
         }
         return Integer.parseInt(sb.toString(), 2);
     }
+
+    //3643. 垂直翻转子矩阵
+    public int[][] reverseSubmatrix(int[][] grid, int x, int y, int k) {
+        int left = y, right = y + k, top = x, botton = x + k - 1;
+        while (top < botton) {
+            for (int i = left; i < right; i++) {
+                int temp = grid[top][i];
+                grid[top][i] = grid[botton][i];
+                grid[botton][i] = temp;
+            }
+            top++;botton--;
+        }
+        return grid;
+    }
+
 }
 
 

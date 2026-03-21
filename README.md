@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：339**  
-🟢 简单：140  
+**总题数：340**  
+🟢 简单：141  
 🟡 中等：180  
 🔴 困难：19
 
@@ -17,13 +17,13 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x169
+- **数组** x170
 - **字符串** x71
 - **哈希表** x63
 - **树** x38
 - **二叉树** x36
 - **链表** x31
-- **矩阵** x28
+- **矩阵** x29
 - **栈** x27
 - **堆（优先队列）** x12
 - **并查集** x10
@@ -35,7 +35,7 @@
 
 ### ⚡ 算法
 - **数学** x52
-- **双指针** x48
+- **双指针** x49
 - **深度优先搜索** x44
 - **排序** x41
 - **广度优先搜索** x36
@@ -371,6 +371,7 @@
 | 3619 | [总价值可以被 K 整除的岛屿数目](https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 3634 | [使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) | 🟡 中等 | 数组、排序、滑动窗口 | 2026.02.06 |
 | 3637 | [三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) | 🟢 简单 | 数组 | 2026.02.03 |
+| 3643 | [垂直翻转子矩阵](https://leetcode.cn/problems/flip-square-submatrix-vertically/) | 🟢 简单 | 数组、双指针、矩阵 | 2026.03.21 |
 | 3713 | [最长的平衡子串 I](https://leetcode.cn/problems/longest-balanced-substring-i/) | 🟡 中等 | 哈希表、字符串、计数、枚举 | 2026.02.12 |
 | 3719 | [最长平衡子数组 I](https://leetcode.cn/problems/longest-balanced-subarray-i/) | 🟡 中等 | 线段树、数组、哈希表、分治、前缀和 | 2026.02.10 |
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
@@ -406,8 +407,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-14 20:34:33
-- **总题目数**：339
+- **最后更新**：2026-03-21 23:32:04
+- **总题目数**：340
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

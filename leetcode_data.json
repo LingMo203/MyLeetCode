@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 339,
-  "updated_at": "2026.03.14",
+  "total_solved": 340,
+  "updated_at": "2026.03.21",
   "problems": [
     {
       "id": 1,
@@ -5057,6 +5057,21 @@
         "2026.03.14"
       ],
       "leetcode_url": "https://leetcode.cn/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/"
+    },
+    {
+      "id": 3643,
+      "title": "垂直翻转子矩阵",
+      "title_slug": "flip-square-submatrix-vertically",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "双指针",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.03.21"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/flip-square-submatrix-vertically/"
     }
   ]
 }
