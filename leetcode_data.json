@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 340,
-  "updated_at": "2026.03.21",
+  "total_solved": 341,
+  "updated_at": "2026.03.22",
   "problems": [
     {
       "id": 1,
@@ -5072,6 +5072,20 @@
         "2026.03.21"
       ],
       "leetcode_url": "https://leetcode.cn/problems/flip-square-submatrix-vertically/"
+    },
+    {
+      "id": 1886,
+      "title": "判断矩阵经轮转后是否一致",
+      "title_slug": "determine-whether-matrix-can-be-obtained-by-rotation",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.03.22"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/"
     }
   ]
 }

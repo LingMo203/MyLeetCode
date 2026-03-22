@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：340**  
-🟢 简单：141  
+**总题数：341**  
+🟢 简单：142  
 🟡 中等：180  
 🔴 困难：19
 
@@ -17,13 +17,13 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x170
+- **数组** x171
 - **字符串** x71
 - **哈希表** x63
 - **树** x38
 - **二叉树** x36
 - **链表** x31
-- **矩阵** x29
+- **矩阵** x30
 - **栈** x27
 - **堆（优先队列）** x12
 - **并查集** x10
@@ -346,6 +346,7 @@
 | 1784 | [检查二进制字符串字段](https://leetcode.cn/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | 🟢 简单 | 字符串 | 2026.03.06 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
+| 1886 | [判断矩阵经轮转后是否一致](https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | 🟢 简单 | 数组、矩阵 | 2026.03.22 |
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 1925 | [统计平方和三元组的数目](https://leetcode.cn/problems/count-square-sum-triples/) | 🟢 简单 | 数学、枚举 | 2025.12.08 |
 | 1926 | [迷宫中离入口最近的出口](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) | 🟡 中等 | 广度优先搜索、数组、矩阵 | 2026.02.15 |
@@ -407,8 +408,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-21 23:32:04
-- **总题目数**：340
+- **最后更新**：2026-03-22 22:35:55
+- **总题目数**：341
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

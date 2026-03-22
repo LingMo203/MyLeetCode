@@ -12,8 +12,10 @@ public class T6 {
         int[] nums1 = {4, 2, 1, 3};
         int[] nums2 = {1, -2, 3, -4};
         int[] nums3 = {5, 4, 3, 4, 2};
-        String strGrid = "[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]";
+        String strGrid = "[[0,0],[1,0]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
+        String strGrid2 = "[[1,0],[0,0]]";
+        int[][] grid2 = ArrayStringUtils.parse2DIntArray(strGrid2);
         String str = "AB";
         String str2 = "cae";
         String[] strs = {"0:start:0", "0:start:2", "0:end:5", "1:start:6", "1:end:6", "0:end:7"};
@@ -36,7 +38,8 @@ public class T6 {
         //System.out.println(t6.findKthBit(4,11));
         //System.out.println(t6.minOperations("01010"));
         //System.out.println(t6.checkOnesSegment("1001"));
-        System.out.println(Arrays.deepToString(t6.reverseSubmatrix(grid, 1, 0, 3)));
+        //System.out.println(Arrays.deepToString(t6.reverseSubmatrix(grid, 1, 0, 3)));
+        System.out.println(t6.findRotation(grid,grid2));
     }
 
     //56. 合并区间
@@ -777,6 +780,28 @@ public class T6 {
             top++;botton--;
         }
         return grid;
+    }
+
+    //1886. 判断矩阵经轮转后是否一致
+    public boolean findRotation(int[][] mat, int[][] target) {
+        if (Arrays.deepEquals(mat, target)) return true;
+        int[][] mat2 = turnFindRotation(mat);
+        if (Arrays.deepEquals(mat2, target)) return true;
+        int[][] mat3 = turnFindRotation(mat2);
+        if (Arrays.deepEquals(mat3, target)) return true;
+        if (Arrays.deepEquals(turnFindRotation(mat3), target)) return true;
+        return false;
+    }
+    private int[][] turnFindRotation(int[][] grid) {
+        int n = grid.length, k = 0;
+        int[][] res = new int[n][n];
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = 0; j < n; j++) {
+                res[k][j] = grid[j][i];
+            }
+            k++;
+        }
+        return res;
     }
 
 }
