@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：341**  
+**总题数：342**  
 🟢 简单：142  
-🟡 中等：180  
+🟡 中等：181  
 🔴 困难：19
 
 
@@ -17,13 +17,13 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x171
+- **数组** x172
 - **字符串** x71
 - **哈希表** x63
 - **树** x38
 - **二叉树** x36
 - **链表** x31
-- **矩阵** x30
+- **矩阵** x31
 - **栈** x27
 - **堆（优先队列）** x12
 - **并查集** x10
@@ -39,7 +39,7 @@
 - **深度优先搜索** x44
 - **排序** x41
 - **广度优先搜索** x36
-- **动态规划** x28
+- **动态规划** x29
 - **位运算** x27
 - **回溯** x24
 - **二分查找** x22
@@ -336,6 +336,7 @@
 | 1536 | [排布二进制网格的最少交换次数](https://leetcode.cn/problems/minimum-swaps-to-arrange-a-binary-grid/) | 🟡 中等 | 贪心、数组、矩阵 | 2026.03.02 |
 | 1545 | [找出第 N 个二进制字符串中的第 K 位](https://leetcode.cn/problems/find-kth-bit-in-nth-binary-string/) | 🟡 中等 | 递归、字符串、模拟 | 2026.03.03 |
 | 1582 | [二进制矩阵中的特殊位置](https://leetcode.cn/problems/special-positions-in-a-binary-matrix/) | 🟢 简单 | 数组、矩阵 | 2026.03.04 |
+| 1594 | [矩阵的最大非负积](https://leetcode.cn/problems/maximum-non-negative-product-in-a-matrix/) | 🟡 中等 | 数组、动态规划、矩阵 | 2026.03.23 |
 | 1653 | [使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) | 🟡 中等 | 栈、字符串、动态规划 | 2026.02.07 |
 | 1689 | [十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | 🟡 中等 | 贪心、字符串 | 2026.03.01 |
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
@@ -408,8 +409,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-22 22:35:55
-- **总题目数**：341
+- **最后更新**：2026-03-23 22:12:07
+- **总题目数**：342
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

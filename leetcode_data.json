@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 341,
-  "updated_at": "2026.03.22",
+  "total_solved": 342,
+  "updated_at": "2026.03.23",
   "problems": [
     {
       "id": 1,
@@ -5086,6 +5086,21 @@
         "2026.03.22"
       ],
       "leetcode_url": "https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/"
+    },
+    {
+      "id": 1594,
+      "title": "矩阵的最大非负积",
+      "title_slug": "maximum-non-negative-product-in-a-matrix",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.03.23"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximum-non-negative-product-in-a-matrix/"
     }
   ]
 }

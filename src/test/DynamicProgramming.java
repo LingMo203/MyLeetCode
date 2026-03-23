@@ -334,6 +334,33 @@ public class DynamicProgramming {
         return dp[query_row][query_glass];
     }
 
+    //1594. 矩阵的最大非负积
+    public int maxProductPath(int[][] grid) {
+        final int MOD = 1000000007;
+        int m = grid.length, n = grid[0].length;
+        long[][] maxDp = new long[m][n];
+        long[][] minDp = new long[m][n];
+        maxDp[0][0] = grid[0][0];
+        minDp[0][0] = grid[0][0];
+        for (int i = 1; i < n; i++) {
+            maxDp[0][i] = minDp[0][i] = maxDp[0][i - 1] * grid[0][i];
+        }
+        for (int i = 1; i < m; i++) {
+            maxDp[i][0] = minDp[i][0] = maxDp[i - 1][0] * grid[i][0];
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                long upMax = maxDp[i-1][j] * grid[i][j];
+                long upMin = minDp[i-1][j] * grid[i][j];
+                long leftMax = maxDp[i][j-1] * grid[i][j];
+                long leftMin = minDp[i][j-1] * grid[i][j];
+                maxDp[i][j] = Math.max(Math.max(upMax, upMin), Math.max(leftMax, leftMin));
+                minDp[i][j] = Math.min(Math.min(upMax, upMin), Math.min(leftMax, leftMin));
+            }
+        }
+        long a = Math.max(minDp[m - 1][n - 1], maxDp[m - 1][n - 1]) % MOD;
+        return a < 0 ? -1 : (int) a;
+    }
 
 
 
