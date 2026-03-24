@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：342**  
+**总题数：344**  
 🟢 简单：142  
-🟡 中等：181  
+🟡 中等：183  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x172
+- **数组** x174
 - **字符串** x71
 - **哈希表** x63
 - **树** x38
@@ -39,10 +39,10 @@
 - **深度优先搜索** x44
 - **排序** x41
 - **广度优先搜索** x36
-- **动态规划** x29
+- **动态规划** x31
 - **位运算** x27
 - **回溯** x24
-- **二分查找** x22
+- **二分查找** x23
 - **贪心** x22
 - **模拟** x21
 - **递归** x17
@@ -188,6 +188,7 @@
 | 172 | [阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) | 🟡 中等 | 数学 | 2025.12.08 |
 | 189 | [轮转数组](https://leetcode.cn/problems/rotate-array/) | 🟡 中等 | 数组、数学、双指针 | 2025.12.05 |
 | 190 | [颠倒二进制位](https://leetcode.cn/problems/reverse-bits/) | 🟢 简单 | 位运算、分治 | 2026.02.16 |
+| 198 | [打家劫舍](https://leetcode.cn/problems/house-robber/) | 🟡 中等 | 数组、动态规划 | 2026.03.24 |
 | 199 | [二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.06 |
 | 200 | [岛屿数量](https://leetcode.cn/problems/number-of-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.11 |
 | 202 | [快乐数](https://leetcode.cn/problems/happy-number/) | 🟢 简单 | 哈希表、数学、双指针 | 2025.11.04 |
@@ -224,6 +225,7 @@
 | 287 | [寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/) | 🟡 中等 | 位运算、数组、双指针、二分查找 | 2025.12.29 |
 | 290 | [单词规律](https://leetcode.cn/problems/word-pattern/) | 🟢 简单 | 哈希表、字符串 | 2025.10.29 |
 | 295 | [数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) | 🔴 困难 | 设计、双指针、数据流、排序、堆（优先队列） | 2026.02.01 |
+| 300 | [最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | 🟡 中等 | 数组、二分查找、动态规划 | 2026.03.24 |
 | 304 | [二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/) | 🟡 中等 | 设计、数组、矩阵、前缀和 | 2026.01.01 |
 | 326 | [3 的幂](https://leetcode.cn/problems/power-of-three/) | 🟢 简单 | 递归、数学 | 2025.11.19 |
 | 328 | [奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | 🟡 中等 | 链表 | 2025.12.11 |
@@ -409,8 +411,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-23 22:12:07
-- **总题目数**：342
+- **最后更新**：2026-03-24 17:14:43
+- **总题目数**：344
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

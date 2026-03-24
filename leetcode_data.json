@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 342,
-  "updated_at": "2026.03.23",
+  "total_solved": 344,
+  "updated_at": "2026.03.24",
   "problems": [
     {
       "id": 1,
@@ -5101,6 +5101,35 @@
         "2026.03.23"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-non-negative-product-in-a-matrix/"
+    },
+    {
+      "id": 198,
+      "title": "打家劫舍",
+      "title_slug": "house-robber",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.03.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/house-robber/"
+    },
+    {
+      "id": 300,
+      "title": "最长递增子序列",
+      "title_slug": "longest-increasing-subsequence",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "二分查找",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.03.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/longest-increasing-subsequence/"
     }
   ]
 }

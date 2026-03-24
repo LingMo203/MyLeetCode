@@ -7,7 +7,7 @@ import java.util.List;
 public class DynamicProgramming {
     public static void main(String[] args) {
         DynamicProgramming dp=new DynamicProgramming();
-        int[] nums={2,3,1,1,4};
+        int[] nums={10,9,2,5,3,7,101,18};
         //int[][] dnums={{0,0,0,0},{0,1,0,0},{0,0,0,0},{0,0,1,0},{0,0,0,0}};
         Integer[][] dnums = {{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}};
         List<List<Integer>> list = new ArrayList<>();
@@ -30,7 +30,8 @@ public class DynamicProgramming {
         //System.out.println(dp.minPathSum(dnums));
         //System.out.println(dp.minimumTotal(list));
         //System.out.println(dp.maxRotateFunction(new int[]{4,3,2,6}));
-        System.out.println(dp.champagneTower(100000009,33,17));
+        //System.out.println(dp.champagneTower(100000009,33,17));
+        System.out.println(dp.lengthOfLIS(nums));
     }
 
 
@@ -362,6 +363,34 @@ public class DynamicProgramming {
         return a < 0 ? -1 : (int) a;
     }
 
+    //198. 打家劫舍
+    public int rob(int[] nums) {
+        int n = nums.length;
+        int[] dp = new int[n];
+        dp[0] = nums[0];
+        dp[1] = Math.max(nums[0], nums[1]);
+        for (int i = 2; i < n; i++) {
+            dp[i] = Math.max(nums[i] + dp[i - 2], dp[i - 1]);
+        }
+        return dp[n - 1];
+    }
+
+    //300. 最长递增子序列
+    public int lengthOfLIS(int[] nums) {
+        int n = nums.length;
+        if (n == 0) return 0;
+        int res = 1;
+        int[] dp = new int[n];
+        dp[0] = 1;
+        for (int i = 0; i < n; i++) {
+            dp[i] = 1;
+            for (int j = 0; j < i; j++) {
+                if (nums[j] < nums[i]) dp[i] = Math.max(dp[i], dp[j] + 1);
+            }
+            res = Math.max(res, dp[i]);
+        }
+        return res;
+    }
 
 
 }
