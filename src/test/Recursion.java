@@ -1,5 +1,6 @@
 package test;
 
+
 public class Recursion {
     public static void main(String[] args) {
         int a=5;
@@ -8,6 +9,7 @@ public class Recursion {
         //System.out.println(recursion.myPow(2,1000000));
         //System.out.println(recursion.isPowerOfFour(4));
         System.out.println(recursion.gcd(12,32));
+        System.out.println(12*32/recursion.gcd(12,32));
     }
 
     //阶乘
@@ -18,10 +20,10 @@ public class Recursion {
     }
 
     //最大公约数
-    public int gcd(int a,int b){
-        if (b==0) return a;
-        return gcd(b,a%b);
-    }
+//    public int gcd(int a,int b){
+//        if (b==0) return a;
+//        return gcd(b,a%b);
+//    }
 
 
 
@@ -51,6 +53,32 @@ public class Recursion {
         if (n==0) return 0;
         return fib(n-1)+fib(n-2);
     }
+
+    public int gcd(int a, int b) {
+        return a % b == 0 ? b : gcd(b, a % b);
+    }
+
+    public double myPow(double x, int n) {
+        //return n >= 0 ? quickPow(x, n) : 1 / quickPow(x, -n);
+        return n >= 0 ? qPow(x, n) : 1 / qPow(x, -(long) n);
+    }
+    private double quickPow(double x, int n) {
+        if (n == 1) return x;
+        else if (n == 0) return 1;
+        double num = quickPow(x, n / 2);
+        return n % 2 == 0 ? num * num : num * num * x;
+    }
+    private double qPow(double x, long n) {
+        double res = 1;
+        while (n != 0) {
+            if (n % 2 == 1) res *= x;
+            x *= x;
+            n /= 2;
+        }
+        return res;
+    }
+
+
 
 
 
