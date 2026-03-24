@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 344,
+  "total_solved": 345,
   "updated_at": "2026.03.24",
   "problems": [
     {
@@ -5130,6 +5130,21 @@
         "2026.03.24"
       ],
       "leetcode_url": "https://leetcode.cn/problems/longest-increasing-subsequence/"
+    },
+    {
+      "id": 2906,
+      "title": "构造乘积矩阵",
+      "title_slug": "construct-product-matrix",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "矩阵",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2026.03.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/construct-product-matrix/"
     }
   ]
 }

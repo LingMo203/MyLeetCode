@@ -12,7 +12,7 @@ public class T6 {
         int[] nums1 = {4, 2, 1, 3};
         int[] nums2 = {1, -2, 3, -4};
         int[] nums3 = {5, 4, 3, 4, 2};
-        String strGrid = "[[0,0],[1,0]]";
+        String strGrid = "[[1,2],[3,4]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String strGrid2 = "[[1,0],[0,0]]";
         int[][] grid2 = ArrayStringUtils.parse2DIntArray(strGrid2);
@@ -39,7 +39,8 @@ public class T6 {
         //System.out.println(t6.minOperations("01010"));
         //System.out.println(t6.checkOnesSegment("1001"));
         //System.out.println(Arrays.deepToString(t6.reverseSubmatrix(grid, 1, 0, 3)));
-        System.out.println(t6.findRotation(grid,grid2));
+        //System.out.println(t6.findRotation(grid,grid2));
+        System.out.println(Arrays.deepToString(t6.constructProductMatrix(grid)));
     }
 
     //56. 合并区间
@@ -800,6 +801,41 @@ public class T6 {
                 res[k][j] = grid[j][i];
             }
             k++;
+        }
+        return res;
+    }
+
+    //2906. 构造乘积矩阵
+    public int[][] constructProductMatrix(int[][] grid) {
+        final int MOD = 12345;
+        int n = grid.length, m = grid[0].length;
+        int[][] res = new int[n][m];
+        int[] left = new int[n * m];
+        int[] right = new int[n * m];
+        for (int i = 0, aro = 1; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                int index = i * m + j;
+                if (i == 0 && j == 0) {
+                    left[0] = 1;
+                    continue;
+                }
+                left[index] = ((aro % MOD) * (grid[(index - 1) / m][(index - 1) % m] % MOD)) % MOD;
+                aro = left[index];
+            }
+        }
+        for (int i = n - 1, aro = 1; i >= 0; i--) {
+            for (int j = m - 1; j >= 0; j--) {
+                int index = i * m + j;
+                if (i == n - 1 && j == m - 1) {
+                    right[n * m - 1] = 1;
+                    continue;
+                }
+                right[index] = ((aro % MOD) * (grid[(index + 1) / m][(index + 1) % m] % MOD)) % MOD;
+                aro = right[index];
+            }
+        }
+        for (int i = 0; i < m * n; i++) {
+            res[i / m][i % m] = ((left[i] % MOD) * right[i] % MOD) % MOD;
         }
         return res;
     }
