@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 345,
+  "total_solved": 346,
   "updated_at": "2026.03.24",
   "problems": [
     {
@@ -5145,6 +5145,20 @@
         "2026.03.24"
       ],
       "leetcode_url": "https://leetcode.cn/problems/construct-product-matrix/"
+    },
+    {
+      "id": 152,
+      "title": "乘积最大子数组",
+      "title_slug": "maximum-product-subarray",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.03.24"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximum-product-subarray/"
     }
   ]
 }

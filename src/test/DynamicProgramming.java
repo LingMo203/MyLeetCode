@@ -31,7 +31,8 @@ public class DynamicProgramming {
         //System.out.println(dp.minimumTotal(list));
         //System.out.println(dp.maxRotateFunction(new int[]{4,3,2,6}));
         //System.out.println(dp.champagneTower(100000009,33,17));
-        System.out.println(dp.lengthOfLIS(nums));
+        //System.out.println(dp.lengthOfLIS(nums));
+        System.out.println(dp.maxProduct(new int[]{2,3,-2,4}));
     }
 
 
@@ -392,5 +393,44 @@ public class DynamicProgramming {
         return res;
     }
 
+    //152. 乘积最大子数组
+    public int maxProduct(int[] nums) {
+        int n = nums.length, res = nums[0];
+        int[] maxDp = new int[n];
+        int[] minDp = new int[n];
+        for (int i = 0; i < n; i++) {
+            maxDp[i] = minDp[i] = nums[i];
+        }
+        for (int i = 1; i < n; i++) {
+            maxDp[i] = Math.max(nums[i], Math.max(maxDp[i - 1] * nums[i], minDp[i - 1] * nums[i]));
+            minDp[i] = Math.min(nums[i], Math.min(maxDp[i - 1] * nums[i], minDp[i - 1] * nums[i]));
+            res = Math.max(res, Math.max(maxDp[i], maxDp[i]));
+        }
+        return res;
+    }
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

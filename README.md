@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：345**  
+**总题数：346**  
 🟢 简单：142  
-🟡 中等：184  
+🟡 中等：185  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x175
+- **数组** x176
 - **字符串** x71
 - **哈希表** x63
 - **树** x38
@@ -39,7 +39,7 @@
 - **深度优先搜索** x44
 - **排序** x41
 - **广度优先搜索** x36
-- **动态规划** x31
+- **动态规划** x32
 - **位运算** x27
 - **回溯** x24
 - **二分查找** x23
@@ -178,6 +178,7 @@
 | 145 | [二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | 🟢 简单 | 栈、树、深度优先搜索、二叉树 | 2025.11.19 |
 | 150 | [逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | 🟡 中等 | 栈、数组、数学 | 2025.12.11 |
 | 151 | [反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/) | 🟡 中等 | 双指针、字符串 | 2025.12.15 |
+| 152 | [乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/) | 🟡 中等 | 数组、动态规划 | 2026.03.24 |
 | 153 | [寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) | 🟡 中等 | 数组、二分查找 | 2025.12.07 |
 | 154 | [寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) | 🔴 困难 | 数组、二分查找 | 2025.12.07 |
 | 155 | [最小栈](https://leetcode.cn/problems/min-stack/) | 🟡 中等 | 栈、设计 | 2025.12.10 |
@@ -412,8 +413,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-24 21:48:58
-- **总题目数**：345
+- **最后更新**：2026-03-24 22:25:10
+- **总题目数**：346
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
