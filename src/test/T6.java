@@ -12,7 +12,7 @@ public class T6 {
         int[] nums1 = {4, 2, 1, 3};
         int[] nums2 = {1, -2, 3, -4};
         int[] nums3 = {5, 4, 3, 4, 2};
-        String strGrid = "[[1,2],[3,4]]";
+        String strGrid = "[[1,4],[2,3]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String strGrid2 = "[[1,0],[0,0]]";
         int[][] grid2 = ArrayStringUtils.parse2DIntArray(strGrid2);
@@ -40,7 +40,8 @@ public class T6 {
         //System.out.println(t6.checkOnesSegment("1001"));
         //System.out.println(Arrays.deepToString(t6.reverseSubmatrix(grid, 1, 0, 3)));
         //System.out.println(t6.findRotation(grid,grid2));
-        System.out.println(Arrays.deepToString(t6.constructProductMatrix(grid)));
+        //System.out.println(Arrays.deepToString(t6.constructProductMatrix(grid)));
+        System.out.println(t6.canPartitionGrid(grid));
     }
 
     //56. 合并区间
@@ -838,6 +839,33 @@ public class T6 {
             res[i / m][i % m] = ((left[i] % MOD) * right[i] % MOD) % MOD;
         }
         return res;
+    }
+
+    //3546. 等和矩阵分割 I
+    public boolean canPartitionGrid(int[][] grid) {
+        int m = grid.length, n = grid[0].length;
+        long[] row = new long[m], col = new long[n];
+        long sum = 0;
+        for (int j = 0; j < n; j++) {
+            for (int[] ints : grid) {
+                sum += ints[j];
+            }
+            col[j] = sum;
+        }
+        sum = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                sum += grid[i][j];
+            }
+            row[i] = sum;
+        }
+        for (long num : row) {
+            if (num == col[n - 1] - num) return true;
+        }
+        for (long num : col) {
+            if (num == col[n - 1] - num) return true;
+        }
+        return false;
     }
 
 }

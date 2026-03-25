@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：346**  
+**总题数：347**  
 🟢 简单：142  
-🟡 中等：185  
+🟡 中等：186  
 🔴 困难：19
 
 
@@ -17,12 +17,12 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x176
+- **数组** x177
 - **字符串** x71
 - **哈希表** x63
 - **树** x38
 - **二叉树** x36
-- **矩阵** x32
+- **矩阵** x33
 - **链表** x31
 - **栈** x27
 - **堆（优先队列）** x12
@@ -49,7 +49,7 @@
 - **分治** x13
 - **滑动窗口** x10
 - **设计** x8
-- **枚举** x7
+- **枚举** x8
 - **快速选择** x3
 - **随机化** x1
 
@@ -374,6 +374,7 @@
 | 3191 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
 | 3379 | [转换数组](https://leetcode.cn/problems/transformed-array/) | 🟢 简单 | 数组、模拟 | 2026.02.05 |
 | 3507 | [移除最小数对使数组有序 I](https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/) | 🟢 简单 | 数组、哈希表、链表、双向链表、有序集合、模拟、堆（优先队列） | 2026.01.22 |
+| 3546 | [等和矩阵分割 I](https://leetcode.cn/problems/equal-sum-grid-partition-i/) | 🟡 中等 | 数组、枚举、矩阵、前缀和 | 2026.03.25 |
 | 3619 | [总价值可以被 K 整除的岛屿数目](https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 3634 | [使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) | 🟡 中等 | 数组、排序、滑动窗口 | 2026.02.06 |
 | 3637 | [三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) | 🟢 简单 | 数组 | 2026.02.03 |
@@ -413,8 +414,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-24 22:25:10
-- **总题目数**：346
+- **最后更新**：2026-03-25 21:58:37
+- **总题目数**：347
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

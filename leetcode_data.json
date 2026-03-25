@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 346,
-  "updated_at": "2026.03.24",
+  "total_solved": 347,
+  "updated_at": "2026.03.25",
   "problems": [
     {
       "id": 1,
@@ -5159,6 +5159,22 @@
         "2026.03.24"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-product-subarray/"
+    },
+    {
+      "id": 3546,
+      "title": "等和矩阵分割 I",
+      "title_slug": "equal-sum-grid-partition-i",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "枚举",
+        "矩阵",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2026.03.25"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/equal-sum-grid-partition-i/"
     }
   ]
 }
