@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：347**  
-🟢 简单：142  
+**总题数：348**  
+🟢 简单：143  
 🟡 中等：186  
 🔴 困难：19
 
@@ -17,12 +17,12 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x177
+- **数组** x178
 - **字符串** x71
 - **哈希表** x63
 - **树** x38
 - **二叉树** x36
-- **矩阵** x33
+- **矩阵** x34
 - **链表** x31
 - **栈** x27
 - **堆（优先队列）** x12
@@ -34,7 +34,7 @@
 - **字典树** x3
 
 ### ⚡ 算法
-- **数学** x52
+- **数学** x53
 - **双指针** x49
 - **深度优先搜索** x44
 - **排序** x41
@@ -44,7 +44,7 @@
 - **回溯** x24
 - **二分查找** x23
 - **贪心** x22
-- **模拟** x21
+- **模拟** x22
 - **递归** x17
 - **分治** x13
 - **滑动窗口** x10
@@ -368,6 +368,7 @@
 | 2483 | [商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) | 🟡 中等 | 字符串、前缀和 | 2025.12.26 |
 | 2578 | [最小和分割](https://leetcode.cn/problems/split-with-minimum-sum/) | 🟢 简单 | 贪心、数学、排序 | 2025.11.10 |
 | 2906 | [构造乘积矩阵](https://leetcode.cn/problems/construct-product-matrix/) | 🟡 中等 | 数组、矩阵、前缀和 | 2026.03.24 |
+| 2946 | [循环移位后的矩阵相似检查](https://leetcode.cn/problems/matrix-similarity-after-cyclic-shifts/) | 🟢 简单 | 数组、数学、矩阵、模拟 | 2026.03.27 |
 | 3010 | [将数组分成最小总代价的子数组 I](https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/) | 🟢 简单 | 数组、枚举、排序 | 2026.02.01 |
 | 3074 | [重新分装苹果](https://leetcode.cn/problems/apple-redistribution-into-boxes/) | 🟢 简单 | 贪心、数组、排序 | 2025.12.24 |
 | 3075 | [幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) | 🟡 中等 | 贪心、数组、排序 | 2025.12.25 |
@@ -414,8 +415,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-25 21:58:37
-- **总题目数**：347
+- **最后更新**：2026-03-27 21:47:08
+- **总题目数**：348
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

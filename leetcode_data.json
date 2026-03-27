@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 347,
-  "updated_at": "2026.03.25",
+  "total_solved": 348,
+  "updated_at": "2026.03.27",
   "problems": [
     {
       "id": 1,
@@ -5175,6 +5175,22 @@
         "2026.03.25"
       ],
       "leetcode_url": "https://leetcode.cn/problems/equal-sum-grid-partition-i/"
+    },
+    {
+      "id": 2946,
+      "title": "循环移位后的矩阵相似检查",
+      "title_slug": "matrix-similarity-after-cyclic-shifts",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "数学",
+        "矩阵",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.03.27"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/matrix-similarity-after-cyclic-shifts/"
     }
   ]
 }

@@ -12,7 +12,7 @@ public class T6 {
         int[] nums1 = {4, 2, 1, 3};
         int[] nums2 = {1, -2, 3, -4};
         int[] nums3 = {5, 4, 3, 4, 2};
-        String strGrid = "[[1,4],[2,3]]";
+        String strGrid = "[[9,1,8,9,2,9,1,8,9,2],[10,2,7,8,9,10,2,7,8,9],[7,6,6,9,5,7,6,6,9,5]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String strGrid2 = "[[1,0],[0,0]]";
         int[][] grid2 = ArrayStringUtils.parse2DIntArray(strGrid2);
@@ -41,7 +41,8 @@ public class T6 {
         //System.out.println(Arrays.deepToString(t6.reverseSubmatrix(grid, 1, 0, 3)));
         //System.out.println(t6.findRotation(grid,grid2));
         //System.out.println(Arrays.deepToString(t6.constructProductMatrix(grid)));
-        System.out.println(t6.canPartitionGrid(grid));
+        //System.out.println(t6.canPartitionGrid(grid));
+        System.out.println(t6.areSimilar(grid, 5));
     }
 
     //56. 合并区间
@@ -866,6 +867,31 @@ public class T6 {
             if (num == col[n - 1] - num) return true;
         }
         return false;
+    }
+
+    //2946. 循环移位后的矩阵相似检查
+    public boolean areSimilar(int[][] mat, int k) {
+        int n = mat.length, m = mat[0].length;
+        k %= m;
+        if (k == 0) return true;
+        for (int i = 0; i < n; i++) {
+            int[] nums = new int[m];
+            if (i % 2 == 0) {
+                for (int j = 0, y = k; j < m; j++, y++) {
+                    y %= m;
+                    nums[j] = mat[i][y];
+                }
+            } else {
+                int y = -k;
+                if (y < 0) y += m;
+                for (int j = 0; j < m; j++, y++) {
+                    y %= m;
+                    nums[j] = mat[i][y];
+                }
+            }
+            if (!Arrays.equals(nums, mat[i])) return false;
+        }
+        return true;
     }
 
 }
