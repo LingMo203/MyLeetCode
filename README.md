@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：348**  
+**总题数：349**  
 🟢 简单：143  
-🟡 中等：186  
+🟡 中等：187  
 🔴 困难：19
 
 
@@ -18,8 +18,8 @@
 
 ### 🔥 数据结构
 - **数组** x178
-- **字符串** x71
-- **哈希表** x63
+- **字符串** x72
+- **哈希表** x64
 - **树** x38
 - **二叉树** x36
 - **矩阵** x34
@@ -37,7 +37,7 @@
 - **数学** x53
 - **双指针** x49
 - **深度优先搜索** x44
-- **排序** x41
+- **排序** x42
 - **广度优先搜索** x36
 - **动态规划** x32
 - **位运算** x27
@@ -367,6 +367,7 @@
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
 | 2483 | [商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) | 🟡 中等 | 字符串、前缀和 | 2025.12.26 |
 | 2578 | [最小和分割](https://leetcode.cn/problems/split-with-minimum-sum/) | 🟢 简单 | 贪心、数学、排序 | 2025.11.10 |
+| 2840 | [判断通过操作能否让字符串相等 II](https://leetcode.cn/problems/check-if-strings-can-be-made-equal-with-operations-ii/) | 🟡 中等 | 哈希表、字符串、排序 | 2026.03.30 |
 | 2906 | [构造乘积矩阵](https://leetcode.cn/problems/construct-product-matrix/) | 🟡 中等 | 数组、矩阵、前缀和 | 2026.03.24 |
 | 2946 | [循环移位后的矩阵相似检查](https://leetcode.cn/problems/matrix-similarity-after-cyclic-shifts/) | 🟢 简单 | 数组、数学、矩阵、模拟 | 2026.03.27 |
 | 3010 | [将数组分成最小总代价的子数组 I](https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/) | 🟢 简单 | 数组、枚举、排序 | 2026.02.01 |
@@ -415,8 +416,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-27 21:47:08
-- **总题目数**：348
+- **最后更新**：2026-03-30 20:39:53
+- **总题目数**：349
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
