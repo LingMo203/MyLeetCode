@@ -1,3 +1,5 @@
+package test;
+
 import util.ArrayStringUtils;
 
 import java.util.*;
@@ -5,9 +7,10 @@ import java.util.*;
 public class T7 {
     public static void main() {
         T7 t7 = new T7();
-        int[] nums1 = {4, 2, 1, 3};
-        int[] nums2 = {1, -2, 3, -4};
-        int[] nums3 = {5, 4, 3, 4, 2};
+        int[] nums1 = {5,5};
+        int[] nums2 = {5,2};
+        int[] nums3 = {7,1,3,3,5,3,22,10,23};
+        int[] nums4 = {5,5,6,2,0,16};
         String strGrid = "[[9,1,8,9,2,9,1,8,9,2],[10,2,7,8,9,10,2,7,8,9],[7,6,6,9,5,7,6,6,9,5]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String strGrid2 = "[[1,0],[0,0]]";
@@ -17,6 +20,7 @@ public class T7 {
         String[] strs = {"0:start:0", "0:start:2", "0:end:5", "1:start:6", "1:end:6", "0:end:7"};
         String[] strs2 = {"0:start:0", "1:start:2", "1:end:5", "0:end:6"};
         char[] chars = {'c', 'f', 'j'};
+        System.out.println(t7.minCost(nums1,nums2,nums3,nums4));
     }
 
 
@@ -42,6 +46,30 @@ public class T7 {
         if (!Arrays.equals(odd1, odd2)) return false;
         if (!Arrays.equals(even1, even2)) return false;
         return true;
+    }
+
+    //2087. 网格图中机器人回家的最小代价
+    public int minCost(int[] startPos, int[] homePos, int[] rowCosts, int[] colCosts) {
+        int res = 0;
+        if (startPos[1] < homePos[1]) {
+            for (int i = startPos[1] + 1; i <= homePos[1]; i++) {
+                res += colCosts[i];
+            }
+        } else {
+            for (int i = startPos[1] - 1; i >= homePos[1]; i--) {
+                res += colCosts[i];
+            }
+        }
+        if (startPos[0] < homePos[0]) {
+            for (int i = startPos[0] + 1; i <= homePos[0]; i++) {
+                res += rowCosts[i];
+            }
+        } else {
+            for (int i = startPos[0] - 1; i >= homePos[0]; i--) {
+                res += rowCosts[i];
+            }
+        }
+        return res;
     }
 
 }

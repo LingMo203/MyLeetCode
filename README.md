@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：349**  
+**总题数：350**  
 🟢 简单：143  
-🟡 中等：187  
+🟡 中等：188  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x178
+- **数组** x179
 - **字符串** x72
 - **哈希表** x64
 - **树** x38
@@ -43,7 +43,7 @@
 - **位运算** x27
 - **回溯** x24
 - **二分查找** x23
-- **贪心** x22
+- **贪心** x23
 - **模拟** x22
 - **递归** x17
 - **分治** x13
@@ -361,6 +361,7 @@
 | 1985 | [找出数组中的第 K 大整数](https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/) | 🟡 中等 | 数组、字符串、分治、快速选择、排序、堆（优先队列） | 2026.02.02 |
 | 1992 | [找到所有的农场组](https://leetcode.cn/problems/find-all-groups-of-farmland/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.01.12 |
 | 2073 | [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets/) | 🟢 简单 | 队列、数组、模拟 | 2026.02.07 |
+| 2087 | [网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | 🟡 中等 | 贪心、数组 | 2026.04.04 |
 | 2095 | [删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
@@ -416,8 +417,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-03-30 20:39:53
-- **总题目数**：349
+- **最后更新**：2026-04-04 21:22:06
+- **总题目数**：350
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

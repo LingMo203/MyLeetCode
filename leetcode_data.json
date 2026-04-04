@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 349,
-  "updated_at": "2026.03.30",
+  "total_solved": 350,
+  "updated_at": "2026.04.04",
   "problems": [
     {
       "id": 1,
@@ -5206,6 +5206,20 @@
         "2026.03.30"
       ],
       "leetcode_url": "https://leetcode.cn/problems/check-if-strings-can-be-made-equal-with-operations-ii/"
+    },
+    {
+      "id": 2087,
+      "title": "网格图中机器人回家的最小代价",
+      "title_slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组"
+      ],
+      "solved_dates": [
+        "2026.04.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/"
     }
   ]
 }
