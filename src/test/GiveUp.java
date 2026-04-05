@@ -197,4 +197,112 @@ public class GiveUp {
             }
         }
     }
+
+    //57. 插入区间
+    public int[][] insert(int[][] intervals, int[] newInterval) {
+        int n = intervals.length, left = newInterval[0], right = newInterval[1], i = 0;
+        if (n == 0) return new int[][]{{newInterval[0], newInterval[1]}};
+        ArrayList<int[]> list = new ArrayList<>();
+        for (; i < n; i++) {
+            int[] nums = intervals[i];
+            if (nums[0] < left) {
+                list.add(nums);
+            }else {
+                left = Math.min(left, intervals[i][0]);
+                break;
+            }
+        }
+        for (; i < n; i++) {
+            int[] nums = intervals[i];
+            if (nums[0] > right) {
+                i--;
+                break;
+            }
+        }
+        right = Math.max(right, intervals[i][1]);
+        list.add(new int[]{left, right});
+        for (++i; i < n; i++) {
+            list.add(intervals[i]);
+        }
+        int[][] res = new int[list.size()][2];
+        for (int j = 0; j < list.size(); j++) {
+            res[j] = list.get(j);
+        }
+        return res;
+    }
+
+
+    //System.out.println(bs.findMedianSortedArrays(new int[]{1,3,5,14},new int[]{2,4,8,9,11}));
+    //4. 寻找两个正序数组的中位数
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int m = nums1.length, n = nums2.length, left = 0, right = m,
+                mid = (right - left) / 2 + left, second = (m + n) / 2 - mid;
+        while (left <= right) {
+            mid = (right - left) / 2 + left;
+            second = (m + n) / 2 - mid;
+        }
+        return -1;
+    }
+
+
+    //3548. 等和矩阵分割 II
+    public boolean canPartitionGrid(int[][] grid) {
+        int m = grid.length, n = grid[0].length;
+        long[] row = new long[m], col = new long[n];
+        long sum = 0;
+        HashMap<Long, Integer> right = new HashMap<>();
+        HashMap<Long, Integer> botton = new HashMap<>();
+        for (int j = 0; j < n; j++) {
+            for (int i = 0; i < m; i++) {
+                long num = grid[i][j];
+                sum += num;
+                right.put(num, right.getOrDefault(num, 0) + 1);
+                botton.put(num, botton.getOrDefault(num, 0) + 1);
+            }
+            col[j] = sum;
+        }
+        sum = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                sum += grid[i][j];
+            }
+            row[i] = sum;
+        }
+        sum = col[n - 1];
+        HashSet<Long> left = new HashSet<>();
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                long num = grid[i][j];
+                left.add(num);
+                int time = right.get(num);
+                if (time <= 1) right.remove(num);
+                else right.put(num, time - 1);
+            }
+            long leftSum = row[i], rightSum = sum - leftSum, diff = Math.abs(rightSum - leftSum);
+            if (leftSum == rightSum) return true;
+
+            if (m <= 2) continue;
+
+            if (leftSum > rightSum && left.contains(diff) && i != 0) return true;
+            else if (leftSum < rightSum && right.containsKey(diff) && i != m - 1) return true;
+        }
+        HashSet<Long> top = new HashSet<>();
+        for (int j = 0; j < n; j++) {
+            for (int i = 0; i < m; i++) {
+                long num = grid[i][j];
+                top.add(num);
+                int time = botton.get(num);
+                if (time <= 1) botton.remove(num);
+                else botton.put(num, time - 1);
+            }
+            long topSum = col[j], bottonSum = sum - topSum, diff = Math.abs(topSum - bottonSum);
+            if (topSum == bottonSum) return true;
+            if (n <= 2) continue;
+            if (topSum > bottonSum && top.contains(diff) && j != 0) {
+                return true;
+            }
+            else if (topSum < bottonSum && botton.containsKey(diff) && j != n - 1) return true;
+        }
+        return false;
+    }
 }
