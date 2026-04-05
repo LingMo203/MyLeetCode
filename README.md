@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：350**  
-🟢 简单：143  
+**总题数：351**  
+🟢 简单：144  
 🟡 中等：188  
 🔴 困难：19
 
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x179
-- **字符串** x72
+- **字符串** x73
 - **哈希表** x64
 - **树** x38
 - **二叉树** x36
@@ -44,7 +44,7 @@
 - **回溯** x24
 - **二分查找** x23
 - **贪心** x23
-- **模拟** x22
+- **模拟** x23
 - **递归** x17
 - **分治** x13
 - **滑动窗口** x10
@@ -276,6 +276,7 @@
 | 636 | [函数的独占时间](https://leetcode.cn/problems/exclusive-time-of-functions/) | 🟡 中等 | 栈、数组 | 2026.02.07 |
 | 637 | [二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.23 |
 | 645 | [错误的集合](https://leetcode.cn/problems/set-mismatch/) | 🟢 简单 | 位运算、数组、哈希表、排序 | 2025.10.29 |
+| 657 | [机器人能否返回原点](https://leetcode.cn/problems/robot-return-to-origin/) | 🟢 简单 | 字符串、模拟 | 2026.04.05 |
 | 684 | [冗余连接](https://leetcode.cn/problems/redundant-connection/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.15 |
 | 686 | [重复叠加字符串匹配](https://leetcode.cn/problems/repeated-string-match/) | 🟡 中等 | 字符串、字符串匹配 | 2026.02.10 |
 | 692 | [前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/) | 🟡 中等 | 字典树、数组、哈希表、字符串、桶排序、计数、排序、堆（优先队列） | 2026.02.02 |
@@ -417,8 +418,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-04 21:22:06
-- **总题目数**：350
+- **最后更新**：2026-04-05 20:43:14
+- **总题目数**：351
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

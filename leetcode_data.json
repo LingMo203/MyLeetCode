@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 350,
-  "updated_at": "2026.04.04",
+  "total_solved": 351,
+  "updated_at": "2026.04.05",
   "problems": [
     {
       "id": 1,
@@ -5220,6 +5220,20 @@
         "2026.04.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/"
+    },
+    {
+      "id": 657,
+      "title": "机器人能否返回原点",
+      "title_slug": "robot-return-to-origin",
+      "difficulty": "简单",
+      "tags": [
+        "字符串",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.04.05"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/robot-return-to-origin/"
     }
   ]
 }
