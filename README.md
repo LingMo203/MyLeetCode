@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：351**  
+**总题数：352**  
 🟢 简单：144  
-🟡 中等：188  
+🟡 中等：189  
 🔴 困难：19
 
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x179
+- **数组** x180
 - **字符串** x73
-- **哈希表** x64
+- **哈希表** x65
 - **树** x38
 - **二叉树** x36
 - **矩阵** x34
@@ -41,10 +41,10 @@
 - **广度优先搜索** x36
 - **动态规划** x32
 - **位运算** x27
+- **模拟** x24
 - **回溯** x24
 - **二分查找** x23
 - **贪心** x23
-- **模拟** x23
 - **递归** x17
 - **分治** x13
 - **滑动窗口** x10
@@ -302,6 +302,7 @@
 | 860 | [柠檬水找零](https://leetcode.cn/problems/lemonade-change/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
 | 865 | [具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、哈希表、二叉树 | 2026.01.09 |
 | 868 | [二进制间距](https://leetcode.cn/problems/binary-gap/) | 🟢 简单 | 位运算 | 2026.02.22 |
+| 874 | [模拟行走机器人](https://leetcode.cn/problems/walking-robot-simulation/) | 🟡 中等 | 数组、哈希表、模拟 | 2026.04.06 |
 | 876 | [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | 🟢 简单 | 链表、双指针 | 2025.11.17 |
 | 934 | [最短的桥](https://leetcode.cn/problems/shortest-bridge/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.03.05 |
 | 941 | [有效的山脉数组](https://leetcode.cn/problems/valid-mountain-array/) | 🟢 简单 | 数组 | 2026.02.07 |
@@ -418,8 +419,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-05 20:43:14
-- **总题目数**：351
+- **最后更新**：2026-04-06 20:35:45
+- **总题目数**：352
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

@@ -94,6 +94,38 @@ public class T7 {
         return x == 0 && y == 0;
     }
 
+    //874. 模拟行走机器人
+    public int robotSim(int[] commands, int[][] obstacles) {
+        int x = 0, y = 0, dir = 0, res = 0;  // 北 : 0;// 东 : 1;// 南 : 2;// 西 : 3;
+        record Coordinate(int x, int y) {};
+        HashSet<Coordinate> hashSet = new HashSet<>();
+        for (int[] nums : obstacles) {
+            hashSet.add(new Coordinate(nums[0], nums[1]));
+        }
+        for (int num : commands) {
+            if (num < 0) {
+                dir += num == -1 ? 1 : -1;
+                if (dir == 4) dir = 0;
+                else if (dir == -1) dir = 3;
+            } else {
+                int step = dir == 0 || dir == 1 ? 1 : -1;
+                if (dir == 1 || dir == 3) {
+                    for (int i = 0; i < num; i++) {
+                        if (hashSet.contains(new Coordinate(x + step, y))) break;
+                        x += step;
+                    }
+                } else if (dir == 0 || dir == 2) {
+                    for (int i = 0; i < num; i++) {
+                        if (hashSet.contains(new Coordinate(x, y + step))) break;
+                        y += step;
+                    }
+                }
+                res = Math.max(res, x * x + y * y);
+            }
+        }
+        return res;
+    }
+
 }
 
 
