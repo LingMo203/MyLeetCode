@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 353,
+  "total_solved": 354,
   "updated_at": "2026.04.07",
   "problems": [
     {
@@ -5263,6 +5263,21 @@
         "2026.04.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/walking-robot-simulation-ii/"
+    },
+    {
+      "id": 1705,
+      "title": "吃苹果的最大数目",
+      "title_slug": "maximum-number-of-eaten-apples",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组",
+        "堆（优先队列）"
+      ],
+      "solved_dates": [
+        "2026.04.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximum-number-of-eaten-apples/"
     }
   ]
 }

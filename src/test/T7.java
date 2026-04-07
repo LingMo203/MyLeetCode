@@ -126,7 +126,40 @@ public class T7 {
         return res;
     }
 
+    //1705. 吃苹果的最大数目
+    public int eatenApples(int[] apples, int[] days) {
+        int res = 0, i = 0;
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+        for (; i < apples.length; i++) {
+            int apple = apples[i], day = days[i];
+            if (apple > 0) {
+                pq.add(new int[]{apple, day + i});
+            }
+            res = getRes(res, i, pq);
+        }
+        for (; !pq.isEmpty(); i++) {
+            res = getRes(res, i, pq);
+        }
+        return res;
+    }
+    public int getRes(int res, int i, PriorityQueue<int[]> pq) {
+        while (!pq.isEmpty() && pq.peek()[1] <= i) {
+            pq.remove();
+        }
+        if (!pq.isEmpty()) {
+            int last = pq.peek()[0];
+            if (last <= 1) {
+                pq.remove();
+            } else {
+                pq.peek()[0] = last - 1;
+            }
+            res++;
+        }
+        return res;
+    }
+
 }
+
 
 
 

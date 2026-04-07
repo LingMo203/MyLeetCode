@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：353**  
+**总题数：354**  
 🟢 简单：144  
-🟡 中等：190  
+🟡 中等：191  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x180
+- **数组** x181
 - **字符串** x73
 - **哈希表** x65
 - **树** x38
@@ -25,7 +25,7 @@
 - **矩阵** x34
 - **链表** x31
 - **栈** x27
-- **堆（优先队列）** x12
+- **堆（优先队列）** x13
 - **并查集** x10
 - **队列** x7
 - **单调栈** x7
@@ -42,9 +42,9 @@
 - **动态规划** x32
 - **位运算** x27
 - **模拟** x25
+- **贪心** x24
 - **回溯** x24
 - **二分查找** x23
-- **贪心** x23
 - **递归** x17
 - **分治** x13
 - **滑动窗口** x10
@@ -346,6 +346,7 @@
 | 1689 | [十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | 🟡 中等 | 贪心、字符串 | 2026.03.01 |
 | 1696 | [跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/) | 🟡 中等 | 队列、数组、动态规划、单调队列、堆（优先队列） | 2025.12.24 |
 | 1700 | [无法吃午餐的学生数量](https://leetcode.cn/problems/number-of-students-unable-to-eat-lunch/) | 🟢 简单 | 栈、队列、数组、模拟 | 2026.02.07 |
+| 1705 | [吃苹果的最大数目](https://leetcode.cn/problems/maximum-number-of-eaten-apples/) | 🟡 中等 | 贪心、数组、堆（优先队列） | 2026.04.07 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 1732 | [找到最高海拔](https://leetcode.cn/problems/find-the-highest-altitude/) | 🟢 简单 | 数组、前缀和 | 2026.02.10 |
 | 1758 | [生成交替二进制字符串的最少操作数](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/) | 🟢 简单 | 字符串 | 2026.03.05 |
@@ -420,8 +421,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-07 22:31:03
-- **总题目数**：353
+- **最后更新**：2026-04-07 22:59:29
+- **总题目数**：354
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
