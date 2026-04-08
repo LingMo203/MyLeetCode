@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：354**  
+**总题数：355**  
 🟢 简单：144  
-🟡 中等：191  
+🟡 中等：192  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x181
+- **数组** x182
 - **字符串** x73
 - **哈希表** x65
 - **树** x38
@@ -41,12 +41,12 @@
 - **广度优先搜索** x36
 - **动态规划** x32
 - **位运算** x27
-- **模拟** x25
+- **模拟** x26
 - **贪心** x24
 - **回溯** x24
 - **二分查找** x23
 - **递归** x17
-- **分治** x13
+- **分治** x14
 - **滑动窗口** x10
 - **设计** x9
 - **枚举** x8
@@ -386,6 +386,7 @@
 | 3634 | [使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) | 🟡 中等 | 数组、排序、滑动窗口 | 2026.02.06 |
 | 3637 | [三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) | 🟢 简单 | 数组 | 2026.02.03 |
 | 3643 | [垂直翻转子矩阵](https://leetcode.cn/problems/flip-square-submatrix-vertically/) | 🟢 简单 | 数组、双指针、矩阵 | 2026.03.21 |
+| 3653 | [区间乘法查询后的异或 I](https://leetcode.cn/problems/xor-after-range-multiplication-queries-i/) | 🟡 中等 | 数组、分治、模拟 | 2026.04.08 |
 | 3713 | [最长的平衡子串 I](https://leetcode.cn/problems/longest-balanced-substring-i/) | 🟡 中等 | 哈希表、字符串、计数、枚举 | 2026.02.12 |
 | 3719 | [最长平衡子数组 I](https://leetcode.cn/problems/longest-balanced-subarray-i/) | 🟡 中等 | 线段树、数组、哈希表、分治、前缀和 | 2026.02.10 |
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
@@ -421,8 +422,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-07 22:59:29
-- **总题目数**：354
+- **最后更新**：2026-04-08 21:46:37
+- **总题目数**：355
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

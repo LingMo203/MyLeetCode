@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 354,
-  "updated_at": "2026.04.07",
+  "total_solved": 355,
+  "updated_at": "2026.04.08",
   "problems": [
     {
       "id": 1,
@@ -5278,6 +5278,21 @@
         "2026.04.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-number-of-eaten-apples/"
+    },
+    {
+      "id": 3653,
+      "title": "区间乘法查询后的异或 I",
+      "title_slug": "xor-after-range-multiplication-queries-i",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "分治",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.04.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/xor-after-range-multiplication-queries-i/"
     }
   ]
 }

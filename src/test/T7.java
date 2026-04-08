@@ -158,6 +158,24 @@ public class T7 {
         return res;
     }
 
+    //3653. 区间乘法查询后的异或 I
+    public int xorAfterQueries(int[] nums, int[][] queries) {
+        final int MOD = 1000000007;
+        for (int[] quer : queries) {
+            int idx = quer[0], r = quer[1], k = quer[2], v = quer[3];
+            while (idx <= r) {
+                long x = (long) (nums[idx] % MOD) * (v % MOD) % MOD;
+                nums[idx] = (int) x;
+                idx += k;
+            }
+        }
+        int res = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            res = res ^ nums[i];
+        }
+        return res;
+    }
+
 }
 
 
