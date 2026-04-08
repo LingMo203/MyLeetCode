@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：355**  
+**总题数：356**  
 🟢 简单：144  
-🟡 中等：192  
+🟡 中等：193  
 🔴 困难：19
 
 
@@ -17,17 +17,17 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x182
+- **数组** x183
 - **字符串** x73
 - **哈希表** x65
 - **树** x38
 - **二叉树** x36
 - **矩阵** x34
-- **链表** x31
+- **链表** x32
 - **栈** x27
 - **堆（优先队列）** x13
 - **并查集** x10
-- **队列** x7
+- **队列** x8
 - **单调栈** x7
 - **图** x6
 - **单调队列** x3
@@ -47,8 +47,8 @@
 - **二分查找** x23
 - **递归** x17
 - **分治** x14
+- **设计** x10
 - **滑动窗口** x10
-- **设计** x9
 - **枚举** x8
 - **快速选择** x3
 - **随机化** x1
@@ -272,6 +272,7 @@
 | 561 | [数组拆分](https://leetcode.cn/problems/array-partition/) | 🟢 简单 | 贪心、数组、计数排序、排序 | 2025.11.07 |
 | 575 | [分糖果](https://leetcode.cn/problems/distribute-candies/) | 🟢 简单 | 数组、哈希表 | 2025.10.29 |
 | 605 | [种花问题](https://leetcode.cn/problems/can-place-flowers/) | 🟢 简单 | 贪心、数组 | 2025.11.07 |
+| 622 | [设计循环队列](https://leetcode.cn/problems/design-circular-queue/) | 🟡 中等 | 设计、队列、数组、链表 | 2026.04.08 |
 | 623 | [在二叉树中增加一行](https://leetcode.cn/problems/add-one-row-to-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.09 |
 | 636 | [函数的独占时间](https://leetcode.cn/problems/exclusive-time-of-functions/) | 🟡 中等 | 栈、数组 | 2026.02.07 |
 | 637 | [二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.23 |
@@ -422,8 +423,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-08 21:46:37
-- **总题目数**：355
+- **最后更新**：2026-04-08 22:28:04
+- **总题目数**：356
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

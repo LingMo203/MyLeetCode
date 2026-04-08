@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 355,
+  "total_solved": 356,
   "updated_at": "2026.04.08",
   "problems": [
     {
@@ -5293,6 +5293,22 @@
         "2026.04.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/xor-after-range-multiplication-queries-i/"
+    },
+    {
+      "id": 622,
+      "title": "设计循环队列",
+      "title_slug": "design-circular-queue",
+      "difficulty": "中等",
+      "tags": [
+        "设计",
+        "队列",
+        "数组",
+        "链表"
+      ],
+      "solved_dates": [
+        "2026.04.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/design-circular-queue/"
     }
   ]
 }
