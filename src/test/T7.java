@@ -176,6 +176,23 @@ public class T7 {
         return res;
     }
 
+    //3862. 找出最小平衡下标
+    public int smallestBalancedIndex(int[] nums) {
+        int n = nums.length;
+        long sum = 0, are = 1;
+        for (int num : nums) {
+            sum += num;
+        }
+        int res = -1;
+        for (int i = n - 1; i >= 0; i--) {
+            sum -= nums[i];
+            if (sum == are) res = i;
+            if (sum / nums[i] < are) break;
+            are *= nums[i];
+        }
+        return res;
+    }
+
 }
 
 

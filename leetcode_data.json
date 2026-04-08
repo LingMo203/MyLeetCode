@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 356,
+  "total_solved": 357,
   "updated_at": "2026.04.08",
   "problems": [
     {
@@ -5309,6 +5309,20 @@
         "2026.04.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/design-circular-queue/"
+    },
+    {
+      "id": 3862,
+      "title": "找出最小平衡下标",
+      "title_slug": "find-the-smallest-balanced-index",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2026.04.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-smallest-balanced-index/"
     }
   ]
 }
