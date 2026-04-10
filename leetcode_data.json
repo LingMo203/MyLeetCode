@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 357,
-  "updated_at": "2026.04.08",
+  "total_solved": 358,
+  "updated_at": "2026.04.10",
   "problems": [
     {
       "id": 1,
@@ -5323,6 +5323,20 @@
         "2026.04.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-the-smallest-balanced-index/"
+    },
+    {
+      "id": 3740,
+      "title": "三个相等元素之间的最小距离 I",
+      "title_slug": "minimum-distance-between-three-equal-elements-i",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "哈希表"
+      ],
+      "solved_dates": [
+        "2026.04.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-i/"
     }
   ]
 }

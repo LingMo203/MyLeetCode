@@ -193,6 +193,32 @@ public class T7 {
         return res;
     }
 
+    //3740. 三个相等元素之间的最小距离 I
+    public int minimumDistance(int[] nums) {
+        int res = Integer.MAX_VALUE;
+        HashMap<Integer, ArrayList<Integer>> hashMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (!hashMap.containsKey(nums[i])) {
+                ArrayList<Integer> list = new ArrayList<>();
+                list.add(i);
+                hashMap.put(nums[i], list);
+            } else {
+                hashMap.get(nums[i]).add(i);
+            }
+        }
+        for(Map.Entry<Integer, ArrayList<Integer>> entry : hashMap.entrySet()) {
+            ArrayList<Integer> list = entry.getValue();
+            if (list.size() < 3) {
+                continue;
+            }
+            for(int ii = 0, jj = 1, kk = 2; kk < list.size() ;ii++, jj++, kk++) {
+                int i = list.get(ii), j = list.get(jj), k = list.get(kk);
+                res = Math.min(res, Math.abs(i - j) + Math.abs(j - k) + Math.abs(k - i));
+            }
+        }
+        return res == Integer.MAX_VALUE ? -1 : res;
+    }
+
 }
 
 

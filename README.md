@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：357**  
-🟢 简单：144  
+**总题数：358**  
+🟢 简单：145  
 🟡 中等：194  
 🔴 困难：19
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x184
+- **数组** x185
 - **字符串** x73
-- **哈希表** x65
+- **哈希表** x66
 - **树** x38
 - **二叉树** x36
 - **矩阵** x34
@@ -390,6 +390,7 @@
 | 3653 | [区间乘法查询后的异或 I](https://leetcode.cn/problems/xor-after-range-multiplication-queries-i/) | 🟡 中等 | 数组、分治、模拟 | 2026.04.08 |
 | 3713 | [最长的平衡子串 I](https://leetcode.cn/problems/longest-balanced-substring-i/) | 🟡 中等 | 哈希表、字符串、计数、枚举 | 2026.02.12 |
 | 3719 | [最长平衡子数组 I](https://leetcode.cn/problems/longest-balanced-subarray-i/) | 🟡 中等 | 线段树、数组、哈希表、分治、前缀和 | 2026.02.10 |
+| 3740 | [三个相等元素之间的最小距离 I](https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-i/) | 🟢 简单 | 数组、哈希表 | 2026.04.10 |
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
 | 3795 | [不同元素和至少为 K 的最短子数组长度](https://leetcode.cn/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | 🟡 中等 | 数组、哈希表、滑动窗口 | 2026.01.03 |
 | 3798 | [最大的偶数](https://leetcode.cn/problems/largest-even-number/) | 🟢 简单 | 字符串 | 2026.01.04 |
@@ -424,8 +425,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-08 22:55:47
-- **总题目数**：357
+- **最后更新**：2026-04-10 22:11:38
+- **总题目数**：358
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
