@@ -1,57 +1,54 @@
 package design;
 
-import java.util.HashSet;
-
 //208. 实现 Trie (前缀树)
 class Trie {
-    Node root;
+    private final Trie[] children;
+    boolean isEnd;
 
     public Trie() {
-        root = new Node();
+        children = new Trie[26];
+        isEnd = false;
     }
 
     public void insert(String word) {
-        Node cur = root;
-        for (int i = 0; i < word.length(); i++) {
-            int id = word.charAt(i) - 'a';
-            if (!cur.vis[id]){
-                cur.vis[id] = true;
-                cur.next[id] = new Node();
+        Trie node = this;
+        for(char c : word.toCharArray()) {
+            int id = c - 'a';
+            if (node.children[id] == null) {
+                node.children[id] = new Trie();
             }
-            cur = cur.next[id];
+            node = node.children[id];
         }
-        cur.isEnd = true;
+        node.isEnd = true;
     }
 
     public boolean search(String word) {
-        Node cur = root;
-        for (int i = 0; i < word.length(); i++) {
-            int id = word.charAt(i) - 'a';
-            if (!cur.vis[id]) return false;
-            cur = cur.next[id];
+        Trie node = this;
+        for(char c : word.toCharArray()) {
+            int id = c - 'a';
+            if (node.children[id] == null) return false;
+            node = node.children[id];
         }
-        return cur.isEnd;
+        return node.isEnd;
     }
 
     public boolean startsWith(String prefix) {
-        Node cur = root;
-        for (int i = 0; i < prefix.length(); i++) {
-            int id = prefix.charAt(i) - 'a';
-            if (!cur.vis[id]) return false;
-            cur = cur.next[id];
+        Trie node = this;
+        for(char c : prefix.toCharArray()) {
+            int id = c - 'a';
+            if (node.children[id] == null) return false;
         }
         return true;
     }
-}
 
-class Node {
-    boolean[] vis;
-    Node[] next;
-    boolean isEnd;
-
-    public Node() {
-        vis = new boolean[26];
-        next = new Node[26];
+    public static void main(String[] args) {
+        Trie trie = new Trie();
+        trie.insert("apple");
+        System.out.println(trie.search("apple"));	// 返回 True
+        System.out.println(trie.search("app"));     // 返回 False
+        System.out.println(trie.startsWith("app")); // 返回 True
+        trie.insert("app");
+        System.out.println(trie.search("app"));     // 返回 True
     }
 }
 
