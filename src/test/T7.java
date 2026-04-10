@@ -193,7 +193,7 @@ public class T7 {
         return res;
     }
 
-    //3740. 三个相等元素之间的最小距离 I
+    //3740. 三个相等元素之间的最小距离 I 3741. 三个相等元素之间的最小距离 II
     public int minimumDistance(int[] nums) {
         int res = Integer.MAX_VALUE;
         HashMap<Integer, ArrayList<Integer>> hashMap = new HashMap<>();
