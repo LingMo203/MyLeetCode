@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 359,
+  "total_solved": 360,
   "updated_at": "2026.04.10",
   "problems": [
     {
@@ -5351,6 +5351,20 @@
         "2026.04.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-ii/"
+    },
+    {
+      "id": 1207,
+      "title": "独一无二的出现次数",
+      "title_slug": "unique-number-of-occurrences",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "哈希表"
+      ],
+      "solved_dates": [
+        "2026.04.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/unique-number-of-occurrences/"
     }
   ]
 }

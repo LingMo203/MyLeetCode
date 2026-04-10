@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：359**  
-🟢 简单：145  
+**总题数：360**  
+🟢 简单：146  
 🟡 中等：195  
 🔴 困难：19
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x186
+- **数组** x187
 - **字符串** x73
-- **哈希表** x67
+- **哈希表** x68
 - **树** x38
 - **二叉树** x36
 - **矩阵** x34
@@ -321,6 +321,7 @@
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
 | 1200 | [最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference/) | 🟢 简单 | 数组、排序 | 2026.01.26 |
+| 1207 | [独一无二的出现次数](https://leetcode.cn/problems/unique-number-of-occurrences/) | 🟢 简单 | 数组、哈希表 | 2026.04.10 |
 | 1254 | [统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.13 |
 | 1266 | [访问所有点的最小时间](https://leetcode.cn/problems/minimum-time-visiting-all-points/) | 🟢 简单 | 几何、数组、数学 | 2026.01.12 |
 | 1319 | [连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.18 |
@@ -426,8 +427,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-10 22:15:52
-- **总题目数**：359
+- **最后更新**：2026-04-10 22:31:22
+- **总题目数**：360
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

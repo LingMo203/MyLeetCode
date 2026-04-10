@@ -219,6 +219,22 @@ public class T7 {
         return res == Integer.MAX_VALUE ? -1 : res;
     }
 
+    //1207. 独一无二的出现次数
+    public boolean uniqueOccurrences(int[] arr) {
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        for (int num : arr) {
+            hashMap.put(num, hashMap.getOrDefault(num, 0) + 1);
+        }
+        HashSet<Integer> hashSet = new HashSet<>();
+        for(Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
+            if (hashSet.contains(entry.getValue())) {
+                return false;
+            }
+            hashSet.add(entry.getValue());
+        }
+        return true;
+    }
+
 }
 
 
