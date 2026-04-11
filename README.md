@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：360**  
+**总题数：361**  
 🟢 简单：146  
-🟡 中等：195  
+🟡 中等：196  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x187
+- **数组** x188
 - **字符串** x73
 - **哈希表** x68
 - **树** x38
@@ -39,7 +39,7 @@
 - **深度优先搜索** x44
 - **排序** x42
 - **广度优先搜索** x36
-- **动态规划** x32
+- **动态规划** x33
 - **位运算** x27
 - **模拟** x26
 - **贪心** x24
@@ -248,6 +248,7 @@
 | 412 | [Fizz Buzz](https://leetcode.cn/problems/fizz-buzz/) | 🟢 简单 | 数学、字符串、模拟 | 2025.12.01 |
 | 414 | [第三大的数](https://leetcode.cn/problems/third-maximum-number/) | 🟢 简单 | 数组、排序 | 2025.12.01 |
 | 415 | [字符串相加](https://leetcode.cn/problems/add-strings/) | 🟢 简单 | 数学、字符串、模拟 | 2025.12.27 |
+| 416 | [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | 🟡 中等 | 数组、动态规划 | 2026.04.11 |
 | 429 | [N 叉树的层序遍历](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/) | 🟡 中等 | 树、广度优先搜索 | 2025.12.19 |
 | 438 | [找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) | 🟡 中等 | 哈希表、字符串、滑动窗口 | 2025.12.03 |
 | 441 | [排列硬币](https://leetcode.cn/problems/arranging-coins/) | 🟢 简单 | 数学、二分查找 | 2025.11.10 |
@@ -427,8 +428,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-10 23:34:40
-- **总题目数**：360
+- **最后更新**：2026-04-11 22:05:20
+- **总题目数**：361
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

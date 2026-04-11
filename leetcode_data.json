@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 360,
-  "updated_at": "2026.04.10",
+  "total_solved": 361,
+  "updated_at": "2026.04.11",
   "problems": [
     {
       "id": 1,
@@ -5366,6 +5366,20 @@
         "2026.04.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/unique-number-of-occurrences/"
+    },
+    {
+      "id": 416,
+      "title": "分割等和子集",
+      "title_slug": "partition-equal-subset-sum",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.04.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/partition-equal-subset-sum/"
     }
   ]
 }

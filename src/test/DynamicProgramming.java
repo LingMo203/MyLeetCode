@@ -409,6 +409,51 @@ public class DynamicProgramming {
         return res;
     }
 
+    //416. 分割等和子集 一维dp
+    public boolean canPartition(int[] nums) {
+        int n = nums.length, sum = 0;
+        for(int num : nums) sum += num;
+        if(sum % 2 == 1) return false;
+        int m = sum / 2;
+        int[] dp = new int[m + 1];
+        for (int i = 0; i < n; i++) {
+            for (int j = m; j >= 0; j--) {
+                if (j >= nums[i]) {
+                    dp[j] = Math.max(dp[j], dp[j - nums[i]] + nums[i]);
+                }
+                if (dp[j] == m) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    //二维dp
+    public boolean canPartition2(int[] nums) {
+        int n = nums.length, sum = 0;
+        for(int num : nums) {
+            sum += num;
+        }
+        if (sum % 2 == 1 || nums[0] > sum / 2) return false;
+        int m = sum / 2;
+        int[][] dp = new int[n][m + 1];
+        for (int i = nums[0]; i <= m; i++) {
+            dp[0][i] = nums[0];
+        }
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j <= m; j++) {
+                dp[i][j] = dp[i - 1][j];
+                if (j >= nums[i]) {
+                    dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - nums[i]] + nums[i]);
+                }
+                if (dp[i][j] == m) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 }
 
