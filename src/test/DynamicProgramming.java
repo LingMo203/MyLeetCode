@@ -454,8 +454,26 @@ public class DynamicProgramming {
         return false;
     }
 
+    //1049. 最后一块石头的重量 II
+    public int lastStoneWeightII(int[] stones) {
+        int n = stones.length, sum = 0, max = 0;
+        for(int num : stones) sum += num;
+        int half = sum / 2;
+        int[] dp = new int[half + 1];
+        for(int num : stones) {
+            for (int j = half; j >= 0; j--) {
+                if (j >= num) {
+                    dp[j] = Math.max(dp[j], dp[j - num] + num);
+                    max = Math.max(max, dp[j]);
+                }
+            }
+        }
+        return Math.abs(max - (sum - max));
+    }
+
 
 }
+
 
 
 

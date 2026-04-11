@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 361,
+  "total_solved": 362,
   "updated_at": "2026.04.11",
   "problems": [
     {
@@ -5380,6 +5380,20 @@
         "2026.04.11"
       ],
       "leetcode_url": "https://leetcode.cn/problems/partition-equal-subset-sum/"
+    },
+    {
+      "id": 1049,
+      "title": "最后一块石头的重量 II",
+      "title_slug": "last-stone-weight-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.04.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/last-stone-weight-ii/"
     }
   ]
 }

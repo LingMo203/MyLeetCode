@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：361**  
+**总题数：362**  
 🟢 简单：146  
-🟡 中等：196  
+🟡 中等：197  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x188
+- **数组** x189
 - **字符串** x73
 - **哈希表** x68
 - **树** x38
@@ -39,7 +39,7 @@
 - **深度优先搜索** x44
 - **排序** x42
 - **广度优先搜索** x36
-- **动态规划** x33
+- **动态规划** x34
 - **位运算** x27
 - **模拟** x26
 - **贪心** x24
@@ -318,6 +318,7 @@
 | 1022 | [从根到叶的二进制数之和](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/) | 🟢 简单 | 树、深度优先搜索、二叉树 | 2026.02.24 |
 | 1036 | [逃离大迷宫](https://leetcode.cn/problems/escape-a-large-maze/) | 🔴 困难 | 深度优先搜索、广度优先搜索、数组、哈希表 | 2026.02.24 |
 | 1046 | [最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/) | 🟢 简单 | 数组、堆（优先队列） | 2026.02.07 |
+| 1049 | [最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/) | 🟡 中等 | 数组、动态规划 | 2026.04.11 |
 | 1091 | [二进制矩阵中的最短路径](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) | 🟡 中等 | 广度优先搜索、数组、矩阵 | 2026.02.15 |
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
@@ -428,8 +429,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-11 22:05:20
-- **总题目数**：361
+- **最后更新**：2026-04-11 22:55:12
+- **总题目数**：362
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
