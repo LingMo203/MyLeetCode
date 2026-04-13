@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：363**  
+**总题数：364**  
 🟢 简单：147  
-🟡 中等：197  
+🟡 中等：198  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x190
+- **数组** x191
 - **字符串** x73
 - **哈希表** x68
 - **树** x38
@@ -39,11 +39,11 @@
 - **深度优先搜索** x44
 - **排序** x42
 - **广度优先搜索** x36
-- **动态规划** x34
+- **动态规划** x35
 - **位运算** x27
 - **模拟** x26
+- **回溯** x25
 - **贪心** x24
-- **回溯** x24
 - **二分查找** x23
 - **递归** x17
 - **分治** x14
@@ -262,6 +262,7 @@
 | 482 | [密钥格式化](https://leetcode.cn/problems/license-key-formatting/) | 🟢 简单 | 字符串 | 2026.02.09 |
 | 485 | [最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/) | 🟢 简单 | 数组 | 2025.12.01 |
 | 491 | [非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/) | 🟡 中等 | 位运算、数组、哈希表、回溯 | 2026.01.08 |
+| 494 | [目标和](https://leetcode.cn/problems/target-sum/) | 🟡 中等 | 数组、动态规划、回溯 | 2026.04.13 |
 | 503 | [下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) | 🟡 中等 | 栈、数组、单调栈 | 2026.02.03 |
 | 509 | [斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | 🟢 简单 | 递归、记忆化搜索、数学、动态规划 | 2025.11.22 |
 | 515 | [在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.22 |
@@ -430,8 +431,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-13 21:38:52
-- **总题目数**：363
+- **最后更新**：2026-04-13 23:07:35
+- **总题目数**：364
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

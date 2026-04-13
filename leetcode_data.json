@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 363,
+  "total_solved": 364,
   "updated_at": "2026.04.13",
   "problems": [
     {
@@ -5407,6 +5407,21 @@
         "2026.04.13"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-distance-to-the-target-element/"
+    },
+    {
+      "id": 494,
+      "title": "目标和",
+      "title_slug": "target-sum",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划",
+        "回溯"
+      ],
+      "solved_dates": [
+        "2026.04.13"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/target-sum/"
     }
   ]
 }

@@ -7,7 +7,7 @@ import java.util.List;
 public class DynamicProgramming {
     public static void main(String[] args) {
         DynamicProgramming dp=new DynamicProgramming();
-        int[] nums={10,9,2,5,3,7,101,18};
+        int[] nums={1000};
         //int[][] dnums={{0,0,0,0},{0,1,0,0},{0,0,0,0},{0,0,1,0},{0,0,0,0}};
         Integer[][] dnums = {{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}};
         List<List<Integer>> list = new ArrayList<>();
@@ -32,7 +32,8 @@ public class DynamicProgramming {
         //System.out.println(dp.maxRotateFunction(new int[]{4,3,2,6}));
         //System.out.println(dp.champagneTower(100000009,33,17));
         //System.out.println(dp.lengthOfLIS(nums));
-        System.out.println(dp.maxProduct(new int[]{2,3,-2,4}));
+        //System.out.println(dp.maxProduct(new int[]{2,3,-2,4}));
+        System.out.println(dp.findTargetSumWays(nums, -1000));
     }
 
 
@@ -469,6 +470,23 @@ public class DynamicProgramming {
             }
         }
         return Math.abs(max - (sum - max));
+    }
+
+    //494. 目标和 >_< 难
+    public int findTargetSumWays(int[] nums, int target) {
+        int sum = 0;
+        for (int num : nums) sum += num;
+        if ((sum + target) % 2 == 1) return 0;
+        int tar = (sum + target) / 2;
+        if (tar < 0) return 0;
+        int[] dp = new int[tar + 1];
+        dp[0] = 1;
+        for (int num : nums) {
+            for (int j = tar; j >= num; j--) {
+                dp[j] += dp[j - num];
+            }
+        }
+        return dp[tar];
     }
 
 
