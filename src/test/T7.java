@@ -235,6 +235,24 @@ public class T7 {
         return true;
     }
 
+    //1848. 到目标元素的最小距离
+    public int getMinDistance(int[] nums, int target, int start) {
+        int n = nums.length, res = Integer.MAX_VALUE;
+        for (int i = start; i >= 0; i--) {
+            if (nums[i] == target) {
+                res = start - i;
+                break;
+            }
+        }
+        for (int i = start; i < n; i++) {
+            if (nums[i] == target) {
+                res = Math.min(res, i - start);
+                break;
+            }
+        }
+        return res;
+    }
+
 }
 
 

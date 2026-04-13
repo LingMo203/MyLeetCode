@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 362,
-  "updated_at": "2026.04.11",
+  "total_solved": 363,
+  "updated_at": "2026.04.13",
   "problems": [
     {
       "id": 1,
@@ -5394,6 +5394,19 @@
         "2026.04.11"
       ],
       "leetcode_url": "https://leetcode.cn/problems/last-stone-weight-ii/"
+    },
+    {
+      "id": 1848,
+      "title": "到目标元素的最小距离",
+      "title_slug": "minimum-distance-to-the-target-element",
+      "difficulty": "简单",
+      "tags": [
+        "数组"
+      ],
+      "solved_dates": [
+        "2026.04.13"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-distance-to-the-target-element/"
     }
   ]
 }
