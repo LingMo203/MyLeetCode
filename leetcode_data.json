@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 364,
-  "updated_at": "2026.04.13",
+  "total_solved": 365,
+  "updated_at": "2026.04.15",
   "problems": [
     {
       "id": 1,
@@ -5422,6 +5422,20 @@
         "2026.04.13"
       ],
       "leetcode_url": "https://leetcode.cn/problems/target-sum/"
+    },
+    {
+      "id": 2515,
+      "title": "到目标字符串的最短距离",
+      "title_slug": "shortest-distance-to-target-string-in-a-circular-array",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.04.15"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/shortest-distance-to-target-string-in-a-circular-array/"
     }
   ]
 }

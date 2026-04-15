@@ -253,6 +253,26 @@ public class T7 {
         return res;
     }
 
+    //2515. 到目标字符串的最短距离
+    public int closestTarget(String[] words, String target, int startIndex) {
+        int n = words.length, res = -1;
+        for (int i = startIndex, count = 0; count < n; i++, count++) {
+            i %= n;
+            if (words[i].equals(target)) {
+                res = count;
+                break;
+            }
+        }
+        for (int i = startIndex, count = 0; count < n; i--, count++) {
+            i += i < 0 ? n : 0;
+            if (words[i].equals(target)) {
+                res = Math.min(res, count);
+                break;
+            }
+        }
+        return res;
+    }
+
 }
 
 
