@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 366,
+  "total_solved": 367,
   "updated_at": "2026.04.16",
   "problems": [
     {
@@ -5451,6 +5451,21 @@
         "2026.04.16"
       ],
       "leetcode_url": "https://leetcode.cn/problems/closest-equal-element-queries/"
+    },
+    {
+      "id": 474,
+      "title": "一和零",
+      "title_slug": "ones-and-zeroes",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "字符串",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.04.16"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/ones-and-zeroes/"
     }
   ]
 }

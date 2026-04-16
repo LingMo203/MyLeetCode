@@ -33,7 +33,8 @@ public class DynamicProgramming {
         //System.out.println(dp.champagneTower(100000009,33,17));
         //System.out.println(dp.lengthOfLIS(nums));
         //System.out.println(dp.maxProduct(new int[]{2,3,-2,4}));
-        System.out.println(dp.findTargetSumWays(nums, -1000));
+        //System.out.println(dp.findTargetSumWays(nums, -1000));
+        System.out.println(dp.findMaxForm(new String[]{"10","0001","111001","1","0"}, 5, 3));
     }
 
 
@@ -487,6 +488,24 @@ public class DynamicProgramming {
             }
         }
         return dp[tar];
+    }
+
+    //474. 一和零
+    public int findMaxForm(String[] strs, int m, int n) {
+        int[][] dp = new int[m + 1][n + 1];
+        for (String str : strs) {
+            int zero = 0, one = 0;
+            for (char c : str.toCharArray()) {
+                if (c == '0') zero++;
+                else one++;
+            }
+            for (int i = m; i >= zero; i--) {
+                for (int j = n; j >= one; j--) {
+                    dp[i][j] = Math.max(dp[i][j], dp[i - zero][j - one] + 1);
+                }
+            }
+        }
+        return dp[m][n];
     }
 
 
