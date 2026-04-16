@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 365,
-  "updated_at": "2026.04.15",
+  "total_solved": 366,
+  "updated_at": "2026.04.16",
   "problems": [
     {
       "id": 1,
@@ -5436,6 +5436,21 @@
         "2026.04.15"
       ],
       "leetcode_url": "https://leetcode.cn/problems/shortest-distance-to-target-string-in-a-circular-array/"
+    },
+    {
+      "id": 3488,
+      "title": "距离最小相等元素查询",
+      "title_slug": "closest-equal-element-queries",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "哈希表",
+        "二分查找"
+      ],
+      "solved_dates": [
+        "2026.04.16"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/closest-equal-element-queries/"
     }
   ]
 }

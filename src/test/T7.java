@@ -7,8 +7,8 @@ import java.util.*;
 public class T7 {
     public static void main() {
         T7 t7 = new T7();
-        int[] nums1 = {5,5};
-        int[] nums2 = {5,2};
+        int[] nums1 = {1,3,1,4,1,3,2};
+        int[] nums2 = {5};
         int[] nums3 = {7,1,3,3,5,3,22,10,23};
         int[] nums4 = {5,5,6,2,0,16};
         String strGrid = "[[9,1,8,9,2,9,1,8,9,2],[10,2,7,8,9,10,2,7,8,9],[7,6,6,9,5,7,6,6,9,5]]";
@@ -20,7 +20,8 @@ public class T7 {
         String[] strs = {"0:start:0", "0:start:2", "0:end:5", "1:start:6", "1:end:6", "0:end:7"};
         String[] strs2 = {"0:start:0", "1:start:2", "1:end:5", "0:end:6"};
         char[] chars = {'c', 'f', 'j'};
-        System.out.println(t7.minCost(nums1,nums2,nums3,nums4));
+        //System.out.println(t7.minCost(nums1,nums2,nums3,nums4));
+        System.out.println(t7.solveQueries(nums1, nums2));
     }
 
 
@@ -269,6 +270,34 @@ public class T7 {
                 res = Math.min(res, count);
                 break;
             }
+        }
+        return res;
+    }
+
+    //3488. 距离最小相等元素查询
+    public List<Integer> solveQueries(int[] nums, int[] queries) {
+        int n = nums.length, m = queries.length;
+        List<Integer> res = new ArrayList<>(m);
+        HashMap<Integer, ArrayList<Integer>> hashMap = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            if (!hashMap.containsKey(nums[i])) {
+                hashMap.put(nums[i], new ArrayList<>());
+            }
+            hashMap.get(nums[i]).add(i);
+        }
+        for (int num : queries) {
+            ArrayList<Integer> list = hashMap.get(nums[num]);
+            if (list.size() == 1) {
+                res.add(-1);
+                continue;
+            }
+            int listIndex = Collections.binarySearch(list, num), numIndex = list.get(listIndex), size = list.size();
+            int listLeft = listIndex - 1 < 0 ? size - 1 : listIndex - 1, numLeft = list.get(listLeft);
+            int lightRight = listIndex + 1 >= size ? 0 : listIndex + 1, numRight = list.get(lightRight);
+            res.add(Math.min(
+                    listIndex - 1 < 0 ? numIndex + n - numLeft : numIndex - numLeft,
+                    listIndex + 1 >= size ? n - numIndex + numRight : numRight - numIndex
+            ));
         }
         return res;
     }
