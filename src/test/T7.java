@@ -21,7 +21,8 @@ public class T7 {
         String[] strs2 = {"0:start:0", "1:start:2", "1:end:5", "0:end:6"};
         char[] chars = {'c', 'f', 'j'};
         //System.out.println(t7.minCost(nums1,nums2,nums3,nums4));
-        System.out.println(t7.solveQueries(nums1, nums2));
+        //System.out.println(t7.solveQueries(nums1, nums2));
+        System.out.println(t7.minMirrorPairDistance(new int[]{120,21}));
     }
 
 
@@ -300,6 +301,44 @@ public class T7 {
             ));
         }
         return res;
+    }
+
+    //3783. 整数的镜像距离
+    public int mirrorDistance(int n) {
+        return Math.abs(n - reverseInt(n));
+    }
+    private int reverseInt(int num) {
+        int res = 0;
+        while (num != 0) {
+            res = res * 10 + (num % 10);
+            num /= 10;
+        }
+        return res;
+    }
+
+    //3761. 镜像对之间最小绝对距离
+    public int minMirrorPairDistance(int[] nums) {
+        int n = nums.length, res = Integer.MAX_VALUE;
+        HashMap<Integer, Deque<Integer>> hashMap = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            if (!hashMap.containsKey(nums[i])) {
+                hashMap.put(nums[i], new ArrayDeque<>());
+            }
+            hashMap.get(nums[i]).addLast(i);
+        }
+        for (int i = 0; i < n; i++) {
+            int reverse = reverseInt(nums[i]);
+            Deque<Integer> deque = hashMap.get(reverse);
+            if (deque == null) continue;
+            while (!deque.isEmpty() && i >= deque.getFirst()) {
+                deque.removeFirst();
+            }
+            if (!deque.isEmpty()) {
+                int j = deque.getFirst();
+                res = Math.min(res, j - i);
+            }
+        }
+        return res == Integer.MAX_VALUE ? -1 : res;
     }
 
 }

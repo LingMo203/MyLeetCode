@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 367,
-  "updated_at": "2026.04.16",
+  "total_solved": 369,
+  "updated_at": "2026.04.18",
   "problems": [
     {
       "id": 1,
@@ -5466,6 +5466,34 @@
         "2026.04.16"
       ],
       "leetcode_url": "https://leetcode.cn/problems/ones-and-zeroes/"
+    },
+    {
+      "id": 3783,
+      "title": "整数的镜像距离",
+      "title_slug": "mirror-distance-of-an-integer",
+      "difficulty": "简单",
+      "tags": [
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.04.18"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/mirror-distance-of-an-integer/"
+    },
+    {
+      "id": 3761,
+      "title": "镜像对之间最小绝对距离",
+      "title_slug": "minimum-absolute-distance-between-mirror-pairs",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "哈希表",
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.04.18"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-absolute-distance-between-mirror-pairs/"
     }
   ]
 }
