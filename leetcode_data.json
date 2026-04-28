@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 369,
-  "updated_at": "2026.04.18",
+  "total_solved": 370,
+  "updated_at": "2026.04.28",
   "problems": [
     {
       "id": 1,
@@ -5494,6 +5494,22 @@
         "2026.04.18"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-absolute-distance-between-mirror-pairs/"
+    },
+    {
+      "id": 2033,
+      "title": "获取单值网格的最小操作数",
+      "title_slug": "minimum-operations-to-make-a-uni-value-grid",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "数学",
+        "矩阵",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.04.28"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-operations-to-make-a-uni-value-grid/"
     }
   ]
 }

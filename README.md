@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：369**  
+**总题数：370**  
 🟢 简单：149  
-🟡 中等：201  
+🟡 中等：202  
 🔴 困难：19
 
 
@@ -17,12 +17,12 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x195
+- **数组** x196
 - **字符串** x75
 - **哈希表** x70
 - **树** x38
 - **二叉树** x36
-- **矩阵** x34
+- **矩阵** x35
 - **链表** x32
 - **栈** x27
 - **堆（优先队列）** x13
@@ -34,10 +34,10 @@
 - **字典树** x3
 
 ### ⚡ 算法
-- **数学** x55
+- **数学** x56
 - **双指针** x49
 - **深度优先搜索** x44
-- **排序** x42
+- **排序** x43
 - **动态规划** x36
 - **广度优先搜索** x36
 - **位运算** x27
@@ -370,6 +370,7 @@
 | 1984 | [学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | 🟢 简单 | 数组、排序、滑动窗口 | 2026.01.25 |
 | 1985 | [找出数组中的第 K 大整数](https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/) | 🟡 中等 | 数组、字符串、分治、快速选择、排序、堆（优先队列） | 2026.02.02 |
 | 1992 | [找到所有的农场组](https://leetcode.cn/problems/find-all-groups-of-farmland/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.01.12 |
+| 2033 | [获取单值网格的最小操作数](https://leetcode.cn/problems/minimum-operations-to-make-a-uni-value-grid/) | 🟡 中等 | 数组、数学、矩阵、排序 | 2026.04.28 |
 | 2069 | [模拟行走机器人 II](https://leetcode.cn/problems/walking-robot-simulation-ii/) | 🟡 中等 | 设计、模拟 | 2026.04.07 |
 | 2073 | [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets/) | 🟢 简单 | 队列、数组、模拟 | 2026.02.07 |
 | 2087 | [网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | 🟡 中等 | 贪心、数组 | 2026.04.04 |
@@ -436,8 +437,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-18 22:09:58
-- **总题目数**：369
+- **最后更新**：2026-04-28 21:31:35
+- **总题目数**：370
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

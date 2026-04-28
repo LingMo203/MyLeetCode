@@ -341,6 +341,26 @@ public class T7 {
         return res == Integer.MAX_VALUE ? -1 : res;
     }
 
+    //2033. 获取单值网格的最小操作数
+    public int minOperations(int[][] grid, int x) {
+        if (grid.length == 1 && grid[0].length == 1) return 0;
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int[] nums : grid) {
+            for (int num : nums) {
+                list.add(num);
+            }
+        }
+        Collections.sort(list);
+        int mid = list.get(list.size() / 2);
+        int res = 0;
+        for (int num : list) {
+            int temp = Math.abs(mid - num);
+            if (temp % x != 0) return -1;
+            res += (Math.abs(mid - num) / x);
+        }
+        return res;
+    }
+
 }
 
 
