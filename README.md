@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：370**  
+**总题数：371**  
 🟢 简单：149  
-🟡 中等：202  
+🟡 中等：203  
 🔴 困难：19
 
 
@@ -17,12 +17,12 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x196
+- **数组** x197
 - **字符串** x75
 - **哈希表** x70
 - **树** x38
 - **二叉树** x36
-- **矩阵** x35
+- **矩阵** x36
 - **链表** x32
 - **栈** x27
 - **堆（优先队列）** x13
@@ -35,7 +35,7 @@
 
 ### ⚡ 算法
 - **数学** x56
-- **双指针** x49
+- **双指针** x50
 - **深度优先搜索** x44
 - **排序** x43
 - **动态规划** x36
@@ -359,6 +359,7 @@
 | 1784 | [检查二进制字符串字段](https://leetcode.cn/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | 🟢 简单 | 字符串 | 2026.03.06 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
 | 1848 | [到目标元素的最小距离](https://leetcode.cn/problems/minimum-distance-to-the-target-element/) | 🟢 简单 | 数组 | 2026.04.13 |
+| 1861 | [旋转盒子](https://leetcode.cn/problems/rotating-the-box/) | 🟡 中等 | 数组、双指针、矩阵 | 2026.05.06 |
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
 | 1886 | [判断矩阵经轮转后是否一致](https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | 🟢 简单 | 数组、矩阵 | 2026.03.22 |
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
@@ -437,8 +438,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-04-28 21:31:35
-- **总题目数**：370
+- **最后更新**：2026-05-06 21:15:34
+- **总题目数**：371
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

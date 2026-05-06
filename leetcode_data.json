@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 370,
-  "updated_at": "2026.04.28",
+  "total_solved": 371,
+  "updated_at": "2026.05.06",
   "problems": [
     {
       "id": 1,
@@ -5510,6 +5510,21 @@
         "2026.04.28"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-operations-to-make-a-uni-value-grid/"
+    },
+    {
+      "id": 1861,
+      "title": "旋转盒子",
+      "title_slug": "rotating-the-box",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "双指针",
+        "矩阵"
+      ],
+      "solved_dates": [
+        "2026.05.06"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/rotating-the-box/"
     }
   ]
 }

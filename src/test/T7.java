@@ -20,9 +20,12 @@ public class T7 {
         String[] strs = {"0:start:0", "0:start:2", "0:end:5", "1:start:6", "1:end:6", "0:end:7"};
         String[] strs2 = {"0:start:0", "1:start:2", "1:end:5", "0:end:6"};
         char[] chars = {'c', 'f', 'j'};
+        String charInput2 = "[[\"#\",\".\",\"*\",\".\"],[\"#\",\"#\",\"*\",\".\"]]";
+        char[][] charArray2 = ArrayStringUtils.parse2DCharArraySmart(charInput2);
         //System.out.println(t7.minCost(nums1,nums2,nums3,nums4));
         //System.out.println(t7.solveQueries(nums1, nums2));
-        System.out.println(t7.minMirrorPairDistance(new int[]{120,21}));
+        //System.out.println(t7.minMirrorPairDistance(new int[]{120,21}));
+        System.out.println(Arrays.deepToString(t7.rotateTheBox(charArray2)));
     }
 
 
@@ -357,6 +360,34 @@ public class T7 {
             int temp = Math.abs(mid - num);
             if (temp % x != 0) return -1;
             res += (Math.abs(mid - num) / x);
+        }
+        return res;
+    }
+
+    //1861. 旋转盒子
+    public char[][] rotateTheBox(char[][] boxGrid) {
+        int m = boxGrid.length, n = boxGrid[0].length;
+        char[][] res = new char[n][m];
+        int i = n - 1, j = 0;//结果索引
+        for (int ii = m - 1; ii >= 0; ii--) {
+            i = n - 1;
+            for (int jj = n - 1; jj >= 0; jj--) {
+                char c = boxGrid[ii][jj];
+                if (c == '#') {
+                    res[i][j] = '#';
+                    i--;
+                } else if (c == '*') {
+                    for (; jj < i; i--) {
+                        res[i][j] = '.';
+                    }
+                    res[i][j] = '*';
+                    i--;
+                }
+            }
+            for (; i >= 0; i--) {
+                res[i][j] = '.';
+            }
+            j++;
         }
         return res;
     }
