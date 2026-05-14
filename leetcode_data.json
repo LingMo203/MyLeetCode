@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 371,
-  "updated_at": "2026.05.06",
+  "total_solved": 372,
+  "updated_at": "2026.05.14",
   "problems": [
     {
       "id": 1,
@@ -5525,6 +5525,21 @@
         "2026.05.06"
       ],
       "leetcode_url": "https://leetcode.cn/problems/rotating-the-box/"
+    },
+    {
+      "id": 2784,
+      "title": "检查数组是否是好的",
+      "title_slug": "check-if-array-is-good",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "哈希表",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.05.14"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/check-if-array-is-good/"
     }
   ]
 }
