@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：372**  
+**总题数：373**  
 🟢 简单：150  
-🟡 中等：203  
+🟡 中等：204  
 🔴 困难：19
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x198
+- **数组** x199
 - **字符串** x75
 - **哈希表** x71
 - **树** x38
@@ -36,10 +36,10 @@
 ### ⚡ 算法
 - **数学** x56
 - **双指针** x50
+- **深度优先搜索** x45
 - **排序** x44
-- **深度优先搜索** x44
+- **广度优先搜索** x37
 - **动态规划** x36
-- **广度优先搜索** x36
 - **位运算** x27
 - **模拟** x26
 - **回溯** x25
@@ -328,6 +328,7 @@
 | 1207 | [独一无二的出现次数](https://leetcode.cn/problems/unique-number-of-occurrences/) | 🟢 简单 | 数组、哈希表 | 2026.04.10 |
 | 1254 | [统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.13 |
 | 1266 | [访问所有点的最小时间](https://leetcode.cn/problems/minimum-time-visiting-all-points/) | 🟢 简单 | 几何、数组、数学 | 2026.01.12 |
+| 1306 | [跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组 | 2026.05.17 |
 | 1319 | [连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.18 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
 | 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
@@ -439,8 +440,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-14 21:19:13
-- **总题目数**：372
+- **最后更新**：2026-05-17 21:31:01
+- **总题目数**：373
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

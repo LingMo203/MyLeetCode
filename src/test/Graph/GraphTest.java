@@ -22,10 +22,11 @@ public class GraphTest {
         //System.out.println(Arrays.deepToString(gt.findFarmland(grid)));
         //System.out.println(gt.minimumEffortPath(grid));
         //System.out.println(gt.findCircleNum(grid));
-        gt.solve2(charArray2);
+        //gt.solve2(charArray2);
         //System.out.println(Arrays.deepToString(charArray2));
         //System.out.println(gt.isEscapePossible(grid,new int[]{0,0},new int[]{0,2}));
-        System.out.println(gt.isEscapePossible(grid2,new int[]{0,0},new int[]{0,2}));
+        //System.out.println(gt.isEscapePossible(grid2,new int[]{0,0},new int[]{0,2}));
+        System.out.println(gt.canReach(new int[]{0}, 0));
     }
 
 
@@ -679,6 +680,28 @@ public class GraphTest {
             res++;
         }
         return -1;
+    }
+
+    //1306. 跳跃游戏 III
+    public boolean canReach(int[] arr, int start) {
+        if (arr[start] == 0) return true;
+        int n = arr.length;
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.addLast(start);
+        while (!deque.isEmpty()) {
+            int remove = deque.removeFirst();
+            int next1 = remove + arr[remove], next2 = remove - arr[remove];
+            arr[remove] = -1;
+            if (next1 >= 0 && next1 < n && arr[next1] != -1) {
+                if (arr[next1] == 0) return true;
+                deque.addLast(next1);
+            }
+            if (next2 >= 0 && next2 < n && arr[next2] != -1) {
+                if (arr[next2] == 0) return true;
+                deque.addLast(next2);
+            }
+        }
+        return false;
     }
 
 
