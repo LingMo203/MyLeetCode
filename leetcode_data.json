@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 373,
-  "updated_at": "2026.05.17",
+  "total_solved": 374,
+  "updated_at": "2026.05.18",
   "problems": [
     {
       "id": 1,
@@ -5555,6 +5555,21 @@
         "2026.05.17"
       ],
       "leetcode_url": "https://leetcode.cn/problems/jump-game-iii/"
+    },
+    {
+      "id": 1345,
+      "title": "跳跃游戏 IV",
+      "title_slug": "jump-game-iv",
+      "difficulty": "困难",
+      "tags": [
+        "广度优先搜索",
+        "数组",
+        "哈希表"
+      ],
+      "solved_dates": [
+        "2026.05.18"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/jump-game-iv/"
     }
   ]
 }

@@ -704,6 +704,47 @@ public class GraphTest {
         return false;
     }
 
+    //1345. 跳跃游戏 IV
+    public int minJumps(int[] arr) {
+        int n = arr.length, res = 0;
+        if (n == 1) return 0;
+        HashMap<Integer, ArrayList<Integer>> hashMap = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            if (!hashMap.containsKey(arr[i])) hashMap.put(arr[i], new ArrayList<>());
+            hashMap.get(arr[i]).add(i);
+        }
+        boolean[] vis = new boolean[n];
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.addLast(0);
+        vis[0] = true;
+        while (!deque.isEmpty()) {
+            int size = deque.size();
+            while (size-- > 0) {
+                int remove = deque.removeFirst();
+                ArrayList<Integer> list = hashMap.get(arr[remove]);
+                for (int next : list) {
+                    if (vis[next]) continue;
+                    if (next == n - 1) return res + 1;
+                    deque.addLast(next);
+                    vis[next] = true;
+                }
+                hashMap.put(arr[remove], new ArrayList<>());
+                if (remove - 1 >= 0 && !vis[remove - 1]) {
+                    deque.addLast(remove - 1);
+                    vis[remove - 1] = true;
+                }
+                if (remove + 1 < n && !vis[remove + 1]) {
+                    if (remove + 1 == n - 1) return res + 1;
+                    deque.addLast(remove + 1);
+                    vis[remove + 1] = true;
+                }
+            }
+            res++;
+        }
+        return res;
+    }
+
+
 
 
 

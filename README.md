@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：373**  
+**总题数：374**  
 🟢 简单：150  
 🟡 中等：204  
-🔴 困难：19
+🔴 困难：20
 
 
 ---
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x199
+- **数组** x200
 - **字符串** x75
-- **哈希表** x71
+- **哈希表** x72
 - **树** x38
 - **二叉树** x36
 - **矩阵** x36
@@ -38,7 +38,7 @@
 - **双指针** x50
 - **深度优先搜索** x45
 - **排序** x44
-- **广度优先搜索** x37
+- **广度优先搜索** x38
 - **动态规划** x36
 - **位运算** x27
 - **模拟** x26
@@ -332,6 +332,7 @@
 | 1319 | [连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.18 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
 | 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
+| 1345 | [跳跃游戏 IV](https://leetcode.cn/problems/jump-game-iv/) | 🔴 困难 | 广度优先搜索、数组、哈希表 | 2026.05.18 |
 | 1351 | [统计有序矩阵中的负数](https://leetcode.cn/problems/count-negative-numbers-in-a-sorted-matrix/) | 🟢 简单 | 数组、二分查找、矩阵 | 2025.12.28 |
 | 1354 | [多次求和构造目标数组](https://leetcode.cn/problems/construct-target-array-with-multiple-sums/) | 🔴 困难 | 数组、堆（优先队列） | 2026.02.09 |
 | 1356 | [根据数字二进制下 1 的数目排序](https://leetcode.cn/problems/sort-integers-by-the-number-of-1-bits/) | 🟢 简单 | 位运算、数组、计数、排序 | 2026.02.25 |
@@ -440,8 +441,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-17 21:31:01
-- **总题目数**：373
+- **最后更新**：2026-05-18 21:36:03
+- **总题目数**：374
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
