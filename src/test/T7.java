@@ -403,6 +403,18 @@ public class T7 {
         return nums[n - 1] == nums[n - 2];
     }
 
+    //2540. 最小公共值
+    public int getCommon(int[] nums1, int[] nums2) {
+        int n = nums1.length, m = nums2.length;
+        for (int i = 0, j = 0; i < n && j < m; ) {
+            int num1 = nums1[i], num2 = nums2[j];
+            if (num1 == num2) return num1;
+            else if (num1 < num2) i++;
+            else j++;
+        }
+        return -1;
+    }
+
 }
 
 

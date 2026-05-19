@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 374,
-  "updated_at": "2026.05.18",
+  "total_solved": 375,
+  "updated_at": "2026.05.19",
   "problems": [
     {
       "id": 1,
@@ -5570,6 +5570,22 @@
         "2026.05.18"
       ],
       "leetcode_url": "https://leetcode.cn/problems/jump-game-iv/"
+    },
+    {
+      "id": 2540,
+      "title": "最小公共值",
+      "title_slug": "minimum-common-value",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "哈希表",
+        "双指针",
+        "二分查找"
+      ],
+      "solved_dates": [
+        "2026.05.19"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-common-value/"
     }
   ]
 }
