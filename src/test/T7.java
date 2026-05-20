@@ -415,6 +415,28 @@ public class T7 {
         return -1;
     }
 
+    //2657. 找到两个数组的前缀公共数组
+    public int[] findThePrefixCommonArray(int[] A, int[] B) {
+        int n = A.length;
+        int[] res = new int[n];
+        boolean[] bA = new boolean[n];
+        boolean[] bB = new boolean[n];
+        for (int i = 0, time = 0; i < n; i++) {
+            int m1 = A[i], m2 = B[i];
+            bA[m1 - 1] = true;
+            bB[m2 - 1] = true;
+            if (m1 == m2) {
+                time++;
+                res[i] = time;
+                continue;
+            }
+            if (bA[m2 - 1]) time++;
+            if (bB[m1 - 1]) time++;
+            res[i] = time;
+        }
+        return res;
+    }
+
 }
 
 

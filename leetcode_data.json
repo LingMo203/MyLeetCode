@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 375,
-  "updated_at": "2026.05.19",
+  "total_solved": 376,
+  "updated_at": "2026.05.20",
   "problems": [
     {
       "id": 1,
@@ -5586,6 +5586,21 @@
         "2026.05.19"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-common-value/"
+    },
+    {
+      "id": 2657,
+      "title": "找到两个数组的前缀公共数组",
+      "title_slug": "find-the-prefix-common-array-of-two-arrays",
+      "difficulty": "中等",
+      "tags": [
+        "位运算",
+        "数组",
+        "哈希表"
+      ],
+      "solved_dates": [
+        "2026.05.20"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-prefix-common-array-of-two-arrays/"
     }
   ]
 }

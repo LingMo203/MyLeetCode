@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：375**  
+**总题数：376**  
 🟢 简单：151  
-🟡 中等：204  
+🟡 中等：205  
 🔴 困难：20
 
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x201
+- **数组** x202
 - **字符串** x75
-- **哈希表** x73
+- **哈希表** x74
 - **树** x38
 - **二叉树** x36
 - **矩阵** x36
@@ -40,7 +40,7 @@
 - **排序** x44
 - **广度优先搜索** x38
 - **动态规划** x36
-- **位运算** x27
+- **位运算** x28
 - **模拟** x26
 - **二分查找** x25
 - **回溯** x25
@@ -385,6 +385,7 @@
 | 2515 | [到目标字符串的最短距离](https://leetcode.cn/problems/shortest-distance-to-target-string-in-a-circular-array/) | 🟢 简单 | 数组、字符串 | 2026.04.15 |
 | 2540 | [最小公共值](https://leetcode.cn/problems/minimum-common-value/) | 🟢 简单 | 数组、哈希表、双指针、二分查找 | 2026.05.19 |
 | 2578 | [最小和分割](https://leetcode.cn/problems/split-with-minimum-sum/) | 🟢 简单 | 贪心、数学、排序 | 2025.11.10 |
+| 2657 | [找到两个数组的前缀公共数组](https://leetcode.cn/problems/find-the-prefix-common-array-of-two-arrays/) | 🟡 中等 | 位运算、数组、哈希表 | 2026.05.20 |
 | 2784 | [检查数组是否是好的](https://leetcode.cn/problems/check-if-array-is-good/) | 🟢 简单 | 数组、哈希表、排序 | 2026.05.14 |
 | 2840 | [判断通过操作能否让字符串相等 II](https://leetcode.cn/problems/check-if-strings-can-be-made-equal-with-operations-ii/) | 🟡 中等 | 哈希表、字符串、排序 | 2026.03.30 |
 | 2906 | [构造乘积矩阵](https://leetcode.cn/problems/construct-product-matrix/) | 🟡 中等 | 数组、矩阵、前缀和 | 2026.03.24 |
@@ -442,8 +443,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-19 20:46:51
-- **总题目数**：375
+- **最后更新**：2026-05-20 21:30:18
+- **总题目数**：376
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
