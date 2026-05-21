@@ -437,7 +437,55 @@ public class T7 {
         return res;
     }
 
+    //3043. 最长公共前缀的长度
+    public int longestCommonPrefix(int[] arr1, int[] arr2) {
+        int res = 0;
+        Trie trie1 = new Trie();
+        Trie trie2 = new Trie();
+        for (int num : arr1) trie1.addNumber(num);
+        for (int num : arr2) trie2.addNumber(num);
+        for (int num : arr1) res = Math.max(res, trie2.findPrefix(num));
+        for (int num : arr2) res = Math.max(res, trie1.findPrefix(num));
+        return res;
+    }
+
 }
+
+//3043. 最长公共前缀的长度
+class Trie {
+    private final Trie[] trieNode;
+
+    public Trie() {
+        trieNode = new Trie[10];
+    }
+
+    public void addNumber(int num) {
+        Trie cur = this;
+        for (char c : String.valueOf(num).toCharArray()) {
+            int n = c - '0';
+            if (cur.trieNode[n] == null) {
+                cur.trieNode[n] = new Trie();
+            }
+            cur = cur.trieNode[n];
+        }
+    }
+
+    public int findPrefix(int num) {
+        Trie cur = this;
+        int length = 0;
+        for (char c : String.valueOf(num).toCharArray()) {
+            int n = c - '0';
+            if (cur.trieNode[n] == null) {
+                return length;
+            }
+            cur = cur.trieNode[n];
+            length++;
+        }
+        return length;
+    }
+}
+
+
 
 
 

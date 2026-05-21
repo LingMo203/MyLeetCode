@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 376,
-  "updated_at": "2026.05.20",
+  "total_solved": 377,
+  "updated_at": "2026.05.21",
   "problems": [
     {
       "id": 1,
@@ -5601,6 +5601,22 @@
         "2026.05.20"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-the-prefix-common-array-of-two-arrays/"
+    },
+    {
+      "id": 3043,
+      "title": "最长公共前缀的长度",
+      "title_slug": "find-the-length-of-the-longest-common-prefix",
+      "difficulty": "中等",
+      "tags": [
+        "字典树",
+        "数组",
+        "哈希表",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.05.21"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-length-of-the-longest-common-prefix/"
     }
   ]
 }

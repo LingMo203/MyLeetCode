@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：376**  
+**总题数：377**  
 🟢 简单：151  
-🟡 中等：205  
+🟡 中等：206  
 🔴 困难：20
 
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x202
-- **字符串** x75
-- **哈希表** x74
+- **数组** x203
+- **字符串** x76
+- **哈希表** x75
 - **树** x38
 - **二叉树** x36
 - **矩阵** x36
@@ -30,8 +30,8 @@
 - **队列** x8
 - **单调栈** x7
 - **图** x6
+- **字典树** x4
 - **单调队列** x3
-- **字典树** x3
 
 ### ⚡ 算法
 - **数学** x56
@@ -391,6 +391,7 @@
 | 2906 | [构造乘积矩阵](https://leetcode.cn/problems/construct-product-matrix/) | 🟡 中等 | 数组、矩阵、前缀和 | 2026.03.24 |
 | 2946 | [循环移位后的矩阵相似检查](https://leetcode.cn/problems/matrix-similarity-after-cyclic-shifts/) | 🟢 简单 | 数组、数学、矩阵、模拟 | 2026.03.27 |
 | 3010 | [将数组分成最小总代价的子数组 I](https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/) | 🟢 简单 | 数组、枚举、排序 | 2026.02.01 |
+| 3043 | [最长公共前缀的长度](https://leetcode.cn/problems/find-the-length-of-the-longest-common-prefix/) | 🟡 中等 | 字典树、数组、哈希表、字符串 | 2026.05.21 |
 | 3074 | [重新分装苹果](https://leetcode.cn/problems/apple-redistribution-into-boxes/) | 🟢 简单 | 贪心、数组、排序 | 2025.12.24 |
 | 3075 | [幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) | 🟡 中等 | 贪心、数组、排序 | 2025.12.25 |
 | 3191 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
@@ -443,8 +444,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-20 21:30:18
-- **总题目数**：376
+- **最后更新**：2026-05-21 21:27:17
+- **总题目数**：377
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
