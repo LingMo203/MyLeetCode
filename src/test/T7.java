@@ -449,6 +449,29 @@ public class T7 {
         return res;
     }
 
+    //1752. 检查数组是否经排序和轮转得到
+    public boolean check(int[] nums) {
+        int n = nums.length, minI = 0;
+        if (n == 1) return true;
+        for (int i = 0, min = nums[0]; i < n; i++) {
+            if (nums[i] < min) {
+                minI = i;
+                min = nums[i];
+            }
+        }
+        if (minI == 0 && nums[0] == nums[n - 1]) {
+            for (minI = n - 1; nums[0] == nums[minI] && minI > 0; minI--) {
+            }
+            minI++;
+        }
+        for (int k = 0, last = nums[minI]; k < n; k++, minI++) {
+            if (minI >= n) minI = 0;
+            if (last > nums[minI]) return false;
+            last = nums[minI];
+        }
+        return true;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

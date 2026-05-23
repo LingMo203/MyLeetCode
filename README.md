@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：377**  
-🟢 简单：151  
+**总题数：378**  
+🟢 简单：152  
 🟡 中等：206  
 🔴 困难：20
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x203
+- **数组** x204
 - **字符串** x76
 - **哈希表** x75
 - **树** x38
@@ -357,6 +357,7 @@
 | 1705 | [吃苹果的最大数目](https://leetcode.cn/problems/maximum-number-of-eaten-apples/) | 🟡 中等 | 贪心、数组、堆（优先队列） | 2026.04.07 |
 | 1721 | [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 1732 | [找到最高海拔](https://leetcode.cn/problems/find-the-highest-altitude/) | 🟢 简单 | 数组、前缀和 | 2026.02.10 |
+| 1752 | [检查数组是否经排序和轮转得到](https://leetcode.cn/problems/check-if-array-is-sorted-and-rotated/) | 🟢 简单 | 数组 | 2026.05.23 |
 | 1758 | [生成交替二进制字符串的最少操作数](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/) | 🟢 简单 | 字符串 | 2026.03.05 |
 | 1784 | [检查二进制字符串字段](https://leetcode.cn/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | 🟢 简单 | 字符串 | 2026.03.06 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
@@ -444,8 +445,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-21 21:27:17
-- **总题目数**：377
+- **最后更新**：2026-05-23 22:20:51
+- **总题目数**：378
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
