@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：378**  
+**总题数：379**  
 🟢 简单：152  
-🟡 中等：206  
+🟡 中等：207  
 🔴 困难：20
 
 
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x204
-- **字符串** x76
+- **字符串** x77
 - **哈希表** x75
 - **树** x38
 - **二叉树** x36
@@ -39,7 +39,7 @@
 - **深度优先搜索** x45
 - **排序** x44
 - **广度优先搜索** x38
-- **动态规划** x36
+- **动态规划** x37
 - **位运算** x28
 - **模拟** x26
 - **二分查找** x25
@@ -47,8 +47,8 @@
 - **贪心** x24
 - **递归** x17
 - **分治** x14
+- **滑动窗口** x11
 - **设计** x10
-- **滑动窗口** x10
 - **枚举** x8
 - **快速选择** x3
 - **随机化** x1
@@ -363,6 +363,7 @@
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
 | 1848 | [到目标元素的最小距离](https://leetcode.cn/problems/minimum-distance-to-the-target-element/) | 🟢 简单 | 数组 | 2026.04.13 |
 | 1861 | [旋转盒子](https://leetcode.cn/problems/rotating-the-box/) | 🟡 中等 | 数组、双指针、矩阵 | 2026.05.06 |
+| 1871 | [跳跃游戏 VII](https://leetcode.cn/problems/jump-game-vii/) | 🟡 中等 | 字符串、动态规划、前缀和、滑动窗口 | 2026.05.25 |
 | 1877 | [数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | 🟡 中等 | 贪心、数组、双指针、排序 | 2026.01.24 |
 | 1886 | [判断矩阵经轮转后是否一致](https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | 🟢 简单 | 数组、矩阵 | 2026.03.22 |
 | 1905 | [统计子岛屿](https://leetcode.cn/problems/count-sub-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
@@ -445,8 +446,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-23 22:20:51
-- **总题目数**：378
+- **最后更新**：2026-05-25 21:44:04
+- **总题目数**：379
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

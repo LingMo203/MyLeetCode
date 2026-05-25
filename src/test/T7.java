@@ -472,6 +472,25 @@ public class T7 {
         return true;
     }
 
+    //1871. 跳跃游戏 VII
+    public boolean canReach(String s, int minJump, int maxJump) {
+        int n = s.length(), last = 0;
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.addLast(0);
+        while (!deque.isEmpty()) {
+            int remove = deque.removeFirst();
+            if (remove == n - 1) return true;
+            for (int i = Math.max(last + 1, remove + minJump); i <= Math.min(remove + maxJump, n - 1); i++) {
+                if (i >= n) break;
+                if (s.charAt(i) == '0') {
+                    deque.addLast(i);
+                }
+            }
+            last = Math.min(remove + maxJump, n - 1);
+        }
+        return false;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 378,
-  "updated_at": "2026.05.23",
+  "total_solved": 379,
+  "updated_at": "2026.05.25",
   "problems": [
     {
       "id": 1,
@@ -5623,11 +5623,29 @@
       "title": "检查数组是否经排序和轮转得到",
       "title_slug": "check-if-array-is-sorted-and-rotated",
       "difficulty": "简单",
-      "tags": ["数组"],
+      "tags": [
+        "数组"
+      ],
       "solved_dates": [
         "2026.05.23"
       ],
       "leetcode_url": "https://leetcode.cn/problems/check-if-array-is-sorted-and-rotated/"
+    },
+    {
+      "id": 1871,
+      "title": "跳跃游戏 VII",
+      "title_slug": "jump-game-vii",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "动态规划",
+        "前缀和",
+        "滑动窗口"
+      ],
+      "solved_dates": [
+        "2026.05.25"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/jump-game-vii/"
     }
   ]
 }
