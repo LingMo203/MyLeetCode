@@ -491,6 +491,22 @@ public class T7 {
         return false;
     }
 
+    //3120. 统计特殊字母的数量 I
+    public int numberOfSpecialChars(String word) {
+        HashSet<Character> hashSet = new HashSet<>();
+        boolean[] letters = new boolean[26];
+        for (char c : word.toCharArray()) {
+            char revers = Character.isUpperCase(c) ? Character.toLowerCase(c) : Character.toUpperCase(c);
+            if (hashSet.contains(revers)) {
+                letters[Character.toLowerCase(c) - 'a'] = true;
+            }
+            hashSet.add(c);
+        }
+        int res = 0;
+        for (boolean f : letters) if (f) res++;
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

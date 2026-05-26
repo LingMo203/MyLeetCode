@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 379,
-  "updated_at": "2026.05.25",
+  "total_solved": 380,
+  "updated_at": "2026.05.26",
   "problems": [
     {
       "id": 1,
@@ -5646,6 +5646,20 @@
         "2026.05.25"
       ],
       "leetcode_url": "https://leetcode.cn/problems/jump-game-vii/"
+    },
+    {
+      "id": 3120,
+      "title": "统计特殊字母的数量 I",
+      "title_slug": "count-the-number-of-special-characters-i",
+      "difficulty": "简单",
+      "tags": [
+        "哈希表",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.05.26"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-the-number-of-special-characters-i/"
     }
   ]
 }
