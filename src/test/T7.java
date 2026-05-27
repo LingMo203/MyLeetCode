@@ -507,6 +507,29 @@ public class T7 {
         return res;
     }
 
+    //3121. 统计特殊字母的数量 II
+    public int numberOfSpecialChars2(String word) {
+        int n = word.length();
+        int[] lower = new int[26];
+        Arrays.fill(lower, -1);
+        for (int i = 0; i < n; i++) {
+            char c = word.charAt(i);
+            if (Character.isUpperCase(c)) continue;
+            lower[c - 'a'] = i;
+        }
+        boolean[] isUse = new boolean[26];
+        int res = 0;
+        for (int i = 0; i < n; i++) {
+            char c = word.charAt(i);
+            if (Character.isLowerCase(c)) continue;
+            if (lower[c - 'A'] == -1) continue;
+            if (isUse[c - 'A']) continue;
+            isUse[c - 'A'] = true;
+            if (lower[c - 'A'] < i) res++;
+        }
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

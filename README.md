@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：380**  
+**总题数：381**  
 🟢 简单：153  
-🟡 中等：207  
+🟡 中等：208  
 🔴 困难：20
 
 
@@ -18,8 +18,8 @@
 
 ### 🔥 数据结构
 - **数组** x204
-- **字符串** x78
-- **哈希表** x76
+- **字符串** x79
+- **哈希表** x77
 - **树** x38
 - **二叉树** x36
 - **矩阵** x36
@@ -397,6 +397,7 @@
 | 3074 | [重新分装苹果](https://leetcode.cn/problems/apple-redistribution-into-boxes/) | 🟢 简单 | 贪心、数组、排序 | 2025.12.24 |
 | 3075 | [幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) | 🟡 中等 | 贪心、数组、排序 | 2025.12.25 |
 | 3120 | [统计特殊字母的数量 I](https://leetcode.cn/problems/count-the-number-of-special-characters-i/) | 🟢 简单 | 哈希表、字符串 | 2026.05.26 |
+| 3121 | [统计特殊字母的数量 II](https://leetcode.cn/problems/count-the-number-of-special-characters-ii/) | 🟡 中等 | 哈希表、字符串 | 2026.05.27 |
 | 3191 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
 | 3379 | [转换数组](https://leetcode.cn/problems/transformed-array/) | 🟢 简单 | 数组、模拟 | 2026.02.05 |
 | 3488 | [距离最小相等元素查询](https://leetcode.cn/problems/closest-equal-element-queries/) | 🟡 中等 | 数组、哈希表、二分查找 | 2026.04.16 |
@@ -447,8 +448,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-26 21:31:53
-- **总题目数**：380
+- **最后更新**：2026-05-27 21:29:16
+- **总题目数**：381
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
