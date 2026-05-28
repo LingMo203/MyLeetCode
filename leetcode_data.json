@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 381,
-  "updated_at": "2026.05.27",
+  "total_solved": 382,
+  "updated_at": "2026.05.28",
   "problems": [
     {
       "id": 1,
@@ -5674,6 +5674,21 @@
         "2026.05.27"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-the-number-of-special-characters-ii/"
+    },
+    {
+      "id": 3093,
+      "title": "最长公共后缀查询",
+      "title_slug": "longest-common-suffix-queries",
+      "difficulty": "困难",
+      "tags": [
+        "字典树",
+        "数组",
+        "字符串"
+      ],
+      "solved_dates": [
+        "2026.05.28"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/longest-common-suffix-queries/"
     }
   ]
 }

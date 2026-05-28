@@ -530,6 +530,25 @@ public class T7 {
         return res;
     }
 
+    //3093. 最长公共后缀查询
+    public int[] stringIndices(String[] wordsContainer, String[] wordsQuery) {
+        TrieStringIndices trie = new TrieStringIndices();
+        for (int i = 0; i < wordsContainer.length; i++) {
+            trie.insert(wordsContainer[i], i);
+        }
+        int[] res = new int[wordsQuery.length];
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        for (int i = 0; i < wordsQuery.length; i++) {
+            if (hashMap.containsKey(wordsQuery[i])) {
+                res[i] = hashMap.get(wordsQuery[i]);
+            } else {
+                res[i] = trie.query(wordsQuery[i]);
+                hashMap.put(wordsQuery[i], res[i]);
+            }
+        }
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度
@@ -565,6 +584,59 @@ class Trie {
         return length;
     }
 }
+
+//3093. 最长公共后缀查询
+class TrieStringIndices {
+    private final TrieStringIndices[] trie;
+    private int endIndex;
+
+    public TrieStringIndices() {
+        trie = new TrieStringIndices[26];
+        endIndex = -1;
+    }
+
+    public void insert(String str, int index) {
+        TrieStringIndices cur = this;
+        for (int i = str.length() - 1; i >= 0; i--) {
+            int id = str.charAt(i) - 'a';
+            if (cur.trie[id] == null) cur.trie[id] = new TrieStringIndices();
+            cur = cur.trie[id];
+        }
+        if (cur.endIndex == -1) cur.endIndex = index;
+    }
+
+    public int query(String str) {
+        TrieStringIndices cur = this;
+        int i = str.length() - 1;
+        for (; i >= 0; i--) {
+            int id = str.charAt(i) - 'a';
+            if (cur.trie[id] == null) break;
+            cur = cur.trie[id];
+        }
+        Deque<TrieStringIndices> deque = new ArrayDeque<>();
+        deque.addLast(cur);
+        while (!deque.isEmpty()) {
+            int size = deque.size();
+            ArrayList<Integer> list = new ArrayList<>();
+            while (size-- > 0) {
+                TrieStringIndices remove = deque.removeFirst();
+                if (remove.endIndex > -1) {
+                    list.add(remove.endIndex);
+                    continue;
+                }
+                for (int j = 0; j < 26; j++) {
+                    if (remove.trie[j] != null) deque.addLast(remove.trie[j]);
+                }
+            }
+            if (!list.isEmpty()) {
+                Collections.sort(list);
+                return list.getFirst();
+            }
+        }
+        return -1;
+    }
+}
+
 
 
 

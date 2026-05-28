@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：381**  
+**总题数：382**  
 🟢 简单：153  
 🟡 中等：208  
-🔴 困难：20
+🔴 困难：21
 
 
 ---
@@ -17,8 +17,8 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x204
-- **字符串** x79
+- **数组** x205
+- **字符串** x80
 - **哈希表** x77
 - **树** x38
 - **二叉树** x36
@@ -30,7 +30,7 @@
 - **队列** x8
 - **单调栈** x7
 - **图** x6
-- **字典树** x4
+- **字典树** x5
 - **单调队列** x3
 
 ### ⚡ 算法
@@ -396,6 +396,7 @@
 | 3043 | [最长公共前缀的长度](https://leetcode.cn/problems/find-the-length-of-the-longest-common-prefix/) | 🟡 中等 | 字典树、数组、哈希表、字符串 | 2026.05.21 |
 | 3074 | [重新分装苹果](https://leetcode.cn/problems/apple-redistribution-into-boxes/) | 🟢 简单 | 贪心、数组、排序 | 2025.12.24 |
 | 3075 | [幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) | 🟡 中等 | 贪心、数组、排序 | 2025.12.25 |
+| 3093 | [最长公共后缀查询](https://leetcode.cn/problems/longest-common-suffix-queries/) | 🔴 困难 | 字典树、数组、字符串 | 2026.05.28 |
 | 3120 | [统计特殊字母的数量 I](https://leetcode.cn/problems/count-the-number-of-special-characters-i/) | 🟢 简单 | 哈希表、字符串 | 2026.05.26 |
 | 3121 | [统计特殊字母的数量 II](https://leetcode.cn/problems/count-the-number-of-special-characters-ii/) | 🟡 中等 | 哈希表、字符串 | 2026.05.27 |
 | 3191 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
@@ -448,8 +449,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-27 21:29:16
-- **总题目数**：381
+- **最后更新**：2026-05-28 22:10:58
+- **总题目数**：382
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
