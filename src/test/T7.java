@@ -549,6 +549,20 @@ public class T7 {
         return res;
     }
 
+    //3300. 替换为数位和以后的最小元素
+    public int minElement(int[] nums) {
+        int res = Integer.MAX_VALUE;
+        for (int num : nums) {
+            int sum = 0;
+            while (num > 0) {
+                sum += (num % 10);
+                num /= 10;
+            }
+            res = Math.min(res, sum);
+        }
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

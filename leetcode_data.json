@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 382,
-  "updated_at": "2026.05.28",
+  "total_solved": 383,
+  "updated_at": "2026.05.29",
   "problems": [
     {
       "id": 1,
@@ -5689,6 +5689,20 @@
         "2026.05.28"
       ],
       "leetcode_url": "https://leetcode.cn/problems/longest-common-suffix-queries/"
+    },
+    {
+      "id": 3300,
+      "title": "替换为数位和以后的最小元素",
+      "title_slug": "minimum-element-after-replacement-with-digit-sum",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.05.29"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-element-after-replacement-with-digit-sum/"
     }
   ]
 }
