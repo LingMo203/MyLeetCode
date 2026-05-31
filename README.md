@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：383**  
+**总题数：384**  
 🟢 简单：154  
-🟡 中等：208  
+🟡 中等：209  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x206
+- **数组** x207
 - **字符串** x80
 - **哈希表** x77
 - **树** x38
@@ -36,15 +36,15 @@
 ### ⚡ 算法
 - **数学** x57
 - **双指针** x51
+- **排序** x45
 - **深度优先搜索** x45
-- **排序** x44
 - **广度优先搜索** x38
 - **动态规划** x37
 - **位运算** x28
 - **模拟** x26
 - **二分查找** x25
+- **贪心** x25
 - **回溯** x25
-- **贪心** x24
 - **递归** x17
 - **分治** x14
 - **滑动窗口** x11
@@ -380,6 +380,7 @@
 | 2073 | [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets/) | 🟢 简单 | 队列、数组、模拟 | 2026.02.07 |
 | 2087 | [网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | 🟡 中等 | 贪心、数组 | 2026.04.04 |
 | 2095 | [删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
+| 2126 | [摧毁小行星](https://leetcode.cn/problems/destroying-asteroids/) | 🟡 中等 | 贪心、数组、排序 | 2026.05.31 |
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
@@ -450,8 +451,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-29 21:46:57
-- **总题目数**：383
+- **最后更新**：2026-05-31 21:55:27
+- **总题目数**：384
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

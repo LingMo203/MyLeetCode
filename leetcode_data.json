@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 383,
-  "updated_at": "2026.05.29",
+  "total_solved": 384,
+  "updated_at": "2026.05.31",
   "problems": [
     {
       "id": 1,
@@ -5703,6 +5703,21 @@
         "2026.05.29"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-element-after-replacement-with-digit-sum/"
+    },
+    {
+      "id": 2126,
+      "title": "摧毁小行星",
+      "title_slug": "destroying-asteroids",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.05.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/destroying-asteroids/"
     }
   ]
 }

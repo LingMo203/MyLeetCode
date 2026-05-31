@@ -563,6 +563,17 @@ public class T7 {
         return res;
     }
 
+    //2126. 摧毁小行星
+    public boolean asteroidsDestroyed(int mass, int[] asteroids) {
+        long ma = mass;
+        Arrays.sort(asteroids);
+        for (int num : asteroids) {
+            if (ma < num) return false;
+            ma += num;
+        }
+        return true;
+    }
+
 }
 
 //3043. 最长公共前缀的长度
