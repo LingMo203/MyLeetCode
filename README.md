@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：384**  
-🟢 简单：154  
+**总题数：385**  
+🟢 简单：155  
 🟡 中等：209  
 🔴 困难：21
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x207
+- **数组** x208
 - **字符串** x80
 - **哈希表** x77
 - **树** x38
@@ -36,14 +36,14 @@
 ### ⚡ 算法
 - **数学** x57
 - **双指针** x51
-- **排序** x45
+- **排序** x46
 - **深度优先搜索** x45
 - **广度优先搜索** x38
 - **动态规划** x37
 - **位运算** x28
+- **贪心** x26
 - **模拟** x26
 - **二分查找** x25
-- **贪心** x25
 - **回溯** x25
 - **递归** x17
 - **分治** x14
@@ -381,6 +381,7 @@
 | 2087 | [网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | 🟡 中等 | 贪心、数组 | 2026.04.04 |
 | 2095 | [删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 2126 | [摧毁小行星](https://leetcode.cn/problems/destroying-asteroids/) | 🟡 中等 | 贪心、数组、排序 | 2026.05.31 |
+| 2144 | [打折购买糖果的最小开销](https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/) | 🟢 简单 | 贪心、数组、排序 | 2026.06.01 |
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
@@ -451,8 +452,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-05-31 21:55:27
-- **总题目数**：384
+- **最后更新**：2026-06-01 22:01:29
+- **总题目数**：385
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

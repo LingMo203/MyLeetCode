@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 384,
-  "updated_at": "2026.05.31",
+  "total_solved": 385,
+  "updated_at": "2026.06.01",
   "problems": [
     {
       "id": 1,
@@ -5718,6 +5718,21 @@
         "2026.05.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/destroying-asteroids/"
+    },
+    {
+      "id": 2144,
+      "title": "打折购买糖果的最小开销",
+      "title_slug": "minimum-cost-of-buying-candies-with-discount",
+      "difficulty": "简单",
+      "tags": [
+        "贪心",
+        "数组",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.06.01"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/"
     }
   ]
 }

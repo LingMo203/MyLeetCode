@@ -574,6 +574,17 @@ public class T7 {
         return true;
     }
 
+    //2144. 打折购买糖果的最小开销
+    public int minimumCost(int[] cost) {
+        int res = 0, i = cost.length - 1;
+        Arrays.sort(cost);
+        for (; i >= 2; i -= 3) {
+            res += cost[i] + cost[i - 1];
+        }
+        for (; i >= 0; i--) res += cost[i];
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度
