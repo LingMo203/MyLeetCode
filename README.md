@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：387**  
+**总题数：388**  
 🟢 简单：156  
-🟡 中等：210  
+🟡 中等：211  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x210
+- **数组** x211
 - **字符串** x80
 - **哈希表** x77
 - **树** x38
@@ -38,8 +38,8 @@
 - **双指针** x53
 - **排序** x48
 - **深度优先搜索** x45
+- **动态规划** x38
 - **广度优先搜索** x38
-- **动态规划** x37
 - **贪心** x28
 - **位运算** x28
 - **二分查找** x27
@@ -267,6 +267,7 @@
 | 503 | [下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) | 🟡 中等 | 栈、数组、单调栈 | 2026.02.03 |
 | 509 | [斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | 🟢 简单 | 递归、记忆化搜索、数学、动态规划 | 2025.11.22 |
 | 515 | [在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2025.12.22 |
+| 518 | [零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) | 🟡 中等 | 数组、动态规划 | 2026.06.02 |
 | 520 | [检测大写字母](https://leetcode.cn/problems/detect-capital/) | 🟢 简单 | 字符串 | 2026.02.09 |
 | 541 | [反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/) | 🟢 简单 | 双指针、字符串 | 2025.11.05 |
 | 547 | [省份数量](https://leetcode.cn/problems/number-of-provinces/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.14 |
@@ -454,8 +455,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-02 21:32:20
-- **总题目数**：387
+- **最后更新**：2026-06-02 22:41:05
+- **总题目数**：388
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

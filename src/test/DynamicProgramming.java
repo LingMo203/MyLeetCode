@@ -34,7 +34,8 @@ public class DynamicProgramming {
         //System.out.println(dp.lengthOfLIS(nums));
         //System.out.println(dp.maxProduct(new int[]{2,3,-2,4}));
         //System.out.println(dp.findTargetSumWays(nums, -1000));
-        System.out.println(dp.findMaxForm(new String[]{"10","0001","111001","1","0"}, 5, 3));
+        //System.out.println(dp.findMaxForm(new String[]{"10","0001","111001","1","0"}, 5, 3));
+        System.out.println(dp.change(5, new int[]{1,2,5}));
     }
 
 
@@ -506,6 +507,19 @@ public class DynamicProgramming {
             }
         }
         return dp[m][n];
+    }
+
+    //518. 零钱兑换 II
+    public int change(int amount, int[] coins) {
+        int n = coins.length;
+        int[] dp = new int[amount + 1];
+        dp[0] = 1;
+        for (int i = 0; i < n; i++) {
+            for (int j = coins[i]; j <= amount; j++) {
+                dp[j] += dp[j - coins[i]];
+            }
+        }
+        return dp[amount];
     }
 
 

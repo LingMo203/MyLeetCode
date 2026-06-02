@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 387,
+  "total_solved": 388,
   "updated_at": "2026.06.02",
   "problems": [
     {
@@ -5767,6 +5767,20 @@
         "2026.06.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-ii/"
+    },
+    {
+      "id": 518,
+      "title": "零钱兑换 II",
+      "title_slug": "coin-change-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.06.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/coin-change-ii/"
     }
   ]
 }
