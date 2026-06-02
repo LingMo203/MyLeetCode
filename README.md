@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：385**  
-🟢 简单：155  
+**总题数：386**  
+🟢 简单：156  
 🟡 中等：209  
 🔴 困难：21
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x208
+- **数组** x209
 - **字符串** x80
 - **哈希表** x77
 - **树** x38
@@ -35,15 +35,15 @@
 
 ### ⚡ 算法
 - **数学** x57
-- **双指针** x51
-- **排序** x46
+- **双指针** x52
+- **排序** x47
 - **深度优先搜索** x45
 - **广度优先搜索** x38
 - **动态规划** x37
 - **位运算** x28
-- **贪心** x26
+- **贪心** x27
+- **二分查找** x26
 - **模拟** x26
-- **二分查找** x25
 - **回溯** x25
 - **递归** x17
 - **分治** x14
@@ -408,6 +408,7 @@
 | 3507 | [移除最小数对使数组有序 I](https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/) | 🟢 简单 | 数组、哈希表、链表、双向链表、有序集合、模拟、堆（优先队列） | 2026.01.22 |
 | 3546 | [等和矩阵分割 I](https://leetcode.cn/problems/equal-sum-grid-partition-i/) | 🟡 中等 | 数组、枚举、矩阵、前缀和 | 2026.03.25 |
 | 3619 | [总价值可以被 K 整除的岛屿数目](https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
+| 3633 | [最早完成陆地和水上游乐设施的时间 I](https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-i/) | 🟢 简单 | 贪心、数组、双指针、二分查找、排序 | 2026.06.02 |
 | 3634 | [使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) | 🟡 中等 | 数组、排序、滑动窗口 | 2026.02.06 |
 | 3637 | [三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) | 🟢 简单 | 数组 | 2026.02.03 |
 | 3643 | [垂直翻转子矩阵](https://leetcode.cn/problems/flip-square-submatrix-vertically/) | 🟢 简单 | 数组、双指针、矩阵 | 2026.03.21 |
@@ -452,8 +453,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-01 22:01:29
-- **总题目数**：385
+- **最后更新**：2026-06-02 21:14:04
+- **总题目数**：386
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

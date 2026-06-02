@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 385,
-  "updated_at": "2026.06.01",
+  "total_solved": 386,
+  "updated_at": "2026.06.02",
   "problems": [
     {
       "id": 1,
@@ -5733,6 +5733,23 @@
         "2026.06.01"
       ],
       "leetcode_url": "https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/"
+    },
+    {
+      "id": 3633,
+      "title": "最早完成陆地和水上游乐设施的时间 I",
+      "title_slug": "earliest-finish-time-for-land-and-water-rides-i",
+      "difficulty": "简单",
+      "tags": [
+        "贪心",
+        "数组",
+        "双指针",
+        "二分查找",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.06.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-i/"
     }
   ]
 }

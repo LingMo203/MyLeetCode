@@ -7,10 +7,10 @@ import java.util.*;
 public class T7 {
     public static void main() {
         T7 t7 = new T7();
-        int[] nums1 = {1,3,1,4,1,3,2};
-        int[] nums2 = {5};
-        int[] nums3 = {7,1,3,3,5,3,22,10,23};
-        int[] nums4 = {5,5,6,2,0,16};
+        int[] nums1 = {2,8};
+        int[] nums2 = {4,1};
+        int[] nums3 = {6};
+        int[] nums4 = {3};
         String strGrid = "[[9,1,8,9,2,9,1,8,9,2],[10,2,7,8,9,10,2,7,8,9],[7,6,6,9,5,7,6,6,9,5]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String strGrid2 = "[[1,0],[0,0]]";
@@ -25,7 +25,8 @@ public class T7 {
         //System.out.println(t7.minCost(nums1,nums2,nums3,nums4));
         //System.out.println(t7.solveQueries(nums1, nums2));
         //System.out.println(t7.minMirrorPairDistance(new int[]{120,21}));
-        System.out.println(Arrays.deepToString(t7.rotateTheBox(charArray2)));
+        //System.out.println(Arrays.deepToString(t7.rotateTheBox(charArray2)));
+        System.out.println(t7.earliestFinishTime(nums1, nums2, nums3, nums4));
     }
 
 
@@ -582,6 +583,32 @@ public class T7 {
             res += cost[i] + cost[i - 1];
         }
         for (; i >= 0; i--) res += cost[i];
+        return res;
+    }
+
+    //3633. 最早完成陆地和水上游乐设施的时间 I
+    public int earliestFinishTime(int[] landStartTime, int[] landDuration, int[] waterStartTime, int[] waterDuration) {
+        int n = landDuration.length, m = waterDuration.length, res = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            int endTime = landStartTime[i] + landDuration[i];
+            for (int j = 0; j < m; j++) {
+                if (waterStartTime[j] >= endTime) {
+                    res = Math.min(res, waterStartTime[j] + waterDuration[j]);
+                } else {
+                    res = Math.min(res, endTime + waterDuration[j]);
+                }
+            }
+        }
+        for (int i = 0; i < m; i++) {
+            int endTime = waterStartTime[i] + waterDuration[i];
+            for (int j = 0; j < n; j++) {
+                if (landStartTime[j] >= endTime) {
+                    res = Math.min(res, landStartTime[j] + landDuration[j]);
+                } else {
+                    res = Math.min(res, endTime + landDuration[j]);
+                }
+            }
+        }
         return res;
     }
 
