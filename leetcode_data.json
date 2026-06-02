@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 388,
+  "total_solved": 389,
   "updated_at": "2026.06.02",
   "problems": [
     {
@@ -5781,6 +5781,20 @@
         "2026.06.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/coin-change-ii/"
+    },
+    {
+      "id": 377,
+      "title": "组合总和 Ⅳ",
+      "title_slug": "combination-sum-iv",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.06.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/combination-sum-iv/"
     }
   ]
 }

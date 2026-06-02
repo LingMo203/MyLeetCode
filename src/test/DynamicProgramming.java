@@ -35,7 +35,8 @@ public class DynamicProgramming {
         //System.out.println(dp.maxProduct(new int[]{2,3,-2,4}));
         //System.out.println(dp.findTargetSumWays(nums, -1000));
         //System.out.println(dp.findMaxForm(new String[]{"10","0001","111001","1","0"}, 5, 3));
-        System.out.println(dp.change(5, new int[]{1,2,5}));
+        //System.out.println(dp.change(5, new int[]{1,2,5}));
+        System.out.println(dp.combinationSum4(new int[]{1,2,3}, 4));
     }
 
 
@@ -520,6 +521,18 @@ public class DynamicProgramming {
             }
         }
         return dp[amount];
+    }
+
+    //377. 组合总和 Ⅳ
+    public int combinationSum4(int[] nums, int target) {
+        int[] dp = new int[target + 1];
+        dp[0] = 1;
+        for (int j = 0; j <= target; j++) {
+            for (int i = 0; i < nums.length; i++) {
+                if (j >= nums[i]) dp[j] += dp[j - nums[i]];
+            }
+        }
+        return dp[target];
     }
 
 
