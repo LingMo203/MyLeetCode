@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：389**  
+**总题数：390**  
 🟢 简单：156  
-🟡 中等：212  
+🟡 中等：213  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x212
+- **数组** x213
 - **字符串** x80
 - **哈希表** x77
 - **树** x38
@@ -38,8 +38,8 @@
 - **双指针** x53
 - **排序** x48
 - **深度优先搜索** x45
-- **动态规划** x39
-- **广度优先搜索** x38
+- **动态规划** x40
+- **广度优先搜索** x39
 - **贪心** x28
 - **位运算** x28
 - **二分查找** x27
@@ -228,6 +228,7 @@
 | 295 | [数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) | 🔴 困难 | 设计、双指针、数据流、排序、堆（优先队列） | 2026.02.01 |
 | 300 | [最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | 🟡 中等 | 数组、二分查找、动态规划 | 2026.03.24 |
 | 304 | [二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/) | 🟡 中等 | 设计、数组、矩阵、前缀和 | 2026.01.01 |
+| 322 | [零钱兑换](https://leetcode.cn/problems/coin-change/) | 🟡 中等 | 广度优先搜索、数组、动态规划 | 2026.06.02 |
 | 326 | [3 的幂](https://leetcode.cn/problems/power-of-three/) | 🟢 简单 | 递归、数学 | 2025.11.19 |
 | 328 | [奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | 🟡 中等 | 链表 | 2025.12.11 |
 | 342 | [4 的幂](https://leetcode.cn/problems/power-of-four/) | 🟢 简单 | 位运算、递归、数学 | 2025.11.19 |
@@ -456,8 +457,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-02 23:00:01
-- **总题目数**：389
+- **最后更新**：2026-06-02 23:32:13
+- **总题目数**：390
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
