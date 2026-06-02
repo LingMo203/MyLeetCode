@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 386,
+  "total_solved": 387,
   "updated_at": "2026.06.02",
   "problems": [
     {
@@ -5750,6 +5750,23 @@
         "2026.06.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-i/"
+    },
+    {
+      "id": 3635,
+      "title": "最早完成陆地和水上游乐设施的时间 II",
+      "title_slug": "earliest-finish-time-for-land-and-water-rides-ii",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组",
+        "双指针",
+        "二分查找",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.06.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-ii/"
     }
   ]
 }

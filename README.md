@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：386**  
+**总题数：387**  
 🟢 简单：156  
-🟡 中等：209  
+🟡 中等：210  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x209
+- **数组** x210
 - **字符串** x80
 - **哈希表** x77
 - **树** x38
@@ -35,14 +35,14 @@
 
 ### ⚡ 算法
 - **数学** x57
-- **双指针** x52
-- **排序** x47
+- **双指针** x53
+- **排序** x48
 - **深度优先搜索** x45
 - **广度优先搜索** x38
 - **动态规划** x37
+- **贪心** x28
 - **位运算** x28
-- **贪心** x27
-- **二分查找** x26
+- **二分查找** x27
 - **模拟** x26
 - **回溯** x25
 - **递归** x17
@@ -410,6 +410,7 @@
 | 3619 | [总价值可以被 K 整除的岛屿数目](https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 3633 | [最早完成陆地和水上游乐设施的时间 I](https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-i/) | 🟢 简单 | 贪心、数组、双指针、二分查找、排序 | 2026.06.02 |
 | 3634 | [使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) | 🟡 中等 | 数组、排序、滑动窗口 | 2026.02.06 |
+| 3635 | [最早完成陆地和水上游乐设施的时间 II](https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-ii/) | 🟡 中等 | 贪心、数组、双指针、二分查找、排序 | 2026.06.02 |
 | 3637 | [三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) | 🟢 简单 | 数组 | 2026.02.03 |
 | 3643 | [垂直翻转子矩阵](https://leetcode.cn/problems/flip-square-submatrix-vertically/) | 🟢 简单 | 数组、双指针、矩阵 | 2026.03.21 |
 | 3653 | [区间乘法查询后的异或 I](https://leetcode.cn/problems/xor-after-range-multiplication-queries-i/) | 🟡 中等 | 数组、分治、模拟 | 2026.04.08 |
@@ -453,8 +454,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-02 21:14:04
-- **总题目数**：386
+- **最后更新**：2026-06-02 21:32:20
+- **总题目数**：387
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

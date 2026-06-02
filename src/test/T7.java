@@ -611,6 +611,25 @@ public class T7 {
         }
         return res;
     }
+    //3635. 最早完成陆地和水上游乐设施的时间 II
+    public int earliestFinishTime2(int[] landStartTime, int[] landDuration, int[] waterStartTime, int[] waterDuration) {
+        return Math.min(earliestFinishTime2impl(landStartTime, landDuration, waterStartTime, waterDuration),
+                earliestFinishTime2impl(waterStartTime, waterDuration, landStartTime, landDuration));
+    }
+    public int earliestFinishTime2impl(int[] num1, int[] num2, int[] num3, int[] num4) {
+        int n = num1.length, m = num3.length, res = Integer.MAX_VALUE, endTime = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            endTime = Math.min(endTime, num1[i] + num2[i]);
+        }
+        for (int i = 0; i < m; i++) {
+            if (num3[i] > endTime) {
+                res = Math.min(res, num3[i] + num4[i]);
+            } else {
+                res = Math.min(res, endTime + num4[i]);
+            }
+        }
+        return res;
+    }
 
 }
 
