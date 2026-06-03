@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 390,
-  "updated_at": "2026.06.02",
+  "total_solved": 391,
+  "updated_at": "2026.06.03",
   "problems": [
     {
       "id": 1,
@@ -5810,6 +5810,21 @@
         "2026.06.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/coin-change/"
+    },
+    {
+      "id": 279,
+      "title": "完全平方数",
+      "title_slug": "perfect-squares",
+      "difficulty": "中等",
+      "tags": [
+        "广度优先搜索",
+        "数学",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.06.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/perfect-squares/"
     }
   ]
 }

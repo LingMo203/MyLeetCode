@@ -549,6 +549,23 @@ public class DynamicProgramming {
         return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
     }
 
+    //279. 完全平方数
+    public int numSquares(int n) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 1; i * i <= n; i++) {
+            list.add(i * i);
+        }
+        int[] dp = new int[n + 1];
+        for (int i = 1; i < dp.length; i++) {
+            dp[i] = Integer.MAX_VALUE;
+        }
+        for (int num : list) {
+            for (int j = num; j <= n; j++) {
+                if (dp[j - num] != Integer.MAX_VALUE) dp[j] = Math.min(dp[j], dp[j - num] + 1);
+            }
+        }
+        return dp[n];
+    }
 
 }
 
