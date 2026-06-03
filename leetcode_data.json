@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 391,
+  "total_solved": 392,
   "updated_at": "2026.06.03",
   "problems": [
     {
@@ -5825,6 +5825,20 @@
         "2026.06.03"
       ],
       "leetcode_url": "https://leetcode.cn/problems/perfect-squares/"
+    },
+    {
+      "id": 213,
+      "title": "打家劫舍 II",
+      "title_slug": "house-robber-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.06.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/house-robber-ii/"
     }
   ]
 }

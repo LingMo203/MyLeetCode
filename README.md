@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：391**  
+**总题数：392**  
 🟢 简单：156  
-🟡 中等：214  
+🟡 中等：215  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x213
+- **数组** x214
 - **字符串** x80
 - **哈希表** x77
 - **树** x38
@@ -38,7 +38,7 @@
 - **双指针** x53
 - **排序** x48
 - **深度优先搜索** x45
-- **动态规划** x41
+- **动态规划** x42
 - **广度优先搜索** x40
 - **贪心** x28
 - **位运算** x28
@@ -198,6 +198,7 @@
 | 206 | [反转链表](https://leetcode.cn/problems/reverse-linked-list/) | 🟢 简单 | 递归、链表 | 2025.12.21 |
 | 208 | [实现 Trie (前缀树)](https://leetcode.cn/problems/implement-trie-prefix-tree/) | 🟡 中等 | 设计、字典树、哈希表、字符串 | **3次**<br>2026.02.10<br>2026.04.10 |
 | 209 | [长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/) | 🟡 中等 | 数组、二分查找、前缀和、滑动窗口 | 2025.11.04 |
+| 213 | [打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) | 🟡 中等 | 数组、动态规划 | 2026.06.03 |
 | 215 | [数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | 🟡 中等 | 数组、分治、快速选择、排序、堆（优先队列） | 2026.02.01 |
 | 216 | [组合总和 III](https://leetcode.cn/problems/combination-sum-iii/) | 🟡 中等 | 数组、回溯 | 2026.01.04 |
 | 217 | [存在重复元素](https://leetcode.cn/problems/contains-duplicate/) | 🟢 简单 | 数组、哈希表、排序 | 2025.10.28 |
@@ -458,8 +459,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-03 22:22:40
-- **总题目数**：391
+- **最后更新**：2026-06-03 22:47:34
+- **总题目数**：392
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
