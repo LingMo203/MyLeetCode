@@ -631,6 +631,20 @@ public class T7 {
         return res;
     }
 
+    //3751. 范围内总波动值 I
+    public int totalWaviness(int num1, int num2) {
+        int res = 0;
+        for (int i = num1; i <= num2; i++) {
+            if (i < 100) continue;
+            String str = String.valueOf(i);
+            for (int j = 1; j < str.length() - 1; j++) {
+                int left = str.charAt(j - 1) - '0', mid = str.charAt(j) - '0', right = str.charAt(j + 1) - '0';
+                if ((left < mid && mid > right) || (left > mid && mid < right)) res++;
+            }
+        }
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

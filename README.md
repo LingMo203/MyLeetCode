@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：392**  
+**总题数：393**  
 🟢 简单：156  
-🟡 中等：215  
+🟡 中等：216  
 🔴 困难：21
 
 
@@ -34,11 +34,11 @@
 - **单调队列** x3
 
 ### ⚡ 算法
-- **数学** x58
+- **数学** x59
 - **双指针** x53
 - **排序** x48
 - **深度优先搜索** x45
-- **动态规划** x42
+- **动态规划** x43
 - **广度优先搜索** x40
 - **贪心** x28
 - **位运算** x28
@@ -49,7 +49,7 @@
 - **分治** x14
 - **滑动窗口** x11
 - **设计** x10
-- **枚举** x8
+- **枚举** x9
 - **快速选择** x3
 - **随机化** x1
 
@@ -423,6 +423,7 @@
 | 3719 | [最长平衡子数组 I](https://leetcode.cn/problems/longest-balanced-subarray-i/) | 🟡 中等 | 线段树、数组、哈希表、分治、前缀和 | 2026.02.10 |
 | 3740 | [三个相等元素之间的最小距离 I](https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-i/) | 🟢 简单 | 数组、哈希表 | 2026.04.10 |
 | 3741 | [三个相等元素之间的最小距离 II](https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-ii/) | 🟡 中等 | 数组、哈希表 | 2026.04.10 |
+| 3751 | [范围内总波动值 I](https://leetcode.cn/problems/total-waviness-of-numbers-in-range-i/) | 🟡 中等 | 数学、动态规划、枚举 | 2026.06.04 |
 | 3761 | [镜像对之间最小绝对距离](https://leetcode.cn/problems/minimum-absolute-distance-between-mirror-pairs/) | 🟡 中等 | 数组、哈希表、数学 | 2026.04.18 |
 | 3783 | [整数的镜像距离](https://leetcode.cn/problems/mirror-distance-of-an-integer/) | 🟢 简单 | 数学 | 2026.04.18 |
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
@@ -459,8 +460,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-03 22:47:34
-- **总题目数**：392
+- **最后更新**：2026-06-04 21:55:03
+- **总题目数**：393
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

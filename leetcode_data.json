@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 392,
-  "updated_at": "2026.06.03",
+  "total_solved": 393,
+  "updated_at": "2026.06.04",
   "problems": [
     {
       "id": 1,
@@ -5839,6 +5839,21 @@
         "2026.06.03"
       ],
       "leetcode_url": "https://leetcode.cn/problems/house-robber-ii/"
+    },
+    {
+      "id": 3751,
+      "title": "范围内总波动值 I",
+      "title_slug": "total-waviness-of-numbers-in-range-i",
+      "difficulty": "中等",
+      "tags": [
+        "数学",
+        "动态规划",
+        "枚举"
+      ],
+      "solved_dates": [
+        "2026.06.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/total-waviness-of-numbers-in-range-i/"
     }
   ]
 }
