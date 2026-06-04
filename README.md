@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：393**  
+**总题数：394**  
 🟢 简单：156  
-🟡 中等：216  
+🟡 中等：217  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x214
+- **数组** x215
 - **字符串** x80
 - **哈希表** x77
 - **树** x38
@@ -38,16 +38,16 @@
 - **双指针** x53
 - **排序** x48
 - **深度优先搜索** x45
-- **动态规划** x43
+- **动态规划** x44
 - **广度优先搜索** x40
+- **二分查找** x28
 - **贪心** x28
 - **位运算** x28
-- **二分查找** x27
 - **模拟** x26
 - **回溯** x25
 - **递归** x17
 - **分治** x14
-- **滑动窗口** x11
+- **滑动窗口** x12
 - **设计** x10
 - **枚举** x9
 - **快速选择** x3
@@ -295,6 +295,7 @@
 | 704 | [二分查找](https://leetcode.cn/problems/binary-search/) | 🟢 简单 | 数组、二分查找 | 2025.10.22 |
 | 707 | [设计链表](https://leetcode.cn/problems/design-linked-list/) | 🟡 中等 | 设计、链表 | 2025.11.17 |
 | 713 | [乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/) | 🟡 中等 | 数组、二分查找、前缀和、滑动窗口 | 2026.01.02 |
+| 718 | [最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) | 🟡 中等 | 数组、二分查找、动态规划、滑动窗口、哈希函数、滚动哈希 | 2026.06.04 |
 | 725 | [分隔链表](https://leetcode.cn/problems/split-linked-list-in-parts/) | 🟡 中等 | 链表 | 2025.11.17 |
 | 739 | [每日温度](https://leetcode.cn/problems/daily-temperatures/) | 🟡 中等 | 栈、数组、单调栈 | 2025.12.09 |
 | 744 | [寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | 🟢 简单 | 数组、二分查找 | 2026.01.31 |
@@ -460,8 +461,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-04 21:55:03
-- **总题目数**：393
+- **最后更新**：2026-06-04 22:46:14
+- **总题目数**：394
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
