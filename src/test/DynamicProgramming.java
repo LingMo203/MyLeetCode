@@ -37,7 +37,8 @@ public class DynamicProgramming {
         //System.out.println(dp.findMaxForm(new String[]{"10","0001","111001","1","0"}, 5, 3));
         //System.out.println(dp.change(5, new int[]{1,2,5}));
         //System.out.println(dp.combinationSum4(new int[]{1,2,3}, 4));
-        System.out.println(dp.findLength(new int[]{1,2,3,2,1}, new int[]{3,2,1,4,7}));
+        //System.out.println(dp.findLength(new int[]{1,2,3,2,1}, new int[]{3,2,1,4,7}));
+        System.out.println(dp.longestCommonSubsequence("abcde", "ace"));
     }
 
 
@@ -600,6 +601,19 @@ public class DynamicProgramming {
             }
         }
         return res;
+    }
+
+    //1143. 最长公共子序列
+    public int longestCommonSubsequence(String text1, String text2) {
+        int n = text1.length(), m = text2.length();
+        int[][] dp = new int[n + 1][m + 1];
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
+                if (text1.charAt(i - 1) == text2.charAt(j - 1)) dp[i][j] = dp[i - 1][j - 1] + 1;
+                else dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+        return dp[n][m];
     }
 
 }

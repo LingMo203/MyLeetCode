@@ -1,6 +1,6 @@
 {
   "username": "lingmo203",
-  "total_solved": 394,
+  "total_solved": 395,
   "updated_at": "2026.06.04",
   "problems": [
     {
@@ -5872,6 +5872,20 @@
         "2026.06.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-length-of-repeated-subarray/"
+    },
+    {
+      "id": 1143,
+      "title": "最长公共子序列",
+      "title_slug": "longest-common-subsequence",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.06.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/longest-common-subsequence/"
     }
   ]
 }
