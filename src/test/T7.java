@@ -645,6 +645,24 @@ public class T7 {
         return res;
     }
 
+    //2574. 左右元素和的差值
+    public int[] leftRightDifference(int[] nums) {
+        int n = nums.length;
+        int[] leftSum = new int[n], rightSum = new int[n], res = new int[n];
+        for (int i = 0, sum = 0; i < n; i++) {
+            leftSum[i] = sum;
+            sum += nums[i];
+        }
+        for (int i = n - 1, sum = 0; i >= 0; i--) {
+            rightSum[i] = sum;
+            sum += nums[i];
+        }
+        for (int i = 0; i < n; i++) {
+            res[i] = Math.abs(leftSum[i] - rightSum[i]);
+        }
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

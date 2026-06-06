@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：395**  
-🟢 简单：156  
+**总题数：396**  
+🟢 简单：157  
 🟡 中等：218  
 🔴 困难：21
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x215
+- **数组** x216
 - **字符串** x81
 - **哈希表** x77
 - **树** x38
@@ -395,6 +395,7 @@
 | 2483 | [商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) | 🟡 中等 | 字符串、前缀和 | 2025.12.26 |
 | 2515 | [到目标字符串的最短距离](https://leetcode.cn/problems/shortest-distance-to-target-string-in-a-circular-array/) | 🟢 简单 | 数组、字符串 | 2026.04.15 |
 | 2540 | [最小公共值](https://leetcode.cn/problems/minimum-common-value/) | 🟢 简单 | 数组、哈希表、双指针、二分查找 | 2026.05.19 |
+| 2574 | [左右元素和的差值](https://leetcode.cn/problems/left-and-right-sum-differences/) | 🟢 简单 | 数组、前缀和 | 2026.06.06 |
 | 2578 | [最小和分割](https://leetcode.cn/problems/split-with-minimum-sum/) | 🟢 简单 | 贪心、数学、排序 | 2025.11.10 |
 | 2657 | [找到两个数组的前缀公共数组](https://leetcode.cn/problems/find-the-prefix-common-array-of-two-arrays/) | 🟡 中等 | 位运算、数组、哈希表 | 2026.05.20 |
 | 2784 | [检查数组是否是好的](https://leetcode.cn/problems/check-if-array-is-good/) | 🟢 简单 | 数组、哈希表、排序 | 2026.05.14 |
@@ -462,8 +463,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-04 23:26:58
-- **总题目数**：395
+- **最后更新**：2026-06-06 20:40:05
+- **总题目数**：396
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
