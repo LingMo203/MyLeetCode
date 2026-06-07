@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：396**  
+**总题数：397**  
 🟢 简单：157  
-🟡 中等：218  
+🟡 中等：219  
 🔴 困难：21
 
 
@@ -17,11 +17,11 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x216
+- **数组** x217
 - **字符串** x81
-- **哈希表** x77
-- **树** x38
-- **二叉树** x36
+- **哈希表** x78
+- **树** x39
+- **二叉树** x37
 - **矩阵** x36
 - **链表** x32
 - **栈** x27
@@ -390,6 +390,7 @@
 | 2126 | [摧毁小行星](https://leetcode.cn/problems/destroying-asteroids/) | 🟡 中等 | 贪心、数组、排序 | 2026.05.31 |
 | 2144 | [打折购买糖果的最小开销](https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/) | 🟢 简单 | 贪心、数组、排序 | 2026.06.01 |
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
+| 2196 | [根据描述创建二叉树](https://leetcode.cn/problems/create-binary-tree-from-descriptions/) | 🟡 中等 | 树、数组、哈希表、二叉树 | 2026.06.07 |
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
 | 2483 | [商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) | 🟡 中等 | 字符串、前缀和 | 2025.12.26 |
@@ -463,8 +464,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-06 20:40:05
-- **总题目数**：396
+- **最后更新**：2026-06-07 21:42:40
+- **总题目数**：397
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

@@ -809,6 +809,27 @@ public class TreeNodeTest {
         }
     }
 
+    //2196. 根据描述创建二叉树
+    public TreeNode createBinaryTree(int[][] descriptions) {
+        HashMap<Integer, TreeNode> hashMap = new HashMap<>();
+        HashSet<Integer> hashSet = new HashSet<>();
+        for (int[] nums : descriptions) {
+            if (!hashMap.containsKey(nums[0])) {
+                hashMap.put(nums[0], new TreeNode(nums[0]));
+                hashSet.add(nums[0]);
+            }
+            if (!hashMap.containsKey(nums[1])) {
+                hashMap.put(nums[1], new TreeNode(nums[1]));
+                hashSet.add(nums[1]);
+            }
+        }
+        for (int[] nums : descriptions) {
+            if (nums[2] == 1) hashMap.get(nums[0]).left = hashMap.get(nums[1]);
+            else if (nums[2] == 0) hashMap.get(nums[0]).right = hashMap.get(nums[1]);
+            hashSet.remove(nums[1]);
+        }
+        return hashMap.get(hashSet.toArray()[0]);
+    }
 
 
 

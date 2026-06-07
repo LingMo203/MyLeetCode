@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 396,
-  "updated_at": "2026.06.06",
+  "total_solved": 397,
+  "updated_at": "2026.06.07",
   "problems": [
     {
       "id": 1,
@@ -5900,6 +5900,22 @@
         "2026.06.06"
       ],
       "leetcode_url": "https://leetcode.cn/problems/left-and-right-sum-differences/"
+    },
+    {
+      "id": 2196,
+      "title": "根据描述创建二叉树",
+      "title_slug": "create-binary-tree-from-descriptions",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "数组",
+        "哈希表",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.06.07"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/create-binary-tree-from-descriptions/"
     }
   ]
 }
