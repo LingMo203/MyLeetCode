@@ -663,6 +663,32 @@ public class T7 {
         return res;
     }
 
+    //2161. 根据给定数字划分数组
+    public int[] pivotArray(int[] nums, int pivot) {
+        int n = nums.length, same = 0;
+        int[] res = new int[n];
+        ArrayList<Integer> min = new ArrayList<>();
+        ArrayList<Integer> max = new ArrayList<>();
+        for (int num : nums) {
+            if (pivot > num) min.add(num);
+            else if (pivot < num) max.add(num);
+            else same++;
+        }
+        int index = 0;
+        for (int num : min) {
+            res[index] = num;
+            index++;
+        }
+        for (int i = 0; i < same; i++, index++) {
+            res[index] = pivot;
+        }
+        for (int num : max) {
+            res[index] = num;
+            index++;
+        }
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

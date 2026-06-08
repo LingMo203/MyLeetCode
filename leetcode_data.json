@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 397,
-  "updated_at": "2026.06.07",
+  "total_solved": 398,
+  "updated_at": "2026.06.08",
   "problems": [
     {
       "id": 1,
@@ -5916,6 +5916,21 @@
         "2026.06.07"
       ],
       "leetcode_url": "https://leetcode.cn/problems/create-binary-tree-from-descriptions/"
+    },
+    {
+      "id": 2161,
+      "title": "根据给定数字划分数组",
+      "title_slug": "partition-array-according-to-given-pivot",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "双指针",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.06.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/partition-array-according-to-given-pivot/"
     }
   ]
 }

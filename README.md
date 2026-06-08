@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：397**  
+**总题数：398**  
 🟢 简单：157  
-🟡 中等：219  
+🟡 中等：220  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x217
+- **数组** x218
 - **字符串** x81
 - **哈希表** x78
 - **树** x39
@@ -35,7 +35,7 @@
 
 ### ⚡ 算法
 - **数学** x59
-- **双指针** x53
+- **双指针** x54
 - **排序** x48
 - **动态规划** x45
 - **深度优先搜索** x45
@@ -43,7 +43,7 @@
 - **二分查找** x28
 - **贪心** x28
 - **位运算** x28
-- **模拟** x26
+- **模拟** x27
 - **回溯** x25
 - **递归** x17
 - **分治** x14
@@ -390,6 +390,7 @@
 | 2126 | [摧毁小行星](https://leetcode.cn/problems/destroying-asteroids/) | 🟡 中等 | 贪心、数组、排序 | 2026.05.31 |
 | 2144 | [打折购买糖果的最小开销](https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/) | 🟢 简单 | 贪心、数组、排序 | 2026.06.01 |
 | 2154 | [将找到的值乘以 2](https://leetcode.cn/problems/keep-multiplying-found-values-by-two/) | 🟢 简单 | 数组、哈希表、排序、模拟 | 2025.11.19 |
+| 2161 | [根据给定数字划分数组](https://leetcode.cn/problems/partition-array-according-to-given-pivot/) | 🟡 中等 | 数组、双指针、模拟 | 2026.06.08 |
 | 2196 | [根据描述创建二叉树](https://leetcode.cn/problems/create-binary-tree-from-descriptions/) | 🟡 中等 | 树、数组、哈希表、二叉树 | 2026.06.07 |
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
@@ -464,8 +465,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-07 21:42:40
-- **总题目数**：397
+- **最后更新**：2026-06-08 13:37:03
+- **总题目数**：398
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
