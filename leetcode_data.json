@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 398,
-  "updated_at": "2026.06.08",
+  "total_solved": 399,
+  "updated_at": "2026.06.14",
   "problems": [
     {
       "id": 1,
@@ -5931,6 +5931,21 @@
         "2026.06.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/partition-array-according-to-given-pivot/"
+    },
+    {
+      "id": 2130,
+      "title": "链表最大孪生和",
+      "title_slug": "maximum-twin-sum-of-a-linked-list",
+      "difficulty": "中等",
+      "tags": [
+        "栈",
+        "链表",
+        "双指针"
+      ],
+      "solved_dates": [
+        "2026.06.14"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/"
     }
   ]
 }

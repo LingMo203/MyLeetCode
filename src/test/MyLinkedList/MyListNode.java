@@ -677,6 +677,24 @@ public class MyListNode {
         return dummyHead.next;
     }
 
+    //2130. 链表最大孪生和
+    public int pairSum(ListNode head) {
+        ListNode slow = head, fast = head;
+        Deque<Integer> deque = new ArrayDeque<>();
+        int res = Integer.MIN_VALUE;
+        while (fast != null) {
+            deque.addLast(slow.val);
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        while (slow != null) {
+            int removed = deque.removeLast();
+            res = Math.max(res, removed + slow.val);
+            slow = slow.next;
+        }
+        return res;
+    }
+
 
 
 
