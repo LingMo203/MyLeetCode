@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 399,
-  "updated_at": "2026.06.14",
+  "total_solved": 400,
+  "updated_at": "2026.06.16",
   "problems": [
     {
       "id": 1,
@@ -5946,6 +5946,20 @@
         "2026.06.14"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/"
+    },
+    {
+      "id": 3612,
+      "title": "用特殊操作处理字符串 I",
+      "title_slug": "process-string-with-special-operations-i",
+      "difficulty": "中等",
+      "tags": [
+        "字符串",
+        "模拟"
+      ],
+      "solved_dates": [
+        "2026.06.16"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/process-string-with-special-operations-i/"
     }
   ]
 }

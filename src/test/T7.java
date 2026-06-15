@@ -689,6 +689,23 @@ public class T7 {
         return res;
     }
 
+    //3612. 用特殊操作处理字符串 I
+    public String processStr(String s) {
+        StringBuilder res = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            if (Character.isLetter(c)) {
+                res.append(c);
+            } else if (c == '*' && !res.isEmpty()) {
+                res.deleteCharAt(res.length() - 1);
+            } else if (c == '#') {
+                res.append(res);
+            } else if (c == '%') {
+                res.reverse();
+            }
+        }
+        return res.toString();
+    }
+
 }
 
 //3043. 最长公共前缀的长度

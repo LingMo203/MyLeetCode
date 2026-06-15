@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：399**  
+**总题数：400**  
 🟢 简单：157  
-🟡 中等：221  
+🟡 中等：222  
 🔴 困难：21
 
 
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x218
-- **字符串** x81
+- **字符串** x82
 - **哈希表** x78
 - **树** x39
 - **二叉树** x37
@@ -43,7 +43,7 @@
 - **二分查找** x28
 - **贪心** x28
 - **位运算** x28
-- **模拟** x27
+- **模拟** x28
 - **回溯** x25
 - **递归** x17
 - **分治** x14
@@ -418,6 +418,7 @@
 | 3488 | [距离最小相等元素查询](https://leetcode.cn/problems/closest-equal-element-queries/) | 🟡 中等 | 数组、哈希表、二分查找 | 2026.04.16 |
 | 3507 | [移除最小数对使数组有序 I](https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/) | 🟢 简单 | 数组、哈希表、链表、双向链表、有序集合、模拟、堆（优先队列） | 2026.01.22 |
 | 3546 | [等和矩阵分割 I](https://leetcode.cn/problems/equal-sum-grid-partition-i/) | 🟡 中等 | 数组、枚举、矩阵、前缀和 | 2026.03.25 |
+| 3612 | [用特殊操作处理字符串 I](https://leetcode.cn/problems/process-string-with-special-operations-i/) | 🟡 中等 | 字符串、模拟 | 2026.06.16 |
 | 3619 | [总价值可以被 K 整除的岛屿数目](https://leetcode.cn/problems/count-islands-with-total-value-divisible-by-k/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.12 |
 | 3633 | [最早完成陆地和水上游乐设施的时间 I](https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-i/) | 🟢 简单 | 贪心、数组、双指针、二分查找、排序 | 2026.06.02 |
 | 3634 | [使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) | 🟡 中等 | 数组、排序、滑动窗口 | 2026.02.06 |
@@ -466,8 +467,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-14 00:10:35
-- **总题目数**：399
+- **最后更新**：2026-06-16 00:17:54
+- **总题目数**：400
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
