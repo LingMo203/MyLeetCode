@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 400,
-  "updated_at": "2026.06.16",
+  "total_solved": 401,
+  "updated_at": "2026.06.18",
   "problems": [
     {
       "id": 1,
@@ -5960,6 +5960,19 @@
         "2026.06.16"
       ],
       "leetcode_url": "https://leetcode.cn/problems/process-string-with-special-operations-i/"
+    },
+    {
+      "id": 1344,
+      "title": "时钟指针的夹角",
+      "title_slug": "angle-between-hands-of-a-clock",
+      "difficulty": "中等",
+      "tags": [
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.06.18"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/angle-between-hands-of-a-clock/"
     }
   ]
 }

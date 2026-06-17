@@ -706,6 +706,13 @@ public class T7 {
         return res.toString();
     }
 
+    //1344. 时钟指针的夹角
+    public double angleClock(int hour, int minutes) {
+        double m = minutes * 6;
+        double h = hour * 30 + minutes * 0.5;
+        return Math.min(Math.abs(m - h), 360 - Math.abs(m - h));
+    }
+
 }
 
 //3043. 最长公共前缀的长度
