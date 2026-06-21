@@ -713,6 +713,19 @@ public class T7 {
         return Math.min(Math.abs(m - h), 360 - Math.abs(m - h));
     }
 
+    //1833. 雪糕的最大数量
+    public int maxIceCream(int[] costs, int coins) {
+        Arrays.sort(costs);
+        int res = 0;
+        for (int num : costs) {
+            coins -= num;
+            if (coins < 0) return res;
+            res++;
+            if (coins == 0) return res;
+        }
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

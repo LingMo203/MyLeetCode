@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 401,
-  "updated_at": "2026.06.18",
+  "total_solved": 402,
+  "updated_at": "2026.06.21",
   "problems": [
     {
       "id": 1,
@@ -5973,6 +5973,22 @@
         "2026.06.18"
       ],
       "leetcode_url": "https://leetcode.cn/problems/angle-between-hands-of-a-clock/"
+    },
+    {
+      "id": 1833,
+      "title": "雪糕的最大数量",
+      "title_slug": "maximum-ice-cream-bars",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组",
+        "计数排序",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.06.21"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximum-ice-cream-bars/"
     }
   ]
 }

@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：401**  
+**总题数：402**  
 🟢 简单：157  
-🟡 中等：223  
+🟡 中等：224  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x218
+- **数组** x219
 - **字符串** x82
 - **哈希表** x78
 - **树** x39
@@ -36,12 +36,12 @@
 ### ⚡ 算法
 - **数学** x60
 - **双指针** x55
-- **排序** x48
+- **排序** x49
 - **动态规划** x45
 - **深度优先搜索** x45
 - **广度优先搜索** x40
+- **贪心** x29
 - **二分查找** x28
-- **贪心** x28
 - **位运算** x28
 - **模拟** x28
 - **回溯** x25
@@ -369,6 +369,7 @@
 | 1758 | [生成交替二进制字符串的最少操作数](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/) | 🟢 简单 | 字符串 | 2026.03.05 |
 | 1784 | [检查二进制字符串字段](https://leetcode.cn/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | 🟢 简单 | 字符串 | 2026.03.06 |
 | 1796 | [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string/) | 🟢 简单 | 哈希表、字符串 | 2025.10.31 |
+| 1833 | [雪糕的最大数量](https://leetcode.cn/problems/maximum-ice-cream-bars/) | 🟡 中等 | 贪心、数组、计数排序、排序 | 2026.06.21 |
 | 1848 | [到目标元素的最小距离](https://leetcode.cn/problems/minimum-distance-to-the-target-element/) | 🟢 简单 | 数组 | 2026.04.13 |
 | 1861 | [旋转盒子](https://leetcode.cn/problems/rotating-the-box/) | 🟡 中等 | 数组、双指针、矩阵 | 2026.05.06 |
 | 1871 | [跳跃游戏 VII](https://leetcode.cn/problems/jump-game-vii/) | 🟡 中等 | 字符串、动态规划、前缀和、滑动窗口 | 2026.05.25 |
@@ -468,8 +469,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-18 00:23:43
-- **总题目数**：401
+- **最后更新**：2026-06-21 20:44:36
+- **总题目数**：402
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
