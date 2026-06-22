@@ -726,6 +726,26 @@ public class T7 {
         return res;
     }
 
+    //1189. “气球” 的最大数量
+    public int maxNumberOfBalloons(String text) {
+        //balloon  b a l o n
+        int[] counts = new int[5];
+        int res =Integer.MAX_VALUE;
+        for (char c : text.toCharArray()) {
+            switch (c) {
+                case 'b' : counts[0]++; break;
+                case 'a' : counts[1]++; break;
+                case 'l' : counts[2]++; break;
+                case 'o' : counts[3]++; break;
+                case 'n' : counts[4]++; break;
+            }
+        }
+        counts[2] /= 2;
+        counts[3] /= 2;
+        for (int count : counts) res = Math.min(res, count);
+        return res;
+    }
+
 }
 
 //3043. 最长公共前缀的长度

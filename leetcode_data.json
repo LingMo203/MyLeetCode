@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 402,
-  "updated_at": "2026.06.21",
+  "total_solved": 403,
+  "updated_at": "2026.06.22",
   "problems": [
     {
       "id": 1,
@@ -5989,6 +5989,21 @@
         "2026.06.21"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-ice-cream-bars/"
+    },
+    {
+      "id": 1189,
+      "title": "“气球” 的最大数量",
+      "title_slug": "maximum-number-of-balloons",
+      "difficulty": "简单",
+      "tags": [
+        "哈希表",
+        "字符串",
+        "计数"
+      ],
+      "solved_dates": [
+        "2026.06.22"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/maximum-number-of-balloons/"
     }
   ]
 }

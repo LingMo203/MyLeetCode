@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：402**  
-🟢 简单：157  
+**总题数：403**  
+🟢 简单：158  
 🟡 中等：224  
 🔴 困难：21
 
@@ -18,8 +18,8 @@
 
 ### 🔥 数据结构
 - **数组** x219
-- **字符串** x82
-- **哈希表** x78
+- **字符串** x83
+- **哈希表** x79
 - **树** x39
 - **二叉树** x37
 - **矩阵** x36
@@ -331,6 +331,7 @@
 | 1137 | [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | 🟢 简单 | 记忆化搜索、数学、动态规划 | 2025.11.28 |
 | 1143 | [最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) | 🟡 中等 | 字符串、动态规划 | 2026.06.04 |
 | 1161 | [最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.06 |
+| 1189 | [“气球” 的最大数量](https://leetcode.cn/problems/maximum-number-of-balloons/) | 🟢 简单 | 哈希表、字符串、计数 | 2026.06.22 |
 | 1200 | [最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference/) | 🟢 简单 | 数组、排序 | 2026.01.26 |
 | 1207 | [独一无二的出现次数](https://leetcode.cn/problems/unique-number-of-occurrences/) | 🟢 简单 | 数组、哈希表 | 2026.04.10 |
 | 1254 | [统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 2026.01.13 |
@@ -469,8 +470,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-21 20:44:36
-- **总题目数**：402
+- **最后更新**：2026-06-22 21:30:17
+- **总题目数**：403
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
