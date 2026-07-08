@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：403**  
-🟢 简单：158  
+**总题数：404**  
+🟢 简单：159  
 🟡 中等：224  
 🔴 困难：21
 
@@ -34,7 +34,7 @@
 - **单调队列** x3
 
 ### ⚡ 算法
-- **数学** x60
+- **数学** x61
 - **双指针** x55
 - **排序** x49
 - **动态规划** x45
@@ -434,6 +434,7 @@
 | 3740 | [三个相等元素之间的最小距离 I](https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-i/) | 🟢 简单 | 数组、哈希表 | 2026.04.10 |
 | 3741 | [三个相等元素之间的最小距离 II](https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-ii/) | 🟡 中等 | 数组、哈希表 | 2026.04.10 |
 | 3751 | [范围内总波动值 I](https://leetcode.cn/problems/total-waviness-of-numbers-in-range-i/) | 🟡 中等 | 数学、动态规划、枚举 | 2026.06.04 |
+| 3754 | [连接非零数字并乘以其数字和 I](https://leetcode.cn/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/) | 🟢 简单 | 数学 | 2026.07.08 |
 | 3761 | [镜像对之间最小绝对距离](https://leetcode.cn/problems/minimum-absolute-distance-between-mirror-pairs/) | 🟡 中等 | 数组、哈希表、数学 | 2026.04.18 |
 | 3783 | [整数的镜像距离](https://leetcode.cn/problems/mirror-distance-of-an-integer/) | 🟢 简单 | 数学 | 2026.04.18 |
 | 3794 | [反转字符串前缀](https://leetcode.cn/problems/reverse-string-prefix/) | 🟢 简单 | 双指针、字符串 | 2026.01.03 |
@@ -470,8 +471,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-06-22 21:30:17
-- **总题目数**：403
+- **最后更新**：2026-07-08 11:10:05
+- **总题目数**：404
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

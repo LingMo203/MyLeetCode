@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 403,
-  "updated_at": "2026.06.22",
+  "total_solved": 404,
+  "updated_at": "2026.07.08",
   "problems": [
     {
       "id": 1,
@@ -6004,6 +6004,19 @@
         "2026.06.22"
       ],
       "leetcode_url": "https://leetcode.cn/problems/maximum-number-of-balloons/"
+    },
+    {
+      "id": 3754,
+      "title": "连接非零数字并乘以其数字和 I",
+      "title_slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+      "difficulty": "简单",
+      "tags": [
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.07.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/"
     }
   ]
 }

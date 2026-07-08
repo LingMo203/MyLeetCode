@@ -746,6 +746,18 @@ public class T7 {
         return res;
     }
 
+    //3754. 连接非零数字并乘以其数字和 I
+    public long sumAndMultiply(int n) {
+        long num = 0, sum = 0;
+        for (char c : String.valueOf(n).toCharArray()) {
+            int temp = c - '0';
+            if (temp == 0) continue;
+            sum += temp;
+            num = num * 10 + temp;
+        }
+        return num * sum;
+    }
+
 }
 
 //3043. 最长公共前缀的长度
