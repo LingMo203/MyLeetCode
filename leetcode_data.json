@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 404,
-  "updated_at": "2026.07.08",
+  "total_solved": 405,
+  "updated_at": "2026.07.12",
   "problems": [
     {
       "id": 1,
@@ -6017,6 +6017,21 @@
         "2026.07.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/"
+    },
+    {
+      "id": 1331,
+      "title": "数组序号转换",
+      "title_slug": "rank-transform-of-an-array",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "哈希表",
+        "排序"
+      ],
+      "solved_dates": [
+        "2026.07.12"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/rank-transform-of-an-array/"
     }
   ]
 }

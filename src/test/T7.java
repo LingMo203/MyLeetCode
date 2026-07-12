@@ -11,7 +11,7 @@ public class T7 {
         int[] nums2 = {4,1};
         int[] nums3 = {6};
         int[] nums4 = {3};
-        String strGrid = "[[9,1,8,9,2,9,1,8,9,2],[10,2,7,8,9,10,2,7,8,9],[7,6,6,9,5,7,6,6,9,5]]";
+        String strGrid = "[[1,2]]";
         int[][] grid = ArrayStringUtils.parse2DIntArray(strGrid);
         String strGrid2 = "[[1,0],[0,0]]";
         int[][] grid2 = ArrayStringUtils.parse2DIntArray(strGrid2);
@@ -757,6 +757,26 @@ public class T7 {
         }
         return num * sum;
     }
+
+    //1331. 数组序号转换
+    public int[] arrayRankTransform(int[] arr) {
+        int n = arr.length;
+        int[] res = new int[n];
+        int[] copy = Arrays.copyOf(arr, n);
+        Arrays.sort(copy);
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        int index = 1;
+        for (int num : copy) {
+            if (hashMap.containsKey(num)) continue;
+            hashMap.put(num, index++);
+        }
+        int i = 0;
+        for (int num : arr) {
+            res[i++] = hashMap.get(num);
+        }
+        return res;
+    }
+
 
 }
 

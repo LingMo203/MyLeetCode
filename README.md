@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：404**  
-🟢 简单：159  
+**总题数：405**  
+🟢 简单：160  
 🟡 中等：224  
 🔴 困难：21
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x219
+- **数组** x220
 - **字符串** x83
-- **哈希表** x79
+- **哈希表** x80
 - **树** x39
 - **二叉树** x37
 - **矩阵** x36
@@ -36,7 +36,7 @@
 ### ⚡ 算法
 - **数学** x61
 - **双指针** x55
-- **排序** x49
+- **排序** x50
 - **动态规划** x45
 - **深度优先搜索** x45
 - **广度优先搜索** x40
@@ -339,6 +339,7 @@
 | 1306 | [跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组 | 2026.05.17 |
 | 1319 | [连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) | 🟡 中等 | 深度优先搜索、广度优先搜索、并查集、图 | 2026.01.18 |
 | 1323 | [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number/) | 🟢 简单 | 贪心、数学 | 2025.11.10 |
+| 1331 | [数组序号转换](https://leetcode.cn/problems/rank-transform-of-an-array/) | 🟢 简单 | 数组、哈希表、排序 | 2026.07.12 |
 | 1339 | [分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.01.07 |
 | 1344 | [时钟指针的夹角](https://leetcode.cn/problems/angle-between-hands-of-a-clock/) | 🟡 中等 | 数学 | 2026.06.18 |
 | 1345 | [跳跃游戏 IV](https://leetcode.cn/problems/jump-game-iv/) | 🔴 困难 | 广度优先搜索、数组、哈希表 | 2026.05.18 |
@@ -471,8 +472,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-07-08 11:10:05
-- **总题目数**：404
+- **最后更新**：2026-07-12 21:08:04
+- **总题目数**：405
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
