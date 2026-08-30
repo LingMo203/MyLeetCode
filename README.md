@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：405**  
+**总题数：406**  
 🟢 简单：160  
-🟡 中等：224  
+🟡 中等：225  
 🔴 困难：21
 
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x220
+- **数组** x221
 - **字符串** x83
 - **哈希表** x80
 - **树** x39
@@ -40,7 +40,7 @@
 - **动态规划** x45
 - **深度优先搜索** x45
 - **广度优先搜索** x40
-- **贪心** x29
+- **贪心** x30
 - **二分查找** x28
 - **位运算** x28
 - **模拟** x28
@@ -390,6 +390,7 @@
 | 2069 | [模拟行走机器人 II](https://leetcode.cn/problems/walking-robot-simulation-ii/) | 🟡 中等 | 设计、模拟 | 2026.04.07 |
 | 2073 | [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets/) | 🟢 简单 | 队列、数组、模拟 | 2026.02.07 |
 | 2087 | [网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | 🟡 中等 | 贪心、数组 | 2026.04.04 |
+| 2091 | [从数组中移除最大值和最小值](https://leetcode.cn/problems/removing-minimum-and-maximum-from-array/) | 🟡 中等 | 贪心、数组 | 2026.08.30 |
 | 2095 | [删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 中等 | 链表、双指针 | 2025.12.14 |
 | 2126 | [摧毁小行星](https://leetcode.cn/problems/destroying-asteroids/) | 🟡 中等 | 贪心、数组、排序 | 2026.05.31 |
 | 2130 | [链表最大孪生和](https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/) | 🟡 中等 | 栈、链表、双指针 | 2026.06.14 |
@@ -472,8 +473,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-07-12 21:08:04
-- **总题目数**：405
+- **最后更新**：2026-08-30 19:36:33
+- **总题目数**：406
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

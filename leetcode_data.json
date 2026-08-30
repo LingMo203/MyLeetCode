@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 405,
-  "updated_at": "2026.07.12",
+  "total_solved": 406,
+  "updated_at": "2026.08.30",
   "problems": [
     {
       "id": 1,
@@ -6032,6 +6032,20 @@
         "2026.07.12"
       ],
       "leetcode_url": "https://leetcode.cn/problems/rank-transform-of-an-array/"
+    },
+    {
+      "id": 2091,
+      "title": "从数组中移除最大值和最小值",
+      "title_slug": "removing-minimum-and-maximum-from-array",
+      "difficulty": "中等",
+      "tags": [
+        "贪心",
+        "数组"
+      ],
+      "solved_dates": [
+        "2026.08.30"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/removing-minimum-and-maximum-from-array/"
     }
   ]
 }
