@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：406**  
+**总题数：407**  
 🟢 简单：160  
-🟡 中等：225  
+🟡 中等：226  
 🔴 困难：21
 
 
@@ -23,7 +23,7 @@
 - **树** x39
 - **二叉树** x37
 - **矩阵** x36
-- **链表** x33
+- **链表** x34
 - **栈** x28
 - **堆（优先队列）** x13
 - **并查集** x10
@@ -387,6 +387,7 @@
 | 1985 | [找出数组中的第 K 大整数](https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/) | 🟡 中等 | 数组、字符串、分治、快速选择、排序、堆（优先队列） | 2026.02.02 |
 | 1992 | [找到所有的农场组](https://leetcode.cn/problems/find-all-groups-of-farmland/) | 🟡 中等 | 深度优先搜索、广度优先搜索、数组、矩阵 | 2026.01.12 |
 | 2033 | [获取单值网格的最小操作数](https://leetcode.cn/problems/minimum-operations-to-make-a-uni-value-grid/) | 🟡 中等 | 数组、数学、矩阵、排序 | 2026.04.28 |
+| 2058 | [找出临界点之间的最小和最大距离](https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | 🟡 中等 | 链表 | 2026.08.31 |
 | 2069 | [模拟行走机器人 II](https://leetcode.cn/problems/walking-robot-simulation-ii/) | 🟡 中等 | 设计、模拟 | 2026.04.07 |
 | 2073 | [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets/) | 🟢 简单 | 队列、数组、模拟 | 2026.02.07 |
 | 2087 | [网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | 🟡 中等 | 贪心、数组 | 2026.04.04 |
@@ -473,8 +474,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-08-30 19:36:33
-- **总题目数**：406
+- **最后更新**：2026-08-31 20:50:45
+- **总题目数**：407
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

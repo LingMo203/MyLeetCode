@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MyListNode {
     public static void main(String[] args) {
-        int[] a={1,2,2,1};
+        int[] a={5,3,1,2,5,1,2};
         int[] b={4,6,8};
         MyListNode a1=new MyListNode();
         ListNode lista=newList(a);
@@ -23,7 +23,8 @@ public class MyListNode {
         //showList(a1.addTwoList(lista,listb));
         //showList(a1.reverseByK(lista,2,4));
         //showList(a1.reverseKGroup(lista,3));
-        System.out.println(a1.isPalindrome(lista));
+        //System.out.println(a1.isPalindrome(lista));
+        System.out.println(Arrays.toString(a1.nodesBetweenCriticalPoints(lista)));
     }
     public static ListNode newList(int[] nums)  {
         ListNode list=new ListNode(0,null);
@@ -691,6 +692,26 @@ public class MyListNode {
             int removed = deque.removeLast();
             res = Math.max(res, removed + slow.val);
             slow = slow.next;
+        }
+        return res;
+    }
+
+    //2058. 找出临界点之间的最小和最大距离
+    public int[] nodesBetweenCriticalPoints(ListNode head) {
+        ListNode cur = head;
+        int last = cur.val;
+        cur = cur.next;
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 1; cur.next != null; i++) {
+            int now = cur.val, next = cur.next.val;
+            if ((last < now && now > next) || (last > now && now < next)) list.add(i);
+            last = now;
+            cur = cur.next;
+        }
+        if (list.size() < 2) return new int[]{-1, -1};
+        int[] res = {Integer.MAX_VALUE, list.get(list.size() - 1) - list.get(0)};
+        for (int i = 1; i < list.size(); i++) {
+            res[0] = Math.min(res[0], list.get(i) - list.get(i - 1));
         }
         return res;
     }

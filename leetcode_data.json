@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 406,
-  "updated_at": "2026.08.30",
+  "total_solved": 407,
+  "updated_at": "2026.08.31",
   "problems": [
     {
       "id": 1,
@@ -6046,6 +6046,19 @@
         "2026.08.30"
       ],
       "leetcode_url": "https://leetcode.cn/problems/removing-minimum-and-maximum-from-array/"
+    },
+    {
+      "id": 2058,
+      "title": "找出临界点之间的最小和最大距离",
+      "title_slug": "find-the-minimum-and-maximum-number-of-nodes-between-critical-points",
+      "difficulty": "中等",
+      "tags": [
+        "链表"
+      ],
+      "solved_dates": [
+        "2026.08.31"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/"
     }
   ]
 }
