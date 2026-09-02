@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 407,
-  "updated_at": "2026.08.31",
+  "total_solved": 408,
+  "updated_at": "2026.09.02",
   "problems": [
     {
       "id": 1,
@@ -6059,6 +6059,20 @@
         "2026.08.31"
       ],
       "leetcode_url": "https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/"
+    },
+    {
+      "id": 3875,
+      "title": "构造奇偶一致的数组 I",
+      "title_slug": "construct-uniform-parity-array-i",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.09.02"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/construct-uniform-parity-array-i/"
     }
   ]
 }

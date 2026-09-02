@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：407**  
-🟢 简单：160  
+**总题数：408**  
+🟢 简单：161  
 🟡 中等：226  
 🔴 困难：21
 
@@ -17,7 +17,7 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x221
+- **数组** x222
 - **字符串** x83
 - **哈希表** x80
 - **树** x39
@@ -34,7 +34,7 @@
 - **单调队列** x3
 
 ### ⚡ 算法
-- **数学** x61
+- **数学** x62
 - **双指针** x55
 - **排序** x50
 - **动态规划** x45
@@ -468,14 +468,15 @@
 | 3848 | [阶数数字排列](https://leetcode.cn/problems/check-digitorial-permutation/) | 🟡 中等 | 数学、计数 | 2026.02.22 |
 | 3849 | [重新排列后的最大按位异或值](https://leetcode.cn/problems/maximum-bitwise-xor-after-rearrangement/) | 🟡 中等 | 贪心、位运算、字符串 | 2026.02.22 |
 | 3862 | [找出最小平衡下标](https://leetcode.cn/problems/find-the-smallest-balanced-index/) | 🟡 中等 | 数组、前缀和 | 2026.04.08 |
+| 3875 | [构造奇偶一致的数组 I](https://leetcode.cn/problems/construct-uniform-parity-array-i/) | 🟢 简单 | 数组、数学 | 2026.09.02 |
 
 
 
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-08-31 20:50:45
-- **总题目数**：407
+- **最后更新**：2026-09-02 20:54:09
+- **总题目数**：408
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
