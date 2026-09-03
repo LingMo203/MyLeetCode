@@ -53,8 +53,24 @@ public class T8 {
         return true;
     }
 
-
-
+    //3876. 构造奇偶一致的数组 II
+    public boolean uniformArray2(int[] nums1) {
+        boolean haveOdd = false, haveEven = false;
+        int minOdd = Integer.MAX_VALUE;
+        for (int num : nums1) {
+            if (num % 2 == 0) haveEven = true;
+            else {
+                haveOdd = true;
+                minOdd = Math.min(minOdd, num);
+            }
+        }
+        if (haveOdd && haveEven) {
+            for (int num : nums1) {
+                if (num % 2 == 0 && num <= minOdd) return false;
+            }
+        }
+        return true;
+    }
 
 
 

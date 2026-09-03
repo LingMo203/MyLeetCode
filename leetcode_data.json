@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 408,
-  "updated_at": "2026.09.02",
+  "total_solved": 409,
+  "updated_at": "2026.09.03",
   "problems": [
     {
       "id": 1,
@@ -6073,6 +6073,20 @@
         "2026.09.02"
       ],
       "leetcode_url": "https://leetcode.cn/problems/construct-uniform-parity-array-i/"
+    },
+    {
+      "id": 3876,
+      "title": "构造奇偶一致的数组 II",
+      "title_slug": "construct-uniform-parity-array-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.09.03"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/construct-uniform-parity-array-ii/"
     }
   ]
 }
