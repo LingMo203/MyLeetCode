@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 409,
-  "updated_at": "2026.09.03",
+  "total_solved": 411,
+  "updated_at": "2026.09.04",
   "problems": [
     {
       "id": 1,
@@ -6087,6 +6087,34 @@
         "2026.09.03"
       ],
       "leetcode_url": "https://leetcode.cn/problems/construct-uniform-parity-array-ii/"
+    },
+    {
+      "id": 3903,
+      "title": "最小稳定下标 I",
+      "title_slug": "smallest-stable-index-i",
+      "difficulty": "简单",
+      "tags": [
+        "数组",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2026.09.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/smallest-stable-index-i/"
+    },
+    {
+      "id": 3904,
+      "title": "最小稳定下标 II",
+      "title_slug": "smallest-stable-index-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数组",
+        "前缀和"
+      ],
+      "solved_dates": [
+        "2026.09.04"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/smallest-stable-index-ii/"
     }
   ]
 }

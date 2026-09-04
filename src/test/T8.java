@@ -7,7 +7,7 @@ import util.ArrayStringUtils;
 public class T8 {
     public static void main() {
         T8 t8 = new T8();
-        int[] nums1 = {2,10,7,5,4,1,8,6};
+        int[] nums1 = {6,1,4};
         int[] nums2 = {4, 1};
         int[] nums3 = {6};
         int[] nums4 = {3};
@@ -22,7 +22,8 @@ public class T8 {
         char[] chars = {'c', 'f', 'j'};
         String charInput2 = "[[\"#\",\".\",\"*\",\".\"],[\"#\",\"#\",\"*\",\".\"]]";
         char[][] charArray2 = ArrayStringUtils.parse2DCharArraySmart(charInput2);
-        System.out.println(t8.minimumDeletions(nums1));
+        //System.out.println(t8.minimumDeletions(nums1));
+        System.out.println(t8.firstStableIndex(nums1, 5));
     }
 
     //2091. 从数组中移除最大值和最小值
@@ -72,13 +73,43 @@ public class T8 {
         return true;
     }
 
-
-
-
-
-
-
-
-
+    //3903. 最小稳定下标 I   3904. 最小稳定下标 II
+    public int firstStableIndex(int[] nums, int k) {
+        int n = nums.length;
+        int[] maxs = new int[n], mins = new int[n];
+        maxs[0] = nums[0];
+        mins[n - 1] = nums[n - 1];
+        for (int i = 1; i < n; i++) {
+            maxs[i] = Math.max(maxs[i - 1], nums[i]);
+        }
+        for (int i = n - 2; i >= 0; i--) {
+            mins[i] = Math.min(mins[i + 1], nums[i]);
+        }
+        for (int i = 0; i < n; i++) {
+            int num = maxs[i] - mins[i];
+            if (num <= k) return i;
+        }
+        return -1;
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
