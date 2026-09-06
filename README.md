@@ -6,10 +6,10 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：411**  
+**总题数：412**  
 🟢 简单：162  
 🟡 中等：228  
-🔴 困难：21
+🔴 困难：22
 
 
 ---
@@ -18,7 +18,7 @@
 
 ### 🔥 数据结构
 - **数组** x225
-- **字符串** x83
+- **字符串** x84
 - **哈希表** x80
 - **树** x39
 - **二叉树** x37
@@ -37,7 +37,7 @@
 - **数学** x63
 - **双指针** x55
 - **排序** x50
-- **动态规划** x45
+- **动态规划** x46
 - **深度优先搜索** x45
 - **广度优先搜索** x40
 - **贪心** x30
@@ -154,6 +154,7 @@
 | 112 | [路径总和](https://leetcode.cn/problems/path-sum/) | 🟢 简单 | 树、深度优先搜索、广度优先搜索、二叉树 | 2026.01.02 |
 | 113 | [路径总和 II](https://leetcode.cn/problems/path-sum-ii/) | 🟡 中等 | 树、深度优先搜索、回溯、二叉树 | 2026.01.02 |
 | 114 | [二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | 🟡 中等 | 栈、树、深度优先搜索、链表、二叉树 | 2025.12.10 |
+| 115 | [不同的子序列](https://leetcode.cn/problems/distinct-subsequences/) | 🔴 困难 | 字符串、动态规划 | 2026.09.06 |
 | 116 | [填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、链表、二叉树 | 2025.12.28 |
 | 117 | [填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) | 🟡 中等 | 树、深度优先搜索、广度优先搜索、链表、二叉树 | 2025.12.28 |
 | 118 | [杨辉三角](https://leetcode.cn/problems/pascals-triangle/) | 🟢 简单 | 数组、动态规划 | 2025.11.26 |
@@ -478,8 +479,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-09-04 21:58:02
-- **总题目数**：411
+- **最后更新**：2026-09-06 21:59:41
+- **总题目数**：412
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 411,
-  "updated_at": "2026.09.04",
+  "total_solved": 412,
+  "updated_at": "2026.09.06",
   "problems": [
     {
       "id": 1,
@@ -6115,6 +6115,20 @@
         "2026.09.04"
       ],
       "leetcode_url": "https://leetcode.cn/problems/smallest-stable-index-ii/"
+    },
+    {
+      "id": 115,
+      "title": "不同的子序列",
+      "title_slug": "distinct-subsequences",
+      "difficulty": "困难",
+      "tags": [
+        "字符串",
+        "动态规划"
+      ],
+      "solved_dates": [
+        "2026.09.06"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/distinct-subsequences/"
     }
   ]
 }

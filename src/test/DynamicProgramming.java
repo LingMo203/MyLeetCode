@@ -616,6 +616,24 @@ public class DynamicProgramming {
         return dp[n][m];
     }
 
+    //115. 不同的子序列
+    public int numDistinct(String s, String t) {
+        int n = s.length(), m = t.length();
+        int[][] dp = new int[m][n];
+        if (s.charAt(0) == t.charAt(0)) dp[0][0] = 1;
+        for (int i = 1; i < n; i++) {
+            dp[0][i] = dp[0][i - 1];
+            if (s.charAt(i) == t.charAt(0)) dp[0][i]++;
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = i; j < n; j++) {
+                if (t.charAt(i) == s.charAt(j)) dp[i][j] = dp[i - 1][j - 1] + dp[i][j - 1];
+                else dp[i][j] = dp[i][j - 1];
+            }
+        }
+        return dp[m - 1][n - 1];
+    }
+
 }
 
 
