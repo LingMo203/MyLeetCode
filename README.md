@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：412**  
-🟢 简单：162  
+**总题数：413**  
+🟢 简单：163  
 🟡 中等：228  
 🔴 困难：22
 
@@ -34,7 +34,7 @@
 - **单调队列** x3
 
 ### ⚡ 算法
-- **数学** x63
+- **数学** x64
 - **双指针** x55
 - **排序** x50
 - **动态规划** x46
@@ -469,6 +469,7 @@
 | 3848 | [阶数数字排列](https://leetcode.cn/problems/check-digitorial-permutation/) | 🟡 中等 | 数学、计数 | 2026.02.22 |
 | 3849 | [重新排列后的最大按位异或值](https://leetcode.cn/problems/maximum-bitwise-xor-after-rearrangement/) | 🟡 中等 | 贪心、位运算、字符串 | 2026.02.22 |
 | 3862 | [找出最小平衡下标](https://leetcode.cn/problems/find-the-smallest-balanced-index/) | 🟡 中等 | 数组、前缀和 | 2026.04.08 |
+| 3870 | [统计范围内的逗号](https://leetcode.cn/problems/count-commas-in-range/) | 🟢 简单 | 数学 | 2026.09.08 |
 | 3875 | [构造奇偶一致的数组 I](https://leetcode.cn/problems/construct-uniform-parity-array-i/) | 🟢 简单 | 数组、数学 | 2026.09.02 |
 | 3876 | [构造奇偶一致的数组 II](https://leetcode.cn/problems/construct-uniform-parity-array-ii/) | 🟡 中等 | 数组、数学 | 2026.09.03 |
 | 3903 | [最小稳定下标 I](https://leetcode.cn/problems/smallest-stable-index-i/) | 🟢 简单 | 数组、前缀和 | 2026.09.04 |
@@ -479,8 +480,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-09-06 21:59:41
-- **总题目数**：412
+- **最后更新**：2026-09-08 22:04:50
+- **总题目数**：413
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 412,
-  "updated_at": "2026.09.06",
+  "total_solved": 413,
+  "updated_at": "2026.09.08",
   "problems": [
     {
       "id": 1,
@@ -6129,6 +6129,19 @@
         "2026.09.06"
       ],
       "leetcode_url": "https://leetcode.cn/problems/distinct-subsequences/"
+    },
+    {
+      "id": 3870,
+      "title": "统计范围内的逗号",
+      "title_slug": "count-commas-in-range",
+      "difficulty": "简单",
+      "tags": [
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.09.08"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-commas-in-range/"
     }
   ]
 }
