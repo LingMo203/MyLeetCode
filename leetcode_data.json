@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 413,
-  "updated_at": "2026.09.08",
+  "total_solved": 414,
+  "updated_at": "2026.09.09",
   "problems": [
     {
       "id": 1,
@@ -6142,6 +6142,19 @@
         "2026.09.08"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-commas-in-range/"
+    },
+    {
+      "id": 3871,
+      "title": "统计范围内的逗号 II",
+      "title_slug": "count-commas-in-range-ii",
+      "difficulty": "中等",
+      "tags": [
+        "数学"
+      ],
+      "solved_dates": [
+        "2026.09.09"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-commas-in-range-ii/"
     }
   ]
 }

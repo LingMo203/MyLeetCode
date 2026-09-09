@@ -97,6 +97,30 @@ public class T8 {
         return n <= 999 ? 0 : n - 999;
     }
 
+    //3871. 统计范围内的逗号 II
+    public long countCommas2(long n) {
+        if (n <= 999) return 0;
+        long res = 0;
+        if (n <= 999999) res += n - 999;
+        else {
+            res += 999000;
+            if (n <= 999999999) res += ((n - 999999) * 2);
+            else {
+                res += 999000000 * 2;
+                if (n <= 999999999999L) res += ((n - 999999999) * 3);
+                else {
+                    res += 999000000000L * 3;
+                    if (n <= 999999999999999L) res += ((n - 999999999999L) * 4);
+                    else {
+                        res += 999000000000000L * 4;
+                        if (n == 1000000000000000L) res += 5;
+                    }
+                }
+            }
+        }
+        return res;
+    }
+
 }
 
 
