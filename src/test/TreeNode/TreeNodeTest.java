@@ -9,13 +9,14 @@ public class TreeNodeTest {
         int[] postorder = {9, 15, 7, 20, 3};
         int[] preorder = {3, 9, 20, 15, 7};
         int[] nums={-10,-3,0,5,9};
-        List<Integer> treeData = new ArrayList<>(Arrays.asList(1,null,0));
+        List<Integer> treeData = new ArrayList<>(Arrays.asList(4,8,5,0,1,null,6));
         TreeNode root=buildTree(treeData);
         //System.out.println(tt.inorderTraversal(tt.buildTree(inorder,preorder)));
         //System.out.println(tt.buildTree2(preorder,inorder)));
         //System.out.println(tt.inorderTraversal(tt.sortedArrayToBST(nums)));
         //System.out.println(tt.preorderTraversal(tt.subtreeWithAllDeepest(root)));
-        System.out.println(tt.sumRootToLeaf(root));
+        //System.out.println(tt.sumRootToLeaf(root));
+        System.out.println(tt.averageOfSubtree(root));
     }
 
     public static TreeNode buildTree(List<Integer> list) {
@@ -831,10 +832,38 @@ public class TreeNodeTest {
         return hashMap.get(hashSet.toArray()[0]);
     }
 
-
-
-
-
-
+    //2265. 统计值等于子树平均值的节点数
+    public int averageOfSubtree(TreeNode root) {
+        int[] res = {0};
+        dfsAverageOfSubtree(root, res);
+        return res[0];
+    }
+    public int[] dfsAverageOfSubtree(TreeNode root, int[] res) {
+        if (root == null) return new int[]{0, 0};
+        int count = 1, left = 0, right = 0;
+        if (root.left != null) {
+            int[] temp = dfsAverageOfSubtree(root.left, res);
+            left = temp[0];
+            count += temp[1];
+        }
+        if (root.right != null) {
+            int[] temp = dfsAverageOfSubtree(root.right, res);
+            right = temp[0];
+            count += temp[1];
+        }
+        int sum = (root.val + left + right) ,avg = sum / count;
+        if (avg == root.val) res[0]++;
+        return new int[]{sum, count};
+    }
 
 }
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 414,
-  "updated_at": "2026.09.09",
+  "total_solved": 415,
+  "updated_at": "2026.09.10",
   "problems": [
     {
       "id": 1,
@@ -6155,6 +6155,21 @@
         "2026.09.09"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-commas-in-range-ii/"
+    },
+    {
+      "id": 2265,
+      "title": "统计值等于子树平均值的节点数",
+      "title_slug": "count-nodes-equal-to-average-of-subtree",
+      "difficulty": "中等",
+      "tags": [
+        "树",
+        "深度优先搜索",
+        "二叉树"
+      ],
+      "solved_dates": [
+        "2026.09.10"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/count-nodes-equal-to-average-of-subtree/"
     }
   ]
 }

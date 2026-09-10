@@ -6,9 +6,9 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：414**  
+**总题数：415**  
 🟢 简单：163  
-🟡 中等：229  
+🟡 中等：230  
 🔴 困难：22
 
 
@@ -20,8 +20,8 @@
 - **数组** x225
 - **字符串** x84
 - **哈希表** x80
-- **树** x39
-- **二叉树** x37
+- **树** x40
+- **二叉树** x38
 - **矩阵** x36
 - **链表** x34
 - **栈** x28
@@ -38,7 +38,7 @@
 - **双指针** x55
 - **排序** x50
 - **动态规划** x46
-- **深度优先搜索** x45
+- **深度优先搜索** x46
 - **广度优先搜索** x40
 - **贪心** x30
 - **二分查找** x28
@@ -401,6 +401,7 @@
 | 2161 | [根据给定数字划分数组](https://leetcode.cn/problems/partition-array-according-to-given-pivot/) | 🟡 中等 | 数组、双指针、模拟 | 2026.06.08 |
 | 2196 | [根据描述创建二叉树](https://leetcode.cn/problems/create-binary-tree-from-descriptions/) | 🟡 中等 | 树、数组、哈希表、二叉树 | 2026.06.07 |
 | 2235 | [两整数相加](https://leetcode.cn/problems/add-two-integers/) | 🟢 简单 | 数学 | 2025.11.17 |
+| 2265 | [统计值等于子树平均值的节点数](https://leetcode.cn/problems/count-nodes-equal-to-average-of-subtree/) | 🟡 中等 | 树、深度优先搜索、二叉树 | 2026.09.10 |
 | 2469 | [温度转换](https://leetcode.cn/problems/convert-the-temperature/) | 🟢 简单 | 数学 | 2025.12.15 |
 | 2483 | [商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) | 🟡 中等 | 字符串、前缀和 | 2025.12.26 |
 | 2515 | [到目标字符串的最短距离](https://leetcode.cn/problems/shortest-distance-to-target-string-in-a-circular-array/) | 🟢 简单 | 数组、字符串 | 2026.04.15 |
@@ -481,8 +482,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-09-09 21:27:06
-- **总题目数**：414
+- **最后更新**：2026-09-10 22:27:02
+- **总题目数**：415
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成
