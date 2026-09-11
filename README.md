@@ -6,8 +6,8 @@
 ## 📈 刷题统计
 ![LeetCode Stats](https://leetcard.jacoblin.cool/lingmo203?theme=unicorn&font=Anek%20Devanagari&ext=activity&site=cn)
 
-**总题数：415**  
-🟢 简单：163  
+**总题数：416**  
+🟢 简单：164  
 🟡 中等：230  
 🔴 困难：22
 
@@ -17,9 +17,9 @@
 ## 🧠 擅长技能与知识点
 
 ### 🔥 数据结构
-- **数组** x225
+- **数组** x226
 - **字符串** x84
-- **哈希表** x80
+- **哈希表** x81
 - **树** x40
 - **二叉树** x38
 - **矩阵** x36
@@ -45,11 +45,11 @@
 - **位运算** x28
 - **模拟** x28
 - **回溯** x25
-- **递归** x17
+- **递归** x18
 - **分治** x14
 - **滑动窗口** x12
 - **设计** x10
-- **枚举** x9
+- **枚举** x10
 - **快速选择** x3
 - **随机化** x1
 
@@ -423,6 +423,7 @@
 | 3191 | [使二进制字符串所有字符相等的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | 🟢 简单 | 数组、数学 | 2025.11.22 |
 | 3300 | [替换为数位和以后的最小元素](https://leetcode.cn/problems/minimum-element-after-replacement-with-digit-sum/) | 🟢 简单 | 数组、数学 | 2026.05.29 |
 | 3379 | [转换数组](https://leetcode.cn/problems/transformed-array/) | 🟢 简单 | 数组、模拟 | 2026.02.05 |
+| 3483 | [不同三位偶数的数目](https://leetcode.cn/problems/unique-3-digit-even-numbers/) | 🟢 简单 | 递归、数组、哈希表、枚举 | 2026.09.11 |
 | 3488 | [距离最小相等元素查询](https://leetcode.cn/problems/closest-equal-element-queries/) | 🟡 中等 | 数组、哈希表、二分查找 | 2026.04.16 |
 | 3507 | [移除最小数对使数组有序 I](https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/) | 🟢 简单 | 数组、哈希表、链表、双向链表、有序集合、模拟、堆（优先队列） | 2026.01.22 |
 | 3546 | [等和矩阵分割 I](https://leetcode.cn/problems/equal-sum-grid-partition-i/) | 🟡 中等 | 数组、枚举、矩阵、前缀和 | 2026.03.25 |
@@ -482,8 +483,8 @@
 ---
 
 ## 🔄 更新记录
-- **最后更新**：2026-09-10 22:27:02
-- **总题目数**：415
+- **最后更新**：2026-09-11 22:07:42
+- **总题目数**：416
 - **技能标签数**：54
 
 > 🤖 本页面由自动化脚本生成

@@ -1,7 +1,7 @@
 {
   "username": "lingmo203",
-  "total_solved": 415,
-  "updated_at": "2026.09.10",
+  "total_solved": 416,
+  "updated_at": "2026.09.11",
   "problems": [
     {
       "id": 1,
@@ -6170,6 +6170,22 @@
         "2026.09.10"
       ],
       "leetcode_url": "https://leetcode.cn/problems/count-nodes-equal-to-average-of-subtree/"
+    },
+    {
+      "id": 3483,
+      "title": "不同三位偶数的数目",
+      "title_slug": "unique-3-digit-even-numbers",
+      "difficulty": "简单",
+      "tags": [
+        "递归",
+        "数组",
+        "哈希表",
+        "枚举"
+      ],
+      "solved_dates": [
+        "2026.09.11"
+      ],
+      "leetcode_url": "https://leetcode.cn/problems/unique-3-digit-even-numbers/"
     }
   ]
 }

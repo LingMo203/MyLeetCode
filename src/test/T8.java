@@ -2,6 +2,7 @@ package test;
 
 import util.ArrayStringUtils;
 
+import java.util.HashSet;
 
 
 public class T8 {
@@ -119,6 +120,23 @@ public class T8 {
             }
         }
         return res;
+    }
+
+    //3483. 不同三位偶数的数目
+    public int totalNumbers(int[] digits) {
+        HashSet<Integer> hashSet = new HashSet<>();
+        int n = digits.length;
+        for (int i = 0; i < n; i++) {
+            if (digits[i] == 0) continue;
+            for (int j = 0; j < n; j++) {
+                if (i == j) continue;
+                for (int k = 0; k < n; k++) {
+                    if (k == i || k == j || digits[k] % 2 == 1) continue;
+                    hashSet.add(digits[i] * 100 + digits[j] * 10 + digits[k]);
+                }
+            }
+        }
+        return hashSet.size();
     }
 
 }
